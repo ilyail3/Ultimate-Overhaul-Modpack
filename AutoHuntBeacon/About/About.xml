@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--
+ *  Rimworld MOD: Auto-hunt Beacon
+ *
+ *  About.xml
+ *
+ *  Created: ‎06.01.2015 ‏‎11:55:03
+ *  Author : Carry
+ * 
+ *  Copyright: (c) Carry 2015, Some Rights Reserved
+ *
+ *  License  : Creative Commons Attribution-ShareAlike 4.0 International License
+ *  License  : CC BY-SA 4.0 <http://creativecommons.org/licenses/by-sa/4.0/>.
+-->
+<ModMetaData>
+    
+	<name>Auto-hunt Beacon</name>
+	<author>Carry</author>
+	<targetVersion>Modpack</targetVersion>
+    <url>https://ludeon.com/forums/index.php?topic=8930.0</url>
+	<description>
+Version: 2.3.5641.16805
+	
+Designates animals for hunting, plants for harvesting and trees for chopping wood.
+</description>
+    
+</ModMetaData>

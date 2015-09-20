@@ -1,0 +1,54 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<!--
+ *  Rimworld MOD: Auto-hunt Beacon
+ *
+ *  TR_Keyed_AutoHuntBeacon.xml
+ *
+ *  Created: ‎06.01.2015 ‏‎11:55:03
+ *  Author : Carry
+ * 
+ *  Copyright: (c) Carry 2015, Some Rights Reserved
+ *
+ *  License  : Creative Commons Attribution-ShareAlike 4.0 International License
+ *  License  : CC BY-SA 4.0 <http://creativecommons.org/licenses/by-sa/4.0/>.
+-->
+<LanguageData>
+
+	<!-- Auto-hunt beacon -->
+
+	<AutoHuntBeacon_Toggle>toggle</AutoHuntBeacon_Toggle>
+	<AutoHuntBeacon_Enable>enable</AutoHuntBeacon_Enable>
+	<AutoHuntBeacon_Disable>disable</AutoHuntBeacon_Disable>
+	<AutoHuntBeacon_Enabled>enabled</AutoHuntBeacon_Enabled>
+	<AutoHuntBeacon_Disabled>disabled</AutoHuntBeacon_Disabled>
+    <AutoHuntBeacon_Suspended>suspended</AutoHuntBeacon_Suspended>
+
+	<AutoHuntBeacon_Hunting>hunting</AutoHuntBeacon_Hunting>
+	<AutoHuntBeacon_Harvesting>harvesting</AutoHuntBeacon_Harvesting>
+	<AutoHuntBeacon_Lumbering>chopping wood</AutoHuntBeacon_Lumbering>
+
+	<AutoHuntBeacon_Thresholds>thresholds</AutoHuntBeacon_Thresholds>
+	<AutoHuntBeacon_LowerThreshold>lower threshold</AutoHuntBeacon_LowerThreshold>
+	<AutoHuntBeacon_UpperThreshold>upper threshold</AutoHuntBeacon_UpperThreshold>
+
+	<AutoHuntBeacon_Range>range</AutoHuntBeacon_Range>
+
+	<AutoHuntBeacon_Meat>meat</AutoHuntBeacon_Meat>
+	<AutoHuntBeacon_Plants>plants</AutoHuntBeacon_Plants>
+	<AutoHuntBeacon_Wood>wood</AutoHuntBeacon_Wood>
+
+	<AutoHuntBeacon_SettingsHunting>Hunt</AutoHuntBeacon_SettingsHunting>
+	<AutoHuntBeacon_SettingsHarvest>Harvest</AutoHuntBeacon_SettingsHarvest>
+	<AutoHuntBeacon_SettingsLumbering>Chop</AutoHuntBeacon_SettingsLumbering>
+
+	<AutoHuntBeacon_CountHumanMeat>count human meat</AutoHuntBeacon_CountHumanMeat>
+	<AutoHuntBeacon_UnforbidCorpses>unforbid corpses</AutoHuntBeacon_UnforbidCorpses>
+	<AutoHuntBeacon_ClearWindCells>clear wind cells</AutoHuntBeacon_ClearWindCells>
+	
+	<AutoHuntBeacon_Animals>animals</AutoHuntBeacon_Animals>
+	<AutoHuntBeacon_Trees>trees</AutoHuntBeacon_Trees>
+
+	<AutoHuntBeacon_ClearAll>clear all</AutoHuntBeacon_ClearAll>
+	<AutoHuntBeacon_SetAll>set all</AutoHuntBeacon_SetAll>
+
+</LanguageData>

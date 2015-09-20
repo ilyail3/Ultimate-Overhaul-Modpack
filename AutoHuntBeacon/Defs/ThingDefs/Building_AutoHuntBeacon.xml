@@ -1,0 +1,72 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<!--
+ *  Rimworld MOD: Auto-hunt Beacon
+ *
+ *  Building_AutoHuntBeacon.xml
+ *
+ *  Created: ‎06.01.2015 ‏‎11:55:03
+ *  Author : Carry
+ * 
+ *  Copyright: (c) Carry 2015, Some Rights Reserved
+ *
+ *  License  : Creative Commons Attribution-ShareAlike 4.0 International License
+ *  License  : CC BY-SA 4.0 <http://creativecommons.org/licenses/by-sa/4.0/>.
+-->
+<Buildings>
+
+	<ThingDef Name="BuildingBase" Abstract="True">
+		<category>Building</category>
+		<thingClass>Building</thingClass>
+		<soundImpactDefault>BulletImpactMetal</soundImpactDefault>
+		<selectable>true</selectable>
+		<drawerType>MapMeshAndRealTime</drawerType>
+		<terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
+		<repairEffect>Repair</repairEffect>
+		<leaveResourcesWhenKilled>true</leaveResourcesWhenKilled>
+		<filthLeaving>BuildingRubble</filthLeaving>
+	</ThingDef>
+
+
+	<!-- ============================== AutoHuntBeacon ============================== -->
+
+	
+	<ThingDef ParentName="BuildingBase">
+		<defName>AutoHuntBeacon</defName>
+		<label>auto-hunt beacon</label>
+		<thingClass>AutoHuntBeacon.Building_AutoHuntBeacon</thingClass>
+		<graphicData>
+			<texPath>Things/Building/Misc/AutoHuntBeacon</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>(1,1)</drawSize>
+			<shadowData>
+				<volume>(0.3,0.6,0.3)</volume>
+			</shadowData>
+		</graphicData>
+		<altitudeLayer>Waist</altitudeLayer>
+		<statBases>
+			<MaxHitPoints>75</MaxHitPoints>
+			<WorkToMake>1300</WorkToMake>
+			<Flammability>1.0</Flammability>
+		</statBases>
+		<description>Automates hunting, harvesting and chopping wood designations.</description>
+		<size>(1,1)</size>
+		<costList>
+			<SteelBar>30</SteelBar>
+			<EnergyPack>1</EnergyPack>
+			<CopperBar>30</CopperBar>
+		</costList>
+        <inspectorTabs>
+			<li>AutoHuntBeacon.ITab_Hunting</li>
+			<li>AutoHuntBeacon.ITab_Harvesting</li>
+			<li>AutoHuntBeacon.ITab_Lumbering</li>
+		</inspectorTabs>
+		<pathCost>30</pathCost>
+		<tickerType>Normal</tickerType>
+		<designationCategory>Misc</designationCategory>
+		<leaveResourcesWhenKilled>false</leaveResourcesWhenKilled>
+		<rotatable>false</rotatable>
+		<researchPrerequisite>AgricultureI</researchPrerequisite>
+	</ThingDef>
+
+
+</Buildings>

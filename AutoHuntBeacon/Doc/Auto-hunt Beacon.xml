@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>AutoHuntBeacon</name>
+    </assembly>
+    <members>
+        <member name="T:AutoHuntBeacon.Building_AutoHuntBeacon">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="T:AutoHuntBeacon.MapComponent_AutoHuntBeacon">
+             <summary>
+            
+             </summary>
+        </member>
+    </members>
+</doc>
