@@ -1,0 +1,49 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<Defs>
+
+  <RecipeDef>
+    <defName>BrewMedicalDrink</defName>
+    <label>Make antibiotics</label>
+    <description>Brew a bottle of medical drink from xerigium and hops.</description>
+    <jobString>Brewing medical drink.</jobString>
+    <workSpeedStat>BrewingSpeed</workSpeedStat>
+    <effectWorking>Cook</effectWorking>
+    <soundWorking>Recipe_Brewing</soundWorking>
+    <allowMixingIngredients>true</allowMixingIngredients>
+    <workAmount>1000</workAmount>
+      <recipeUsers>
+         <li>TableChemlab</li>
+      </recipeUsers>
+    <targetCountAdjustment>1</targetCountAdjustment>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>HerbalMedicine</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>RawHops</li>
+          </thingDefs>
+        </filter>
+        <count>10</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>RawHops</li>
+		<li>HerbalMedicine</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <products>
+      <MedicalDrink>1</MedicalDrink>
+    </products>
+    <workSkill>Cooking</workSkill>
+  </RecipeDef>
+
+</Defs>

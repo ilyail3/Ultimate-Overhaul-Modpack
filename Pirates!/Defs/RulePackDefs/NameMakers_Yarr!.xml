@@ -1,0 +1,69 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<NameMakerDefs>
+
+  <RulePackDef>
+    <defName>NamerPersonPierats</defName>
+    <rulePack>
+      <rulesStrings>
+        <li>name->[guy][brush] [threep][wood]</li>
+        <li>name->[guy][brush] [piratesurname]</li>
+        <li>name->[piratename] [threep][wood]</li>
+        <li>name->[piratename] [piratesurname]</li>
+        <li>name->[piratename] [piratesurname]</li>
+        <li>name->[piratename] [piratesurname]</li>
+        <li>name->[piratename] [solonick] [piratesurname]</li>
+        <li>name->[piratename] [nickstart][nickend] [piratesurname]</li>
+        <li>name->[piratename] [nickstart][nickend] [piratesurname]</li>
+        <li>name->[piratename] [nickstart][nickend] [piratesurname]</li>
+      </rulesStrings>
+      <rulesRaw>
+        <li Class="Rule_File">
+          <keyword>guy</keyword>
+          <path>Banky/PiratePrefix</path>
+        </li>
+        <li Class="Rule_File">
+          <keyword>brush</keyword>
+          <path>Banky/PirateSuffix</path>
+        </li>
+        <li Class="Rule_File">
+          <keyword>threep</keyword>
+          <path>Banky/Surpur</path>
+        </li>
+        <li Class="Rule_File">
+          <keyword>wood</keyword>
+          <path>Banky/Surrur</path>
+        </li>
+
+        <li Class="Rule_File">
+          <keyword>piratename</keyword>
+          <path>Banky/PieName</path>
+        </li>
+        <li Class="Rule_File">
+          <keyword>piratesurname</keyword>
+          <path>Banky/PieSurname</path>
+        </li>
+
+        <li Class="Rule_File">
+          <keyword>solonick</keyword>
+          <path>Banky/PieSoloNick</path>
+        </li>
+        <li Class="Rule_File">
+          <keyword>nickstart</keyword>
+          <path>Banky/PieNick</path>
+        </li>
+        <li Class="Rule_File">
+          <keyword>nickend</keyword>
+          <path>Banky/PieNickName</path>
+        </li>
+      </rulesRaw>
+    </rulePack>
+  </RulePackDef>
+
+</NameMakerDefs>
+
+
+
+
+
+
+

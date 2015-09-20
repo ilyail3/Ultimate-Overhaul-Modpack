@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ThingDefs>
+
+
+	<ThingDef Class="NanoPrinter.ThingDef_NanoPrinter" Name="BuildingBase" Abstract="True">
+		<category>Building</category>
+		<soundImpactDefault>BulletImpactMetal</soundImpactDefault>
+		<selectable>true</selectable>
+		<drawerType>MapMeshAndRealTime</drawerType>
+		<terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
+		<repairEffect>Repair</repairEffect>
+		<leaveResourcesWhenKilled>true</leaveResourcesWhenKilled>
+		<filthLeaving>BuildingRubble</filthLeaving>
+	</ThingDef>
+
+<ThingDef Class="NanoPrinter.ThingDef_NanoPrinter" ParentName="BuildingBase">
+		<DefName>NanoPrinter</DefName>
+		<label>Nano Printer</label>
+		<description>The nano printer can make nearly identical copies of equipment.</description>
+		<thingClass>NanoPrinter.Building_NanoPrinter</thingClass>
+		<category>Building</category>
+		<graphicData>
+			<texPath>Things/Building/NanoPrinter/NanoPrinter</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<AltitudeLayer>Waist</AltitudeLayer>
+		<useHitPoints>True</useHitPoints>
+		<passability>PassThroughOnly</passability>
+		<pathCost>70</pathCost>
+		<statBases>
+			<WorkToMake>2500</WorkToMake>
+			<MaxHitPoints>150</MaxHitPoints>
+			<Flammability>1.0</Flammability>
+			<Beauty>5</Beauty>
+		</statBases>
+		<castEdgeShadows>false</castEdgeShadows>
+		<size>(1,1)</size>
+		<costList>
+			<SteelBar>200</SteelBar>
+			<CopperWire>20</CopperWire>
+		</costList>
+		<comps>
+			<li>
+				<compClass>CompPowerTrader</compClass>
+				<basePowerConsumption>450</basePowerConsumption>
+				<soundPowerOn>PowerOnSmall</soundPowerOn>
+				<soundPowerOff>PowerOffSmall</soundPowerOff>
+			</li>
+			<li Class="CommunityCoreLibrary.CompProperties_LowIdleDraw">
+                <compClass>CommunityCoreLibrary.CompPowerLowIdleDraw</compClass>
+                <idlePowerFactor>0.11</idlePowerFactor>
+				<operationalMode>InUse</operationalMode>
+            </li>
+		</comps>
+		<rotatable>true</rotatable>
+		<selectable>true</selectable>
+		<hasInteractionCell>True</hasInteractionCell>
+		<interactionCellOffset>(0,0,-1)</interactionCellOffset>
+		<designationCategory>ProductionGoods</designationCategory>
+		<surfaceType>Item</surfaceType>
+		<tickerType>Normal</tickerType>
+		<building>
+			<fixedStorageSettings>
+				<priority>Critical</priority>
+				<filter>
+					<thingDefs>
+						<li>SteelBar</li>
+					</thingDefs>
+				</filter>
+			</fixedStorageSettings>
+			<defaultStorageSettings>
+				<priority>Critical</priority>
+				<filter>
+					<thingDefs>
+						<li>SteelBar</li>
+					</thingDefs>
+				</filter>
+			</defaultStorageSettings>
+			<wantsHopperAdjacent>true</wantsHopperAdjacent>
+		</building>
+		<researchPrerequisite>ResearchNanoReplication</researchPrerequisite>
+		<XmlExtended>True</XmlExtended>
+		<ScannerDefName>NanoScanner</ScannerDefName>
+		<ResourceDefName>SteelBar</ResourceDefName>
+		<ProductionCountDownStartValue>300</ProductionCountDownStartValue>
+		<CostPriceToSteel>1.2</CostPriceToSteel>
+		<CostHealthToSteel>2.0</CostHealthToSteel>
+	</ThingDef>
+
+	
+	
+	<ThingDef ParentName="BuildingBase">
+		<defName>NanoScanner</defName>
+		<label>Nano Scanner</label>
+		<description>Allows the nano printer to scan the internal structure of objects.</description>
+		<thingClass>Building_Storage</thingClass>
+		<graphicData>
+      		<texPath>Things/Building/NanoPrinter/NanoScanner</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+      	<altitudeLayer>Waist</altitudeLayer>
+		<passability>PassThroughOnly</passability>
+		<pathCost>70</pathCost>
+		<building>
+			<fixedStorageSettings>
+				<priority>Important</priority>
+				<filter>
+					<categories>
+						<li>Weapons</li>
+						<li>Apparel</li>
+					</categories>
+				</filter>
+			</fixedStorageSettings>
+		<defaultStorageSettings>
+			<priority>Important</priority>
+			<filter>
+				<categories>
+					<li>Weapons</li>
+					<li>Apparel</li>
+				</categories>
+			</filter>
+		</defaultStorageSettings>
+    </building>
+    <inspectorTabs>
+		<li>ITab_Storage</li>
+    </inspectorTabs>
+	<castEdgeShadows>false</castEdgeShadows>
+	<statBases>
+      <WorkToMake>330</WorkToMake>
+      <MaxHitPoints>100</MaxHitPoints>
+      <Flammability>1.0</Flammability>
+      <Beauty>3</Beauty>
+    </statBases>
+    <costList>
+		<SteelBar>50</SteelBar>
+    </costList>
+    <tickerType>Never</tickerType>
+    <rotatable>true</rotatable>
+    <neverMultiSelect>true</neverMultiSelect>
+    <designationCategory>ProductionGoods</designationCategory>
+    <surfaceType>Item</surfaceType>
+    <placeWorkers>
+		<li>NanoPrinter.PlaceWorker_NextToNanoPrinter</li>
+    </placeWorkers>
+	<researchPrerequisite>ResearchNanoReplication</researchPrerequisite>
+  </ThingDef>
+	
+	
+</ThingDefs>

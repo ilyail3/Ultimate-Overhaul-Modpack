@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<DefPackage-HairDef>
+  
+<HairDef>
+    <label>Brief Ponytail</label>
+    <hairGender>Male</hairGender>
+    <texPath>Hairs/Gaston</texPath>
+    <defName>Hair_Gaston</defName>
+		<hairTags>
+			<li>Rural</li>
+		</hairTags>
+  </HairDef>
+ 
+</DefPackage-HairDef>

@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ThingDefs>
+
+
+	<ThingDef Name="BuildingBase" Abstract="True">
+		<category>Building</category>
+		<soundImpactDefault>BulletImpactMetal</soundImpactDefault>
+		<selectable>true</selectable>
+		<drawerType>MapMeshAndRealTime</drawerType>
+		<terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
+		<repairEffect>Repair</repairEffect>
+		<leaveResourcesWhenKilled>true</leaveResourcesWhenKilled>
+		<filthLeaving>BuildingRubble</filthLeaving>
+		<tradeTags>
+			<li>Exotic</li>
+			<li>Computer</li>
+			<li>Robots</li>
+		</tradeTags>
+	</ThingDef>
+
+<ThingDef ParentName="BuildingBase">
+		<defName>TacticalComputerExtension</defName>
+		<label>Computer Terminal</label>
+		<description>This computer terminal provides remote access to some options of the tactical computer.\nNote: A Tactical Computer is needed!</description>
+		<thingClass>TacticalComputer.Building_TacticalComputerExtensionTerminal</thingClass>
+		<category>Building</category>
+		<graphicData>
+			<texPath>Things/Building/TacticalComputer/Terminal_On</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>Transparent</shaderType>
+		</graphicData>
+		<minifiedDef>MinifiedTacticalComputer</minifiedDef>
+		<altitudeLayer>Waist</altitudeLayer>
+		<passability>PassThroughOnly</passability>
+		<pathCost>60</pathCost>
+		<statBases>
+			<WorkToMake>700</WorkToMake>
+			<MaxHitPoints>60</MaxHitPoints>
+			<Flammability>0.0</Flammability>
+			<Beauty>12</Beauty>
+			<MarketValue>250</MarketValue>
+		</statBases>
+		<size>(1,1)</size>
+		<costList>
+			<Steel>50</Steel>
+		</costList>
+		<comps>
+			<li>
+				<compClass>CompPowerTrader</compClass>
+				<basePowerConsumption>80</basePowerConsumption>
+				<soundPowerOn>PowerOnSmall</soundPowerOn>
+				<soundPowerOff>PowerOffSmall</soundPowerOff>
+			</li>
+			<li>
+				<compClass>CompGlower</compClass>
+				<glowRadius>4</glowRadius>
+				<glowColor>(30,140,165,0)</glowColor>
+			</li>
+		</comps>
+		<rotatable>true</rotatable>
+		<selectable>true</selectable>
+		<neverMultiSelect>true</neverMultiSelect>
+		<!-- <designationCategory>Misc</designationCategory>
+		<researchPrerequisite>ResearchTacticalComputer</researchPrerequisite> -->
+		<placeWorkers>
+			<li>TacticalComputer.PlaceWorker_NeedTacticalComputerToBeBuilt</li>
+		</placeWorkers>
+		
+	</ThingDef>
+
+</ThingDefs>

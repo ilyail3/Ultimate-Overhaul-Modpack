@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<LanguageData>
+
+	<!-- Incident - Rumor of Ruins -->
+	<RumorOfRuins_InitialMessage>Als ihr gemütlich mit euren Freunden aus {1} zusammensitzt, erzählt {0} von einem Gerücht über eine antike Ruine in der Nähe der Kolonie. HECAP meint, dass es dort vielleicht noch immer ein paar wertvolle Schätze gibt.\n\nMöchtest du dieses Gerücht untersuchen?\nEs kann sein, dass dort nichts ist, oder es ist wie HE sagt und es finden sich dort ein paar Schätze.</RumorOfRuins_InitialMessage>
+	<RumorOfRuins_InitialMessageButtonAccept>Annehmen</RumorOfRuins_InitialMessageButtonAccept>
+	<RumorOfRuins_InitialMessageButtonReject>Ablehnen</RumorOfRuins_InitialMessageButtonReject>
+	<RumorOfRuins_InitialMessageRejected>Du gibst nicht viel auf die Gerüchte, die {0} erzählt und ignorierst HIM.</RumorOfRuins_InitialMessageRejected>
+
+	<RumorOfRuins_SelectPawnsMessage>Wähle die Kolonisten, die Du zu den Ruinen schicken willst.\nACHTUNG: Sie werden etwa {0} Tage unterwegs sein!</RumorOfRuins_SelectPawnsMessage>
+	<RumorOfRuins_ButtonAssign>Team zuweisen</RumorOfRuins_ButtonAssign>
+	<RumorOfRuins_ButtonAssignError>Du kannst nicht alle schicken. Jemand muss zurückbleiben und auf die Kolonie aufpassen!</RumorOfRuins_ButtonAssignError>
+	<RumorOfRuins_ButtonUnassign>Vom Team entfernen</RumorOfRuins_ButtonUnassign>
+	<RumorOfRuins_ButtonAbort>Mission abbrechen</RumorOfRuins_ButtonAbort>
+	<RumorOfRuins_ButtonPostpone>Verschieben 6h</RumorOfRuins_ButtonPostpone>
+	<RumorOfRuins_ButtonSend>Sende Kolonisten</RumorOfRuins_ButtonSend>
+	<RumorOfRuins_ButtonSendError>Kann nicht senden. Es ist niemand zugewiesen.</RumorOfRuins_ButtonSendError>
+		
+	<RumorOfRuins_LetterLabel_Returned>Rückkehrer</RumorOfRuins_LetterLabel_Returned>
+	<RumorOfRuins_Message_ReturnedBase>Dein Team ist von den Ruinen zurückgekehrt.</RumorOfRuins_Message_ReturnedBase>
+	<RumorOfRuins_Message_ReturnedNoTreasure>Sie haben ein paar alte Wände gefunden, die scheinbar Teil einer alten Burg oder etwas ähnlichem gewesen waren.\nAber selbst eine ausführliche Suche hat nichts weiter als überwachsene Wände, verottender Müll und anderen Schrott zu Tage gefördert. Dort war absolut nichts von Wertvolles zu finden.</RumorOfRuins_Message_ReturnedNoTreasure>
+	<RumorOfRuins_Message_ReturnedWithTreasure>Sie haben ein paar alte Wände gefunden, die scheinbar Teil einer alten Burg oder etwas ähnlichem gewesen waren.\nNach einer ausführlichen Suche hat das Team einen alten Geheimraum hinter einer zugewachsenen Tür gefunden. Dort fanden sie eine Menge Staub, Müll und Schrott.\nAber sie fanden auch etwas Wertvolles. Sie brachten Folgendes zurück..</RumorOfRuins_Message_ReturnedWithTreasure>
+	<RumorOfRuins_Message_ReturnedWithEnemy>Aber Vorsicht, scheinbar werden sie verfolgt!</RumorOfRuins_Message_ReturnedWithEnemy>
+
+</LanguageData>

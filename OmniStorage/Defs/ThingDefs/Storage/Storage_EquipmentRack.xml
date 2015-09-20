@@ -1,0 +1,168 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Buildings>
+
+
+  <ThingDef Name="BuildingBase" Abstract="True">
+    <category>Building</category>
+    <thingClass>Building</thingClass>
+    <soundImpactDefault>BulletImpactMetal</soundImpactDefault>
+    <selectable>true</selectable>
+    <drawerType>MapMeshAndRealTime</drawerType>
+    <terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
+    <repairEffect>Repair</repairEffect>
+    <leaveResourcesWhenKilled>true</leaveResourcesWhenKilled>
+    <filthLeaving>BuildingRubble</filthLeaving>
+  </ThingDef>
+
+  <!--============================== Storage ==============================-->
+
+  <ThingDef ParentName="BuildingBase">
+    <defName>EquipmentRack</defName>
+    <label>clothing rack</label>
+    <thingClass>Building_Storage</thingClass>
+    <graphicData>
+      <texPath>Things/Building/Furniture/EquipmentRack</texPath>
+      <graphicClass>Graphic_Multi</graphicClass>
+      <drawSize>(3,2)</drawSize>
+    </graphicData>
+    <altitudeLayer>Waist</altitudeLayer>
+    <passability>PassThroughOnly</passability>
+    <fillPercent>0.4</fillPercent>
+    <castEdgeShadows>true</castEdgeShadows>
+    <stuffCategories>
+      <li>Metallic</li>
+      <li>Woody</li>
+      <li>Stony</li>
+    </stuffCategories>
+    <costStuffCount>30</costStuffCount>
+    <statBases>
+      <MaxHitPoints>100</MaxHitPoints>
+      <WorkToMake>1050</WorkToMake>
+      <Flammability>1.0</Flammability>
+    </statBases>
+    <description>Items stored in this will not deteriorate, even if outside.</description>
+    <size>(2,1)</size>
+    <building>
+      <preventDeterioration>true</preventDeterioration>
+      <fixedStorageSettings>
+        <filter>
+          <categories>
+            <li>Apparel</li>
+          </categories>
+		  <exceptedCategories>
+			<li>Weapons</li>
+		  </exceptedCategories>
+        </filter>
+      </fixedStorageSettings>
+      <defaultStorageSettings>
+        <priority>Important</priority>
+        <filter>
+          <categories>
+            <li>Apparel</li>
+          </categories>
+        </filter>
+      </defaultStorageSettings>
+    </building>
+    <inspectorTabs>
+      <li>ITab_Storage</li>
+    </inspectorTabs>
+	<designationCategory>Storage</designationCategory>
+    <staticSunShadowHeight>0.5</staticSunShadowHeight>
+    <surfaceType>Item</surfaceType>
+  </ThingDef>
+  
+  <ThingDef ParentName="BuildingBase">
+    <defName>EquipmentRack_Small</defName>
+    <label>weapon rack</label>
+    <thingClass>Building_Storage</thingClass>
+	<graphicData>
+    <texPath>Things/Building/Furniture/EquipmentRack1x1</texPath>
+    <graphicClass>Graphic_Single</graphicClass>
+	</graphicData>
+    <altitudeLayer>Waist</altitudeLayer>
+    <passability>PassThroughOnly</passability>
+    <pathCost>40</pathCost>
+    <castEdgeShadows>true</castEdgeShadows>
+		<placingDraggableDimensions>1</placingDraggableDimensions>
+    <stuffCategories>
+      <li>Metallic</li>
+      <li>Woody</li>
+      <li>Stony</li>
+    </stuffCategories>
+    <costStuffCount>15</costStuffCount>
+    <statBases>
+      <MaxHitPoints>60</MaxHitPoints>
+      <WorkToMake>350</WorkToMake>
+      <Flammability>1.0</Flammability>
+	  <Beauty>10</Beauty>
+    </statBases>
+    <description>Haulers carry weapons here for storage.</description>
+    <size>(1,1)</size>
+    <building>
+      <preventDeterioration>true</preventDeterioration>
+      <fixedStorageSettings>
+        <priority>Important</priority>
+        <filter>
+          <categories>
+            <li>Weapons</li>
+          </categories>
+        </filter>
+      </fixedStorageSettings>
+    </building>
+    <inspectorTabs>
+      <li>ITab_Storage</li>
+    </inspectorTabs>
+    <designationCategory>Storage</designationCategory>
+    <staticSunShadowHeight>0.2</staticSunShadowHeight>
+    <surfaceType>Item</surfaceType>
+  </ThingDef>
+  
+  <ThingDef ParentName="BuildingBase">
+    <defName>ArmorRack_Small</defName>
+    <label>armor rack</label>
+    <thingClass>Building_Storage</thingClass>
+	<graphicData>
+    <texPath>Things/Building/Furniture/EquipmentRack1x1</texPath>
+    <graphicClass>Graphic_Single</graphicClass>
+	</graphicData>
+    <altitudeLayer>Waist</altitudeLayer>
+    <passability>PassThroughOnly</passability>
+    <pathCost>40</pathCost>
+    <castEdgeShadows>true</castEdgeShadows>
+		<placingDraggableDimensions>1</placingDraggableDimensions>
+    <stuffCategories>
+      <li>Metallic</li>
+      <li>Woody</li>
+      <li>Stony</li>
+    </stuffCategories>
+    <costStuffCount>15</costStuffCount>
+    <statBases>
+      <MaxHitPoints>60</MaxHitPoints>
+      <WorkToMake>350</WorkToMake>
+      <Flammability>1.0</Flammability>
+	  <Beauty>10</Beauty>
+    </statBases>
+    <description>Haulers carry armor here for storage.</description>
+    <size>(1,1)</size>
+    <building>
+      <preventDeterioration>true</preventDeterioration>
+      <fixedStorageSettings>
+        <priority>Important</priority>
+        <filter>
+          <categories>
+            <li>Armor</li>
+          </categories>
+        </filter>
+      </fixedStorageSettings>
+    </building>
+    <inspectorTabs>
+      <li>ITab_Storage</li>
+    </inspectorTabs>
+    <designationCategory>Storage</designationCategory>
+    <staticSunShadowHeight>0.2</staticSunShadowHeight>
+    <surfaceType>Item</surfaceType>
+  </ThingDef>
+
+
+
+</Buildings>

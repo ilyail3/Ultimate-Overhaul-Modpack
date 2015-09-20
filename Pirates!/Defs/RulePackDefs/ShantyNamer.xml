@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <RulePackDef>
+    <defName>NamerShanty</defName>
+    <rulePack>
+      <rulesStrings>
+        <li>name->♫♪</li>
+        <li>name->♪♫</li>
+      </rulesStrings>
+    </rulePack>
+  </RulePackDef>
+
+
+
+</Defs>

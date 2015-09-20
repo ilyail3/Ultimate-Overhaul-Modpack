@@ -1,0 +1,45 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<LanguageData>
+
+	<!-- Tactical Computer -->
+	<TacticalComputer_Offline>-= Offline =-</TacticalComputer_Offline>
+	<TacticalComputer_Colonist>Kolonisten</TacticalComputer_Colonist>
+	<TacticalComputer_Prisoner>Gefangene</TacticalComputer_Prisoner>
+	<TacticalComputer_Enemy>Gegner</TacticalComputer_Enemy>
+	<TacticalComputer_Friendly>Freunde</TacticalComputer_Friendly>
+	<TacticalComputer_SwitchToNextColonist>Zum nächsten Kolonisten wechseln.</TacticalComputer_SwitchToNextColonist>
+	<TacticalComputer_SwitchToNextPrisoner>Zum nächsten Gefangenen wechseln.</TacticalComputer_SwitchToNextPrisoner>
+	<TacticalComputer_SwitchToNextEnemy>Zum nächsten Gegner wechseln.</TacticalComputer_SwitchToNextEnemy>
+	<TacticalComputer_SwitchToNextFriendly>Zum nächsten Freund wechseln.</TacticalComputer_SwitchToNextFriendly>
+	<TacticalComputer_CallColonistsToArms>Rufe bewaffnete Kolonisten.</TacticalComputer_CallColonistsToArms>
+	
+	<!-- Tactical Computer - Incident Anomaly -->
+	<TacticalComputer_Message_AnomalyFound>Die Sensoren deines Taktischen Computers haben etwas Ungewöhnliches nur ein paar Tage entfernt erfasst.\n\nWenn du willst, kannst Du ein Team zur Untersuchung hinschicken.</TacticalComputer_Message_AnomalyFound>
+	<TacticalComputer_LetterLabel_AnomalyFound>Anomalie</TacticalComputer_LetterLabel_AnomalyFound>
+	<TacticalComputer_AnomalyAssignPawns>Lege fest, welche Kolonisten die Anomalie untersuchen sollen.</TacticalComputer_AnomalyAssignPawns>
+	<TacticalComputer_AnomalySendPawns>Schicke die festgelegten Kolonisten zur Anomalie.</TacticalComputer_AnomalySendPawns>
+	<TacticalComputer_AnomalySelectPawnsToSend>Definiere die Kolonisten, die zur Anomalie geschickt werden.\nACHTUNG: Sie werden etwa {0} Tage unterwegs sein!</TacticalComputer_AnomalySelectPawnsToSend>
+	<TacticalComputer_NooneAssigned>Niemand zugewiesen.</TacticalComputer_NooneAssigned>
+	<TacticalComputer_AssignColonist>Dem Team zuweisen</TacticalComputer_AssignColonist>
+	<TacticalComputer_UnassignColonist>Vom Team entfernen</TacticalComputer_UnassignColonist>
+	<TacticalComputer_AssignColonist_Rejected>Du kannst nicht alle schicken. Jemand muss zurückbleiben und die Kolonie bewachen!</TacticalComputer_AssignColonist_Rejected>
+	<TacticalComputer_LetterLabel_ReturnFromAnomaly>Anomalie Rückkehrer</TacticalComputer_LetterLabel_ReturnFromAnomaly>
+	<TacticalComputer_Message_ReturnedFromAnomaly>Dein Team ist von der Untersuchung der Anomalie zurückgekehrt.</TacticalComputer_Message_ReturnedFromAnomaly>
+	<TacticalComputer_Message_ReturnedFromAnomaly_FoundNothing>Sie haben einige alte Ruinen gefunden, aber nichts von Wert.</TacticalComputer_Message_ReturnedFromAnomaly_FoundNothing>
+	<TacticalComputer_Message_ReturnedFromAnomaly_FoundTreasure>Sie haben in alten Ruinen einem Geheimraum gefunden. Dort war nicht viel von Wert, ausser...</TacticalComputer_Message_ReturnedFromAnomaly_FoundTreasure>
+	<TacticalComputer_Message_ReturnedFromAnomaly_WithEnemyInPursued>Außerdem werden sie verfolgt!</TacticalComputer_Message_ReturnedFromAnomaly_WithEnemyInPursued>
+
+	<TacticalComputer_Float_OrderToSleep>Gehe ins Bett</TacticalComputer_Float_OrderToSleep>
+	<TacticalComputer_Float_OrderToEat>Gehe etwas Essen</TacticalComputer_Float_OrderToEat>
+	<TacticalComputer_Float_GetNewDoorKey>Nimm neuen Türschlüssel</TacticalComputer_Float_GetNewDoorKey>
+	<TacticalComputer_PlacementRestricter_NoTacticalComputerFound>Kein Taktischer Computer gefunden</TacticalComputer_PlacementRestricter_NoTacticalComputerFound>
+
+
+	<!-- Tactical Computer External Terminal -->
+	<TacticalComputer_CallColonistsToArmsToMe>Rufe bewaffnete Kolonisten.\nZiel: Hier</TacticalComputer_CallColonistsToArmsToMe>
+	<TacticalComputer_CallColonistsToArmsToMainComputer>Rufe bewaffnete Kolonisten.\nZiel: Taktischer Computer</TacticalComputer_CallColonistsToArmsToMainComputer>
+	<TacticalComputer_CallColonistsNotArmedToMe>Rufe unbewaffnete Kolonisten.\nZiel: Hier</TacticalComputer_CallColonistsNotArmedToMe>
+	<TacticalComputer_CallColonistsNotArmedToMainComputer>Rufe unbewaffnete Kolonisten.\nZiel: Taktischer Computer</TacticalComputer_CallColonistsNotArmedToMainComputer>
+	
+	
+</LanguageData>

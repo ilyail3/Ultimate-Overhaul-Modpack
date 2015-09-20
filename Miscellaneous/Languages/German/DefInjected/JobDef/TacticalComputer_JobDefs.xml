@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<LanguageData>
+  
+	<GotoCellAndDraft.reportString>Gehe zum Sammelpunkt.</GotoCellAndDraft.reportString>
+	<LeaveMapForAnomaly.reportString>Reise zur Anomalie.</LeaveMapForAnomaly.reportString>
+	
+	<PlayTacticalComputer.reportString>Spielt RimRisk.</PlayTacticalComputer.reportString>
+	<PlayComputerTerminal.reportString>Surft im RimNet.</PlayComputerTerminal.reportString>
+
+</LanguageData>

@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<NameMakerDefs>
+
+  <RulePackDef>
+    <defName>NamerFactionPierats</defName>
+    <rulePack>
+      <rulesStrings>
+        <li>name->[yarr] [cove]</li>
+      </rulesStrings>
+      <rulesRaw>
+        <li Class="Rule_File">
+          <keyword>cove</keyword>
+          <path>Banky/Sea</path>
+        </li>
+        <li Class="Rule_File">
+          <keyword>yarr</keyword>
+          <path>Banky/Yarr</path>
+        </li>
+      </rulesRaw>
+    </rulePack>
+  </RulePackDef>
+
+</NameMakerDefs>
+
+
+
+
+
+
+

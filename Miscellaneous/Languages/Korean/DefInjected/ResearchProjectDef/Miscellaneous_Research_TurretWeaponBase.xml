@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<LanguageData>
+<!--
+	<ResearchTurretWeaponBaseA.label>자동 무기 거치대</ResearchTurretWeaponBaseA.label>
+	<ResearchTurretWeaponBaseA.description>자동으로 작동하는 포탑 몸체에 개인화기를 다는 법을 연구합니다.</ResearchTurretWeaponBaseA.description>
+	<ResearchTurretWeaponBaseA.descriptionDiscovered>이제 개인화기를 장착할 수 있는 자동 포탑을 건설할 수 있습니다.
+	\n참고: 재장전은 무기 장착의 자동화로 인해 더 복잡합니다.</ResearchTurretWeaponBaseA.descriptionDiscovered>
+	-->
+	
+	<ResearchTurretWeaponBaseAlternateCooldown.label>무기 거치대 재장전</ResearchTurretWeaponBaseAlternateCooldown.label>
+	<ResearchTurretWeaponBaseAlternateCooldown.description>무기 거치대의 재장전 시간을 개선할 방법을 연구합니다.</ResearchTurretWeaponBaseAlternateCooldown.description>
+	<ResearchTurretWeaponBaseAlternateCooldown.descriptionDiscovered>성공적으로 무기 거치대의 디자인을 변경하여 재장전 시간이 약간 줄어들었습니다.</ResearchTurretWeaponBaseAlternateCooldown.descriptionDiscovered>
+	
+</LanguageData>

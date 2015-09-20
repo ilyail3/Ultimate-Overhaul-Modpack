@@ -1,0 +1,420 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ThingDefs>
+
+  <ThingDef Name="ApparelBase" Abstract="True">
+    <thingClass>Apparel</thingClass>
+    <category>Item</category>
+    <selectable>True</selectable>
+    <pathCost>10</pathCost>
+    <useHitPoints>True</useHitPoints>
+    <graphicData>
+      <onGroundRandomRotateAngle>35</onGroundRandomRotateAngle>
+    </graphicData>
+    <drawGUIOverlay>true</drawGUIOverlay>
+    <statBases>
+      <MaxHitPoints>100</MaxHitPoints>
+      <Flammability>1.0</Flammability>
+      <DeteriorationRate>1</DeteriorationRate>
+      <SellPriceFactor>0.25</SellPriceFactor>
+    </statBases>
+    <altitudeLayer>Item</altitudeLayer>
+    <alwaysHaulable>True</alwaysHaulable>
+    <tickerType>Never</tickerType>
+    <thingCategories>
+      <li>Headgear</li>
+    </thingCategories>
+    <comps>
+      <li>
+        <compClass>CompForbiddable</compClass>
+      </li>
+      <li>
+        <compClass>CompColorable</compClass>
+      </li>
+      <li>
+        <compClass>CompQuality</compClass>
+      </li>
+    </comps>
+  </ThingDef>
+
+
+
+
+
+  <!--capn-->
+
+  <ThingDef ParentName="ApparelBase">
+    <defName>Apparello_wassupcap</defName>
+    <label>Bicorne</label>
+    <description>Awe inspiring hat. Much like a kings with crowns, Only captain with bicornes are acknowledged as real deal.</description>
+    <graphicData>
+      <texPath>PieHats/Addyhat</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <costStuffCount>25</costStuffCount>
+    <stuffCategories>
+      <li>Fabric</li>
+      <li>Leathery</li>
+    </stuffCategories>
+    <statBases>
+	<MarketValue>110</MarketValue>
+      <ArmorRating_Blunt>0.03</ArmorRating_Blunt>
+      <ArmorRating_Sharp>0.03</ArmorRating_Sharp>
+      <Insulation_Cold>-1</Insulation_Cold>
+    </statBases>
+    <equippedStatOffsets>
+      <SocialImpact>0.25</SocialImpact>
+    </equippedStatOffsets>
+    <apparel>
+      <bodyPartGroups>
+        <li>UpperHead</li>
+      </bodyPartGroups>
+      <worngraphicPath>PieHats/Addyhat</worngraphicPath>
+      <layers>
+        <li>Overhead</li>
+      </layers>
+      <commonality>1</commonality>
+      <tags>
+        <li>PirateKing</li>
+      </tags>
+    </apparel>
+    <colorGenerator Class="ColorGenerator_Options">
+      <options>
+        <li>
+          <weight>4</weight>
+          <only>RGBA(1,1,1,1)</only>
+        </li>
+      </options>
+    </colorGenerator>
+  </ThingDef>
+
+
+  <ThingDef ParentName="ApparelBase">
+    <defName>Apparello_wassupcaptwo</defName>
+    <label>Captain's Tricorne</label>
+    <description>Tricorne with captain's insignia.</description>
+    <graphicData>
+      <texPath>PieHats/Cappyhat</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <costStuffCount>25</costStuffCount>
+    <stuffCategories>
+      <li>Fabric</li>
+      <li>Leathery</li>
+    </stuffCategories>
+    <statBases>
+	<MarketValue>150</MarketValue>
+      <ArmorRating_Blunt>0.05</ArmorRating_Blunt>
+      <ArmorRating_Sharp>0.04</ArmorRating_Sharp>
+      <Insulation_Cold>-1</Insulation_Cold>
+    </statBases>
+    <equippedStatOffsets>
+      <SocialImpact>0.15</SocialImpact>
+    </equippedStatOffsets>
+    <apparel>
+      <bodyPartGroups>
+        <li>UpperHead</li>
+      </bodyPartGroups>
+      <worngraphicPath>PieHats/Cappyhat</worngraphicPath>
+      <layers>
+        <li>Overhead</li>
+      </layers>
+      <commonality>1</commonality>
+      <tags>
+        <li>PirateKing</li>
+      </tags>
+    </apparel>
+    <colorGenerator Class="ColorGenerator_Options">
+      <options>
+        <li>
+          <weight>4</weight>
+          <only>RGBA(1,1,1,1)</only>
+        </li>
+      </options>
+    </colorGenerator>
+  </ThingDef>
+
+
+
+  <ThingDef ParentName="ApparelBase">
+    <defName>Apparello_Fancybrim</defName>
+    <label>duellist's hat</label>
+    <description>Well decorated brimmed hat.</description>
+    <graphicData>
+      <texPath>PieHats/Swashbuckler</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <costStuffCount>25</costStuffCount>
+    <stuffCategories>
+      <li>Fabric</li>
+      <li>Leathery</li>
+    </stuffCategories>
+    <statBases>
+	<MarketValue>120</MarketValue>
+      <ArmorRating_Blunt>0.04</ArmorRating_Blunt>
+      <ArmorRating_Sharp>0.02</ArmorRating_Sharp>
+      <Insulation_Cold>-1</Insulation_Cold>
+    </statBases>
+    <equippedStatOffsets>
+      <SocialImpact>0.05</SocialImpact>
+      <MeleeHitChance>0.02</MeleeHitChance>
+    </equippedStatOffsets>
+    <apparel>
+      <bodyPartGroups>
+        <li>UpperHead</li>
+      </bodyPartGroups>
+      <worngraphicPath>PieHats/Swashbuckler</worngraphicPath>
+      <layers>
+        <li>Overhead</li>
+      </layers>
+      <commonality>0.01</commonality>
+      <tags>
+        <li>PirateKing</li>
+        <li>PirateMate</li>
+      </tags>
+    </apparel>
+    <colorGenerator Class="ColorGenerator_Options">
+      <options>
+        <li>
+          <weight>4</weight>
+          <only>RGBA(1,1,1,1)</only>
+        </li>
+      </options>
+    </colorGenerator>
+  </ThingDef>
+
+
+
+  <ThingDef ParentName="ApparelBase">
+    <defName>Apparello_basicbrim</defName>
+    <label>Voodoo hat</label>
+    <description>Hat filled with mystery, and sometimes bunnies, paychecks, oranges or various other loot.</description>
+    <graphicData>
+      <texPath>PieHats/Feathercap</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <costStuffCount>30</costStuffCount>
+    <stuffCategories>
+      <li>Fabric</li>
+      <li>Leathery</li>
+    </stuffCategories>
+    <statBases>
+	<MarketValue>120</MarketValue>
+      <ArmorRating_Blunt>0.04</ArmorRating_Blunt>
+      <ArmorRating_Sharp>0.02</ArmorRating_Sharp>
+      <Insulation_Cold>-1</Insulation_Cold>
+    </statBases>
+    <equippedStatOffsets>
+      <SocialImpact>-0.15</SocialImpact>
+      <BrewingSpeed>0.02</BrewingSpeed>
+      <PsychicSensitivity>-0.1</PsychicSensitivity>
+    </equippedStatOffsets>
+    <apparel>
+      <bodyPartGroups>
+        <li>FullHead</li>
+      </bodyPartGroups>
+      <worngraphicPath>PieHats/Feathercap</worngraphicPath>
+      <layers>
+        <li>Overhead</li>
+      </layers>
+      <commonality>1</commonality>
+      <tags>
+        <li>Voodoo</li>
+      </tags>
+    </apparel>
+    <colorGenerator Class="ColorGenerator_Options">
+      <options>
+        <li>
+          <weight>4</weight>
+          <only>RGBA(1,1,1,1)</only>
+        </li>
+      </options>
+    </colorGenerator>
+  </ThingDef>
+
+
+
+  <ThingDef ParentName="ApparelBase">
+    <defName>Apparello_voodoolady</defName>
+    <label>Voodoo headwrap</label>
+    <description>Lump of decorated cloth.</description>
+    <graphicData>
+      <texPath>PieHats/Gyp</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <costStuffCount>30</costStuffCount>
+    <stuffCategories>
+      <li>Fabric</li>
+    </stuffCategories>
+    <statBases>
+	<MarketValue>110</MarketValue>
+      <Insulation_Cold>-1</Insulation_Cold>
+    </statBases>
+    <equippedStatOffsets>
+      <BrewingSpeed>0.02</BrewingSpeed>
+      <PsychicSensitivity>-0.1</PsychicSensitivity>
+    </equippedStatOffsets>
+    <apparel>
+      <bodyPartGroups>
+        <li>UpperHead</li>
+      </bodyPartGroups>
+      <worngraphicPath>PieHats/Gyp</worngraphicPath>
+      <layers>
+        <li>Overhead</li>
+      </layers>
+      <commonality>0.5</commonality>
+      <tags>
+        <li>Voodoo</li>
+      </tags>
+    </apparel>
+    <colorGenerator Class="ColorGenerator_Options">
+      <options>
+        <li>
+          <weight>4</weight>
+          <only>RGBA(1,1,1,1)</only>
+        </li>
+      </options>
+    </colorGenerator>
+  </ThingDef>
+
+
+
+  <ThingDef ParentName="ApparelBase">
+    <defName>Apparello_iratemoron</defName>
+    <label>morion</label>
+    <description>Very basic morion. Keeps your head safe from blows.. sometimes, if you're lucky.</description>
+    <graphicData>
+      <texPath>PieHats/Cong</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+	<thingCategories>
+      <li>ArmorHeadgear</li>
+    </thingCategories>
+    <statBases>
+      <MarketValue>200</MarketValue>
+      <ArmorRating_Blunt>0.2</ArmorRating_Blunt>
+      <ArmorRating_Sharp>0.2</ArmorRating_Sharp>
+    </statBases>
+    <apparel>
+      <bodyPartGroups>
+        <li>UpperHead</li>
+      </bodyPartGroups>
+      <worngraphicPath>PieHats/Cong</worngraphicPath>
+      <layers>
+        <li>Overhead</li>
+      </layers>
+      <commonality>0.01</commonality>
+      <tags>
+        <li>PirateMate</li>
+      </tags>
+    </apparel>
+    <colorGenerator Class="ColorGenerator_Options">
+      <options>
+        <li>
+          <weight>10</weight>
+          <only>RGBA(1,1,1,1)</only>
+        </li>
+        <li>
+          <weight>10</weight>
+          <only>RGBA(1,1,0.65,1)</only>
+        </li>
+        <li>
+          <weight>6</weight>
+          <min>RGBA(0.4,0.6,0.6,1)</min>
+          <max>RGBA(1,1,1,1)</max>
+        </li>
+      </options>
+    </colorGenerator>
+  </ThingDef>
+
+
+
+  <ThingDef ParentName="ApparelBase">
+    <defName>Apparello_pieband</defName>
+    <label>bandana</label>
+    <description>piece of cloth, worn on head.</description>
+    <graphicData>
+      <texPath>PieHats/Bandana</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <costStuffCount>25</costStuffCount>
+    <stuffCategories>
+      <li>Fabric</li>
+    </stuffCategories>
+    <statBases>
+	<MarketValue>80</MarketValue>
+      <ArmorRating_Blunt>0.01</ArmorRating_Blunt>
+      <ArmorRating_Sharp>0.01</ArmorRating_Sharp>
+      <Insulation_Cold>-1</Insulation_Cold>
+    </statBases>
+    <apparel>
+      <bodyPartGroups>
+        <li>UpperHead</li>
+      </bodyPartGroups>
+      <worngraphicPath>PieHats/Bandana</worngraphicPath>
+      <layers>
+        <li>Overhead</li>
+      </layers>
+      <commonality>0.01</commonality>
+      <tags>
+        <li>Pirate</li>
+      </tags>
+    </apparel>
+    <colorGenerator Class="ColorGenerator_Options">
+      <options>
+        <li>
+          <weight>4</weight>
+          <only>RGBA(1,1,1,1)</only>
+        </li>
+      </options>
+    </colorGenerator>
+  </ThingDef>
+
+
+
+  <ThingDef ParentName="ApparelBase">
+    <defName>Apparello_piebandtwo</defName>
+    <label>fancy bandana</label>
+    <description>piece of cloth, worn on head.</description>
+    <graphicData>
+      <texPath>PieHats/Scarf</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <costStuffCount>25</costStuffCount>
+    <stuffCategories>
+      <li>Fabric</li>
+    </stuffCategories>
+    <statBases>
+	<MarketValue>80</MarketValue>
+      <ArmorRating_Blunt>0.01</ArmorRating_Blunt>
+      <ArmorRating_Sharp>0.01</ArmorRating_Sharp>
+      <Insulation_Cold>-1</Insulation_Cold>
+    </statBases>
+    <equippedStatOffsets>
+      <SocialImpact>0.01</SocialImpact>
+    </equippedStatOffsets>
+    <apparel>
+      <bodyPartGroups>
+        <li>UpperHead</li>
+      </bodyPartGroups>
+      <worngraphicPath>PieHats/Scarf</worngraphicPath>
+      <layers>
+        <li>Overhead</li>
+      </layers>
+      <commonality>0.01</commonality>
+      <tags>
+        <li>Pirate</li>
+      </tags>
+    </apparel>
+    <colorGenerator Class="ColorGenerator_Options">
+      <options>
+        <li>
+          <weight>4</weight>
+          <only>RGBA(1,1,1,1)</only>
+        </li>
+      </options>
+    </colorGenerator>
+  </ThingDef>
+
+
+
+</ThingDefs>

@@ -1,0 +1,70 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<GameData>
+
+
+  <ThingDef Name="ResourceBase" Abstract="True">
+    <thingClass>ThingWithComps</thingClass>
+    <label>unspecified resource</label>
+    <category>Item</category>
+    <resourceReadoutPriority>Middle</resourceReadoutPriority>
+    <useHitPoints>true</useHitPoints>
+    <statBases>
+      <Flammability>1.0</Flammability>
+    </statBases>
+    <selectable>true</selectable>
+    <altitudeLayer>Item</altitudeLayer>
+    <stackLimit>75</stackLimit>
+    <comps>
+      <li>
+        <compClass>CompForbiddable</compClass>
+      </li>
+    </comps>
+    <alwaysHaulable>true</alwaysHaulable>
+    <drawGUIOverlay>true</drawGUIOverlay>
+    <rotatable>false</rotatable>
+    <pathCost>15</pathCost>
+  </ThingDef>
+
+
+
+
+
+
+  <ThingDef ParentName="ResourceBase">
+    <defName>SeaShantyNote</defName>
+    <label>lyrics ♪</label>
+    <description>It's a note with some lyrics scribbled on it. Used at sculpting table for Sea Shanty tablet</description>
+    <graphicData>
+      <texPath>ShantyNote</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <resourceReadoutPriority>Middle</resourceReadoutPriority>
+    <useHitPoints>true</useHitPoints>
+	<tradeability>Sellable</tradeability>
+    <statBases>
+      <MarketValue>2.0</MarketValue>
+      <MaxHitPoints>40</MaxHitPoints>
+    </statBases>
+    <thingCategories>
+      <li>Exotic</li>
+    </thingCategories>
+    <drawGUIOverlay>true</drawGUIOverlay>
+    <stuffProps>
+      <stuffAdjective>Piratey</stuffAdjective>
+      <categories>
+        <li>Shantylike</li>
+      </categories>
+      <constructEffect>ConstructMetal</constructEffect>
+      <color>(255,255,255)</color>
+      <soundImpactStuff>BulletImpactMetal</soundImpactStuff>
+      <soundMeleeHitSharp>MeleeHit_Metal_Sharp</soundMeleeHitSharp>
+      <soundMeleeHitBlunt>MeleeHit_Metal_Blunt</soundMeleeHitBlunt>
+      <statFactors>
+        <MaxHitPoints>1</MaxHitPoints>
+        <Beauty>5</Beauty>
+        <Flammability>0.2</Flammability>
+      </statFactors>
+    </stuffProps>
+  </ThingDef>
+
+</GameData>

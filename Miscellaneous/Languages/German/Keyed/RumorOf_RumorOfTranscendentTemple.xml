@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<LanguageData>
+
+	<!-- Incident - Rumor of an old transcendent temple -->
+	<RumorOfTranscendTemple_InitialMessage>Als ihr gemütlich mit euren Freunden aus {1} zusammensitzt, erzählt {0}, dass HE von einem alten Tempel gehört hat, der hier in der Nähe sein soll. Manche sagen, dass es sich hierbei um einen von nur wenigen verbleibenden Tempeln einer überragenden Rasse handelt. {0} meint, dass HE weiß, wo der Tempel ist.\n\nMöchtest du dieses Gerücht untersuchen?\nEs kann sein, dass dort nichts ist, oder es ist wie HE sagt und es finden sich dort ein paar Schätze.</RumorOfTranscendTemple_InitialMessage>
+	<RumorOfTranscendTemple_InitialMessageButtonAccept>Annehmen</RumorOfTranscendTemple_InitialMessageButtonAccept>
+	<RumorOfTranscendTemple_InitialMessageButtonReject>Ablehnen</RumorOfTranscendTemple_InitialMessageButtonReject>
+	<RumorOfTranscendTemple_InitialMessageRejected>Du gibst nicht viel auf die Gerüchte, die {0} die erzählt und ignorierst HIM.</RumorOfTranscendTemple_InitialMessageRejected>
+
+	<RumorOfTranscendTemple_SelectPawnsMessage>Wähle die Kolonisten, die Du zum Tempel schicken willst.\nACHTUNG: Sie werden etwa {0} Tage unterwegs sein!</RumorOfTranscendTemple_SelectPawnsMessage>
+	<RumorOfTranscendTemple_ButtonAssign>Team zuweisen</RumorOfTranscendTemple_ButtonAssign>
+	<RumorOfTranscendTemple_ButtonAssignError>Du kannst nicht alle schicken. Jemand muss zurückbleiben und auf die Kolonie aufpassen!</RumorOfTranscendTemple_ButtonAssignError>
+	<RumorOfTranscendTemple_ButtonUnassign>Vom Team entfernen</RumorOfTranscendTemple_ButtonUnassign>
+	<RumorOfTranscendTemple_ButtonAbort>Mission abbrechen</RumorOfTranscendTemple_ButtonAbort>
+	<RumorOfTranscendTemple_ButtonPostpone>Verschieben 6h</RumorOfTranscendTemple_ButtonPostpone>
+	<RumorOfTranscendTemple_ButtonSend>Sende Kolonisten</RumorOfTranscendTemple_ButtonSend>
+	<RumorOfTranscendTemple_ButtonSendError>Kann nicht senden. Es ist niemand zugewiesen.</RumorOfTranscendTemple_ButtonSendError>
+		
+	<RumorOfTranscendTemple_LetterLabel_Returned>Rückkehrer</RumorOfTranscendTemple_LetterLabel_Returned>
+	<RumorOfTranscendTemple_Message_ReturnedBase>Dein Team ist vom alten Tempel zurückgekehrt.</RumorOfTranscendTemple_Message_ReturnedBase>
+	<RumorOfTranscendTemple_Message_ReturnedNoTreasure>Sie haben dort ein paar alte Ruinen gefunden, aber selbst eine ausführliche Suche deines Teams brachte nichts interessantes zu Tage.\nSo wie es aussieht ist die überragende Rasse nichts weiter als ein Mythos.</RumorOfTranscendTemple_Message_ReturnedNoTreasure>
+	<RumorOfTranscendTemple_Message_ReturnedWithTreasure>Sie haben dort ein paar alte Ruinen gefunden.\nNach einer ausführlichen Suche hat dein Team den Eingang zu einem unerforschten unterirdischen Tempel gefunden.\nEr war riesig, er war majestätisch. Dieser Tempel hat tatsächlich bewiesen, dass es auf diesem Planeten eine uralte überragende Spezies gegeben hat.\nUnglücklicherweise haben sie nicht sonderlich aufgepasst und haben versehentlich einen Selbstzerstörungsmechanismus aktiviert, der den Tempel mit Lava geflutet hat.\nDeine Leute liefen so schnell sie konnten um aus dieser Todesfalle herauszugelangen. Der Großteil der Schätze ging im Chaos der Flucht verloren, aber sie schaften es folgendes zu retten..</RumorOfTranscendTemple_Message_ReturnedWithTreasure>
+	<RumorOfTranscendTemple_Message_ReturnedWithEnemy>Aber Vorsicht, scheinbar werden sie verfolgt!</RumorOfTranscendTemple_Message_ReturnedWithEnemy>
+	
+</LanguageData>

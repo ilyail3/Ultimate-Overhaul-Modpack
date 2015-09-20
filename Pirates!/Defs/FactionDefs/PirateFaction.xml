@@ -1,0 +1,79 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<FactionDefs>
+
+	<FactionDef>
+		<defName>PirateCrew</defName>
+		<label>Pirate</label>
+    <description>A baseline human, Hardened by the windy seas. Scurvy ridden specimen of base human, lots of Yarr. Bunch of untrustworthy cutthroats.</description>
+    <pawnsPlural>scurvy seadogs</pawnsPlural>
+    <requiredCountAtGameStart>1</requiredCountAtGameStart>
+    <canMakeRandomly>true</canMakeRandomly>
+    <raidCommonality>100</raidCommonality>
+    <canSiege>false</canSiege>
+    <canStageAttacks>true</canStageAttacks>
+	<appreciative>false</appreciative>
+    <leaderTitle>Captain</leaderTitle>
+    <startingGoodwill>
+      <min>-100</min>
+      <max>-10</max>
+    </startingGoodwill>
+		<factionNameMaker>NamerFactionPierats</factionNameMaker>
+		<pawnNameMaker>NamerPersonPierats</pawnNameMaker>
+		<techLevel>Medieval</techLevel>
+		<backstoryCategory>Raider</backstoryCategory>
+		<hairTags>
+			<li>Rural</li>
+			<li>Tribal</li>
+		</hairTags>
+    <naturalColonyGoodwill>
+      <min>-100</min>
+      <max>-10</max>
+    </naturalColonyGoodwill>
+    <pawnGroupMakers>
+      <li>
+	<options>
+          <li>
+            <selectionWeight>200</selectionWeight>
+            <kind>
+              <li>PirateGunner</li>
+            </kind>
+          </li>
+          <li>
+            <selectionWeight>80</selectionWeight>
+            <kind>
+              <li>PirateYarhar</li>
+            </kind>
+          </li>
+          <li>
+            <selectionWeight>100</selectionWeight>
+            <kind>
+              <li>PirateDuelist</li>
+            </kind>
+          </li>
+          <li>
+            <selectionWeight>100</selectionWeight>
+            <kind>
+              <li>PirateSwashbuckler</li>
+            </kind>
+          </li>
+          <li>
+            <selectionWeight>100</selectionWeight>
+            <kind>
+              <li>PirateVoodoo</li>
+            </kind>
+          </li>
+          <li>
+            <selectionWeight>200</selectionWeight>
+            <kind>
+              <li>PirateDeckswab</li>
+            </kind>
+          </li>
+        </options>
+      </li>
+    </pawnGroupMakers>
+    <homeIconPath>World/FactionHomes/DefaultHome</homeIconPath>
+    <homeIconColor>(55,150,255)</homeIconColor>
+  </FactionDef>
+  
+
+</FactionDefs>

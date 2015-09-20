@@ -1,0 +1,68 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<TerrainDefs>
+
+	<!-- ========== Sand ========== -->
+	<TerrainDef>
+    <DefName>SandFloor</DefName>
+    <label>sand floor</label>
+    <RenderPrecedence>350</RenderPrecedence>
+    <Description>Sand.</Description>
+    <texturePath>Terrain/Surfaces/Sand</texturePath>
+    <EdgeType>Fade</EdgeType>
+    <PathCost>4</PathCost>
+    <ScatterType>SoftDry</ScatterType>
+	<Fertility>0.06</Fertility>
+		<TakeFootprints>True</TakeFootprints>
+    <constructEffect>ConstructDirt</constructEffect>
+    <TerrainFilthDef>FilthSand</TerrainFilthDef>
+    <statBases>
+      <Beauty>0</Beauty>
+      <WorkToMake>25</WorkToMake>
+    </statBases>
+    <CostList>
+      <Sand>10</Sand>
+    </CostList>
+		<affordances>
+      <li>Light</li>
+      <li>Heavy</li>
+      <li>Diggable</li>
+    </affordances>
+	<terrainAffordanceNeeded>GrowSoil</terrainAffordanceNeeded>
+	<designationCategory>NaturalFloors</designationCategory>
+	<ResearchPrerequisite>CraftingI</ResearchPrerequisite>
+  </TerrainDef>
+	
+	<!-- =========== Gravel ============ -->
+	<TerrainDef>
+    <DefName>GravelFloor</DefName>
+    <label>gravel floor</label>
+    <RenderPrecedence>320</RenderPrecedence>
+    <Description>Gravel.</Description>
+    <texturePath>Terrain/Surfaces/Gravel</texturePath>
+    <EdgeType>Fade</EdgeType>
+    <PathCost>2</PathCost>
+    <ScatterType>Rocky</ScatterType>
+		<TakeFootprints>True</TakeFootprints>
+    <constructEffect>ConstructDirt</constructEffect>
+    <TerrainFilthDef>FilthDirt</TerrainFilthDef>
+		<Fertility>0.7</Fertility>
+    <statBases>
+      <Beauty>-1</Beauty>
+      <WorkToMake>25</WorkToMake>
+    </statBases>
+    <CostList>
+      <Gravel>10</Gravel>
+    </CostList>
+		<affordances>
+      <li>Light</li>
+      <li>Heavy</li>
+      <li>GrowSoil</li>
+      <li>Diggable</li>
+    </affordances>
+	<terrainAffordanceNeeded>GrowSoil</terrainAffordanceNeeded>
+	<designationCategory>NaturalFloors</designationCategory>
+	<ResearchPrerequisite>CraftingI</ResearchPrerequisite>
+  </TerrainDef>
+  
+
+</TerrainDefs>

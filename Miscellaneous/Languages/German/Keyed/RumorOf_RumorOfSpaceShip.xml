@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<LanguageData>
+
+	<!-- Incident - Rumor of an old space ship -->
+	<RumorOfSpaceShip_InitialMessage>Als ihr gemütlich mit euren Freunden aus {1} zusammensitzt, erzählt {0}, dass HE ein altes abgestürztes Raumschiff nahe der Kolonie gesehen hat. HECAP sagt, dass der Rumpf noch vollständig intakt aussah. Es wird also noch immer einige Schätze beinhalten.\n\nMöchtest du dieses Gerücht untersuchen?\nEs kann sein, dass dort nichts ist, oder es ist wie HE sagt und es finden sich dort ein paar Schätze.</RumorOfSpaceShip_InitialMessage>
+	<RumorOfSpaceShip_InitialMessageButtonAccept>Annehmen</RumorOfSpaceShip_InitialMessageButtonAccept>
+	<RumorOfSpaceShip_InitialMessageButtonReject>Ablehnen</RumorOfSpaceShip_InitialMessageButtonReject>
+	<RumorOfSpaceShip_InitialMessageRejected>Du gibst nicht viel auf die Gerüchte, die {0} die erzählt und ignorierst HIM.</RumorOfSpaceShip_InitialMessageRejected>
+
+	<RumorOfSpaceShip_SelectPawnsMessage>Wähle die Kolonisten, die Du zum Raumschiff schicken willst.\nACHTUNG: Sie werden etwa {0} Tage unterwegs sein!</RumorOfSpaceShip_SelectPawnsMessage>
+	<RumorOfSpaceShip_ButtonAssign>Team zuweisen</RumorOfSpaceShip_ButtonAssign>
+	<RumorOfSpaceShip_ButtonAssignError>Du kannst nicht alle schicken. Jemand muss zurückbleiben und auf die Kolonie aufpassen!</RumorOfSpaceShip_ButtonAssignError>
+	<RumorOfSpaceShip_ButtonUnassign>Vom Team entfernen</RumorOfSpaceShip_ButtonUnassign>
+	<RumorOfSpaceShip_ButtonAbort>Mission abbrechen</RumorOfSpaceShip_ButtonAbort>
+	<RumorOfSpaceShip_ButtonPostpone>Verschieben 6h</RumorOfSpaceShip_ButtonPostpone>
+	<RumorOfSpaceShip_ButtonSend>Sende Kolonisten</RumorOfSpaceShip_ButtonSend>
+	<RumorOfSpaceShip_ButtonSendError>Kann nicht senden. Es ist niemand zugewiesen.</RumorOfSpaceShip_ButtonSendError>
+		
+	<RumorOfSpaceShip_LetterLabel_Returned>Rückkehrer</RumorOfSpaceShip_LetterLabel_Returned>
+	<RumorOfSpaceShip_Message_ReturnedBase>Dein Team ist vom Absturzort des Raumschiffes zurückgekehrt.</RumorOfSpaceShip_Message_ReturnedBase>
+	<RumorOfSpaceShip_Message_ReturnedNoTreasure>Sie haben ein tiefes Loch im Boden gefunden, aber war es von einem abgestürzten Raumschiff?\nSelbst nach einer ausführlichen Suche kann dein Team nichts finden. Wenn das Raumschiff je hiergewesen war, jetzt ist es auf jeden Fall weg.</RumorOfSpaceShip_Message_ReturnedNoTreasure>
+	<RumorOfSpaceShip_Message_ReturnedWithTreasure>Sie haben ein tiefes Loch gefunden, das aussieht, als ob etwas großes hier eingeschlagen ist.\nNach einer ausführlichen Suche fand dein Team den Eingang in das Objekt. Sie haben hier makellose Räume und hell erleuchtete Flure gefunden, aber auch eine leichte Radioaktivität, die sie davon abgehalten hat länger zu bleiben.\nAber sie haben hier zumindest etwas Wertvolles finden können und kommen mit folgendem zurück..</RumorOfSpaceShip_Message_ReturnedWithTreasure>
+	<RumorOfSpaceShip_Message_ReturnedWithEnemy>Aber Vorsicht, scheinbar werden sie verfolgt!</RumorOfSpaceShip_Message_ReturnedWithEnemy>
+	
+</LanguageData>

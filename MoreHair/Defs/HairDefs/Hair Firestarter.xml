@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<DefPackage-HairDef>
+  
+<HairDef>
+    <label>Firestarter</label>
+    <hairGender>MaleUsually</hairGender>
+    <texPath>Hairs/Firestarter</texPath>
+    <defName>Prodigyhair</defName>
+		<hairTags>
+			<li>Punk</li>
+		</hairTags>
+  </HairDef>
+ 
+</DefPackage-HairDef>

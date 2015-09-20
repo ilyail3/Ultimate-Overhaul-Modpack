@@ -1,0 +1,89 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+
+  <!--================================ Abstract bases ======================================-->
+
+  <ThingDef Name="BuildingBase" Abstract="True">
+    <category>Building</category>
+    <soundImpactDefault>BulletImpactMetal</soundImpactDefault>
+    <selectable>true</selectable>
+    <drawerType>MapMeshAndRealTime</drawerType>
+    <terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
+    <repairEffect>Repair</repairEffect>
+    <leaveResourcesWhenKilled>true</leaveResourcesWhenKilled>
+    <filthLeaving>BuildingRubble</filthLeaving>
+  </ThingDef>
+
+  <ThingDef ParentName="BuildingBase" Name="ArtBuildingBase" Abstract="True">
+    <thingClass>Building_Art</thingClass>
+    <label>Art</label>
+    <description>A work of art.</description>
+    <altitudeLayer>Waist</altitudeLayer>
+    <passability>PassThroughOnly</passability>
+    <pathCost>10</pathCost>
+    <useHitPoints>true</useHitPoints>
+    <castEdgeShadows>true</castEdgeShadows>
+    <size>(1,1)</size>
+    <statBases>
+      <Flammability>1.0</Flammability>
+    </statBases>
+    <comps>
+      <li>
+        <compClass>CompQuality</compClass>
+      </li>
+      <li>
+        <compClass>CompArt</compClass>
+        <nameMaker>NamerShanty</nameMaker>
+        <descriptionMaker>SeaShantyDesk</descriptionMaker>
+      </li>
+    </comps>
+    <inspectorTabs>
+      <li>ITab_Art</li>
+    </inspectorTabs>
+    <recipeMaker>
+      <workSpeedStat>SculptingSpeed</workSpeedStat>
+      <workSkill>Artistic</workSkill>
+      <unfinishedThingDef>UnfinishedSculpture</unfinishedThingDef>
+      <effectWorking>Sculpt</effectWorking>
+      <soundWorking>Recipe_Sculpt</soundWorking>
+      <recipeUsers>
+        <li>TableSculpting</li>
+      </recipeUsers>
+    </recipeMaker>
+  </ThingDef>
+
+  
+  
+  <!--================================ Concrete ======================================-->
+
+  <ThingDef ParentName="ArtBuildingBase">
+    <defName>SculptureSeaShanty</defName>
+    <label>Sea Shanty</label>
+    <description>Popular pirate shanty.</description>
+    <graphicData>
+      <graphicClass>Graphic_Random</graphicClass>
+      <texPath>SeaShanty</texPath>
+    </graphicData>
+    <stuffCategories>
+      <li>Shantylike</li>
+    </stuffCategories>
+    <costStuffCount>1</costStuffCount>
+    <minifiedDef>MinifiedSeaShanty</minifiedDef>
+    <fillPercent>0.5</fillPercent>
+    <statBases>
+      <MaxHitPoints>90</MaxHitPoints>
+      <Beauty>5</Beauty>
+      <WorkToMake>10000</WorkToMake>
+    </statBases>
+  </ThingDef>
+
+
+
+
+
+
+
+
+
+</Defs>

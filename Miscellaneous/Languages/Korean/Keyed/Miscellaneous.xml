@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<LanguageData>
+
+	<!-- Locked Doors -->
+	<Miscellaneous_State>상태:</Miscellaneous_State>
+	<Miscellaneous_Locked>잠김</Miscellaneous_Locked>
+	<Miscellaneous_LockedOpenKey>잠김, 열쇠로 열림</Miscellaneous_LockedOpenKey>
+	<Miscellaneous_Unlocked>열림 (일반)</Miscellaneous_Unlocked>
+	<Miscellaneous_UnlockedOpen>모두에게 열림</Miscellaneous_UnlockedOpen>
+	<Miscellaneous_LocksUnlocksDoor>문의 잠금을 설정합니다.</Miscellaneous_LocksUnlocksDoor>
+	
+	
+	<!-- Nano Storage -->
+	<Miscellaneous_Mode>모드:</Miscellaneous_Mode>
+	<Miscellaneous_Receive>입력</Miscellaneous_Receive>
+	<Miscellaneous_Dispense>출력</Miscellaneous_Dispense>
+	<Miscellaneous_None>---</Miscellaneous_None>
+	<Miscellaneous_SwitchTopItem>맨 위 물건 변경.</Miscellaneous_SwitchTopItem>
+	<Miscellaneous_SwitchModeToOff>Switch mode to off.</Miscellaneous_SwitchModeToOff>
+	<Miscellaneous_SwitchModeToDispense>출력모드로 변경합니다.</Miscellaneous_SwitchModeToDispense>
+	<Miscellaneous_SwitchModeToReceive>입력모드로 변경합니다.</Miscellaneous_SwitchModeToReceive>
+	<Miscellaneous_StateEmpty>비어있음</Miscellaneous_StateEmpty>
+
+</LanguageData>

@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<LanguageData>
+  <!--
+	<ResearchTacticalComputer.label>Taktischer Computer</ResearchTacticalComputer.label>
+	<ResearchTacticalComputer.description>Erforsche einen Taktischen Computer.</ResearchTacticalComputer.description>
+	<ResearchTacticalComputer.descriptionDiscovered>Du kannst jetzt einen Taktischen Computer bauen, der dir zeigt, wer sich wo aufhält. Weiterhin stellt er zusätzliche Optionen bereit.</ResearchTacticalComputer.descriptionDiscovered>
+	-->
+	
+	<ResearchNanoStorage.label>Nano Lager</ResearchNanoStorage.label>
+	<ResearchNanoStorage.description>Erforsche wie man ein Nano-Lager baut.</ResearchNanoStorage.description>
+	<ResearchNanoStorage.descriptionDiscovered>Du kannst jetzt ein Nano-Lager bauen. Jedes Nano-Lager kann bis zu zehn Objekte verstauen.</ResearchNanoStorage.descriptionDiscovered>
+	
+	<ResearchNanoReplication.label>Nano Kopierer</ResearchNanoReplication.label>
+	<ResearchNanoReplication.description>Erforsche wie man die Nanobots modifizieren kann, um Objekte zu kopieren.</ResearchNanoReplication.description>
+	<ResearchNanoReplication.descriptionDiscovered>Du kannst jetzt einen Nano Drucker bauen. Mit ihm kannst du gescannte Objekte kopieren.</ResearchNanoReplication.descriptionDiscovered>
+	
+	
+	
+</LanguageData>

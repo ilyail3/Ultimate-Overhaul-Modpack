@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<LanguageData>
+
+	<!-- Trader -->
+	<TradeWithTraderPawn>Handeln mit {0}</TradeWithTraderPawn>
+
+	<LabelLetterTrader>Händler</LabelLetterTrader>
+    <SingleTraderArrives>Ein Händler aus {0} ist eingetroffen.\n\nHECAP heißt {1}.</SingleTraderArrives>
+    <GroupTradersArrive>Ein Händler aus {0} ist mit HISen Leibwächtern eingetroffen.</GroupTradersArrive>
+	<TradersLeaving>Händler aus {0} gehen. Sie sind mit dir zufrieden.</TradersLeaving>
+	<TraderDefendSuccess>Händler wurde erfolgreich verteidigt.</TraderDefendSuccess>
+	<TraderHarmed>Ein Händler wurde verletzt. Er gibt dir die Schuld..</TraderHarmed>
+	
+</LanguageData>

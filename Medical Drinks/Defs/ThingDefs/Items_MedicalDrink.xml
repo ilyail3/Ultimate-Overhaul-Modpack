@@ -1,0 +1,67 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<Defs>
+
+  <ThingDef Name="MealBase" Abstract="True">
+    <label>meal</label>
+    <thingClass>Medicine</thingClass>
+    <category>Item</category>
+    <useHitPoints>true</useHitPoints>
+    <selectable>true</selectable>
+    <statBases>
+      <MaxHitPoints>50</MaxHitPoints>
+      <Flammability>1.0</Flammability>
+    </statBases>
+    <altitudeLayer>Item</altitudeLayer>
+    <stackLimit>10</stackLimit>
+    <tickerType>Rare</tickerType>
+    <description>"Meal lacks desc."</description>
+    <socialPropernessMatters>true</socialPropernessMatters>
+    <thingCategories>
+      <li>Medicine</li>
+    </thingCategories>
+    <alwaysHaulable>true</alwaysHaulable>
+    <comps>
+      <li>
+        <compClass>CompForbiddable</compClass>
+      </li>
+    </comps>
+    <pathCost>15</pathCost>
+    <resourceReadoutPriority>Last</resourceReadoutPriority>
+    <drawGUIOverlay>true</drawGUIOverlay>
+	<ingestible>
+      <maxNumToIngestAtOnce>1</maxNumToIngestAtOnce>
+    </ingestible>
+  </ThingDef>
+
+  <ThingDef ParentName="MealBase">
+    <defName>MedicalDrink</defName>
+    <label>antibiotics</label>
+    <description>A concentrated extract out of xerigium and some hops. Tastes awful but boosts the immune system.</description>
+	<graphicData>
+    <texPath>Things/Item/Drug/MedicalDrink</texPath>
+    <graphicClass>Graphic_Single</graphicClass>
+	</graphicData>
+    <rotatable>false</rotatable>
+    <stackLimit>25</stackLimit>
+    <statBases>
+      <DeteriorationRate>0</DeteriorationRate>
+      <MarketValue>25</MarketValue>
+	  <SellPriceFactor>0.2</SellPriceFactor>
+    </statBases>
+    <ingestible>
+      <nutrition>0.08</nutrition>
+      <maxNumToIngestAtOnce>1</maxNumToIngestAtOnce>
+      <preferability>NeverForNutrition</preferability>
+      <soundEat>Ingest_Beer</soundEat>
+      <isPleasureDrug>false</isPleasureDrug>
+      <hediffGivers>
+        <li>
+          <chance>1</chance>
+          <hediffDef>MedicalDrink</hediffDef>
+        </li>
+      </hediffGivers>
+    </ingestible>
+  </ThingDef>
+  
+</Defs>

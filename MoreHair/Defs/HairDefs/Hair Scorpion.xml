@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<DefPackage-HairDef>
+  
+<HairDef>
+    <label>Scorpion Tail</label>
+    <hairGender>Any</hairGender>
+    <texPath>Hairs/Scorpiontail</texPath>
+    <defName>Scorpiontail</defName>
+		<hairTags>
+			<li>Punk</li>
+			<li>Tribal</li>
+		</hairTags>
+  </HairDef>
+ 
+</DefPackage-HairDef>

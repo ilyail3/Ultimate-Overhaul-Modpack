@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<LanguageData>
+
+	<!-- Colonist Groups -->
+	<ColonistGroups_GroupSaved>Gruppe {0} mit {1} Kolonisten gespeichert.</ColonistGroups_GroupSaved>
+	<ColonistGroups_GroupNotSet_PositionMode>Gruppe {0} nicht gesetzt. Benutze Shift+{1} zum Speichern kampfbereiter Kolonisten.</ColonistGroups_GroupNotSet_PositionMode>
+	<ColonistGroups_GroupInvalid_PositionMode>Gruppe {0} nicht gesetzt. Es wurden keine kampfbereiten Kolonisten gefunden.</ColonistGroups_GroupInvalid_PositionMode>
+	<ColonistGroups_GroupNotSet_SelectionMode>Gruppe {0} nicht gesetzt. Benutze Shift+{1} zum Speichern ausgewählter Kolonisten.</ColonistGroups_GroupNotSet_SelectionMode>
+	<ColonistGroups_GroupInvalid_SelectionMode>Gruppe {0} nicht gesetzt. Es wurden keine ausgewählten Kolonisten gefunden.</ColonistGroups_GroupInvalid_SelectionMode>
+	<ColonistGroups_GroupPositioned>Gruppe {0} ist auf dem Weg.</ColonistGroups_GroupPositioned>
+	<ColonistGroups_GroupSelected>Gruppe {0} ist ausgewählt.</ColonistGroups_GroupSelected>
+	<ColonistGroups_PawnsUndrafted>Alle Kolonisten ohne aktive Aufgabe freigegeben.</ColonistGroups_PawnsUndrafted>
+	<ColonistGroups_GroupSelectionActive>Gruppen-Modus ist aktiv.</ColonistGroups_GroupSelectionActive>
+	<ColonistGroups_GroupPositioningActive>Positionier-Modus ist aktiv.</ColonistGroups_GroupPositioningActive>
+
+	<!-- Colonist Groups: Help Screen -->
+	<ColonistGroups_GameStartHelp_prt1>Miscellaneous: Kolonisten Gruppierung</ColonistGroups_GameStartHelp_prt1>
+	<ColonistGroups_GameStartHelp_prt2>Die Tasten 6, 7, 8, 9 können benutzt werden, um festzulegen, wo die Kolonisten hingehen sollen.\nBenutze sie wie folgt: Versetze die Kolonisten, denen du eine Position zuweisen willst in den Kampfmodus, und positionier sie an der gewünschten Position. Anschließend speichere diese Positionen mit SHIFT+7 (für Gruppe 7). Um sie jetzt wieder an ihre Positionen zu rufen, drücke nur die 7.\nDieses kann mit den Tasten 6, 7, 8 und 9 gemacht werden.\nHinweis: Wenn der Gruppierungsmodus (Wechseln: SHIFT+0) aktiv ist, werden die Kolonisten nur ausgewählt, laufen aber nicht an ihre Positionen!</ColonistGroups_GameStartHelp_prt2>
+	<ColonistGroups_GameStartHelp_prt3>Taste 0 hat eine andere Funktion: Wenn du sie drückst, werden alle Kolonisten, die keinen aktiven Job haben, aus dem Kampfmodus entlassen.\nDrücke SHIFT+0 um den Gruppierungsmodus (6-9) zwischen POSITION und GRUPPE zu wechseln.\nWeiterhin sind die Tasten SHIFT+Q und SHIFT+E belegt: SHIFT+Q schickt deinen Kolonisten ins Bett. SHIFT+E schickt deinen Kolonisten zum Essen. Sie werden aber nur gehen, wenn sie hungrig oder müde genug sind.\nWeiterhin ist da noch F1. Mit dieser Taste springt die Kamera zufällig in die Heimzone.\n\nAlle Tasten können bei den Tastenzuweisungen in den Optionen auf Wunsch umbelegt werden.</ColonistGroups_GameStartHelp_prt3>
+	<ColonistGroups_GameStartHelp_openHelp>Diese Hilfe kannst du jederzeit mit SHIFT+K wieder einblenden.</ColonistGroups_GameStartHelp_openHelp>
+	<ColonistGroups_Letter_InfoOpenHelp>Information</ColonistGroups_Letter_InfoOpenHelp>
+	<ColonistGroups_Message_InfoOpenHelp>Du kannst die Hilfe von Miscellaneous: Kolonisten Gruppierung jederzeit aufrufen.\n\nZum Lesen drücke einfach die Tasten SHIFT+K.</ColonistGroups_Message_InfoOpenHelp>
+
+
+</LanguageData>

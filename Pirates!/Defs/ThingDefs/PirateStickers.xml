@@ -1,0 +1,180 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<ThingDefs>
+
+  <ThingDef Name="BaseMeleeWeapon" Abstract="True">
+    <category>Item</category>
+    <thingClass>ThingWithComps</thingClass>
+    <equipmentType>Primary</equipmentType>
+    <pathCost>10</pathCost>
+    <useHitPoints>True</useHitPoints>
+    <selectable>True</selectable>
+    <graphicData>
+      <onGroundRandomRotateAngle>35</onGroundRandomRotateAngle>
+    </graphicData>
+    <drawGUIOverlay>true</drawGUIOverlay>
+    <statBases>
+      <MaxHitPoints>100</MaxHitPoints>
+      <Flammability>1.0</Flammability>
+      <DeteriorationRate>0.5</DeteriorationRate>
+      <SellPriceFactor>0.25</SellPriceFactor>
+    </statBases>
+    <altitudeLayer>Item</altitudeLayer>
+    <alwaysHaulable>True</alwaysHaulable>
+    <tickerType>Never</tickerType>
+    <techLevel>Medieval</techLevel>
+    <weaponTags>
+      <li>PirateMelee</li>
+    </weaponTags>
+    <thingCategories>
+      <li>WeaponsMelee</li>
+    </thingCategories>
+    <comps>
+      <li>
+        <compClass>CompForbiddable</compClass>
+      </li>
+      <li>
+        <compClass>CompEquippable</compClass>
+      </li>
+      <li>
+        <compClass>CompQuality</compClass>
+      </li>
+      <li>
+        <compClass>CompArt</compClass>
+        <nameMaker>NamerMeleeWeapon</nameMaker>
+        <descriptionMaker>ArtWeaponMelee</descriptionMaker>
+        <minQualityForArtistic>Excellent</minQualityForArtistic>
+      </li>
+    </comps>
+    <recipeMaker>
+      <workSpeedStat>SmithingSpeed</workSpeedStat>
+      <workSkill>Crafting</workSkill>
+      <effectWorking>Smith</effectWorking>
+      <soundWorking>Recipe_Smith</soundWorking>
+      <recipeUsers>
+        <li>TableSmithing</li>
+		<li>PrimitiveWeaponCraftingWorkTable</li>
+      </recipeUsers>
+      <unfinishedThingDef>UnfinishedWeapon</unfinishedThingDef>
+    </recipeMaker>
+    <inspectorTabs>
+      <li>ITab_Art</li>
+    </inspectorTabs>
+  </ThingDef>
+
+
+
+  <ThingDef Name="BaseMeleeWeapon_Sharp" ParentName="BaseMeleeWeapon" Abstract="True">
+    <recipeMaker>
+    <defaultIngredientFilter>
+      <categories>
+        <li>Root</li>
+      </categories>
+      <exceptedThingDefs>
+        <li>Silver</li>
+        <li>Gold</li>
+        <li>WoodLog</li>
+      </exceptedThingDefs>
+    </defaultIngredientFilter>
+    </recipeMaker>
+  </ThingDef>
+
+
+  
+  
+  
+  
+  <!-- ============================================================== -->
+
+  <ThingDef ParentName="BaseMeleeWeapon_Sharp">
+    <defName>PirateSlasher_Rapier</defName>
+    <label>sabre</label>
+    <description>Curved swords.. curved. swords.</description>
+    <graphicData>
+      <texPath>PirateClashers/Rapier</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <soundInteract>InteractPistol</soundInteract>
+    <costStuffCount>50</costStuffCount>
+    <statBases>
+      <WorkToMake>20000</WorkToMake>
+      <MeleeWeapon_DamageAmount>8</MeleeWeapon_DamageAmount>
+      <MeleeWeapon_Cooldown>1</MeleeWeapon_Cooldown>
+    </statBases>
+    <equippedAngleOffset>-65</equippedAngleOffset>
+    <stuffCategories>
+      <li>Metallic</li>
+      <li>Woody</li>
+    </stuffCategories>
+    <verbs>
+      <li>
+        <verbClass>Verb_MeleeAttack</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <meleeDamageDef>Stab</meleeDamageDef>
+      </li>
+    </verbs>
+  </ThingDef>
+
+
+
+  <ThingDef ParentName="BaseMeleeWeapon_Sharp">
+    <defName>PirateSlasher_Sabre</defName>
+    <label>longsword</label>
+    <description>Curved swords.. curved. swords.</description>
+    <graphicData>
+      <texPath>PirateClashers/Sabre</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <soundInteract>InteractPistol</soundInteract>
+    <costStuffCount>120</costStuffCount>
+    <statBases>
+      <WorkToMake>40000</WorkToMake>
+      <MeleeWeapon_DamageAmount>17</MeleeWeapon_DamageAmount>
+      <MeleeWeapon_Cooldown>2.5</MeleeWeapon_Cooldown>
+    </statBases>
+    <equippedAngleOffset>-65</equippedAngleOffset>
+    <stuffCategories>
+      <li>Metallic</li>
+      <li>Woody</li>
+    </stuffCategories>
+    <verbs>
+      <li>
+        <verbClass>Verb_MeleeAttack</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <meleeDamageDef>Cut</meleeDamageDef>
+      </li>
+    </verbs>
+  </ThingDef>
+
+
+
+
+  <ThingDef ParentName="BaseMeleeWeapon_Sharp">
+    <defName>PirateSlasher_Cutlass</defName>
+    <label>cutlass</label>
+    <description>for cutting AND for carving! a multitool at it's best. </description>
+    <graphicData>
+      <texPath>PirateClashers/Cutlass</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <soundInteract>InteractPistol</soundInteract>
+    <costStuffCount>120</costStuffCount>
+    <statBases>
+      <WorkToMake>6000</WorkToMake>
+      <MeleeWeapon_DamageAmount>11</MeleeWeapon_DamageAmount>
+      <MeleeWeapon_Cooldown>1.66</MeleeWeapon_Cooldown>
+    </statBases>
+    <equippedAngleOffset>-65</equippedAngleOffset>
+    <stuffCategories>
+      <li>Metallic</li>
+    </stuffCategories>
+    <verbs>
+      <li>
+        <verbClass>Verb_MeleeAttack</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <meleeDamageDef>Cut</meleeDamageDef>
+      </li>
+    </verbs>
+  </ThingDef>
+
+</ThingDefs>

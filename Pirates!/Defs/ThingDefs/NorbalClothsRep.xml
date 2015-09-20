@@ -1,0 +1,126 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ThingDefs>
+
+  <ThingDef Name="ApparelBase" Abstract="True">
+    <thingClass>Apparel</thingClass>
+    <category>Item</category>
+    <selectable>True</selectable>
+    <pathCost>10</pathCost>
+    <useHitPoints>True</useHitPoints>
+    <graphicData>
+      <onGroundRandomRotateAngle>35</onGroundRandomRotateAngle>
+    </graphicData>
+    <drawGUIOverlay>true</drawGUIOverlay>
+    <statBases>
+      <MaxHitPoints>100</MaxHitPoints>
+      <Flammability>1.0</Flammability>
+      <DeteriorationRate>1</DeteriorationRate>
+      <SellPriceFactor>0.25</SellPriceFactor>
+    </statBases>
+    <altitudeLayer>Item</altitudeLayer>
+    <alwaysHaulable>True</alwaysHaulable>
+    <tickerType>Never</tickerType>
+    <comps>
+      <li>
+        <compClass>CompForbiddable</compClass>
+      </li>
+      <li>
+        <compClass>CompColorable</compClass>
+      </li>
+      <li>
+        <compClass>CompQuality</compClass>
+      </li>
+    </comps>
+  </ThingDef>
+
+
+  <ThingDef ParentName="ApparelBase">
+    <defName>Norballo_Stripants</defName>
+    <label>Striped trousers</label>
+    <description>striped trousers with suspenders to ensure they stay on even on the most wrathful winds. True Seaman fashion</description>
+    <graphicData>
+      <texPath>Apparel/Suspenders</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <stuffCategories>
+      <li>Fabric</li>
+    </stuffCategories>
+	<thingCategories>
+      <li>Pants</li>
+    </thingCategories>
+    <statBases>
+	<MarketValue>120</MarketValue>
+      <WorkToMake>10000</WorkToMake>
+      <Insulation_Cold>-5</Insulation_Cold>
+    </statBases>
+    <costStuffCount>55</costStuffCount>
+    <apparel>
+      <bodyPartGroups>
+        <li>Legs</li>
+      </bodyPartGroups>
+      <worngraphicPath>Apparel/Suspenders</worngraphicPath>
+      <layers>
+        <li>Middle</li>
+      </layers>
+      <commonality>100</commonality>
+      <tags>
+	<li>Pirate</li>
+	<li>PirateMate</li>
+	<li>PirateKing</li>
+        <li>Norbal</li>
+        <li>NorbalKingly</li>
+        <li>NorbalArcher</li>
+        <li>NorbalWarrior</li>
+      </tags>
+<defaultOutfitTags>
+        <li>Worker</li>
+      </defaultOutfitTags>
+    </apparel>
+  </ThingDef>
+
+  <ThingDef ParentName="ApparelBase">
+    <defName>Norballo_Shirt</defName>
+    <label>mundane shirt</label>
+    <description>very mundane shirt. slightly warmer than most base clothing</description>
+    <graphicData>
+      <texPath>Apparel/ShirtBasic</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <stuffCategories>
+      <li>Leathery</li>
+    </stuffCategories>
+    <costStuffCount>60</costStuffCount>
+	<thingCategories>
+      <li>Shirts</li>
+    </thingCategories>
+    <statBases>
+      <WorkToMake>5000</WorkToMake>
+	  <MarketValue>100</MarketValue>
+      <Insulation_Cold>-6</Insulation_Cold>
+      <Insulation_Heat>-2</Insulation_Heat>
+    </statBases>
+    <apparel>
+      <bodyPartGroups>
+        <li>Torso</li>
+      </bodyPartGroups>
+      <worngraphicPath>Apparel/ShirtBasic</worngraphicPath>
+      <layers>
+        <li>OnSkin</li>
+      </layers>
+      <commonality>100</commonality>
+      <tags>
+	<li>Pirate</li>
+	<li>PirateMate</li>
+	<li>PirateKing</li>
+        <li>Norbal</li>
+        <li>NorbalKingly</li>
+        <li>NorbalArcher</li>
+        <li>NorbalWarrior</li>
+      </tags>
+<defaultOutfitTags>
+        <li>Worker</li>
+      </defaultOutfitTags>
+    </apparel>
+  </ThingDef>
+
+</ThingDefs>

@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<DefPackage-HairDef>
+
+<HairDef>
+    <label>Hairulean</label>
+    <hairGender>Female</hairGender>
+    <texPath>Hairs/Zelda</texPath>
+    <defName>Zelda</defName>
+		<hairTags>
+			<li>Rural</li>
+		</hairTags>
+  </HairDef>
+ 
+</DefPackage-HairDef>

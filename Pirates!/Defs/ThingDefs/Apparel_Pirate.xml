@@ -1,0 +1,219 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ThingDefs>
+
+  <ThingDef Name="ApparelBase" Abstract="True">
+    <thingClass>Apparel</thingClass>
+    <category>Item</category>
+    <selectable>True</selectable>
+    <pathCost>10</pathCost>
+    <useHitPoints>True</useHitPoints>
+    <graphicData>
+      <onGroundRandomRotateAngle>35</onGroundRandomRotateAngle>
+    </graphicData>
+    <drawGUIOverlay>true</drawGUIOverlay>
+    <statBases>
+      <MaxHitPoints>100</MaxHitPoints>
+      <Flammability>1.0</Flammability>
+      <DeteriorationRate>1</DeteriorationRate>
+      <SellPriceFactor>0.15</SellPriceFactor>
+    </statBases>
+    <altitudeLayer>Item</altitudeLayer>
+    <alwaysHaulable>True</alwaysHaulable>
+    <tickerType>Never</tickerType>
+    <comps>
+      <li>
+        <compClass>CompForbiddable</compClass>
+      </li>
+      <li>
+        <compClass>CompColorable</compClass>
+      </li>
+      <li>
+        <compClass>CompQuality</compClass>
+      </li>
+    </comps>
+  </ThingDef>
+
+
+
+
+
+			<!-- Captain -->
+
+  <ThingDef ParentName="ApparelBase">
+    <defName>Apparello_CaptainCook</defName>
+    <description>Captain's uniform jacket. "Aweeeigh the anchor" says he, who wears apparel such as this. "Keelhaul all the landlubbers! have em scrub the starfish of me galleon!"</description>
+    <label>captain's jacket</label>
+    <graphicData>
+      <texPath>PirateCaptain/Cassie</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <costStuffCount>90</costStuffCount>
+    <stuffCategories>
+      <li>Fabric</li>
+      <li>Leathery</li>
+    </stuffCategories>
+	<thingCategories>
+      <li>Shirts</li>
+    </thingCategories>
+    <statBases>
+	<MarketValue>180</MarketValue>
+      <ArmorRating_Blunt>0.04</ArmorRating_Blunt>
+      <ArmorRating_Sharp>0.08</ArmorRating_Sharp>
+      <ArmorRating_Heat>0.03</ArmorRating_Heat>
+      <Insulation_Cold>-15</Insulation_Cold>
+      <Insulation_Heat>3</Insulation_Heat>
+    </statBases>
+    <equippedStatOffsets>
+      <SocialImpact>0.15</SocialImpact>
+      <MoveSpeed>-0.1</MoveSpeed>
+    </equippedStatOffsets>
+    <apparel>
+      <bodyPartGroups>
+        <li>Torso</li>
+        <li>Arms</li>
+      </bodyPartGroups>
+      <worngraphicPath>PirateCaptain/Cassie</worngraphicPath>
+      <layers>
+        <li>Shell</li>
+      </layers>
+      <commonality>1</commonality>
+      <tags>
+	<li>PirateKing</li>
+	<li>PirateMate</li>
+	<li>Voodoo</li>
+        <li>Industrial</li>
+      </tags>
+      <defaultOutfitTags>
+        <li>Worker</li>
+      </defaultOutfitTags>
+    </apparel>
+    <colorGenerator Class="ColorGenerator_Options">
+			<options>
+				<li>
+					<weight>6</weight>
+					<max>RGBA(1,1,1,1)</max>
+					<min>RGBA(0.70,0.70,0.70,1)</min>
+				</li>
+			</options>
+		</colorGenerator>
+  </ThingDef>
+
+				<!-- Scurvydog -->
+
+  <ThingDef ParentName="ApparelBase">
+    <defName>Apparello_PirateSkull</defName>
+    <description>Seaworthy vest.</description>
+    <label>buccaneer jacket</label>
+    <graphicData>
+      <texPath>Jacket/Jacket</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <costStuffCount>75</costStuffCount>
+    <stuffCategories>
+      <li>Fabric</li>
+      <li>Leathery</li>
+    </stuffCategories>
+	<thingCategories>
+      <li>Shirts</li>
+    </thingCategories>
+    <statBases>
+	<MarketValue>110</MarketValue>
+      <ArmorRating_Blunt>0.01</ArmorRating_Blunt>
+      <ArmorRating_Sharp>0.08</ArmorRating_Sharp>
+      <ArmorRating_Heat>0.03</ArmorRating_Heat>
+      <Insulation_Cold>-15</Insulation_Cold>
+    </statBases>
+    <equippedStatOffsets>
+      <MoveSpeed>-0.04</MoveSpeed>
+    </equippedStatOffsets>
+    <apparel>
+      <bodyPartGroups>
+        <li>Torso</li>
+      </bodyPartGroups>
+      <worngraphicPath>Jacket/Jacket</worngraphicPath>
+      <layers>
+        <li>Shell</li>
+      </layers>
+      <commonality>1</commonality>
+      <tags>
+	<li>Pirate</li>
+	<li>PirateMate</li>
+	<li>PirateKing</li>
+      </tags>
+      <defaultOutfitTags>
+        <li>Worker</li>
+      </defaultOutfitTags>
+    </apparel>
+    <colorGenerator Class="ColorGenerator_Options">
+			<options>
+				<li>
+					<weight>6</weight>
+					<max>RGBA(1,1,1,1)</max>
+					<min>RGBA(0.70,0.70,0.70,1)</min>
+				</li>
+			</options>
+		</colorGenerator>
+  </ThingDef>
+
+
+
+
+
+  <ThingDef ParentName="ApparelBase">
+    <defName>Apparello_Cuirasso</defName>
+    <label>Cuirass</label>
+    <description>Ye olde metal cuirass.</description>
+    <graphicData>
+      <texPath>Cuirass/Cuirass</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+	<thingCategories>
+      <li>ArmorShirts</li>
+    </thingCategories>
+    <statBases>
+      <MaxHitPoints>200</MaxHitPoints>
+      <MarketValue>600</MarketValue>
+      <ArmorRating_Blunt>0.60</ArmorRating_Blunt>
+      <ArmorRating_Sharp>0.40</ArmorRating_Sharp>
+    </statBases>
+    <equippedStatOffsets>
+      <MoveSpeed>-0.08</MoveSpeed>
+    </equippedStatOffsets>
+    <apparel>
+      <bodyPartGroups>
+        <li>Torso</li>
+      </bodyPartGroups>
+      <worngraphicPath>Cuirass/Cuirass</worngraphicPath>
+      <layers>
+        <li>Shell</li>
+      </layers>
+      <commonality>1</commonality>
+      <tags>
+        <li>PirateMate</li>
+      </tags>
+      <defaultOutfitTags>
+        <li>Soldier</li>
+      </defaultOutfitTags> </apparel>
+    <colorGenerator Class="ColorGenerator_Options">
+      <options>
+        <li>
+          <weight>10</weight>
+          <only>RGBA(1,1,1,1)</only>
+        </li>
+        <li>
+          <weight>10</weight>
+          <only>RGBA(1,1,0.65,1)</only>
+        </li>
+        <li>
+          <weight>6</weight>
+          <min>RGBA(0.4,0.6,0.6,1)</min>
+          <max>RGBA(1,1,1,1)</max>
+        </li>
+      </options>
+    </colorGenerator>
+  </ThingDef>
+
+
+
+
+</ThingDefs>

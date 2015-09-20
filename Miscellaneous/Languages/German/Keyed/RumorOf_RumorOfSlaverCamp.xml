@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<LanguageData>
+
+	<!-- Incident - Rumor of Slaver Camp -->
+	<RumorOfSlaverCamp_InitialMessage>Als ihr gemütlich mit euren Freunden aus {1} zusammensitzt, erzählt dir {0} von einem Gerücht eines Sklavenlagers in der Nähe. HECAP sagt, dass sie HIS Schwester gefangen genommen haben und fragt, ob ihr helfen könnted sie in einen Hinterhalt laufen zu lassen, so dass HE sie befreien kann.\n\nWillst du dich auf dieses Bestreben einlassen?</RumorOfSlaverCamp_InitialMessage>
+	<RumorOfSlaverCamp_InitialMessageButtonAccept>Annehmen</RumorOfSlaverCamp_InitialMessageButtonAccept>
+	<RumorOfSlaverCamp_InitialMessageButtonReject>Ablehnen</RumorOfSlaverCamp_InitialMessageButtonReject>
+	<RumorOfSlaverCamp_InitialMessageRejected>Du hast keine Zeit für sowas. {0} bleibt verzweifelt zurück und geht weinend weiter.</RumorOfSlaverCamp_InitialMessageRejected>
+
+	<RumorOfSlaverCamp_SelectPawnsMessage>Wähle die Kolonisten, die Du zum Sklavenlager schicken willst.\nACHTUNG: Sie werden etwa {0} Tage unterwegs sein!</RumorOfSlaverCamp_SelectPawnsMessage>
+	<RumorOfSlaverCamp_ButtonAssign>Team zuweisen</RumorOfSlaverCamp_ButtonAssign>
+	<RumorOfSlaverCamp_ButtonAssignError>Du kannst nicht alle schicken. Jemand muss zurückbleiben und auf die Kolonie aufpassen!</RumorOfSlaverCamp_ButtonAssignError>
+	<RumorOfSlaverCamp_ButtonUnassign>Vom Team entfernen</RumorOfSlaverCamp_ButtonUnassign>
+	<RumorOfSlaverCamp_ButtonAbort>Mission abbrechen</RumorOfSlaverCamp_ButtonAbort>
+	<RumorOfSlaverCamp_ButtonPostpone>Verschieben 6h</RumorOfSlaverCamp_ButtonPostpone>
+	<RumorOfSlaverCamp_ButtonSend>Sende Kolonisten</RumorOfSlaverCamp_ButtonSend>
+	<RumorOfSlaverCamp_ButtonSendError>Kann nicht senden. Es ist niemand zugewiesen.</RumorOfSlaverCamp_ButtonSendError>
+		
+	<RumorOfSlaverCamp_LetterLabel_Returned>Rückkehrer</RumorOfSlaverCamp_LetterLabel_Returned>
+	<RumorOfSlaverCamp_Message_ReturnedBase>Dein Team ist vom Sklavenlager zurückgekehrt.</RumorOfSlaverCamp_Message_ReturnedBase>
+	<RumorOfSlaverCamp_Message_ReturnedNoTreasure>Sie haben keinerlei Anzeichen eines Lagers gefunden.\nWenn es jemals hier war, wart ihr viel zu spät. Sie haben das Gebiet schon lange verlassen.</RumorOfSlaverCamp_Message_ReturnedNoTreasure>
+	<RumorOfSlaverCamp_Message_ReturnedWithTreasure>Sie haben das Lager gefunden, es vorsichtig ausgekundschaftet und dann einen Hinterhalt für die Sklavenhändler vorbereitet.\nNach einem kurzen Gefecht waren alle Sklavenhändler entweder tot oder bewußtlos.\nNachdem sie die Sklaven befreiten, stießen sie auch auf die gefangene Schwester. Es gab ein tränenreiches Wiedersehen.\nIn einer Truhe fanden sie sogar etwas lohnendes zum mitbringen..</RumorOfSlaverCamp_Message_ReturnedWithTreasure>
+	<RumorOfSlaverCamp_Message_ReturnedWithEnemy>Aber vorsicht, einige der Sklavenhändler haben überlebt und wollen Rache!</RumorOfSlaverCamp_Message_ReturnedWithEnemy>
+
+	<RumorOfSlaverCamp_Message_ReturnedWithNewColonist>Einer der Sklaven wollte der Kolonie beitreten. Bitte heißt NAME willkommen.</RumorOfSlaverCamp_Message_ReturnedWithNewColonist>
+	
+</LanguageData>

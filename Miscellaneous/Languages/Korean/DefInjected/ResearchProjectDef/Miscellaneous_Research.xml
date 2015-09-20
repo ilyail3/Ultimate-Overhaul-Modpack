@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<LanguageData>
+  <!--
+	<ResearchTacticalComputer.label>전술 컴퓨터</ResearchTacticalComputer.label>
+	<ResearchTacticalComputer.description>전술 컴퓨터를 만들 수 있습니다.</ResearchTacticalComputer.description>
+	<ResearchTacticalComputer.descriptionDiscovered>이제 전술 컴퓨터를 만들 수 있습니다. 모든 아군 및 적군이 어디에 있는지 확인할 수 있습니다. 몇 개의 추가 기능도 있습니다.</ResearchTacticalComputer.descriptionDiscovered>
+	-->
+	
+	<ResearchNanoStorage.label>나노 보관소</ResearchNanoStorage.label>
+	<ResearchNanoStorage.description>나노 기술로 저장 공간을 확장할 방법을 연구합니다.</ResearchNanoStorage.description>
+	<ResearchNanoStorage.descriptionDiscovered>이제 나노 보관소를 만들 수 있습니다. 각각의 나노 보관소에는 최대 열 개의 물건을 넣을 수 있습니다.</ResearchNanoStorage.descriptionDiscovered>
+	
+	<ResearchNanoReplication.label>나노 복제기</ResearchNanoReplication.label>
+	<ResearchNanoReplication.description>나노 로봇들로 물체를 복제하는 법을 연구합니다.</ResearchNanoReplication.description>
+	<ResearchNanoReplication.descriptionDiscovered>이제 나노 복제기를 만들 수 있습니다. 스캔한 아이템을 복제할 수 있습니다.</ResearchNanoReplication.descriptionDiscovered>
+	
+	
+	
+</LanguageData>

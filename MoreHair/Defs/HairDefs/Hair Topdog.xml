@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<DefPackage-HairDef>
+  
+<HairDef>
+    <label>Topdog</label>
+    <hairGender>Male</hairGender>
+    <texPath>Hairs/topdog</texPath>
+    <defName>topdog</defName>
+		<hairTags>
+			<li>Urban</li>
+			<li>Punk</li>
+		</hairTags>
+  </HairDef>
+ 
+</DefPackage-HairDef>

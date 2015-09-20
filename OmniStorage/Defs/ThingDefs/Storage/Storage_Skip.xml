@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<Buildings>
+
+  <ThingDef Name="BuildingBase" Abstract="True">
+    <category>Building</category>
+    <thingClass>Building</thingClass>
+    <soundImpactDefault>BulletImpactMetal</soundImpactDefault>
+    <selectable>true</selectable>
+    <drawerType>MapMeshAndRealTime</drawerType>
+    <terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
+    <repairEffect>Repair</repairEffect>
+    <leaveResourcesWhenKilled>true</leaveResourcesWhenKilled>
+    <filthLeaving>BuildingRubble</filthLeaving>
+  </ThingDef>
+
+  <!--============================== Storage ===========================-->
+
+  <ThingDef ParentName="BuildingBase">
+    <defName>Storage_Skip</defName>
+    <label>Skip 2x3</label>
+    <thingClass>Building_Storage</thingClass>
+    <graphicData>
+	<texPath>Things/Building/Furniture/Skip</texPath>
+    <graphicClass>Graphic_Single</graphicClass>
+	<drawSize>(2,3)</drawSize>
+	</graphicData>
+    <altitudeLayer>Waist</altitudeLayer>
+    <passability>PassThroughOnly</passability>
+    <pathCost>20</pathCost>
+    <castEdgeShadows>true</castEdgeShadows>
+    <statBases>
+      <MaxHitPoints>60</MaxHitPoints>
+      <WorkToMake>780</WorkToMake>
+      <Flammability>1.0</Flammability>
+      <Beauty>10</Beauty>
+    </statBases>
+    <stuffCategories>
+      <li>Metallic</li>
+    </stuffCategories>
+    <costStuffCount>60</costStuffCount>
+    <description>Haulers carry materials here for storage.</description>
+    <size>(2,3)</size>
+    <killedLeavings>
+      <ChunkSlagSteel>1</ChunkSlagSteel>
+    </killedLeavings>
+    <filthLeaving>BuildingRubble</filthLeaving>
+    <building>
+      <preventDeterioration>true</preventDeterioration>
+      <fixedStorageSettings>
+        <priority>Important</priority>
+        <filter>
+          <categories>
+            <li>Ammo</li>
+			<li>Manufactured</li>
+			<li>Electronics</li>
+          </categories>
+        </filter>
+      </fixedStorageSettings>
+    </building>
+    <inspectorTabs>
+      <li>ITab_Storage</li>
+    </inspectorTabs>
+    <designationCategory>Storage</designationCategory>
+    <staticSunShadowHeight>0.025</staticSunShadowHeight>
+    <surfaceType>Item</surfaceType>
+  </ThingDef>
+
+  <ThingDef ParentName="BuildingBase">
+    <defName>Storage_SkipSmall</defName>
+    <label>Skip 1x1</label>
+    <thingClass>Building_Storage</thingClass>
+    <graphicData>
+	<texPath>Things/Building/Furniture/Skip1x1</texPath>
+    <graphicClass>Graphic_Single</graphicClass>
+	</graphicData>
+    <altitudeLayer>Waist</altitudeLayer>
+    <passability>PassThroughOnly</passability>
+    <pathCost>20</pathCost>
+    <castEdgeShadows>true</castEdgeShadows>
+		<placingDraggableDimensions>1</placingDraggableDimensions>
+    <statBases>
+      <MaxHitPoints>60</MaxHitPoints>
+      <WorkToMake>390</WorkToMake>
+      <Flammability>1.0</Flammability>
+      <Beauty>2</Beauty>
+    </statBases>
+    <stuffCategories>
+      <li>Metallic</li>
+    </stuffCategories>
+    <costStuffCount>15</costStuffCount>
+    <description>Haulers carry materials here for storage.</description>
+    <size>(1,1)</size>
+    <killedLeavings>
+      <ChunkSlagSteel>1</ChunkSlagSteel>
+    </killedLeavings>
+    <filthLeaving>BuildingRubble</filthLeaving>
+    <building>
+      <preventDeterioration>true</preventDeterioration>
+      <fixedStorageSettings>
+        <priority>Important</priority>
+        <filter>
+          <categories>
+			<li>Ammo</li>
+			<li>Manufactured</li>
+			<li>Electronics</li>
+          </categories>
+        </filter>
+      </fixedStorageSettings>
+    </building>
+    <inspectorTabs>
+      <li>ITab_Storage</li>
+    </inspectorTabs>
+    <designationCategory>Storage</designationCategory>
+    <staticSunShadowHeight>0.025</staticSunShadowHeight>
+    <surfaceType>Item</surfaceType>
+  </ThingDef>
+
+</Buildings>

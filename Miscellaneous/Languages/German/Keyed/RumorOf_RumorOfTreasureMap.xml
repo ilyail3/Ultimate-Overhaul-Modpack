@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<LanguageData>
+
+	<!-- Incident - Rumor of Treasure Map -->
+	<RumorOfTreasureMap_InitialMessage>Nach einem Besuch eurer Freunde aus {1} bemerkst du, dass {0} ein altes Stück Pergament verloren hat. Nach einem genaueren Blick darauf meinst du, dass es sich hierbei um eine Schatzkarte handeln könnte.\n\nMöchtest du auf Schatzjagd gehen?\nVielleicht findet sich etwas sehr gutes am markierten Ort.</RumorOfTreasureMap_InitialMessage>
+	<RumorOfTreasureMap_InitialMessageButtonAccept>Annehmen</RumorOfTreasureMap_InitialMessageButtonAccept>
+	<RumorOfTreasureMap_InitialMessageButtonReject>Ablehnen</RumorOfTreasureMap_InitialMessageButtonReject>
+	<RumorOfTreasureMap_InitialMessageRejected>Du machst dir nicht viel aus einem bemahlten Stück Pergament und schmeißt es ins Feuer.</RumorOfTreasureMap_InitialMessageRejected>
+
+	<RumorOfTreasureMap_SelectPawnsMessage>Wähle die Kolonisten, die Du zum markierten Ort schicken willst.\nACHTUNG: Sie werden etwa {0} Tage unterwegs sein!</RumorOfTreasureMap_SelectPawnsMessage>
+	<RumorOfTreasureMap_ButtonAssign>Team zuweisen</RumorOfTreasureMap_ButtonAssign>
+	<RumorOfTreasureMap_ButtonAssignError>Du kannst nicht alle schicken. Jemand muss zurückbleiben und auf die Kolonie aufpassen!</RumorOfTreasureMap_ButtonAssignError>
+	<RumorOfTreasureMap_ButtonUnassign>Vom Team entfernen</RumorOfTreasureMap_ButtonUnassign>
+	<RumorOfTreasureMap_ButtonAbort>Mission abbrechen</RumorOfTreasureMap_ButtonAbort>
+	<RumorOfTreasureMap_ButtonPostpone>Verschieben 6h</RumorOfTreasureMap_ButtonPostpone>
+	<RumorOfTreasureMap_ButtonSend>Sende Kolonisten</RumorOfTreasureMap_ButtonSend>
+	<RumorOfTreasureMap_ButtonSendError>Kann nicht senden. Es ist niemand zugewiesen.</RumorOfTreasureMap_ButtonSendError>
+		
+	<RumorOfTreasureMap_LetterLabel_Returned>Rückkehrer</RumorOfTreasureMap_LetterLabel_Returned>
+	<RumorOfTreasureMap_Message_ReturnedBase>Dein Team ist vom Ort der Schatzkarte zurückgekehrt.</RumorOfTreasureMap_Message_ReturnedBase>
+	<RumorOfTreasureMap_Message_ReturnedNoTreasure>Sie haben einige überwucherte Hügel und etwas, das wie eine aussichtsreiche Position für eine Mine aussieht, gefunden, aber für eine 'Schatzkarte' war die Reise nur eine einzige Enttäuschung.</RumorOfTreasureMap_Message_ReturnedNoTreasure>
+	<RumorOfTreasureMap_Message_ReturnedWithTreasure>Sie haben einige überwucherte Hügel und ein nettes Tal mit einem kleinen Fluss gefunden.\nNach einer ausführlichen Suche und mit Hilfe der Karte, hat dein Team eine vergrabene Truhe gefunden. Innen fand sich eine Notiz, irgendetwas über Schmuggler, und auch ein richtiger kleiner Schatz. Sie bringen folgendes mit zurück..</RumorOfTreasureMap_Message_ReturnedWithTreasure>
+	<RumorOfTreasureMap_Message_ReturnedWithEnemy>Aber Vorsicht, jemand verfolgt sie!</RumorOfTreasureMap_Message_ReturnedWithEnemy>
+
+</LanguageData>
