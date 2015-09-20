@@ -1,17 +1,23 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 
 <ModMetaData>
-  <name>Ultimate Overhaul Modpack V1.0191</name>
+  <name>Ultimate Overhaul Modpack V1.0192</name>
   <author>Ninefinger</author>
   <url>https://ludeon.com/forums/index.php?topic=11934.0</url>
   <targetVersion>Alpha 12d</targetVersion>
   <description>Collaboration of multiple mods created by some of the most amazing modders on the planet.</description>
   <!--
-Update (19/09/15)
-V1.0191
+Update (20/09/15)
+V1.0192
 A12d Modpack
-+Miscellaneous
-   -Changed default priority level of nano storage to Low
++Stroyent
+   -Minor fixes with stroyent resource
+   
++Extreme temperature shields
+   -Added recipes for advanced shooter shields
+
++SCA11Core
+   -Rebalanced raw fruit nutrition
    
    
 
