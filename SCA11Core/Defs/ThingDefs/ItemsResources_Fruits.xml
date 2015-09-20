@@ -39,7 +39,7 @@
   <ThingDef Abstract="True" ParentName="PlantProductBase" Name="RawFoodBase">
     <ingestible>
       <preferability>Awful</preferability>
-      <nutrition>.25</nutrition>
+      <nutrition>0.10</nutrition>
       <eatEffect>EatVegetarian</eatEffect>
       <soundEat>RawVegetable_Eat</soundEat>
     </ingestible>
@@ -66,7 +66,7 @@
       <MarketValue>2</MarketValue>
     </statBases>
     <ingestible>
-	<nutrition>.25</nutrition>
+	<nutrition>0.10</nutrition>
       <joy>0.006</joy>
     </ingestible>
     <comps>
@@ -89,7 +89,7 @@
       <MarketValue>3.5</MarketValue>
     </statBases>
     <ingestible>
-	 <nutrition>.25</nutrition>
+	 <nutrition>0.10</nutrition>
       <joy>0.006</joy>
     </ingestible>
     <comps>
@@ -112,7 +112,7 @@
       <MarketValue>5</MarketValue>
     </statBases>
     <ingestible>
-	 <nutrition>.25</nutrition>
+	 <nutrition>0.10</nutrition>
       <joy>0.006</joy>
     </ingestible>
     <comps>
@@ -135,7 +135,7 @@
       <MarketValue>4</MarketValue>
     </statBases>
     <ingestible>
-	 <nutrition>.25</nutrition>
+	 <nutrition>0.10</nutrition>
       <joy>0.006</joy>
     </ingestible>
     <comps>
@@ -158,7 +158,7 @@
       <MarketValue>4.5</MarketValue>
     </statBases>
     <ingestible>
-	 <nutrition>.25</nutrition>
+	 <nutrition>0.10</nutrition>
       <joy>0.006</joy>
     </ingestible>
     <comps>
@@ -181,7 +181,7 @@
       <MarketValue>4</MarketValue>
     </statBases>
     <ingestible>
-	 <nutrition>.25</nutrition>
+	 <nutrition>0.10</nutrition>
       <joy>0.006</joy>
     </ingestible>
     <comps>
@@ -203,6 +203,7 @@
       <MarketValue>1.4</MarketValue>
     </statBases>
     <ingestible>
+	<nutrition>0.08</nutrition>
       <joy>0.004</joy>
     </ingestible>
     <comps>
@@ -224,6 +225,7 @@
       <MarketValue>3</MarketValue>
     </statBases>
     <ingestible>
+	<nutrition>0.10</nutrition>
       <joy>0.008</joy>
     </ingestible>
     <comps>
