@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<NameDefs>
+<!--Gender possibilities:
+Either
+Male
+Female
+-->
+  
+  <NameDef>
+    <defName>NameNinefinger</defName>
+    <first>Nine</first>
+    <nick>Ninefinger</nick>
+    <last>Fingerling</last>
+    <genderPossibility>Male</genderPossibility>
+  </NameDef>
+  
+  <NameDef>
+    <defName>NameMidnight</defName>
+    <first>Midnight</first>
+    <nick>Games</nick>
+    <last>Snack</last>
+    <genderPossibility>Male</genderPossibility>
+  </NameDef>
+  
+  <NameDef>
+    <defName>NameFox</defName>
+    <first>Fox</first>
+    <nick>Foxador</nick>
+    <last>Trotter</last>
+    <genderPossibility>Male</genderPossibility>
+  </NameDef>
+  
+  <NameDef>
+    <defName>NamePebble</defName>
+    <first>Rough</first>
+    <nick>Smooth Stone</nick>
+    <last>Pebble</last>
+    <genderPossibility>Male</genderPossibility>
+  </NameDef>
+  
+  <NameDef>
+    <defName>NameTynan</defName>
+    <first>Tynan</first>
+    <nick>Tiny</nick>
+    <last>Sylvester</last>
+    <genderPossibility>Male</genderPossibility>
+  </NameDef>
+  
+  <NameDef>
+    <defName>NameSandra</defName>
+    <first>Sandra</first>
+    <nick>Girl Next Door</nick>
+    <last>Bullock</last>
+    <genderPossibility>Female</genderPossibility>
+  </NameDef>
+  
+  <NameDef>
+    <defName>NameAngelina</defName>
+    <first>Angelina</first>
+    <nick>Angie</nick>
+    <last>Jolie</last>
+    <genderPossibility>Female</genderPossibility>
+  </NameDef>
+  
+  <NameDef>
+    <defName>NameJennifer</defName>
+    <first>Jennifer</first>
+    <nick>Jenny</nick>
+    <last>Aniston</last>
+    <genderPossibility>Female</genderPossibility>
+  </NameDef>
+  
+  <NameDef>
+    <defName>NameBrad</defName>
+    <first>Brad</first>
+    <nick>Pitt-bull</nick>
+    <last>Pit</last>
+    <genderPossibility>Male</genderPossibility>
+  </NameDef>
+  
+  <NameDef>
+    <defName>NameBruce</defName>
+    <first>Bruce</first>
+    <nick>Bruno</nick>
+    <last>Willis</last>
+    <genderPossibility>Male</genderPossibility>
+  </NameDef>
+  
+  <NameDef>
+    <defName>NameStuart</defName>
+    <first>Stuart</first>
+    <nick>Mighty Mouse</nick>
+    <last>Little</last>
+    <genderPossibility>Male</genderPossibility>
+  </NameDef>
+  
+  <NameDef>
+    <defName>NameKeanu</defName>
+    <first>Keanu</first>
+    <nick>Neo</nick>
+    <last>Reeves</last>
+    <genderPossibility>Male</genderPossibility>
+  </NameDef>
+  
+  <NameDef>
+    <defName>NameRobert</defName>
+    <first>Robert</first>
+    <nick>Iron Man</nick>
+    <last>Downey Jr.</last>
+    <genderPossibility>Male</genderPossibility>
+  </NameDef>
+  
+  <NameDef>
+    <defName>NameShia</defName>
+    <first>Shia</first>
+    <nick>Just Do It!</nick>
+    <last>labeouf</last>
+    <genderPossibility>Male</genderPossibility>
+  </NameDef>
+  
+  <NameDef>
+    <defName>NameFred</defName>
+    <first>Fred</first>
+    <nick>Durst of times</nick>
+    <last>Durst</last>
+    <genderPossibility>Male</genderPossibility>
+  </NameDef>
+  
+  <NameDef>
+    <defName>NameMarcus</defName>
+    <first>Marcus</first>
+    <nick>The Robot</nick>
+    <last>Droidicus</last>
+    <genderPossibility>Male</genderPossibility>
+  </NameDef>
+
+  <NameDef>
+    <defName>NameJohn</defName>
+    <first>John</first>
+    <nick>Everyman</nick>
+    <last>Smith</last>
+    <genderPossibility>Male</genderPossibility>
+  </NameDef>
+
+  <NameDef>
+    <defName>NameAimee</defName>
+    <first>Aimee</first>
+    <nick>Pretty</nick>
+    <last>Smith</last>
+    <genderPossibility>Female</genderPossibility>
+  </NameDef>
+
+  <NameDef>
+    <defName>NameLiam</defName>
+    <first>Liam</first>
+    <nick>The Unknown</nick>
+    <last>Smith</last>
+    <genderPossibility>Male</genderPossibility>
+  </NameDef>
+  
+</NameDefs>

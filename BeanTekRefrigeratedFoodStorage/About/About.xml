@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ModMetaData>
+  <name>RefrigeratedFoodStorage</name>
+  <author>Beany</author>
+  <targetVersion>Modpack</targetVersion>
+  <description>
+  Version 1.2
+  
+  A hopper that uses power to magically preserve it's contents.
+  A food tray rack that uses to power to magically preserve it's contents.
+  
+  Credit to skullywag for the tray rack artwork.
+  </description>
+</ModMetaData>

@@ -1,0 +1,79 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ThingDefs>
+
+  <ThingDef Name="HatBase" Abstract="True">
+    <thingClass>Apparel</thingClass>
+    <category>Item</category>
+    <selectable>True</selectable>
+    <pathCost>10</pathCost>
+    <useHitPoints>True</useHitPoints>
+    <graphicData>
+      <onGroundRandomRotateAngle>35</onGroundRandomRotateAngle>
+    </graphicData>
+    <drawGUIOverlay>true</drawGUIOverlay>
+    <statBases>
+      <MaxHitPoints>100</MaxHitPoints>
+      <Flammability>1.0</Flammability>
+      <DeteriorationRate>1</DeteriorationRate>
+      <SellPriceFactor>0.25</SellPriceFactor>
+    </statBases>
+    <altitudeLayer>Item</altitudeLayer>
+    <alwaysHaulable>True</alwaysHaulable>
+    <tickerType>Never</tickerType>
+    <thingCategories>
+      <li>Headgear</li>
+    </thingCategories>
+    <comps>
+      <li>
+        <compClass>CompForbiddable</compClass>
+      </li>
+      <li>
+        <compClass>CompColorable</compClass>
+      </li>
+      <li>
+        <compClass>CompQuality</compClass>
+      </li>
+    </comps>
+  </ThingDef>
+
+  <ThingDef ParentName="HatBase">
+    <defName>Apparel_Tribal</defName>
+    <label>feathered headdress</label>
+    <description>This feathered headdress offers little in the way of protection, however anyone who wears it feels the spirit of the warrior stirring from deep within.</description>
+    <graphicData>
+      <texPath>Hats/Display/Tribal</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <statBases>
+      <MarketValue>150</MarketValue>
+    </statBases>
+    <equippedStatOffsets>
+      <MoveSpeed>0.1</MoveSpeed>
+      <AimingDelayFactor>-0.1</AimingDelayFactor>
+      <ShootingAccuracy>0.01</ShootingAccuracy>
+    </equippedStatOffsets>
+    <apparel>
+      <bodyPartGroups>
+        <li>UpperHead</li>
+      </bodyPartGroups>
+      <worngraphicPath>Hats/Tribal</worngraphicPath>
+      <layers>
+        <li>Overhead</li>
+      </layers>
+      <commonality>0.06</commonality>
+      <tags>
+        <li>Tribal</li>
+      </tags>
+    </apparel>
+    <colorGenerator Class="ColorGenerator_Options">
+      <options>
+        <li>
+          <weight>4</weight>
+          <min>RGBA(0.3,0.3,0.3,1)</min>
+          <max>RGBA(0.9,0.9,0.9,1)</max>
+        </li>
+      </options>
+    </colorGenerator>
+  </ThingDef>
+  
+</ThingDefs>

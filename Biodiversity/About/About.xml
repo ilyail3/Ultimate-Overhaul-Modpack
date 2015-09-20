@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ModMetaData>
+	<name>Biodiversity</name>
+	<author>Igabod</author>
+	<targetVersion>Modpack</targetVersion>
+	<description>
+	
+	Adds some friendly and not so friendly animals that wander around inviting your colonists to shoot them.
+	
+	Credits due to:
+
+		Shinzy for the textures for Crashbug, Furx, Lacosdile, Megaslug, Rim Ram, Spindlecrib, and Snork.
+		Pidggit for the textures for the Rimdog and Rimwolf.
+		Haplo for the .dll and XML to make animals aggressive.
+		Kirid for allowing me to include his Alpha Muffalos. As well as flies, mosquitos, and tarantulas.
+		Giraffe for suggesting the Quadhog and my friend Ellie for naming it.
+		Neocryptorian for assisting with updating to alpha 10f.
+		
+	</description>
+</ModMetaData>

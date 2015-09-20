@@ -1,0 +1,1101 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<PawnKindDef Name="AnimalBase" Abstract="True">
+  </PawnKindDef>
+  
+  
+    <PawnKindDef ParentName="AnimalBase">
+		<defName>Fluffy_MiniMaineCoon</defName>
+		<label>miniature Maine Coon</label>
+		<race>Fluffy_DomesticCat</race>
+		<combatPower>25</combatPower>
+		<lifeStages>
+			<li>
+				<label>miniature Maine Coon Kitten</label>
+				<bodyGraphicData>
+					<texPath>DomesticCat/MaineCoon</texPath>
+					<drawSize>.3</drawSize>
+					<color>(255,255,255)</color>
+				</bodyGraphicData>
+				<dessicatedBodyGraphicData>
+					<texPath>Things/Pawn/Animal/CritterDessicatedSmall</texPath>
+					<drawSize>.3</drawSize>
+				</dessicatedBodyGraphicData>
+			</li>
+			<li>
+				<bodyGraphicData>
+					<texPath>DomesticCat/MaineCoon</texPath>
+					<drawSize>.6</drawSize>
+					<color>(255,255,255)</color>
+					<shadowData>
+						<volume>(0.25, 0.3, 0.25)</volume>
+						<offset>(0,0,-0.15)</offset>
+					</shadowData>
+				</bodyGraphicData>
+				<dessicatedBodyGraphicData>
+					<texPath>Things/Pawn/Animal/CritterDessicatedSmall</texPath>
+					<drawSize>.4</drawSize>
+				</dessicatedBodyGraphicData>
+			</li>
+			<li>
+				<bodyGraphicData>
+					<texPath>DomesticCat/MaineCoon</texPath>
+					<drawSize>.75</drawSize>
+					<color>(255,255,255)</color>
+					<shadowData>
+						<volume>(0.3, 0.4, 0.3)</volume>
+						<offset>(0,0,-0.15)</offset>
+					</shadowData>
+				</bodyGraphicData>
+				<dessicatedBodyGraphicData>
+					<texPath>Things/Pawn/Animal/CritterDessicatedSmall</texPath>
+					<drawSize>.4</drawSize>
+				</dessicatedBodyGraphicData>
+			</li>
+		</lifeStages>
+		<wildSpawn_spawnWild>false</wildSpawn_spawnWild>
+	</PawnKindDef>
+
+		<PawnKindDef ParentName="AnimalBase">
+		<defName>Fluffy_MaineCoon</defName>
+		<label>Maine Coon</label>
+		<race>Fluffy_DomesticCat</race>
+		<combatPower>50</combatPower>
+		<lifeStages>
+			<li>
+				<label>Maine Coon Kitten</label>
+				<bodyGraphicData>
+					<texPath>DomesticCat/MaineCoon</texPath>
+					<drawSize>.4</drawSize>
+					<color>(255,255,255)</color>
+				</bodyGraphicData>
+				<dessicatedBodyGraphicData>
+					<texPath>Things/Pawn/Animal/CritterDessicatedSmall</texPath>
+					<drawSize>.3</drawSize>
+				</dessicatedBodyGraphicData>
+			</li>
+			<li>
+				<bodyGraphicData>
+					<texPath>DomesticCat/MaineCoon</texPath>
+					<drawSize>.8</drawSize>
+					<color>(255,255,255)</color>
+					<shadowData>
+						<volume>(0.25, 0.3, 0.25)</volume>
+						<offset>(0,0,-0.15)</offset>
+					</shadowData>
+				</bodyGraphicData>
+				<dessicatedBodyGraphicData>
+					<texPath>Things/Pawn/Animal/CritterDessicatedSmall</texPath>
+					<drawSize>.7</drawSize>
+				</dessicatedBodyGraphicData>
+			</li>
+			<li>
+				<bodyGraphicData>
+					<texPath>DomesticCat/MaineCoon</texPath>
+					<drawSize>1</drawSize>
+					<color>(255,255,255)</color>
+					<shadowData>
+						<volume>(0.3, 0.4, 0.3)</volume>
+						<offset>(0,0,-0.15)</offset>
+					</shadowData>
+				</bodyGraphicData>
+				<dessicatedBodyGraphicData>
+					<texPath>Things/Pawn/Animal/CritterDessicatedSmall</texPath>
+					<drawSize>.9</drawSize>
+				</dessicatedBodyGraphicData>
+			</li>
+		</lifeStages>
+		<wildSpawn_spawnWild>false</wildSpawn_spawnWild>
+	</PawnKindDef>
+	
+	<PawnKindDef ParentName="AnimalBase">
+		<defName>Fluffy_EuropeanShorthair</defName>
+		<label>European Shorthair</label>
+		<race>Fluffy_DomesticCat</race>
+		<combatPower>40</combatPower>
+		<lifeStages>
+			<li>
+				<label>European Shorthair Kitten</label>
+				<bodyGraphicData>
+					<texPath>DomesticCat/EuropeanShorthair</texPath>
+					<drawSize>.4</drawSize>
+					<color>(255,255,255)</color>
+				</bodyGraphicData>
+				<dessicatedBodyGraphicData>
+					<texPath>Things/Pawn/Animal/CritterDessicatedSmall</texPath>
+					<drawSize>.3</drawSize>
+				</dessicatedBodyGraphicData>
+			</li>
+			<li>
+				<bodyGraphicData>
+					<texPath>DomesticCat/EuropeanShorthair</texPath>
+					<drawSize>.7</drawSize>
+					<color>(255,255,255)</color>
+					<shadowData>
+						<volume>(0.25, 0.3, 0.25)</volume>
+						<offset>(0,0,-0.15)</offset>
+					</shadowData>
+				</bodyGraphicData>
+				<dessicatedBodyGraphicData>
+					<texPath>Things/Pawn/Animal/CritterDessicatedSmall</texPath>
+					<drawSize>.75</drawSize>
+				</dessicatedBodyGraphicData>
+			</li>
+			<li>
+				<bodyGraphicData>
+					<texPath>DomesticCat/EuropeanShorthair</texPath>
+					<drawSize>.85</drawSize>
+					<color>(255,255,255)</color>
+					<shadowData>
+						<volume>(0.3, 0.4, 0.3)</volume>
+						<offset>(0,0,-0.15)</offset>
+					</shadowData>
+				</bodyGraphicData>
+				<dessicatedBodyGraphicData>
+					<texPath>Things/Pawn/Animal/CritterDessicatedSmall</texPath>
+					<drawSize>.9</drawSize>
+				</dessicatedBodyGraphicData>
+			</li>
+		</lifeStages>
+		<wildSpawn_spawnWild>false</wildSpawn_spawnWild>
+	</PawnKindDef>
+
+<!--==============================Alphalo======================-->
+
+	<PawnKindDef ParentName="AnimalBase">
+    <defName>Muffalo</defName>
+    <label>muffalo</label>
+    <race>Muffalo</race>
+    <combatPower>90</combatPower>
+    <wildSpawn_spawnWild>true</wildSpawn_spawnWild>
+    <wildSpawn_EcoSystemWeight>1</wildSpawn_EcoSystemWeight>
+    <wildSpawn_GroupSizeRange>
+      <min>1</min>
+      <max>4</max>
+    </wildSpawn_GroupSizeRange>
+    <lifeStages>
+      <li>
+        <label>muffalo calf</label>
+        <bodyGraphicData>
+          <texPath>Things/Pawn/Animal/Muffalo</texPath>
+          <drawSize>1.5</drawSize>
+          <shadowData>
+            <volume>(0.4, 0.3, 0.3)</volume>
+            <offset>(0,0,-0.2)</offset>
+          </shadowData>
+        </bodyGraphicData>
+        <dessicatedBodyGraphicData>
+          <texPath>Things/Pawn/Animal/MuffaloDessicated</texPath>
+          <drawSize>1.5</drawSize>
+        </dessicatedBodyGraphicData>
+      </li>
+      <li>
+        <bodyGraphicData>
+          <texPath>Things/Pawn/Animal/Muffalo</texPath>
+          <drawSize>2.25</drawSize>
+          <shadowData>
+            <volume>(0.6, 0.45, 0.45)</volume>
+            <offset>(0,0,-0.25)</offset>
+          </shadowData>
+        </bodyGraphicData>
+        <dessicatedBodyGraphicData>
+          <texPath>Things/Pawn/Animal/MuffaloDessicated</texPath>
+          <drawSize>2.25</drawSize>
+        </dessicatedBodyGraphicData>
+      </li>
+      <li>
+        <bodyGraphicData>
+          <texPath>Things/Pawn/Animal/Muffalo</texPath>
+          <drawSize>3</drawSize>
+          <shadowData>
+            <volume>(0.8, 0.6, 0.6)</volume>
+            <offset>(0,0,-0.3)</offset>
+          </shadowData>
+        </bodyGraphicData>
+        <dessicatedBodyGraphicData>
+          <texPath>Things/Pawn/Animal/MuffaloDessicated</texPath>
+          <drawSize>3</drawSize>
+        </dessicatedBodyGraphicData>
+      </li>
+    </lifeStages>
+  </PawnKindDef>
+
+	
+	<PawnKindDef ParentName="AnimalBase">
+    <defName>Alphalo</defName>
+    <label>alphalo</label>
+    <race>Alphalo</race>
+    <combatPower>200</combatPower>
+    <wildSpawn_spawnWild>true</wildSpawn_spawnWild>
+    <wildSpawn_EcoSystemWeight>1</wildSpawn_EcoSystemWeight>
+    <lifeStages>
+      <li>
+        <label>alphalo calf</label>
+        <bodyGraphicData>
+          <texPath>Things/Pawn/Animal/AMuffalo</texPath>
+          <drawSize>1.5</drawSize>
+          <shadowData>
+            <volume>(0.4, 0.3, 0.3)</volume>
+            <offset>(0,0,-0.2)</offset>
+          </shadowData>
+        </bodyGraphicData>
+        <dessicatedBodyGraphicData>
+          <texPath>Things/Pawn/Animal/MuffaloDessicated</texPath>
+          <drawSize>1.5</drawSize>
+        </dessicatedBodyGraphicData>
+      </li>
+      <li>
+        <bodyGraphicData>
+          <texPath>Things/Pawn/Animal/AMuffalo</texPath>
+          <drawSize>2.25</drawSize>
+          <shadowData>
+            <volume>(0.6, 0.45, 0.45)</volume>
+            <offset>(0,0,-0.25)</offset>
+          </shadowData>
+        </bodyGraphicData>
+        <dessicatedBodyGraphicData>
+          <texPath>Things/Pawn/Animal/MuffaloDessicated</texPath>
+          <drawSize>2.25</drawSize>
+        </dessicatedBodyGraphicData>
+      </li>
+      <li>
+        <bodyGraphicData>
+          <texPath>Things/Pawn/Animal/AMuffalo</texPath>
+          <drawSize>3</drawSize>
+          <shadowData>
+            <volume>(0.8, 0.6, 0.6)</volume>
+            <offset>(0,0,-0.3)</offset>
+          </shadowData>
+        </bodyGraphicData>
+        <dessicatedBodyGraphicData>
+          <texPath>Things/Pawn/Animal/MuffaloDessicated</texPath>
+          <drawSize>3</drawSize>
+        </dessicatedBodyGraphicData>
+      </li>
+    </lifeStages>
+  </PawnKindDef>
+	
+	
+	<PawnKindDef ParentName="AnimalBase">
+    <defName>Buffalo</defName>
+    <label>buffalo</label>
+    <race>Buffalo</race>
+    <combatPower>200</combatPower>
+    <wildSpawn_spawnWild>true</wildSpawn_spawnWild>
+    <wildSpawn_EcoSystemWeight>1</wildSpawn_EcoSystemWeight>
+    <wildSpawn_GroupSizeRange>
+      <min>1</min>
+      <max>4</max>
+    </wildSpawn_GroupSizeRange>
+    <lifeStages>
+      <li>
+        <label>buffalo calf</label>
+        <bodyGraphicData>
+          <texPath>Things/Pawn/Animal/Buffalo</texPath>
+          <drawSize>1.5</drawSize>
+          <shadowData>
+            <volume>(0.4, 0.3, 0.3)</volume>
+            <offset>(0,0,-0.2)</offset>
+          </shadowData>
+        </bodyGraphicData>
+        <dessicatedBodyGraphicData>
+          <texPath>Things/Pawn/Animal/MuffaloDessicated</texPath>
+          <drawSize>1.5</drawSize>
+        </dessicatedBodyGraphicData>
+      </li>
+      <li>
+        <bodyGraphicData>
+          <texPath>Things/Pawn/Animal/Buffalo</texPath>
+          <drawSize>2.25</drawSize>
+          <shadowData>
+            <volume>(0.6, 0.45, 0.45)</volume>
+            <offset>(0,0,-0.25)</offset>
+          </shadowData>
+        </bodyGraphicData>
+        <dessicatedBodyGraphicData>
+          <texPath>Things/Pawn/Animal/MuffaloDessicated</texPath>
+          <drawSize>2.25</drawSize>
+        </dessicatedBodyGraphicData>
+      </li>
+      <li>
+        <bodyGraphicData>
+          <texPath>Things/Pawn/Animal/Buffalo</texPath>
+          <drawSize>3</drawSize>
+          <shadowData>
+            <volume>(0.8, 0.6, 0.6)</volume>
+            <offset>(0,0,-0.3)</offset>
+          </shadowData>
+        </bodyGraphicData>
+        <dessicatedBodyGraphicData>
+          <texPath>Things/Pawn/Animal/MuffaloDessicated</texPath>
+          <drawSize>3</drawSize>
+        </dessicatedBodyGraphicData>
+      </li>
+    </lifeStages>
+  </PawnKindDef>
+	
+	
+  <PawnKindDef ParentName="AnimalBase">
+    <defName>Hedgehog</defName>
+    <label>hedgehog</label>
+    <race>Hedgehog</race>
+    <combatPower>35</combatPower>
+    <wildSpawn_EcoSystemWeight>0.5</wildSpawn_EcoSystemWeight>
+    <wildSpawn_spawnWild>true</wildSpawn_spawnWild>
+    <wildSpawn_GroupSizeRange>
+      <min>1</min>
+      <max>3</max>
+    </wildSpawn_GroupSizeRange>
+    <lifeStages>
+      <li>
+	  <label>hoglet</label>
+        <bodyGraphicData>
+          <texPath>Things/Pawn/Animal/Hedgehog</texPath>
+          <drawSize>1</drawSize>
+          <shadowData>
+            <volume>(0.25, 0.25, 0.25)</volume>
+            <offset>(0,0,-0.2)</offset>
+          </shadowData>
+        </bodyGraphicData>
+        <dessicatedBodyGraphicData>
+          <texPath>Things/Pawn/Animal/CritterDessicatedMedium</texPath>
+          <drawSize>1</drawSize>
+        </dessicatedBodyGraphicData>
+      </li>
+      <li>
+        <bodyGraphicData>
+          <texPath>Things/Pawn/Animal/Hedgehog</texPath>
+          <drawSize>1.75</drawSize>
+          <shadowData>
+            <volume>(0.375, 0.375, 0.375)</volume>
+            <offset>(0,0,-0.25)</offset>
+          </shadowData>
+        </bodyGraphicData>
+        <dessicatedBodyGraphicData>
+          <texPath>Things/Pawn/Animal/CritterDessicatedMedium</texPath>
+          <drawSize>1.75</drawSize>
+        </dessicatedBodyGraphicData>
+      </li>
+      <li>
+        <bodyGraphicData>
+          <texPath>Things/Pawn/Animal/Hedgehog</texPath>
+          <drawSize>2</drawSize>
+          <shadowData>
+            <volume>(0.5, 0.5, 0.5)</volume>
+            <offset>(0,0,-0.3)</offset>
+          </shadowData>
+        </bodyGraphicData>
+        <dessicatedBodyGraphicData>
+          <texPath>Things/Pawn/Animal/CritterDessicatedMedium</texPath>
+          <drawSize>2</drawSize>
+        </dessicatedBodyGraphicData>
+      </li>
+    </lifeStages>
+  </PawnKindDef>
+	
+	
+	<PawnKindDef ParentName="AnimalBase">
+    <defName>Bruiserhog</defName>
+    <label>bruiserhog</label>
+    <race>Bruiserhog</race>
+    <combatPower>90</combatPower>
+    <wildSpawn_spawnWild>true</wildSpawn_spawnWild>
+    <wildSpawn_EcoSystemWeight>1</wildSpawn_EcoSystemWeight>
+    <lifeStages>
+      <li>
+        <label>hoglet</label>
+        <bodyGraphicData>
+          <texPath>Things/Pawn/Animal/Bruiserhog</texPath>
+          <drawSize>1.5</drawSize>
+          <shadowData>
+            <volume>(0.4, 0.3, 0.3)</volume>
+            <offset>(0,0,-0.2)</offset>
+          </shadowData>
+        </bodyGraphicData>
+        <dessicatedBodyGraphicData>
+          <texPath>Things/Pawn/Animal/MuffaloDessicated</texPath>
+          <drawSize>1.5</drawSize>
+        </dessicatedBodyGraphicData>
+      </li>
+      <li>
+        <bodyGraphicData>
+          <texPath>Things/Pawn/Animal/Bruiserhog</texPath>
+          <drawSize>2.25</drawSize>
+          <shadowData>
+            <volume>(0.6, 0.45, 0.45)</volume>
+            <offset>(0,0,-0.25)</offset>
+          </shadowData>
+        </bodyGraphicData>
+        <dessicatedBodyGraphicData>
+          <texPath>Things/Pawn/Animal/MuffaloDessicated</texPath>
+          <drawSize>2.25</drawSize>
+        </dessicatedBodyGraphicData>
+      </li>
+      <li>
+        <bodyGraphicData>
+          <texPath>Things/Pawn/Animal/Bruiserhog</texPath>
+          <drawSize>3</drawSize>
+          <shadowData>
+            <volume>(0.8, 0.6, 0.6)</volume>
+            <offset>(0,0,-0.3)</offset>
+          </shadowData>
+        </bodyGraphicData>
+        <dessicatedBodyGraphicData>
+          <texPath>Things/Pawn/Animal/MuffaloDessicated</texPath>
+          <drawSize>3</drawSize>
+        </dessicatedBodyGraphicData>
+      </li>
+    </lifeStages>
+  </PawnKindDef>
+  
+  
+<!--==============================Crashbug=====================-->
+
+	
+	<PawnKindDef ParentName="AnimalBase">
+    <defName>Crashbug</defName>
+    <label>crashbug</label>
+    <race>Crashbug</race>
+    <combatPower>30</combatPower>
+    <wildSpawn_EcoSystemWeight>0.25</wildSpawn_EcoSystemWeight>
+    <wildSpawn_spawnWild>true</wildSpawn_spawnWild>
+    <lifeStages>
+      <li>
+        <bodyGraphicData>
+          <texPath>Things/Pawn/Animal/Crashbug</texPath>
+          <drawSize>1.75</drawSize>
+        </bodyGraphicData>
+        <dessicatedBodyGraphicData>
+          <texPath>Things/Pawn/Animal/CritterDessicatedSmall</texPath>
+          <drawSize>1.75</drawSize>
+        </dessicatedBodyGraphicData>
+      </li>
+      <li>
+        <bodyGraphicData>
+          <texPath>Things/Pawn/Animal/Crashbug</texPath>
+          <drawSize>2.5</drawSize>
+        </bodyGraphicData>
+        <dessicatedBodyGraphicData>
+          <texPath>Things/Pawn/Animal/CritterDessicatedSmall</texPath>
+          <drawSize>2.5</drawSize>
+        </dessicatedBodyGraphicData>
+      </li>
+      <li>
+        <bodyGraphicData>
+          <texPath>Things/Pawn/Animal/Crashbug</texPath>
+          <drawSize>3.25</drawSize>
+        </bodyGraphicData>
+        <dessicatedBodyGraphicData>
+          <texPath>Things/Pawn/Animal/CritterDessicatedSmall</texPath>
+          <drawSize>3.25</drawSize>
+        </dessicatedBodyGraphicData>
+      </li>
+    </lifeStages>
+  </PawnKindDef>
+  
+
+<!--==============================Fly=======================-->
+
+	
+	<PawnKindDef ParentName="AnimalBase">
+    <defName>Fly</defName>
+    <label>fly</label>
+    <race>Fly</race>
+    <combatPower>5</combatPower>
+    <wildSpawn_EcoSystemWeight>0.1</wildSpawn_EcoSystemWeight>
+    <wildSpawn_spawnWild>true</wildSpawn_spawnWild>
+	<wildSpawn_GroupSizeRange> 
+		<min>2</min> 
+		<max>10</max> 
+	</wildSpawn_GroupSizeRange>
+    <lifeStages>
+      <li>
+        <bodyGraphicData>
+          <texPath>Things/Pawn/Animal/Fly</texPath>
+          <drawSize>2</drawSize>
+        </bodyGraphicData>
+        <dessicatedBodyGraphicData>
+          <texPath>Things/Pawn/Animal/CritterDessicatedSmall</texPath>
+          <drawSize>2</drawSize>
+        </dessicatedBodyGraphicData>
+      </li>
+      <li>
+        <bodyGraphicData>
+          <texPath>Things/Pawn/Animal/Fly</texPath>
+          <drawSize>2.25</drawSize>
+        </bodyGraphicData>
+        <dessicatedBodyGraphicData>
+          <texPath>Things/Pawn/Animal/CritterDessicatedSmall</texPath>
+          <drawSize>2.25</drawSize>
+        </dessicatedBodyGraphicData>
+      </li>
+      <li>
+        <bodyGraphicData>
+          <texPath>Things/Pawn/Animal/Fly</texPath>
+          <drawSize>2.5</drawSize>
+        </bodyGraphicData>
+        <dessicatedBodyGraphicData>
+          <texPath>Things/Pawn/Animal/CritterDessicatedSmall</texPath>
+          <drawSize>2.5</drawSize>
+        </dessicatedBodyGraphicData>
+      </li>
+    </lifeStages>
+  </PawnKindDef>
+
+<!--==============================Furx=========================-->
+
+  
+  <PawnKindDef ParentName="AnimalBase">
+    <defName>Furx</defName>
+    <label>furx</label>
+    <race>Furx</race>
+    <combatPower>55</combatPower>
+    <wildSpawn_EcoSystemWeight>0.35</wildSpawn_EcoSystemWeight>
+    <wildSpawn_spawnWild>true</wildSpawn_spawnWild>
+    <wildSpawn_GroupSizeRange>
+      <min>1</min>
+      <max>5</max>
+    </wildSpawn_GroupSizeRange>
+    <lifeStages>
+      <li>
+        <bodyGraphicData>
+          <texPath>Things/Pawn/Animal/Furx</texPath>
+          <drawSize>1.5</drawSize>
+          <shadowData>
+            <volume>(0.25, 0.25, 0.25)</volume>
+            <offset>(0,0,-0.2)</offset>
+          </shadowData>
+        </bodyGraphicData>
+        <dessicatedBodyGraphicData>
+          <texPath>Things/Pawn/Animal/CritterDessicatedMedium</texPath>
+          <drawSize>1.5</drawSize>
+        </dessicatedBodyGraphicData>
+      </li>
+      <li>
+        <bodyGraphicData>
+          <texPath>Things/Pawn/Animal/Furx</texPath>
+          <drawSize>2.0</drawSize>
+          <shadowData>
+            <volume>(0.375, 0.375, 0.375)</volume>
+            <offset>(0,0,-0.25)</offset>
+          </shadowData>
+        </bodyGraphicData>
+        <dessicatedBodyGraphicData>
+          <texPath>Things/Pawn/Animal/CritterDessicatedMedium</texPath>
+          <drawSize>2.0</drawSize>
+        </dessicatedBodyGraphicData>
+      </li>
+      <li>
+        <bodyGraphicData>
+          <texPath>Things/Pawn/Animal/Furx</texPath>
+          <drawSize>2.5</drawSize>
+          <shadowData>
+            <volume>(0.5, 0.5, 0.5)</volume>
+            <offset>(0,0,-0.3)</offset>
+          </shadowData>
+        </bodyGraphicData>
+        <dessicatedBodyGraphicData>
+          <texPath>Things/Pawn/Animal/CritterDessicatedMedium</texPath>
+          <drawSize>2.5</drawSize>
+        </dessicatedBodyGraphicData>
+      </li>
+    </lifeStages>
+  </PawnKindDef>
+
+<!--==============================Lacosdile=========================-->
+
+  
+  <PawnKindDef ParentName="AnimalBase">
+    <defName>Lacosdile</defName>
+    <label>lacosdile</label>
+    <race>Lacosdile</race>
+    <combatPower>75</combatPower>
+    <wildSpawn_EcoSystemWeight>0.33</wildSpawn_EcoSystemWeight>
+    <wildSpawn_spawnWild>true</wildSpawn_spawnWild>
+	<wildSpawn_GroupSizeRange>
+      <min>1</min>
+      <max>6</max>
+    </wildSpawn_GroupSizeRange>
+    <lifeStages>
+      <li>
+        <bodyGraphicData>
+          <texPath>Things/Pawn/Animal/Rimdile</texPath>
+          <drawSize>1.5</drawSize>
+        </bodyGraphicData>
+        <dessicatedBodyGraphicData>
+          <texPath>Things/Pawn/Animal/CritterDessicatedSmall</texPath>
+          <drawSize>1.5</drawSize>
+        </dessicatedBodyGraphicData>
+      </li>
+      <li>
+        <bodyGraphicData>
+          <texPath>Things/Pawn/Animal/Rimdile</texPath>
+          <drawSize>2</drawSize>
+        </bodyGraphicData>
+        <dessicatedBodyGraphicData>
+          <texPath>Things/Pawn/Animal/CritterDessicatedSmall</texPath>
+          <drawSize>2</drawSize>
+        </dessicatedBodyGraphicData>
+      </li>
+      <li>
+        <bodyGraphicData>
+          <texPath>Things/Pawn/Animal/Rimdile</texPath>
+          <drawSize>2.5</drawSize>
+        </bodyGraphicData>
+        <dessicatedBodyGraphicData>
+          <texPath>Things/Pawn/Animal/CritterDessicatedSmall</texPath>
+          <drawSize>2.5</drawSize>
+        </dessicatedBodyGraphicData>
+      </li>
+    </lifeStages>
+  </PawnKindDef>
+
+<!--==============================Megaslug=========================-->
+
+  
+  <PawnKindDef ParentName="AnimalBase">
+    <defName>Megaslug</defName>
+    <label>megaslug</label>
+    <race>Megaslug</race>
+    <combatPower>30</combatPower>
+    <wildSpawn_EcoSystemWeight>0.25</wildSpawn_EcoSystemWeight>
+    <wildSpawn_spawnWild>true</wildSpawn_spawnWild>
+    <lifeStages>
+      <li>
+        <bodyGraphicData>
+          <texPath>Things/Pawn/Animal/Megaslug</texPath>
+          <drawSize>1</drawSize>
+        </bodyGraphicData>
+        <dessicatedBodyGraphicData>
+          <texPath>Things/Pawn/Animal/CritterDessicatedSmall</texPath>
+          <drawSize>1</drawSize>
+        </dessicatedBodyGraphicData>
+      </li>
+      <li>
+        <bodyGraphicData>
+          <texPath>Things/Pawn/Animal/Megaslug</texPath>
+          <drawSize>1.25</drawSize>
+        </bodyGraphicData>
+        <dessicatedBodyGraphicData>
+          <texPath>Things/Pawn/Animal/CritterDessicatedSmall</texPath>
+          <drawSize>1.25</drawSize>
+        </dessicatedBodyGraphicData>
+      </li>
+      <li>
+        <bodyGraphicData>
+          <texPath>Things/Pawn/Animal/Megaslug</texPath>
+          <drawSize>1.5</drawSize>
+        </bodyGraphicData>
+        <dessicatedBodyGraphicData>
+          <texPath>Things/Pawn/Animal/CritterDessicatedSmall</texPath>
+          <drawSize>1.5</drawSize>
+        </dessicatedBodyGraphicData>
+      </li>
+    </lifeStages>
+  </PawnKindDef>
+
+<!--==============================Mosquito========================-->
+	
+	<PawnKindDef ParentName="AnimalBase">
+    <defName>Mosquito</defName>
+    <label>mosquito</label>
+    <race>Mosquito</race>
+    <combatPower>40</combatPower>
+    <wildSpawn_EcoSystemWeight>0.1</wildSpawn_EcoSystemWeight>
+    <wildSpawn_spawnWild>true</wildSpawn_spawnWild>
+	<wildSpawn_GroupSizeRange> 
+			<min>5</min> 
+			<max>5</max> 
+		</wildSpawn_GroupSizeRange>
+    <lifeStages>
+      <li>
+        <bodyGraphicData>
+          <texPath>Things/Pawn/Animal/Mosquito</texPath>
+          <drawSize>1.25</drawSize>
+        </bodyGraphicData>
+        <dessicatedBodyGraphicData>
+          <texPath>Things/Pawn/Animal/CritterDessicatedSmall</texPath>
+          <drawSize>1.25</drawSize>
+        </dessicatedBodyGraphicData>
+      </li>
+      <li>
+        <bodyGraphicData>
+          <texPath>Things/Pawn/Animal/Mosquito</texPath>
+          <drawSize>1.5</drawSize>
+        </bodyGraphicData>
+        <dessicatedBodyGraphicData>
+          <texPath>Things/Pawn/Animal/CritterDessicatedSmall</texPath>
+          <drawSize>1.5</drawSize>
+        </dessicatedBodyGraphicData>
+      </li>
+      <li>
+        <bodyGraphicData>
+          <texPath>Things/Pawn/Animal/Mosquito</texPath>
+          <drawSize>1.75</drawSize>
+        </bodyGraphicData>
+        <dessicatedBodyGraphicData>
+          <texPath>Things/Pawn/Animal/CritterDessicatedSmall</texPath>
+          <drawSize>1.75</drawSize>
+        </dessicatedBodyGraphicData>
+      </li>
+    </lifeStages>
+  </PawnKindDef>
+
+<!--==============================Quadhog=========================-->
+  
+  <PawnKindDef ParentName="AnimalBase">
+    <defName>Quadhog</defName>
+    <label>quadhog</label>
+    <race>Quadhog</race>
+    <combatPower>55</combatPower>
+    <wildSpawn_EcoSystemWeight>0.5</wildSpawn_EcoSystemWeight>
+    <wildSpawn_spawnWild>true</wildSpawn_spawnWild>
+	<wildSpawn_GroupSizeRange>
+      <min>1</min>
+      <max>3</max>
+    </wildSpawn_GroupSizeRange>
+    <lifeStages>
+      <li>
+        <bodyGraphicData>
+          <texPath>Things/Pawn/Animal/Quadhog</texPath>
+          <drawSize>1</drawSize>
+        </bodyGraphicData>
+        <dessicatedBodyGraphicData>
+          <texPath>Things/Pawn/Animal/CritterDessicatedSmall</texPath>
+          <drawSize>1</drawSize>
+        </dessicatedBodyGraphicData>
+      </li>
+      <li>
+        <bodyGraphicData>
+          <texPath>Things/Pawn/Animal/Quadhog</texPath>
+          <drawSize>1.75</drawSize>
+          <shadowData>
+            <volume>(0.25, 0.3, 0.25)</volume>
+            <offset>(0,0,-0.15)</offset>
+          </shadowData>
+        </bodyGraphicData>
+        <dessicatedBodyGraphicData>
+          <texPath>Things/Pawn/Animal/CritterDessicatedSmall</texPath>
+          <drawSize>1.75</drawSize>
+        </dessicatedBodyGraphicData>
+      </li>
+      <li>
+        <bodyGraphicData>
+          <texPath>Things/Pawn/Animal/Quadhog</texPath>
+          <drawSize>2.5</drawSize>
+          <shadowData>
+            <volume>(0.3, 0.4, 0.3)</volume>
+            <offset>(0,0,-0.15)</offset>
+          </shadowData>
+        </bodyGraphicData>
+        <dessicatedBodyGraphicData>
+          <texPath>Things/Pawn/Animal/CritterDessicatedSmall</texPath>
+          <drawSize>2.5</drawSize>
+        </dessicatedBodyGraphicData>
+      </li>
+    </lifeStages>
+  </PawnKindDef>
+
+<!--==============================Rimdogs=========================-->
+
+  
+  <PawnKindDef ParentName="AnimalBase">
+    <defName>Rimdog</defName>
+    <label>rimdog</label>
+    <race>Rimdog</race>
+    <combatPower>50</combatPower>
+    <lifeStages>
+      <li>
+        <label>rim puppy</label>
+        <bodyGraphicData>
+          <texPath>Things/Pawn/Animal/Rimdog</texPath>
+          <drawSize>1.9</drawSize>
+        </bodyGraphicData>
+        <dessicatedBodyGraphicData>
+          <texPath>Things/Pawn/Animal/CritterDessicatedSmall</texPath>
+          <drawSize>1.9</drawSize>
+        </dessicatedBodyGraphicData>
+      </li>
+      <li>
+        <bodyGraphicData>
+          <texPath>Things/Pawn/Animal/Rimdog</texPath>
+          <drawSize>2.3</drawSize>
+        </bodyGraphicData>
+        <femaleGraphicData>
+          <texPath>Things/Pawn/Animal/Rimdog</texPath>
+          <drawSize>2.3</drawSize>
+        </femaleGraphicData>
+        <dessicatedBodyGraphicData>
+          <texPath>Things/Pawn/Animal/CritterDessicatedSmall</texPath>
+          <drawSize>2.3</drawSize>
+        </dessicatedBodyGraphicData>
+      </li>
+      <li>
+        <bodyGraphicData>
+          <texPath>Things/Pawn/Animal/Rimdog</texPath>
+          <drawSize>2.55</drawSize>
+        </bodyGraphicData>
+        <femaleGraphicData>
+          <texPath>Things/Pawn/Animal/Rimdog</texPath>
+          <drawSize>2.55</drawSize>
+        </femaleGraphicData>
+        <dessicatedBodyGraphicData>
+          <texPath>Things/Pawn/Animal/CritterDessicatedSmall</texPath>
+          <drawSize>2.55</drawSize>
+        </dessicatedBodyGraphicData>
+      </li>
+    </lifeStages>
+	<wildSpawn_spawnWild>false</wildSpawn_spawnWild>
+  </PawnKindDef>
+
+<!--==============================Rim Ram=========================-->
+
+  
+  <PawnKindDef ParentName="AnimalBase">
+    <defName>Rimram</defName>
+    <label>rimram</label>
+    <race>Rimram</race>
+    <combatPower>65</combatPower>
+    <wildSpawn_EcoSystemWeight>0.5</wildSpawn_EcoSystemWeight>
+    <wildSpawn_spawnWild>true</wildSpawn_spawnWild>
+    <wildSpawn_GroupSizeRange>
+      <min>1</min>
+      <max>4</max>
+    </wildSpawn_GroupSizeRange>
+    <lifeStages>
+      <li>
+        <bodyGraphicData>
+          <texPath>Things/Pawn/Animal/Rimram</texPath>
+          <drawSize>1.5</drawSize>
+        </bodyGraphicData>
+        <dessicatedBodyGraphicData>
+          <texPath>Things/Pawn/Animal/CritterDessicatedMedium</texPath>
+          <drawSize>1.5</drawSize>
+        </dessicatedBodyGraphicData>
+      </li>
+      <li>
+        <bodyGraphicData>
+          <texPath>Things/Pawn/Animal/Rimram</texPath>
+          <drawSize>2.25</drawSize>
+          <shadowData>
+            <volume>(0.3, 0.3, 0.3)</volume>
+            <offset>(0,0,-0.3)</offset>
+          </shadowData>
+        </bodyGraphicData>
+        <dessicatedBodyGraphicData>
+          <texPath>Things/Pawn/Animal/CritterDessicatedMedium</texPath>
+          <drawSize>2.25</drawSize>
+        </dessicatedBodyGraphicData>
+      </li>
+      <li>
+        <bodyGraphicData>
+          <texPath>Things/Pawn/Animal/Rimram</texPath>
+          <drawSize>3</drawSize>
+          <shadowData>
+            <volume>(0.4, 0.4, 0.4)</volume>
+            <offset>(0,0,-0.2)</offset>
+          </shadowData>
+        </bodyGraphicData>
+        <dessicatedBodyGraphicData>
+          <texPath>Things/Pawn/Animal/CritterDessicatedMedium</texPath>
+          <drawSize>3</drawSize>
+        </dessicatedBodyGraphicData>
+      </li>
+    </lifeStages>
+  </PawnKindDef>
+
+
+<!--==============================Rimwolves=========================-->
+
+  
+  <PawnKindDef ParentName="AnimalBase">
+    <defName>Rimwolf</defName>
+    <label>rimwolf</label>
+    <race>Rimwolf</race>
+    <combatPower>70</combatPower>
+	<wildSpawn_EcoSystemWeight>0.5</wildSpawn_EcoSystemWeight>
+    <wildSpawn_spawnWild>true</wildSpawn_spawnWild>
+	<wildSpawn_GroupSizeRange>
+      <min>1</min>
+      <max>4</max>
+    </wildSpawn_GroupSizeRange>
+    <lifeStages>
+      <li>
+        <label>wolf puppy</label>
+        <bodyGraphicData>
+          <texPath>Things/Pawn/Animal/Rimwolf</texPath>
+          <drawSize>1.9</drawSize>
+        </bodyGraphicData>
+        <dessicatedBodyGraphicData>
+          <texPath>Things/Pawn/Animal/CritterDessicatedSmall</texPath>
+          <drawSize>1.9</drawSize>
+        </dessicatedBodyGraphicData>
+      </li>
+      <li>
+        <bodyGraphicData>
+          <texPath>Things/Pawn/Animal/Rimwolf</texPath>
+          <drawSize>2.3</drawSize>
+          <shadowData>
+            <volume>(0.25, 0.3, 0.25)</volume>
+            <offset>(0,0,-0.15)</offset>
+          </shadowData>
+        </bodyGraphicData>
+        <dessicatedBodyGraphicData>
+          <texPath>Things/Pawn/Animal/CritterDessicatedSmall</texPath>
+          <drawSize>2.3</drawSize>
+        </dessicatedBodyGraphicData>
+      </li>
+      <li>
+        <bodyGraphicData>
+          <texPath>Things/Pawn/Animal/Rimwolf</texPath>
+          <drawSize>2.55</drawSize>
+          <shadowData>
+            <volume>(0.3, 0.4, 0.3)</volume>
+            <offset>(0,0,-0.15)</offset>
+          </shadowData>
+        </bodyGraphicData>
+        <dessicatedBodyGraphicData>
+          <texPath>Things/Pawn/Animal/CritterDessicatedSmall</texPath>
+          <drawSize>2.55</drawSize>
+        </dessicatedBodyGraphicData>
+      </li>
+    </lifeStages>
+  </PawnKindDef>
+
+<!--==============================Snork=========================-->
+
+  
+  <PawnKindDef ParentName="AnimalBase">
+    <defName>Snork</defName>
+    <label>snork</label>
+    <race>Snork</race>
+    <combatPower>40</combatPower>
+    <wildSpawn_EcoSystemWeight>0.33</wildSpawn_EcoSystemWeight>
+    <wildSpawn_spawnWild>true</wildSpawn_spawnWild>
+	<wildSpawn_GroupSizeRange>
+      <min>1</min>
+      <max>4</max>
+    </wildSpawn_GroupSizeRange>
+    <lifeStages>
+      <li>
+        <bodyGraphicData>
+          <texPath>Things/Pawn/Animal/Snork</texPath>
+          <drawSize>1.5</drawSize>
+        </bodyGraphicData>
+        <dessicatedBodyGraphicData>
+          <texPath>Things/Pawn/Animal/CritterDessicatedSmall</texPath>
+          <drawSize>1.5</drawSize>
+        </dessicatedBodyGraphicData>
+      </li>
+      <li>
+        <bodyGraphicData>
+          <texPath>Things/Pawn/Animal/Snork</texPath>
+          <drawSize>1.75</drawSize>
+        </bodyGraphicData>
+        <dessicatedBodyGraphicData>
+          <texPath>Things/Pawn/Animal/CritterDessicatedSmall</texPath>
+          <drawSize>1.75</drawSize>
+        </dessicatedBodyGraphicData>
+      </li>
+      <li>
+        <bodyGraphicData>
+          <texPath>Things/Pawn/Animal/Snork</texPath>
+          <drawSize>2</drawSize>
+        </bodyGraphicData>
+        <dessicatedBodyGraphicData>
+          <texPath>Things/Pawn/Animal/CritterDessicatedSmall</texPath>
+          <drawSize>2</drawSize>
+        </dessicatedBodyGraphicData>
+      </li>
+    </lifeStages>
+  </PawnKindDef>
+
+<!--========================== Spindlecrib ============================-->
+  
+  <PawnKindDef ParentName="AnimalBase">
+    <defName>Spindlecrib</defName>
+    <label>spindlecrib</label>
+    <race>Spindlecrib</race>
+    <combatPower>250</combatPower>
+    <wildSpawn_EcoSystemWeight>0.05</wildSpawn_EcoSystemWeight>
+    <wildSpawn_spawnWild>true</wildSpawn_spawnWild>
+    <lifeStages>
+      <li>
+        <bodyGraphicData>
+          <texPath>Things/Pawn/Animal/Spindlecrib</texPath>
+          <drawSize>1</drawSize>
+        </bodyGraphicData>
+        <dessicatedBodyGraphicData>
+          <texPath>Things/Pawn/Animal/CritterDessicatedSmall</texPath>
+          <drawSize>1</drawSize>
+        </dessicatedBodyGraphicData>
+      </li>
+      <li>
+        <bodyGraphicData>
+          <texPath>Things/Pawn/Animal/Spindlecrib</texPath>
+          <drawSize>1.25</drawSize>
+        </bodyGraphicData>
+        <dessicatedBodyGraphicData>
+          <texPath>Things/Pawn/Animal/CritterDessicatedSmall</texPath>
+          <drawSize>1.25</drawSize>
+        </dessicatedBodyGraphicData>
+      </li>
+      <li>
+        <bodyGraphicData>
+          <texPath>Things/Pawn/Animal/Spindlecrib</texPath>
+          <drawSize>1.5</drawSize>
+        </bodyGraphicData>
+        <dessicatedBodyGraphicData>
+          <texPath>Things/Pawn/Animal/CritterDessicatedSmall</texPath>
+          <drawSize>1.5</drawSize>
+        </dessicatedBodyGraphicData>
+      </li>
+    </lifeStages>
+  </PawnKindDef>
+
+<!--==========================Tarantula==============================-->
+
+  
+  <PawnKindDef ParentName="AnimalBase">
+    <defName>Tarantula</defName>
+    <label>tarantula</label>
+    <race>Tarantula</race>
+    <combatPower>100</combatPower>
+    <wildSpawn_EcoSystemWeight>0.25</wildSpawn_EcoSystemWeight>
+    <wildSpawn_spawnWild>true</wildSpawn_spawnWild>
+    <lifeStages>
+      <li>
+        <bodyGraphicData>
+          <texPath>Things/Pawn/Animal/Tarantula</texPath>
+          <drawSize>0.5</drawSize>
+        </bodyGraphicData>
+        <dessicatedBodyGraphicData>
+          <texPath>Things/Pawn/Animal/CritterDessicatedSmall</texPath>
+          <drawSize>0.5</drawSize>
+        </dessicatedBodyGraphicData>
+      </li>
+      <li>
+        <bodyGraphicData>
+          <texPath>Things/Pawn/Animal/Tarantula</texPath>
+          <drawSize>0.75</drawSize>
+        </bodyGraphicData>
+        <dessicatedBodyGraphicData>
+          <texPath>Things/Pawn/Animal/CritterDessicatedSmall</texPath>
+          <drawSize>0.75</drawSize>
+        </dessicatedBodyGraphicData>
+      </li>
+      <li>
+        <bodyGraphicData>
+          <texPath>Things/Pawn/Animal/Tarantula</texPath>
+          <drawSize>1</drawSize>
+        </bodyGraphicData>
+        <dessicatedBodyGraphicData>
+          <texPath>Things/Pawn/Animal/CritterDessicatedSmall</texPath>
+          <drawSize>1</drawSize>
+        </dessicatedBodyGraphicData>
+      </li>
+    </lifeStages>
+  </PawnKindDef>
+
+</Defs>
