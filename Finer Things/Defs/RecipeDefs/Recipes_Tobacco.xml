@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+<RecipeDef>
+	<defName>CraftCigarillos</defName>
+	<label>Roll Cigarillos</label>
+	<description>Rolls a pack of Cigarillos.</description>
+	<jobString>Rolling Cigarillos.</jobString>
+	<workSpeedStat>PlantWorkSpeed</workSpeedStat>
+	<effectWorking>ConstructWood</effectWorking>
+          <soundWorking>Recipe_Crafting</soundWorking>
+          <allowMixingIngredients>true</allowMixingIngredients>
+	<workAmount>800</workAmount>
+          <targetCountAdjustment>1</targetCountAdjustment>
+	<ingredients>
+	  <li>
+	    <filter>
+	      <thingDefs>
+	        <li>RawTobacco</li>
+	      </thingDefs>
+	    </filter>
+	    <count>8</count>
+	  </li>
+	</ingredients>
+	<fixedIngredientFilter>
+	  <thingDefs>
+	    <li>RawTobacco</li>
+	  </thingDefs>
+	</fixedIngredientFilter>
+	<products>
+	  <Cigarillos>2</Cigarillos>
+	</products>
+	<workSkill>Crafting</workSkill>
+</RecipeDef>
+
+<RecipeDef>
+	<defName>CraftCigar</defName>
+	<label>Roll Cigar</label>
+	<description>Rolls a Cigar.</description>
+	<jobString>Rolling Cigar.</jobString>
+	<workSpeedStat>PlantWorkSpeed</workSpeedStat>
+	<effectWorking>ConstructWood</effectWorking>
+          <soundWorking>Recipe_Crafting</soundWorking>
+          <allowMixingIngredients>true</allowMixingIngredients>
+	<workAmount>600</workAmount>
+          <targetCountAdjustment>1</targetCountAdjustment>
+	<ingredients>
+	  <li>
+	    <filter>
+	      <thingDefs>
+	        <li>RawTobacco</li>
+	      </thingDefs>
+	    </filter>
+	    <count>4</count>
+	  </li>
+	</ingredients>
+	<fixedIngredientFilter>
+	  <thingDefs>
+	    <li>RawTobacco</li>
+	  </thingDefs>
+	</fixedIngredientFilter>
+	<products>
+	  <Cigar>2</Cigar>
+	</products>
+	<workSkill>Crafting</workSkill>
+</RecipeDef>
+
+</Defs>

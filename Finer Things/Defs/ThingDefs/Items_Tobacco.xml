@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ThingDefs>
+
+<ThingDef Name="ResourceBase" Abstract="True">
+    <thingClass>ThingWithComps</thingClass>
+    <label>unspecified resource</label>
+    <category>Item</category>
+    <resourceReadoutPriority>Middle</resourceReadoutPriority>
+    <useHitPoints>true</useHitPoints>
+    <selectable>true</selectable>
+    <altitudeLayer>Item</altitudeLayer>
+    <stackLimit>75</stackLimit>
+    <comps>
+      <li>
+        <compClass>CompForbiddable</compClass>
+      </li>
+    </comps>
+    <alwaysHaulable>true</alwaysHaulable>
+    <drawGUIOverlay>true</drawGUIOverlay>
+    <rotatable>false</rotatable>
+    <pathCost>15</pathCost>
+  </ThingDef>
+
+<ThingDef Name="TobaccoBase" Abstract="True">
+   <label>meal</label>
+    <thingClass>Meal</thingClass>
+    <category>Item</category>
+    <useHitPoints>true</useHitPoints>
+    <selectable>true</selectable>
+    <statBases>
+      <MaxHitPoints>50</MaxHitPoints>
+      <Flammability>1.0</Flammability>
+    </statBases>
+    <altitudeLayer>Item</altitudeLayer>
+    <stackLimit>10</stackLimit>
+    <tickerType>Rare</tickerType>
+    <socialPropernessMatters>true</socialPropernessMatters>
+    <thingCategories>
+      <li>DrugMeals</li>
+    </thingCategories>
+    <alwaysHaulable>true</alwaysHaulable>
+    <comps>
+      <li>
+        <compClass>CompForbiddable</compClass>
+      </li>
+    </comps>
+    <pathCost>15</pathCost>
+    <resourceReadoutPriority>Last</resourceReadoutPriority>
+    <drawGUIOverlay>true</drawGUIOverlay>
+  </ThingDef>
+
+
+
+<ThingDef ParentName="TobaccoBase">
+	<defName>Cigarillos</defName>
+	<label>pack of cigarillos</label>
+	<description>A pack of twenty cigarillos</description>
+	<graphicData>
+	<texPath>Things/Item/Resource/Cigarillos</texPath>
+	<graphicClass>Graphic_Single</graphicClass>
+	</graphicData>
+	<stackLimit>10</stackLimit>
+	<statBases>
+	  <MarketValue>10</MarketValue>
+	</statBases>
+	<ingestible>
+           <preferability>NeverForNutrition</preferability>
+           <nutrition>0.08</nutrition>
+           <joy>0.2</joy>
+           <joyKind>Meditative</joyKind>
+           <maxNumToIngestAtOnce>1</maxNumToIngestAtOnce>
+           <soundEat>Harvest_Standard</soundEat>
+           <isPleasureDrug>true</isPleasureDrug>
+	  <hediffGivers>
+		<li>
+		<chance>1</chance>
+		<hediffDef>Tobacco</hediffDef>
+		</li>
+	  </hediffGivers>
+	</ingestible>
+</ThingDef>
+
+
+
+
+<ThingDef ParentName="TobaccoBase">
+	<defName>Cigar</defName>
+	<label>cigar</label>
+	<description>hefty cigar</description>
+	<graphicData>
+	<texPath>Things/Item/Resource/Cigar</texPath>
+	<graphicClass>Graphic_Single</graphicClass>
+	</graphicData>
+	<stackLimit>10</stackLimit>
+	<statBases>
+	  <MarketValue>15</MarketValue>
+	</statBases>
+	<ingestible>
+           <preferability>NeverForNutrition</preferability>
+           <nutrition>0.08</nutrition>
+           <joy>0.3</joy>
+           <joyKind>Meditative</joyKind>
+           <maxNumToIngestAtOnce>1</maxNumToIngestAtOnce>
+           <soundEat>Harvest_Standard</soundEat>
+	 <hediffGivers>
+		<li>
+		<chance>1</chance>
+		<hediffDef>StrongTobacco</hediffDef>
+		</li>
+	  </hediffGivers>
+	</ingestible>
+</ThingDef>
+
+  <!--=================== Raw Tobacco ===============-->
+<!--
+  <ThingDef Name="ResourceBase" Abstract="True">
+    <thingClass>ThingWithComps</thingClass>
+    <label>unspecified resource</label>
+    <category>Item</category>
+    <resourceReadoutPriority>Middle</resourceReadoutPriority>
+    <useHitPoints>true</useHitPoints>
+    <selectable>true</selectable>
+    <altitudeLayer>Item</altitudeLayer>
+    <stackLimit>75</stackLimit>
+    <comps>
+      <li>
+        <compClass>CompForbiddable</compClass>
+      </li>
+    </comps>
+    <alwaysHaulable>true</alwaysHaulable>
+    <drawGUIOverlay>true</drawGUIOverlay>
+    <rotatable>false</rotatable>
+    <pathCost>15</pathCost>
+  </ThingDef>
+  
+  -->
+
+  <ThingDef Abstract="True" ParentName="ResourceBase" Name="PlantProductBase">
+  <graphicData>
+    <graphicClass>Graphic_Single</graphicClass>
+	</graphicData>
+    <soundInteract>Food_Drop</soundInteract>
+    <soundDrop>Food_Drop</soundDrop>
+    <socialPropernessMatters>true</socialPropernessMatters>
+    <statBases>
+      <MaxHitPoints>100</MaxHitPoints>
+      <Flammability>1.0</Flammability>
+      <DeteriorationRate>5</DeteriorationRate>
+    </statBases>
+    <tickerType>Rare</tickerType>
+  </ThingDef>
+
+  <ThingDef ParentName="PlantProductBase">
+    <defName>RawTobacco</defName>
+    <label>tobacco</label>
+    <description>Raw tobacco. Not recommended for eating, but makes for a nice smoke</description>
+	<graphicData>
+    <texPath>Things/Item/Resource/PlantFoodRaw/RawTobacco</texPath>
+	</graphicData>
+    <statBases>
+      <MarketValue>5.0</MarketValue>
+    </statBases>
+    <thingCategories>
+      <li>RawIngredients</li>
+    </thingCategories>
+    <comps>
+      <li Class="CompProperties_Rottable">
+        <daysToRotStart>25</daysToRotStart>
+        <rotDestroys>true</rotDestroys>
+      </li>
+    </comps>
+  </ThingDef>
+
+</ThingDefs>

@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+<RecipeDef>
+	<defName>BrewCoffee</defName>
+	<label>Brew Coffee</label>
+	<description>brews a cup of coffee.</description>
+	<jobString>Brewing coffee.</jobString>
+	<workSpeedStat>BrewingSpeed</workSpeedStat>
+	<effectWorking>Cook</effectWorking>
+          <soundWorking>Recipe_Brewing</soundWorking>
+          <allowMixingIngredients>true</allowMixingIngredients>
+	<workAmount>800</workAmount>
+          <targetCountAdjustment>1</targetCountAdjustment>
+	<ingredients>
+	  <li>
+	    <filter>
+	      <thingDefs>
+	        <li>RawCoffee</li>
+	      </thingDefs>
+	    </filter>
+	    <count>12</count>
+	  </li>
+	</ingredients>
+	<fixedIngredientFilter>
+	  <thingDefs>
+	    <li>RawCoffee</li>
+	  </thingDefs>
+	</fixedIngredientFilter>
+	<products>
+	  <Coffee>4</Coffee>
+	</products>
+	<workSkill>Cooking</workSkill>
+</RecipeDef>
+
+<RecipeDef>
+	<defName>BrewEspresso</defName>
+	<label>Brew Espresso</label>
+	<description>brews a cup of espresso.</description>
+	<jobString>Brewing Espresso.</jobString>
+	<workSpeedStat>BrewingSpeed</workSpeedStat>
+	<effectWorking>Cook</effectWorking>
+          <soundWorking>Recipe_Brewing</soundWorking>
+          <allowMixingIngredients>true</allowMixingIngredients>
+	<workAmount>950</workAmount>
+          <targetCountAdjustment>1</targetCountAdjustment>
+	<ingredients>
+	  <li>
+	    <filter>
+	      <thingDefs>
+	        <li>RawCoffee</li>
+	      </thingDefs>
+	    </filter>
+	    <count>12</count>
+	  </li>
+	</ingredients>
+	<fixedIngredientFilter>
+	  <thingDefs>
+	    <li>RawCoffee</li>
+	  </thingDefs>
+	</fixedIngredientFilter>
+	<products>
+	  <Espresso>2</Espresso>
+	</products>
+	<workSkill>Cooking</workSkill>
+</RecipeDef>
+
+
+</Defs>

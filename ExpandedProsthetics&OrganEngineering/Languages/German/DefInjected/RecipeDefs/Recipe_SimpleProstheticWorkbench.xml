@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<LanguageData>
+
+	<CreateSimpleProstheticLeg.label>Stelle einfache Beinprothese her</CreateSimpleProstheticLeg.label>
+	<CreateSimpleProstheticLeg.description>Stellt eine einfache Beinprotheses aus Stahl und Plastahl her.</CreateSimpleProstheticLeg.description>
+
+	<CreateSimpleProstheticArm.label>Stelle einfache Armprothese her</CreateSimpleProstheticArm.label>
+	<CreateSimpleProstheticArm.description>Stellt eine einfache Armprotheses aus Stahl und Plastahl her.</CreateSimpleProstheticArm.description>
+
+	<CreateSimpleProstheticHand.label>Stelle einfache Handprothese her</CreateSimpleProstheticHand.label>
+	<CreateSimpleProstheticHand.description>Stellt eine einfache Handprotheses aus Stahl und Plastahl her.</CreateSimpleProstheticHand.description>
+
+	<CreateSimpleProstheticFoot.label>Stelle einfache Fußprothese her</CreateSimpleProstheticFoot.label>
+	<CreateSimpleProstheticFoot.description>Stellt eine einfache Fußprotheses aus Stahl und Plastahl her.</CreateSimpleProstheticFoot.description>
+
+	<CreateArtificialNose.label>Stelle küstliche Nase her</CreateArtificialNose.label>
+	<CreateArtificialNose.description>Fertigt eine künstliche Nase aus Plastahl an.</CreateArtificialNose.description>
+
+	<CreateArtificialPelvis.label>Stelle küstliches Becken her</CreateArtificialPelvis.label>
+	<CreateArtificialPelvis.description>Fertigt ein künstliches Becken aus Stahl und Plastahl an.</CreateArtificialPelvis.description>
+
+	<CreateHydraulicJaw.label>Stelle hydraulischen Kiefer her</CreateHydraulicJaw.label>
+	<CreateHydraulicJaw.description>Fertigt einen hydraulischen Kiefer aus Stahl an.</CreateHydraulicJaw.description>
+
+	<CreateGlassEye.label>Stelle bionisches Ohr her</CreateGlassEye.label>
+	<CreateGlassEye.description>Zermahlt einen Steinbrocken zu Sand und fertigt daraus ein Glasauge an.</CreateGlassEye.description>
+
+	<CreateCrystalEye.label>Stelle Kristallauge her</CreateCrystalEye.label>
+	<CreateCrystalEye.description>Wenn man drei Glasaugen vorsichtig ineinander einsetzt entsteht ein subtiles Ring-Muster. Ein sehr schöner Effekt.</CreateCrystalEye.description>
+
+</LanguageData>

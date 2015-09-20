@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DefPackage-SoundDef>
+  
+  <SoundDef>
+    <defName>Sprinkler</defName>  
+    <eventNames />  
+    <subSounds>
+      <li>
+        <muteWhenPaused>True</muteWhenPaused>
+        <onCamera>True</onCamera>
+        <grains>
+          <li Class="AudioGrain_Clip">
+            <clipPath>Water/Sprinkler</clipPath>
+          </li>
+        </grains>      
+        <volumeRange>
+          <min>15</min>        
+          <max>15</max>
+        </volumeRange>      
+        <distRange>
+          <min>10</min>        
+          <max>34</max>   
+        </distRange>
+      </li>
+    </subSounds>
+  </SoundDef>
+  
+ <SoundDef>
+    <defName>WaterDrop</defName>  
+    <eventNames />  
+    <subSounds>
+      <li>
+        <grains>
+          <li Class="AudioGrain_Clip">
+            <clipPath>Water/dropLow</clipPath>
+          </li>
+        </grains>      
+        <volumeRange>
+          <min>5</min>        
+          <max>5</max>
+        </volumeRange>      
+        <distRange>
+          <min>10</min>        
+          <max>10</max>   
+        </distRange>
+      </li>
+     <li>
+        <grains>
+          <li Class="AudioGrain_Clip">
+            <clipPath>Water/dropHigh</clipPath>
+          </li>
+        </grains>      
+        <volumeRange>
+          <min>15</min>        
+          <max>15</max>
+        </volumeRange>      
+        <distRange>
+          <min>10</min>        
+          <max>34</max>   
+        </distRange>
+      </li>
+    </subSounds>
+  </SoundDef>
+
+  <SoundDef>
+    <defName>Splat</defName>  
+    <eventNames />  
+    <subSounds>
+      <li>
+        <grains>
+          <li Class="AudioGrain_Clip">
+            <clipPath>Water/SplatSquirt</clipPath>
+          </li>
+        </grains>      
+        <volumeRange>
+          <min>15</min>        
+          <max>15</max>
+        </volumeRange>      
+        <distRange>
+          <min>10</min>        
+          <max>34</max>   
+        </distRange>
+      </li>
+    </subSounds>
+  </SoundDef>
+  
+</DefPackage-SoundDef>

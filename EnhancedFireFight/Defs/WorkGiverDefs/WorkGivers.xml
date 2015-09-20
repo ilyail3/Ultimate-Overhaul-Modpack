@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<WorkGivers>
+
+  <!-- ============= Misc ============= -->
+  
+  <WorkGiverDef>
+    <defName>FightFires</defName>
+    <giverClass>WorkGiver_FightFires</giverClass>
+    <workType>Firefighter</workType>
+    <priorityInType>100</priorityInType>
+    <verb>extinguish</verb>
+    <gerund>extinguishing</gerund>
+  </WorkGiverDef>
+  
+  
+  <WorkGiverDef>
+    <defName>FightFiresWithTool</defName>
+    <giverClass>EnhancedFireFight.WorkGiver_FightFiresWithTool</giverClass>
+    <workType>Firefighter</workType>
+    <priorityInType>200</priorityInType>
+    <verb>extinguish</verb>
+    <gerund>extinguishing with tool</gerund>
+  </WorkGiverDef>
+
+
+</WorkGivers>

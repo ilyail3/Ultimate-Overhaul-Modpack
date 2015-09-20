@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<RecipeDefs>
+
+  <RecipeDef Abstract="True" Name="SurgeryFlesh">
+    <effectWorking>Surgery</effectWorking>
+    <soundWorking>Recipe_Surgery</soundWorking>
+    <workSpeedStat>MedicalOperationSpeed</workSpeedStat>
+	<workSkill>Medicine</workSkill>
+	<workSkillLearnFactor>16</workSkillLearnFactor>
+  </RecipeDef>
+
+	<RecipeDef ParentName="SurgeryFlesh">
+		<defName>HealScarTorso</defName>
+		<label>heal injury</label>
+		<description>Heals injuries using biomatter.</description>
+		<workerClass>SuperiorCrafting.Recipe_PatchScar</workerClass>
+		<jobString>Healing scars.</jobString>
+		<workAmount>3000</workAmount>
+		<recipeUsers><li>Human</li></recipeUsers>
+		<ingredients>
+			<li>
+				<filter>
+      				<categories>
+        				<li>Medicine</li>
+      				</categories>
+				</filter>
+				<count>1</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>SyntheticSkin</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>SyntheticSkin</li>
+				<li>Medicine</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<appliedOnFixedBodyParts>
+			<li>Head</li>
+			<li>Nose</li>
+			<li>Neck</li>
+			<li>Torso</li>
+			<li>LeftArm</li>
+			<li>LeftShoulder</li>
+			<li>RightArm</li>
+			<li>RightShoulder</li>
+			<li>RightHand</li>
+			<li>LeftHand</li>
+			<li>LeftLeg</li>
+			<li>RightLeg</li>
+			<li>LeftFoot</li>
+			<li>RightFoot</li>
+		</appliedOnFixedBodyParts>
+		<workSkill>Medicine</workSkill>
+	</RecipeDef>
+  
+</RecipeDefs>

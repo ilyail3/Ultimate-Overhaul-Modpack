@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+  <ThoughtDef>
+    <defName>ClothedNudist</defName>
+    <workerClass>ThoughtWorker_NudistShielded</workerClass>
+    <invert>true</invert>
+    <requiredTraits>
+      <li>Nudist</li>
+    </requiredTraits>
+    <stages>
+      <li>
+        <label>constraining clothes</label>
+        <description>I'm a nudist but I have to wear this shield. It's not unbearable - but I still feel constrained and uncomfortable.</description>
+        <baseMoodEffect>-3</baseMoodEffect>
+      </li>
+    </stages>
+  </ThoughtDef>
+
+<!-- ClothedShieldedNudist   ClothedNudist      HappyShieldNude  HappyNude   /-->
+
+  <ThoughtDef>
+    <defName>HappyNudeShield</defName>
+    <workerClass>ThoughtWorker_NudistShielded</workerClass>
+    <requiredTraits>
+      <li>Nudist</li>
+    </requiredTraits>
+    <stages>
+      <li>
+        <label>happily nude</label>
+        <description>I'm nude and loving it! Though shielded I feel free and unconstrained and really in touch with my surroundings!</description>
+        <baseMoodEffect>20</baseMoodEffect>
+      </li>
+    </stages>
+  </ThoughtDef>
+
+</Defs>

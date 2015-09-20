@@ -1,0 +1,239 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ThingDefs>
+
+	<ThingDef Name="ResourceBase" Abstract="True">
+    <thingClass>ThingWithComps</thingClass>
+    <label>unspecified resource</label>
+    <category>Item</category>
+    <resourceReadoutPriority>Middle</resourceReadoutPriority>
+    <useHitPoints>true</useHitPoints>
+    <selectable>true</selectable>
+    <altitudeLayer>Item</altitudeLayer>
+    <stackLimit>75</stackLimit>
+    <comps>
+      <li>
+        <compClass>CompForbiddable</compClass>
+      </li>
+    </comps>
+    <alwaysHaulable>true</alwaysHaulable>
+    <drawGUIOverlay>true</drawGUIOverlay>
+    <rotatable>false</rotatable>
+    <pathCost>15</pathCost>
+	</ThingDef>
+
+    <ThingDef Name="MealBase" Abstract="True">
+    <label>meal</label>
+    <thingClass>Meal</thingClass>
+    <category>Item</category>
+    <useHitPoints>true</useHitPoints>
+    <selectable>true</selectable>
+    <statBases>
+      <MaxHitPoints>50</MaxHitPoints>
+      <Flammability>1.0</Flammability>
+    </statBases>
+    <altitudeLayer>Item</altitudeLayer>
+    <stackLimit>10</stackLimit>
+    <tickerType>Rare</tickerType>
+    <socialPropernessMatters>true</socialPropernessMatters>
+    <thingCategories>
+      <li>DrugMeals</li>
+    </thingCategories>
+    <alwaysHaulable>true</alwaysHaulable>
+    <comps>
+      <li>
+        <compClass>CompForbiddable</compClass>
+      </li>
+    </comps>
+    <pathCost>15</pathCost>
+    <resourceReadoutPriority>Last</resourceReadoutPriority>
+    <drawGUIOverlay>true</drawGUIOverlay>
+  </ThingDef>
+
+
+
+<ThingDef ParentName="MealBase">
+	<defName>strawberrywine</defName>
+	<label>bottle of strawberry wine</label>
+	<description>A sweet, pinkish alcohol from strawberries.</description>
+	<graphicData>
+	<texPath>Things/Item/Resource/strawberrywine</texPath>
+	<graphicClass>Graphic_StackCount</graphicClass>
+	</graphicData>
+	<equippedAngleOffset>-150</equippedAngleOffset>
+	<rotatable>false</rotatable>
+	<stackLimit>12</stackLimit>
+	<statBases>
+	  <DeteriorationRate>0</DeteriorationRate>
+	  <MarketValue>10</MarketValue>
+	  <MeleeWeapon_DamageAmount>7</MeleeWeapon_DamageAmount>
+	  <MeleeWeapon_Cooldown>1.8</MeleeWeapon_Cooldown>
+	</statBases>
+	<ingestible>
+	  <nutrition>0.06</nutrition>
+	  <joy>0.19</joy>
+           <joyKind>Chemical</joyKind>
+	  <maxNumToIngestAtOnce>1</maxNumToIngestAtOnce>
+	  <preferability>NeverForNutrition</preferability>
+	  <soundEat>Ingest_Beer</soundEat>
+	  <isPleasureDrug>true</isPleasureDrug>
+	  <hediffGivers>
+		<li>
+		<chance>1</chance>
+		<hediffDef>Alcohol</hediffDef>
+		</li>
+	  </hediffGivers>
+	</ingestible>
+         <equipmentType>Primary</equipmentType>
+         <techLevel>Neolithic</techLevel>
+         <comps>
+           <li>
+             <compClass>CompEquippable</compClass>
+           </li>
+          </comps>
+         <verbs>
+           <li>
+             <verbClass>Verb_MeleeAttack</verbClass>
+             <hasStandardCommand>true</hasStandardCommand>
+             <meleeDamageDef>Blunt</meleeDamageDef>
+           </li>
+         </verbs>
+</ThingDef>
+
+<ThingDef ParentName="MealBase">
+	<defName>sake</defName>
+	<label>bottle of sake</label>
+	<description>A crisp, refreshing alcohol from rice.</description>
+	<graphicData>
+	<texPath>Things/Item/Resource/sake</texPath>
+	<graphicClass>Graphic_StackCount</graphicClass>
+	</graphicData>
+	<equippedAngleOffset>-150</equippedAngleOffset>
+	<rotatable>false</rotatable>
+	<stackLimit>12</stackLimit>
+	<statBases>
+	  <DeteriorationRate>0</DeteriorationRate>
+	  <MarketValue>15</MarketValue>
+	  <MeleeWeapon_DamageAmount>7</MeleeWeapon_DamageAmount>
+	  <MeleeWeapon_Cooldown>1.8</MeleeWeapon_Cooldown>
+	</statBases>
+	<ingestible>
+	  <nutrition>0.06</nutrition>
+	  <joy>0.19</joy>
+           <joyKind>Chemical</joyKind>
+	  <maxNumToIngestAtOnce>1</maxNumToIngestAtOnce>
+	  <preferability>NeverForNutrition</preferability>
+	  <soundEat>Ingest_Beer</soundEat>
+	  <isPleasureDrug>true</isPleasureDrug>
+	  <hediffGivers>
+		<li>
+		<chance>1</chance>
+		<hediffDef>Alcohol</hediffDef>
+		</li>
+	  </hediffGivers>
+	</ingestible>
+</ThingDef>
+
+<ThingDef ParentName="MealBase">
+	<defName>vodka</defName>
+	<label>bottle of vodka</label>
+	<description>A clear, potato based alcohol.</description>
+	<graphicData>
+	<texPath>Things/Item/Resource/vodka</texPath>
+	<graphicClass>Graphic_StackCount</graphicClass>
+	</graphicData>
+	<equippedAngleOffset>-150</equippedAngleOffset>
+	<rotatable>false</rotatable>
+	<stackLimit>12</stackLimit>
+	<statBases>
+	  <DeteriorationRate>0</DeteriorationRate>
+	  <MarketValue>20</MarketValue>
+	  <MeleeWeapon_DamageAmount>7</MeleeWeapon_DamageAmount>
+	  <MeleeWeapon_Cooldown>1.8</MeleeWeapon_Cooldown>
+	</statBases>
+	<ingestible>
+	  <nutrition>0.04</nutrition>
+	  <joy>0.2</joy>
+           <joyKind>Chemical</joyKind>
+	  <maxNumToIngestAtOnce>1</maxNumToIngestAtOnce>
+	  <preferability>NeverForNutrition</preferability>
+	  <soundEat>Ingest_Beer</soundEat>
+	  <isPleasureDrug>true</isPleasureDrug>
+	  <hediffGivers>
+		<li>
+		<chance>1</chance>
+		<hediffDef>MidAlcohol</hediffDef>
+		</li>
+	  </hediffGivers>
+	</ingestible>
+</ThingDef>
+
+<ThingDef ParentName="MealBase">
+	<defName>tequila</defName>
+	<label>bottle of tequila</label>
+	<description>A golden, agave based alcohol of storied reputation.</description>
+	<graphicData>
+	<texPath>Things/Item/Resource/tequila</texPath>
+	<graphicClass>Graphic_StackCount</graphicClass>
+	</graphicData>
+	<equippedAngleOffset>-150</equippedAngleOffset>
+	<rotatable>false</rotatable>
+	<stackLimit>12</stackLimit>
+	<statBases>
+	  <DeteriorationRate>0</DeteriorationRate>
+	  <MarketValue>25</MarketValue>
+	  <MeleeWeapon_DamageAmount>7</MeleeWeapon_DamageAmount>
+	  <MeleeWeapon_Cooldown>1.8</MeleeWeapon_Cooldown>
+	</statBases>
+	<ingestible>
+	  <nutrition>0.04</nutrition>
+	  <joy>0.25</joy>
+           <joyKind>Chemical</joyKind>
+	  <maxNumToIngestAtOnce>1</maxNumToIngestAtOnce>
+	  <preferability>NeverForNutrition</preferability>
+	  <soundEat>Ingest_Beer</soundEat>
+	  <isPleasureDrug>true</isPleasureDrug>
+	  <hediffGivers>
+		<li>
+		<chance>1</chance>
+		<hediffDef>StrongAlcohol</hediffDef>
+		</li>
+	  </hediffGivers>
+	</ingestible>
+</ThingDef>
+
+<ThingDef ParentName="MealBase">
+	<defName>whiskey</defName>
+	<label>bottle of whiskey</label>
+	<description>A golden, corn based alcohol.</description>
+	<graphicData>
+	<texPath>Things/Item/Resource/whiskey</texPath>
+	<graphicClass>Graphic_StackCount</graphicClass>
+	</graphicData>
+	<equippedAngleOffset>-150</equippedAngleOffset>
+	<rotatable>false</rotatable>
+	<stackLimit>12</stackLimit>
+	<statBases>
+	  <DeteriorationRate>0</DeteriorationRate>
+	  <MarketValue>20</MarketValue>
+	  <MeleeWeapon_DamageAmount>7</MeleeWeapon_DamageAmount>
+	  <MeleeWeapon_Cooldown>1.8</MeleeWeapon_Cooldown>
+	</statBases>
+	<ingestible>
+	  <nutrition>0.04</nutrition>
+	  <joy>0.2</joy>
+           <joyKind>Chemical</joyKind>
+	  <maxNumToIngestAtOnce>1</maxNumToIngestAtOnce>
+	  <preferability>NeverForNutrition</preferability>
+	  <soundEat>Ingest_Beer</soundEat>
+	  <isPleasureDrug>true</isPleasureDrug>
+	  <hediffGivers>
+		<li>
+		<chance>1</chance>
+		<hediffDef>MidAlcohol</hediffDef>
+		</li>
+	  </hediffGivers>
+	</ingestible>
+</ThingDef>
+
+
+</ThingDefs>

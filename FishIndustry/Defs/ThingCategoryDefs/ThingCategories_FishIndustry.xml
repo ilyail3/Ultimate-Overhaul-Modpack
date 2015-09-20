@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ThingCategoryDefs>
+
+      <ThingCategoryDef>
+        <defName>FoodFreshFish</defName>
+        <label>fresh fish</label>
+        <parent>Foods</parent>
+        <resourceReadoutRoot>true</resourceReadoutRoot>
+        <iconPath>Ui/Icons/ThingCategories/FreshFish</iconPath>
+      </ThingCategoryDef>
+
+</ThingCategoryDefs>

@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Buildings>
+
+
+  <ThingDef Name="BuildingBase" Abstract="True">
+    <category>Building</category>
+    <soundImpactDefault>BulletImpactMetal</soundImpactDefault>
+    <selectable>true</selectable>
+    <drawerType>MapMeshAndRealTime</drawerType>
+    <terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
+    <repairEffect>Repair</repairEffect>
+    <leaveResourcesWhenKilled>true</leaveResourcesWhenKilled>
+    <filthLeaving>BuildingRubble</filthLeaving>
+  </ThingDef>
+
+ 
+  <ThingDef ParentName="BuildingBase">
+    <defName>WaterPump</defName>
+    <label>water pump</label>
+    <thingClass>EnhancedFireFight.Building_WaterPump</thingClass>
+    <category>Building</category>
+	<graphicData>
+    <texPath>Things/Building/Security/WaterPump</texPath>
+    <graphicClass>Graphic_Single</graphicClass>
+	  <shadowData>
+        <volume>(0.3, 0.6, 0.3)</volume>
+      </shadowData>
+	</graphicData>
+	<minifiedDef>MinifiedFurniture</minifiedDef>
+    <altitudeLayer>Waist</altitudeLayer>
+    <passability>Standable</passability>
+	<fillPercent>0.2</fillPercent>
+   <statBases>
+	  <MaxHitPoints>240</MaxHitPoints>
+      <Flammability>1.0</Flammability>
+      <WorkToMake>2500</WorkToMake>
+    </statBases>
+    <selectable>true</selectable>
+    <description>Water Pump that extinguish an area.</description>
+    <size>(1,1)</size>
+    <costList>
+      <SteelBar>60</SteelBar>
+    </costList>
+    <tickerType>Normal</tickerType>
+    <comps>
+      <li>
+        <compClass>CompPowerTrader</compClass>
+        <basePowerConsumption>50</basePowerConsumption>
+        <soundPowerOn>PowerOnSmall</soundPowerOn>
+        <soundPowerOff>PowerOffSmall</soundPowerOff>
+      </li>
+	  <li>
+        <compClass>CompQuality</compClass>
+      </li>
+    </comps>
+    <specialDisplayRadius>5.8</specialDisplayRadius>
+    <designationCategory>Security</designationCategory>
+    <rotatable>false</rotatable>
+	<researchPrerequisite>AFS</researchPrerequisite>
+  </ThingDef>
+  
+
+  
+</Buildings>

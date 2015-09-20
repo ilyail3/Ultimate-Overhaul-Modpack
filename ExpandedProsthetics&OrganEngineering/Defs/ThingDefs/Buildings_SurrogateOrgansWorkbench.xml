@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<ThingDefs>
+
+  <ThingDef Name="BuildingBase" Abstract="True">
+    <category>Building</category>
+    <soundImpactDefault>BulletImpactMetal</soundImpactDefault>
+    <selectable>true</selectable>
+    <drawerType>MapMeshAndRealTime</drawerType>
+    <terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
+    <repairEffect>Repair</repairEffect>
+    <leaveResourcesWhenKilled>true</leaveResourcesWhenKilled>
+    <filthLeaving>BuildingRubble</filthLeaving>
+  </ThingDef>
+  
+  <ThingDef ParentName="BuildingBase">
+    <DefName>TableSurrogates</DefName>
+    <label>surrogate organ workbench</label>
+    <ThingClass>Building_WorkTable</ThingClass>
+    <Description>A simple workstation, equipped to craft simple surrogate organs.</Description>
+	<graphicData>
+    <texPath>Things/Building/Production/TableSurrogates</texPath>
+	<graphicClass>Graphic_Single</graphicClass>
+	<drawSize>(3,1)</drawSize>
+	</graphicData>
+    <CostList>
+      <SteelBar>100</SteelBar>
+	  <CopperBar>25</CopperBar>
+	  <WoodPlank>125</WoodPlank>
+    </CostList>
+    <constructEffect>ConstructMetal</constructEffect>
+    <fillPercent>0.5</fillPercent>
+    <AltitudeLayer>Waist</AltitudeLayer>
+    <useHitPoints>True</useHitPoints>	
+    <statBases>
+      <WorkToMake>1000</WorkToMake>
+      <MaxHitPoints>200</MaxHitPoints>
+      <Flammability>0.8</Flammability>
+    </statBases>
+	<tickerType>Normal</tickerType>
+    <comps>
+      <li>
+        <compClass>CompPowerTrader</compClass>
+        <startElectricalFires>true</startElectricalFires>
+        <basePowerConsumption>250</basePowerConsumption>
+        <soundPowerOn>PowerOnSmall</soundPowerOn>
+        <soundPowerOff>PowerOffSmall</soundPowerOff>
+      </li>
+	  <li Class="CommunityCoreLibrary.CompProperties_LowIdleDraw">
+                <compClass>CommunityCoreLibrary.CompPowerLowIdleDraw</compClass>
+                <idlePowerFactor>0.20</idlePowerFactor>
+				<operationalMode>InUse</operationalMode>
+            </li>
+	  <li>
+        <compClass>CompAffectedByFacilities</compClass>
+        <linkableFacilities>
+          <li>ToolCabinet</li>
+        </linkableFacilities>
+      </li>
+    </comps>
+    <Size>(3,1)</Size>
+    <DesignationCategory>Production</DesignationCategory>
+	<staticSunShadowHeight>0.20</staticSunShadowHeight>
+    <Passability>PassThroughOnly</Passability>
+    <pathCost>60</pathCost>
+    <hasInteractionCell>True</hasInteractionCell>
+    <interactionCellOffset>(0,0,-1)</interactionCellOffset>
+    <surfaceType>Item</surfaceType>
+    <recipes>
+	  <li>CreateBrainStimulator</li>  
+	  <li>CreateSurrogateLung</li>
+	  <li>CreateSurrogateHeart</li>
+	  <li>CreateSurrogateKidney</li>
+	  <li>CreateSurrogateStomach</li>
+	  <li>CreateSurrogateLiver</li>
+    </recipes>
+    <inspectorTabs>
+      <li>ITab_Bills</li>
+    </inspectorTabs>
+    <building>
+      <spawnedConceptLearnOpportunity>BillsTab</spawnedConceptLearnOpportunity>
+    </building>
+		<placeWorkers>
+			<li>PlaceWorker_ShowFacilitiesConnections</li>
+		</placeWorkers>
+    <researchPrerequisite>SurrogateOrgans</researchPrerequisite>
+  </ThingDef>
+  
+</ThingDefs>

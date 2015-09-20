@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<ThingDefs>
+
+  <ThingDef Name="BuildingBase" Abstract="True">
+    <category>Building</category>
+    <soundImpactDefault>BulletImpactMetal</soundImpactDefault>
+    <selectable>true</selectable>
+    <drawerType>MapMeshAndRealTime</drawerType>
+    <terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
+    <repairEffect>Repair</repairEffect>
+    <leaveResourcesWhenKilled>true</leaveResourcesWhenKilled>
+    <filthLeaving>BuildingRubble</filthLeaving>
+  </ThingDef>
+  
+  <ThingDef ParentName="BuildingBase">
+    <DefName>TableBasicProsthetic</DefName>
+    <label>basic prosthetics workbench</label>
+    <ThingClass>Building_WorkTable</ThingClass>
+    <Description>A workbench equipped for production of very simple prostheses.</Description>
+	<graphicData>
+    <texPath>Things/Building/Production/TableBasicProstheticsSmall</texPath>
+	<graphicClass>Graphic_Single</graphicClass>
+	<drawSize>(2,1)</drawSize>
+	</graphicData>
+    <CostList>
+      <WoodPlank>100</WoodPlank>
+	  <CopperBar>20</CopperBar>
+      <SteelBar>30</SteelBar>
+    </CostList>
+    <constructEffect>ConstructMetal</constructEffect>
+    <AltitudeLayer>Waist</AltitudeLayer>
+    <statBases>
+      <WorkToMake>700</WorkToMake>
+      <MaxHitPoints>120</MaxHitPoints>
+      <Flammability>1.0</Flammability>
+    </statBases>
+    <Size>(2,1)</Size>
+    <DesignationCategory>Production</DesignationCategory>
+	<staticSunShadowHeight>0.20</staticSunShadowHeight>
+    <Passability>PassThroughOnly</Passability>
+    <pathCost>60</pathCost>
+    <hasInteractionCell>True</hasInteractionCell>
+    <interactionCellOffset>(0,0,-1)</interactionCellOffset>
+    <surfaceType>Item</surfaceType>
+    <recipes>
+	<li>CreatePegLeg</li>
+	<li>CreateSteelArm</li>
+	<li>CreateHookHand</li>
+	<li>CreateEyePatch</li>
+	<li>CreateDenture</li>
+	<li>CreateWoodenFoot</li>
+    </recipes>
+    <inspectorTabs>
+      <li>ITab_Bills</li>
+    </inspectorTabs>
+    <building>
+      <spawnedConceptLearnOpportunity>BillsTab</spawnedConceptLearnOpportunity>
+    </building>
+	<comps>
+      <li>
+        <compClass>CompAffectedByFacilities</compClass>
+        <linkableFacilities>
+          <li>ToolCabinet</li>
+        </linkableFacilities>
+      </li>
+    </comps>
+		<placeWorkers>
+			<li>PlaceWorker_ShowFacilitiesConnections</li>
+		</placeWorkers>
+	<researchPrerequisite>CraftingI</researchPrerequisite>
+  </ThingDef>
+  
+</ThingDefs>

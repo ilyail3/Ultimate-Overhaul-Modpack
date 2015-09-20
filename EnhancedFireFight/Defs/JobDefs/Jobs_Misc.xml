@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<JobDefs>
+
+  <!--============= Item hauling ===============-->
+
+	<JobDef>
+		<defName>BeatFireWithTool</defName>
+		<driverClass>EnhancedFireFight.JobDriver_BeatFireWithTool</driverClass>
+		<reportString>Beating fire out.</reportString>
+	</JobDef>
+  
+</JobDefs>

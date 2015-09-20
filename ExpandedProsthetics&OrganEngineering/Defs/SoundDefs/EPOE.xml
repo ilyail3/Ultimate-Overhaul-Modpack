@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8"?><DefPackage-SoundDef>
+
+  <SoundDef>
+    <defName>EPOEAssembling</defName>  
+    <sustain>True</sustain>  
+    <eventNames/>  
+    <maxSimultaneous>3</maxSimultaneous>  
+    <priorityMode>PrioritizeNearest</priorityMode>  
+    <sustainStartSound>DesignateRegionStart</sustainStartSound>  
+    <subSounds>
+      <li>
+        <muteWhenPaused>True</muteWhenPaused>      
+        <onCamera>True</onCamera>      
+        <grains>
+          <li Class="AudioGrain_Clip">
+            <clipPath>EPOEAssembling</clipPath>
+          </li>
+        </grains>      
+        <volumeRange>
+          <min>18.617487</min>        
+          <max>18.617487</max>
+        </volumeRange>      
+        <sustainLoop>True</sustainLoop>      
+        <sustainLoopDurationRange>
+          <min>999</min>        
+          <max>999</max>
+        </sustainLoopDurationRange>
+      </li>
+    </subSounds>
+  </SoundDef>
+  
+</DefPackage-SoundDef>

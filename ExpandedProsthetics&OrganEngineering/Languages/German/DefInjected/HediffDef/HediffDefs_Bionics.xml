@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<LanguageData>
+		
+	<BionicHand.label>Bionische Hand</BionicHand.label>
+	<BionicFoot.label>Bionischer Fuß</BionicFoot.label>
+	<BionicSpine.label>Künstliche Wirbelsäule</BionicSpine.label>
+	<MedicalRib.label>Medizinisches Rippen-Implantat</MedicalRib.label>
+	<BionicJaw.label>Bionischer Kiefer</BionicJaw.label>
+	<SilentJaw.label>Stummgeschalteter Kiefer</SilentJaw.label>
+	<BionicEar.label>Bionisches Ohr</BionicEar.label>
+	<PowerArm.label>Powerarm</PowerArm.label>
+	<DruggedRib.label>Stimulierendes Rippen-Implantat</DruggedRib.label>
+	
+</LanguageData>

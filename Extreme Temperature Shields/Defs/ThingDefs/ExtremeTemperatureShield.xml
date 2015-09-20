@@ -1,0 +1,479 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+
+	<ThingDef Name="ApparelShieldBase" Abstract="True">
+		<thingClass>Apparel</thingClass>
+		<category>Item</category>
+		<selectable>True</selectable>
+		<pathCost>10</pathCost>
+		<useHitPoints>True</useHitPoints>
+    <graphicData>
+      <onGroundRandomRotateAngle>35</onGroundRandomRotateAngle>
+    </graphicData>
+    <drawGUIOverlay>true</drawGUIOverlay>
+    <statBases>
+			<MaxHitPoints>100</MaxHitPoints>
+			<Flammability>1.0</Flammability>
+      <DeteriorationRate>1</DeteriorationRate>
+      <SellPriceFactor>0.5</SellPriceFactor>
+    </statBases>
+		<altitudeLayer>Item</altitudeLayer>
+		<alwaysHaulable>True</alwaysHaulable>
+		<tickerType>Never</tickerType>
+		<thingCategories>
+			<li>PersonalShields</li>
+		</thingCategories>
+		<comps>
+			<li>
+				<compClass>CompForbiddable</compClass>
+			</li>
+      <li>
+        <compClass>CompColorable</compClass>
+      </li>
+			<li>
+				<compClass>CompQuality</compClass>
+			</li>
+		</comps>
+	</ThingDef>
+
+
+	<ThingDef ParentName="ApparelShieldBase">
+		<thingClass>PersonalShield</thingClass>
+		<defName>Apparel_PersonalShield_Heat</defName>
+		<label>cozy shield</label>
+		<description>One day a nudist somewhere said NO MORE to clothing just because of the ice sheet and tore open a personal shield and installed a heating module. \n\nWhile it will still attempt to stop any rapidly-moving projectile or energy attack that comes from a distance its capacity to do so has been greatly reduced due to the heaters power requirements. It also still does nothing against melee attacks or shots from point-blank range. It also prevents firing past touch range like the shield it was derived from. </description>
+    <graphicData>
+      <texPath>Things/Pawn/Humanlike/Apparel/PersonalShield/PersonalShield</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <tickerType>Normal</tickerType>
+		<statBases>
+			<MarketValue>1250</MarketValue>
+      <PersonalShieldRechargeRate>0.13</PersonalShieldRechargeRate>
+      <PersonalShieldEnergyMax>.35</PersonalShieldEnergyMax>
+	  	<Insulation_Cold>-65</Insulation_Cold>
+		<Insulation_Heat>-12</Insulation_Heat>
+    </statBases>
+		<apparel>
+			<bodyPartGroups>
+				<li>Torso</li>
+			</bodyPartGroups>
+			<layers>
+				<li>Accessory</li>
+			</layers>
+			<commonality>3</commonality>
+			<tags>
+				<li>PersonalShield</li>
+			</tags>
+		</apparel>
+    <colorGenerator Class="ColorGenerator_Options">
+      <options>
+        <li>
+          <weight>10</weight>
+          <only>RGBA(0.33,0.33,0.33,1)</only>
+        </li>
+        <li>
+          <weight>10</weight>
+          <only>RGBA(0.65,0.65,0.65,1)</only>
+        </li>
+        <li>
+          <weight>6</weight>
+          <min>RGBA(0.3,0.3,0.3,1)</min>
+          <max>RGBA(0.5,0.5,0.5,1)</max>
+        </li>
+        <li>
+          <weight>10</weight>
+          <only>RGBA(0.9,0.9,0.9,1)</only>
+        </li>
+      </options>
+    </colorGenerator>
+	</ThingDef>
+	
+	<ThingDef ParentName="ApparelShieldBase">
+		<thingClass>PersonalShield</thingClass>
+		<defName>Apparel_PersonalShield_Cold</defName>
+		<label>Chilled Shield</label>
+		<description>During a heatwave an overheated colonist somewhere ripped apart their AC and merged it into their personal shield.\n\nWhile it will still attempt to stop any rapidly-moving projectile or energy attack that comes from a distance its capacity to do so has been greatly reduced due to the air-conditioner's power requirements. It also still does nothing against melee attacks or shots from point-blank range. It also prevents firing past touch range like the shield it was derived from. </description>
+    <graphicData>
+      <texPath>Things/Pawn/Humanlike/Apparel/PersonalShield/PersonalShield</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <tickerType>Normal</tickerType>
+		<statBases>
+			<MarketValue>1250</MarketValue>
+      <PersonalShieldRechargeRate>0.13</PersonalShieldRechargeRate>
+      <PersonalShieldEnergyMax>.35</PersonalShieldEnergyMax>
+	  	<Insulation_Cold>-6</Insulation_Cold>
+		<Insulation_Heat>26</Insulation_Heat>
+    </statBases>
+		<apparel>
+			<bodyPartGroups>
+				<li>Torso</li>
+			</bodyPartGroups>
+			<layers>
+				<li>Accessory</li>
+			</layers>
+			<commonality>3</commonality>
+			<tags>
+				<li>PersonalShield</li>
+			</tags>
+		</apparel>
+    <colorGenerator Class="ColorGenerator_Options">
+      <options>
+        <li>
+          <weight>10</weight>
+          <only>RGBA(0.33,0.33,0.33,1)</only>
+        </li>
+        <li>
+          <weight>10</weight>
+          <only>RGBA(0.65,0.65,0.65,1)</only>
+        </li>
+        <li>
+          <weight>6</weight>
+          <min>RGBA(0.3,0.3,0.3,1)</min>
+          <max>RGBA(0.5,0.5,0.5,1)</max>
+        </li>
+        <li>
+          <weight>10</weight>
+          <only>RGBA(0.9,0.9,0.9,1)</only>
+        </li>
+      </options>
+    </colorGenerator>
+	</ThingDef>
+	
+	
+	<ThingDef ParentName="ApparelShieldBase">
+		<defName>Apparel_PersonalShield_Cold_Enhanced</defName>
+		<thingClass>ExtremeTemperatureShields.Apparel_ExtremeTemperatureShield</thingClass>
+		<label>Chilled Shooter Shield</label>
+		<description>During a heatwave an overheated colonist somewhere ripped apart their AC and merged it into their personal shield.\n\nA month later they did some more tweaking and due to the need of this device to vent heat while retaining cool the colonist made it so bullets could move out as easily as the hot air. \n\nThe power requirements are still quite high however so this shield still offers less capacity, though some refinements were made</description>
+    <graphicData>
+      <texPath>Things/Pawn/Humanlike/Apparel/PersonalShield/PersonalShield</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <tickerType>Normal</tickerType>
+		<statBases>
+			<MarketValue>1800</MarketValue>
+      <PersonalShieldRechargeRate>0.13</PersonalShieldRechargeRate>
+      <PersonalShieldEnergyMax>.55</PersonalShieldEnergyMax>
+	  	<Insulation_Cold>-6</Insulation_Cold>
+		<Insulation_Heat>26</Insulation_Heat>
+    </statBases>
+		<apparel>
+			<bodyPartGroups>
+				<li>Torso</li>
+			</bodyPartGroups>
+			<layers>
+				<li>Accessory</li>
+			</layers>
+			<commonality>3</commonality>
+			<tags>
+				<li>PersonalShield</li>
+				<li>Outlander</li>
+				<li>Pirate</li>
+				<li>Spacer</li>
+			</tags>
+		</apparel>
+    <colorGenerator Class="ColorGenerator_Options">
+      <options>
+        <li>
+          <weight>10</weight>
+          <only>RGBA(0.33,0.33,0.33,1)</only>
+        </li>
+        <li>
+          <weight>10</weight>
+          <only>RGBA(0.65,0.65,0.65,1)</only>
+        </li>
+        <li>
+          <weight>6</weight>
+          <min>RGBA(0.3,0.3,0.3,1)</min>
+          <max>RGBA(0.5,0.5,0.5,1)</max>
+        </li>
+        <li>
+          <weight>10</weight>
+          <only>RGBA(0.9,0.9,0.9,1)</only>
+        </li>
+      </options>
+    </colorGenerator>
+	</ThingDef>
+	
+	
+		<ThingDef ParentName="ApparelShieldBase">
+		<defName>Apparel_PersonalShield_Heat_Enhanced</defName>
+		<thingClass>ExtremeTemperatureShields.Apparel_ExtremeTemperatureShield</thingClass>
+		<label>Cozy Shooter Shield</label>
+		<description>One day a nudist somewhere said NO MORE to clothing just because of the ice sheet and tore open a personal shield and installed a heating module. \n\n Then when one day after they had to deactivate it just to shoot a raider they tore back into it to do some tweaking...\n\n Finally they managed to upgrade it to be a tiny bit more efficent as well as allowing shots to be fired out!</description>
+    <graphicData>
+      <texPath>Things/Pawn/Humanlike/Apparel/PersonalShield/PersonalShield</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <tickerType>Normal</tickerType>
+		<statBases>
+			<MarketValue>1800</MarketValue>
+      <PersonalShieldRechargeRate>0.13</PersonalShieldRechargeRate>
+      <PersonalShieldEnergyMax>.55</PersonalShieldEnergyMax>
+	  	<Insulation_Cold>-68</Insulation_Cold>
+		<Insulation_Heat>-6</Insulation_Heat>
+    </statBases>
+		<apparel>
+			<bodyPartGroups>
+				<li>Torso</li>
+			</bodyPartGroups>
+			<layers>
+				<li>Accessory</li>
+			</layers>
+			<commonality>3</commonality>
+			<tags>
+				<li>PersonalShield</li>
+				<li>Outlander</li>
+				<li>Pirate</li>
+				<li>Spacer</li>
+			</tags>
+		</apparel>
+    <colorGenerator Class="ColorGenerator_Options">
+      <options>
+        <li>
+          <weight>10</weight>
+          <only>RGBA(0.33,0.33,0.33,1)</only>
+        </li>
+        <li>
+          <weight>10</weight>
+          <only>RGBA(0.65,0.65,0.65,1)</only>
+        </li>
+        <li>
+          <weight>6</weight>
+          <min>RGBA(0.3,0.3,0.3,1)</min>
+          <max>RGBA(0.5,0.5,0.5,1)</max>
+        </li>
+        <li>
+          <weight>10</weight>
+          <only>RGBA(0.9,0.9,0.9,1)</only>
+        </li>
+      </options>
+    </colorGenerator>
+	</ThingDef>
+	
+	<ThingDef ParentName="ApparelShieldBase">
+		<thingClass>PersonalShield</thingClass>
+		<defName>Apparel_PersonalShield_Heat_HaulR</defName>
+		<label>Cozy Speed Shield</label>
+		<description>One day a nudist somewhere said NO MORE to clothing just because of the ice sheet and tore open a personal shield and installed a heating module. \n\nWhile it will still attempt to stop any rapidly-moving projectile or energy attack that comes from a distance its capacity to do so has been greatly reduced due to the heaters power requirements. It also still does nothing against melee attacks or shots from point-blank range. It also prevents firing past touch range like the shield it was derived from. \n\n This shield was modified in such a way that it now acts like a minimal exoskeleton so an elderly or lazy colonist can still haul and work with the rest</description>
+    <graphicData>
+      <texPath>Things/Pawn/Humanlike/Apparel/PersonalShield/PersonalShield</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <tickerType>Normal</tickerType>
+		<statBases>
+			<MarketValue>1250</MarketValue>
+      <PersonalShieldRechargeRate>0.13</PersonalShieldRechargeRate>
+      <PersonalShieldEnergyMax>.28</PersonalShieldEnergyMax>
+	  	<Insulation_Cold>-65</Insulation_Cold>
+		<Insulation_Heat>-12</Insulation_Heat>
+    </statBases>
+	<equippedStatOffsets>
+		<MoveSpeed>0.40</MoveSpeed>
+		<WorkSpeedGlobal>0.15</WorkSpeedGlobal>
+	</equippedStatOffsets>
+		<apparel>
+			<bodyPartGroups>
+				<li>Torso</li>
+			</bodyPartGroups>
+			<layers>
+				<li>Accessory</li>
+			</layers>
+			<commonality>3</commonality>
+			<tags>
+				<li>PersonalShield</li>
+			</tags>
+		</apparel>
+    <colorGenerator Class="ColorGenerator_Options">
+      <options>
+        <li>
+          <weight>10</weight>
+          <only>RGBA(0.33,0.33,0.33,1)</only>
+        </li>
+        <li>
+          <weight>10</weight>
+          <only>RGBA(0.65,0.65,0.65,1)</only>
+        </li>
+        <li>
+          <weight>6</weight>
+          <min>RGBA(0.3,0.3,0.3,1)</min>
+          <max>RGBA(0.5,0.5,0.5,1)</max>
+        </li>
+        <li>
+          <weight>10</weight>
+          <only>RGBA(0.9,0.9,0.9,1)</only>
+        </li>
+      </options>
+    </colorGenerator>
+	</ThingDef>
+	
+		<ThingDef ParentName="ApparelShieldBase">
+		<thingClass>PersonalShield</thingClass>
+		<defName>Apparel_PersonalShield_Cold_HaulR</defName>
+		<label>Chilled Speed Shield</label>
+		<description>During a heatwave an overheated colonist somewhere ripped apart their AC and merged it into their personal shield.\n\nWhile it will still attempt to stop any rapidly-moving projectile or energy attack that comes from a distance its capacity to do so has been greatly reduced due to the air-conditioner's power requirements. It also still does nothing against melee attacks or shots from point-blank range. It also prevents firing past touch range like the shield it was derived from. \n\n This shield was modified in such a way that it now acts like a minimal exoskeleton so an elderly or lazy colonist can still haul and work with the rest.</description>
+    <graphicData>
+      <texPath>Things/Pawn/Humanlike/Apparel/PersonalShield/PersonalShield</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <tickerType>Normal</tickerType>
+		<statBases>
+			<MarketValue>1250</MarketValue>
+      <PersonalShieldRechargeRate>0.13</PersonalShieldRechargeRate>
+      <PersonalShieldEnergyMax>.28</PersonalShieldEnergyMax>
+	  	<Insulation_Cold>-6</Insulation_Cold>
+		<Insulation_Heat>26</Insulation_Heat>
+    </statBases>
+	<equippedStatOffsets>
+		<MoveSpeed>0.40</MoveSpeed>
+		<WorkSpeedGlobal>0.15</WorkSpeedGlobal>
+	</equippedStatOffsets>
+		<apparel>
+			<bodyPartGroups>
+				<li>Torso</li>
+			</bodyPartGroups>
+			<layers>
+				<li>Accessory</li>
+			</layers>
+			<commonality>3</commonality>
+			<tags>
+				<li>PersonalShield</li>
+			</tags>
+		</apparel>
+    <colorGenerator Class="ColorGenerator_Options">
+      <options>
+        <li>
+          <weight>10</weight>
+          <only>RGBA(0.33,0.33,0.33,1)</only>
+        </li>
+        <li>
+          <weight>10</weight>
+          <only>RGBA(0.65,0.65,0.65,1)</only>
+        </li>
+        <li>
+          <weight>6</weight>
+          <min>RGBA(0.3,0.3,0.3,1)</min>
+          <max>RGBA(0.5,0.5,0.5,1)</max>
+        </li>
+        <li>
+          <weight>10</weight>
+          <only>RGBA(0.9,0.9,0.9,1)</only>
+        </li>
+      </options>
+    </colorGenerator>
+	</ThingDef>
+	
+  	<ThingDef ParentName="ApparelShieldBase">
+		<defName>Apparel_PersonalShield_Cold_Advanced</defName>
+		<thingClass>ExtremeTemperatureShields.Apparel_ExtremeTemperatureShield</thingClass>
+		<label>adv. chilled shooter shield</label>
+		<description>One really calm day a colonist somewhere decided to try to further improve their Enhanced A/C Shield. Now after upgrading this shield allows shots to be fired and has slightly better capacity than its vanilla counterpart. Buying a new one will cost you though...</description>    <graphicData>
+      <texPath>Things/Pawn/Humanlike/Apparel/PersonalShield/PersonalShield</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <tickerType>Normal</tickerType>
+		<statBases>
+			<MarketValue>2800</MarketValue>
+      <PersonalShieldRechargeRate>0.18</PersonalShieldRechargeRate>
+      <PersonalShieldEnergyMax>1.5</PersonalShieldEnergyMax>
+	 <!-- 	<Insulation_Cold>0</Insulation_Cold>-->
+		<Insulation_Heat>30</Insulation_Heat>
+    </statBases>
+		<apparel>
+			<bodyPartGroups>
+				<li>Torso</li>
+			</bodyPartGroups>
+			<layers>
+				<li>Accessory</li>
+			</layers>
+			<commonality>2</commonality>
+			<tags>
+				<li>PersonalShield</li>
+				<li>Outlander</li>
+				<li>Pirate</li>
+				<li>Spacer</li> 
+			</tags>
+		</apparel>
+    <colorGenerator Class="ColorGenerator_Options">
+      <options>
+        <li>
+          <weight>10</weight>
+          <only>RGBA(0.33,0.33,0.33,1)</only>
+        </li>
+        <li>
+          <weight>10</weight>
+          <only>RGBA(0.65,0.65,0.65,1)</only>
+        </li>
+        <li>
+          <weight>6</weight>
+          <min>RGBA(0.3,0.3,0.3,1)</min>
+          <max>RGBA(0.5,0.5,0.5,1)</max>
+        </li>
+        <li>
+          <weight>10</weight>
+          <only>RGBA(0.9,0.9,0.9,1)</only>
+        </li>
+      </options>
+    </colorGenerator>
+	</ThingDef>
+	
+	
+		<ThingDef ParentName="ApparelShieldBase">
+		<defName>Apparel_PersonalShield_Heat_Advanced</defName>
+		<thingClass>ExtremeTemperatureShields.Apparel_ExtremeTemperatureShield</thingClass>
+		<label>adv. cozy shooter shield</label>
+		<description>Once again we hear a story about that nudist colonist living on the ice sheet. They had already made their shield amazing by allowing them to stay warm and still fight. One day when they were idle they decided to try to further improve it and SUCCESS! This shield now has a slightly improved capacity compared to a normal shield while retaining its temperature regulation.</description>
+    <graphicData>
+      <texPath>Things/Pawn/Humanlike/Apparel/PersonalShield/PersonalShield</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <tickerType>Normal</tickerType>
+		<statBases>
+			<MarketValue>2800</MarketValue>
+      <PersonalShieldRechargeRate>0.18</PersonalShieldRechargeRate>
+      <PersonalShieldEnergyMax>1.5</PersonalShieldEnergyMax>
+	  	<Insulation_Cold>-72</Insulation_Cold>
+	<!--	<Insulation_Heat>-6</Insulation_Heat> -->
+    </statBases>
+		<apparel>
+			<bodyPartGroups>
+				<li>Torso</li>
+			</bodyPartGroups>
+			<layers>
+				<li>Accessory</li>
+			</layers>
+			<commonality>2</commonality>
+			<tags>
+				<li>PersonalShield</li>
+				<li>Outlander</li>
+				<li>Pirate</li>
+				<li>Spacer</li>
+			</tags>
+		</apparel>
+    <colorGenerator Class="ColorGenerator_Options">
+      <options>
+        <li>
+          <weight>10</weight>
+          <only>RGBA(0.33,0.33,0.33,1)</only>
+        </li>
+        <li>
+          <weight>10</weight>
+          <only>RGBA(0.65,0.65,0.65,1)</only>
+        </li>
+        <li>
+          <weight>6</weight>
+          <min>RGBA(0.3,0.3,0.3,1)</min>
+          <max>RGBA(0.5,0.5,0.5,1)</max>
+        </li>
+        <li>
+          <weight>10</weight>
+          <only>RGBA(0.9,0.9,0.9,1)</only>
+        </li>
+      </options>
+    </colorGenerator>
+	</ThingDef>	
+	
+</Defs>

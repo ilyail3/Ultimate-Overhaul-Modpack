@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<LanguageData>
+
+	<InstallGlassEye.label>Implantiere Glassauge</InstallGlassEye.label>
+	<InstallGlassEye.description>Implantiert Glasauge.</InstallGlassEye.description>
+
+	<InstallCrystalEye.label>Implantiere Kristallauge</InstallCrystalEye.label>
+	<InstallCrystalEye.description>Implantiert Kristallauge.</InstallCrystalEye.description>
+
+	<InstallSimpleProstheticHand.label>Bringe einfache Handprothese an</InstallSimpleProstheticHand.label>
+	<InstallSimpleProstheticHand.description>Bringt einfache Handprothese an.</InstallSimpleProstheticHand.description>
+
+	<InstallSimpleProstheticFoot.label>Bringe einfache Fußprothese an</InstallSimpleProstheticFoot.label>
+	<InstallSimpleProstheticFoot.description>Bringt einfache Fußprothese an.</InstallSimpleProstheticFoot.description>
+
+	<InstallArtificialNose.label>Implantiere künstliches Becken</InstallArtificialNose.label>
+	<InstallArtificialNose.description>Implantiert ein künstliches Becken.</InstallArtificialNose.description>
+
+	<InstallArtificialPelvis.label>Bringe künstliche Nase an</InstallArtificialPelvis.label>
+	<InstallArtificialPelvis.description>Bringt künstliche Nase an.</InstallArtificialPelvis.description>
+
+	<InstallHydraulicJaw.label>Bringe hydraulischen Kiefer an</InstallHydraulicJaw.label>
+	<InstallHydraulicJaw.description>Bringt hydraulischen Kiefer an.</InstallHydraulicJaw.description>
+
+</LanguageData>

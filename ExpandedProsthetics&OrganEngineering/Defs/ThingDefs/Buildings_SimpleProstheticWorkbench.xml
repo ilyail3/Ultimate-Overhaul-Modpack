@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<ThingDefs>
+
+  <ThingDef Name="BuildingBase" Abstract="True">
+    <category>Building</category>
+    <soundImpactDefault>BulletImpactMetal</soundImpactDefault>
+    <selectable>true</selectable>
+    <drawerType>MapMeshAndRealTime</drawerType>
+    <terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
+    <repairEffect>Repair</repairEffect>
+    <leaveResourcesWhenKilled>true</leaveResourcesWhenKilled>
+    <filthLeaving>BuildingRubble</filthLeaving>
+  </ThingDef>
+  
+  <ThingDef ParentName="BuildingBase">
+    <DefName>TableSimpleProsthetic</DefName>
+    <label>simple prosthetics workbench</label>
+    <ThingClass>Building_WorkTable</ThingClass>
+    <Description>A workbench equipped for production of simple prostheses.</Description>
+	<graphicData>
+    <texPath>Things/Building/Production/TableSimpleProsthetics</texPath>
+	<graphicClass>Graphic_Single</graphicClass>
+	<drawSize>(3,1)</drawSize>
+	</graphicData>
+    <CostList>
+      <WoodPlank>50</WoodPlank>
+	  <CopperBar>30</CopperBar>
+      <SteelBar>250</SteelBar>
+    </CostList>
+    <constructEffect>ConstructMetal</constructEffect>
+    <AltitudeLayer>Waist</AltitudeLayer>
+    <statBases>
+      <WorkToMake>1000</WorkToMake>
+      <MaxHitPoints>150</MaxHitPoints>
+      <Flammability>1.0</Flammability>
+    </statBases>
+	<tickerType>Normal</tickerType>
+    <comps>
+      <li>
+        <compClass>CompPowerTrader</compClass>
+        <startElectricalFires>true</startElectricalFires>
+        <basePowerConsumption>300</basePowerConsumption>
+        <soundPowerOn>PowerOnSmall</soundPowerOn>
+        <soundPowerOff>PowerOffSmall</soundPowerOff>
+      </li>
+	  <li Class="CommunityCoreLibrary.CompProperties_LowIdleDraw">
+                <compClass>CommunityCoreLibrary.CompPowerLowIdleDraw</compClass>
+                <idlePowerFactor>0.17</idlePowerFactor>
+				<operationalMode>InUse</operationalMode>
+            </li>
+	  <li>
+        <compClass>CompAffectedByFacilities</compClass>
+        <linkableFacilities>
+          <li>ToolCabinet</li>
+        </linkableFacilities>
+      </li>
+    </comps>
+    <Size>(3,1)</Size>
+    <DesignationCategory>Production</DesignationCategory>
+	<staticSunShadowHeight>0.2</staticSunShadowHeight>
+    <Passability>PassThroughOnly</Passability>
+    <pathCost>60</pathCost>
+    <hasInteractionCell>True</hasInteractionCell>
+    <interactionCellOffset>(0,0,-1)</interactionCellOffset>
+    <surfaceType>Item</surfaceType>
+    <recipes>
+	<li>CreateSimpleProstheticLeg</li>
+	<li>CreateSimpleProstheticArm</li>
+	<li>CreateSimpleProstheticHand</li>
+	<li>CreateSimpleProstheticFoot</li>
+	<li>CreateArtificialPelvis</li>
+	<li>CreateHydraulicJaw</li>
+	<li>CreateArtificialNose</li>
+	<li>CreateCrystalEye</li>
+	<li>CreateGlassEye</li>
+    </recipes>
+    <inspectorTabs>
+      <li>ITab_Bills</li>
+    </inspectorTabs>
+	<building>
+      <spawnedConceptLearnOpportunity>BillsTab</spawnedConceptLearnOpportunity>
+    </building>
+		<placeWorkers>
+			<li>PlaceWorker_ShowFacilitiesConnections</li>
+		</placeWorkers>
+    <researchPrerequisite>SimpleProsthetics</researchPrerequisite>
+  </ThingDef>
+  
+</ThingDefs>

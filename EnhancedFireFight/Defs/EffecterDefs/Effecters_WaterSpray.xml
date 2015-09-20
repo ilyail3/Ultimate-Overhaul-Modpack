@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+
+
+  <EffecterDef>
+    <defName>WaterSpray</defName>
+    <children>
+      <li>
+        <subEffecterClass>SubEffecter_SprayerContinuous</subEffecterClass>
+        <moteDef>Mote_WaterSplash</moteDef>
+        <startScale>
+          <min>0.005</min>
+          <max>0.06</max>
+        </startScale>
+        <airTicks>
+          <min>10</min>
+          <max>10</max>       
+        </airTicks>
+        <moveDirection>
+          <min>0.0</min>
+          <max>360.0</max>       
+        </moveDirection>
+        <burstCount>
+          <min>20</min>
+          <max>20</max>
+        </burstCount>
+        <ticksBetweenMotes>0</ticksBetweenMotes>
+        <positionLerpFactor>0.0</positionLerpFactor>
+        <positionRadius>0.0</positionRadius>
+        <spawnLocType>RandomCellOnTarget</spawnLocType>
+        <rotationRate>
+          <min>0.0</min>
+          <max>360.0</max>
+        </rotationRate>
+        <Velocity>
+          <min>0.35</min>
+          <max>0.35</max>        
+        </Velocity>
+      </li>
+    </children>
+  </EffecterDef>
+  
+  
+  
+</Defs>

@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RecipeDefs>
+
+	
+	<RecipeDef>
+		<defName>BuildEMPPistol</defName>
+		<label>Build EMP Pistol</label>
+		<description>Build a EMP Pistol by combaining pistol and EMP grenade.</description>
+		<jobString>Building EMP Pistol.</jobString>
+		<workAmount>2500</workAmount>
+		<workSpeedStat>SmeltingSpeed</workSpeedStat>
+		<effectWorking>Smelt</effectWorking>
+		<soundWorking>Recipe_Smelt</soundWorking>
+		<recipeUsers>
+         <li>WeaponCraftingTable</li>
+		</recipeUsers>
+		<skillRequirements>
+				<li>
+					<skill>Crafting</skill>
+					<minLevel>8</minLevel>
+				</li>
+			</skillRequirements>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Weapon_GrenadeEMP</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Gun_Pistol</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>CopperBar</li>
+					</thingDefs>
+				</filter>
+				<count>15</count>
+			</li>
+		</ingredients>
+		<products>
+			<Gun_EMPPistol>1</Gun_EMPPistol>
+		</products>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>Weapon_GrenadeEMP</li>
+				<li>Gun_Pistol</li>
+				<li>CopperBar</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<workSkill>Crafting</workSkill>
+	</RecipeDef>  
+	
+	<RecipeDef>
+		<defName>BuildStunPistol</defName>
+		<label>Build Stun Pistol</label>
+		<description>Build a Stun Pistol by combaining pistol and EMP grenade.</description>
+		<jobString>Building Stun Pistol.</jobString>
+		<workAmount>2500</workAmount>
+		<workSpeedStat>SmeltingSpeed</workSpeedStat>
+		<effectWorking>Smelt</effectWorking>
+		<soundWorking>Recipe_Smelt</soundWorking>
+		<recipeUsers>
+         <li>WeaponCraftingTable</li>
+		</recipeUsers>
+		<skillRequirements>
+				<li>
+					<skill>Crafting</skill>
+					<minLevel>8</minLevel>
+				</li>
+			</skillRequirements>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>MeleeWeapon_StunClub</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Gun_Pistol</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>CopperBar</li>
+					</thingDefs>
+				</filter>
+				<count>15</count>
+			</li>
+		</ingredients>
+		<products>
+			<Gun_StunPistol>1</Gun_StunPistol>
+		</products>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>MeleeWeapon_StunClub</li>
+				<li>Gun_Pistol</li>
+				<li>CopperBar</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<workSkill>Crafting</workSkill>
+	</RecipeDef>  
+  
+</RecipeDefs>

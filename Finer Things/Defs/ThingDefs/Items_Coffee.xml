@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ThingDefs>
+
+  <ThingDef Name="ResourceBase" Abstract="True">
+    <thingClass>ThingWithComps</thingClass>
+    <label>unspecified resource</label>
+    <category>Item</category>
+    <resourceReadoutPriority>Middle</resourceReadoutPriority>
+    <useHitPoints>true</useHitPoints>
+    <selectable>true</selectable>
+    <altitudeLayer>Item</altitudeLayer>
+    <stackLimit>75</stackLimit>
+    <comps>
+      <li>
+        <compClass>CompForbiddable</compClass>
+      </li>
+    </comps>
+    <alwaysHaulable>true</alwaysHaulable>
+    <drawGUIOverlay>true</drawGUIOverlay>
+    <rotatable>false</rotatable>
+    <pathCost>15</pathCost>
+  </ThingDef>
+  
+  
+  <ThingDef Name="CoffeeBase" Abstract="True">
+    <label>meal</label>
+    <thingClass>Meal</thingClass>
+    <category>Item</category>
+    <useHitPoints>true</useHitPoints>
+    <selectable>true</selectable>
+    <statBases>
+      <MaxHitPoints>50</MaxHitPoints>
+      <Flammability>1.0</Flammability>
+    </statBases>
+    <altitudeLayer>Item</altitudeLayer>
+    <stackLimit>10</stackLimit>
+    <tickerType>Rare</tickerType>
+    <socialPropernessMatters>true</socialPropernessMatters>
+    <thingCategories>
+      <li>FoodMeals</li>
+    </thingCategories>
+    <alwaysHaulable>true</alwaysHaulable>
+    <comps>
+      <li>
+        <compClass>CompForbiddable</compClass>
+      </li>
+    </comps>
+    <pathCost>15</pathCost>
+    <resourceReadoutPriority>Last</resourceReadoutPriority>
+    <drawGUIOverlay>true</drawGUIOverlay>
+  </ThingDef>
+
+
+
+<ThingDef ParentName="CoffeeBase">
+	<defName>Coffee</defName>
+	<label>cup of coffee</label>
+	<description>A cup of coffee</description>
+	<graphicData>
+	<texPath>Things/Item/Resource/Coffee</texPath>
+	<graphicClass>Graphic_Single</graphicClass>
+	</graphicData>
+	<stackLimit>10</stackLimit>
+	<statBases>
+	  <MarketValue>8</MarketValue>
+	</statBases>
+	<ingestible>
+           <preferability>NeverForNutrition</preferability>
+           <nutrition>0.06</nutrition>
+           <joy>0.2</joy>
+           <joyKind>Social</joyKind>
+           <maxNumToIngestAtOnce>1</maxNumToIngestAtOnce>
+           <soundEat>Ingest_Beer</soundEat>
+           <isPleasureDrug>true</isPleasureDrug>
+	 <hediffGivers>
+		<li>
+		<chance>1</chance>
+		<hediffDef>Coffee</hediffDef>
+		</li>
+	  </hediffGivers>
+	</ingestible>
+</ThingDef>
+
+
+
+
+<ThingDef ParentName="CoffeeBase">
+	<defName>Espresso</defName>
+	<label>espresso</label>
+	<description>A cup of espresso</description>
+	<graphicData>
+	<texPath>Things/Item/Resource/Espresso</texPath>
+	<graphicClass>Graphic_Single</graphicClass>
+	</graphicData>
+	<stackLimit>10</stackLimit>
+	<statBases>
+	  <MarketValue>12</MarketValue>
+	</statBases>
+	<ingestible>
+           <preferability>NeverForNutrition</preferability>
+           <nutrition>0.04</nutrition>
+           <joy>0.3</joy>
+           <joyKind>Social</joyKind>
+           <maxNumToIngestAtOnce>1</maxNumToIngestAtOnce>
+           <soundEat>Ingest_Beer</soundEat>
+           <isPleasureDrug>true</isPleasureDrug>
+	 <hediffGivers>
+		<li>
+		<chance>1</chance>
+		<hediffDef>StrongCoffee</hediffDef>
+		</li>
+	  </hediffGivers>
+	</ingestible>
+</ThingDef>
+
+  <!--=================== Raw Tobacco ===============-->
+<!--
+  <ThingDef Name="ResourceBase" Abstract="True">
+    <thingClass>ThingWithComps</thingClass>
+    <label>unspecified resource</label>
+    <category>Item</category>
+    <resourceReadoutPriority>Middle</resourceReadoutPriority>
+    <useHitPoints>true</useHitPoints>
+    <selectable>true</selectable>
+    <altitudeLayer>Item</altitudeLayer>
+    <stackLimit>75</stackLimit>
+    <comps>
+      <li>
+        <compClass>CompForbiddable</compClass>
+      </li>
+    </comps>
+    <alwaysHaulable>true</alwaysHaulable>
+    <drawGUIOverlay>true</drawGUIOverlay>
+    <rotatable>false</rotatable>
+    <pathCost>15</pathCost>
+  </ThingDef>
+-->
+  <ThingDef Abstract="True" ParentName="ResourceBase" Name="PlantProductBase">
+  <graphicData>
+    <graphicClass>Graphic_Single</graphicClass>
+	</graphicData>
+    <soundInteract>Food_Drop</soundInteract>
+    <soundDrop>Food_Drop</soundDrop>
+    <socialPropernessMatters>true</socialPropernessMatters>
+    <statBases>
+      <MaxHitPoints>100</MaxHitPoints>
+      <Flammability>1.0</Flammability>
+      <DeteriorationRate>5</DeteriorationRate>
+    </statBases>
+    <tickerType>Rare</tickerType>
+  </ThingDef>
+
+  <ThingDef ParentName="PlantProductBase">
+    <defName>RawCoffee</defName>
+    <label>coffee</label>
+    <description>Raw Coffee. Best prepared as a beverage</description>
+	<graphicData>
+    <texPath>Things/Item/Resource/PlantFoodRaw/RawCoffee</texPath>
+	</graphicData>
+    <statBases>
+      <MarketValue>4</MarketValue>
+    </statBases>
+    <thingCategories>
+      <li>RawIngredients</li>
+    </thingCategories>
+    <comps>
+      <li Class="CompProperties_Rottable">
+        <daysToRotStart>25</daysToRotStart>
+        <rotDestroys>true</rotDestroys>
+      </li>
+    </comps>
+  </ThingDef>
+
+</ThingDefs>

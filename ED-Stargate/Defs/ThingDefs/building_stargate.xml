@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ThingDefs>
+
+	<ThingDef Name="BuildingBase" Abstract="True">
+		<category>Building</category>
+		<soundImpactDefault>BulletImpactMetal</soundImpactDefault>
+		<selectable>true</selectable>
+		<drawerType>MapMeshAndRealTime</drawerType>
+		<terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
+		<repairEffect>Repair</repairEffect>
+		<leaveResourcesWhenKilled>true</leaveResourcesWhenKilled>
+		<filthLeaving>BuildingRubble</filthLeaving>
+	</ThingDef>
+
+	<ThingDef Class="Enhanced_Development.Stargate.StargateThingDef" ParentName="BuildingBase">
+		<defName>Stargate</defName>
+		<label>Stargate</label>
+		<thingClass>Enhanced_Development.Stargate.Building_Stargate</thingClass>
+		<graphicData>
+			<texPath>Things/Buildings/Stargate</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>(3,3)</drawSize>
+		</graphicData>
+		<altitudeLayer>BuildingTall</altitudeLayer>
+		<passability>Impassable</passability>
+		<castEdgeShadows>true</castEdgeShadows>
+		<fillPercent>1</fillPercent>
+		<specialDisplayRadius>3</specialDisplayRadius>
+		<tickerType>Rare</tickerType>
+		<FileLocationPrimary>Stargate.xml</FileLocationPrimary>
+		<FileLocationSecondary>StargateBackup.xml.bak</FileLocationSecondary>
+		<statBases>
+			<WorkToMake>20000</WorkToMake>
+			<MaxHitPoints>1000000</MaxHitPoints>
+			<Flammability>0.0</Flammability>
+		</statBases>
+		<description>Stargate</description>
+		<researchPrerequisite>
+			<li>Building_Stargate_research</li>
+		</researchPrerequisite>
+		<building>
+			<wantsHopperAdjacent>true</wantsHopperAdjacent>
+		</building>
+		<comps>
+			<li>
+				<compClass>CompPowerTrader</compClass>
+				<startElectricalFires>false</startElectricalFires>
+				<basePowerConsumption>1000</basePowerConsumption>
+			</li>
+			<li Class="CommunityCoreLibrary.CompProperties_LowIdleDraw">
+                <compClass>CommunityCoreLibrary.CompPowerLowIdleDraw</compClass>
+                <idlePowerFactor>0.5</idlePowerFactor>
+				<operationalMode>InUse</operationalMode>
+            </li>
+		</comps>
+		<size>(3,3)</size>
+		<costList>
+			<SteelBar>1500</SteelBar>
+			<CopperWire>1500</CopperWire>
+			<Uranium>500</Uranium>
+			<IntegratedCircuitsBoard>50</IntegratedCircuitsBoard>
+			<EnergyPack>10</EnergyPack>
+		</costList>
+		<hasInteractionCell>False</hasInteractionCell>
+		<terrainAffordanceNeeded>Heavy</terrainAffordanceNeeded>
+		<designationCategory>Misc</designationCategory>
+		<staticSunShadowHeight>0.75</staticSunShadowHeight>
+	</ThingDef>
+
+	<ThingDef ParentName="BuildingBase">
+		<defName>OffWorldStargate</defName>
+		<label>Off World Stargate</label>
+		<thingClass>Enhanced_Development.Stargate.Building_OffWorldStargate</thingClass>
+		<graphicData>
+			<texPath>Things/Buildings/Stargate</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>(3,3)</drawSize>
+		</graphicData>
+		<altitudeLayer>BuildingTall</altitudeLayer>
+		<passability>Impassable</passability>
+		<castEdgeShadows>true</castEdgeShadows>
+		<fillPercent>1</fillPercent>
+		<specialDisplayRadius>5</specialDisplayRadius>
+		<tickerType>Rare</tickerType>
+		<uiIconPath>UI/nuke</uiIconPath>
+		<statBases>
+			<WorkToMake>0</WorkToMake>
+			<MaxHitPoints>1000000</MaxHitPoints>
+			<Flammability>1.0</Flammability>
+		</statBases>
+		<description>WARNING: Activating this Gate will remove all Colonists from the Map, but will create a gate for other teams to arrive from.</description>
+		<building>
+			<wantsHopperAdjacent>true</wantsHopperAdjacent>
+		</building>
+		<comps>
+		</comps>
+		<size>(3,3)</size>
+		<costList>
+		</costList>
+		<researchPrerequisite>
+			<li>Building_Stargate_research</li>
+		</researchPrerequisite>
+		<hasInteractionCell>false</hasInteractionCell>
+		<terrainAffordanceNeeded>Heavy</terrainAffordanceNeeded>
+		<designationCategory>Misc</designationCategory>
+		<staticSunShadowHeight>0.75</staticSunShadowHeight>
+	</ThingDef>
+
+</ThingDefs>

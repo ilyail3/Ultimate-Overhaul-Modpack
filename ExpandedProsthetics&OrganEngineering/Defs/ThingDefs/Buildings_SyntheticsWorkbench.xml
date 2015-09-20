@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<ThingDefs>
+
+  <ThingDef Name="BuildingBase" Abstract="True">
+    <category>Building</category>
+    <soundImpactDefault>BulletImpactMetal</soundImpactDefault>
+    <selectable>true</selectable>
+    <drawerType>MapMeshAndRealTime</drawerType>
+    <terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
+    <repairEffect>Repair</repairEffect>
+    <leaveResourcesWhenKilled>true</leaveResourcesWhenKilled>
+    <filthLeaving>BuildingRubble</filthLeaving>
+  </ThingDef>
+  
+  <ThingDef ParentName="BuildingBase">
+    <DefName>TableSynthetics</DefName>
+    <label>synthetic organ assembler</label>
+    <ThingClass>Building_WorkTable</ThingClass>
+    <Description>A workstation fully equipped with an extremely powerful nano-printer.</Description>
+	<graphicData>
+    <texPath>Things/Building/Production/TableSyntheticsSmall</texPath>
+	<graphicClass>Graphic_Single</graphicClass>
+	<drawSize>(2,1)</drawSize>
+	</graphicData>
+    <CostList>
+      <Medicine>5</Medicine>
+      <SteelBar>200</SteelBar>
+	  <CopperBar>30</CopperBar>
+	  <Cloth>25</Cloth>
+    </CostList>
+    <constructEffect>ConstructMetal</constructEffect>
+    <AltitudeLayer>Waist</AltitudeLayer>
+    <statBases>
+      <WorkToMake>1000</WorkToMake>
+      <MaxHitPoints>200</MaxHitPoints>
+      <Flammability>0.8</Flammability>
+    </statBases>
+	<tickerType>Normal</tickerType>
+    <comps>
+      <li>
+        <compClass>CompPowerTrader</compClass>
+        <startElectricalFires>true</startElectricalFires>
+        <basePowerConsumption>400</basePowerConsumption>
+        <soundPowerOn>PowerOnSmall</soundPowerOn>
+        <soundPowerOff>PowerOffSmall</soundPowerOff>
+      </li>
+	  <li Class="CommunityCoreLibrary.CompProperties_LowIdleDraw">
+                <compClass>CommunityCoreLibrary.CompPowerLowIdleDraw</compClass>
+                <idlePowerFactor>0.125</idlePowerFactor>
+				<operationalMode>InUse</operationalMode>
+            </li>
+	  <li>
+        <compClass>CompAffectedByFacilities</compClass>
+        <linkableFacilities>
+          <li>ToolCabinet</li>
+        </linkableFacilities>
+      </li>
+    </comps>
+    <Size>(2,1)</Size>
+    <DesignationCategory>Production</DesignationCategory>
+	<staticSunShadowHeight>0.20</staticSunShadowHeight>
+    <Passability>PassThroughOnly</Passability>
+    <pathCost>60</pathCost>
+    <hasInteractionCell>True</hasInteractionCell>
+    <interactionCellOffset>(1,0,-1)</interactionCellOffset>
+    <surfaceType>Item</surfaceType>
+    <recipes>
+	  <li>CreateAIChip</li>	  
+	  <li>CreateSyntheticLung</li>
+	  <li>CreateSyntheticHeart</li>
+	  <li>CreateSyntheticKidney</li>
+	  <li>CreateSyntheticStomach</li>
+	  <li>CreateSyntheticLiver</li>
+	  <li>CreateSyntheticSkin</li>
+    </recipes>
+    <inspectorTabs>
+      <li>ITab_Bills</li>
+    </inspectorTabs>
+    <building>
+      <spawnedConceptLearnOpportunity>BillsTab</spawnedConceptLearnOpportunity>
+    </building>
+		<placeWorkers>
+			<li>PlaceWorker_ShowFacilitiesConnections</li>
+		</placeWorkers>
+    <researchPrerequisite>SyntheticOrgans</researchPrerequisite>
+  </ThingDef>
+  
+</ThingDefs>

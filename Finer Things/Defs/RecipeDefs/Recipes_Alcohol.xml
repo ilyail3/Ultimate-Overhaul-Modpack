@@ -1,0 +1,255 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+<RecipeDef>
+	<defName>DistillStrawberryWine</defName>
+	<label>Distill Strawberry Wine</label>
+	<description>Distills a bottle of Strawberry Wine.</description>
+	<jobString>Distilling Strawberry Wine.</jobString>
+	<workSpeedStat>BrewingSpeed</workSpeedStat>
+	<effectWorking>Cook</effectWorking>
+          <soundWorking>Recipe_Brewing</soundWorking>
+          <allowMixingIngredients>true</allowMixingIngredients>
+	<workAmount>1500</workAmount>
+          <targetCountAdjustment>1</targetCountAdjustment>
+	<ingredients>
+	  <li>
+	    <filter>
+	      <thingDefs>
+	        <li>RawBerries</li>
+	      </thingDefs>
+	    </filter>
+	    <count>25</count>
+	  </li>
+	  <li>
+	    <filter>
+	      <thingDefs>
+	        <li>Sugar</li>
+	      </thingDefs>
+	    </filter>
+	    <count>25</count>
+	  </li>
+	  <li>
+	    <filter>
+	      <thingDefs>
+	        <li>RawHops</li>
+	      </thingDefs>
+	    </filter>
+	    <count>10</count>
+	  </li>
+	</ingredients>
+	<fixedIngredientFilter>
+	  <thingDefs>
+	    <li>RawBerries</li>
+		<li>Sugar</li>
+		<li>RawHops</li>
+	  </thingDefs>
+	</fixedIngredientFilter>
+	<products>
+	  <strawberrywine>12</strawberrywine>
+	</products>
+	<workSkill>Cooking</workSkill>
+</RecipeDef>
+
+<RecipeDef>
+	<defName>DistillSake</defName>
+	<label>Distill Sake</label>
+	<description>Distills a bottle of Sake.</description>
+	<jobString>Distilling Sake.</jobString>
+	<workSpeedStat>BrewingSpeed</workSpeedStat>
+	<effectWorking>Cook</effectWorking>
+          <soundWorking>Recipe_Brewing</soundWorking>
+          <allowMixingIngredients>true</allowMixingIngredients>
+	<workAmount>1500</workAmount>
+          <targetCountAdjustment>1</targetCountAdjustment>
+	<ingredients>
+	  <li>
+	    <filter>
+	      <thingDefs>
+	        <li>RawRice</li>
+	      </thingDefs>
+	    </filter>
+	    <count>25</count>
+	  </li>
+	  <li>
+	    <filter>
+	      <thingDefs>
+	        <li>Sugar</li>
+	      </thingDefs>
+	    </filter>
+	    <count>25</count>
+	  </li>
+	  <li>
+	    <filter>
+	      <thingDefs>
+	        <li>RawHops</li>
+	      </thingDefs>
+	    </filter>
+	    <count>10</count>
+	  </li>
+	</ingredients>
+	<fixedIngredientFilter>
+	  <thingDefs>
+	    <li>RawRice</li>
+		<li>Sugar</li>
+		<li>RawHops</li>
+	  </thingDefs>
+	</fixedIngredientFilter>
+	<products>
+	  <sake>12</sake>
+	</products>
+	<workSkill>Cooking</workSkill>
+</RecipeDef>
+
+<RecipeDef>
+	<defName>DistillVodka</defName>
+	<label>Distill Vodka</label>
+	<description>Distills a bottle of Vokda from potatoes.</description>
+	<jobString>Distilling Vodka.</jobString>
+	<workSpeedStat>BrewingSpeed</workSpeedStat>
+	<effectWorking>Cook</effectWorking>
+          <soundWorking>Recipe_Brewing</soundWorking>
+          <allowMixingIngredients>true</allowMixingIngredients>
+	<workAmount>1000</workAmount>
+          <targetCountAdjustment>1</targetCountAdjustment>
+	<ingredients>
+	  <li>
+	    <filter>
+	      <thingDefs>
+	        <li>RawPotatoes</li>
+	      </thingDefs>
+	    </filter>
+	    <count>25</count>
+	  </li>
+	  <li>
+	    <filter>
+	      <thingDefs>
+	        <li>Sugar</li>
+	      </thingDefs>
+	    </filter>
+	    <count>25</count>
+	  </li>
+	  <li>
+	    <filter>
+	      <thingDefs>
+	        <li>RawHops</li>
+	      </thingDefs>
+	    </filter>
+	    <count>10</count>
+	  </li>
+	</ingredients>
+	<fixedIngredientFilter>
+	  <thingDefs>
+	    <li>RawPotatoes</li>
+		<li>Sugar</li>
+		<li>RawHops</li>
+	  </thingDefs>
+	</fixedIngredientFilter>
+	<products>
+	  <vodka>12</vodka>
+	</products>
+	<workSkill>Cooking</workSkill>
+</RecipeDef>
+	
+<RecipeDef>
+	<defName>DistillTequila</defName>
+	<label>Distill Tequila</label>
+	<description>Distills a bottle of Tequila from agave.</description>
+	<jobString>Distilling Tequila.</jobString>
+	<workSpeedStat>BrewingSpeed</workSpeedStat>
+	<effectWorking>Cook</effectWorking>
+          <soundWorking>Recipe_Brewing</soundWorking>
+          <allowMixingIngredients>true</allowMixingIngredients>
+	<workAmount>1000</workAmount>
+          <targetCountAdjustment>1</targetCountAdjustment>
+	<ingredients>
+	  <li>
+	    <filter>
+	      <thingDefs>
+	        <li>RawAgave</li>
+	      </thingDefs>
+	    </filter>
+	    <count>25</count>
+	  </li>
+	  <li>
+	    <filter>
+	      <thingDefs>
+	        <li>Sugar</li>
+	      </thingDefs>
+	    </filter>
+	    <count>25</count>
+	  </li>
+	  <li>
+	    <filter>
+	      <thingDefs>
+	        <li>RawHops</li>
+	      </thingDefs>
+	    </filter>
+	    <count>10</count>
+	  </li>
+	</ingredients>
+	<fixedIngredientFilter>
+	  <thingDefs>
+	    <li>RawAgave</li>
+		<li>Sugar</li>
+		<li>RawHops</li>
+	  </thingDefs>
+	</fixedIngredientFilter>
+	<products>
+	  <tequila>12</tequila>
+	</products>
+	<workSkill>Cooking</workSkill>
+</RecipeDef>
+
+
+<RecipeDef>
+	<defName>DistillWhiskey</defName>
+	<label>Distill Whiskey</label>
+	<description>Distills a bottle of Whiskey from corn.</description>
+	<jobString>Distilling Whiskey.</jobString>
+	<workSpeedStat>BrewingSpeed</workSpeedStat>
+	<effectWorking>Cook</effectWorking>
+          <soundWorking>Recipe_Brewing</soundWorking>
+          <allowMixingIngredients>true</allowMixingIngredients>
+	<workAmount>1000</workAmount>
+          <targetCountAdjustment>1</targetCountAdjustment>
+	<ingredients>
+	  <li>
+	    <filter>
+	      <thingDefs>
+	        <li>RawCorn</li>
+	      </thingDefs>
+	    </filter>
+	    <count>25</count>
+	  </li>
+	  <li>
+	    <filter>
+	      <thingDefs>
+	        <li>Sugar</li>
+	      </thingDefs>
+	    </filter>
+	    <count>25</count>
+	  </li>
+	  <li>
+	    <filter>
+	      <thingDefs>
+	        <li>RawHops</li>
+	      </thingDefs>
+	    </filter>
+	    <count>10</count>
+	  </li>
+	</ingredients>
+	<fixedIngredientFilter>
+	  <thingDefs>
+	    <li>RawCorn</li>
+		<li>Sugar</li>
+		<li>RawHops</li>
+	  </thingDefs>
+	</fixedIngredientFilter>
+	<products>
+	  <whiskey>12</whiskey>
+	</products>
+	<workSkill>Cooking</workSkill>
+</RecipeDef>
+
+</Defs>

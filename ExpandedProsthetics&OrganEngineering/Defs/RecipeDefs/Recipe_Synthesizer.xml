@@ -1,0 +1,373 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<RecipeDefs>
+
+   <RecipeDef Abstract="True" Name="RecipeSyntheticOrgan">
+      <workSpeedStat>TailoringSpeed</workSpeedStat>
+      <soundWorking>Recipe_MakeClothes</soundWorking>
+      <workSkill>Crafting</workSkill>
+      <workAmount>2000</workAmount>
+      <skillRequirements>
+         <li>
+            <skill>Crafting</skill>
+            <minLevel>10</minLevel>
+         </li>
+      </skillRequirements>
+   </RecipeDef>
+   
+   <RecipeDef ParentName="RecipeSyntheticOrgan">
+      <defName>CreateAIChip</defName>
+      <label>Craft AI chip</label>
+      <description>Crafts an AI chip. Restores brain functions, and very hard to make. Needs gold for highest quality circuitry.</description>
+      <jobString>Creating synthetic organ.</jobString>
+      <ingredients>
+         <li>
+            <filter>
+               <thingDefs>
+                  <li>PlasteelBar</li>
+               </thingDefs>
+            </filter>
+            <count>25</count>
+         </li>
+		 <li>
+            <filter>
+               <thingDefs>
+                  <li>Electronics</li>
+               </thingDefs>
+            </filter>
+            <count>10</count>
+         </li>
+		 <li>
+            <filter>
+               <thingDefs>
+                  <li>Biomatter</li>
+               </thingDefs>
+            </filter>
+            <count>15</count>
+         </li>
+         <li>
+            <filter>
+               <thingDefs>
+                  <li>Gold</li>
+               </thingDefs>
+            </filter>
+            <count>55</count>
+         </li>
+      </ingredients>
+      <fixedIngredientFilter>
+         <thingDefs>
+            <li>PlasteelBar</li>
+			<li>Electronics</li>
+			<li>Biomatter</li>
+            <li>Gold</li>
+         </thingDefs>
+      </fixedIngredientFilter>
+      <products>
+         <AIChip>1</AIChip>
+      </products>
+   </RecipeDef>
+   
+   <RecipeDef ParentName="RecipeSyntheticOrgan">
+      <defName>CreateSyntheticLung</defName>
+      <label>Create synthetic lung</label>
+      <description>Creates a synthetic lung from hyperweave and vancidium.</description>
+      <jobString>Creating synthetic organ.</jobString>
+      <ingredients>
+         <li>
+            <filter>
+               <thingDefs>
+                  <li>Hyperweave</li>
+               </thingDefs>
+            </filter>
+            <count>15</count>
+         </li>
+		 <li>
+            <filter>
+               <thingDefs>
+                  <li>Biomatter</li>
+               </thingDefs>
+            </filter>
+            <count>15</count>
+         </li>
+		 <li>
+            <filter>
+               <thingDefs>
+                  <li>Lung</li>
+               </thingDefs>
+            </filter>
+            <count>1</count>
+         </li>
+         <li>
+            <filter>
+               <thingDefs>
+                  <li>Vancidium</li>
+               </thingDefs>
+            </filter>
+            <count>5</count>
+         </li>
+      </ingredients>
+      <fixedIngredientFilter>
+         <thingDefs>
+            <li>Hyperweave</li>
+			<li>Biomatter</li>
+			<li>Lung</li>
+            <li>Vancidium</li>
+         </thingDefs>
+      </fixedIngredientFilter>
+      <products>
+         <SyntheticLung>1</SyntheticLung>
+      </products>
+   </RecipeDef>
+   
+   <RecipeDef ParentName="RecipeSyntheticOrgan">
+      <defName>CreateSyntheticStomach</defName>
+      <label>Create synthetic stomach</label>
+      <description>Creates a synthetic stomach from hyperweave and vancidium.</description>
+      <jobString>Creating synthetic organ.</jobString>
+      <ingredients>
+         <li>
+            <filter>
+               <thingDefs>
+                  <li>Hyperweave</li>
+               </thingDefs>
+            </filter>
+            <count>10</count>
+         </li>
+		 <li>
+            <filter>
+               <thingDefs>
+                  <li>Biomatter</li>
+               </thingDefs>
+            </filter>
+            <count>15</count>
+         </li>
+		 <li>
+            <filter>
+               <thingDefs>
+                  <li>Stomach</li>
+               </thingDefs>
+            </filter>
+            <count>1</count>
+         </li>
+         <li>
+            <filter>
+               <thingDefs>
+                  <li>Vancidium</li>
+               </thingDefs>
+            </filter>
+            <count>5</count>
+         </li>
+      </ingredients>
+      <fixedIngredientFilter>
+         <thingDefs>
+            <li>Hyperweave</li>
+			<li>Biomatter</li>
+			<li>Stomach</li>
+            <li>Vancidium</li>
+         </thingDefs>
+      </fixedIngredientFilter>
+      <products>
+         <SyntheticStomach>1</SyntheticStomach>
+      </products>
+   </RecipeDef>
+   
+   <RecipeDef ParentName="RecipeSyntheticOrgan">
+      <defName>CreateSyntheticLiver</defName>
+      <label>Create synthetic liver</label>
+      <description>Creates a synthetic liver from hyperweave and vancidium.</description>
+      <jobString>Creating synthetic organ.</jobString>
+      <ingredients>
+         <li>
+            <filter>
+               <thingDefs>
+                  <li>Hyperweave</li>
+               </thingDefs>
+            </filter>
+            <count>10</count>
+         </li>
+		 <li>
+            <filter>
+               <thingDefs>
+                  <li>Biomatter</li>
+               </thingDefs>
+            </filter>
+            <count>15</count>
+         </li>
+		 <li>
+            <filter>
+               <thingDefs>
+                  <li>Liver</li>
+               </thingDefs>
+            </filter>
+            <count>1</count>
+         </li>
+         <li>
+            <filter>
+               <thingDefs>
+                  <li>Vancidium</li>
+               </thingDefs>
+            </filter>
+            <count>5</count>
+         </li>
+      </ingredients>
+      <fixedIngredientFilter>
+         <thingDefs>
+            <li>Hyperweave</li>
+			<li>Biomatter</li>
+			<li>Liver</li>
+            <li>Vancidium</li>
+         </thingDefs>
+      </fixedIngredientFilter>
+      <products>
+         <SyntheticLiver>1</SyntheticLiver>
+      </products>
+   </RecipeDef>
+   
+   <RecipeDef ParentName="RecipeSyntheticOrgan">
+      <defName>CreateSyntheticKidney</defName>
+      <label>Create synthetic kidney</label>
+      <description>Creates a synthetic kidney from hyperweave and vancidium.</description>
+      <jobString>Creating synthetic organ.</jobString>
+      <ingredients>
+         <li>
+            <filter>
+               <thingDefs>
+                  <li>Hyperweave</li>
+               </thingDefs>
+            </filter>
+            <count>10</count>
+         </li>
+		 <li>
+            <filter>
+               <thingDefs>
+                  <li>Biomatter</li>
+               </thingDefs>
+            </filter>
+            <count>15</count>
+         </li>
+		 <li>
+            <filter>
+               <thingDefs>
+                  <li>Kidney</li>
+               </thingDefs>
+            </filter>
+            <count>1</count>
+         </li>
+         <li>
+            <filter>
+               <thingDefs>
+                  <li>Vancidium</li>
+               </thingDefs>
+            </filter>
+            <count>5</count>
+         </li>
+      </ingredients>
+      <fixedIngredientFilter>
+         <thingDefs>
+            <li>Hyperweave</li>
+			<li>Biomatter</li>
+			<li>Kidney</li>
+            <li>Vancidium</li>
+         </thingDefs>
+      </fixedIngredientFilter>
+      <products>
+         <SyntheticKidney>1</SyntheticKidney>
+      </products>
+   </RecipeDef>
+   
+   <RecipeDef ParentName="RecipeSyntheticOrgan">
+      <defName>CreateSyntheticHeart</defName>
+      <label>Create synthetic heart</label>
+      <description>Creates an synthetic heart from hyperweave and vancidium.</description>
+      <jobString>Creating synthetic organ.</jobString>
+      <ingredients>
+         <li>
+            <filter>
+               <thingDefs>
+                  <li>Hyperweave</li>
+               </thingDefs>
+            </filter>
+            <count>20</count>
+         </li>
+		 <li>
+            <filter>
+               <thingDefs>
+                  <li>Biomatter</li>
+               </thingDefs>
+            </filter>
+            <count>15</count>
+         </li>
+		 <li>
+            <filter>
+               <thingDefs>
+                  <li>Heart</li>
+               </thingDefs>
+            </filter>
+            <count>1</count>
+         </li>
+         <li>
+            <filter>
+               <thingDefs>
+                  <li>Vancidium</li>
+               </thingDefs>
+            </filter>
+            <count>15</count>
+         </li>
+      </ingredients>
+      <fixedIngredientFilter>
+         <thingDefs>
+            <li>Hyperweave</li>
+			<li>Biomatter</li>
+			<li>Heart</li>
+            <li>Vancidium</li>
+         </thingDefs>
+      </fixedIngredientFilter>
+      <products>
+         <SyntheticHeart>1</SyntheticHeart>
+      </products>
+   </RecipeDef>
+
+   <RecipeDef ParentName="RecipeSyntheticOrgan">
+      <defName>CreateSyntheticSkin</defName>
+      <label>Create synthetic skin</label>
+      <description>Creates synthetic skin from hyperweave and human leather.</description>
+      <jobString>Creating synthetic organ.</jobString>
+      <ingredients>
+         <li>
+            <filter>
+               <thingDefs>
+                  <li>Hyperweave</li>
+               </thingDefs>
+            </filter>
+            <count>10</count>
+         </li>
+		 <li>
+            <filter>
+               <thingDefs>
+                  <li>Biomatter</li>
+               </thingDefs>
+            </filter>
+            <count>15</count>
+         </li>
+         <li>
+            <filter>
+               <thingDefs>
+                  <li>Vancidium</li>
+               </thingDefs>
+            </filter>
+            <count>5</count>
+         </li>
+      </ingredients>
+      <fixedIngredientFilter>
+         <thingDefs>
+            <li>Hyperweave</li>
+			<li>Biomatter</li>
+            <li>Vancidium</li>
+         </thingDefs>
+      </fixedIngredientFilter>
+      <products>
+         <SyntheticSkin>1</SyntheticSkin>
+      </products>
+   </RecipeDef>
+   
+</RecipeDefs>

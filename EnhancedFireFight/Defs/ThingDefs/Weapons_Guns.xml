@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ThingDefs>
+
+
+  <ThingDef Name="BaseGun" Abstract="True">
+    <category>Item</category>
+    <thingClass>ThingWithComps</thingClass>
+    <equipmentType>Primary</equipmentType>
+    <pathCost>10</pathCost>
+    <useHitPoints>True</useHitPoints>
+    <selectable>True</selectable>
+    <graphicData>
+      <onGroundRandomRotateAngle>35</onGroundRandomRotateAngle>
+    </graphicData>
+    <drawGUIOverlay>true</drawGUIOverlay>
+    <statBases>
+      <MaxHitPoints>100</MaxHitPoints>
+      <Flammability>1.0</Flammability>
+      <DeteriorationRate>1</DeteriorationRate>
+      <SellPriceFactor>0.5</SellPriceFactor>
+    </statBases>
+    <altitudeLayer>Item</altitudeLayer>
+    <alwaysHaulable>True</alwaysHaulable>
+    <tickerType>Never</tickerType>
+    <techLevel>Midworld</techLevel>
+    <thingCategories>
+      <li>WeaponsRanged</li>
+    </thingCategories>
+    <inspectorTabs>
+      <li>ITab_Art</li>
+    </inspectorTabs>
+    <comps>
+      <li>
+        <compClass>CompForbiddable</compClass>
+      </li>
+      <li>
+        <compClass>CompEquippable</compClass>
+      </li>
+      <li>
+        <compClass>CompQuality</compClass>
+      </li>
+      <li>
+        <compClass>CompArt</compClass>
+        <nameMaker>NamerGun</nameMaker>
+        <descriptionMaker>ArtWeaponGun</descriptionMaker>
+        <minQualityForArtistic>Excellent</minQualityForArtistic>
+      </li>
+    </comps>
+    <smeltProducts>
+      <SteelBar>10</SteelBar>
+    </smeltProducts>
+  </ThingDef>
+  
+
+  <ThingDef Name="BaseHumanGun" ParentName="BaseGun" Abstract="True">
+    <weaponTags>
+      <li>Gun</li>
+    </weaponTags>
+  </ThingDef>
+  
+  <ThingDef Name="FireExtinguisherBullet" Abstract="True">
+		<category>Projectile</category>
+		<tickerType>Normal</tickerType>
+		<altitudeLayer>Projectile</altitudeLayer>
+		<thingClass>EnhancedFireFight.Projectile_Extinguishing</thingClass>
+		<label>bullet</label>
+		<useHitPoints>False</useHitPoints>
+		<neverMultiSelect>True</neverMultiSelect>
+		<graphicData>
+      <shaderType>Transparent</shaderType>
+    </graphicData>
+	</ThingDef>
+
+  <!-- ======================= FireExtinguisher ======================== -->
+  
+  <ThingDef ParentName="FireExtinguisherBullet">
+		<defName>Bullet_FireExtinguisher</defName>
+		<label>Foam</label>
+		<graphicData>
+		<texPath>Things/Projectile/Foam</texPath>
+    <graphicClass>Graphic_Single</graphicClass>
+	</graphicData>
+		<projectile>
+			<flyOverhead>true</flyOverhead>
+      <damageDef>Extinguish</damageDef>
+			<DamageAmountBase>15</DamageAmountBase>
+			<Speed>15</Speed>
+		</projectile>
+	</ThingDef>
+  
+  <ThingDef ParentName="BaseGun">
+		<defName>Gun_FireExtinguisher</defName>
+		<label>Fire Extinguisher</label>
+		<description>Puts out fires.</description>
+		<graphicData>
+		<texPath>Things/Item/Equipment/WeaponRanged/FireExtinguisher</texPath>       
+    <graphicClass>Graphic_Single</graphicClass>
+	</graphicData>
+		<soundInteract>InteractRifle</soundInteract>
+     <statBases>
+      <MarketValue>500</MarketValue>
+      <AccuracyTouch>0.5</AccuracyTouch>
+      <AccuracyShort>0.4</AccuracyShort>
+      <AccuracyMedium>0.3</AccuracyMedium>
+      <AccuracyLong>0.2</AccuracyLong>
+      <RangedWeapon_Cooldown>0.66</RangedWeapon_Cooldown>
+    </statBases>
+	<costList>
+			<SteelBar>40</SteelBar>
+		</costList>
+		<recipeMaker>
+			<skillRequirements>
+				<li>
+					<skill>Crafting</skill>
+					<minLevel>4</minLevel>
+				</li>
+			</skillRequirements>
+			<workSpeedStat>SmithingSpeed</workSpeedStat>
+			<workSkill>Crafting</workSkill>
+			<effectWorking>Smith</effectWorking>
+			<soundWorking>Recipe_Smith</soundWorking>
+			<recipeUsers>
+				<li>WeaponCraftingTable</li>
+			</recipeUsers>
+			<unfinishedThingDef>UnfinishedWeapon</unfinishedThingDef>
+		</recipeMaker>
+		<verbs>
+      <li>
+        <verbClass>Verb_Shoot</verbClass>
+  			<projectileDef>Bullet_FireExtinguisher</projectileDef>
+        <hasStandardCommand>true</hasStandardCommand>
+        <targetParams>
+          <canTargetLocations>true</canTargetLocations>
+        </targetParams>
+        <ai_IsIncendiary>false</ai_IsIncendiary>
+  			<warmupTicks>15</warmupTicks>
+        <burstShotCount>20</burstShotCount>
+        <ticksBetweenBurstShots>2</ticksBetweenBurstShots>
+  			<range>6</range>
+  			<soundCast>FireExtinguisher</soundCast>
+      </li>
+		</verbs>
+	</ThingDef>
+  
+  
+ <!-- ======================= Water Bucket ======================== -->
+  
+  <ThingDef ParentName="FireExtinguisherBullet">
+		<defName>Bullet_WaterBucket</defName>
+		<label>WaterSplash</label>
+		<graphicData>
+		<texPath>Things/Projectile/WaterSplash</texPath>
+    <graphicClass>Graphic_Single</graphicClass>
+	</graphicData>
+		<projectile>
+			<flyOverhead>true</flyOverhead>
+      <damageDef>Extinguish</damageDef>
+			<DamageAmountBase>15</DamageAmountBase>
+			<Speed>15</Speed>
+		</projectile>
+	</ThingDef>
+  
+  <ThingDef ParentName="BaseGun">
+		<defName>Gun_WaterBucket</defName>
+		<label>Water Bucket</label>
+		<description>Puts out fires.</description>
+		<graphicData>
+		<texPath>Things/Item/Equipment/WeaponRanged/WaterBucket</texPath>       
+    <graphicClass>Graphic_Single</graphicClass>
+	</graphicData>
+		<soundInteract>InteractPistol</soundInteract>
+    <tradeability>Never</tradeability>
+     <statBases>
+      <MarketValue>0</MarketValue>
+      <AccuracyTouch>0.5</AccuracyTouch>
+      <AccuracyShort>0.4</AccuracyShort>
+      <AccuracyMedium>0.3</AccuracyMedium>
+      <AccuracyLong>0.2</AccuracyLong>
+      <RangedWeapon_Cooldown>0.66</RangedWeapon_Cooldown>
+    </statBases>
+	<costList>
+			<WoodPlank>30</WoodPlank>
+		</costList>
+		<recipeMaker>
+			<skillRequirements>
+				<li>
+					<skill>Crafting</skill>
+					<minLevel>4</minLevel>
+				</li>
+			</skillRequirements>
+			<workSpeedStat>SmithingSpeed</workSpeedStat>
+			<workSkill>Crafting</workSkill>
+			<effectWorking>Smith</effectWorking>
+			<soundWorking>Recipe_Smith</soundWorking>
+			<recipeUsers>
+				<li>TableStonecutter</li>
+			</recipeUsers>
+			<unfinishedThingDef>UnfinishedWeapon</unfinishedThingDef>
+		</recipeMaker>
+		<verbs>
+      <li>
+        <verbClass>Verb_Shoot</verbClass>
+  			<projectileDef>Bullet_WaterBucket</projectileDef>
+        <hasStandardCommand>true</hasStandardCommand>
+        <targetParams>
+          <canTargetLocations>true</canTargetLocations>
+        </targetParams>
+        <forcedMissRadius>0.0</forcedMissRadius>
+        <ai_IsIncendiary>false</ai_IsIncendiary>
+  			<warmupTicks>15</warmupTicks>
+        <burstShotCount>6</burstShotCount>
+        <ticksBetweenBurstShots>0</ticksBetweenBurstShots>
+  			<range>4</range>
+  			<soundCast>WaterDrop</soundCast>
+      </li>
+		</verbs>
+	</ThingDef>
+  
+  
+</ThingDefs>

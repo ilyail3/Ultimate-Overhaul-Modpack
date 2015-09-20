@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ModMetaData>
+	<name>Enhanced Fire Fight Version 1.1</name>
+	<author>BBream, skullywag</author>
+	<targetVersion>Modpack</targetVersion>
+	<description> 
+  Don't afaid to fight fire!
+  Contents list
+  - Fire Extinguisher : Tool emit extinguishing foam
+  - BEAT Fish         : Tool for beating fire
+  - Water Pump        : Security Building for exthinguishing area
+	</description>
+</ModMetaData>
