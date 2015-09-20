@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ThingDefs>
+
+
+
+  <ThingDef Name="BuildingBase" Abstract="True">
+    <category>Building</category>
+    <soundImpactDefault>BulletImpactMetal</soundImpactDefault>
+    <selectable>true</selectable>
+    <drawerType>MapMeshAndRealTime</drawerType>
+    <terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
+    <repairEffect>Repair</repairEffect>
+  </ThingDef>
+  
+  
+  <ThingDef ParentName="BuildingBase">
+		<defName>ClutterAlloyHydroponicsBasinVS</defName>
+		
+		<label>Hydroponic Pod</label>
+		<thingClass>Building_PlantGrower</thingClass>
+		<graphicData>
+		<shaderType>CutoutComplex</shaderType>
+		<texPath>Clutter/Hydrophonic/Pot</texPath>
+		<graphicClass>Graphic_Random</graphicClass>
+		</graphicData>
+		<minifiedDef>MinifiedFurniture</minifiedDef>
+		<altitudeLayer>FloorEmplacement</altitudeLayer>
+		<passability>PassThroughOnly</passability>
+		<pathCost>60</pathCost>
+		<description>Advanced hydroponic pot</description>
+		<size>(1,1)</size>
+		<statBases>
+			<WorkToMake>3000</WorkToMake>
+			<MaxHitPoints>50</MaxHitPoints>
+			<Flammability>1.0</Flammability>
+			<Beauty>5</Beauty>
+		</statBases>
+	 		<costList>
+			<SteelBar>15</SteelBar>
+			<CopperBar>15</CopperBar>
+		</costList>
+		<inspectorTabs>
+			<li>ITab_Growing</li>
+		</inspectorTabs>
+		<fertility>2.5</fertility>
+		<placingDraggableDimensions>1</placingDraggableDimensions>
+		<building>
+			<defaultPlantToGrow>PlantPotato</defaultPlantToGrow>
+			<plantsDestroyWithMe>true</plantsDestroyWithMe>
+			<sowTag>Hydroponic</sowTag>
+		</building>
+		<tickerType>Rare</tickerType>
+		<comps>
+			<li>
+				<compClass>CompForbiddable</compClass>
+			</li>
+			<li>
+				<compClass>CompPowerTrader</compClass>
+				<basePowerConsumption>25</basePowerConsumption>
+			</li>
+			<li>
+				<compClass>CompQuality</compClass>
+			</li>
+		</comps>
+		 <rotatable>false</rotatable>
+		<leaveResourcesWhenKilled>true</leaveResourcesWhenKilled>
+		<researchPrerequisite>AdvHydroponic</researchPrerequisite>
+		<terrainAffordanceNeeded>Heavy</terrainAffordanceNeeded>
+		<designationCategory>ProductionFood</designationCategory>
+		<surfaceType>Item</surfaceType>
+  </ThingDef>
+ 
+ </ThingDefs>

@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Buildings>
+
+
+	  <ThingDef Name="BuildingBase" Abstract="True">
+    <category>Building</category>
+    <soundImpactDefault>BulletImpactMetal</soundImpactDefault>
+    <selectable>true</selectable>
+    <drawerType>MapMeshAndRealTime</drawerType>
+    <terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
+    <repairEffect>Repair</repairEffect>
+  </ThingDef>
+
+
+ 
+   <ThingDef ParentName="BuildingBase">
+    <defName>ClutterResearchBench</defName>
+    <label>Small Research Bench</label>
+	<graphicShaderType>CutoutComplex</graphicShaderType>
+    <thingClass>Building_ResearchBench</thingClass>
+    <graphicPath>Clutter/Tables/ResearchTable</graphicPath>
+	<graphicClass>Graphic_Multi</graphicClass>
+    <altitudeLayer>Waist</altitudeLayer>
+    <passability>Impassable</passability>
+    <castEdgeShadows>true</castEdgeShadows>
+    <statBases>
+      <MaxHitPoints>250</MaxHitPoints>
+      <WorkToMake>900</WorkToMake>
+      <Flammability>1.0</Flammability>
+	  <Beauty>20</Beauty>
+    </statBases>
+    <description>Small research bench stuffed with all kinds of picture books (or pictures of books)</description>
+    <size>(2,1)</size>
+	<stuffCategories>
+      <li>Metallic</li>
+      <li>Woody</li>
+      <li>Stony</li>
+    </stuffCategories>
+	<costStuffCount>20</costStuffCount>
+	<costList>
+		<Cloth>2</Cloth>
+		<WoodLog>10</WoodLog>
+      <Steel>20</Steel>
+    </costList>
+    <fillPercent>0.4</fillPercent>
+    <killedLeavings>
+      <ChunkSlagSteel>4</ChunkSlagSteel>
+    </killedLeavings>
+   
+    <leaveResourcesWhenKilled>true</leaveResourcesWhenKilled>
+    <interactionCellOffset>(0,0,1)</interactionCellOffset>
+    <hasInteractionCell>true</hasInteractionCell>
+	<researchPrerequisite>TableDesign</researchPrerequisite>
+    <terrainAffordanceNeeded>Heavy</terrainAffordanceNeeded>
+    <designationCategory>Misc</designationCategory>
+    <itemSurface>true</itemSurface>
+   </ThingDef>
+
+ </Buildings>

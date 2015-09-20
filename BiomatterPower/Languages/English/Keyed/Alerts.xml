@@ -1,0 +1,7 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<LanguageData>
+
+  <NeedBiomatterGeneratorHopper>Need Biomatter generator hopper</NeedBiomatterGeneratorHopper>
+  <NeedBiomatterGeneratorHopperDesc>You have a Biomatter generator with no hopper next to it.\n\nTo work, Biomatter generators must draw from an adjacent hopper filled with either Biomatter.\n\nBuild a hopper adjacent to the Biomatter generator.</NeedBiomatterGeneratorHopperDesc>
+
+</LanguageData>

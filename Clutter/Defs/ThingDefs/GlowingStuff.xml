@@ -1,0 +1,403 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Buildings>
+
+<ThingDef Name="BuildingBase" Abstract="True">
+    <category>Building</category>
+    <thingClass>Building</thingClass>
+    <soundImpactDefault>BulletImpactMetal</soundImpactDefault>
+    <selectable>true</selectable>
+    <drawerType>MapMeshAndRealTime</drawerType>
+    <terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
+    <repairEffect>Repair</repairEffect>
+  </ThingDef>
+
+	
+	<ThingDef ParentName="BuildingBase">
+		<defName>ClutterFloorLampA</defName>
+		<label>Floor lamp</label>
+		<thingClass>Building</thingClass>
+		<category>Building</category>
+		<graphicData>
+		<texPath>Clutter/Lamp/FloorLamp</texPath>
+		<graphicClass>Graphic_Single</graphicClass>
+		<shadowData>
+        <volume>(0.3, 0.6, 0.3)</volume>
+        <offset>(0,0,-0.1)</offset>
+		</shadowData>
+		</graphicData>
+		<minifiedDef>MinifiedFurniture</minifiedDef>
+		<altitudeLayer>BuildingTall</altitudeLayer>
+		<passability>PassThroughOnly</passability>
+		<statBases>
+			<MaxHitPoints>75</MaxHitPoints>
+			<WorkToMake>150</WorkToMake>
+			<Flammability>1.0</Flammability>
+			<Beauty>5</Beauty>
+		</statBases>
+		<selectable>true</selectable>
+		<description>
+Simple floor lamp</description>
+		<size>(1,1)</size>
+		<costList>
+			<SteelBar>15</SteelBar>
+			<CopperWire>5</CopperWire>
+			<Glass>5</Glass>
+		</costList>
+		<soundImpactDefault>BulletImpactMetal</soundImpactDefault>
+		<leaveResourcesWhenKilled>false</leaveResourcesWhenKilled>
+		<comps>
+			<li>
+				<compClass>CompPowerTrader</compClass>
+				<basePowerConsumption>75</basePowerConsumption>
+				<shortCircuitInRain>true</shortCircuitInRain>
+				<soundPowerOn>PowerOnSmall</soundPowerOn>
+				<soundPowerOff>PowerOffSmall</soundPowerOff>
+			</li>
+			<li>
+				<compClass>CompGlower</compClass>
+				<glowRadius>12</glowRadius>
+				<glowColor>(217,217,217,0)</glowColor>
+			</li>
+			<li>
+				<compClass>CompQuality</compClass>
+			</li>
+		</comps>
+		<designationCategory>Lighting</designationCategory>
+		<rotatable>true</rotatable>
+		<researchPrerequisite>PowerI</researchPrerequisite>
+	</ThingDef>
+	
+	<ThingDef ParentName="BuildingBase">
+		<defName>ClutterLampYellow</defName>
+		<label>Yellow lamp</label>
+		<thingClass>Building</thingClass>
+		<category>Building</category>
+		<graphicData>
+		<texPath>Clutter/Lamp/Lamps_Yellow</texPath>
+		<graphicClass>Graphic_Single</graphicClass>
+		<shadowData>
+        <volume>(0.3, 0.6, 0.3)</volume>
+        <offset>(0,0,-0.1)</offset>
+		</shadowData>
+		</graphicData>
+		<minifiedDef>MinifiedFurniture</minifiedDef>
+		<altitudeLayer>BuildingTall</altitudeLayer>
+		<passability>PassThroughOnly</passability>
+		<statBases>
+			<MaxHitPoints>75</MaxHitPoints>
+			<WorkToMake>150</WorkToMake>
+			<Flammability>1.0</Flammability>
+			<Beauty>5</Beauty>
+		</statBases>
+		<selectable>true</selectable>
+		<tickerType>Normal</tickerType>
+		<description>
+A more advanced lamp aesthetically, you can change light colour with appropriate research</description>
+		<size>(1,1)</size>
+		<costList>
+			<SteelBar>15</SteelBar>
+			<CopperWire>5</CopperWire>
+			<Glass>5</Glass>
+		</costList>
+		<soundImpactDefault>BulletImpactMetal</soundImpactDefault>
+		<leaveResourcesWhenKilled>false</leaveResourcesWhenKilled>
+		<comps>
+			<li>
+				<compClass>CompPowerTrader</compClass>
+				<basePowerConsumption>75</basePowerConsumption>
+				<shortCircuitInRain>true</shortCircuitInRain>
+				<soundPowerOn>PowerOnSmall</soundPowerOn>
+				<soundPowerOff>PowerOffSmall</soundPowerOff>
+			</li>
+			<li>
+				<compClass>CompGlower</compClass>
+				<glowRadius>12</glowRadius>
+				<glowColor>(217,217,217,0)</glowColor>
+			</li>
+			<li>
+				<compClass>CompQuality</compClass>
+			</li>
+		</comps>
+		<designationCategory>Lighting</designationCategory>
+		<rotatable>false</rotatable>
+		<researchPrerequisite>PowerI</researchPrerequisite>
+	</ThingDef>
+	
+	
+	<ThingDef ParentName="BuildingBase">
+		<defName>ClutterLampBlue</defName>
+		<label>Blue lamp</label>
+		<thingClass>Building</thingClass>
+		<category>Building</category>
+		<graphicData>
+		<texPath>Clutter/Lamp/Lamps_Blue</texPath>
+		<graphicClass>Graphic_Single</graphicClass>
+		<shadowData>
+        <volume>(0.3, 0.6, 0.3)</volume>
+        <offset>(0,0,-0.1)</offset>
+		</shadowData>
+		</graphicData>
+		<minifiedDef>MinifiedFurniture</minifiedDef>
+		<altitudeLayer>BuildingTall</altitudeLayer>
+		<passability>PassThroughOnly</passability>
+		<statBases>
+			<MaxHitPoints>75</MaxHitPoints>
+			<WorkToMake>150</WorkToMake>
+			<Flammability>1.0</Flammability>
+			<Beauty>5</Beauty>
+		</statBases>
+		<selectable>true</selectable>
+		<tickerType>Normal</tickerType>
+		<description>Blue glowing lamp.</description>
+		<size>(1,1)</size>
+		<costList>
+			<SteelBar>15</SteelBar>
+			<CopperWire>5</CopperWire>
+			<Glass>5</Glass>
+		</costList>
+		<soundImpactDefault>BulletImpactMetal</soundImpactDefault>
+		<leaveResourcesWhenKilled>false</leaveResourcesWhenKilled>
+		<comps>
+			<li>
+				<compClass>CompPowerTrader</compClass>
+				<basePowerConsumption>75</basePowerConsumption>
+				<shortCircuitInRain>true</shortCircuitInRain>
+				<soundPowerOn>PowerOnSmall</soundPowerOn>
+				<soundPowerOff>PowerOffSmall</soundPowerOff>
+			</li>
+			<li>
+				<compClass>CompGlower</compClass>
+				<glowRadius>9</glowRadius>
+				<glowColor>(52,210,255,0)</glowColor>
+			</li>
+			<li>
+				<compClass>CompQuality</compClass>
+			</li>
+		</comps>
+		<designationCategory>Lighting</designationCategory>
+		<rotatable>false</rotatable>
+		<researchPrerequisite>ColoredLights</researchPrerequisite>
+	</ThingDef>
+	
+	<ThingDef ParentName="BuildingBase">
+		<defName>ClutterLampRed</defName>
+		<label>Red lamp</label>
+		<thingClass>Building</thingClass>
+		<category>Building</category>
+		<graphicData>
+		<texPath>Clutter/Lamp/Lamps_Red</texPath>
+		<graphicClass>Graphic_Single</graphicClass>
+		<shadowData>
+        <volume>(0.3, 0.6, 0.3)</volume>
+        <offset>(0,0,-0.1)</offset>
+		</shadowData>
+		</graphicData>
+		<minifiedDef>MinifiedFurniture</minifiedDef>
+		<altitudeLayer>BuildingTall</altitudeLayer>
+		<passability>PassThroughOnly</passability>
+		<statBases>
+			<MaxHitPoints>75</MaxHitPoints>
+			<WorkToMake>150</WorkToMake>
+			<Flammability>1.0</Flammability>
+			<Beauty>5</Beauty>
+		</statBases>
+		<selectable>true</selectable>
+		<tickerType>Normal</tickerType>
+		<description>Red glowing lamp.</description>
+		<size>(1,1)</size>
+		<costList>
+			<SteelBar>15</SteelBar>
+			<CopperWire>5</CopperWire>
+			<Glass>5</Glass>
+		</costList>
+		<soundImpactDefault>BulletImpactMetal</soundImpactDefault>
+		<leaveResourcesWhenKilled>false</leaveResourcesWhenKilled>
+		<comps>
+			<li>
+				<compClass>CompPowerTrader</compClass>
+				<basePowerConsumption>75</basePowerConsumption>
+				<shortCircuitInRain>true</shortCircuitInRain>
+				<soundPowerOn>PowerOnSmall</soundPowerOn>
+				<soundPowerOff>PowerOffSmall</soundPowerOff>
+			</li>
+			<li>
+				<compClass>CompGlower</compClass>
+				<glowRadius>9</glowRadius>
+				<glowColor>(255,82,52,1)</glowColor>
+			</li>
+			<li>
+				<compClass>CompQuality</compClass>
+			</li>
+		</comps>
+		<designationCategory>Lighting</designationCategory>
+		<rotatable>false</rotatable>
+		<researchPrerequisite>ColoredLights</researchPrerequisite>
+	</ThingDef>
+	
+	<ThingDef ParentName="BuildingBase">
+		<defName>ClutterLampGreen</defName>
+		<label>Green lamp</label>
+		<thingClass>Building</thingClass>
+		<category>Building</category>
+		<graphicData>
+		<texPath>Clutter/Lamp/Lamps_Green</texPath>
+		<graphicClass>Graphic_Single</graphicClass>
+		<shadowData>
+        <volume>(0.3, 0.6, 0.3)</volume>
+        <offset>(0,0,-0.1)</offset>
+		</shadowData>
+		</graphicData>
+		<minifiedDef>MinifiedFurniture</minifiedDef>
+		<altitudeLayer>BuildingTall</altitudeLayer>
+		<passability>PassThroughOnly</passability>
+		<tickerType>Normal</tickerType>
+		<statBases>
+			<MaxHitPoints>75</MaxHitPoints>
+			<WorkToMake>150</WorkToMake>
+			<Flammability>1.0</Flammability>
+			<Beauty>5</Beauty>
+		</statBases>
+		<selectable>true</selectable>
+		<description>Green glowing lamp.</description>
+		<size>(1,1)</size>
+		<costList>
+			<SteelBar>15</SteelBar>
+			<CopperWire>5</CopperWire>
+			<Glass>5</Glass>
+		</costList>
+		<soundImpactDefault>BulletImpactMetal</soundImpactDefault>
+		<leaveResourcesWhenKilled>false</leaveResourcesWhenKilled>
+		<comps>
+			<li>
+				<compClass>CompPowerTrader</compClass>
+				<basePowerConsumption>75</basePowerConsumption>
+				<shortCircuitInRain>true</shortCircuitInRain>
+				<soundPowerOn>PowerOnSmall</soundPowerOn>
+				<soundPowerOff>PowerOffSmall</soundPowerOff>
+			</li>
+			<li>
+				<compClass>CompGlower</compClass>
+				<glowRadius>9</glowRadius>
+				<glowColor>(180,255,0,1)</glowColor>
+			</li>
+			<li>
+				<compClass>CompQuality</compClass>
+			</li>
+		</comps>
+		<designationCategory>Lighting</designationCategory>
+		<rotatable>false</rotatable>
+		<researchPrerequisite>ColoredLights</researchPrerequisite>
+	</ThingDef>
+	
+	<ThingDef ParentName="BuildingBase">
+		<defName>ClutterLampOrange</defName>
+		<label>Orange lamp</label>
+		<thingClass>Building</thingClass>
+		<category>Building</category>
+		<graphicData>
+		<texPath>Clutter/Lamp/Lamps_Orange</texPath>
+		<graphicClass>Graphic_Single</graphicClass>
+		<shadowData>
+        <volume>(0.3, 0.6, 0.3)</volume>
+        <offset>(0,0,-0.1)</offset>
+		</shadowData>
+		</graphicData>
+		<minifiedDef>MinifiedFurniture</minifiedDef>
+		<altitudeLayer>BuildingTall</altitudeLayer>
+		<passability>PassThroughOnly</passability>
+		<tickerType>Normal</tickerType>
+		<statBases>
+			<MaxHitPoints>75</MaxHitPoints>
+			<WorkToMake>150</WorkToMake>
+			<Flammability>1.0</Flammability>
+			<Beauty>5</Beauty>
+		</statBases>
+		<selectable>true</selectable>
+		<description>Orange glowing lamp.</description>
+		<size>(1,1)</size>
+		<costList>
+			<SteelBar>15</SteelBar>
+			<CopperWire>5</CopperWire>
+			<Glass>5</Glass>
+		</costList>
+		<soundImpactDefault>BulletImpactMetal</soundImpactDefault>
+		<leaveResourcesWhenKilled>false</leaveResourcesWhenKilled>
+		<comps>
+			<li>
+				<compClass>CompPowerTrader</compClass>
+				<basePowerConsumption>75</basePowerConsumption>
+				<shortCircuitInRain>true</shortCircuitInRain>
+				<soundPowerOn>PowerOnSmall</soundPowerOn>
+				<soundPowerOff>PowerOffSmall</soundPowerOff>
+			</li>
+			<li>
+				<compClass>CompGlower</compClass>
+				<glowRadius>9</glowRadius>
+				<glowColor>(255,132,0,1)</glowColor>
+			</li>
+			<li>
+				<compClass>CompQuality</compClass>
+			</li>
+		</comps>
+		<designationCategory>Lighting</designationCategory>
+		<rotatable>false</rotatable>
+		<researchPrerequisite>ColoredLights</researchPrerequisite>
+	</ThingDef>
+	
+	<ThingDef ParentName="BuildingBase">
+		<defName>ClutterLampVoilet</defName>
+		<label>Violet lamp</label>
+		<thingClass>Building</thingClass>
+		<category>Building</category>
+		<graphicData>
+		<texPath>Clutter/Lamp/Lamps_Voilet</texPath>
+		<graphicClass>Graphic_Single</graphicClass>
+		<shadowData>
+        <volume>(0.3, 0.6, 0.3)</volume>
+        <offset>(0,0,-0.1)</offset>
+		</shadowData>
+		</graphicData>
+		<minifiedDef>MinifiedFurniture</minifiedDef>
+		<altitudeLayer>BuildingTall</altitudeLayer>
+		<passability>PassThroughOnly</passability>
+		<tickerType>Normal</tickerType>
+		<statBases>
+			<MaxHitPoints>75</MaxHitPoints>
+			<WorkToMake>150</WorkToMake>
+			<Flammability>1.0</Flammability>
+			<Beauty>5</Beauty>
+		</statBases>
+		<selectable>true</selectable>
+		<description>Violet glowing lamp.</description>
+		<size>(1,1)</size>
+		<costList>
+			<SteelBar>15</SteelBar>
+			<CopperWire>5</CopperWire>
+			<Glass>5</Glass>
+		</costList>
+		<soundImpactDefault>BulletImpactMetal</soundImpactDefault>
+		<leaveResourcesWhenKilled>false</leaveResourcesWhenKilled>
+		<comps>
+			<li>
+				<compClass>CompPowerTrader</compClass>
+				<basePowerConsumption>75</basePowerConsumption>
+				<shortCircuitInRain>true</shortCircuitInRain>
+				<soundPowerOn>PowerOnSmall</soundPowerOn>
+				<soundPowerOff>PowerOffSmall</soundPowerOff>
+			</li>
+			<li>
+				<compClass>CompGlower</compClass>
+				<glowRadius>9</glowRadius>
+				<glowColor>(185,61,205,1)</glowColor>
+			</li>
+			<li>
+				<compClass>CompQuality</compClass>
+			</li>
+		</comps>
+		<designationCategory>Lighting</designationCategory>
+		<rotatable>false</rotatable>
+		<researchPrerequisite>ColoredLights</researchPrerequisite>
+	</ThingDef>
+
+	
+</Buildings>

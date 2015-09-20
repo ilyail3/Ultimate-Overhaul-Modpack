@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ResearchProjectDefs>
+
+
+    <ResearchProjectDef>
+		<defName>AlarmLight</defName>
+		<label>emergency lighting</label>
+		<description>Emergency lighting.</description>
+		<totalCost>600</totalCost>
+		<prerequisites>
+			<li>Outdoor_Lighting</li>
+		</prerequisites>
+	</ResearchProjectDef>
+	
+    
+</ResearchProjectDefs>

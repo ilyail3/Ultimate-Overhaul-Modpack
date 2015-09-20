@@ -1,0 +1,58 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<ThingDef Name="BuildingBase" Abstract="True">
+		<category>Building</category>
+		<soundImpactDefault>BulletImpactMetal</soundImpactDefault>
+		<selectable>true</selectable>
+		<drawerType>MapMeshAndRealTime</drawerType>
+		<terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
+		<repairEffect>Repair</repairEffect>
+		<leaveResourcesWhenKilled>true</leaveResourcesWhenKilled>
+		<filthLeaving>BuildingRubble</filthLeaving>
+	</ThingDef>
+
+	<ThingDef ParentName="BuildingBase">
+		<defName>BunkerWindow</defName>
+		<label>Bunker Window</label>
+		<thingClass>Building</thingClass>
+	<graphicData>
+		<texPath>Things/Building/Window</texPath>
+		<graphicClass>Graphic_Multi</graphicClass>
+	</graphicData>
+		<altitudeLayer>BuildingTall</altitudeLayer>
+		<passability>Impassable</passability>
+		<castEdgeShadows>true</castEdgeShadows>
+                <blockLight>false</blockLight>
+                <coversFloor>false</coversFloor>
+		<fillPercent>1</fillPercent>
+		<statBases>
+			<WorkToMake>1400</WorkToMake>
+			<MaxHitPoints>1500</MaxHitPoints>
+			<Flammability>0.15</Flammability>
+			<Beauty>10</Beauty>
+		</statBases>
+		<tickerType>Rare</tickerType>
+		<description>A strong window fits to bunker wall</description>
+		<size>(1,1)</size>
+		<costList>
+			<PlasteelBar>30</PlasteelBar>
+            <SafetyGlass>30</SafetyGlass>
+		</costList>
+		<terrainAffordanceNeeded>Heavy</terrainAffordanceNeeded>
+                <holdsRoof>true</holdsRoof>
+		<drawPlaceWorkersWhileSelected>true</drawPlaceWorkersWhileSelected>
+		<building>
+			<canPlaceOverWall>true</canPlaceOverWall>
+		</building>
+		<designationCategory>Structure</designationCategory>
+		<comps>
+			<li>
+				<compClass>CompPowerTransmitter</compClass>
+			<transmitsPower>true</transmitsPower>
+			</li>
+		</comps>
+		<researchPrerequisite>SafetyGlassResearch</researchPrerequisite>
+	</ThingDef>
+
+</Defs>

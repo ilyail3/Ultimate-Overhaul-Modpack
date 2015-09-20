@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Buildings>
+
+
+	<ThingDef Name="BuildingBase" Abstract="True">
+		<category>Building</category>
+		<soundImpactDefault>BulletImpactMetal</soundImpactDefault>
+		<selectable>true</selectable>
+		<drawerType>MapMeshAndRealTime</drawerType>
+		<terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
+		<repairEffect>Repair</repairEffect>
+		<leaveResourcesWhenKilled>true</leaveResourcesWhenKilled>
+		<filthLeaving>BuildingRubble</filthLeaving>
+	</ThingDef>
+
+	
+
+	<!--==================================Batteries=====================================-->
+
+	<ThingDef ParentName="BuildingBase">
+		<defName>IndistructableBattery</defName>
+		<label>Bunker Battery</label>
+		<thingClass>Building_Battery</thingClass>
+		<graphicData>
+		<texPath>Things/Building/Power/BunkerBattery</texPath>
+		<graphicClass>Graphic_Single</graphicClass>
+		<drawSize>(4,4)</drawSize>
+		</graphicData>
+		<altitudeLayer>BuildingTall</altitudeLayer>
+		<passability>PassThroughOnly</passability>
+		<PathCost>80</PathCost>
+		<castEdgeShadows>true</castEdgeShadows>
+		<fillPercent>1</fillPercent>
+		<tickerType>Normal</tickerType>
+		<statBases>
+			<MaxHitPoints>1000</MaxHitPoints>
+			<WorkToMake>3200</WorkToMake>
+			<Flammability>0.0</Flammability>
+			<Beauty>-6</Beauty>
+		</statBases>
+		<description>Stores electricity - big and powerful - almost indestructible - non flammable - </description>
+		<size>(4,4)</size>
+		<building>
+			<ignoreNeedsPower>true</ignoreNeedsPower>
+		</building>
+		<costList>
+			<SteelBar>125</SteelBar>
+			<CopperBar>125</CopperBar>
+			<Uranium>30</Uranium>
+			<Electronics>10</Electronics>
+		</costList>
+		<comps>
+			<li>
+				<compClass>CompPowerBattery</compClass>
+				<storedEnergyMax>10000</storedEnergyMax>
+				<efficiency>0.75</efficiency>
+				<startElectricalFires>false</startElectricalFires>
+				<shortCircuitInRain>false</shortCircuitInRain>
+				<transmitsPower>true</transmitsPower>
+			</li>
+			<li>
+				<compClass>CompGlower</compClass>
+				<glowRadius>5</glowRadius>
+				<glowColor>(0,162,255,0)</glowColor>
+			</li>
+		</comps>
+		<terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
+		<designationCategory>Power</designationCategory>
+		<staticSunShadowHeight>0.5</staticSunShadowHeight>
+		<constructEffect>ConstructMetal</constructEffect>
+		<researchPrerequisite>GeothermalPower</researchPrerequisite>
+	</ThingDef>
+
+	
+
+</Buildings>

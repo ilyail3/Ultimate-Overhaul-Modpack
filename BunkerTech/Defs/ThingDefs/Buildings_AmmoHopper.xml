@@ -1,0 +1,93 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Buildings>
+
+
+	<ThingDef Name="BuildingBase" Abstract="True">
+		<category>Building</category>
+		<soundImpactDefault>BulletImpactMetal</soundImpactDefault>
+		<selectable>true</selectable>
+		<drawerType>MapMeshAndRealTime</drawerType>
+		<terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
+		<repairEffect>Repair</repairEffect>
+		<leaveResourcesWhenKilled>true</leaveResourcesWhenKilled>
+		<filthLeaving>BuildingRubble</filthLeaving>
+	</ThingDef>
+	
+	
+	<ThingDef ParentName="BuildingBase">
+		<defName>AmmoHopper</defName>
+		<label>Ammo hopper</label>
+		<thingClass>Building_Storage</thingClass>
+		<graphicData>
+			<texPath>Things/Building/Security/AmmoHopper</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<altitudeLayer>Waist</altitudeLayer>
+		<passability>PassThroughOnly</passability>
+		<fillPercent>0.5</fillPercent>
+		<pathCost>70</pathCost>
+		<building>
+<fixedStorageSettings>
+			<priority>Important</priority>
+				<filter>
+					<categories>
+						<li>Ammo</li>
+					</categories>
+					<exceptedCategories>
+						<li>FoodRaw</li>
+						<li>Manufactured</li>
+						<li>ResourcesRaw</li>
+						<li>Textiles</li>
+						<li>StoneBlocks</li>
+						<li>Leathers</li>
+						<li>Medicine</li>
+					</exceptedCategories>
+                    <exceptedThingDefs>
+						<li>Silver</li>
+						<li>Gold</li>
+						<li>Uranium</li>
+						<li>Steel</li>
+				    </exceptedThingDefs>
+				</filter>
+			</fixedStorageSettings>
+			<defaultStorageSettings>
+				<priority>Important</priority>
+				<filter>
+					<categories>
+						<li>Ammo</li>
+					</categories>
+				</filter>
+			</defaultStorageSettings>
+		</building>
+		<inspectorTabs>
+			<li>ITab_Storage</li>
+		</inspectorTabs>
+		<castEdgeShadows>true</castEdgeShadows>
+		<statBases>
+			<WorkToMake>450</WorkToMake>
+			<MaxHitPoints>100</MaxHitPoints>
+			<Flammability>1.0</Flammability>
+		</statBases>
+		<description>Holds Ammo for the turret.</description>
+		<costList>
+			<SteelBar>15</SteelBar>
+		</costList>
+		<tickerType>Never</tickerType>
+		<rotatable>true</rotatable>
+		<neverMultiSelect>true</neverMultiSelect>
+		<designationCategory>Security</designationCategory>
+		<staticSunShadowHeight>0.2</staticSunShadowHeight>
+		<surfaceType>Item</surfaceType>
+		
+		<constructEffect>ConstructMetal</constructEffect>
+		<researchPrerequisite>Mortars</researchPrerequisite>
+	</ThingDef>
+  
+  
+	
+
+
+	
+
+
+</Buildings>

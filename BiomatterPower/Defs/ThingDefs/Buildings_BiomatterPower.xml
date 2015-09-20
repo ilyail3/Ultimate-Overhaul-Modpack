@@ -1,0 +1,181 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Buildings>
+
+
+	<ThingDef Name="BuildingBase" Abstract="True">
+		<category>Building</category>
+		<soundImpactDefault>BulletImpactMetal</soundImpactDefault>
+		<selectable>true</selectable>
+		<drawerType>MapMeshAndRealTime</drawerType>
+		<terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
+		<repairEffect>Repair</repairEffect>
+		<leaveResourcesWhenKilled>true</leaveResourcesWhenKilled>
+		<filthLeaving>BuildingRubble</filthLeaving>
+	</ThingDef>
+
+
+
+	<ThingDef ParentName="BuildingBase">
+		<defName>BiomatterGenerator</defName>
+		<label>biomatter generator</label>
+		<thingClass>BiomatterPower.Building_BiomatterGenerator</thingClass>
+		<graphicData>
+			<texPath>Things/Building/SCPower/BiomatterGenerator6x6</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>(6,6)</drawSize>
+		</graphicData>
+		<altitudeLayer>Waist</altitudeLayer>
+		<passability>Impassable</passability>
+		<fillPercent>1</fillPercent>
+		<castEdgeShadows>true</castEdgeShadows>
+		<statBases>
+			<MaxHitPoints>2000</MaxHitPoints>
+			<WorkToMake>2500</WorkToMake>
+			<Flammability>1.0</Flammability>
+		</statBases>
+		<tickerType>Normal</tickerType>
+		<description>A Biomatter turbine generator that produces electricity.  Requires a hopper filled with biomatter for fuel.
+Energy Output:  5000W</description>
+		<size>(6,6)</size>
+		<building>
+			<ignoreNeedsPower>true</ignoreNeedsPower>
+			<wantsHopperAdjacent>true</wantsHopperAdjacent>
+            <soundAmbient>GeothermalPlant_Ambience</soundAmbient>
+		</building>
+		<costList>
+			<SteelBar>150</SteelBar>
+			<CopperWire>150</CopperWire>
+            <PlasteelBar>100</PlasteelBar>
+			<Electronics>20</Electronics>
+		</costList>
+		<comps>
+			<li>
+				<compClass>CompPowerTrader</compClass>
+				<basePowerConsumption>-5000</basePowerConsumption>
+				<transmitsPower>true</transmitsPower>
+				<powerToggleable>true</powerToggleable>
+			</li>
+			<li>
+				<compClass>CompHeatPusher</compClass>
+				<heatPerSecond>20</heatPerSecond>
+				<heatPushMaxTemperature>250000</heatPushMaxTemperature>
+			</li>
+			<li>
+				<compClass>CompGlower</compClass>
+				<glowRadius>10</glowRadius>
+				<glowColor>(20,150,50,0)</glowColor>
+			</li>
+		</comps>
+		<terrainAffordanceNeeded>Heavy</terrainAffordanceNeeded>
+		<designationCategory>Power</designationCategory>
+		<staticSunShadowHeight>0.20</staticSunShadowHeight>
+		<constructEffect>ConstructMetal</constructEffect>
+		<researchPrerequisite>BiomatterPower</researchPrerequisite>
+	</ThingDef>
+	
+	
+	<ThingDef ParentName="BuildingBase">
+		<defName>BiomatterHopper</defName>
+		<label>biomatter hopper</label>
+		<thingClass>Building_Storage</thingClass>
+		<graphicData>
+			<texPath>Things/Building/SCPower/BiomatterHopper</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<altitudeLayer>Waist</altitudeLayer>
+		<passability>PassThroughOnly</passability>
+		<fillPercent>0.5</fillPercent>
+		<pathCost>70</pathCost>
+		<building>
+			<fixedStorageSettings>
+			<priority>Important</priority>
+				<filter>
+					<categories>
+						<li>Manufactured</li>
+					</categories>
+					<exceptedCategories>
+						<li>FoodRaw</li>
+						<li>ResourcesRaw</li>
+						<li>Textiles</li>
+						<li>Electronics</li>
+						<li>StoneBlocks</li>
+						<li>Leathers</li>
+						<li>Medicine</li>
+					</exceptedCategories>
+					<exceptedThingDefs>
+						<li>Silver</li>
+						<li>Gold</li>
+						<li>Copper</li>
+						<li>CopperBar</li>
+						<li>CopperWire</li>
+						<li>WeaponParts</li>
+						<li>ScrapMetal</li>
+						<li>Uranium</li>
+						<li>Steel</li>
+						<li>SafetyGlass</li>
+						<li>SmartMine</li>
+						<li>AMRound</li>
+						<li>CannonShell</li>
+						<li>Rockets</li>
+						<li>HeavyMachinegunBullet</li>
+						<li>HowitzerShell</li>
+						<li>AvengerShell</li>
+						<li>TurretEMPGrenades</li>
+						<li>Powder</li>
+						<li>AvengerShell</li>
+						<li>ChainShell</li>
+						<li>Plasteel</li>
+						<li>RawCotton</li>
+						<li>RawDevilstrand</li>
+						<li>RawHops</li>
+						<li>WoodPlank</li>
+						<li>SteelBar</li>
+						<li>PlasteelBar</li>
+						<li>Glass</li>
+						<li>Mulch</li>
+						<li>Sand</li>
+						<li>Electronics</li>
+						<li>EthanolFuel</li>
+						<li>ArtilleryShell</li>
+ 						<li>Kindling</li>
+					</exceptedThingDefs>
+				</filter>
+			</fixedStorageSettings>
+			<defaultStorageSettings>
+				<priority>Important</priority>
+				<filter>
+					<categories>
+						<li>Manufactured</li>
+					</categories>
+				</filter>
+			</defaultStorageSettings>
+		</building>
+		<inspectorTabs>
+			<li>ITab_Storage</li>
+		</inspectorTabs>
+		<castEdgeShadows>true</castEdgeShadows>
+		<statBases>
+			<WorkToMake>450</WorkToMake>
+			<MaxHitPoints>100</MaxHitPoints>
+			<Flammability>1.0</Flammability>
+		</statBases>
+		<description>Holds resources for the Biomatter generator.</description>
+		<costList>
+			<SteelBar>15</SteelBar>
+		</costList>
+		<tickerType>Never</tickerType>
+		<rotatable>true</rotatable>
+		<neverMultiSelect>true</neverMultiSelect>
+		<designationCategory>Power</designationCategory>
+		<staticSunShadowHeight>0.2</staticSunShadowHeight>
+		<surfaceType>Item</surfaceType>
+		<placeWorkers>
+			<li>PlaceWorker_NextToHopperAccepter</li>
+		</placeWorkers>
+		<constructEffect>ConstructMetal</constructEffect>
+		<researchPrerequisite>BiomatterPower</researchPrerequisite>
+	</ThingDef>
+  
+  
+
+</Buildings>

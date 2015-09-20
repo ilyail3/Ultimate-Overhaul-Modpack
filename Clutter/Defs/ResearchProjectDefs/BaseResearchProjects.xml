@@ -1,0 +1,127 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ResearchProjectDefs>
+
+<!--============== 3 shades of cloth ==============-->
+<ResearchProjectDef>
+    <defName>ComfyTech</defName>
+    <label>Basic Furniture</label>
+    <description>
+Meditation for some its a time of bliss for others its a time of intense thinking on various subjects like poetry "Roses are red, violets are blue, I'm schizophrenic, and so am I". And as a colonist was almost achieving a state of becoming one with himself, he fell asleep, dreaming, of more friendly places where he can sle... mediate.
+
+Unlocks Furniture:
+Cabinet
+Clothing Locker
+Desk
+Shelf
+Redesigned Stool
+Animal sleeping box
+
+Beds:
+Cloth bed
+
+Unlocks Research:
+Furniture Designs
+Tables Designs
+	</description>
+    <totalCost>600</totalCost>
+	<prerequisites><li>CraftingI</li></prerequisites>
+</ResearchProjectDef>
+
+<ResearchProjectDef>
+    <defName>ComfyTechTierII</defName>
+    <label>Furniture Designs</label>
+    <description>Winter is coming, or so they heard. but it wasn't until after a few days later that they were all out of socks. Even the dirty ones. After few minutes of carefully observing each others feet in silence, they all agreed it had to be the work of mole-squirrels.
+
+Unlocks Furniture:
+Animal bed
+Royal bed
+Comfy bed
+Comfy Seat
+Couch
+Pod bed
+Pod Chair
+
+	</description>
+    <totalCost>600</totalCost>
+	<prerequisites><li>ComfyTech</li></prerequisites>
+</ResearchProjectDef>
+<!--
+<ResearchProjectDef>
+    <defName>ComfyTechTierIII</defName>
+    <label>Small Utilities Designs</label>
+    <description>
+"Housework can't kill you, but why take a chance?" was written on some old  flyer from Haplo labs, which just stuck to one colonist's face. With detailed plans for a specialised trashbin on other side. Although this did take a bit of time to discover since the first side had also a quite nice looking coffee cup with 20% a discount!
+
+Unlocks Furniture Building:
+Auto Trashbin
+	</description>
+    <totalCost>600</totalCost>
+	<prerequisites><li>ComfyTech</li></prerequisites>
+</ResearchProjectDef>
+
+-->
+
+
+<!--============== Way of the spoooonge ==============-->
+
+<ResearchProjectDef>
+    <defName>AFS</defName>
+    <label>Fire Suppression</label>
+    <description>
+Unlocks the ability to build sprinklers to easily suppress fires from spreading to important structures.
+
+
+Unlocks Security Building:
+Water Pump
+</description>
+    <totalCost>600</totalCost>
+	<prerequisites>
+	<li>SecurityI</li>
+	</prerequisites>
+</ResearchProjectDef>
+ 
+
+
+<!--============== Table-fuu ==============-->
+
+<ResearchProjectDef>
+    <defName>TableDesign</defName>
+    <label>Tables Designs</label>
+    <description>
+After a long debate about the meaning of life and threat assessment of the squirrel, one colonist decided to develop a new table type, so they don't need to chat so often, or in most cases, at all.
+	
+With this, the researcher will uncover ancient art of table-fu.
+	
+Unlocks Furniture:
+Modern Table (Square)
+Modern Table (Medium)
+Modern Table (Small)
+Medic Kit Storage
+Serving Table
+	</description>
+    <totalCost>600</totalCost>
+	<prerequisites><li>ComfyTech</li></prerequisites>
+  </ResearchProjectDef>
+ 
+
+<!--============== Manual ==============-->
+
+
+<ResearchProjectDef>
+    <defName>AdvHydroponic</defName>
+    <label>advanced hydroponic pod</label>
+	<description>It was pretty hard to convince some colonists that you cant grow muffalo meat on hydroponics tables, it was also hard to convince other colonists that plants on hydroponics tables wasn't just for smoking weed. 
+Also most showed concern that they cant grow trees, which would be a good hiding place in case of a squirrel attack. Which lead to idea of... making more coffee.
+And a bigger version of a plant pot, stuck in the ground.
+	
+Unlocks Production:
+Hydroponic Pod
+</description>
+
+<totalCost>2000</totalCost>
+<prerequisites><li>Hydroponics</li></prerequisites>
+</ResearchProjectDef>
+
+
+
+</ResearchProjectDefs>

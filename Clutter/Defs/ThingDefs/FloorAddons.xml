@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Buildings>
+ <ThingDef Name="BuildingBase" Abstract="True">
+    <category>Building</category>
+    <thingClass>Building</thingClass>
+    <soundImpactDefault>BulletImpactMetal</soundImpactDefault>
+    <selectable>true</selectable>
+    <drawerType>MapMeshAndRealTime</drawerType>
+    <terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
+    <repairEffect>Repair</repairEffect>
+  </ThingDef>
+	
+	<ThingDef ParentName="BuildingBase">
+		<defName>FloorAddonA</defName>
+		<label>Zone Marker</label>
+		<thingClass>Building</thingClass>
+		<category>Building</category>
+		<graphicData>
+		<texPath>Clutter/Various/Side_Floor_Addon</texPath>
+		<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<minifiedDef>MinifiedFurniture</minifiedDef>
+		<altitudeLayer>Filth</altitudeLayer>
+		<statBases>
+			<MaxHitPoints>150</MaxHitPoints>
+			<WorkToMake>100</WorkToMake>
+			<Flammability>0.0</Flammability>
+			<Beauty>2</Beauty>
+		</statBases>
+		<pathCost>0</pathCost>
+		<passability>Standable</passability>
+		<castEdgeShadows>false</castEdgeShadows>
+		<description>Simple slab of steel with some paint on it</description>
+		<costList>
+			<SteelBar>4</SteelBar>
+		</costList>
+		<rotatable>true</rotatable>
+		<selectable>true</selectable>
+		<neverMultiSelect>true</neverMultiSelect>
+		<designationCategory>Misc</designationCategory>
+	</ThingDef>
+
+<!--
+	<ThingDef ParentName="BuildingBase">
+		<defName>FloorVent</defName>
+		<label>Floor Vent</label>
+		<thingClass>Clutter.FloorVent</thingClass>
+		<category>Building</category>
+		<graphicShaderType>Transparent</graphicShaderType>
+		<graphicPath>Clutter/Various/WentFrameOpen</graphicPath>
+		<graphicClass>Graphic_Single</graphicClass>
+		<uiIconPath>Clutter/Ui/Ui_VentFullOpen</uiIconPath>
+		 <itemSurface>true</itemSurface>
+		<altitudeLayer>Waist</altitudeLayer>
+		<statBases>
+			<MaxHitPoints>75</MaxHitPoints>
+			<WorkToMake>100</WorkToMake>
+			<Flammability>1.0</Flammability>
+			<Beauty>10</Beauty>
+		</statBases>
+		<comps>
+			<li>
+				<compClass>CompPowerTrader</compClass>
+				<basePowerConsumption>200</basePowerConsumption>
+				<shortCircuitInRain>false</shortCircuitInRain>
+				<soundPowerOn>PowerOnSmall</soundPowerOn>
+				<soundPowerOff>PowerOffSmall</soundPowerOff>
+			</li>
+		</comps>
+		<pathCost>20</pathCost>
+		<passability>Standable</passability>
+		<castEdgeShadows>false</castEdgeShadows>
+		<description>Clutter Mod Misc:
+		
+Industrial fan, used for climat control.
+Global climate change requires only a few thousand years per fan.</description>
+		<costList>
+			<Steel>40</Steel>
+			<Gold>4</Gold>
+			<Silver>10</Silver>
+		</costList>
+		<rotatable>false</rotatable>
+		<selectable>true</selectable>
+		<tickerType>Normal</tickerType>
+		<neverMultiSelect>false</neverMultiSelect>
+		<researchPrerequisite>Climatization</researchPrerequisite>
+		<designationCategory>Misc</designationCategory>
+	</ThingDef>
+-->
+
+</Buildings>

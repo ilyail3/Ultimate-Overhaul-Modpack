@@ -1,0 +1,410 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Buildings>
+
+ <ThingDef Name="BuildingBase" Abstract="True">
+    <category>Building</category>
+    <thingClass>Building</thingClass>
+    <soundImpactDefault>BulletImpactMetal</soundImpactDefault>
+    <selectable>true</selectable>
+    <drawerType>MapMeshAndRealTime</drawerType>
+    <terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
+    <repairEffect>Repair</repairEffect>
+    <leaveResourcesWhenKilled>true</leaveResourcesWhenKilled>
+    <filthLeaving>BuildingRubble</filthLeaving>
+  </ThingDef>
+  
+  <ThingDef Name="FurnitureBase" ParentName="BuildingBase" Abstract="True">
+    <comps>
+      <li>
+        <compClass>CompQuality</compClass>
+      </li>
+    </comps>
+    <DesignationCategory>Furniture</DesignationCategory>
+    <minifiedDef>MinifiedFurniture</minifiedDef>
+  </ThingDef>
+  
+  <ThingDef Name="HighQualityFurnitureBase" ParentName="BuildingBase" Abstract="True">
+    <comps>
+      <li>
+        <compClass>CompQuality</compClass>
+      </li>
+      <li>
+        <compClass>CompArt</compClass>
+        <nameMaker>NamerFurniture</nameMaker>
+        <descriptionMaker>ArtFurniture</descriptionMaker>
+        <minQualityForArtistic>Excellent</minQualityForArtistic>
+      </li>
+    </comps>
+    <inspectorTabs>
+      <li>ITab_Art</li>
+    </inspectorTabs>
+    <DesignationCategory>Furniture</DesignationCategory>
+    <minifiedDef>MinifiedFurniture</minifiedDef>
+  </ThingDef>
+
+
+<!--================ Tables ================-->
+
+	<!-- Table base -->
+  <ThingDef Abstract="True" ParentName="BuildingBase" Name="TableBase">
+    <thingClass>Building</thingClass>
+    <altitudeLayer>Waist</altitudeLayer>
+    <description>People eat off tables when chairs are placed facing them.</description>
+    <passability>PassThroughOnly</passability>
+    <pathCost>60</pathCost>
+    <fillPercent>0.4</fillPercent>
+    <minifiedDef>MinifiedFurniture</minifiedDef>
+    <socialPropernessMatters>true</socialPropernessMatters>
+    <leaveResourcesWhenKilled>true</leaveResourcesWhenKilled>
+    <designationCategory>Furniture</designationCategory>
+    <surfaceType>Eat</surfaceType>
+    <comps>
+      <li>
+        <compClass>CompGatherSpot</compClass>
+      </li>
+      <li>
+        <compClass>CompQuality</compClass>
+      </li>
+    </comps>
+  </ThingDef>
+
+	<ThingDef ParentName="TableBase">
+		<defName>ClutterSmallTableModern</defName>
+		<label>Modern Table (Small)</label>
+		<thingClass>Building</thingClass>
+		<graphicData>
+		<shaderType>CutoutComplex</shaderType>
+		<texPath>Clutter/Tables/TableSpacerSmallClean</texPath>
+		<graphicClass>Graphic_Multi</graphicClass>
+		<shadowData>
+        <volume>(0.3, 0.6, 0.3)</volume>
+      </shadowData>
+		</graphicData>
+		<blueprintGraphicData>
+		<texPath>Clutter/Tables/SmallTableBlueprint</texPath>
+		</blueprintGraphicData>
+		<altitudeLayer>Waist</altitudeLayer>
+		<description>Small table for those antisocial types</description>
+		<size>(1,1)</size>
+		<costList>
+			<SteelBar>25</SteelBar>
+		</costList>
+		<stuffCategories>
+			<li>Metallic</li>
+			<li>Woody</li>
+			<li>Stony</li>
+		</stuffCategories>
+    <costStuffCount>20</costStuffCount>
+	<statBases>
+      <MaxHitPoints>300</MaxHitPoints>
+      <WorkToMake>450</WorkToMake>
+      <Flammability>1.0</Flammability>
+      <Beauty>20</Beauty>
+    </statBases>
+		<passability>PassThroughOnly</passability>
+		<pathCost>60</pathCost>
+		<fillPercent>0.3</fillPercent>
+		<researchPrerequisite>TableDesign</researchPrerequisite>
+	</ThingDef>
+	
+
+	<ThingDef ParentName="TableBase">
+		<defName>ClutterMediumTableModern</defName>
+		<label>Modern Table (Medium)</label>
+		<thingClass>Building</thingClass>
+		<graphicData>
+		<shaderType>CutoutComplex</shaderType>
+		<texPath>Clutter/Tables/TableSpacerMediumClean</texPath>
+		<graphicClass>Graphic_Multi</graphicClass>
+		<drawSize>(2,1)</drawSize>
+		</graphicData>
+		<staticSunShadowHeight>0.20</staticSunShadowHeight>
+		<castEdgeShadows>true</castEdgeShadows>
+		<altitudeLayer>Waist</altitudeLayer>
+		<description>Medium size table</description>
+		<size>(2,1)</size>
+		<costList>
+			<SteelBar>50</SteelBar>
+		</costList>
+		<stuffCategories>
+			<li>Metallic</li>
+			<li>Woody</li>
+			<li>Stony</li>
+		</stuffCategories>
+    <costStuffCount>32</costStuffCount>
+	<statBases>
+      <MaxHitPoints>300</MaxHitPoints>
+      <WorkToMake>450</WorkToMake>
+      <Flammability>1.0</Flammability>
+      <Beauty>20</Beauty>
+    </statBases>
+		<passability>PassThroughOnly</passability>
+		<pathCost>60</pathCost>
+		<fillPercent>0.3</fillPercent>
+		<researchPrerequisite>TableDesign</researchPrerequisite>
+	</ThingDef>
+			
+	
+	<ThingDef ParentName="TableBase">
+		<defName>ClutterSquareTableModern</defName>
+		<label>Modern Table (Square)</label>
+		<thingClass>Building</thingClass>
+		<graphicData>
+		<shaderType>Transparent</shaderType>
+		<texPath>Clutter/Tables/TableSpacerSquare</texPath>
+		<graphicClass>Graphic_Single</graphicClass>
+		<drawSize>(2,2)</drawSize>
+		</graphicData>
+		<altitudeLayer>Waist</altitudeLayer>
+		<description>Standard square table.</description>
+		<size>(2,2)</size>
+		<costList>
+			<SteelBar>90</SteelBar>
+		</costList>
+		<stuffCategories>
+			<li>Metallic</li>
+			<li>Woody</li>
+			<li>Stony</li>
+		</stuffCategories>
+    <costStuffCount>50</costStuffCount>
+	<statBases>
+      <MaxHitPoints>300</MaxHitPoints>
+      <WorkToMake>450</WorkToMake>
+      <Flammability>1.0</Flammability>
+      <Beauty>20</Beauty>
+    </statBases>
+		<passability>PassThroughOnly</passability>
+		<pathCost>60</pathCost>
+		<castEdgeShadows>true</castEdgeShadows>
+		<rotatable>false</rotatable>
+		<fillPercent>0.3</fillPercent>
+		<researchPrerequisite>TableDesign</researchPrerequisite>
+	</ThingDef>
+	
+	<!--================ Seats ================-->
+	
+	<ThingDef ParentName="HighQualityFurnitureBase">
+		<defName>ClutterCouchA</defName>
+		<label>Couch</label>
+		<graphicData>
+		<texPath>Clutter/Furniture/Couch/Couch</texPath>
+		<graphicClass>Graphic_Multi</graphicClass>
+		<shaderType>CutoutComplex</shaderType>
+		<drawSize>(3,1)</drawSize>
+		</graphicData>
+		<uiIconPath>Clutter/Furniture/Couch/Couch_front</uiIconPath>
+		<altitudeLayer>Waist</altitudeLayer>
+		<description>Its not making colonist lazy, in theory.</description>
+		<size>(3,1)</size>
+		<fillPercent>0.4</fillPercent>
+		<statBases>
+			<MaxHitPoints>300</MaxHitPoints>
+			<WorkToMake>200</WorkToMake>
+			<Flammability>20.0</Flammability>
+			<Beauty>35</Beauty>
+		</statBases>
+		<stuffCategories>
+      <li>Fabric</li>
+      <li>Leathery</li>
+    </stuffCategories>
+		<costStuffCount>60</costStuffCount>
+		<costList>
+			<Cloth>60</Cloth>
+			<SteelBar>20</SteelBar>
+			<WoodPlank>20</WoodPlank>
+		</costList>
+		<comps>
+			<li>
+				<compClass>CompGatherSpot</compClass>
+			</li>
+		</comps>
+		<pathCost>60</pathCost>
+		<leaveResourcesWhenKilled>true</leaveResourcesWhenKilled>
+		<researchPrerequisite>ComfyTechTierII</researchPrerequisite>
+		<staticSunShadowHeight>0.20</staticSunShadowHeight>
+		<building>
+        <isSittable>true</isSittable>
+        </building>
+	</ThingDef>
+	
+	<ThingDef ParentName="HighQualityFurnitureBase">
+		<defName>Armchair</defName>
+		<label>Comfy Seat</label>
+		<graphicData>
+		<shaderType>CutoutComplex</shaderType>
+		<texPath>Clutter/Furniture/Comfy_Seat/ComfySeat</texPath>
+		<graphicClass>Graphic_Multi</graphicClass>
+		<drawSize>(1,1)</drawSize>
+		</graphicData>
+		<altitudeLayer>Waist</altitudeLayer>
+		<description>Old fashioned, comfy and mostly out of cloth or so they say.</description>
+		<size>(1,1)</size>
+		<fillPercent>0.4</fillPercent>
+		<statBases>
+			<MaxHitPoints>200</MaxHitPoints>
+			<WorkToMake>3000</WorkToMake>
+			<Flammability>10.0</Flammability>
+			<Beauty>22</Beauty>
+			<Comfort>0.9</Comfort>
+		</statBases>
+		<stuffCategories>
+		<li>Fabric</li>
+		<li>Leathery</li>
+        </stuffCategories>
+		<costStuffCount>30</costStuffCount>
+		<costList>
+			<Cloth>60</Cloth>
+			<WoodPlank>10</WoodPlank>
+		</costList>
+		<pathCost>60</pathCost>
+		<researchPrerequisite>ComfyTechTierII</researchPrerequisite>
+		<staticSunShadowHeight>0.20</staticSunShadowHeight>
+		<leaveResourcesWhenKilled>true</leaveResourcesWhenKilled>
+		<building>
+      <isSittable>true</isSittable>
+    </building>
+	</ThingDef>
+	
+	<ThingDef ParentName="FurnitureBase">
+		<defName>ClutterStool</defName>
+		<label>Redesigned Stool</label>
+		<graphicData>
+		<shaderType>CutoutComplex</shaderType>
+		<texPath>Clutter/Furniture/Stool/Stool</texPath>
+		<graphicClass>Graphic_Multi</graphicClass>
+		<shadowData>
+        <volume>(0.3, 0.6, 0.3)</volume>
+		</shadowData>
+		</graphicData>
+		<altitudeLayer>Waist</altitudeLayer>
+		<description>Small, durable, handy in bar fights.</description>
+		<size>(1,1)</size>
+		<fillPercent>0.15</fillPercent>
+		<statBases>
+			<MaxHitPoints>130</MaxHitPoints>
+			<WorkToMake>1000</WorkToMake>
+			<Flammability>3.0</Flammability>
+			<Beauty>10</Beauty>
+			<Comfort>0.6</Comfort>
+		</statBases>
+		<stuffCategories>
+      <li>Metallic</li>
+      <li>Woody</li>
+      <li>Stony</li>
+		</stuffCategories>
+		<costStuffCount>10</costStuffCount>
+		<costList>
+			<Cloth>10</Cloth>
+			<WoodPlank>4</WoodPlank>
+			<SteelBar>20</SteelBar>
+		</costList>
+		<building>
+      <isSittable>true</isSittable>
+		</building>
+		<pathCost>30</pathCost>
+		<leaveResourcesWhenKilled>true</leaveResourcesWhenKilled>
+		<designationCategory>Furniture</designationCategory>
+		<researchPrerequisite>ComfyTech</researchPrerequisite>
+		</ThingDef>
+
+
+	<ThingDef ParentName="BuildingBase">
+    <defName>ClutterMedicKitTable</defName>
+    <label>Medical Kit Storage</label>
+    <thingClass>Building_Storage</thingClass>
+	<graphicData>
+	<shaderType>CutoutComplex</shaderType>
+    <texPath>Clutter/Tables/MedicalKitTable/MedicKitTable</texPath>
+	<graphicClass>Graphic_Single</graphicClass>
+	</graphicData>
+    <altitudeLayer>Waist</altitudeLayer>
+    <passability>PassThroughOnly</passability>
+	<pathCost>60</pathCost>
+	<rotatable>false</rotatable>
+    <castEdgeShadows>true</castEdgeShadows>
+    <statBases>
+      <MaxHitPoints>100</MaxHitPoints>
+      <WorkToMake>1500</WorkToMake>
+      <Flammability>1.0</Flammability>
+	  <Beauty>15</Beauty>
+    </statBases>
+    <description>Safe way to store your dru.. medicine and spare parts
+(Storage for medical kits and body parts)</description>
+    <size>(1,1)</size>
+	<stuffCategories>
+      <li>Metallic</li>
+      <li>Woody</li>
+      <li>Stony</li>
+		</stuffCategories>
+		<costStuffCount>30</costStuffCount>
+	<costList>
+		<SteelBar>10</SteelBar>
+		<WoodPlank>4</WoodPlank>
+	</costList>
+     <building>
+      <fixedStorageSettings>
+        <priority>Important</priority>
+        <filter>
+          <categories>
+			<li>BodyPartsAndImplants</li>
+			<li>Medicine</li>
+		  </categories>
+		  <exceptedCategories>
+			<li>Weapons</li>
+		  </exceptedCategories>
+        </filter>
+      </fixedStorageSettings>
+    </building>
+    <inspectorTabs>
+      <li>ITab_Storage</li>
+    </inspectorTabs>
+    <designationCategory>Storage</designationCategory>
+	<researchPrerequisite>TableDesign</researchPrerequisite>
+    <surfaceType>Item</surfaceType>
+    </ThingDef>
+	
+	<ThingDef ParentName="BuildingBase">
+   <defName>ClutterSmallServingTable</defName>
+	<label>Serving Table</label>
+    <thingClass>Building_Storage</thingClass>
+	<graphicData>
+	<shaderType>Transparent</shaderType>
+    <texPath>Clutter/Tables/ServingTable/ServingTable_Draggable</texPath>
+	<graphicClass>Graphic_Single</graphicClass>
+	</graphicData>
+	<placingDraggableDimensions>1</placingDraggableDimensions>
+    <altitudeLayer>Waist</altitudeLayer>
+    <passability>PassThroughOnly</passability>
+	<pathCost>60</pathCost>
+    <statBases>
+      <MaxHitPoints>300</MaxHitPoints>
+      <WorkToMake>1200</WorkToMake>
+      <Flammability>1.0</Flammability>
+	  <Beauty>15</Beauty>
+    </statBases>
+   <description>Small table used for storing all kinds of meals.</description>
+    <size>(1,1)</size>
+	<costList>
+		<SteelBar>40</SteelBar>
+		<WoodPlank>4</WoodPlank>
+	</costList>
+         <building>
+      <fixedStorageSettings>
+        <priority>Important</priority>
+        <filter>
+          <categories>
+            <li>FoodMeals</li>
+          </categories>
+        </filter>
+      </fixedStorageSettings>
+    </building>
+    <inspectorTabs>
+      <li>ITab_Storage</li>
+    </inspectorTabs>
+	<researchPrerequisite>TableDesign</researchPrerequisite>
+	<staticSunShadowHeight>0.20</staticSunShadowHeight>
+    <designationCategory>Storage</designationCategory>
+    <surfaceType>Item</surfaceType>
+    </ThingDef>
+	
+</Buildings>

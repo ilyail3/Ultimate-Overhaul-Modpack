@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Buildings>
+
+
+ <ThingDef Name="BuildingBase" Abstract="True">
+    <category>Building</category>
+    <thingClass>Building</thingClass>
+    <soundImpactDefault>BulletImpactMetal</soundImpactDefault>
+    <selectable>true</selectable>
+    <drawerType>MapMeshAndRealTime</drawerType>
+    <terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
+    <repairEffect>Repair</repairEffect>
+	<leaveResourcesWhenKilled>true</leaveResourcesWhenKilled>
+    <filthLeaving>BuildingRubble</filthLeaving>
+  </ThingDef>
+<!--================ Decoration ================-->
+
+	<ThingDef ParentName="BuildingBase">
+		<defName>ClutterLockerA</defName>
+		<label>Clothing Locker</label>
+		<thingClass>Building_Storage</thingClass>
+		<category>Building</category>
+		<graphicData>
+		<shaderType>Transparent</shaderType>
+		<texPath>Clutter/Decoration/LockerA</texPath>
+		<graphicClass>Graphic_Multi</graphicClass>
+		</graphicData>
+		<altitudeLayer>Waist</altitudeLayer>
+		<statBases>
+			<MaxHitPoints>100</MaxHitPoints>
+			<WorkToMake>1250</WorkToMake>
+			<Flammability>1.0</Flammability>
+			<Beauty>5</Beauty>
+		</statBases>
+		<pathCost>60</pathCost>
+		<passability>PassThroughOnly</passability>
+		<fillPercent>0.5</fillPercent>
+		<size>1,1</size>
+		<description>Steel plated locker</description>
+		<costList>
+			<WoodPlank>50</WoodPlank>
+			<SteelBar>20</SteelBar>
+		</costList>
+		<building>
+      <preventDeterioration>true</preventDeterioration>
+      <fixedStorageSettings>
+        <priority>Important</priority>
+        <filter>
+          <categories>
+            <li>Apparel</li>
+          </categories>
+        </filter>
+      </fixedStorageSettings>
+    </building>
+    <inspectorTabs>
+      <li>ITab_Storage</li>
+    </inspectorTabs>
+		<rotatable>true</rotatable>
+		<selectable>true</selectable>
+		<tickerType>Normal</tickerType>
+		<neverMultiSelect>true</neverMultiSelect>
+		<designationCategory>Storage</designationCategory>
+		<staticSunShadowHeight>0.20</staticSunShadowHeight>
+		<DrawGUIOverlay>True</DrawGUIOverlay>
+		<researchPrerequisite>ComfyTech</researchPrerequisite>
+		<surfaceType>Item</surfaceType>
+	</ThingDef>
+	
+	<ThingDef ParentName="BuildingBase">
+		<defName>ClutterCabinetA</defName>
+		<label>Cabinet</label>
+		<thingClass>Building_Storage</thingClass>
+		<category>Building</category>
+		<graphicData>
+		<texPath>Clutter/Decoration/Cabinet/Cabinet</texPath>
+		<graphicClass>Graphic_Multi</graphicClass>
+		</graphicData>
+		<altitudeLayer>Waist</altitudeLayer>
+		<statBases>
+			<MaxHitPoints>100</MaxHitPoints>
+			<WorkToMake>1250</WorkToMake>
+			<Flammability>1.0</Flammability>
+			<Beauty>5</Beauty>
+		</statBases>
+		<pathCost>60</pathCost>
+		<passability>PassThroughOnly</passability>
+		<tickerType>Normal</tickerType>
+		<fillPercent>0.5</fillPercent>
+		<size>1,1</size>
+		<description>Place where you can seal your socks</description>
+		<costList>
+			<WoodPlank>50</WoodPlank>
+			<SteelBar>20</SteelBar>
+		</costList>
+		<building>
+      <preventDeterioration>true</preventDeterioration>
+      <fixedStorageSettings>
+        <priority>Important</priority>
+        <filter>
+          <categories>
+            <li>Apparel</li>
+          </categories>
+        </filter>
+      </fixedStorageSettings>
+    </building>
+    <inspectorTabs>
+      <li>ITab_Storage</li>
+    </inspectorTabs>
+		<rotatable>true</rotatable>
+		<selectable>true</selectable>
+		<neverMultiSelect>true</neverMultiSelect>
+		<designationCategory>Storage</designationCategory>
+		<staticSunShadowHeight>0.20</staticSunShadowHeight>
+		<surfaceType>Item</surfaceType>
+		<researchPrerequisite>ComfyTech</researchPrerequisite>
+	</ThingDef>
+
+</Buildings>

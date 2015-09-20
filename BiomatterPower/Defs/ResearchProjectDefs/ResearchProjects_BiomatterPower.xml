@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ResearchProjectDefs>
+
+    <ResearchProjectDef>
+		<defName>BiomatterPower</defName>
+		<label>Biomatter Power</label>
+		<description>Allows you to use Biomatter to make power (5000W).</description>
+		<totalCost>800</totalCost>
+		<prerequisites>
+			<li>Chemlab</li>
+			<li>PowerII</li>
+		</prerequisites>
+	</ResearchProjectDef>
+
+
+</ResearchProjectDefs>
