@@ -1,0 +1,101 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ThingDefs>
+
+  <ThingDef Name="BuildingNaturalBase" Abstract="True">
+    <category>Building</category>
+    <selectable>true</selectable>
+    <drawerType>MapMeshOnly</drawerType>
+    <filthLeaving>RockRubble</filthLeaving>
+  </ThingDef>
+
+
+  <ThingDef Name="RockBase" ParentName="BuildingNaturalBase" Abstract="True" >
+    <thingClass>Mineable</thingClass>
+    <graphicData>
+      <texPath>Things/Building/Linked/RockFlecked_Atlas</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <linkType>CornerFiller</linkType>
+      <linkFlags>
+        <li>Rock</li>
+        <li>MapEdge</li>
+      </linkFlags>
+    </graphicData>
+    <altitudeLayer>BuildingTall</altitudeLayer>
+    <passability>Impassable</passability>
+    <castEdgeShadows>true</castEdgeShadows>
+    <fillPercent>1</fillPercent>
+    <coversFloor>true</coversFloor>
+    <neverMultiSelect>true</neverMultiSelect>
+    <rotatable>false</rotatable>
+    <saveCompressible>true</saveCompressible>
+    <holdsRoof>true</holdsRoof>
+    <staticSunShadowHeight>1.0</staticSunShadowHeight>
+    <blockLight>true</blockLight>
+    <mineable>true</mineable>
+    <statBases>
+      <Flammability>0</Flammability>
+    </statBases>
+    <building>
+      <isInert>true</isInert>
+      <isNaturalRock>true</isNaturalRock>
+      <soundMined>CollapseRock</soundMined>
+      <canBuildNonEdificesUnder>false</canBuildNonEdificesUnder>
+    </building>
+  </ThingDef>
+
+  <!--============================ Resource rocks ===============================-->
+
+
+  <ThingDef ParentName="RockBase">
+    <defName>MD2MineableCoal</defName>
+    <label>coal ore</label>
+    <graphicData>
+      <texPath>Things/Building/Linked/RockFlecked_Atlas</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <shaderType>CutoutComplex</shaderType>
+      <color>(65,34,34)</color>
+      <colorTwo>(147,144,134)</colorTwo>
+    </graphicData>
+    <statBases>
+      <MaxHitPoints>1500</MaxHitPoints>
+    </statBases>
+    <description>The remains of some ancient, collapsed structure. Rich in steel.</description>
+    <building>
+      <isResourceRock>true</isResourceRock>
+      <mineableThing>MD2Coal</mineableThing>
+      <mineableYield>10</mineableYield>
+      <mineableScatterCommonality>0.12</mineableScatterCommonality>
+      <mineableScatterBlotchSizeRange>
+        <min>4</min>
+        <max>8</max>
+      </mineableScatterBlotchSizeRange>
+    </building>
+  </ThingDef>
+  
+  <ThingDef ParentName="RockBase">
+    <defName>MineableCopper</defName>
+    <label>compacted copper</label>
+    <graphicData>
+      <texPath>Things/Building/Linked/RockFlecked_Atlas</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <shaderType>CutoutComplex</shaderType>
+      <color>(89,83,68)</color>
+      <colorTwo>(210,105,30)</colorTwo>
+    </graphicData>
+    <statBases>
+      <MaxHitPoints>1500</MaxHitPoints>
+    </statBases>
+    <description>The remains of some ancient, collapsed structure. Rich in copper.</description>
+    <building>
+      <isResourceRock>true</isResourceRock>
+      <mineableThing>Copper</mineableThing>
+      <mineableYield>35</mineableYield>
+      <mineableScatterCommonality>0.4</mineableScatterCommonality>
+      <mineableScatterBlotchSizeRange>
+        <min>20</min>
+        <max>40</max>
+      </mineableScatterBlotchSizeRange>
+    </building>
+  </ThingDef>
+
+</ThingDefs>

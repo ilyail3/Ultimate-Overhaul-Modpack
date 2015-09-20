@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ResearchProjectDefs>
+
+  <ResearchProjectDef>
+    <defName>MD2CoalPowerPlant</defName>
+    <label>Coal Burner (MD2)</label>
+    <description>
+      Unlocks the Coal Burner and Coal Feeder buildings. The Coal Burner takes coal and burns it to produce power.
+      Produces 5600W but requires a constant supply of coal to continue operating.
+    </description>
+    <totalCost>650</totalCost>
+    <prerequisites>
+      <li>PowerIV</li>
+    </prerequisites>
+  </ResearchProjectDef>
+
+</ResearchProjectDefs>

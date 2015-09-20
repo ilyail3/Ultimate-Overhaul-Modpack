@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ThingDefs>
+
+  <ThingDef Name="BuildingBase" Abstract="True">
+    <category>Building</category>
+    <soundImpactDefault>BulletImpactMetal</soundImpactDefault>
+    <drawerType>MapMeshAndRealTime</drawerType>
+    <terrainAffordanceNeeded>Any</terrainAffordanceNeeded>
+    <graphicData>
+      <texPath>Things/Building/DummyTexture</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <ThingClass>Building</ThingClass>
+    <AltitudeLayer>Floor</AltitudeLayer>
+    <UseHitPoints>False</UseHitPoints>
+    <selectable>False</selectable>
+    <Size>(1,1)</Size>
+    <Passability>Standable</Passability>
+    <building>
+      <isEdifice>False</isEdifice>
+    </building>
+  </ThingDef>
+
+  <ThingDef ParentName="BuildingBase">
+    <defName>MiningHelmetGlower</defName>
+    <label>Mining helmet light</label>
+    <Description>Mining helmet light.</Description>
+    <ThingClass>MiningHelmet.Building_MiningHelmetLight</ThingClass>
+    <TickerType>Normal</TickerType>
+    <comps>
+      <li>
+        <compClass>CompGlower</compClass>
+        <glowRadius>5</glowRadius>
+        <glowColor>(255,255,255,0)</glowColor>
+      </li>
+    </comps>
+  </ThingDef>
+
+</ThingDefs>

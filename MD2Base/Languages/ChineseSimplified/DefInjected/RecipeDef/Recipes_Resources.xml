@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+
+	<MD2MakeSilicon.label>提取硅</MD2MakeSilicon.label>
+
+	<MD2MakeSilicon.description>熔化沙子从中提取硅.</MD2MakeSilicon.description>
+
+	<MD2MakeSilicon.jobString>提取硅.</MD2MakeSilicon.jobString>
+
+	<MD2MakeSandPile.label>制造沙子</MD2MakeSandPile.label>
+
+	<MD2MakeSandPile.description>压碎岩块生产沙子。</MD2MakeSandPile.description>
+
+	<MD2MakeSandPile.jobString>压碎岩块.</MD2MakeSandPile.jobString>
+
+	<MD2MakeCircuitry.label>制作电路板</MD2MakeCircuitry.label>
+
+	<MD2MakeCircuitry.description>生产各种电路板.</MD2MakeCircuitry.description>
+
+	<MD2MakeCircuitry.jobString>焊接PCB.</MD2MakeCircuitry.jobString>
+
+	<MD2MakeCharcoal.label>烧炭</MD2MakeCharcoal.label>
+
+	<MD2MakeCharcoal.description>通过燃烧木材制造木炭。</MD2MakeCharcoal.description>
+
+	<MD2MakeCharcoal.jobString>烧炭中.</MD2MakeCharcoal.jobString>
+
+	<MD2MakeClayBricks.label>烧制粘土砖</MD2MakeClayBricks.label>
+
+	<MD2MakeClayBricks.description>将软粘土烧制成粘土砖.</MD2MakeClayBricks.description>
+
+	<MD2MakeClayBricks.jobString>烧制粘土砖.</MD2MakeClayBricks.jobString>
+
+</LanguageData>

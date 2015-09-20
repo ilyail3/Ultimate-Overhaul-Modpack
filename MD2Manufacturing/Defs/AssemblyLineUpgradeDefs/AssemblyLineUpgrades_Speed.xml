@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<AssemblyLineUpgradeDefs>
+  
+  <AssemblyLineUpgradeDef>
+    <defName>MD2SpeedI</defName>
+    <label>Speed I</label>
+    <PropertyToAffect>Speed</PropertyToAffect>
+    <PercentageDecrease>0.1</PercentageDecrease>
+    <Description>Upgrade Speed</Description>
+    <workTicksAmount>3600</workTicksAmount>
+    <RequiredMaterials>
+      <li>
+        <thing>SteelBar</thing>
+        <amount>100</amount>
+      </li>
+        <li>
+        <thing>Electronics</thing>
+        <amount>10</amount>
+      </li>
+    </RequiredMaterials>
+  </AssemblyLineUpgradeDef>
+  
+  <AssemblyLineUpgradeDef>
+    <defName>MD2SpeedII</defName>
+    <label>Speed II</label>
+    <PropertyToAffect>Speed</PropertyToAffect>
+    <PercentageDecrease>0.1</PercentageDecrease>
+    <Description>Upgrade Speed</Description>
+    <workTicksAmount>5400</workTicksAmount>
+    <RequiredMaterials>
+      <li>
+        <thing>SteelBar</thing>
+        <amount>200</amount>
+      </li>
+      <li>
+        <thing>Electronics</thing>
+        <amount>20</amount>
+      </li>
+    </RequiredMaterials>
+    <Prerequisites>
+      <li>MD2SpeedI</li>
+    </Prerequisites>
+  </AssemblyLineUpgradeDef>
+  
+  <AssemblyLineUpgradeDef>
+    <defName>MD2SpeedIII</defName>
+    <label>Speed III</label>
+    <PropertyToAffect>Speed</PropertyToAffect>
+    <PercentageDecrease>0.1</PercentageDecrease>
+    <Description>Upgrade Speed</Description>
+    <workTicksAmount>7200</workTicksAmount>
+    <RequiredMaterials>
+      <li>
+        <thing>SteelBar</thing>
+        <amount>300</amount>
+      </li>
+      <li>
+        <thing>Electronics</thing>
+        <amount>30</amount>
+      </li>
+    </RequiredMaterials>
+    <Prerequisites>
+      <li>MD2SpeedII</li>
+    </Prerequisites>
+  </AssemblyLineUpgradeDef>
+
+  <AssemblyLineUpgradeDef>
+    <defName>MD2SpeedIV</defName>
+    <label>Speed IV</label>
+    <PropertyToAffect>Speed</PropertyToAffect>
+    <PercentageDecrease>0.1</PercentageDecrease>
+    <Description>Upgrade Speed</Description>
+    <workTicksAmount>9000</workTicksAmount>
+    <RequiredMaterials>
+      <li>
+        <thing>SteelBar</thing>
+        <amount>400</amount>
+      </li>
+      <li>
+        <thing>Electronics</thing>
+        <amount>40</amount>
+      </li>
+    </RequiredMaterials>
+    <Prerequisites>
+      <li>MD2SpeedIII</li>
+    </Prerequisites>
+  </AssemblyLineUpgradeDef>
+  
+  <AssemblyLineUpgradeDef>
+    <defName>MD2SpeedV</defName>
+    <label>Speed V</label>
+    <PropertyToAffect>Speed</PropertyToAffect>
+    <PercentageDecrease>0.1</PercentageDecrease>
+    <Description>Upgrade Speed</Description>
+    <workTicksAmount>10800</workTicksAmount>
+    <RequiredMaterials>
+      <li>
+        <thing>SteelBar</thing>
+        <amount>500</amount>
+      </li>
+      <li>
+        <thing>Electronics</thing>
+        <amount>50</amount>
+      </li>
+    </RequiredMaterials>
+    <Prerequisites>
+      <li>MD2SpeedIV</li>
+    </Prerequisites>
+  </AssemblyLineUpgradeDef>
+
+</AssemblyLineUpgradeDefs>

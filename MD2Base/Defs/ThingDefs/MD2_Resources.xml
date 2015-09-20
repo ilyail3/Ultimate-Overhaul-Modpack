@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Resources>
+
+
+  <ThingDef Name="ResourceBase" Abstract="True">
+    <thingClass>ThingWithComps</thingClass>
+    <label>unspecified resource</label>
+    <category>Item</category>
+    <resourceReadoutPriority>Middle</resourceReadoutPriority>
+    <useHitPoints>true</useHitPoints>
+    <selectable>true</selectable>
+    <altitudeLayer>Item</altitudeLayer>
+    <stackLimit>75</stackLimit>
+    <comps>
+      <li>
+        <compClass>CompForbiddable</compClass>
+      </li>
+    </comps>
+    <alwaysHaulable>true</alwaysHaulable>
+    <drawGUIOverlay>true</drawGUIOverlay>
+    <rotatable>false</rotatable>
+    <pathCost>15</pathCost>
+  </ThingDef>
+
+
+  <!-- Silicon -->
+  <ThingDef ParentName="ResourceBase">
+    <defName>MD2Silicon</defName>
+    <label>silicon</label>
+    <description>A lump of silicon.</description>
+    <graphicData>
+      <texPath>Items/Resources/Silicon</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <resourceReadoutPriority>Last</resourceReadoutPriority>
+    <soundInteract>Standard_Drop</soundInteract>
+    <soundDrop>Standard_Drop</soundDrop>
+    <useHitPoints>false</useHitPoints>
+    <resourceReadoutAlwaysShow>false</resourceReadoutAlwaysShow>
+    <statBases>
+      <MarketValue>4</MarketValue>
+    </statBases>
+    <thingCategories>
+      <li>ResourcesRaw</li>
+    </thingCategories>
+    <stackLimit>100</stackLimit>
+  </ThingDef>
+
+
+
+  <!-- Coal -->
+  <ThingDef ParentName="ResourceBase">
+    <defName>MD2Coal</defName>
+    <label>coal</label>
+    <description>A lump of coal.</description>
+    <graphicData>
+      <texPath>Items/Resources/Coal</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <resourceReadoutPriority>Middle</resourceReadoutPriority>
+    <soundInteract>Standard_Drop</soundInteract>
+    <soundDrop>Standard_Drop</soundDrop>
+    <useHitPoints>false</useHitPoints>
+    <resourceReadoutAlwaysShow>false</resourceReadoutAlwaysShow>
+    <statBases>
+      <MarketValue>20</MarketValue>
+    </statBases>
+    <thingCategories>
+      <li>ResourcesRaw</li>
+    </thingCategories>
+    <stackLimit>75</stackLimit>
+  </ThingDef>
+
+  <!--Charcoal-->
+  <ThingDef ParentName="ResourceBase">
+    <defName>MD2Charcoal</defName>
+    <label>charcoal</label>
+    <description>A lump of charcoal.</description>
+    <graphicData>
+      <texPath>Items/Resources/Charcoal</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <resourceReadoutPriority>Middle</resourceReadoutPriority>
+    <soundInteract>Standard_Drop</soundInteract>
+    <soundDrop>Standard_Drop</soundDrop>
+    <useHitPoints>false</useHitPoints>
+    <resourceReadoutAlwaysShow>false</resourceReadoutAlwaysShow>
+    <statBases>
+      <MarketValue>20</MarketValue>
+    </statBases>
+    <thingCategories>
+      <li>ResourcesRaw</li>
+    </thingCategories>
+    <stackLimit>75</stackLimit>
+
+  </ThingDef>
+
+  <!--Soft clay-->
+  <ThingDef ParentName="ResourceBase">
+    <defName>MD2SoftClay</defName>
+    <label>soft clay</label>
+    <description>A lump of soft clay.</description>
+    <graphicData>
+      <texPath>Items/Resources/SoftClay</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <resourceReadoutPriority>Middle</resourceReadoutPriority>
+    <soundInteract>Stone_Drop</soundInteract>
+    <soundDrop>Stone_Drop</soundDrop>
+    <useHitPoints>false</useHitPoints>
+    <statBases>
+      <MarketValue>0.3</MarketValue>
+    </statBases>
+    <thingCategories>
+      <li>ResourcesRaw</li>
+    </thingCategories>
+    <stackLimit>1000</stackLimit>
+
+  </ThingDef>
+
+  <!--Clay Brick-->
+  <ThingDef ParentName="ResourceBase">
+    <defName>MD2ClayBrick</defName>
+    <label>clay brick</label>
+    <description>A brick of hardened clay. Can be used for construction.</description>
+    <graphicData>
+      <texPath>Items/Resources/ClayBricks</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <soundInteract>Stone_Drop</soundInteract>
+    <soundDrop>Stone_Drop</soundDrop>
+    <statBases>
+      <MarketValue>1</MarketValue>
+    </statBases>
+    <thingCategories>
+      <li>StoneBlocks</li>
+    </thingCategories>
+    <stackLimit>200</stackLimit>
+    <useHitPoints>false</useHitPoints>
+    <smallVolume>false</smallVolume>
+    <stuffProps>
+      <stuffAdjective>clay bricks</stuffAdjective>
+      <categories>
+        <li>Stony</li>
+      </categories>
+      <color>(163,109,64)</color>
+      <statOffsets>
+        <WorkToMake>70</WorkToMake>
+        <Beauty>1.5</Beauty>
+      </statOffsets>
+      <statFactors>
+        <MaxHitPoints>0.7</MaxHitPoints>
+        <Flammability>0</Flammability>
+        <Beauty>1</Beauty>
+        <WorkToMake>2.5</WorkToMake>
+        <MarketValue>0.2</MarketValue>
+        <DoorOpenSpeed>0.4</DoorOpenSpeed>
+        <BedRestEffectiveness>0.9</BedRestEffectiveness>
+        <MeleeWeapon_Cooldown>1.1</MeleeWeapon_Cooldown>
+        <SharpDamageMultiplier>0.3</SharpDamageMultiplier>
+        <BluntDamageMultiplier>0.8</BluntDamageMultiplier>
+      </statFactors>
+    </stuffProps>
+  </ThingDef>
+
+
+</Resources>

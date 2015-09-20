@@ -1,0 +1,58 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<RecipeDefs>
+
+  <RecipeDef>
+    <defName>MakeMineralSonarModule</defName>
+    <label>Make mineral sonar module</label>
+    <description>   Make a mineral sonar module using steel for the packaging box and integrated circuits boards for the computing module.</description>
+    <jobString>Making mineral sonar module.</jobString>
+    <workAmount>1200</workAmount>
+    <workSpeedStat>ElectronicCraftingSpeed</workSpeedStat>
+    <skillRequirements>
+      <li>
+        <skill>Crafting</skill>
+        <minLevel>5</minLevel>
+      </li>
+    </skillRequirements>
+    <effectWorking>ButcherMechanoid</effectWorking>
+    <soundWorking>Recipe_ButcherCorpseMechanoid</soundWorking>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>SteelBar</li>
+          </thingDefs>
+        </filter>
+        <count>20</count>
+      </li>
+	  <li>
+        <filter>
+          <thingDefs>
+            <li>CopperWire</li>
+          </thingDefs>
+        </filter>
+        <count>10</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>IntegratedCircuitsBoard</li>
+          </thingDefs>
+        </filter>
+        <count>6</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>SteelBar</li>
+		<li>CopperWire</li>
+        <li>IntegratedCircuitsBoard</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <products>
+      <MineralSonarModule>1</MineralSonarModule>
+    </products>
+    <workSkill>Crafting</workSkill>
+  </RecipeDef>
+
+</RecipeDefs>

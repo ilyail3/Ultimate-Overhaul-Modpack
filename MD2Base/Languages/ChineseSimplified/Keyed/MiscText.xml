@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<LanguageData>
+
+  <!--<ClickToJumpToProblem>Click to jump to problem</ClickToJumpToProblem>-->
+<TargetCount>目标次数</TargetCount>
+
+  <DesignatorCollectSandLabel>采集沙子</DesignatorCollectSandLabel>
+
+  <DesignatorCollectSandDesc>划定一个区域采集沙子.</DesignatorCollectSandDesc>
+
+  <DesignatorCollectSandReportString>必须划定在沙子地形上.</DesignatorCollectSandReportString>
+
+  <NoOrders>无订单</NoOrders>
+
+  <NoAvailableUpgrades>没有可用的升级</NoAvailableUpgrades>
+
+  <UpgradeInstall>安装升级</UpgradeInstall>
+
+  <MD2Delete>删除</MD2Delete>
+
+  <MD2Infinite>无限</MD2Infinite>
+
+  <MD2Until>直到拥有</MD2Until>
+
+  <AwaitingMaterials>等待材料</AwaitingMaterials>
+
+  <TimeRemaining>剩余时间</TimeRemaining>
+
+  <Upgrades>升级</Upgrades>
+
+  <MD2Options>选项</MD2Options>
+
+  <AddOrder>添加订单</AddOrder>
+
+  <AddNewOrder>添加新订单</AddNewOrder>
+
+  <Selected>已选择</Selected>
+
+  <NoCurrentOrder>当前没有订单</NoCurrentOrder>
+
+  <MD2Suspend>已暂停</MD2Suspend>
+
+  <MoveUp>上升</MoveUp>
+
+  <MoveDown>下降</MoveDown>
+
+  <ManufacturingPlant>制造工厂</ManufacturingPlant>
+
+  <NoAssemblyLines>没有生产线</NoAssemblyLines>
+
+  <ConstructNewAssemblyLine>建造新的生产线</ConstructNewAssemblyLine>
+
+  <Nothing>无</Nothing>
+
+  <BuildNewAssemblyLineDialog>建造新的生产线吗?\n\n这项操作将需要 : \n\n{0}\n\n和花费 {1}时间\n\n继续吗?</BuildNewAssemblyLineDialog>
+
+  <MaximumAssemblyLines>你建造的生产线已经达到最大数量</MaximumAssemblyLines>
+
+  <DialogHelp>单击显示帮助对话框</DialogHelp>
+
+  <Help>帮助</Help>
+
+  <Makes>生产</Makes>
+  <!--'A' is used in a sentence, ie. "Makes a stone sword". -->
+  <A>一个</A>
+
+  <CycleCompleteTime>完成一个周期需要的时间: </CycleCompleteTime>
+
+  <NoRecipeSelected>没有选择的配方</NoRecipeSelected>
+
+  <NoRecipesFound>没有发现配方 :(\n你都做了些什么?</NoRecipesFound>
+
+  <UpgradeCompleted>{0} 已完成升级安装 {1} 升级完成!</UpgradeCompleted>
+
+  <AssemblyLinePropertySpeed>速度系数</AssemblyLinePropertySpeed>
+
+  <AssemblyLinePropertyEfficiency>效率系数</AssemblyLinePropertyEfficiency>
+
+  <MD2BuildingMaterials>建造材料: </MD2BuildingMaterials>
+
+  <MD2Progress>进度: {0}</MD2Progress>
+
+  <UpgradeInstallTimeRemaining>剩余时间: {0}</UpgradeInstallTimeRemaining>
+
+  <InstallUpgradeTimeToComplete>完成时间: {0}</InstallUpgradeTimeToComplete>
+
+  <AssemblyLineConstructionFinished>{0} 已完成建造，现已投入使用!</AssemblyLineConstructionFinished>
+
+  <AssemblyLineUnderConstruction>正在建造。剩余时间: {0}</AssemblyLineUnderConstruction>
+
+  <MD2Nothing>无</MD2Nothing>
+
+  <RequiresMaterials>需要的材料:\n</RequiresMaterials>
+
+  <MD2Resume>继续</MD2Resume>
+
+  <MD2Pause>暂停</MD2Pause>
+
+  <MD2Idle>空闲</MD2Idle>
+
+  <MD2Select>选择</MD2Select>
+
+  <DeleteAssemblyLine>警告\n\n将永久删除这条生产线!\n\n您确定要继续吗?</DeleteAssemblyLine>
+
+  <DeleteAssemblyLineUnderConstruction>警告\n\n将永久删除这条生产线! 退还大部分建造材料.\n\n 您确定要继续吗?</DeleteAssemblyLineUnderConstruction>
+
+  <AssemblyLineStatusInProduction>订单生产中</AssemblyLineStatusInProduction>
+
+  <AssemblyLineStatusRequiresMaterials>订单需要的材料</AssemblyLineStatusRequiresMaterials>
+
+  <OnFissureReportString>必须放置在一个裂缝上</OnFissureReportString>
+
+  <OnMudOrWaterReportString>必须放置在泥地或浅水区域</OnMudOrWaterReportString>
+
+  <MaximumFiveReportString>此建筑你最多只能建造五个</MaximumFiveReportString>
+
+  <MaximumOneReportString>此建筑同一时间里只能建造一个</MaximumOneReportString>
+
+  <DesignatorCollectClayDesc>在泥地或浅水区划定一块区域采集粘土.</DesignatorCollectClayDesc>
+
+  <DesignatorCollectClayLabel>采集粘土</DesignatorCollectClayLabel>
+
+  <DesignatorCollectClayReportString>必须划定在泥地或浅水区域</DesignatorCollectClayReportString>
+
+   <PermittedIngredients>允许的材料</PermittedIngredients>
+
+</LanguageData>

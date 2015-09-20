@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<JobDefs>
+
+  <!--========= General ============-->
+
+
+  <JobDef>
+    <defName>MD2CollectClayJob</defName>
+    <driverClass>MD2.JobDriver_CollectClay</driverClass>
+    <reportString>Collecting clay.</reportString>
+  </JobDef>
+  
+</JobDefs>

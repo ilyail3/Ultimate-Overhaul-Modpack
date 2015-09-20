@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Buildings>
+
+
+  <ThingDef Name="BuildingBase" Abstract="True">
+    <category>Building</category>
+    <soundImpactDefault>BulletImpactMetal</soundImpactDefault>
+    <description>A contained unit for storing large amounts of items.</description>
+    <selectable>true</selectable>
+    <drawerType>MapMeshAndRealTime</drawerType>
+    <thingClass>MD2.Building_DeepStorage</thingClass>
+    <terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
+    <constructEffect>ConstructMetal</constructEffect>
+    <repairEffect>Repair</repairEffect>
+    <altitudeLayer>Waist</altitudeLayer>
+    <passability>Impassable</passability>
+    <castEdgeShadows>false</castEdgeShadows>
+    <filthLeaving>BuildingRubble</filthLeaving>
+    <graphicData>
+      <texPath>Buildings/Deep Storage/DSU</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    <drawSize>(2,1)</drawSize>
+    </graphicData>
+    <building>
+      <fixedStorageSettings>
+        <priority>Important</priority>
+        <filter>
+          <categories>
+            <li>ResourcesRaw</li>
+            <li>Manufactured</li>
+          </categories>
+        </filter>
+      </fixedStorageSettings>
+      <defaultStorageSettings>
+        <priority>Important</priority>
+        <filter>
+          <categories>
+
+          </categories>
+        </filter>
+      </defaultStorageSettings>
+    </building>
+    <inspectorTabs>
+      <li>ITab_Storage</li>
+    </inspectorTabs>
+    <designationCategory>Storage</designationCategory>
+    <staticSunShadowHeight>0.2</staticSunShadowHeight>
+    <surfaceType>Item</surfaceType>
+    <size>(2,1)</size>
+    <tickerType>Normal</tickerType>
+  </ThingDef>
+
+
+  <ThingDef ParentName="BuildingBase" Class="MD2.DSUDef">
+    <defName>MD2DeepStorageI</defName>
+    <label>Deep Storage Unit Mk.I</label>
+    <statBases>
+      <MaxHitPoints>300</MaxHitPoints>
+      <Flammability>1.0</Flammability>
+      <WorkToMake>1200</WorkToMake>
+    </statBases>
+    <maxStorage>1000</maxStorage>
+    <costList>
+      <SteelBar>100</SteelBar>
+      <WoodPlank>20</WoodPlank>
+    </costList>
+    <researchPrerequisite>StorageI</researchPrerequisite>
+  </ThingDef>
+
+  <ThingDef ParentName="BuildingBase" Class="MD2.DSUDef">
+    <defName>MD2DeepStorageII</defName>
+    <label>Deep Storage Unit Mk.II</label>
+    <statBases>
+      <MaxHitPoints>400</MaxHitPoints>
+      <Flammability>1.0</Flammability>
+      <WorkToMake>2400</WorkToMake>
+    </statBases>
+    <maxStorage>1500</maxStorage>
+    <costList>
+      <SteelBar>175</SteelBar>
+      <WoodPlank>30</WoodPlank>
+    </costList>
+    <researchPrerequisite>StorageII</researchPrerequisite>
+  </ThingDef>
+
+  <ThingDef ParentName="BuildingBase" Class="MD2.DSUDef">
+    <defName>MD2DeepStorageIII</defName>
+    <label>Deep Storage Unit Mk.III</label>
+    <statBases>
+      <MaxHitPoints>500</MaxHitPoints>
+      <Flammability>1.0</Flammability>
+      <WorkToMake>3400</WorkToMake>
+    </statBases>
+    <maxStorage>2250</maxStorage>
+    <costList>
+      <SteelBar>250</SteelBar>
+      <WoodPlank>40</WoodPlank>
+    </costList>
+    <researchPrerequisite>StorageIII</researchPrerequisite>
+  </ThingDef>
+
+</Buildings>
+
+

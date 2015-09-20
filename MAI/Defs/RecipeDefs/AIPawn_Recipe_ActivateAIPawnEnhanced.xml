@@ -1,0 +1,76 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<RecipeDefs>
+	
+	<RecipeDef>
+		<defName>AIPawn_ActivateAIPawnEnhanced</defName>
+		<label>Activate Enhanced AI</label>
+		<description>Activates the mobile ai with enhanced functionalities.</description>
+		<jobString>Working.</jobString>
+		<workAmount>2400</workAmount>
+		<workSpeedStat>BuildAIPawnBaseTime</workSpeedStat>
+		<efficiencyStat>BuildAIPawnBaseEfficiency</efficiencyStat>
+		<effectWorking>Repair</effectWorking>
+		<soundWorking>Repair</soundWorking>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>PlasteelBar</li>
+					</thingDefs>
+				</filter>
+				<count>50</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>CopperWire</li>
+					</thingDefs>
+				</filter>
+				<count>20</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>IntegratedCircuitsBoard</li>
+					</thingDefs>
+				</filter>
+				<count>10</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>EnergyPack</li>
+					</thingDefs>
+				</filter>
+				<count>5</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>AIPersonaCore</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<products>
+			<AIPawn_AIPawnCreatorE>1</AIPawn_AIPawnCreatorE>
+		</products>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>PlasteelBar</li>
+				<li>CopperWire</li>
+				<li>IntegratedCircuitsBoard</li>
+				<li>EnergyPack</li>
+				<li>AIPersonaCore</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<skillRequirements>
+			<li>
+				<skill>Crafting</skill>
+				<minLevel>9</minLevel>
+			</li>
+		</skillRequirements>
+	</RecipeDef>
+	
+</RecipeDefs>

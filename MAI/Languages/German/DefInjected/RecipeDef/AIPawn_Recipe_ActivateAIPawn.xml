@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<LanguageData>
+  
+	<AIPawn_ActivateAIPawn.label>Aktiviere mobile AI</AIPawn_ActivateAIPawn.label>
+	<AIPawn_ActivateAIPawn.description>Aktiviert die mobile Künstliche Intelligenz.</AIPawn_ActivateAIPawn.description>
+	<AIPawn_ActivateAIPawn.jobString>Arbeite.</AIPawn_ActivateAIPawn.jobString>
+
+	<AIPawn_ActivateAIPawnEnhanced.label>Aktiviere verbesserte AI</AIPawn_ActivateAIPawnEnhanced.label>
+	<AIPawn_ActivateAIPawnEnhanced.description>Aktiviert die mobile Künstliche Intelligenz mit erweiterten Funktionen.</AIPawn_ActivateAIPawnEnhanced.description>
+	<AIPawn_ActivateAIPawnEnhanced.jobString>Working.</AIPawn_ActivateAIPawnEnhanced.jobString>
+
+	
+</LanguageData>

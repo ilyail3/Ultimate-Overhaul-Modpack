@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ManufacturingPlantRecipesDefs>
+  <ManufacturingPlantRecipesDef>
+    <defName>MD2VanillaRecipes</defName>
+    <!--
+    <recipes>
+    <li></li>
+    </recipes>
+    -->
+    <blackList>
+      <li>ButcherCorpseFlesh</li>
+      <li>ButcherCorpseMechanoid</li>
+      <li>ExtractMetalFromSlag</li>
+      <li>MakeStoneBlocks</li>
+      <li>SmeltWeapon</li>
+    </blackList>
+  </ManufacturingPlantRecipesDef>
+</ManufacturingPlantRecipesDefs>

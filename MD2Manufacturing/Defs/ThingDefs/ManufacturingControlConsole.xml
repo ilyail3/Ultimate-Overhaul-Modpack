@@ -1,0 +1,64 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Buildings>
+
+
+  <ThingDef Name="BuildingBase" Abstract="True">
+    <category>Building</category>
+    <soundImpactDefault>BulletImpactMetal</soundImpactDefault>
+    <selectable>true</selectable>
+    <drawerType>MapMeshAndRealTime</drawerType>
+    <terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
+    <repairEffect>Repair</repairEffect>
+  </ThingDef>
+
+  <!-- Control Console -->
+  <ThingDef ParentName="BuildingBase">
+    <defName>MD2ManufacturingControlConsole</defName>
+    <label>control console</label>
+    <description>control console.</description>
+    <thingClass>MD2.Building_ControlConsole</thingClass>
+    <graphicData>
+      <texPath>Buildings/ManufacturingConsole</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+<drawSize>(3,2)</drawSize>
+    </graphicData>
+    <altitudeLayer>Waist</altitudeLayer>
+    <passability>Impassable</passability>
+    <castEdgeShadows>true</castEdgeShadows>
+    <fillPercent>0.7</fillPercent>
+    <statBases>
+      <WorkToMake>500</WorkToMake>
+      <MaxHitPoints>100</MaxHitPoints>
+      <Flammability>1.0</Flammability>
+    </statBases>
+    <size>(3,2)</size>
+    <comps>
+      <li>
+        <compClass>CompPowerTrader</compClass>
+        <basePowerConsumption>1</basePowerConsumption>
+        <transmitsPower>false</transmitsPower>
+      </li>
+    </comps>
+    <costList>
+      <SteelBar>800</SteelBar>
+	  <CopperWire>250</CopperWire>
+      <IntegratedCircuitsBoard>10</IntegratedCircuitsBoard>
+      <Uranium>250</Uranium>
+    </costList>
+    <tickerType>Normal</tickerType>
+    <rotatable>true</rotatable>
+    <neverMultiSelect>true</neverMultiSelect>
+    <killedLeavings>
+      <ChunkSlagSteel>1</ChunkSlagSteel>
+    </killedLeavings>
+    <filthLeaving>BuildingRubble</filthLeaving>
+    <designationCategory>ProductionGoods</designationCategory>
+    <staticSunShadowHeight>0.3</staticSunShadowHeight>
+    <surfaceType>None</surfaceType>
+    <placeWorkers>
+      <li>MD2.PlaceWorker_Single</li>
+    </placeWorkers>
+    <researchPrerequisite>MD2ManufacturingPlant</researchPrerequisite>
+  </ThingDef>
+
+</Buildings>

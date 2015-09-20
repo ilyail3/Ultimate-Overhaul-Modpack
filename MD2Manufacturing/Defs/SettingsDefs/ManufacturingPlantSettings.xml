@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<SettingsDefs>
+<!-- Do not change the names of these defs; it will destroy the world-->
+  <SettingsDef>
+    <defName>MD2AssemblyLineSettings</defName>
+    <BuildingCost>
+      <li>
+        <thing>SteelBar</thing>
+        <amount>1500</amount>
+      </li>
+      <li>
+        <thing>PlasteelBar</thing>
+        <amount>200</amount>
+      </li>
+    </BuildingCost>
+    <buildingLengthInt>72000</buildingLengthInt>
+    <godModeBuildingLengthInt>300</godModeBuildingLengthInt>
+    <constructionPowerUsage>300</constructionPowerUsage>
+    <productionPowerUsage>100</productionPowerUsage>
+    <idlePowerUsage>10</idlePowerUsage>
+    <instaBuild>true</instaBuild>
+  </SettingsDef>
+
+  <SettingsDef>
+    <defName>MD2MPManagerSettings</defName>
+    <maximumAssemblyLines>2</maximumAssemblyLines>
+  </SettingsDef>
+  
+</SettingsDefs>

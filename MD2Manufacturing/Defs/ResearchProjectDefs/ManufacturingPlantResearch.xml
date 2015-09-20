@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ResearchProjectDefs>
+
+  <ResearchProjectDef>
+    <defName>MD2ManufacturingPlant</defName>
+    <label>Offworld Manufacturing Plant (MD2)</label>
+    <description>Unlocks the offworld manufacturing plant, a powerful system which orbits the planet and allows you to craft most items automatically. It uses resources that are in range of trade beacons, and when it has completed a crafting 'Order', it will send the item down in a drop pod to a trade beacon. To access the Offworld Manufacturing Plant, build a Manufacturing Control Console and click the command button to open the UI.</description>
+    <totalCost>3000</totalCost>
+    <prerequisites>
+      <li>AdvancedCommunications</li>
+    </prerequisites>
+  </ResearchProjectDef>
+  
+</ResearchProjectDefs>

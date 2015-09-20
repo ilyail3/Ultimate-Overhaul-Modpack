@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+
+	<MD2CollectSand.verb>采集沙子</MD2CollectSand.verb>
+	<MD2CollectSand.gerund>采集沙子中</MD2CollectSand.gerund>
+
+	<MD2CollectClay.verb>采集粘土</MD2CollectClay.verb>
+	<MD2CollectClay.gerund>采集粘土中</MD2CollectClay.gerund>
+
+<MD2DroidAssembly.verb>建造</MD2DroidAssembly.verb>
+<MD2DroidAssembly.gerund>建造中</MD2DroidAssembly.gerund>
+
+</LanguageData>

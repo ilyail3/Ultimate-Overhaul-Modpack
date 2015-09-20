@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<NameMakerDefs>
+
+  <RulePackDef>
+    <defName>NamerFactionCMCFOB</defName>
+    <rulePack>
+      <rulesStrings>
+        <li>name->[Nth] Assault Battalion</li>
+        <li>name->[Nth] Support Battalion</li>
+        <li>name->[Nth] Air Wing</li>
+        <li>name->[Nth] Tank Battalion</li>
+        <li>name->[Nth] Division Headquarters Battalion</li>		
+      </rulesStrings>
+      <rulesRaw>
+        <li Class="Rule_File">
+          <keyword>Nth</keyword>
+          <path>CMCbank/romans</path>
+        </li>
+      </rulesRaw>
+    </rulePack>
+  </RulePackDef>
+
+</NameMakerDefs>
+
+
+
+
+
+
+

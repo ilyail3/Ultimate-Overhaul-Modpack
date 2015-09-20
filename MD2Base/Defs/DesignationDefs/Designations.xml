@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<DesignationDefs>
+
+
+  <DesignationDef>
+    <defName>MD2CollectClay</defName>
+    <texturePath>UI/Designations/CollectClay</texturePath>
+    <targetType>Cell</targetType>
+    <removeIfBuildingDestroyed>true</removeIfBuildingDestroyed>
+  </DesignationDef>
+
+</DesignationDefs>

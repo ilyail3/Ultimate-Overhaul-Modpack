@@ -1,0 +1,67 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<Buildings>
+
+  <ThingDef Name="BuildingBase" Abstract="True">
+    <category>Building</category>
+    <soundImpactDefault>BulletImpactMetal</soundImpactDefault>
+    <selectable>true</selectable>
+    <drawerType>MapMeshAndRealTime</drawerType>
+    <terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
+    <repairEffect>Repair</repairEffect>
+    <filthLeaving>BuildingRubble</filthLeaving>
+  </ThingDef>
+
+  <ThingDef ParentName="BuildingBase">
+    <defName>MobileMineralSonar</defName>
+    <Label>Mobile mineral sonar</Label>
+    <Description>   The mobile mineral sonar is used to detect hidden metallic objects in the heart of big mountains.
+
+- It will scan the surrounding rocks autonomously with the embedded energy packs.
+- Supplying some additional power will fasten the scan rate.
+- It can be dismantled to move it to another place. You will have to provide some new energy packs to replace depleted ones.
+    </Description>
+    <graphicData>
+        <graphicClass>Graphic_Single</graphicClass>
+        <texPath>Things/Building/MobileMineralSonar</texPath>
+        <drawSize>(1,1)</drawSize>
+    </graphicData>
+	<minifiedDef>MinifiedFurniture</minifiedDef>
+    <uiIconPath>Things/Building/MenuIcon_MobileMineralSonar</uiIconPath>
+    <ThingClass>MobileMineralSonar.Building_MobileMineralSonar</ThingClass>
+    <tickerType>Normal</tickerType>
+    <PlaceWorkers>
+      <li>MobileMineralSonar.PlaceWorker_MobileMineralSonar</li>
+    </PlaceWorkers>
+    <CostList>
+      <EnergyPack>5</EnergyPack>
+      <MineralSonarModule>1</MineralSonarModule>
+    </CostList>
+    <AltitudeLayer>BuildingTall</AltitudeLayer>
+    <statBases>
+      <WorkToMake>200</WorkToMake>
+      <MaxHitPoints>200</MaxHitPoints>
+      <Flammability>0.1</Flammability>
+    </statBases>
+    <useHitPoints>True</useHitPoints>
+    <Size>(1,1)</Size>
+    <DesignationCategory>Misc</DesignationCategory>
+    <Passability>Impassable</Passability>
+    <hasInteractionCell>False</hasInteractionCell>
+    <comps>
+      <li>
+        <compClass>CompPowerTrader</compClass>
+        <startElectricalFires>false</startElectricalFires>
+        <basePowerConsumption>1000</basePowerConsumption>
+        <soundPowerOn>PowerOnSmall</soundPowerOn>
+        <soundPowerOff>PowerOffSmall</soundPowerOff>
+      </li>
+	  <li>
+        <compClass>CompQuality</compClass>
+      </li>
+    </comps>
+    <researchPrerequisite>ResearchMobileMineralSonar</researchPrerequisite>
+    <leaveResourcesWhenKilled>false</leaveResourcesWhenKilled>
+  </ThingDef>
+
+</Buildings>

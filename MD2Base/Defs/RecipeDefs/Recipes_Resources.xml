@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RecipeDefs>
+
+  <RecipeDef>
+    <defName>MakeSilicon_Electric</defName>
+    <label>make silicon</label>
+    <description>Melts down sand to extract the silicon from it.</description>
+    <jobString>Making silicon.</jobString>
+    <workAmount>500</workAmount>
+    <workSpeedStat>StonecuttingSpeed</workSpeedStat>
+    <effectWorking>Smelt</effectWorking>
+    <soundWorking>Recipe_UseMetalRefinery</soundWorking>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Sand</li>
+          </thingDefs>
+        </filter>
+        <count>30</count>
+      </li>
+    </ingredients>
+    <products>
+      <MD2Silicon>20</MD2Silicon>
+    </products>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>Sand</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <workSkill>Crafting</workSkill>
+  </RecipeDef>
+
+
+  <RecipeDef>
+    <defName>MD2MakeCharcoal</defName>
+    <label>make charcoal</label>
+    <description>Makes charcoal by burning wood.</description>
+    <jobString>Burning wood.</jobString>
+    <workAmount>800</workAmount>
+    <workSpeedStat>MD2SolderingSpeed</workSpeedStat>
+    <effectWorking>Smelt</effectWorking>
+    <soundWorking>Interact_Repair</soundWorking>
+    <recipeUsers>
+      <li>ElectricSmelter</li>
+    </recipeUsers>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>WoodLog</li>
+          </thingDefs>
+        </filter>
+        <count>10</count>
+      </li>
+    </ingredients>
+    <products>
+      <MD2Charcoal>10</MD2Charcoal>
+    </products>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>WoodLog</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <workSkill>Crafting</workSkill>
+  </RecipeDef>
+  
+ <RecipeDef>
+    <defName>MD2MakeClayBricks</defName>
+    <label>make clay bricks</label>
+    <description>Makes clay bricks by baking soft clay.</description>
+    <jobString>Baking clay.</jobString>
+    <workAmount>1400</workAmount>
+    <workSpeedStat>MD2SolderingSpeed</workSpeedStat>
+    <effectWorking>Smelt</effectWorking>
+    <soundWorking>Interact_Repair</soundWorking>
+    <recipeUsers>
+      <li>ElectricSmelter</li>
+    </recipeUsers>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>MD2SoftClay</li>
+          </thingDefs>
+        </filter>
+        <count>60</count>
+      </li>
+    </ingredients>
+    <products>
+      <MD2ClayBrick>20</MD2ClayBrick>
+    </products>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>MD2SoftClay</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <workSkill>Crafting</workSkill>
+  </RecipeDef>
+
+</RecipeDefs>

@@ -1,0 +1,90 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ThingDefs>
+
+
+
+  <ThingDef Name="BuildingBase" Abstract="True">
+    <category>Building</category>
+    <soundImpactDefault>BulletImpactMetal</soundImpactDefault>
+    <selectable>true</selectable>
+    <drawerType>MapMeshAndRealTime</drawerType>
+    <terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
+    <constructEffect>ConstructMetal</constructEffect>
+    <repairEffect>Repair</repairEffect>
+    <filthLeaving>BuildingRubble</filthLeaving>
+  </ThingDef>
+
+
+  <ThingDef Name="BuildingNaturalBase" Abstract="True">
+    <category>Building</category>
+    <selectable>true</selectable>
+    <drawerType>MapMeshOnly</drawerType>
+  </ThingDef>
+
+  <ThingDef ParentName="BuildingNaturalBase">
+    <category>Ethereal</category>
+    <label>fissure</label>
+    <defName>MD2Fissure</defName>
+    <thingClass>MD2.Fissure</thingClass>
+    <graphicData>
+      <texPath>Terrain/Fissure</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <shaderType>Transparent</shaderType>
+    </graphicData>
+    <altitudeLayer>Floor</altitudeLayer>
+    <destroyable>false</destroyable>
+    <useHitPoints>false</useHitPoints>
+    <selectable>true</selectable>
+    <description>A fissure that cuts deep into the earth.</description>
+    <size>(1,1)</size>
+    <neverOverlapFloors>true</neverOverlapFloors>
+    <blockPlants>true</blockPlants>
+
+  </ThingDef>
+
+  <ThingDef ParentName="BuildingBase">
+    <defName>MD2FissureGenerator</defName>
+    <label>fissure generator</label>
+    <description>A powerful machine designed to crack open the earth and create a deep fissure which can be used to can access to the lower layers of the planet's crust.</description>
+    <thingClass>MD2.Building_FissureGenerator</thingClass>
+    <graphicData>
+      <texPath>Buildings/FissureGenerator/FissureGenerator</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    <drawSize>(3,3)</drawSize>
+    </graphicData>
+    <uiIconPath>Buildings/FissureGenerator/FissureGenerator</uiIconPath>
+    <altitudeLayer>Waist</altitudeLayer>
+    <passability>Impassable</passability>
+    <castEdgeShadows>true</castEdgeShadows>
+    <fillPercent>1</fillPercent>
+    <statBases>
+      <MaxHitPoints>350</MaxHitPoints>
+      <WorkToMake>750</WorkToMake>
+      <Flammability>1.0</Flammability>
+      <Beauty>-6</Beauty>
+    </statBases>
+    <tickerType>Normal</tickerType>
+    <size>(3,3)</size>
+    <costList>
+      <SteelBar>500</SteelBar>
+	  <CopperBar>250</CopperBar>
+	  <PlasteelBar>500</PlasteelBar>
+	  <Uranium>500</Uranium>
+	  <IntegratedCircuitsBoard>5</IntegratedCircuitsBoard>
+    </costList>
+    <comps>
+      <li>
+        <compClass>CompPowerTrader</compClass>
+        <basePowerConsumption>1500</basePowerConsumption>
+      </li>
+    </comps>
+    <killedLeavings>
+      <ChunkSlagSteel>3</ChunkSlagSteel>
+    </killedLeavings>
+    <terrainAffordanceNeeded>Heavy</terrainAffordanceNeeded>
+    <designationCategory>ProductionResources</designationCategory>
+    <staticSunShadowHeight>0</staticSunShadowHeight>
+    <researchPrerequisite>MD2FissureGenerator</researchPrerequisite>
+  </ThingDef>
+
+</ThingDefs>

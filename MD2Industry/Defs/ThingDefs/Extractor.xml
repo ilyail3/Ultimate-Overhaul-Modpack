@@ -1,0 +1,64 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ThingDefs>
+
+  <ThingDef Name="BuildingBase" Abstract="True">
+    <category>Building</category>
+    <soundImpactDefault>BulletImpactMetal</soundImpactDefault>
+    <selectable>true</selectable>
+    <drawerType>MapMeshAndRealTime</drawerType>
+    <constructEffect>ConstructMetal</constructEffect>
+    <repairEffect>Repair</repairEffect>
+    <filthLeaving>BuildingRubble</filthLeaving>
+  </ThingDef>
+
+  <ThingDef ParentName="BuildingBase">
+    <defName>MD2Extractor</defName>
+    <label>ore extractor</label>
+    <description>This machine digs deep into the ground and extracts metals from the earth.</description>
+    <thingClass>MD2.Building_Extractor</thingClass>
+    <graphicData>
+      <texPath>Buildings/Extractor/Extractor</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    <drawSize>(3,3)</drawSize>
+    </graphicData>
+    <uiIconPath>Buildings/Extractor/Extractor</uiIconPath>
+    <altitudeLayer>BuildingTall</altitudeLayer>
+    <passability>Impassable</passability>
+    <castEdgeShadows>true</castEdgeShadows>
+    <fillPercent>0.1</fillPercent>
+    <hasInteractionCell>True</hasInteractionCell>
+    <interactionCellOffset>(0,0,-2)</interactionCellOffset>
+    <statBases>
+      <WorkToMake>3500</WorkToMake>
+      <MaxHitPoints>450</MaxHitPoints>
+      <Flammability>1.0</Flammability>
+    </statBases>
+    <tickerType>Normal</tickerType>
+    <comps>
+      <li>
+        <compClass>CompPowerTrader</compClass>
+        <basePowerConsumption>10000</basePowerConsumption>
+      </li>
+    </comps>
+    <size>(3,3)</size>
+    <costList>
+      <SteelBar>500</SteelBar>
+	  <CopperBar>250</CopperBar>
+	  <Uranium>500</Uranium>
+	  <PlasteelBar>500</PlasteelBar>
+	  <IntegratedCircuitsBoard>8</IntegratedCircuitsBoard>
+    </costList>
+    <placeWorkers>
+      <li>MD2.PlacementRestrictor_OnFissure</li>
+    </placeWorkers>
+    <killedLeavings>
+      <ChunkSlagSteel>3</ChunkSlagSteel>
+    </killedLeavings>
+    <leaveResourcesWhenKilled>true</leaveResourcesWhenKilled>
+    <terrainAffordanceNeeded>Heavy</terrainAffordanceNeeded>
+    <designationCategory>ProductionResources</designationCategory>
+    <staticSunShadowHeight>0.6</staticSunShadowHeight>
+    <researchPrerequisite>MD2Extractor</researchPrerequisite>
+  </ThingDef>
+
+</ThingDefs>

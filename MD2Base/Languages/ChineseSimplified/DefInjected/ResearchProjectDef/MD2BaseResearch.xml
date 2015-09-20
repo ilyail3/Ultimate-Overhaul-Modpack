@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+
+	<MD2Tech.label>机械防御2(MD2) 科技</MD2Tech.label>
+
+	<MD2Tech.description>欢迎来到机械防御2.</MD2Tech.description>
+
+	<MD2UtilitiesI.label>MD2实用科技 I</MD2UtilitiesI.label>
+
+	<MD2UtilitiesI.description>解锁研究MD2的实用科技.</MD2UtilitiesI.description>
+
+	<MD2DefenceI.label>MD2防御科技 I</MD2DefenceI.label>
+
+	<MD2DefenceI.description>解锁研究MD2的防御科技.</MD2DefenceI.description>
+
+	<MD2OffenceI.label>MD2攻击科技 I</MD2OffenceI.label>
+
+	<MD2OffenceI.description>解锁研究MD2的攻击科技.</MD2OffenceI.description>
+
+	<MD2PowerGen.label>MD2发电科技 I</MD2PowerGen.label>
+
+	<MD2PowerGen.description>解锁研究MD2的发电科技.</MD2PowerGen.description>
+
+</LanguageData>

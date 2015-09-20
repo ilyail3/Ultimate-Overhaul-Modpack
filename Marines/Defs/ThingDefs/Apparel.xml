@@ -1,0 +1,145 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ThingDefs>
+
+  <ThingDef Name="ApparelBase" Abstract="True">
+    <thingClass>Apparel</thingClass>
+    <category>Item</category>
+    <selectable>True</selectable>
+    <pathCost>10</pathCost>
+    <useHitPoints>True</useHitPoints>
+    <graphicData>
+      <onGroundRandomRotateAngle>35</onGroundRandomRotateAngle>
+    </graphicData>
+    <drawGUIOverlay>true</drawGUIOverlay>
+    <statBases>
+      <MaxHitPoints>100</MaxHitPoints>
+      <Flammability>1.0</Flammability>
+      <DeteriorationRate>1</DeteriorationRate>
+      <SellPriceFactor>0.25</SellPriceFactor>
+    </statBases>
+    <altitudeLayer>Item</altitudeLayer>
+    <alwaysHaulable>True</alwaysHaulable>
+    <tickerType>Never</tickerType>
+    <comps>
+      <li>
+        <compClass>CompForbiddable</compClass>
+      </li>
+      <li>
+        <compClass>CompColorable</compClass>
+      </li>
+      <li>
+        <compClass>CompQuality</compClass>
+      </li>
+    </comps>
+  </ThingDef>
+
+  <ThingDef Name="ApparelMakeableBase" ParentName="ApparelBase" Abstract="True">
+    <recipeMaker>
+      <workSpeedStat>TailoringSpeed</workSpeedStat>
+      <workSkill>Crafting</workSkill>
+      <effectWorking>Tailor</effectWorking>
+      <soundWorking>Recipe_Tailor</soundWorking>
+        <recipeUsers>
+        <li>TableTailor</li>
+      </recipeUsers>
+      <unfinishedThingDef>UnfinishedApparel</unfinishedThingDef>
+    </recipeMaker>
+  </ThingDef>
+  
+  
+  <!-- basic cloth, pants and shirt -->
+  
+  <ThingDef ParentName="ApparelMakeableBase">
+    <defName>USCMC_TShirt</defName>
+    <label>Marine T-Shirt</label>
+    <description>A basic T-shirt.</description>
+    <graphicData>
+    <texPath>Apparel/TShirt</texPath>
+    <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+	<costStuffCount>30</costStuffCount>
+	<thingCategories>
+      <li>Shirts</li>
+    </thingCategories>
+    <stuffCategories>
+      <li>Fabric</li>
+    </stuffCategories>
+    <statBases>
+      <MarketValue>100</MarketValue>
+      <WorkToMake>8000</WorkToMake>
+      <MaxHitPoints>100</MaxHitPoints>
+      <ArmorRating_Blunt>0.04</ArmorRating_Blunt>
+      <ArmorRating_Sharp>0.04</ArmorRating_Sharp>
+      <Insulation_Cold>-4</Insulation_Cold>
+    </statBases>
+    <apparel>
+      <bodyPartGroups>
+        <li>Torso</li>
+        <li>Shoulders</li>
+      </bodyPartGroups>
+      <worngraphicPath>Apparel/TShirt</worngraphicPath>
+      <layers>
+        <li>OnSkin</li>
+      </layers>
+      <commonality>2</commonality>
+      <tags>
+        <li>SpecialForcesMilitary</li>
+      </tags>
+      <defaultOutfitTags>
+        <li>Soldier</li>
+      </defaultOutfitTags>
+    </apparel>
+  </ThingDef>
+  
+  
+    <ThingDef ParentName="ApparelMakeableBase">
+    <defName>USCMC_Bodysuit</defName>
+    <label>Marine bodysuit</label>
+    <description>Overalls. They're green!!.</description>
+    <graphicData>
+    <texPath>Apparel/Bodysuit</texPath>
+    <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+	<costStuffCount>180</costStuffCount>
+	<thingCategories>
+      <li>Pants</li>
+    </thingCategories>
+    <stuffCategories>
+      <li>Fabric</li>
+    </stuffCategories>
+    <statBases>
+      <MarketValue>150</MarketValue>
+      <WorkToMake>25000</WorkToMake>
+      <MaxHitPoints>200</MaxHitPoints>
+      <ArmorRating_Blunt>0.04</ArmorRating_Blunt>
+      <ArmorRating_Sharp>0.04</ArmorRating_Sharp>
+      <ArmorRating_Heat>0.07</ArmorRating_Heat>
+      <Insulation_Cold>-7</Insulation_Cold>
+    </statBases>
+    <equippedStatOffsets>
+      	<MoveSpeed>-0.03</MoveSpeed>
+    </equippedStatOffsets>
+    <apparel>
+      <bodyPartGroups>
+        <li>Torso</li>
+        <li>Shoulders</li>
+        <li>Arms</li>
+        <li>UpperHead</li>
+      </bodyPartGroups>
+      <worngraphicPath>Apparel/Bodysuit</worngraphicPath>
+      <layers>
+        <li>OnSkin</li>
+      </layers>
+      <commonality>2</commonality>
+      <tags>
+        <li>SpecialForcesMilitary</li>
+      </tags>
+      <defaultOutfitTags>
+        <li>Soldier</li>
+      </defaultOutfitTags>
+    </apparel>
+  </ThingDef>
+
+
+
+</ThingDefs>

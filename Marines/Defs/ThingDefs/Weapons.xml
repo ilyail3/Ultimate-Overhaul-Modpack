@@ -1,0 +1,326 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ThingDefs>
+
+
+  <ThingDef Name="BaseGun" Abstract="True">
+    <category>Item</category>
+    <thingClass>ThingWithComps</thingClass>
+    <equipmentType>Primary</equipmentType>
+    <pathCost>10</pathCost>
+    <useHitPoints>True</useHitPoints>
+    <selectable>True</selectable>
+    <graphicData>
+    <onGroundRandomRotateAngle>35</onGroundRandomRotateAngle>
+    </graphicData>
+    <drawGUIOverlay>true</drawGUIOverlay>
+    <statBases>
+      <MaxHitPoints>100</MaxHitPoints>
+      <Flammability>1.0</Flammability>
+      <DeteriorationRate>1</DeteriorationRate>
+      <SellPriceFactor>0.25</SellPriceFactor>
+    </statBases>
+    <altitudeLayer>Item</altitudeLayer>
+    <alwaysHaulable>True</alwaysHaulable>
+    <tickerType>Never</tickerType>
+    <techLevel>Midworld</techLevel>
+    <inspectorTabs>
+      <li>ITab_Art</li>
+    </inspectorTabs>
+    <comps>
+      <li>
+        <compClass>CompForbiddable</compClass>
+      </li>
+      <li>
+        <compClass>CompEquippable</compClass>
+      </li>
+      <li>
+        <compClass>CompQuality</compClass>
+      </li>
+      <li>
+        <compClass>CompArt</compClass>
+        <nameMaker>NamerGun</nameMaker>
+        <descriptionMaker>ArtWeaponGun</descriptionMaker>
+        <minQualityForArtistic>Excellent</minQualityForArtistic>
+      </li>
+    </comps>
+	<recipeMaker>
+	<skillRequirements>
+		<li>
+			<skill>Crafting</skill>
+			<minLevel>6</minLevel>
+		</li>
+	</skillRequirements>
+		<workSpeedStat>SmithingSpeed</workSpeedStat>
+		<workSkill>Crafting</workSkill>
+		<effectWorking>Smith</effectWorking>
+		<soundWorking>Recipe_Smith</soundWorking>
+		<recipeUsers>
+			<li>WeaponCraftingTable</li>
+		</recipeUsers>
+			<unfinishedThingDef>UnfinishedWeapon</unfinishedThingDef>
+		</recipeMaker>
+    <smeltProducts>
+      <SteelBar>10</SteelBar>
+    </smeltProducts>
+  </ThingDef>
+
+
+  <ThingDef Name="BaseHumanGun" ParentName="BaseGun" Abstract="True">
+    <weaponTags>
+      <li>Gun</li>
+    </weaponTags>
+  </ThingDef>
+
+
+  <ThingDef Name="BaseBullet" Abstract="True">
+    <category>Projectile</category>
+    <tickerType>Normal</tickerType>
+    <altitudeLayer>Projectile</altitudeLayer>
+    <thingClass>Bullet</thingClass>
+    <label>bullet</label>
+    <useHitPoints>False</useHitPoints>
+    <neverMultiSelect>True</neverMultiSelect>
+    <graphicData>
+		<shaderType>Transparent</shaderType>
+    </graphicData>
+  </ThingDef>
+
+
+	<!-- =================== Marine M-4 A1 rifle ================== -->
+	
+
+  <ThingDef ParentName="BaseBullet">
+    <defName>Bullet_M4Aone</defName>
+    <label>pistol bullet</label>
+    <graphicData>
+		<texPath>Things/Projectile/Bullet_Small</texPath>
+		<graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <projectile>
+      <flyOverhead>false</flyOverhead>
+      <damageDef>Bullet</damageDef>
+      <damageAmountBase>9</damageAmountBase>
+      <speed>70</speed>
+    </projectile>
+  </ThingDef>
+
+
+
+	<ThingDef ParentName="BaseHumanGun">
+		<defName>Gun_MarineRifle</defName>
+		<label>M-4 A1 Rifle</label>
+		<description>The M-4 A1 Rifle is the standard firearm for all combat personnel in the Colonial Marine Corps.</description>
+		<graphicData>
+		  <texPath>Weapons/Gun_M41-A</texPath>
+		  <graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<soundInteract>InteractRifle</soundInteract>
+		<thingCategories>
+		  <li>WeaponsRangedRifles</li>
+		</thingCategories>
+		<weaponTags>
+		  <li>SpecialForcesRifle</li>
+		</weaponTags>
+		<statBases>
+		  <MarketValue>900</MarketValue>
+		  <WorkToMake>2500</WorkToMake>
+		  <AccuracyTouch>0.85</AccuracyTouch>
+		  <AccuracyShort>0.85</AccuracyShort>
+		  <AccuracyMedium>0.75</AccuracyMedium>
+		  <AccuracyLong>0.55</AccuracyLong>
+		  <RangedWeapon_Cooldown>0.75</RangedWeapon_Cooldown>
+		</statBases>
+		<costList>
+			<WeaponParts>80</WeaponParts>
+		</costList>
+		<verbs>
+		  <li>
+			<verbClass>Verb_Shoot</verbClass>
+			<hasStandardCommand>true</hasStandardCommand>
+			<projectileDef>Bullet_M4Aone</projectileDef>
+			<warmupTicks>95</warmupTicks>
+			<range>33</range>
+			<burstShotCount>6</burstShotCount>
+			<ticksBetweenBurstShots>8</ticksBetweenBurstShots>
+			<soundCast>shotMRifle</soundCast>
+        	<muzzleFlashScale>9</muzzleFlashScale>
+		  </li>
+		</verbs>
+	</ThingDef>
+
+
+	<!-- ==================== Marine hand MachineGun ====================== -->
+
+	<ThingDef ParentName="BaseBullet">
+		<defName>Bullet_HLMG</defName>
+		<label>Marine hand machigun bullet</label>
+    <graphicData>
+		<texPath>Things/Projectile/Bullet_Small</texPath>
+		<graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+		<projectile>
+		  <damageDef>Bullet</damageDef>
+		  <damageAmountBase>8</damageAmountBase>
+		  <speed>40</speed>
+		</projectile>
+	</ThingDef>
+
+	<ThingDef ParentName="BaseHumanGun">
+		<defName>Gun_HLMG</defName>
+		<label>Marine M249</label>
+		<description>Marine M249 machinegun.</description>
+		<graphicData>
+			<texPath>Weapons/Gun_LMG_M249</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<soundInteract>InteractRifle</soundInteract>
+		<thingCategories>
+		<li>WeaponsRangedMachineguns</li>
+		  </thingCategories>
+		<weaponTags>
+		  <li>SpecialForcesHandGun</li>
+		</weaponTags>
+		<statBases>
+		  <MarketValue>900</MarketValue>
+		  <WorkToMake>2500</WorkToMake>
+		  <AccuracyTouch>0.50</AccuracyTouch>
+		  <AccuracyShort>0.40</AccuracyShort>
+		  <AccuracyMedium>0.35</AccuracyMedium>
+		  <AccuracyLong>0.20</AccuracyLong>
+		  <RangedWeapon_Cooldown>1.6</RangedWeapon_Cooldown>
+		</statBases>
+		<costList>
+			<WeaponParts>60</WeaponParts>
+		</costList>
+		<verbs>
+		  <li>
+			<verbClass>Verb_Shoot</verbClass>
+			<hasStandardCommand>true</hasStandardCommand>
+			<projectileDef>Bullet_HLMG</projectileDef>
+			<burstShotCount>8</burstShotCount>
+			<ticksBetweenBurstShots>7</ticksBetweenBurstShots>
+			<warmupTicks>140</warmupTicks>
+			<range>25.9</range>
+			<soundCast>shotHLMG</soundCast>
+			<muzzleFlashScale>9</muzzleFlashScale>
+		  </li>
+		</verbs>
+	</ThingDef>
+
+
+	<!-- ==================== Desert Eagle ============================= -->
+
+	<ThingDef ParentName="BaseBullet">
+		<defName>Bullet_DesertEagle</defName>
+		<label>Desert Eagle</label>
+    <graphicData>
+		<texPath>Things/Projectile/Bullet_Small</texPath>
+		<graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+		<projectile>
+		  <damageDef>Bullet</damageDef>
+		  <damageAmountBase>14</damageAmountBase>
+		  <speed>80</speed>
+		</projectile>
+	</ThingDef>
+
+	<ThingDef ParentName="BaseHumanGun">
+		<defName>Gun_DesertEagle</defName>
+		<label>Desert Eagle</label>
+		<description>Desert eagle.</description>
+		<graphicData>
+		  <texPath>Weapons/DesertEagleByFisty</texPath>
+		  <graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<soundInteract>InteractPistol</soundInteract>
+		<thingCategories>
+		  <li>WeaponsRangedPistols</li>
+		</thingCategories>
+		<weaponTags>
+		  <li>SpecialForcesEagle</li>
+		</weaponTags>
+		<statBases>
+		  <MarketValue>500</MarketValue>
+		  <WorkToMake>2500</WorkToMake>
+		  <AccuracyTouch>0.9</AccuracyTouch>
+		  <AccuracyShort>0.85</AccuracyShort>
+		  <AccuracyMedium>0.50</AccuracyMedium>
+		  <AccuracyLong>0.35</AccuracyLong>
+		  <RangedWeapon_Cooldown>0.65</RangedWeapon_Cooldown>
+		</statBases>
+		<costList>
+		  <WeaponParts>45</WeaponParts>
+		</costList>
+		<verbs>
+		  <li>
+			<verbClass>Verb_Shoot</verbClass>
+			<hasStandardCommand>true</hasStandardCommand>
+			<projectileDef>Bullet_DesertEagle</projectileDef>
+			<warmupTicks>60</warmupTicks>
+			<range>25</range>
+			<soundCast>shotDesertEagle</soundCast>
+			<muzzleFlashScale>9</muzzleFlashScale>
+		  </li>
+		</verbs>
+	</ThingDef>
+
+
+	<!-- ==================== VSS Vintorez ============================= -->
+
+  <ThingDef ParentName="BaseBullet">
+    <defName>Bullet_VSSVintorez</defName>
+    <label>survival rifle bullet</label>
+    <projectile>
+      <damageDef>Bullet</damageDef>
+      <damageAmountBase>22</damageAmountBase>
+      <speed>55</speed>
+    </projectile>
+    <graphicData>
+      <texPath>Things/Projectile/Bullet_big</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+  </ThingDef>
+
+  <ThingDef ParentName="BaseHumanGun">
+    <defName>Gun_Vintorez</defName>
+    <label>Thread cutter</label>
+    <description>Special forces sniper rifle VSS Vintorez.</description>
+    <graphicData>
+      <texPath>Weapons/Gun_SR_VSSVintorez</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <soundInteract>InteractRifle</soundInteract>
+	<thingCategories>
+      <li>WeaponsRangedSniperRifles</li>
+    </thingCategories>
+	<weaponTags>
+      <li>SpecialForcesSRifle</li>
+    </weaponTags>
+    <statBases>
+      <MarketValue>800</MarketValue>
+	  <WorkToMake>2500</WorkToMake>
+      <AccuracyTouch>0.88</AccuracyTouch>
+      <AccuracyShort>0.96</AccuracyShort>
+      <AccuracyMedium>0.88</AccuracyMedium>
+      <AccuracyLong>0.78</AccuracyLong>
+      <RangedWeapon_Cooldown>0.55</RangedWeapon_Cooldown>
+    </statBases>
+	<costList>
+	  <WeaponParts>100</WeaponParts>
+	</costList>
+    <verbs>
+      <li>
+        <verbClass>Verb_Shoot</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <projectileDef>Bullet_VSSVintorez</projectileDef>
+        <warmupTicks>75</warmupTicks>
+        <range>37</range>
+        <soundCast>shotVintorez</soundCast>
+        <soundCastTail>GunTail_Light</soundCastTail>
+        <muzzleFlashScale>9</muzzleFlashScale>
+      </li>
+    </verbs>
+  </ThingDef>
+
+
+</ThingDefs>

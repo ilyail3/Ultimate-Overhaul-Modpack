@@ -1,0 +1,51 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<RecipeDefs>
+
+  <RecipeDef>
+    <defName>MakeIntegratedCircuitsBoard</defName>
+    <label>Make integrated circuits board</label>
+    <description>   Using metal and silver, make some home-made integrated circuits boards. It can be used in any electronic device.
+Even if you pay the greatest attention making it, it is still fragile and unreliable.</description>
+    <jobString>Making integrated circuits board.</jobString>
+    <workAmount>1200</workAmount>
+    <workSpeedStat>ElectronicCraftingSpeed</workSpeedStat>
+    <efficiencyStat>ElectronicCraftingEfficiency</efficiencyStat>
+    <skillRequirements>
+      <li>
+        <skill>Crafting</skill>
+        <minLevel>5</minLevel>
+      </li>
+    </skillRequirements>
+    <effectWorking>ButcherMechanoid</effectWorking>
+    <soundWorking>Recipe_ButcherCorpseMechanoid</soundWorking>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>CopperWire</li>
+          </thingDefs>
+        </filter>
+        <count>50</count>
+      </li>
+	  <li>
+        <filter>
+          <thingDefs>
+            <li>Electronics</li>
+          </thingDefs>
+        </filter>
+        <count>5</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>CopperWire</li>
+		<li>Electronics</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <products>
+      <IntegratedCircuitsBoard>1</IntegratedCircuitsBoard>
+    </products>
+    <workSkill>Crafting</workSkill>
+  </RecipeDef>
+
+</RecipeDefs>

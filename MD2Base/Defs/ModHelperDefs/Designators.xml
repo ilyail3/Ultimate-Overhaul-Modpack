@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ModHelperDefs>
+
+  <ModHelperDef>
+    <defName>MD2_Designators</defName>
+  	<ModName>Mechanical Defense Base</ModName>
+  	<version>0.12.0</version>
+    <Designators>
+      <li>
+        <designatorClass>MD2.Designator_CollectClay</designatorClass>
+        <designationCategoryDef>Orders</designationCategoryDef>
+      </li>
+    </Designators>
+  </ModHelperDef>
+
+</ModHelperDefs>

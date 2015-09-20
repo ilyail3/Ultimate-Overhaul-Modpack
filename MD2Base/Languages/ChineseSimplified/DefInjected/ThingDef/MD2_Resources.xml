@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+
+	<MD2SandPile.label>沙子</MD2SandPile.label>
+
+	<MD2SandPile.description>一堆沙子.</MD2SandPile.description>
+
+	<MD2Silicon.label>硅晶体</MD2Silicon.label>
+
+	<MD2Silicon.description>一个硅晶体.</MD2Silicon.description>
+
+	<MD2Circuitry.label>电路板</MD2Circuitry.label>
+
+	<MD2Circuitry.description>各种各样的电路板。</MD2Circuitry.description>
+
+	<MD2Coal.label>煤</MD2Coal.label>
+
+	<MD2Coal.description>一块煤.</MD2Coal.description>
+
+	<MD2Charcoal.label>木炭</MD2Charcoal.label>
+
+	<MD2Charcoal.description>一块木炭.</MD2Charcoal.description>
+
+	<MD2SoftClay.label>软粘土</MD2SoftClay.label>
+
+	<MD2SoftClay.description>一块软粘土.</MD2SoftClay.description>
+
+	<MD2ClayBrick.label>粘土砖</MD2ClayBrick.label>
+
+	<MD2ClayBrick.description>一块硬粘土。可用于建设。</MD2ClayBrick.description>
+
+	<MD2ClayBrick.stuffProps.stuffAdjective>粘土砖</MD2ClayBrick.stuffProps.stuffAdjective>
+
+</LanguageData>

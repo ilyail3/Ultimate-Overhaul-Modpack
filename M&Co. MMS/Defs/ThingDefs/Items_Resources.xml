@@ -1,0 +1,46 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Resources>
+
+  <ThingDef Name="ResourceBase" Abstract="True">
+    <thingClass>ThingWithComps</thingClass>
+    <label>unspecified resource</label>
+    <category>Item</category>
+    <resourceReadoutPriority>Middle</resourceReadoutPriority>
+    <useHitPoints>true</useHitPoints>
+    <selectable>true</selectable>
+    <altitudeLayer>Item</altitudeLayer>
+    <stackLimit>75</stackLimit>
+    <comps>
+      <li>
+        <compClass>CompForbiddable</compClass>
+      </li>
+    </comps>
+    <alwaysHaulable>true</alwaysHaulable>
+    <drawGUIOverlay>true</drawGUIOverlay>
+    <rotatable>false</rotatable>
+    <pathCost>15</pathCost>
+  </ThingDef>
+
+  <ThingDef ParentName="ResourceBase">
+    <defName>MineralSonarModule</defName>
+    <label>Mineral sonar module</label>
+    <description>   This is a mineral sonar module. Deployed on the field with some energy packs, it can scan the surrounding area for metallic objects.</description>
+    <graphicData>
+        <graphicClass>Graphic_Single</graphicClass>
+        <texPath>Things/Item/Resource/MineralSonarModule</texPath>
+    </graphicData>
+    <soundInteract>Metal_Drop</soundInteract>
+    <soundDrop>Metal_Drop</soundDrop>
+    <statBases>
+      <DeteriorationRate>0.1</DeteriorationRate>
+      <MaxHitPoints>100</MaxHitPoints>
+      <Flammability>0.1</Flammability>
+      <MarketValue>300</MarketValue>
+    </statBases>
+    <thingCategories>
+      <li>Electronics</li>
+    </thingCategories>
+    <stackLimit>4</stackLimit>
+  </ThingDef>
+
+</Resources>

@@ -1,0 +1,205 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<PawnKindDefs>
+
+
+	<PawnKindDef>
+		<defName>MarineWarrior</defName>
+		<label>Private</label>
+		<race>Human</race>
+    <combatPower>45</combatPower>
+    <defaultFactionType>CMC</defaultFactionType>
+		<baseRecruitDifficulty>25</baseRecruitDifficulty>
+		<backstoryCategory>Civil</backstoryCategory>
+    <isFighter>true</isFighter>
+    <invFoodCount>1</invFoodCount>
+	<itemQuality>Normal</itemQuality>
+    <backstoryCryptosleepCommonality>.5</backstoryCryptosleepCommonality>
+    <maxGenerationAge>35</maxGenerationAge>
+    <gearHealthRange>
+      <min>0.7</min>
+      <max>2.3</max>
+    </gearHealthRange>
+    <apparelMoney>
+      <min>800</min>
+      <max>2500</max>
+    </apparelMoney>
+    <apparelAllowHeadwearChance>0.8</apparelAllowHeadwearChance>
+    <apparelTags>
+        <li>SpecialForcesMilitary</li>
+    </apparelTags>
+		<weaponMoney>
+			<min>800</min>
+			<max>2500</max>
+		</weaponMoney>
+		<weaponTags>
+			<li>SpecialForcesRifle</li>
+			<li>SpecialForcesEagle</li>
+		</weaponTags>
+	</PawnKindDef>
+
+
+
+	<PawnKindDef>
+		<defName>MarineRager</defName>
+		<label>Corporal</label>
+		<race>Human</race>
+    <combatPower>50</combatPower>
+    <defaultFactionType>CMC</defaultFactionType>
+		<baseRecruitDifficulty>50</baseRecruitDifficulty>
+		<backstoryCategory>Civil</backstoryCategory>
+    <isFighter>true</isFighter>
+    <invFoodCount>1</invFoodCount>
+    <backstoryCryptosleepCommonality>.75</backstoryCryptosleepCommonality>
+    <maxGenerationAge>35</maxGenerationAge>
+    <gearHealthRange>
+      <min>0.7</min>
+      <max>2.3</max>
+    </gearHealthRange>
+    <apparelMoney>
+      <min>1000</min>
+      <max>3500</max>
+    </apparelMoney>
+    <apparelAllowHeadwearChance>0.8</apparelAllowHeadwearChance>
+    <apparelTags>
+        <li>SpecialForcesMilitary</li>
+    </apparelTags>
+		<weaponMoney>
+			<min>800</min>
+			<max>2500</max>
+		</weaponMoney>
+		<weaponTags>
+			<li>SpecialForcesSRifle</li>
+		</weaponTags>
+	</PawnKindDef>
+
+
+
+	<PawnKindDef>
+		<defName>MarineDestroyer</defName>
+		<label>Sergeant</label>
+		<race>Human</race>
+    <combatPower>50</combatPower>
+    <defaultFactionType>CMC</defaultFactionType>
+		<baseRecruitDifficulty>75</baseRecruitDifficulty>
+		<backstoryCategory>Civil</backstoryCategory>
+    <isFighter>true</isFighter>
+    <invFoodCount>1</invFoodCount>
+    <backstoryCryptosleepCommonality>1.5</backstoryCryptosleepCommonality>
+    <maxGenerationAge>35</maxGenerationAge>
+    <gearHealthRange>
+      <min>0.7</min>
+      <max>2.3</max>
+    </gearHealthRange>
+    <apparelMoney>
+      <min>800</min>
+      <max>2500</max>
+    </apparelMoney>
+    <apparelAllowHeadwearChance>0.8</apparelAllowHeadwearChance>
+    <apparelTags>
+        <li>SpecialForcesMilitary</li>
+    </apparelTags>
+		<weaponMoney>
+			<min>800</min>
+			<max>2500</max>
+		</weaponMoney>
+		<weaponTags>
+			<li>SpecialForcesRifle</li>
+      <li>GrenadeDestructive</li>
+		</weaponTags>
+	</PawnKindDef>
+
+
+
+
+
+	<PawnKindDef>
+		<defName>MarineSupport</defName>
+		<label>Lieutenant</label>
+		<race>Human</race>
+    <combatPower>48</combatPower>
+    <defaultFactionType>CMC</defaultFactionType>
+		<baseRecruitDifficulty>50</baseRecruitDifficulty>
+		<backstoryCategory>Civil</backstoryCategory>
+    <isFighter>true</isFighter>
+    <invFoodCount>1</invFoodCount>
+    <backstoryCryptosleepCommonality>2</backstoryCryptosleepCommonality>
+    <maxGenerationAge>35</maxGenerationAge>
+    <gearHealthRange>
+      <min>0.7</min>
+      <max>2.3</max>
+    </gearHealthRange>
+    <apparelMoney>
+      <min>800</min>
+      <max>2500</max>
+    </apparelMoney>
+    <apparelAllowHeadwearChance>0.8</apparelAllowHeadwearChance>
+    <apparelTags>
+        <li>SpecialForcesMilitary</li>
+    </apparelTags>
+		<weaponMoney>
+			<min>800</min>
+			<max>2500</max>
+		</weaponMoney>
+		<weaponTags>
+			<li>SpecialForcesEagle</li>
+		</weaponTags>
+	</PawnKindDef>
+
+
+  <PawnKindDef>
+    <defName>MarineScout</defName>
+    <label>Major</label>
+    <race>Human</race>
+    <combatPower>25</combatPower>
+    <defaultFactionType>CMC</defaultFactionType>
+		<baseRecruitDifficulty>50</baseRecruitDifficulty>
+		<backstoryCategory>Civil</backstoryCategory>
+    <itemQuality>Normal</itemQuality>
+    <backstoryCryptosleepCommonality>3</backstoryCryptosleepCommonality>
+	<maxGenerationAge>35</maxGenerationAge>
+    <isFighter>false</isFighter>
+    <gearHealthRange>
+      <min>0.7</min>
+      <max>2.3</max>
+    </gearHealthRange>
+    <apparelMoney>
+      <min>800</min>
+      <max>2500</max>
+    </apparelMoney>
+    <apparelAllowHeadwearChance>0.8</apparelAllowHeadwearChance>
+    <apparelTags>
+        <li>SpecialForcesMilitary</li>
+    </apparelTags>
+		<weaponMoney>
+			<min>800</min>
+			<max>2500</max>
+		</weaponMoney>
+    <weaponTags>
+      <li>SpecialForcesRifle</li>
+      <li>SpecialForcesEagle</li>
+    </weaponTags>
+    <invFoodCount>1</invFoodCount>
+    <inventoryOptions>
+      <skipChance>0.75</skipChance>
+      <subOptionsChooseOne>
+        <li>
+          <choiceChance>90</choiceChance>
+          <thingDef>Silver</thingDef>
+          <countRange>
+            <min>25</min>
+            <max>70</max>
+          </countRange>
+        </li>
+        <li>
+          <choiceChance>10</choiceChance>
+          <thingDef>Silver</thingDef>
+          <countRange>
+            <min>700</min>
+            <max>1000</max>
+          </countRange>
+        </li>
+      </subOptionsChooseOne>
+    </inventoryOptions>
+  </PawnKindDef>
+
+</PawnKindDefs>
