@@ -1,0 +1,71 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<!--suppress ALL -->
+<LanguageData>
+  
+	<CraftHA.label>군락갑옷 조립</CraftHA.label>
+	<CraftHA.description>군락갑옷을 조립합니다.</CraftHA.description>
+	<CraftHA.jobString>조립 중.</CraftHA.jobString>
+  
+	<CraftShieldBreasts.label>보호막 코트 조립</CraftShieldBreasts.label>
+	<CraftShieldBreasts.description>보호막 코트를 조립합니다.</CraftShieldBreasts.description>
+	<CraftShieldBreasts.jobString>조립 중.</CraftShieldBreasts.jobString>
+  
+	<CraftPissyMissyMagnificent.label>개인 보호막 조립</CraftPissyMissyMagnificent.label>
+	<CraftPissyMissyMagnificent.description>개인 보호막을 조립합니다.</CraftPissyMissyMagnificent.description>
+	<CraftPissyMissyMagnificent.jobString>조립 중.</CraftPissyMissyMagnificent.jobString>
+  
+	<CraftScy.label>사이더 골격 조립</CraftScy.label>
+	<CraftScy.description>사이더 골격을 조립합니다.</CraftScy.description>
+	<CraftScy.jobString>조립 중.</CraftScy.jobString>
+  
+	<CraftPowahrmoriusTwang.label>강화갑옷 조립</CraftPowahrmoriusTwang.label>
+	<CraftPowahrmoriusTwang.description>강화갑옷을 조립합니다.</CraftPowahrmoriusTwang.description>
+	<CraftPowahrmoriusTwang.jobString>조립 중.</CraftPowahrmoriusTwang.jobString>
+  
+	<CraftSteamhull.label>증열장갑 조립</CraftSteamhull.label>
+	<CraftSteamhull.description>증열장갑을 조립합니다.</CraftSteamhull.description>
+	<CraftSteamhull.jobString>조립 중.</CraftSteamhull.jobString>
+  
+	<CraftGShell.label>강화경갑 조립</CraftGShell.label>
+	<CraftGShell.description>강화경갑을 조립합니다.</CraftGShell.description>
+	<CraftGShell.jobString>조립 중.</CraftGShell.jobString>
+  
+	<CraftGSpot.label>합금 조끼 조립</CraftGSpot.label>
+	<CraftGSpot.description>합금 조끼을 조립합니다.</CraftGSpot.description>
+	<CraftGSpot.jobString>조립 중.</CraftGSpot.jobString>
+  
+	<CraftHiveHelm.label>군락갑옷 보호모 조립</CraftHiveHelm.label>
+	<CraftHiveHelm.description>군락갑옷 보호모를 조립합니다.</CraftHiveHelm.description>
+	<CraftHiveHelm.jobString>조립 중.</CraftHiveHelm.jobString>
+  
+	<CraftHiveHell.label>증열장갑 보호모 조립</CraftHiveHell.label>
+	<CraftHiveHell.description>증열장갑 보호모를 조립합니다.</CraftHiveHell.description>
+	<CraftHiveHell.jobString>조립 중.</CraftHiveHell.jobString>
+  
+	<CraftAIHelm.label>시험용 신경 향상기 조립</CraftAIHelm.label>
+	<CraftAIHelm.description>시험용 신경 향상기를 조립합니다.</CraftAIHelm.description>
+	<CraftAIHelm.jobString>조립 중.</CraftAIHelm.jobString>
+  
+	<CraftAIHelmut.label>신경 향상기 조립</CraftAIHelmut.label>
+	<CraftAIHelmut.description>신경 향상기를 조립합니다.</CraftAIHelmut.description>
+	<CraftAIHelmut.jobString>조립 중.</CraftAIHelmut.jobString>
+  
+	<CraftAIHelmutwo.label>인공인격 핵 신경 향상기 조립</CraftAIHelmutwo.label>
+	<CraftAIHelmutwo.description>인공인격 핵 신경 향상기를 조립합니다.</CraftAIHelmutwo.description>
+	<CraftAIHelmutwo.jobString>조립 중.</CraftAIHelmutwo.jobString>
+  
+	<CraftPowerHelm.label>강화갑옷 보호모 조립</CraftPowerHelm.label>
+	<CraftPowerHelm.description>강화갑옷 보호모를 조립합니다.</CraftPowerHelm.description>
+	<CraftPowerHelm.jobString>조립 중.</CraftPowerHelm.jobString>
+  
+	<CraftLPow.label>강화경갑 보호모 조립</CraftLPow.label>
+	<CraftLPow.description>강화경갑 보호모를 조립합니다.</CraftLPow.description>
+	<CraftLPow.jobString>조립 중.</CraftLPow.jobString>
+  
+	<MakeHexcell.label>헥스셀 얻기</MakeHexcell.label>
+	<MakeHexcell.description>강화갑옷에서 헥스셀을 빼냅니다.</MakeHexcell.description>
+	<MakeHexcell.jobString>제거 중.</MakeHexcell.jobString>
+
+
+
+</LanguageData>

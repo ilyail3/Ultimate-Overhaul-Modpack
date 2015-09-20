@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<!--suppress ALL -->
+<LanguageData>
+
+	<DoBillsApparelloTailoring.verb>재단</DoBillsApparelloTailoring.verb>
+	<DoBillsApparelloTailoring.gerund>재단</DoBillsApparelloTailoring.gerund>
+
+	<DoBillsApparelloCombine.verb>개조</DoBillsApparelloCombine.verb>
+	<DoBillsApparelloCombine.gerund>개조</DoBillsApparelloCombine.gerund>
+
+	<SchemeApparello.verb>그리기</SchemeApparello.verb>
+	<SchemeApparello.gerund>그리기</SchemeApparello.gerund>
+
+</LanguageData>

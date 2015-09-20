@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<!--suppress ALL -->
+<LanguageData>
+  
+	<Item_shelf.label>장비 선반</Item_shelf.label>
+	<Item_shelf.description>짐꾼들이 여기로 장비를 나릅니다.</Item_shelf.description>
+  
+	<ApparelloTableLoom.label>재봉사 작업소</ApparelloTableLoom.label>
+	<ApparelloTableLoom.description>베틀과 여러가지 고급 장비들이 있습니다.</ApparelloTableLoom.description>
+  
+	<ApparelloCombiner.label>SAR 장비 조합기</ApparelloCombiner.label>
+	<ApparelloCombiner.description>고급 의복 조합기입니다. (SAR은 '약간의 조합 요구됨'의 약자입니다.) 한 쪽에 "싱어 마크 8000 디럭스 (한정판)"이라고 적혀있습니다. 아무도 이유는 모릅니다.</ApparelloCombiner.description>
+  
+	<ApparaatTableSchem.label>설계 책상</ApparaatTableSchem.label>
+	<ApparaatTableSchem.description>설계도를 그리는데 사용할 도구와 책상입니다.</ApparaatTableSchem.description>
+
+</LanguageData>

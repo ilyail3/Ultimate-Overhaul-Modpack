@@ -1,0 +1,119 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<!--suppress ALL -->
+<LanguageData>
+  
+	<Apparello_Armorpants.label>강화 바지</Apparello_Armorpants.label>
+	<Apparello_Armorpants.description>단단하게 강화된 바지입니다.</Apparello_Armorpants.description>
+  
+	<Apparello_Silkpants.label>실크 바지</Apparello_Silkpants.label>
+	<Apparello_Silkpants.description>매력적인 바지입니다.</Apparello_Silkpants.description>
+  
+	<Apparello_Skirt.label>반짝이는 삼포트</Apparello_Skirt.label>
+	<Apparello_Skirt.description>매력적인 치마입니다. 바지 위에 입을 수 있습니다.</Apparello_Skirt.description>
+  
+	<Apparello_Holdem.label>멋진 바지</Apparello_Holdem.label>
+	<Apparello_Holdem.description>멋진 바지입니다.</Apparello_Holdem.description>
+  
+	<Apparello_Pollypolly.label>건축가 바지</Apparello_Pollypolly.label>
+	<Apparello_Pollypolly.description>커다란 주머니를 지닌 바지입니다.</Apparello_Pollypolly.description>
+  
+	<Apparello_Scrapants.label>조각 바지</Apparello_Scrapants.label>
+	<Apparello_Scrapants.description>자투리 천조각을 붙여 만든 비상용 바지입니다.</Apparello_Scrapants.description>
+  
+	<Apparello_Holser.label>카우보이 바지</Apparello_Holser.label>
+	<Apparello_Holser.description>카우보이들이 입던 바지입니다. 가장 빨랐던 사수들은 모두 이걸 입었습니다. 그들은 대개 등에 총을 맞곤 했습니다. 다른 바지 위에 입을 수 있습니다.</Apparello_Holser.description>
+  
+	<Apparello_Congo.label>풍성한 바지</Apparello_Congo.label>
+	<Apparello_Congo.description>풍성합니다. 옛날 모험가들이 입곤 했습니다.</Apparello_Congo.description>
+  
+	<Apparello_Spants.label>우주해병 각반</Apparello_Spants.label>
+	<Apparello_Spants.description>플라스틸 합금으로 보강되었습니다. 대부분의 바지 위에 입을 수 있습니다.</Apparello_Spants.description>
+  
+	<Apparello_Jeans.label>청바지</Apparello_Jeans.label>
+	<Apparello_Jeans.description>튼튼한 바지입니다.</Apparello_Jeans.description>
+  
+	<Apparello_Lederhose.label>가죽 바지</Apparello_Lederhose.label>
+	<Apparello_Lederhose.description>가죽 바지입니다. 가끔은 진짜 가죽이기도 합니다! 이걸 입은 펑크족들은 언제나 운이 좋다고 느낄 겁니다.</Apparello_Lederhose.description>
+  
+	<Apparello_square.label>체크 바지</Apparello_square.label>
+	<Apparello_square.description>체크 무늬만 있으면 된 거 아닌가요?</Apparello_square.description>
+  
+	<Apparello_Motorglove.label>가죽 반장갑</Apparello_Motorglove.label>
+	<Apparello_Motorglove.description>손가락을 가리지 않는 가죽 장갑입니다. 물건이 잡기 쉬워집니다. (양손 첫번째 층에 착용)</Apparello_Motorglove.description>
+  
+	<Apparello_Diamonds.label>다이아몬드 한 주먹</Apparello_Diamonds.label>
+	<Apparello_Diamonds.description>반짝이는 돌로 장식한 청동 반지입니다. (왼손 두번째 층에 착용)</Apparello_Diamonds.description>
+  
+	<Apparello_Workglove.label>가죽 장갑</Apparello_Workglove.label>
+	<Apparello_Workglove.description>장인들이 사용하는 경화된 가죽 장갑입니다. (왼손 세번째 층에 착용)</Apparello_Workglove.description>
+  
+	<Apparello_Snipeglove.label>안정장갑</Apparello_Snipeglove.label>
+	<Apparello_Snipeglove.description>이 장갑에 설치된 반-흔들림 장치는 특히 저격수들에게 인기를 끄는 요인입니다. (왼손 세번째 층에 착용)</Apparello_Snipeglove.description>
+  
+	<Apparello_Knuckleduster.label>너클</Apparello_Knuckleduster.label>
+	<Apparello_Knuckleduster.description>대중적인 의견에 의하면 길거리 싸움에서 이걸 착용하는건 반칙으로 간주되는 듯 합니다. 그렇지만 언제부터 길거리 싸움에 규칙이 있었나요? (왼손 두번째/세번째 층에 착용)</Apparello_Knuckleduster.description>
+  
+	<Apparello_docglovetwo.label>의사의 핀셋</Apparello_docglovetwo.label>
+	<Apparello_docglovetwo.description>고무 재질을 보기만 해도 병원에 온 것 같습니다. 꽉 잡을 수 있는 핀셋이 달려있습니다. (왼손 두번째/세번째 층에 착용)</Apparello_docglovetwo.description>
+  
+	<Apparello_SoothingLove.label>장갑형 주입기: 정신탄탄</Apparello_SoothingLove.label>
+	<Apparello_SoothingLove.description>기본적인 가죽 장갑입니다. 아름다운 보라색 액체를 담은 복잡한 주입기가 달려있습니다. 착용자의 신경을 진정시키고 극한 상황에서도 행동할 수 있게 해줍니다. (왼손 세번째 층에 착용)</Apparello_SoothingLove.description>
+
+	<!-- Right gloves -->
+  
+	<Apparello_Stinglikeabee.label>복싱 장갑</Apparello_Stinglikeabee.label>
+	<Apparello_Stinglikeabee.description>복서의 제일 좋은 친구입니다. (오른손 세번째 층에 착용)</Apparello_Stinglikeabee.description>
+  
+	<Apparello_Gamerglove.label>강력한 장갑</Apparello_Gamerglove.label>
+	<Apparello_Gamerglove.description>타이크 바이슨의 경기에서 그는 복싱 장갑 아래에 이걸 숨겨놨었다고 전해집니다. 불행하게도 타이크가 상대방의 코를 완전히 뭉게버리기 전에 단 한 번의 일격만이 오갔습니다. 이 장갑으로 날린 일격은 그 불쌍한 상대를 죽일 수도 있었습니다. (오른손 두번째 층에 착용)</Apparello_Gamerglove.description>
+  
+	<Apparello_Snipeglovetwo.label>방전 장갑</Apparello_Snipeglovetwo.label>
+	<Apparello_Snipeglovetwo.description>장갑의 미세한 외골격은 방아쇠를 빠르고 안정적으로 당길 수 있도록 도와줍니다. (오른손 세번째 층에 착용)</Apparello_Snipeglovetwo.description>
+  
+	<Apparello_chefglove.label>오븐 장갑</Apparello_chefglove.label>
+	<Apparello_chefglove.description>제빵사들을 위한 방열 장갑입니다. (오른손 세번째 층에 착용)</Apparello_chefglove.description>
+  
+	<Apparello_docglove.label>의사의 가위</Apparello_docglove.label>
+	<Apparello_docglove.description>고무 재질을 보기만 해도 병원에 온 것 같습니다. 매우 날카로운 가위가 붙어있습니다. 뭐가 잘못될 수 있겠어요? (오른손 두번째/세번째 층에 착용)</Apparello_docglove.description>
+  
+	<Apparello_CalmingLove.label>장갑형 주입기: 정신튼튼</Apparello_CalmingLove.label>
+	<Apparello_CalmingLove.description>기본적인 가죽 장갑입니다. 빛나는 녹색 액체를 담은 복잡한 주입기가 달려있습니다. 착용자의 신경을 진정시키고 극한 상황에서도 행동할 수 있게 해줍니다. (오른손 세번째 층에 착용)</Apparello_CalmingLove.description>
+
+	<!-- Feet -->
+
+	<Apparello_Socks.label>양말</Apparello_Socks.label>
+	<Apparello_Socks.description>기본적인 양말입니다. 약간 헤졌지만 편안합니다. (양발 첫번째 층에 착용)</Apparello_Socks.description>
+
+	<Apparello_Spocks.label>중합섬유 양말</Apparello_Spocks.label>
+	<Apparello_Spocks.description>중합섬유로 만든 양말입니다. 가장 대표적인 우주여행용 양말로, 땀을 매우 잘 견딥니다. (양발 첫번째 층에 착용)</Apparello_Spocks.description>
+
+	<Apparello_LoveSocks.label>사랑스러운 양말</Apparello_LoveSocks.label>
+	<Apparello_LoveSocks.description>사랑스러운 양말입니다. 다채로운 색을 지녔으며 조그만 하트가 그려져 있습니다. (양발 첫번째 층에 착용)</Apparello_LoveSocks.description>
+
+	<Apparello_Ironwool.label>강철섬유 양말</Apparello_Ironwool.label>
+	<Apparello_Ironwool.description>매우 크고 거칩니다. 다른 양말 위에 쉽게 신을 수 있으면서도 신발 안에도 들어갑니다! (양발 두번째 층에 착용)</Apparello_Ironwool.description>
+
+	<Apparello_Shoes.label>신발</Apparello_Shoes.label>
+	<Apparello_Shoes.description>아주 기본적인 신발입니다. 여기저기 걷는 데 도움을 줍니다. (양발 세번째 층에 착용)</Apparello_Shoes.description>
+
+	<Apparello_Boots.label>부츠</Apparello_Boots.label>
+	<Apparello_Boots.description>박차가 달린 신발입니다. 여기저기 걷는 데 도움을 줍니다. (양발 세번째 층에 착용)</Apparello_Boots.description>
+
+	<Apparello_MetalBoots.label>철판 부츠</Apparello_MetalBoots.label>
+	<Apparello_MetalBoots.description>철판 부츠입니다. 이제 아무도 엄지발가락을 밟지 못하지 않습니까! (양발 세번째 층에 착용)</Apparello_MetalBoots.description>
+
+	<Apparello_Spboots.label>동면비행사 균형신</Apparello_Spboots.label>
+	<Apparello_Spboots.description>최고의 균형을 위해 제작되었습니다. 주변 환경을 마치 약에 취한 토끼처럼 헤집고 다니세요. (양발 세번째 층에 착용)</Apparello_Spboots.description>
+
+	<Apparello_Snowboots.label>눈신발</Apparello_Snowboots.label>
+	<Apparello_Snowboots.description>눈신발입니다. 특별할 정도로 따듯하면서 편안합니다. (양발 세번째 층에 착용)</Apparello_Snowboots.description>
+
+	<Apparello_Clawboots.label>발톱 달린 신발</Apparello_Clawboots.label>
+	<Apparello_Clawboots.description>발톱이 달렸습니다. 거친 지형에서도 안정적입니다. (양발 세번째 층에 착용)</Apparello_Clawboots.description>
+
+	<Apparello_Slippers.label>실내화</Apparello_Slippers.label>
+	<Apparello_Slippers.description>친근한 외형의 실내화입니다. (양발 세번째 층에 착용)</Apparello_Slippers.description>
+
+
+
+</LanguageData>

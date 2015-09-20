@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<!--suppress ALL -->
+<LanguageData>
+  
+	<Apparello_Muffhood.label>머팔로 머리 장식</Apparello_Muffhood.label>
+	<Apparello_Muffhood.description>튼튼한 머팔로 가죽으로 만든 장식입니다. 이 용감한 짐승의 영혼을 느낄 수 있을 것만 같습니다.</Apparello_Muffhood.description>
+  
+	<Apparello_Furxhood.label>퍽스 머리 장식</Apparello_Furxhood.label>
+	<Apparello_Furxhood.description>날렵한 퍽스 가죽으로 만든 장식입니다. 이 슬기로운 짐승의 영혼을 느낄 수 있을 것만 같습니다.</Apparello_Furxhood.description>
+  
+	<Apparello_Snorkhood.label>스노크 머리 장식</Apparello_Snorkhood.label>
+	<Apparello_Snorkhood.description>우아한 스노크 가죽으로 만든 장식입니다. 이 게으른 짐승의 영혼을 느낄 수 있을 것만 같습니다.</Apparello_Snorkhood.description>
+
+  
+	<Apparello_Slughood.label>메가슬러그 머리 장식</Apparello_Slughood.label>
+	<Apparello_Slughood.description>통통한 슬러그 피부로 만든 장식입니다. 이 완강한 짐승의 영혼을 느낄 수 있을 것만 같습니다.</Apparello_Slughood.description>
+
+  
+	<Apparello_Rimramhood.label>림램 머리 장식</Apparello_Rimramhood.label>
+	<Apparello_Rimramhood.description>오래 가는 림램 가죽으로 만든 장식입니다. 이 완고한 짐승의 영혼을 느낄 수 있을 것만 같습니다.</Apparello_Rimramhood.description>
+
+  
+	<Apparello_Scarabhood.label>거대 풍뎅이 머리 장식</Apparello_Scarabhood.label>
+	<Apparello_Scarabhood.description>빛나는 풍뎅이 껍질로 만든 장식입니다. 이 똑똑한 짐승의 영혼을 느낄 수 있을 것만 같습니다.</Apparello_Scarabhood.description>
+
+  
+	<Apparello_Skullhood.label>인간 두개골</Apparello_Skullhood.label>
+	<Apparello_Skullhood.description>인간 두개골로 만들었습니다. 주변을 매우 불편하게 만듭니다.</Apparello_Skullhood.description>
+
+</LanguageData>

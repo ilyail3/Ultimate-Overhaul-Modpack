@@ -1,0 +1,106 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ThingDefs>
+
+  <ThingDef Name="HatBase" Abstract="True">
+    <thingClass>Apparel</thingClass>
+    <category>Item</category>
+    <selectable>True</selectable>
+    <pathCost>10</pathCost>
+    <useHitPoints>True</useHitPoints>
+    <graphicData>
+      <onGroundRandomRotateAngle>35</onGroundRandomRotateAngle>
+    </graphicData>
+	<drawGUIOverlay>true</drawGUIOverlay>
+    <statBases>
+      <MaxHitPoints>100</MaxHitPoints>
+      <Flammability>1.0</Flammability>
+	  <DeteriorationRate>1</DeteriorationRate>
+      <SellPriceFactor>0.25</SellPriceFactor>
+    </statBases>
+    <altitudeLayer>Item</altitudeLayer>
+    <alwaysHaulable>True</alwaysHaulable>
+    <tickerType>Never</tickerType>
+    <thingCategories>
+      <li>Headgear</li>
+    </thingCategories>
+    <comps>
+      <li>
+        <compClass>CompForbiddable</compClass>
+      </li>
+      <li>
+        <compClass>CompColorable</compClass>
+      </li>
+      <li>
+        <compClass>CompQuality</compClass>
+      </li>
+    </comps>
+  </ThingDef>
+
+  <ThingDef Name="ApparelMakeableBase" ParentName="HatBase" Abstract="True">
+    <recipeMaker>
+      <workSpeedStat>TailoringSpeed</workSpeedStat>
+      <workSkill>Crafting</workSkill>
+      <effectWorking>Tailor</effectWorking>
+      <soundWorking>Recipe_Tailor</soundWorking>
+      <recipeUsers>
+        <li>TableTailor</li>
+      </recipeUsers>
+      <unfinishedThingDef>UnfinishedApparel</unfinishedThingDef>
+    </recipeMaker>
+  </ThingDef>
+
+<!-- Alpha Muffalo -->
+
+  <ThingDef ParentName="ApparelMakeableBase">
+    <defName>Apparello_Alphalo</defName>
+    <label>Alpha Muffalo head garment</label>
+    <description>Lovingly crafted out of sturdiest Alpha muffalohide. You can almost feel the spirit of this brave alpha beast within you. It's very warm and horny</description>
+    <graphicData>
+	   <texPath>MuffaloAl</texPath>
+       <graphicClass>Graphic_Single</graphicClass>
+	</graphicData>
+    <statBases>
+      <WorkToMake>3000</WorkToMake>
+      <ArmorRating_Blunt>0.2</ArmorRating_Blunt>
+      <ArmorRating_Sharp>0.04</ArmorRating_Sharp>
+	  <Insulation_Cold>-10</Insulation_Cold>
+      <Insulation_Heat>-4</Insulation_Heat>
+    </statBases>
+	<costList>
+			<Alphalo_Leather>25</Alphalo_Leather>		
+		</costList>
+	<recipeMaker>
+      <workSpeedStat>TailoringSpeed</workSpeedStat>
+      <workSkill>Crafting</workSkill>
+      <effectWorking>Tailor</effectWorking>
+      <soundWorking>Recipe_Tailor</soundWorking>
+      <recipeUsers>
+        <li>TableTailor</li>
+      </recipeUsers>
+      <unfinishedThingDef>UnfinishedApparel</unfinishedThingDef>
+    </recipeMaker>
+    <apparel>
+      <bodyPartGroups>
+        <li>FullHead</li>
+      </bodyPartGroups>
+      <worngraphicPath>MuffaloAl</worngraphicPath>
+      <layers>
+        <li>Overhead</li>
+      </layers>
+      <commonality>1</commonality>
+      <tags>
+        <li>Animal</li>
+      </tags>
+    </apparel>
+    <colorGenerator Class="ColorGenerator_Options">
+      <options>
+        <li>
+          <weight>4</weight>
+          <min>RGBA(0.9,0.9,0.9,1)</min>
+          <max>RGBA(1,1,1,1)</max>
+        </li>
+      </options>
+    </colorGenerator>
+  </ThingDef>
+
+</ThingDefs>

@@ -1,0 +1,245 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ThingDefs>
+
+  <ThingDef Name="ApparelBase" Abstract="True">
+    <thingClass>Apparel</thingClass>
+    <category>Item</category>
+    <selectable>True</selectable>
+    <pathCost>10</pathCost>
+    <useHitPoints>True</useHitPoints>
+    <graphicData>
+      <onGroundRandomRotateAngle>35</onGroundRandomRotateAngle>
+    </graphicData>
+    <drawGUIOverlay>true</drawGUIOverlay>
+    <statBases>
+      <MaxHitPoints>100</MaxHitPoints>
+      <Flammability>1.0</Flammability>
+      <DeteriorationRate>1</DeteriorationRate>
+      <SellPriceFactor>0.35</SellPriceFactor>
+    </statBases>
+    <altitudeLayer>Item</altitudeLayer>
+    <alwaysHaulable>True</alwaysHaulable>
+    <tickerType>Never</tickerType>
+    <thingCategories>
+      <li>Shirts</li>
+    </thingCategories>
+    <comps>
+      <li>
+        <compClass>CompForbiddable</compClass>
+      </li>
+      <li>
+        <compClass>CompColorable</compClass>
+      </li>
+      <li>
+        <compClass>CompQuality</compClass>
+      </li>
+    </comps>
+  </ThingDef>
+
+  <ThingDef Name="ApparelMakeableBase" ParentName="ApparelBase" Abstract="True">
+    <recipeMaker>
+      <workSpeedStat>TailoringSpeed</workSpeedStat>
+      <workSkill>Crafting</workSkill>
+      <effectWorking>Tailor</effectWorking>
+      <soundWorking>Recipe_Tailor</soundWorking>
+        <recipeUsers>
+        <li>TableTailor</li>
+      </recipeUsers>
+      <unfinishedThingDef>UnfinishedApparel</unfinishedThingDef>
+    </recipeMaker>
+  </ThingDef>
+
+
+  <ThingDef ParentName="ApparelMakeableBase">
+    <defName>Apparello_Tunic</defName>
+    <label>Tunic</label>
+    <description>Very sleek and skillfully crafted full body suit capable of protecting the wearer from formidable threats.</description>
+    <graphicData>
+	<texPath>Apparel/LP/lp</texPath>
+    <graphicClass>Graphic_Single</graphicClass>
+	</graphicData>
+    <tradeability>Sellable</tradeability>
+    <costStuffCount>30</costStuffCount>
+    <stuffCategories>
+      <li>Fabric</li>
+      <li>Leathery</li>
+    </stuffCategories>
+    <statBases>
+	<MarketValue>350</MarketValue>
+	<SellPriceFactor>0.05</SellPriceFactor>
+      <WorkToMake>2500</WorkToMake>
+      <ArmorRating_Blunt>0.3</ArmorRating_Blunt>
+      <Insulation_Cold>-8</Insulation_Cold>
+      <Insulation_Heat>-2</Insulation_Heat>
+    </statBases>
+    <equippedStatOffsets>
+      <MoveSpeed>-0.03</MoveSpeed>
+    </equippedStatOffsets>
+    <apparel>
+      <bodyPartGroups>
+        <li>Torso</li>
+        <li>Legs</li>
+      </bodyPartGroups>
+      <worngraphicPath>Apparel/LP/lp</worngraphicPath>
+      <layers>
+        <li>OnSkin</li>
+        <li>Middle</li>
+      </layers>
+      <commonality>1</commonality>
+      <tags>
+        <li>Tribal</li>
+      </tags>
+    </apparel>
+		<colorGenerator Class="ColorGenerator_Options">
+			<options>
+				<li>
+					<weight>10</weight>
+					<only>RGBA(0.4,0.3,0.15,1)</only>
+				</li>
+				<li>
+					<weight>15</weight>
+					<only>RGBA(0.6,0.45,0.18,1)</only>
+				</li>
+				<li>
+					<weight>20</weight>
+					<only>RGBA(0.8,0.6,0.23,1)</only>
+				</li>
+				<li>
+					<weight>6</weight>
+					<max>RGBA(1,1,0.90,1)</max>
+					<min>RGBA(1,0.90,0.75,1)</min>
+				</li>
+			</options>
+		</colorGenerator>
+  </ThingDef>
+
+
+  <ThingDef ParentName="ApparelBase">
+    <defName>Apparello_Mogo</defName>
+    <label>Tunica El Mógo</label>
+    <description>Ritual vestments of the ancient, now extinct tribe - Chéw Õn Tuna Sãmmich - 
+El Mógo for short. The El Mógoan Muffalo Prophets' prophecied of a day when three meteors, bearing sleeping gods would descent from the skies. Common belief was that the gods would build a lift to the spirit realms.
+These vestments were created in the intent of binding the soul of slain gods to the wearer and thus gaining passage on the lift.</description>
+    <graphicData>
+	<texPath>Apparel/Mogo/lp</texPath>
+    <graphicClass>Graphic_Single</graphicClass>
+	</graphicData>
+    <statBases>
+      <MarketValue>950</MarketValue>
+	  <SellPriceFactor>0.05</SellPriceFactor>
+      <ArmorRating_Blunt>0.1</ArmorRating_Blunt>
+      <Insulation_Cold>-8</Insulation_Cold>
+      <Insulation_Heat>-2</Insulation_Heat>
+    </statBases>
+    <equippedStatOffsets>
+      <MoveSpeed>-0.03</MoveSpeed>
+      <GiftImpact>0.25</GiftImpact>
+      <PsychicSensitivity>-0.05</PsychicSensitivity>
+    </equippedStatOffsets>
+    <apparel>
+      <bodyPartGroups>
+        <li>Torso</li>
+        <li>Legs</li>
+      </bodyPartGroups>
+      <worngraphicPath>Apparel/Mogo/lp</worngraphicPath>
+      <layers>
+        <li>OnSkin</li>
+        <li>Middle</li>
+        <li>Shell</li>
+      </layers>
+      <commonality>1</commonality>
+      <tags>
+        <li>Tribal</li>
+      </tags>
+    </apparel>
+		<colorGenerator Class="ColorGenerator_Options">
+			<options>
+				<li>
+					<weight>10</weight>
+					<only>RGBA(0.4,0.3,0.15,1)</only>
+				</li>
+				<li>
+					<weight>15</weight>
+					<only>RGBA(0.6,0.45,0.18,1)</only>
+				</li>
+				<li>
+					<weight>20</weight>
+					<only>RGBA(0.8,0.6,0.23,1)</only>
+				</li>
+				<li>
+					<weight>6</weight>
+					<max>RGBA(1,1,0.90,1)</max>
+					<min>RGBA(1,0.90,0.75,1)</min>
+				</li>
+			</options>
+		</colorGenerator>
+  </ThingDef>
+
+
+  <ThingDef ParentName="ApparelBase">
+    <defName>Apparello_Tribalshield</defName>
+    <label>Tribal Shield</label>
+    <description>Used by native tribes in hopes to deflect bullets and to summon the courage of the great 'Shiled-Sheild Téh Gaurdian' A Godly protector of the tribes.</description>
+    <graphicData>
+	<texPath>Apparel/Shield/Shield</texPath>
+    <graphicClass>Graphic_Single</graphicClass>
+	</graphicData>
+	<thingCategories>
+      <li>Shields</li>
+    </thingCategories>
+    <statBases>
+      <MarketValue>250</MarketValue>
+	  <SellPriceFactor>0.05</SellPriceFactor>
+      <ArmorRating_Blunt>0.5</ArmorRating_Blunt>
+    </statBases>
+    <equippedStatOffsets>
+      <MentalBreakThreshold>-0.05</MentalBreakThreshold>
+      <WorkSpeedGlobal>-0.1</WorkSpeedGlobal>
+    </equippedStatOffsets>
+    <apparel>
+      <bodyPartGroups>
+         <li>Arms</li>
+      </bodyPartGroups>
+      <worngraphicPath>Apparel/Shield/Shield</worngraphicPath>
+      <layers>
+        <li>Shell</li>
+      </layers>
+      <commonality>1</commonality>
+      <tags>
+        <li>Tribal</li>
+      </tags>
+    </apparel>
+		<colorGenerator Class="ColorGenerator_Options">
+			<options>
+				<li>
+					<weight>10</weight>
+					<only>RGBA(0.90,0.3,0.15,1)</only>
+				</li>
+				<li>
+					<weight>10</weight>
+					<only>RGBA(0.6,0.90,0.18,1)</only>
+				</li>
+				<li>
+					<weight>10</weight>
+					<only>RGBA(0,0.50,1,1)</only>
+				</li>
+        <li>
+          <weight>10</weight>
+          <only>RGBA(0.9,0.54,0.15,1)</only>
+        </li>
+        <li>
+          <weight>10</weight>
+          <only>RGBA(0.9,0.6,0.18,1)</only>
+        </li>
+        <li>
+          <weight>10</weight>
+          <only>RGBA(0.9,0.42,0.23,1)</only>
+        </li>
+				
+			</options>
+		</colorGenerator>
+  </ThingDef>
+
+
+
+</ThingDefs>

@@ -1,0 +1,226 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ThingDefs>
+
+  <ThingDef Name="ApparelBase" Abstract="True">
+    <thingClass>Apparel</thingClass>
+    <category>Item</category>
+    <selectable>True</selectable>
+    <pathCost>10</pathCost>
+    <useHitPoints>True</useHitPoints>
+    <graphicData>
+      <onGroundRandomRotateAngle>35</onGroundRandomRotateAngle>
+    </graphicData>
+    <drawGUIOverlay>true</drawGUIOverlay>
+    <statBases>
+      <MaxHitPoints>100</MaxHitPoints>
+      <Flammability>1.0</Flammability>
+      <DeteriorationRate>1</DeteriorationRate>
+      <SellPriceFactor>0.35</SellPriceFactor>
+    </statBases>
+    <altitudeLayer>Item</altitudeLayer>
+    <alwaysHaulable>True</alwaysHaulable>
+    <tickerType>Never</tickerType>
+    <thingCategories>
+      <li>Shirts</li>
+    </thingCategories>
+    <comps>
+      <li>
+        <compClass>CompForbiddable</compClass>
+      </li>
+      <li>
+        <compClass>CompColorable</compClass>
+      </li>
+      <li>
+        <compClass>CompQuality</compClass>
+      </li>
+    </comps>
+  </ThingDef>
+
+  <ThingDef Name="ApparelMakeableBase" ParentName="ApparelBase" Abstract="True">
+    <recipeMaker>
+      <workSpeedStat>TailoringSpeed</workSpeedStat>
+      <workSkill>Crafting</workSkill>
+      <effectWorking>Tailor</effectWorking>
+      <soundWorking>Recipe_Tailor</soundWorking>
+        <recipeUsers>
+        <li>TableTailor</li>
+      </recipeUsers>
+      <unfinishedThingDef>UnfinishedApparel</unfinishedThingDef>
+    </recipeMaker>
+  </ThingDef>
+
+
+
+
+
+  <ThingDef ParentName="ApparelMakeableBase">
+    <defName>Apparello_Skull</defName>
+    <label>Raider jacket</label>
+    <description>Your basic jacket modified with crude shoulderpads and spikes.</description>
+    <graphicData>
+	<texPath>BaseTextureModifications/Raiderjack/Jacket</texPath>
+    <graphicClass>Graphic_Single</graphicClass>
+	</graphicData>
+    <costStuffCount>75</costStuffCount>
+    <stuffCategories>
+      <li>Fabric</li>
+      <li>Leathery</li>
+    </stuffCategories>
+    <statBases>
+	<MarketValue>400</MarketValue>
+	<SellPriceFactor>0.05</SellPriceFactor>
+	  <WorkToMake>10000</WorkToMake>
+      <ArmorRating_Sharp>0.1</ArmorRating_Sharp>
+      <ArmorRating_Heat>0.03</ArmorRating_Heat>
+      <Insulation_Cold>-15</Insulation_Cold>
+    </statBases>
+    <equippedStatOffsets>
+      <MoveSpeed>-0.04</MoveSpeed>
+    </equippedStatOffsets>
+    <apparel>
+      <bodyPartGroups>
+        <li>Torso</li>
+      </bodyPartGroups>
+      <worngraphicPath>BaseTextureModifications/Raiderjack/Jacket</worngraphicPath>
+      <layers>
+        <li>Shell</li>
+      </layers>
+      <commonality>1</commonality>
+      <tags>
+        <li>Outlander</li>
+      </tags>
+      <defaultOutfitTags>
+        <li>Worker</li>
+      </defaultOutfitTags>
+    </apparel>
+		<colorGenerator Class="ColorGenerator_Options">
+			<options>
+				<li>
+					<weight>20</weight>
+					<only>RGBA(0.60,0.25,0.10,1)</only>
+				</li>
+				<li>
+					<weight>20</weight>
+					<only>RGBA(0.6,0.45,0.18,1)</only>
+				</li>
+				<li>
+					<weight>20</weight>
+					<only>RGBA(0.80,0.70,0.80,1)</only>
+				</li>
+				<li>
+					<weight>15</weight>
+					<only>RGBA(0.40,0.40,0.40,1)</only>
+				</li>
+				<li>
+					<weight>10</weight>
+					<only>RGBA(0.0,0.80,1,1)</only>
+				</li>
+				<li>
+					<weight>6</weight>
+					<max>RGBA(0.80,0.80,0.80,1)</max>
+					<min>RGBA(0.50,0.50,0.50,1)</min>
+				</li>
+			</options>
+		</colorGenerator>
+  </ThingDef>
+
+
+  <ThingDef ParentName="ApparelMakeableBase">
+    <defName>Apparello_Sheet</defName>
+    <label>padded vest</label>
+    <description>Crude Leather padding for added protection against blunt damage.</description>
+    <graphicData>
+	<texPath>Apparel/Sheet/lp</texPath>
+    <graphicClass>Graphic_Single</graphicClass>
+	</graphicData>
+    <costStuffCount>55</costStuffCount>
+    <stuffCategories>
+      <li>Leathery</li>
+    </stuffCategories>
+    <statBases>
+	<MarketValue>650</MarketValue>
+	<SellPriceFactor>0.05</SellPriceFactor>
+      <WorkToMake>10000</WorkToMake>
+      <ArmorRating_Blunt>0.15</ArmorRating_Blunt>
+      <ArmorRating_Sharp>0.08</ArmorRating_Sharp>
+    </statBases>
+    <equippedStatOffsets>
+      <MoveSpeed>-0.02</MoveSpeed>
+    </equippedStatOffsets>
+    <apparel>
+      <bodyPartGroups>
+        <li>Torso</li>
+      </bodyPartGroups>
+      <worngraphicPath>Apparel/Sheet/lp</worngraphicPath>
+      <layers>
+        <li>Middle</li>
+      </layers>
+      <commonality>1</commonality>
+      <tags>
+        <li>Outlander</li>
+        <li>Norbal</li>
+      </tags>
+      <defaultOutfitTags>
+        <li>Soldier</li>
+      </defaultOutfitTags>
+    </apparel>
+		<colorGenerator Class="ColorGenerator_Options">
+			<options>
+				<li>
+					<weight>6</weight>
+					<max>RGBA(1,1,1,1)</max>
+					<min>RGBA(0.33,0.33,0.33,1)</min>
+				</li>
+			</options>
+		</colorGenerator>
+  </ThingDef>  
+
+
+  <ThingDef ParentName="ApparelBase">
+    <defName>Apparello_Orkpads</defName>
+    <description>Shoulderpads cobbled together from metal scraps. All painted and ready for action!</description>
+    <label>Metal shoulderpads</label>
+    <graphicData>
+	<texPath>Apparel/Orkpads/Orkpad</texPath>
+    <graphicClass>Graphic_Single</graphicClass>
+	</graphicData>
+    <thingCategories>
+      <li>ArmorShirts</li>
+    </thingCategories>
+    <statBases>
+      <MarketValue>580</MarketValue>
+	  <SellPriceFactor>0.05</SellPriceFactor>
+      <ArmorRating_Blunt>0.2</ArmorRating_Blunt>
+      <ArmorRating_Sharp>0.1</ArmorRating_Sharp>
+    </statBases>
+    <equippedStatOffsets>
+      <MoveSpeed>-0.1</MoveSpeed>
+    </equippedStatOffsets>
+    <apparel>
+      <bodyPartGroups>
+        <li>Arms</li>
+      </bodyPartGroups>
+      <worngraphicPath>Apparel/Orkpads/Orkpad</worngraphicPath>
+      <layers>
+        <li>Shell</li>
+      </layers>
+      <commonality>1</commonality>
+      <tags>
+        <li>Outlander</li>
+        <li>Military</li>
+      </tags>
+      <defaultOutfitTags>
+        <li>Soldier</li>
+      </defaultOutfitTags>
+    </apparel>
+		<colorGenerator Class="ColorGenerator_Options">
+			<options>
+				<li>
+					<weight>20</weight>
+					<only>RGBA(1,1,1,1)</only>
+				</li>				
+			</options>
+		</colorGenerator>
+  </ThingDef> 
+
+</ThingDefs>

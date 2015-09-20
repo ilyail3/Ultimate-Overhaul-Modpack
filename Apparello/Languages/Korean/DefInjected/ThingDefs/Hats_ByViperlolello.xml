@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<!--suppress ALL -->
+<LanguageData>
+  
+	<Apparello_ViperGas.label>방독면 마크 V</Apparello_ViperGas.label>
+	<Apparello_ViperGas.description>'레판트 공업' 방독면(또는 '엘리펀트 마스크')은 치명적인 디자인 결함이 발견되기 전까지 군대에서 많이 쓰였습니다.
+	\n공기 거름망이 엘리베이터 개구부나 사다리에, 낙하중일 때에는 폐에 걸릴 위험이 있습니다.
+	</Apparello_ViperGas.description>
+
+	<Apparello_ViperGasTwo.label>후드 방독면 마크 V</Apparello_ViperGasTwo.label>
+	<Apparello_ViperGasTwo.description>'레판트 공업' 방독면(또는 '엘리펀트 마스크')은 치명적인 디자인 결함이 발견되기 전까지 군대에서 많이 쓰였습니다.
+	\n공기 거름망이 엘리베이터 개구부나 사다리에, 낙하중일 때에는 폐에 걸릴 위험이 있습니다.
+	\n후드가 달렸습니다! 꽤 따듯합니다.
+	</Apparello_ViperGasTwo.description>
+
+</LanguageData>

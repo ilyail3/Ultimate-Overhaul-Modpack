@@ -1,0 +1,154 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <ThingDef Name="ApparelBase" Abstract="True">
+    <thingClass>Apparel</thingClass>
+    <category>Item</category>
+    <selectable>True</selectable>
+    <pathCost>10</pathCost>
+    <useHitPoints>True</useHitPoints>
+    <graphicData>
+      <onGroundRandomRotateAngle>35</onGroundRandomRotateAngle>
+    </graphicData>
+    <drawGUIOverlay>true</drawGUIOverlay>
+    <statBases>
+      <MaxHitPoints>300</MaxHitPoints>
+      <Flammability>1.0</Flammability>
+      <DeteriorationRate>0</DeteriorationRate>
+      <SellPriceFactor>0.35</SellPriceFactor>
+    </statBases>
+    <altitudeLayer>Item</altitudeLayer>
+    <alwaysHaulable>True</alwaysHaulable>
+    <tickerType>Never</tickerType>
+    <thingCategories>
+      <li>TrinkelloCat</li>
+    </thingCategories>
+    <comps>
+      <li>
+        <compClass>CompForbiddable</compClass>
+      </li>
+    </comps>
+  </ThingDef>
+
+<!--Trinkets-->
+
+
+	<ThingDef ParentName="ApparelBase">
+		<defName>ApparelloTrinket_Locket</defName>
+		<label>locket</label>
+		<description>Little thing full of memories.</description>
+		<graphicData>
+		<texPath>Accessorello/Trinkets/Locket</texPath>
+		<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+    <statBases>
+      <MarketValue>110</MarketValue>
+    </statBases>
+    <equippedStatOffsets>
+      <MentalBreakThreshold>-0.1</MentalBreakThreshold>
+    </equippedStatOffsets>
+    <apparel>
+      <bodyPartGroups>
+        <li>Arms</li>
+      </bodyPartGroups>
+      <layers>
+        <li>Accessory</li>
+      </layers>
+      <commonality>1</commonality>
+      <tags>
+        <li>Trinket</li>
+      </tags>
+    </apparel>
+										            </ThingDef>
+
+
+
+	<ThingDef ParentName="ApparelBase">
+		<defName>ApparelloTrinket_Tags</defName>
+		<label>dog tags</label>
+		<description>Now, it may not have your ID on it but there's no need for indetification in Rimworld. Either you taste good or you don't.</description>
+		<graphicData>
+		<texPath>Accessorello/Trinkets/Tags</texPath>
+		<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+    <statBases>
+      <MarketValue>350</MarketValue>
+    </statBases>
+    <equippedStatOffsets>
+      <ShootingAccuracy>0.1</ShootingAccuracy>
+    </equippedStatOffsets>
+    <apparel>
+      <bodyPartGroups>
+        <li>Arms</li>
+      </bodyPartGroups>
+      <layers>
+        <li>Accessory</li>
+      </layers>
+      <commonality>1</commonality>
+      <tags>
+        <li>Trinket</li>
+      </tags>
+    </apparel>
+										            </ThingDef>
+
+
+	<ThingDef ParentName="ApparelBase">
+		<defName>ApparelloTrinket_Compass</defName>
+		<label>compass</label>
+		<description>Object for keeping your bearings. Works with mysterious magnetic field of some kind. How do magnets work? nobody knows..</description>
+		<graphicData>
+		<texPath>Accessorello/Trinkets/Compass</texPath>
+		<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+    <statBases>
+      <MarketValue>400</MarketValue>
+    </statBases>
+    <equippedStatOffsets>
+      <MoveSpeed>0.16</MoveSpeed>
+    </equippedStatOffsets>
+    <apparel>
+      <bodyPartGroups>
+        <li>Arms</li>
+      </bodyPartGroups>
+      <layers>
+        <li>Accessory</li>
+      </layers>
+      <commonality>1</commonality>
+      <tags>
+        <li>Trinket</li>
+      </tags>
+    </apparel>
+										            </ThingDef>
+
+
+
+	<ThingDef ParentName="ApparelBase">
+		<defName>ApparelloTrinket_Liztooth</defName>
+		<label>lizard fang</label>
+		<description>Object of magnificent shamanistic properties, probably.</description>
+		<graphicData>
+		<texPath>Accessorello/Trinkets/Tooth</texPath>
+		<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+    <statBases>
+      <MarketValue>500</MarketValue>
+    </statBases>
+    <equippedStatOffsets>
+      <ImmunityGainSpeed>0.13</ImmunityGainSpeed>
+    </equippedStatOffsets>
+    <apparel>
+      <bodyPartGroups>
+        <li>Arms</li>
+      </bodyPartGroups>
+      <layers>
+        <li>Accessory</li>
+      </layers>
+      <commonality>1</commonality>
+      <tags>
+        <li>Trinket</li>
+      </tags>
+    </apparel>
+										            </ThingDef>
+
+
+</Defs>

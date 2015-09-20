@@ -1,0 +1,90 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<DefPackage-TraderKindDef>
+
+  <TraderKindDef>
+    <defName>ApparelloVessel</defName>
+    <label>Tailor goods trader</label>
+    <stockGenerators>
+      <li Class="StockGenerator_SingleDef">
+        <thingDef>Silver</thingDef>
+        <countRange>
+          <min>2400</min>
+          <max>5000</max>
+        </countRange>
+      </li>
+      <li Class="StockGenerator_Category">
+        <categoryDef>TrinkelloCat</categoryDef>
+        <thingDefCountRange>
+          <min>-1</min>
+          <max>2</max>
+        </thingDefCountRange>
+        <price>Expensive</price>
+        <countRange>
+          <min>1</min>
+          <max>1</max>
+        </countRange>
+      </li>
+      <li Class="StockGenerator_Category">
+        <categoryDef>Apparel</categoryDef>
+        <thingDefCountRange>
+          <min>2</min>
+          <max>4</max>
+        </thingDefCountRange>
+        <price>Cheap</price>
+        <countRange>
+          <min>1</min>
+          <max>3</max>
+        </countRange>
+      </li>
+	  <li Class="StockGenerator_Category">
+        <categoryDef>Armor</categoryDef>
+        <thingDefCountRange>
+          <min>1</min>
+          <max>4</max>
+        </thingDefCountRange>
+        <price>Normal</price>
+        <countRange>
+          <min>1</min>
+          <max>2</max>
+        </countRange>
+      </li>
+	  <li Class="StockGenerator_Category">
+        <categoryDef>Feet</categoryDef>
+        <thingDefCountRange>
+          <min>1</min>
+          <max>4</max>
+        </thingDefCountRange>
+        <price>Normal</price>
+        <countRange>
+          <min>1</min>
+          <max>2</max>
+        </countRange>
+      </li>
+      <li Class="StockGenerator_Category">
+        <categoryDef>Headgear</categoryDef>
+        <thingDefCountRange>
+          <min>1</min>
+          <max>4</max>
+        </thingDefCountRange>
+        <price>Normal</price>
+        <countRange>
+          <min>1</min>
+          <max>2</max>
+        </countRange>
+      </li>
+      <li Class="StockGenerator_Category">
+        <categoryDef>Textiles</categoryDef>
+        <thingDefCountRange>
+          <min>2</min>
+          <max>8</max>
+        </thingDefCountRange>
+        <countRange>
+          <min>50</min>
+          <max>200</max>
+        </countRange>
+        <price>Cheap</price>
+      </li>
+    </stockGenerators>
+  </TraderKindDef>
+
+</DefPackage-TraderKindDef>

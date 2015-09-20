@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<!--suppress ALL -->
+<LanguageData>
+  
+	<SchemakeAI.label>설계도 그리기: 인공인격 핵</SchemakeAI.label>
+	<SchemakeAI.description>나중에 쓰기 위해 인공인격 핵을 연구합니다. 핵이 사라지지 않습니다. 시간이 오래 걸립니다.</SchemakeAI.description>
+	<SchemakeAI.jobString>그리는 중.</SchemakeAI.jobString>
+  
+	<SchemakeHA.label>설계도 그리기: 군락갑옷</SchemakeHA.label>
+	<SchemakeHA.description>메카노이드를 분해해서 군락갑옷을 설계합니다. 시간이 오래 걸립니다.</SchemakeHA.description>
+	<SchemakeHA.jobString>그리는 중.</SchemakeHA.jobString>
+  
+	<SchemakeHelmut.label>설계도 그리기: 군락갑옷</SchemakeHelmut.label>
+	<SchemakeHelmut.description>메카노이드를 분해해서 군락갑옷을 설계합니다. 시간이 오래 걸립니다.</SchemakeHelmut.description>
+	<SchemakeHelmut.jobString>그리는 중.</SchemakeHelmut.jobString>
+  
+	<SchemakeScy.label>설계도 그리기: 사이더 골격</SchemakeScy.label>
+	<SchemakeScy.description>메카노이드를 분해해서 골격을 설계합니다. 시간이 오래 걸립니다.</SchemakeScy.description>
+	<SchemakeScy.jobString>그리는 중.</SchemakeScy.jobString>
+  
+	<SchemakeGL.label>설계도 묶음 그리기: 번화계 기술</SchemakeGL.label>
+	<SchemakeGL.description>강화갑옷을 분해해서 발전한 번화계의 기술을 배웁니다. 시간이 오래 걸립니다.</SchemakeGL.description>
+	<SchemakeGL.jobString>그리는 중.</SchemakeGL.jobString>
+  
+	<SchemakeGaurdianSheild.label>설계도 그리기: 개인 보호막</SchemakeGaurdianSheild.label>
+	<SchemakeGaurdianSheild.description>개인 보호막을 분해해서 어떻게 작동하는지 알아냅니다.</SchemakeGaurdianSheild.description>
+	<SchemakeGaurdianSheild.jobString>그리는 중.</SchemakeGaurdianSheild.jobString>
+
+</LanguageData>

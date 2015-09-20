@@ -1,0 +1,723 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+
+  <!--================================ Abstract bases ======================================-->
+
+  <ThingDef Name="BuildingBase" Abstract="True">
+    <category>Building</category>
+    <soundImpactDefault>BulletImpactMetal</soundImpactDefault>
+    <selectable>true</selectable>
+    <drawerType>MapMeshAndRealTime</drawerType>
+    <terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
+    <repairEffect>Repair</repairEffect>
+  </ThingDef>
+
+  <ThingDef ParentName="BuildingBase" Name="StuffedAnimalBase" Abstract="True">
+    <thingClass>Building_Art</thingClass>
+    <altitudeLayer>Waist</altitudeLayer>
+    <passability>PassThroughOnly</passability>
+    <pathCost>70</pathCost>
+    <castEdgeShadows>false</castEdgeShadows>
+    <useHitPoints>true</useHitPoints>
+    <size>(1,1)</size>
+    <statBases>
+      <MaxHitPoints>150</MaxHitPoints>
+      <Flammability>1.0</Flammability>
+	  <SellPriceFactor>0.15</SellPriceFactor>
+	  <WorkToMake>24000</WorkToMake>
+    </statBases>
+	<comps>
+      <li>
+        <compClass>CompQuality</compClass>
+      </li>
+      <li>
+        <compClass>CompArt</compClass>
+        <nameMaker>NamerSculpture</nameMaker>
+        <descriptionMaker>ArtSculpture</descriptionMaker>
+      </li>
+    </comps>
+    <inspectorTabs>
+      <li>ITab_Art</li>
+    </inspectorTabs><!--
+	<recipeMaker>
+      <workSpeedStat>SculptingSpeed</workSpeedStat>
+      <workSkill>Artistic</workSkill>
+      <unfinishedThingDef>UnfinishedStuffedAnimal</unfinishedThingDef>
+      <effectWorking>Sculpt</effectWorking>
+      <soundWorking>Recipe_Sculpt</soundWorking>
+      <recipeUsers>
+        <li>TableTaxidermy</li>
+      </recipeUsers>
+    </recipeMaker>-->
+	<rotatable>false</rotatable>
+  </ThingDef>
+
+  <!--================================ Concrete ======================================-->
+
+  <ThingDef ParentName="StuffedAnimalBase">
+    <defName>StuffedMuffalo</defName>
+    <label>stuffed Muffalo</label>
+    <description>A stuffed Muffalo.</description>
+	<graphicData>
+		<texPath>Stuffed/Muffalo</texPath>
+		<graphicClass>Graphic_Single</graphicClass>
+		<drawSize>(2,2)</drawSize>
+	</graphicData>
+    <minifiedDef>MinifiedStuffedAnimal</minifiedDef>
+	<fillPercent>0.5</fillPercent>
+    <statBases>
+      <Beauty>100</Beauty>
+    </statBases><!--
+	<costList>
+		<Muffalo_Corpse>1</Muffalo_Corpse>
+	</costList>
+	<stuffCategories>
+      <li>Stuffing</li>
+    </stuffCategories>
+    <costStuffCount>200</costStuffCount>-->
+	<size>(2,2)</size>
+  </ThingDef>
+  
+  <ThingDef ParentName="StuffedAnimalBase">
+    <defName>StuffedAlphalo</defName>
+    <label>stuffed Alphalo</label>
+    <description>A stuffed Alphalo.</description>
+	<graphicData>
+		<texPath>Stuffed/AMuffalo</texPath>
+		<graphicClass>Graphic_Single</graphicClass>
+		<drawSize>(2,2)</drawSize>
+	</graphicData>
+    <minifiedDef>MinifiedStuffedAnimal</minifiedDef>
+	<fillPercent>0.5</fillPercent>
+    <statBases>
+      <Beauty>100</Beauty>
+    </statBases><!--
+	<costList>
+		<Alphalo_Corpse>1</Alphalo_Corpse>
+	</costList>
+	<stuffCategories>
+      <li>Stuffing</li>
+    </stuffCategories>
+    <costStuffCount>200</costStuffCount>-->
+	<size>(2,2)</size>
+  </ThingDef>
+  
+  <ThingDef ParentName="StuffedAnimalBase">
+    <defName>StuffedBruiserhog</defName>
+    <label>stuffed Bruiser-hog</label>
+    <description>A stuffed bruiser-hog.</description>
+	<graphicData>
+		<texPath>Stuffed/Bruiserhog</texPath>
+		<graphicClass>Graphic_Single</graphicClass>
+		<drawSize>(2,2)</drawSize>
+	</graphicData>
+    <minifiedDef>MinifiedStuffedAnimal</minifiedDef>
+	<fillPercent>0.55</fillPercent>
+    <statBases>
+      <Beauty>100</Beauty>
+    </statBases><!--
+	<costList>
+		<Bruiserhog_Corpse>1</Bruiserhog_Corpse>
+	</costList>
+	<stuffCategories>
+      <li>Stuffing</li>
+    </stuffCategories>
+    <costStuffCount>200</costStuffCount>-->
+	<size>(2,2)</size>
+  </ThingDef>
+  
+  <ThingDef ParentName="StuffedAnimalBase">
+    <defName>StuffedBuffalo</defName>
+    <label>stuffed Buffalo</label>
+    <description>A stuffed Buffalo.</description>
+	<graphicData>
+		<texPath>Stuffed/Buffalo</texPath>
+		<graphicClass>Graphic_Single</graphicClass>
+		<drawSize>(2,2)</drawSize>
+	</graphicData>
+    <minifiedDef>MinifiedStuffedAnimal</minifiedDef>
+	<fillPercent>0.5</fillPercent>
+    <statBases>
+      <Beauty>100</Beauty>
+    </statBases><!--
+	<costList>
+		<Buffalo_Corpse>1</Buffalo_Corpse>
+	</costList>
+	<stuffCategories>
+      <li>Stuffing</li>
+    </stuffCategories>
+    <costStuffCount>200</costStuffCount>-->
+	<size>(2,2)</size>
+  </ThingDef>
+  
+  <ThingDef ParentName="StuffedAnimalBase">
+    <defName>StuffedFurx</defName>
+    <label>stuffed Furx</label>
+    <description>A stuffed Furx.</description>
+	<graphicData>
+		<graphicClass>Graphic_Single</graphicClass>
+		<texPath>Stuffed/Furx</texPath>
+		<drawSize>(2,2)</drawSize>
+	</graphicData>
+    <minifiedDef>MinifiedStuffedAnimal</minifiedDef>
+	<fillPercent>0.18</fillPercent>
+    <statBases>
+      <Beauty>45</Beauty>
+    </statBases><!--
+	<costList>
+		<Furx_Corpse>1</Furx_Corpse>
+	</costList>
+	<stuffCategories>
+      <li>Stuffing</li>
+    </stuffCategories>
+    <costStuffCount>100</costStuffCount>-->
+  </ThingDef>
+  
+  <ThingDef ParentName="StuffedAnimalBase">
+    <defName>StuffedHedgehog</defName>
+    <label>stuffed Hedgehog</label>
+    <description>A stuffed Hedgehog.</description>
+    <graphicData>
+	<graphicClass>Graphic_Single</graphicClass>
+    <texPath>Stuffed/Hedgehog</texPath>
+    </graphicData>
+	<minifiedDef>MinifiedStuffedAnimal</minifiedDef>
+	<fillPercent>0.15</fillPercent>
+    <statBases>
+      <Beauty>45</Beauty>
+    </statBases><!--
+	<costList>
+		<Hedgehog_Corpse>1</Hedgehog_Corpse>
+	</costList>
+	<stuffCategories>
+      <li>Stuffing</li>
+    </stuffCategories>
+    <costStuffCount>100</costStuffCount>-->
+  </ThingDef>
+  
+  <ThingDef ParentName="StuffedAnimalBase">
+    <defName>StuffedQuadhog</defName>
+    <label>stuffed Quadhog</label>
+    <description>A stuffed Quadhog.</description>
+	<graphicData>
+    <graphicClass>Graphic_Single</graphicClass>
+    <texPath>Stuffed/Quadhog</texPath>
+	<drawSize>(2,2)</drawSize>
+	</graphicData>
+    <minifiedDef>MinifiedStuffedAnimal</minifiedDef>
+	<fillPercent>0.18</fillPercent>
+    <statBases>
+      <Beauty>65</Beauty>
+    </statBases><!--
+	<costList>
+		<Quadhog_Corpse>1</Quadhog_Corpse>
+	</costList>
+	<stuffCategories>
+      <li>Stuffing</li>
+    </stuffCategories>
+    <costStuffCount>100</costStuffCount>-->
+  </ThingDef>
+  
+  <ThingDef ParentName="StuffedAnimalBase">
+    <defName>StuffedLacosdile</defName>
+    <label>stuffed Lacosdile</label>
+    <description>A stuffed Lacosdile.</description>
+	<graphicData>
+    <graphicClass>Graphic_Single</graphicClass>
+    <texPath>Stuffed/Rimdile</texPath>
+	<drawSize>(2,2)</drawSize>
+	</graphicData>
+    <minifiedDef>MinifiedStuffedAnimal</minifiedDef>
+	<fillPercent>0.15</fillPercent>
+    <statBases>
+      <Beauty>65</Beauty>
+    </statBases><!--
+	<costList>
+		<Lacosdile_Corpse>1</Lacosdile_Corpse>
+	</costList>
+	<stuffCategories>
+      <li>Stuffing</li>
+    </stuffCategories>
+    <costStuffCount>100</costStuffCount>-->
+  </ThingDef>
+  
+  <ThingDef ParentName="StuffedAnimalBase">
+    <defName>StuffedRimdog</defName>
+    <label>stuffed Rimdog</label>
+    <description>A stuffed Rimdog.</description>
+	<graphicData>
+    <graphicClass>Graphic_Single</graphicClass>
+    <texPath>Stuffed/Rimdog</texPath>
+	<drawSize>(2,2)</drawSize>
+	</graphicData>
+    <minifiedDef>MinifiedStuffedAnimal</minifiedDef>
+	<fillPercent>0.25</fillPercent>
+    <statBases>
+      <Beauty>65</Beauty>
+    </statBases><!--
+	<costList>
+		<Rimdog_Corpse>1</Rimdog_Corpse>
+	</costList>
+	<stuffCategories>
+      <li>Stuffing</li>
+    </stuffCategories>
+    <costStuffCount>100</costStuffCount>-->
+  </ThingDef>
+  
+  <ThingDef ParentName="StuffedAnimalBase">
+    <defName>StuffedRimram</defName>
+    <label>stuffed Rimram</label>
+    <description>A stuffed Rimram.</description>
+	<graphicData>
+    <graphicClass>Graphic_Single</graphicClass>
+    <texPath>Stuffed/Rimram</texPath>
+	<drawSize>(2,2)</drawSize>
+	</graphicData>
+    <minifiedDef>MinifiedStuffedAnimal</minifiedDef>
+	<fillPercent>0.3</fillPercent>
+    <statBases>
+      <Beauty>65</Beauty>
+    </statBases><!--
+	<costList>
+		<Rimram_Corpse>1</Rimram_Corpse>
+	</costList>
+	<stuffCategories>
+      <li>Stuffing</li>
+    </stuffCategories>
+    <costStuffCount>100</costStuffCount>-->
+  </ThingDef>
+  
+  <ThingDef ParentName="StuffedAnimalBase">
+    <defName>StuffedRimwolf</defName>
+    <label>stuffed Rimwolf</label>
+    <description>A stuffed Rimwolf.</description>
+	<graphicData>
+    <graphicClass>Graphic_Single</graphicClass>
+    <texPath>Stuffed/Rimwolf</texPath>
+	<drawSize>(2,2)</drawSize>
+	</graphicData>
+    <minifiedDef>MinifiedStuffedAnimal</minifiedDef>
+	<fillPercent>0.25</fillPercent>
+    <statBases>
+      <Beauty>65</Beauty>
+    </statBases><!--
+	<costList>
+		<Rimwolf_Corpse>1</Rimwolf_Corpse>
+	</costList>
+	<stuffCategories>
+      <li>Stuffing</li>
+    </stuffCategories>
+    <costStuffCount>100</costStuffCount>-->
+  </ThingDef>
+  
+  <ThingDef ParentName="StuffedAnimalBase">
+    <defName>StuffedSnork</defName>
+    <label>stuffed Snork</label>
+    <description>A stuffed Snork.</description>
+	<graphicData>
+    <graphicClass>Graphic_Single</graphicClass>
+    <texPath>Stuffed/Snork</texPath>
+	<drawSize>(2,2)</drawSize>
+	</graphicData>
+    <minifiedDef>MinifiedStuffedAnimal</minifiedDef>
+	<fillPercent>0.15</fillPercent>
+    <statBases>
+      <Beauty>45</Beauty>
+    </statBases><!--
+	<costList>
+		<Snork_Corpse>1</Snork_Corpse>
+	</costList>
+	<stuffCategories>
+      <li>Stuffing</li>
+    </stuffCategories>
+    <costStuffCount>75</costStuffCount>-->
+  </ThingDef>
+  
+  <ThingDef ParentName="StuffedAnimalBase">
+    <defName>StuffedSpindlecrib</defName>
+    <label>stuffed Spindlecrib</label>
+    <description>A stuffed Spindlecrib.</description>
+	<graphicData>
+    <graphicClass>Graphic_Single</graphicClass>
+    <texPath>Stuffed/Spindlecrib</texPath>
+	<drawSize>(2,2)</drawSize>
+	</graphicData>
+    <minifiedDef>MinifiedStuffedAnimal</minifiedDef>
+	<fillPercent>0.35</fillPercent>
+    <statBases>
+      <Beauty>65</Beauty>
+    </statBases><!--
+	<costList>
+		<Spindlecrib_Corpse>1</Spindlecrib_Corpse>
+	</costList>
+	<stuffCategories>
+      <li>Stuffing</li>
+    </stuffCategories>
+    <costStuffCount>100</costStuffCount>-->
+  </ThingDef>
+
+  <ThingDef ParentName="StuffedAnimalBase">
+    <defName>StuffedBeaver</defName>
+    <label>stuffed Beaver</label>
+    <description>A stuffed Beaver.</description>
+    <graphicData>
+	<graphicClass>Graphic_Single</graphicClass>
+    <texPath>Stuffed/Beaver</texPath>
+    </graphicData>
+	<minifiedDef>MinifiedStuffedAnimal</minifiedDef>
+	<fillPercent>0.35</fillPercent>
+    <statBases>
+      <Beauty>45</Beauty>
+    </statBases><!--
+	<costList>
+		<Alphabeaver_Corpse>1</Alphabeaver_Corpse>
+	</costList>
+	<stuffCategories>
+      <li>Stuffing</li>
+    </stuffCategories>
+    <costStuffCount>100</costStuffCount>-->
+  </ThingDef>
+  
+    <ThingDef ParentName="StuffedAnimalBase">
+    <defName>StuffedBoomrat</defName>
+    <label>stuffed Boomrat</label>
+    <description>A stuffed Boomrat.</description>
+    <graphicData>
+	<graphicClass>Graphic_Single</graphicClass>
+    <texPath>Stuffed/Boomrat</texPath>
+    </graphicData>
+	<minifiedDef>MinifiedStuffedAnimal</minifiedDef>
+	<fillPercent>0.1</fillPercent>
+    <statBases>
+      <Beauty>30</Beauty>
+    </statBases><!--
+	<costList>
+		<Boomrat_Corpse>1</Boomrat_Corpse>
+	</costList>
+	<stuffCategories>
+      <li>Stuffing</li>
+    </stuffCategories>
+    <costStuffCount>50</costStuffCount>-->
+  </ThingDef>
+  
+    <ThingDef ParentName="StuffedAnimalBase">
+    <defName>StuffedCobra</defName>
+    <label>stuffed Cobra</label>
+    <description>A stuffed Cobra.</description>
+    <graphicData>
+	<graphicClass>Graphic_Single</graphicClass>
+    <texPath>Stuffed/Cobra</texPath>
+    </graphicData>
+	<minifiedDef>MinifiedStuffedAnimal</minifiedDef>
+	<fillPercent>0.03</fillPercent>
+    <statBases>
+      <Beauty>30</Beauty>
+    </statBases><!--
+	<costList>
+		<Cobra_Corpse>1</Cobra_Corpse>
+	</costList>
+	<stuffCategories>
+      <li>Stuffing</li>
+    </stuffCategories>
+    <costStuffCount>50</costStuffCount>-->
+  </ThingDef>
+  
+    <ThingDef ParentName="StuffedAnimalBase">
+    <defName>StuffedDeer</defName>
+    <label>stuffed Deer</label>
+    <description>A stuffed Deer.</description>
+    <graphicData>
+	<graphicClass>Graphic_Single</graphicClass>
+    <texPath>Stuffed/Deer</texPath>
+    </graphicData>
+	<minifiedDef>MinifiedStuffedAnimal</minifiedDef>
+	<fillPercent>0.35</fillPercent>
+    <statBases>
+      <Beauty>65</Beauty>
+    </statBases><!--
+	<costList>
+		<Deer_Corpse>1</Deer_Corpse>
+	</costList>
+	<stuffCategories>
+      <li>Stuffing</li>
+    </stuffCategories>
+    <costStuffCount>100</costStuffCount>-->
+  </ThingDef>
+  
+    <ThingDef ParentName="StuffedAnimalBase">
+    <defName>StuffedDromedary</defName>
+    <label>stuffed Dromedary</label>
+    <description>A stuffed Dromedary.</description>
+    <graphicData>
+	<graphicClass>Graphic_Single</graphicClass>
+    <texPath>Stuffed/Dromedary</texPath>
+    </graphicData>
+	<minifiedDef>MinifiedStuffedAnimal</minifiedDef>
+	<fillPercent>0.4</fillPercent>
+    <statBases>
+      <Beauty>65</Beauty>
+    </statBases><!--
+	<costList>
+		<Dromedary_Corpse>1</Dromedary_Corpse>
+	</costList>
+	<stuffCategories>
+      <li>Stuffing</li>
+    </stuffCategories>
+    <costStuffCount>100</costStuffCount>-->
+	<size>(2,2)</size>
+  </ThingDef>
+  
+    <ThingDef ParentName="StuffedAnimalBase">
+    <defName>StuffedElk</defName>
+    <label>stuffed Elk</label>
+    <description>A stuffed Elk.</description>
+    <graphicData>
+	<graphicClass>Graphic_Single</graphicClass>
+    <texPath>Stuffed/Elk</texPath>
+	</graphicData>
+    <minifiedDef>MinifiedStuffedAnimal</minifiedDef>
+	<fillPercent>0.38</fillPercent>
+    <statBases>
+      <Beauty>65</Beauty>
+    </statBases><!--
+	<costList>
+		<Elk_Corpse>1</Elk_Corpse>
+	</costList>
+	<stuffCategories>
+      <li>Stuffing</li>
+    </stuffCategories>
+    <costStuffCount>100</costStuffCount>-->
+  </ThingDef>
+  
+    <ThingDef ParentName="StuffedAnimalBase">
+    <defName>StuffedHare</defName>
+    <label>stuffed Hare</label>
+    <description>A stuffed Hare.</description>
+	<graphicData>
+    <graphicClass>Graphic_Single</graphicClass>
+    <texPath>Stuffed/Hare</texPath>
+	</graphicData>
+    <minifiedDef>MinifiedStuffedAnimal</minifiedDef>
+	<fillPercent>0.05</fillPercent>
+    <statBases>
+      <Beauty>30</Beauty>
+    </statBases><!--
+	<costList>
+		<Hare_Corpse>1</Hare_Corpse>
+	</costList>
+	<stuffCategories>
+      <li>Stuffing</li>
+    </stuffCategories>
+    <costStuffCount>50</costStuffCount>-->
+  </ThingDef>
+  
+    <ThingDef ParentName="StuffedAnimalBase">
+    <defName>StuffedIguana</defName>
+    <label>stuffed Iguana</label>
+    <description>A stuffed Iguana.</description>
+	<graphicData>
+    <graphicClass>Graphic_Single</graphicClass>
+    <texPath>Stuffed/Iguana</texPath>
+	</graphicData>
+    <minifiedDef>MinifiedStuffedAnimal</minifiedDef>
+	<fillPercent>0.04</fillPercent>
+    <statBases>
+      <Beauty>30</Beauty>
+    </statBases><!--
+	<costList>
+		<Iguana_Corpse>1</Iguana_Corpse>
+	</costList>
+	<stuffCategories>
+      <li>Stuffing</li>
+    </stuffCategories>
+    <costStuffCount>75</costStuffCount>-->
+  </ThingDef>
+  
+    <ThingDef ParentName="StuffedAnimalBase">
+    <defName>StuffedMegascarab</defName>
+    <label>stuffed Megascarab</label>
+    <description>A stuffed Megascarab.</description>
+	<graphicData>
+    <graphicClass>Graphic_Single</graphicClass>
+    <texPath>Stuffed/Megascarab</texPath>
+	</graphicData>
+    <minifiedDef>MinifiedStuffedAnimal</minifiedDef>
+	<fillPercent>0.02</fillPercent>
+    <statBases>
+      <Beauty>45</Beauty>
+    </statBases><!--
+	<costList>
+		<Megascarab_Corpse>1</Megascarab_Corpse>
+	</costList>
+	<stuffCategories>
+      <li>Stuffing</li>
+    </stuffCategories>
+    <costStuffCount>75</costStuffCount>-->
+  </ThingDef>
+  
+    <ThingDef ParentName="StuffedAnimalBase">
+    <defName>StuffedMonkey</defName>
+    <label>stuffed Monkey</label>
+    <description>A stuffed Monkey.</description>
+	<graphicData>
+    <graphicClass>Graphic_Single</graphicClass>
+    <texPath>Stuffed/Monkey</texPath>
+	</graphicData>
+    <minifiedDef>MinifiedStuffedAnimal</minifiedDef>
+	<fillPercent>0.06</fillPercent>
+    <statBases>
+      <Beauty>45</Beauty>
+    </statBases><!--
+	<costList>
+		<Monkey_Corpse>1</Monkey_Corpse>
+	</costList>
+	<stuffCategories>
+      <li>Stuffing</li>
+    </stuffCategories>
+    <costStuffCount>75</costStuffCount>-->
+  </ThingDef>
+  
+    <ThingDef ParentName="StuffedAnimalBase">
+    <defName>StuffedRhino</defName>
+    <label>stuffed Rhino</label>
+    <description>A stuffed Rhino.</description>
+	<graphicData>
+    <graphicClass>Graphic_Single</graphicClass>
+    <texPath>Stuffed/Rhino</texPath>
+	</graphicData>
+    <minifiedDef>MinifiedStuffedAnimal</minifiedDef>
+	<fillPercent>0.8</fillPercent>
+    <statBases>
+      <Beauty>150</Beauty>
+    </statBases><!--
+	<costList>
+		<Rhinoceros_Corpse>1</Rhinoceros_Corpse>
+	</costList>
+	<stuffCategories>
+      <li>Stuffing</li>
+    </stuffCategories>
+    <costStuffCount>250</costStuffCount>-->
+	<size>(2,2)</size>
+  </ThingDef>
+  
+    <ThingDef ParentName="StuffedAnimalBase">
+    <defName>StuffedSquirrel</defName>
+    <label>stuffed Squirrel</label>
+    <description>A stuffed Squirrel.</description>
+	<graphicData>
+    <graphicClass>Graphic_Single</graphicClass>
+    <texPath>Stuffed/Squirrel</texPath>
+	</graphicData>
+    <minifiedDef>MinifiedStuffedAnimal</minifiedDef>
+	<fillPercent>0.02</fillPercent>
+    <statBases>
+      <Beauty>30</Beauty>
+    </statBases><!--
+	<costList>
+		<Squirrel_Corpse>1</Squirrel_Corpse>
+	</costList>
+	<stuffCategories>
+      <li>Stuffing</li>
+    </stuffCategories>
+    <costStuffCount>50</costStuffCount>-->
+  </ThingDef>
+  
+    <ThingDef ParentName="StuffedAnimalBase">
+    <defName>StuffedTortoise</defName>
+    <label>stuffed Tortoise</label>
+    <description>A stuffed Tortoise.</description>
+	<graphicData>
+    <graphicClass>Graphic_Single</graphicClass>
+    <texPath>Stuffed/Tortoise</texPath>
+	</graphicData>
+    <minifiedDef>MinifiedStuffedAnimal</minifiedDef>
+	<fillPercent>0.25</fillPercent>
+    <statBases>
+      <Beauty>30</Beauty>
+    </statBases><!--
+	<costList>
+		<Tortoise_Corpse>1</Tortoise_Corpse>
+	</costList>
+	<stuffCategories>
+      <li>Stuffing</li>
+    </stuffCategories>
+    <costStuffCount>50</costStuffCount>-->
+  </ThingDef>
+  
+    <ThingDef ParentName="StuffedAnimalBase">
+    <defName>StuffedWildBoar</defName>
+    <label>stuffed Boar</label>
+    <description>A stuffed Boar.</description>
+	<graphicData>
+    <graphicClass>Graphic_Single</graphicClass>
+    <texPath>Stuffed/WildBoar</texPath>
+	</graphicData>
+    <minifiedDef>MinifiedStuffedAnimal</minifiedDef>
+	<fillPercent>0.2</fillPercent>
+    <statBases>
+      <Beauty>65</Beauty>
+    </statBases><!--
+	<costList>
+		<WildBoar_Corpse>1</WildBoar_Corpse>
+	</costList>
+	<stuffCategories>
+      <li>Stuffing</li>
+    </stuffCategories>
+    <costStuffCount>100</costStuffCount>-->
+  </ThingDef>
+  
+  <ThingDef ParentName="StuffedAnimalBase">
+    <defName>StuffedWarg</defName>
+    <label>stuffed Warg</label>
+    <description>A stuffed Warg.</description>
+	<graphicData>
+		<texPath>Stuffed/Warg</texPath>
+		<graphicClass>Graphic_Single</graphicClass>
+	</graphicData>
+    <minifiedDef>MinifiedStuffedAnimal</minifiedDef>
+	<fillPercent>0.22</fillPercent>
+    <statBases>
+      <Beauty>65</Beauty>
+    </statBases><!--
+	<costList>
+		<Warg_Corpse>1</Warg_Corpse>
+	</costList>
+	<stuffCategories>
+      <li>Stuffing</li>
+    </stuffCategories>
+    <costStuffCount>100</costStuffCount>-->
+  </ThingDef>
+  
+  <!-- ======================= Minified things ========================= -->
+
+  <ThingDef Name="MinifiedBase" Abstract="True">
+    <thingClass>MinifiedThing</thingClass>
+    <category>Item</category>
+    <useHitPoints>true</useHitPoints>
+    <selectable>true</selectable>
+    <altitudeLayer>Item</altitudeLayer>
+    <!-- for CompForbiddable -->
+    <drawerType>RealtimeOnly</drawerType>
+    <comps>
+      <li>
+        <compClass>CompForbiddable</compClass>
+      </li>
+    </comps>
+    <alwaysHaulable>true</alwaysHaulable>
+    <rotatable>false</rotatable>
+    <pathCost>15</pathCost>
+  </ThingDef>
+
+  <ThingDef ParentName="MinifiedBase">
+    <defName>MinifiedStuffedAnimal</defName>
+    <label>Stuffed Animal</label>
+	<thingCategories>
+      <li>Art</li>
+    </thingCategories>
+    <inspectorTabs>
+      <li>ITab_Art</li>
+    </inspectorTabs>
+  </ThingDef>
+
+</Defs>

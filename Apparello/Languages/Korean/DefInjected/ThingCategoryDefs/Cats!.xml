@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<!--suppress ALL -->
+<LanguageData>
+  
+	<Apparellocategory.label>의복</Apparellocategory.label>
+	<Apparelloarmor.label>금속 갑옷</Apparelloarmor.label>
+	<Apparellohats.label>모자</Apparellohats.label>
+	<Apparellosubhats.label>전문가 모자</Apparellosubhats.label>
+	<Apparellozoohats.label>동물 모자</Apparellozoohats.label>
+	<Accessorellocategory.label>기타</Accessorellocategory.label>
+
+</LanguageData>

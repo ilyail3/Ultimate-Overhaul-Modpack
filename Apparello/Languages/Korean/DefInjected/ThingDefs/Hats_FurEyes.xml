@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<!--suppress ALL -->
+<LanguageData>
+  
+	<Apparello_Goggles.label>연구 고글</Apparello_Goggles.label>
+	<Apparello_Goggles.description>이 고글이 뿜어내는 강력한 방사선으로 인해 착용자는 임시적이고 갑작스러운 탈모를 겪을 수 있습니다.</Apparello_Goggles.description>
+
+	<Apparello_Visoor.label>셔틀 조종사의 조준기</Apparello_Visoor.label>
+	<Apparello_Visoor.description>셔틀 조종사의 조준기입니다. 당신의 소원을 충족시켜줍니다. 예컨대, "휴스턴, 메이데이, 메이데이. 착륙 장치가 고장났다. 반복한다. 착륙 장치가 고장났다. 카피? 라져. 스타폭스 일호 아웃."
+	</Apparello_Visoor.description>
+
+	<Apparello_Shadess.label>선글라스</Apparello_Shadess.label>
+	<Apparello_Shadess.description>선글라스입니다. 햇빛으로부터 눈을 보호하는 가장 선호되는 방법입니다. 착용자는 절대 '태양이 내 눈을 비추고 있었어'와 같은 변명을 하지 못합니다.
+	</Apparello_Shadess.description>
+
+	<Apparello_Brimsk.label>스키 고글</Apparello_Brimsk.label>
+	<Apparello_Brimsk.description>군사용 스키 고글입니다. 디자인이 약간 멋집니다. 강한 충격 저항력으로 유명합니다.
+	</Apparello_Brimsk.description>
+
+</LanguageData>

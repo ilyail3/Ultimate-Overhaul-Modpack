@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<!--suppress ALL -->
+<LanguageData>
+  
+	<Apparello_Skull.label>약탈자 조끼</Apparello_Skull.label>
+	<Apparello_Skull.description>기본적인 조끼를 대충 만든 어깨판과 뿔로 개조했습니다.</Apparello_Skull.description>
+  
+	<Apparello_Sheet.label>가죽 덧댄 조끼</Apparello_Sheet.label>
+	<Apparello_Sheet.description>대충 만든 가죽판을 덧대어 둔기에 대한 방어력을 확보했습니다.</Apparello_Sheet.description>
+
+</LanguageData>

@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<!--suppress ALL -->
+<LanguageData>
+  
+	<Hexcell.label>헥스셀</Hexcell.label>
+	<Hexcell.description>작은 에너지 저장장치입니다. 보통고급 무기나 방어구에 동력을 제공하는 일에 쓰입니다.</Hexcell.description>
+  
+	<Compaste.label>중합 접착제</Compaste.label>
+	<Compaste.description>중합 접착제 한 통입니다. 다양한 제작 과정에 사용됩니다. 절대 마시지 말고 손가락을 물체 표면에 가져다 대는 일을 피하십시오.</Compaste.description>
+  
+	<ApparelloWhizbang.label>도구 한 무더기</ApparelloWhizbang.label>
+	<ApparelloWhizbang.description>도구, 제어장치, 톱니바퀴, 피스톤, 변속기에 전선에 온갖 잡동사니 무더기입니다. 몇몇 의복을 향상시키는 일에 사용됩니다.</ApparelloWhizbang.description>
+  
+	<SchemKit.label>설계도 도구</SchemKit.label>
+	<SchemKit.description>설계도를 만드는 일에 필요합니다.</SchemKit.description>
+  
+	<ScySchem.label>설계도: 사이더 골격</ScySchem.label>
+	<ScySchem.description>사이더 골격을 만들 때 필요합니다.</ScySchem.description>
+  
+	<HiveSchem.label>설계도: 군락갑옷</HiveSchem.label>
+	<HiveSchem.description>군락갑옷을 만들 때 필요합니다.</HiveSchem.description>
+  
+	<HiveHelmSchem.label>설계도: 메카노이드 보호모</HiveHelmSchem.label>
+	<HiveHelmSchem.description>여러 보호모를 만들 때 필요합니다.</HiveHelmSchem.description>
+  
+	<GlitterSchem.label>설계도 묶음: 번화계 기술</GlitterSchem.label>
+	<GlitterSchem.description>강화갑옷을 만들 때 필요합니다.</GlitterSchem.description>
+  
+	<AISchem.label>설계도: 인공인격 핵 신경 향상기</AISchem.label>
+	<AISchem.description>이상한 보호모의 설계도입니다. 광고한 대로 작동하지도 않을 것으로 보입니다. "풰, 이런 생각 들고 온 놈은 분명 미친 놈이야!"</AISchem.description>
+  
+	<ShieldSchem.label>설계도: 개인 보호막</ShieldSchem.label>
+	<ShieldSchem.description>개인 보호막의 설계도입니다. 이 기술은 여러가지 다른 물건에 적용될 수 있습니다. 아마도요.</ShieldSchem.description>
+
+</LanguageData>

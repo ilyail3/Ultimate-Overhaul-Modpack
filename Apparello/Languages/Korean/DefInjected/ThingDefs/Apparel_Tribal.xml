@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<!--suppress ALL -->
+<LanguageData>
+  
+	<Apparello_Tunic.label>튜닉</Apparello_Tunic.label>
+	<Apparello_Tunic.description>숙련된 사람이 아주 매끄럽게 잘 만든 전신 복장으로 착용자를 큰 위협에서도 보호할 수 있습니다.</Apparello_Tunic.description>
+  
+	<Apparello_Mogo.label>제의 튜닉</Apparello_Mogo.label>
+	<Apparello_Mogo.description>지금은 멸망한 츄 온 투나 나 미흐 - 줄여서 엘 모고라 불리던 고대 부족의 의식용 의복입니다. 엘 모고의 머팔로 예언자들은 잠든 신을 태운 세 개의 운석이 하늘에서 떨어질 것이라 예언했습니다. 대중적으로 이 신들은 정신계로 통하는 문을 지을 것이라 믿었습니다. 이 복장은 살해당한 신들의 영혼을 묶어 문으로의 통행을 가능케 하려는 의도로 만들어졌습니다. </Apparello_Mogo.description>
+  
+	<Apparello_Tribalshield.label>부족 방패</Apparello_Tribalshield.label>
+	<Apparello_Tribalshield.description>부족민들이 총알을 막으면서 위대한 보호자 '쉬르드-쉬르드 데 가우르디안'의 용기를 받으려는 의도로 만들었습니다.</Apparello_Tribalshield.description>
+
+</LanguageData>

@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<!--suppress ALL -->
+<LanguageData>
+  
+	<Apparello_Tophat.label>실크 모자</Apparello_Tophat.label>
+	<Apparello_Tophat.description>림 월드에서는 흔치 않은 광경입니다. 착용자는 미개한 존재들의 위에 있는 기분을 느낄 수 있습니다.</Apparello_Tophat.description>
+
+	<Apparello_Headset.label>헤드셋과 스카프</Apparello_Headset.label>
+	<Apparello_Headset.description>통신할 때 쓰이곤 했습니다. 선이 없으며 작동하지 않습니다. 그러나 왠지 더 멋져보입니다!
+	</Apparello_Headset.description>
+
+	<Apparello_Hardhat.label>안전모</Apparello_Hardhat.label>
+	<Apparello_Hardhat.description>전 은하의 건설 노동자들이 주로 사용합니다. 악명높은 도시락통, 망치나 벽돌의 낙하로부터 수 많은 인명을 구했습니다.
+	</Apparello_Hardhat.description>
+
+	<Apparello_Plainhat.label>평야방랑자의 모자</Apparello_Plainhat.label>
+	<Apparello_Plainhat.description>모자를 날려보낼 정도로 바람이 강한 사막 평야에서 일하던 사람이 만든, 무게추가 달린 모자입니다.
+	</Apparello_Plainhat.description>
+
+	<Apparello_Tradecone.label>상인의 모자</Apparello_Tradecone.label>
+	<Apparello_Tradecone.description>여행하는 상인들과 벼를 재배하는 농부들은 종종 이런 모자로 햇빛을 가리곤 했습니다. 매우 동양적입니다.
+	</Apparello_Tradecone.description>
+
+	<Apparello_Chefhat.label>주방장 모자</Apparello_Chefhat.label>
+	<Apparello_Chefhat.description>이 상징적인 모자는 실제로도 쓰는 이유가 있습니다. 머리카락이 떨어지는 걸 막아주니까요. 당신의 스프에서 머리카락을 찾는다는 건 대부분의 경우 화난 손님을 뜻합니다.
+	</Apparello_Chefhat.description>
+
+	<Apparello_Medihelmet.label>의무병 보호모</Apparello_Medihelmet.label>
+	<Apparello_Medihelmet.description>개인 보호구의 필수적인 부분입니다. 수류탄의 폭발로 인한 피해를 일부 흡수합니다.
+	</Apparello_Medihelmet.description>
+
+	<Apparello_Medband.label>의무병 스카프</Apparello_Medband.label>
+	<Apparello_Medband.description>의무병의 스카프입니다. 군중 속에서 의무병을 찾을 때 사용합니다.
+	</Apparello_Medband.description>
+
+	<Apparello_ohlala.label>반짝이는 왕관</Apparello_ohlala.label>
+	<Apparello_ohlala.description>경외감을 갖게 하는 왕관입니다. 대화 상대의 심장이 빠르게 뛰도록 만듭니다.
+	</Apparello_ohlala.description>
+
+</LanguageData>

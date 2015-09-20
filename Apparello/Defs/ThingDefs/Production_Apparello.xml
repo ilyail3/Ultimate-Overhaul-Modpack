@@ -1,0 +1,123 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ThingDefs>
+
+
+
+  <ThingDef Name="BuildingBase" Abstract="True">
+    <category>Building</category>
+    <soundImpactDefault>BulletImpactMetal</soundImpactDefault>
+    <selectable>true</selectable>
+    <drawerType>MapMeshAndRealTime</drawerType>
+    <terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
+    <repairEffect>Repair</repairEffect>
+    <leaveResourcesWhenKilled>true</leaveResourcesWhenKilled>
+    <filthLeaving>BuildingRubble</filthLeaving>
+  </ThingDef>
+
+
+  <!-- ========================= Work tables ========================== -->
+
+
+
+<!-- Item Shelf -->
+
+  <ThingDef ParentName="BuildingBase">
+    <defName>Item_shelf</defName>
+    <label>items shelf</label>
+    <thingClass>Building_Storage</thingClass>
+    <graphicData>
+	<texPath>Tables/SchemRack</texPath>
+    <graphicClass>Graphic_Single</graphicClass>
+	<drawSize>(4,1)</drawSize>
+	</graphicData>
+    <altitudeLayer>Waist</altitudeLayer>
+    <passability>PassThroughOnly</passability>
+    <castEdgeShadows>true</castEdgeShadows>
+	<fillPercent>0.3</fillPercent>
+	<pathCost>60</pathCost>
+	<holdsRoof>true</holdsRoof>
+    <stuffCategories>
+      <li>Metallic</li>
+      <li>Woody</li>
+      <li>Stony</li>
+    </stuffCategories>
+     <costStuffCount>60</costStuffCount>
+    <statBases>
+      <MaxHitPoints>100</MaxHitPoints>
+      <WorkToMake>1100</WorkToMake>
+      <Flammability>1.0</Flammability>
+    </statBases>
+    <description>Haulers carry items here for storage.</description>
+    <size>(4,1)</size>
+    <building>
+	<preventDeterioration>true</preventDeterioration>
+      <fixedStorageSettings>
+        <priority>Important</priority>
+        <filter>
+          <categories>
+            <li>Items</li>
+            <li>Manufactured</li>
+            <li>Exotic</li>
+          </categories>
+		  <exceptedCategories>
+			<li>Weapons</li>
+		  </exceptedCategories>
+        </filter>
+      </fixedStorageSettings>
+    </building>
+    <inspectorTabs>
+      <li>ITab_Storage</li>
+    </inspectorTabs>
+    <designationCategory>Storage</designationCategory>
+    <staticSunShadowHeight>0.3</staticSunShadowHeight>
+    <surfaceType>Item</surfaceType>
+  </ThingDef>
+  
+  <ThingDef ParentName="BuildingBase">
+    <defName>Tool_shelf</defName>
+    <label>tool shelf</label>
+    <thingClass>Building_Storage</thingClass>
+    <graphicData>
+	<texPath>Tables/SchemRack</texPath>
+    <graphicClass>Graphic_Single</graphicClass>
+	<drawSize>(4,1)</drawSize>
+	</graphicData>
+    <altitudeLayer>Waist</altitudeLayer>
+    <passability>PassThroughOnly</passability>
+    <castEdgeShadows>true</castEdgeShadows>
+	<fillPercent>0.3</fillPercent>
+	<pathCost>60</pathCost>
+	<holdsRoof>true</holdsRoof>
+    <stuffCategories>
+      <li>Metallic</li>
+      <li>Woody</li>
+      <li>Stony</li>
+    </stuffCategories>
+     <costStuffCount>60</costStuffCount>
+    <statBases>
+      <MaxHitPoints>100</MaxHitPoints>
+      <WorkToMake>1100</WorkToMake>
+      <Flammability>1.0</Flammability>
+    </statBases>
+    <description>Haulers carry items here for storage.</description>
+    <size>(4,1)</size>
+    <building>
+	<preventDeterioration>true</preventDeterioration>
+      <fixedStorageSettings>
+        <priority>Important</priority>
+        <filter>
+          <categories>
+            <li>Tools</li>
+          </categories>
+        </filter>
+      </fixedStorageSettings>
+    </building>
+    <inspectorTabs>
+      <li>ITab_Storage</li>
+    </inspectorTabs>
+    <designationCategory>Storage</designationCategory>
+    <staticSunShadowHeight>0.3</staticSunShadowHeight>
+    <surfaceType>Item</surfaceType>
+  </ThingDef>
+
+</ThingDefs>

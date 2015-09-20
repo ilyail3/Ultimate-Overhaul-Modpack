@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<!--suppress ALL -->
+<LanguageData>
+  
+	<Apparello_GShellWreck.label>망가진 강화경갑</Apparello_GShellWreck.label>
+	<Apparello_GShellWreck.description>망가진 강화경갑입니다. 경보병과 지원병을 위해 만들어졌었습니다.</Apparello_GShellWreck.description>
+  
+	<Apparello_PowerPants.label>강화갑옷(아래 반쪽)</Apparello_PowerPants.label>
+	<Apparello_PowerPants.description>강화갑옷의 다리 부분입니다. 번화계 공습병들이 자주 쓰던 물건의 잔해입니다.</Apparello_PowerPants.description>
+  
+	<Apparello_PowerTop.label>강화갑옷(위 반쪽)</Apparello_PowerTop.label>
+	<Apparello_PowerTop.description>강화갑옷의 몸통 부분입니다. 번화계 공습병들이 자주 쓰던 물건의 잔해입니다.</Apparello_PowerTop.description>
+
+</LanguageData>

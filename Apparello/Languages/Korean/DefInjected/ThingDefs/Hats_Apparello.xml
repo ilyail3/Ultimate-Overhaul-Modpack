@@ -1,0 +1,53 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<!--suppress ALL -->
+<LanguageData>
+  
+	<Apparello_Beret.label>베레모</Apparello_Beret.label>
+	<Apparello_Beret.description>부드러우면서도 머리를 따듯하게 해줍니다. 임무를 받지 않은 군인들에게서 자주 볼 수 있습니다. 유니폼은 존경을 불러 일으키곤 합니다.</Apparello_Beret.description>
+  
+	<Apparello_Fedora.label>중절모</Apparello_Fedora.label>
+	<Apparello_Fedora.description>아, 이것 좀 보세요! 이 모자들은 조폭이나 공무원들과 연관되곤 합니다. 기본적으론 둘 다 똑같습니다.</Apparello_Fedora.description>
+  
+	<Apparello_Cardshark.label>노름꾼 모자</Apparello_Cardshark.label>
+	<Apparello_Cardshark.description>멋지고 우아하며 만지면 부드럽습니다. 서부 복장의 중요한 부분으로 알려져 있습니다. 특히 노름꾼들이나 다른 손버릇이 좋지 않은 사람들 사이에서요.</Apparello_Cardshark.description>
+  
+	<Apparello_Bandit.label>무장강도 모자와 스카프</Apparello_Bandit.label>
+	<Apparello_Bandit.description>멋지고 우아하며 만지면 부드럽습니다. 서부 복장의 중요한 부분으로 알려져 있습니다. 특히 노름꾼들이나 다른 손버릇이 좋지 않은 사람들 사이에서요. 강도스러움이 추가됩니다.</Apparello_Bandit.description>
+  
+	<Apparello_Furhat.label>두꺼운 털모자</Apparello_Furhat.label>
+	<Apparello_Furhat.description>추운 겨울에서 체온을 유지하세요. 털모자로요! 그러나 조심하세요. 어떤 장소에선 털이 당신을 입으니까요!</Apparello_Furhat.description>
+  
+	<Apparello_Woolcap.label>털실 모자</Apparello_Woolcap.label>
+	<Apparello_Woolcap.description>털실로 만든 털실 모자입니다. 머리를 따듯하게 하는 일에는 아무것도 이걸 이길 수 없습니다.</Apparello_Woolcap.description>
+  
+	<Apparello_Tricorn.label>삼각 모자</Apparello_Tricorn.label>
+	<Apparello_Tricorn.description>아주 오랜 옛날에 유행이 끝났습니다. 대체 왜 이걸 아직도 입는걸까요? 어쨌거나 아직 편안합니다.</Apparello_Tricorn.description>
+  
+	<Apparello_Sombrero.label>챙 넓은 모자</Apparello_Sombrero.label>
+	<Apparello_Sombrero.description>낮잠 중에 햇빛에서 눈을 보호하세요! Ay caramba!</Apparello_Sombrero.description>
+  
+	<Apparello_Moron.label>고대 보호모</Apparello_Moron.label>
+	<Apparello_Moron.description>17세기 보호모입니다. 중세계에서는 아주 흔합니다. 그러나 이 물건을 찾았다는 건 보통 우주 탐사대 '문따개' 부대의 흔적을 뜻합니다.
+		\n'문따개' 부대는 역사상 가장 컸던 탐험대로, 마지막 목표지는 알려지지 않았지만 보통 승천계로 추측되곤 합니다. 그 후로 아무도 보이지 않았습니다.
+		\n이들의 보호모는 여전히 우주 곳곳을 떠다니고 있습니다.</Apparello_Moron.description>
+  
+	<Apparello_Hood.label>후드</Apparello_Hood.label>
+	<Apparello_Hood.description>바람으로부터의 궁극의 보호! 이런 종류의 모자는 보통 어두운 골목에서 검은 그림자가 쓴 모습을 찾을 수 있습니다. 빛이 날 듯한 눈으로, 당신을 찌를 준비르...커헉</Apparello_Hood.description>
+  
+	<Apparello_Lecap.label>군단병 모자</Apparello_Lecap.label>
+	<Apparello_Lecap.description>반란군들의 중요한 구성 요소입니다.</Apparello_Lecap.description>
+  
+	<Apparello_Vandal.label>강도 모자와 스카프</Apparello_Vandal.label>
+	<Apparello_Vandal.description>조밀계 범죄자들은 종종 이걸 쓰고 상점들을 털고 다닙니다. 이런 종류의 범죄자들은 난사광, 벽돌 투척, 쓰레기통 엎기 따위로 유명합니다.</Apparello_Vandal.description>
+  
+	<Apparello_Bandal.label>야구 모자</Apparello_Bandal.label>
+	<Apparello_Bandal.description>공을 방망이로 친 후 '집'으로 달려가는 엄청나게 오래 된 경기에서 쓰는 걸로 가장 유명합니다.</Apparello_Bandal.description>
+  
+	<Apparello_Gas.label>방독면</Apparello_Gas.label>
+	<Apparello_Gas.description>가스 공격으로부터 착용자를 보호하는 크고 무겁고 불편한 방어구입니다. 보통 더 좋은 보호구가 있기 때문에 잘 쓰지 않습니다. 그러나, 약탈자들은 이 도발적인 외형에 반해 자주 쓰고 다닙니다.</Apparello_Gas.description>
+  
+	<Apparello_Cyninja.label>전략팀 머리싸개</Apparello_Cyninja.label>
+	<Apparello_Cyninja.description>현대 시가전에서 전략분대가 사용하도록 디자인 되었습니다. 속도 증강기와 조준 도우미가 미리 장착되어 출하됩니다. 착용자의 뇌를 최소한의 방사선에 노출시킵니다. 지장이 없을 정도로요!</Apparello_Cyninja.description>
+
+
+</LanguageData>

@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ThingCategoryDefs>
+
+  <ThingCategoryDef>
+    <defName>TrinkelloCat</defName>
+    <label>trinkets</label>
+    <parent>Apparel</parent>
+  </ThingCategoryDef>
+  
+</ThingCategoryDefs>
+
+

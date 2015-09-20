@@ -1,0 +1,113 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ThingDefs>
+
+  <ThingDef Name="ApparelBase" Abstract="True">
+    <thingClass>Apparel</thingClass>
+    <category>Item</category>
+    <selectable>True</selectable>
+    <pathCost>10</pathCost>
+    <useHitPoints>True</useHitPoints>
+    <graphicData>
+      <onGroundRandomRotateAngle>35</onGroundRandomRotateAngle>
+    </graphicData>
+    <drawGUIOverlay>true</drawGUIOverlay>
+    <statBases>
+      <MaxHitPoints>100</MaxHitPoints>
+      <Flammability>1.0</Flammability>
+      <DeteriorationRate>1</DeteriorationRate>
+      <SellPriceFactor>0.35</SellPriceFactor>
+    </statBases>
+    <altitudeLayer>Item</altitudeLayer>
+    <alwaysHaulable>True</alwaysHaulable>
+    <tickerType>Never</tickerType>
+    <thingCategories>
+      <li>Shirts</li>
+    </thingCategories>
+    <comps>
+      <li>
+        <compClass>CompForbiddable</compClass>
+      </li>
+      <li>
+        <compClass>CompColorable</compClass>
+      </li>
+      <li>
+        <compClass>CompQuality</compClass>
+      </li>
+    </comps>
+  </ThingDef>
+  
+  <ThingDef Name="ApparelMakeableBase" ParentName="ApparelBase" Abstract="True">
+    <recipeMaker>
+      <workSpeedStat>TailoringSpeed</workSpeedStat>
+      <workSkill>Crafting</workSkill>
+      <effectWorking>Tailor</effectWorking>
+      <soundWorking>Recipe_Tailor</soundWorking>
+        <recipeUsers>
+        <li>TableTailor</li>
+      </recipeUsers>
+      <unfinishedThingDef>UnfinishedApparel</unfinishedThingDef>
+    </recipeMaker>
+  </ThingDef>
+
+
+
+  <ThingDef ParentName="ApparelMakeableBase">
+    <defName>Apparello_Preston</defName>
+    <description>Captain's uniform jacket. Gives the wearer very commanding presence. Most often seen on Starfleet admirals, Commanders worn with garments like these would only need to say "Make it so" and all the tachyon colliders would be rerouted to the shields to withstand the devastating blast no other ships could even hope to survive</description>
+    <label>uniform jacket</label>
+    <graphicData>
+      <texPath>Apparel/Preston/Preston</texPath>
+    <graphicClass>Graphic_Single</graphicClass>
+	</graphicData>
+    <costStuffCount>90</costStuffCount>
+    <stuffCategories>
+      <li>Fabric</li>
+      <li>Leathery</li>
+    </stuffCategories>
+    <statBases>
+	<MarketValue>800</MarketValue>
+	<SellPriceFactor>0.05</SellPriceFactor>
+	  <WorkToMake>10000</WorkToMake>
+      <ArmorRating_Blunt>0.04</ArmorRating_Blunt>
+      <ArmorRating_Sharp>0.08</ArmorRating_Sharp>
+      <ArmorRating_Heat>0.03</ArmorRating_Heat>
+      <Insulation_Cold>-15</Insulation_Cold>
+      <Insulation_Heat>3</Insulation_Heat>
+    </statBases>
+    <equippedStatOffsets>
+      <RecruitPrisonerChance>0.02</RecruitPrisonerChance>
+      <SocialImpact>0.05</SocialImpact>
+      <MentalBreakThreshold>-0.01</MentalBreakThreshold>
+      <MoveSpeed>-0.1</MoveSpeed>
+    </equippedStatOffsets>
+    <apparel>
+      <bodyPartGroups>
+        <li>Torso</li>
+        <li>Arms</li>
+      </bodyPartGroups>
+      <worngraphicPath>Apparel/Preston/Preston</worngraphicPath>
+      <layers>
+        <li>Shell</li>
+      </layers>
+      <commonality>1</commonality>
+      <tags>
+        <li>Outlander</li>
+        <li>Spacer</li>
+        <li>Industrial</li>
+      </tags>
+      <defaultOutfitTags>
+        <li>Worker</li>
+      </defaultOutfitTags>
+    </apparel>
+    <colorGenerator Class="ColorGenerator_Options">
+			<options>
+				<li>
+					<weight>6</weight>
+					<max>RGBA(1,1,1,1)</max>
+					<min>RGBA(0.70,0.70,0.70,1)</min>
+				</li>
+			</options>
+		</colorGenerator>
+  </ThingDef>
+
+</ThingDefs>

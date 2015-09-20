@@ -1,0 +1,230 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ThingDefs>
+
+  <ThingDef Name="ApparelBase" Abstract="True">
+    <thingClass>Apparel</thingClass>
+    <category>Item</category>
+    <selectable>True</selectable>
+    <pathCost>10</pathCost>
+    <useHitPoints>True</useHitPoints>
+    <graphicData>
+      <onGroundRandomRotateAngle>35</onGroundRandomRotateAngle>
+    </graphicData>
+    <drawGUIOverlay>true</drawGUIOverlay>
+    <statBases>
+      <MaxHitPoints>100</MaxHitPoints>
+      <Flammability>1.0</Flammability>
+      <DeteriorationRate>1</DeteriorationRate>
+      <SellPriceFactor>0.35</SellPriceFactor>
+    </statBases>
+    <altitudeLayer>Item</altitudeLayer>
+    <alwaysHaulable>True</alwaysHaulable>
+    <tickerType>Never</tickerType>
+    <comps>
+      <li>
+        <compClass>CompForbiddable</compClass>
+      </li>
+      <li>
+        <compClass>CompColorable</compClass>
+      </li>
+      <li>
+        <compClass>CompQuality</compClass>
+      </li>
+    </comps>
+  </ThingDef>
+
+  <ThingDef Name="ApparelMakeableBase" ParentName="ApparelBase" Abstract="True">
+    <recipeMaker>
+      <workSpeedStat>TailoringSpeed</workSpeedStat>
+      <workSkill>Crafting</workSkill>
+      <effectWorking>Tailor</effectWorking>
+      <soundWorking>Recipe_Tailor</soundWorking>
+        <recipeUsers>
+        <li>TableTailor</li>
+      </recipeUsers>
+      <unfinishedThingDef>UnfinishedApparel</unfinishedThingDef>
+    </recipeMaker>
+  </ThingDef>
+
+	
+  <ThingDef ParentName="ApparelBase">
+    <defName>Apparello_XcomOne</defName>
+    <label>Standard issue overalls</label>
+    <description>Standard military issue air force overalls. Very common amongst orbital drop squads</description>
+    <graphicData>
+	<texPath>Apparel/Xcoveralls/Xcom1</texPath>
+    <graphicClass>Graphic_Single</graphicClass>
+	</graphicData>
+    <thingCategories>
+      <li>Shirts</li>
+    </thingCategories>
+	<costStuffCount>65</costStuffCount>
+    <stuffCategories>
+      <li>Fabric</li>
+    </stuffCategories>
+    <statBases>
+      <MarketValue>450</MarketValue>
+	  <SellPriceFactor>0.05</SellPriceFactor>
+	  <WorkToMake>12000</WorkToMake>
+      <ArmorRating_Sharp>0.08</ArmorRating_Sharp>
+      <ArmorRating_Blunt>0.06</ArmorRating_Blunt>
+      <ArmorRating_Heat>0.1</ArmorRating_Heat>
+      <ArmorRating_Electric>0.2</ArmorRating_Electric>
+      <Insulation_Cold>-8</Insulation_Cold>
+      <Insulation_Heat>-5</Insulation_Heat>
+    </statBases>
+    <equippedStatOffsets>
+      <WorkSpeedGlobal>0.05</WorkSpeedGlobal> <!-- Overalls make you work faster IRL too don't they? :-p -Iggy --> <!-- As a former carpenter; Can confirm ~Shinz -->
+    </equippedStatOffsets>
+    <apparel>
+      <bodyPartGroups>
+        <li>Torso</li>
+        <li>Arms</li>
+      </bodyPartGroups>
+      <worngraphicPath>Apparel/Xcoveralls/Xcom1</worngraphicPath>
+      <layers>
+        <li>OnSkin</li>
+      </layers>
+      <commonality>1</commonality>
+      <tags>
+        <li>Spacer</li>
+      </tags>
+      <defaultOutfitTags>
+        <li>Worker</li>
+        <li>Soldier</li>
+      </defaultOutfitTags>
+    </apparel>
+		<colorGenerator Class="ColorGenerator_Options">
+			<options>
+				<li>
+					<weight>20</weight>
+					<only>RGBA(1,1,1,1)</only>
+				</li>
+			</options>
+		</colorGenerator>
+  </ThingDef>
+
+<!-- Craftable Xcom -->
+
+  <ThingDef ParentName="ApparelMakeableBase">
+    <defName>Apparello_XcomOneCraft</defName>
+    <label>Overalls</label>
+    <description>Spaceship engineers all across the galaxy are known to wear these for the resistance they provide; against their worst enemy.. The electric cables.</description>
+    <graphicData>
+	<texPath>Apparel/Xcoveralls/Xcom1</texPath>
+    <graphicClass>Graphic_Single</graphicClass>
+	</graphicData>
+    <thingCategories>
+      <li>Shirts</li>
+    </thingCategories>
+    <costStuffCount>60</costStuffCount>
+    <stuffCategories>
+      <li>Fabric</li>
+    </stuffCategories>
+    <statBases>
+	  <MarketValue>600</MarketValue>
+	  <SellPriceFactor>0.05</SellPriceFactor>
+      <WorkToMake>8000</WorkToMake>
+      <ArmorRating_Heat>0.08</ArmorRating_Heat>
+      <ArmorRating_Electric>0.15</ArmorRating_Electric>
+      <Insulation_Cold>-5</Insulation_Cold>
+      <Insulation_Heat>-5</Insulation_Heat>
+    </statBases>
+    <equippedStatOffsets>
+      <WorkSpeedGlobal>0.02</WorkSpeedGlobal>
+    </equippedStatOffsets>
+    <apparel>
+      <bodyPartGroups>
+        <li>Torso</li>
+        <li>Arms</li>
+      </bodyPartGroups>
+      <worngraphicPath>Apparel/Xcoveralls/Xcom1</worngraphicPath>
+      <layers>
+        <li>OnSkin</li>
+      </layers>
+      <commonality>1</commonality>
+      <tags>
+        <li>Spacer</li>
+        <li>Military</li>
+      </tags>
+      <defaultOutfitTags>
+        <li>Worker</li>
+        <li>Soldier</li>
+      </defaultOutfitTags>
+    </apparel>
+		<colorGenerator Class="ColorGenerator_Options">
+			<options>
+				<li>
+					<weight>20</weight>
+					<only>RGBA(1,1,1,1)</only>
+				</li>
+			</options>
+		</colorGenerator>
+  </ThingDef>
+
+
+  <ThingDef ParentName="ApparelBase">
+    <defName>Apparello_Syndicate</defName>
+    <thingClass>PersonalShield</thingClass>
+    <label>Shielded coat</label>
+    <description>A long coat with bulletproof alloy breastplate, fitted with personal shield. Modern technology full of grit</description>
+    <graphicData>
+	<texPath>Apparel/Syndicate/Synd</texPath>
+    <graphicClass>Graphic_Single</graphicClass>
+	</graphicData>
+    <thingCategories>
+      <li>PersonalShields</li>
+    </thingCategories>
+    <tickerType>Normal</tickerType>
+	<costStuffCount>60</costStuffCount>
+    <stuffCategories>
+      <li>Fabric</li>
+    </stuffCategories>
+    <statBases>
+      <MaxHitPoints>250</MaxHitPoints>
+	  <WorkToMake>12000</WorkToMake>
+      <MarketValue>1000</MarketValue>
+	  <SellPriceFactor>0.05</SellPriceFactor>
+      <ArmorRating_Blunt>0.13</ArmorRating_Blunt>
+      <ArmorRating_Sharp>0.28</ArmorRating_Sharp>
+      <ArmorRating_Heat>0.2</ArmorRating_Heat>
+      <Insulation_Cold>-18</Insulation_Cold>
+      <PersonalShieldRechargeRate>0.10</PersonalShieldRechargeRate>
+      <PersonalShieldEnergyMax>1.1</PersonalShieldEnergyMax>
+      <DeteriorationRate>0.3</DeteriorationRate>
+    </statBases>
+    <equippedStatOffsets>
+      <MoveSpeed>-1</MoveSpeed>
+      <WorkSpeedGlobal>-0.05</WorkSpeedGlobal>
+    </equippedStatOffsets>
+    <apparel>
+      <bodyPartGroups>
+        <li>Torso</li>
+        <li>Arms</li>
+      </bodyPartGroups>
+      <worngraphicPath>Apparel/Syndicate/Synd</worngraphicPath>
+      <layers>
+        <li>Middle</li>
+        <li>Shell</li>
+      </layers>
+      <commonality>1</commonality>
+      <tags>
+        <li>SyndicateShield</li>
+      </tags>
+    </apparel>
+		<colorGenerator Class="ColorGenerator_Options">
+			<options>
+				<li>
+					<weight>20</weight>
+					<only>RGBA(1,1,1,1)</only>
+				</li>
+				<li>
+					<weight>5</weight>
+					<max>RGBA(1,1,1,1)</max>
+					<min>RGBA(0.30,0.30,0.30,1)</min>
+				</li>				
+			</options>
+		</colorGenerator>
+  </ThingDef>
+
+</ThingDefs>

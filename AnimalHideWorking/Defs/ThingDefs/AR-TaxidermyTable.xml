@@ -1,0 +1,65 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ThingDefs>
+
+  <ThingDef Name="BuildingBase" Abstract="True">
+    <category>Building</category>
+    <soundImpactDefault>BulletImpactMetal</soundImpactDefault>
+    <selectable>true</selectable>
+    <drawerType>MapMeshAndRealTime</drawerType>
+    <terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
+    <repairEffect>Repair</repairEffect>
+	<leaveResourcesWhenKilled>true</leaveResourcesWhenKilled>
+    <filthLeaving>BuildingRubble</filthLeaving>
+  </ThingDef>
+
+  <ThingDef ParentName="BuildingBase">
+    <DefName>TableTaxidermy</DefName>
+    <label>taxidermy table</label>
+    <ThingClass>Building_WorkTable</ThingClass>
+    <Description>A workbench equipped for stuffing things.</Description>
+	<graphicData>
+      <texPath>Things/Building/SCProduction/SewingTable2x1</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+	  <drawSize>(2,1)</drawSize>
+	</graphicData>
+    <CostList>
+      <WoodPlank>70</WoodPlank>
+      <SteelBar>120</SteelBar>
+    </CostList>
+    <constructEffect>ConstructWood</constructEffect>
+    <AltitudeLayer>Waist</AltitudeLayer>
+    <useHitPoints>True</useHitPoints>
+    <statBases>
+      <WorkToMake>2500</WorkToMake>
+      <MaxHitPoints>180</MaxHitPoints>
+      <Flammability>1.0</Flammability>
+    </statBases>
+	<Size>(2,1)</Size>
+    <DesignationCategory>ProductionGoods</DesignationCategory>
+	<staticSunShadowHeight>0.20</staticSunShadowHeight>
+    <Passability>PassThroughOnly</Passability>
+	<pathCost>60</pathCost>
+    <hasInteractionCell>True</hasInteractionCell>
+    <interactionCellOffset>(1,0,-1)</interactionCellOffset>
+    <surfaceType>Item</surfaceType>
+    <inspectorTabs>
+      <li>ITab_Bills</li>
+    </inspectorTabs>
+    <building>
+      <spawnedConceptLearnOpportunity>BillsTab</spawnedConceptLearnOpportunity>
+    </building>
+	<comps>
+      <li>
+        <compClass>CompAffectedByFacilities</compClass>
+        <linkableFacilities>
+          <li>ToolCabinet</li>
+        </linkableFacilities>
+      </li>
+    </comps>
+	<placeWorkers>
+			<li>PlaceWorker_ShowFacilitiesConnections</li>
+		</placeWorkers>
+	<researchPrerequisite>CraftingI</researchPrerequisite>
+  </ThingDef>
+
+</ThingDefs>

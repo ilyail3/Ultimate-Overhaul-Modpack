@@ -1,0 +1,552 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ThingDefs>
+
+  <ThingDef Name="ApparelBase" Abstract="True">
+    <thingClass>Apparel</thingClass>
+    <category>Item</category>
+    <selectable>True</selectable>
+    <pathCost>10</pathCost>
+    <useHitPoints>True</useHitPoints>
+	<graphicData>
+      <onGroundRandomRotateAngle>35</onGroundRandomRotateAngle>
+    </graphicData>
+    <drawGUIOverlay>true</drawGUIOverlay>
+	<apparel>
+      <defaultOutfitTags>
+        <li>Worker</li>
+      </defaultOutfitTags>
+	</apparel>
+    <statBases>
+      <MaxHitPoints>100</MaxHitPoints>
+      <Flammability>1.0</Flammability>
+      <DeteriorationRate>0.7</DeteriorationRate>
+      <SellPriceFactor>0.35</SellPriceFactor>
+    </statBases>
+    <altitudeLayer>Item</altitudeLayer>
+    <alwaysHaulable>True</alwaysHaulable>
+    <tickerType>Never</tickerType>
+    <thingCategories>
+      <li>Headgear</li>
+    </thingCategories>
+    <comps>
+      <li>
+        <compClass>CompForbiddable</compClass>
+      </li>
+      <li>
+        <compClass>CompColorable</compClass>
+      </li>
+      <li>
+        <compClass>CompQuality</compClass>
+      </li>
+    </comps>
+  </ThingDef>
+
+
+
+  <!--McDuck-->
+
+  <ThingDef ParentName="ApparelBase">
+    <defName>Apparello_Tophat</defName>
+    <label>Tophat</label>
+    <description>Rare sight on the rimworlds, Tophats make the wearer feel the power over the lesser beings</description>
+    <graphicData>
+	<texPath>Hats/Display/Top</texPath>
+    <graphicClass>Graphic_Single</graphicClass>
+	</graphicData>
+    <statBases>
+	  <MarketValue>1500</MarketValue>
+	  <SellPriceFactor>0.05</SellPriceFactor>
+      <ArmorRating_Blunt>0.03</ArmorRating_Blunt>
+      <ArmorRating_Sharp>0.03</ArmorRating_Sharp>
+      <Insulation_Cold>-2</Insulation_Cold>
+      <Insulation_Heat>-1</Insulation_Heat>
+    </statBases>
+    <equippedStatOffsets>
+      <SocialImpact>0.05</SocialImpact>
+      <TradePriceImprovement>0.1</TradePriceImprovement>
+    </equippedStatOffsets>
+    <apparel>
+      <bodyPartGroups>
+        <li>UpperHead</li>
+      </bodyPartGroups>
+      <worngraphicPath>Hats/Top</worngraphicPath>
+      <layers>
+        <li>Overhead</li>
+      </layers>
+      <commonality>1</commonality>
+      <tags>
+        <li>Outlander</li>
+        <li>Spacer</li>
+        <li>SetTalker</li>
+        <li>SetTrader</li>
+      </tags>
+    </apparel>
+    <colorGenerator Class="ColorGenerator_Options">
+      <options>
+        <li>
+          <weight>4</weight>
+          <min>RGBA(0.3,0.3,0.3,1)</min>
+          <max>RGBA(0.9,0.9,0.9,1)</max>
+        </li>
+      </options>
+    </colorGenerator>
+  </ThingDef>
+
+
+
+
+
+  <!--Headset-->
+
+  <ThingDef ParentName="ApparelBase">
+    <defName>Apparello_Headset</defName>
+    <label>Headset with bandana</label>
+    <description>Common usage for these has been communication. it's wireless and doesn't work. But it gives the impression that you're somehow more social!</description>
+    <graphicData>
+	<texPath>Hats/Display/Headset</texPath>
+    <graphicClass>Graphic_Single</graphicClass>
+	</graphicData>
+    <statBases>
+	  <MarketValue>800</MarketValue>
+	  <SellPriceFactor>0.05</SellPriceFactor>
+      <ArmorRating_Blunt>0.02</ArmorRating_Blunt>
+      <ArmorRating_Sharp>0.02</ArmorRating_Sharp>
+      <Insulation_Heat>1</Insulation_Heat>
+    </statBases>
+    <equippedStatOffsets>
+      <SocialImpact>0.06</SocialImpact>
+      <GiftImpact>0.08</GiftImpact>
+      <TradePriceImprovement>0.04</TradePriceImprovement>
+    </equippedStatOffsets>
+    <apparel>
+      <bodyPartGroups>
+        <li>UpperHead</li>
+      </bodyPartGroups>
+      <worngraphicPath>Hats/Headset</worngraphicPath>
+      <layers>
+        <li>Overhead</li>
+      </layers>
+      <commonality>1</commonality>
+      <tags>
+        <li>SetTalker</li>
+        <li>SetTrader</li>
+        <li>Spacer</li>
+      </tags>
+    </apparel>
+    <colorGenerator Class="ColorGenerator_Options">
+      <options>
+        <li>
+          <weight>4</weight>
+          <min>RGBA(0.3,0.3,0.3,1)</min>
+          <max>RGBA(0.9,0.9,0.9,1)</max>
+        </li>
+      </options>
+    </colorGenerator>
+  </ThingDef>
+
+
+
+
+
+  <!--Hardhat-->
+
+  <ThingDef ParentName="ApparelBase">
+    <defName>Apparello_Hardhat</defName>
+    <label>Hardhat</label>
+    <description>Favoured by the constructions workers all across the galaxy. These are known to have saved lives of many a prey of the infamous falling lunchbox, hammer or brick</description>
+    <graphicData>
+	<texPath>Hats/Display/Hardhat</texPath>
+    <graphicClass>Graphic_Single</graphicClass>
+	</graphicData>
+    <statBases>
+      <MarketValue>1500</MarketValue>
+	  <SellPriceFactor>0.05</SellPriceFactor>
+      <ArmorRating_Blunt>0.4</ArmorRating_Blunt>
+      <ArmorRating_Sharp>0.15</ArmorRating_Sharp>
+      <Insulation_Heat>-1</Insulation_Heat>
+    </statBases>
+    <equippedStatOffsets>
+      <WorkSpeedGlobal>0.02</WorkSpeedGlobal>
+      <StonecuttingSpeed>0.05</StonecuttingSpeed>
+      <ConstructionSpeed>0.15</ConstructionSpeed>
+      <MiningSpeed>0.05</MiningSpeed>
+    </equippedStatOffsets>
+    <apparel>
+      <bodyPartGroups>
+        <li>UpperHead</li>
+      </bodyPartGroups>
+      <worngraphicPath>Hats/Hardhat</worngraphicPath>
+      <layers>
+        <li>Overhead</li>
+      </layers>
+      <commonality>1</commonality>
+      <tags>
+        <li>Military</li>
+        <li>SetWorker</li>
+      </tags>
+    </apparel>
+    <colorGenerator Class="ColorGenerator_Options">
+      <options>
+        <li>
+          <weight>4</weight>
+          <only>RGBA(1,1,1,1)</only>
+        </li>
+      </options>
+    </colorGenerator>
+  </ThingDef>
+
+
+
+
+
+
+
+
+  <!--Farmhat-->
+
+  <ThingDef ParentName="ApparelBase">
+    <defName>Apparello_Plainhat</defName>
+    <label>Plainwalker's hat</label>
+    <description>Weighted hats for the hardy men who worked the desert plains where winds were strong enough to blow mans hat off, and the sun so strong it would fell an ox. But not the Plainsmen! They'd work dusk till dawn! ..or atleast till supper.</description>
+    <graphicData>
+	<texPath>Hats/Display/Tralia</texPath>
+    <graphicClass>Graphic_Single</graphicClass>
+	</graphicData>
+    <statBases>
+	  <MarketValue>500</MarketValue>
+	  <SellPriceFactor>0.05</SellPriceFactor>
+      <ArmorRating_Blunt>0.03</ArmorRating_Blunt>
+      <ArmorRating_Sharp>0.03</ArmorRating_Sharp>
+      <Insulation_Heat>8</Insulation_Heat>
+    </statBases>
+    <equippedStatOffsets>
+      <PlantWorkSpeed>0.15</PlantWorkSpeed>
+    </equippedStatOffsets>
+    <apparel>
+      <bodyPartGroups>
+        <li>UpperHead</li>
+      </bodyPartGroups>
+      <worngraphicPath>Hats/Tralia</worngraphicPath>
+      <layers>
+        <li>Overhead</li>
+      </layers>
+      <commonality>1</commonality>
+      <tags>
+        <li>SetPlanter</li>
+        <li>Outlander</li>
+        <li>Medieval</li>
+      </tags>
+    </apparel>
+    <colorGenerator Class="ColorGenerator_Options">
+      <options>
+        <li>
+          <weight>4</weight>
+          <only>RGBA(1,1,1,1)</only>
+        </li>
+      </options>
+    </colorGenerator>
+  </ThingDef>
+
+
+
+
+  <!--Tradecone-->
+
+  <ThingDef ParentName="ApparelBase">
+    <defName>Apparello_Tradecone</defName>
+    <label>Traders's Paddy hat</label>
+    <description>Traveling merchants and rice paddy farmers would often protect themselves from the sun with hats like these. It has very oriental feel to it.</description>
+    <graphicData>
+	<texPath>Hats/Display/Tradecone</texPath>
+    <graphicClass>Graphic_Single</graphicClass>
+	</graphicData>
+    <statBases>
+	  <MarketValue>2050</MarketValue>
+	  <SellPriceFactor>0.05</SellPriceFactor>
+      <ArmorRating_Blunt>0.03</ArmorRating_Blunt>
+      <ArmorRating_Sharp>0.03</ArmorRating_Sharp>
+      <Insulation_Heat>8</Insulation_Heat>
+    </statBases>
+    <equippedStatOffsets>
+      <PlantWorkSpeed>0.05</PlantWorkSpeed>
+      <TradePriceImprovement>0.15</TradePriceImprovement>
+    </equippedStatOffsets>
+    <apparel>
+      <bodyPartGroups>
+        <li>UpperHead</li>
+      </bodyPartGroups>
+      <worngraphicPath>Hats/Tradecone</worngraphicPath>
+      <layers>
+        <li>Overhead</li>
+      </layers>
+      <commonality>1</commonality>
+      <tags>
+        <li>SetTrader</li>
+        <li>Outlander</li>
+        <li>Oriental</li>
+      </tags>
+    </apparel>
+    <colorGenerator Class="ColorGenerator_Options">
+      <options>
+        <li>
+          <weight>4</weight>
+          <only>RGBA(1,1,1,1)</only>
+        </li>
+      </options>
+    </colorGenerator>
+  </ThingDef>
+
+
+
+
+  <!--Chef-->
+
+  <ThingDef ParentName="ApparelBase">
+    <defName>Apparello_Chefhat</defName>
+    <label>Chef's hat</label>
+    <description>These iconic chef hats do serve an actual purpose - Keeping the hair in check. Finding hair in your soup often means dissatisfied customer.</description>
+    <graphicData>
+	<texPath>Hats/Display/Chef</texPath>
+    <graphicClass>Graphic_Single</graphicClass>
+	</graphicData>
+    <statBases>
+      <MarketValue>500</MarketValue>
+	  <SellPriceFactor>0.05</SellPriceFactor>
+      <ArmorRating_Blunt>0.02</ArmorRating_Blunt>
+      <ArmorRating_Sharp>0.01</ArmorRating_Sharp>
+      <Insulation_Heat>-1</Insulation_Heat>
+    </statBases>
+    <equippedStatOffsets>
+      <CookSpeed>0.05</CookSpeed>
+    </equippedStatOffsets>
+    <apparel>
+      <bodyPartGroups>
+        <li>UpperHead</li>
+      </bodyPartGroups>
+      <worngraphicPath>Hats/Chef</worngraphicPath>
+      <layers>
+        <li>Overhead</li>
+      </layers>
+      <commonality>1</commonality>
+      <tags>
+        <li>SetChef</li>
+      </tags>
+    </apparel>
+    <colorGenerator Class="ColorGenerator_Options">
+      <options>
+        <li>
+          <weight>4</weight>
+          <only>RGBA(1,1,1,1)</only>
+        </li>
+      </options>
+    </colorGenerator>
+  </ThingDef>
+
+
+
+
+
+  <!--Commissar-->
+
+  <ThingDef ParentName="ApparelBase">
+    <defName>Apparello_Commissar</defName>
+    <label>Peaked cap</label>
+    <description>Often seen on military officers. These indigenous alpha mammals of the battlefields tend to be so amazing their skills rubs off on their clothes</description>
+    <graphicData>
+	<texPath>Hats/Display/Commissar</texPath>
+    <graphicClass>Graphic_Single</graphicClass>
+	</graphicData>
+    <statBases>
+      <MarketValue>1250</MarketValue>
+	  <SellPriceFactor>0.05</SellPriceFactor>
+      <ArmorRating_Blunt>0.2</ArmorRating_Blunt>
+      <ArmorRating_Sharp>0.2</ArmorRating_Sharp>
+      <Insulation_Cold>-1</Insulation_Cold>
+      <Insulation_Heat>-1</Insulation_Heat>
+    </statBases>
+    <equippedStatOffsets>
+      <GlobalLearningFactor>0.05</GlobalLearningFactor>
+      <MentalBreakThreshold>-0.10</MentalBreakThreshold>
+    </equippedStatOffsets>
+    <apparel>
+      <bodyPartGroups>
+        <li>UpperHead</li>
+      </bodyPartGroups>
+      <worngraphicPath>Hats/Commissar</worngraphicPath>
+      <layers>
+        <li>Overhead</li>
+      </layers>
+      <commonality>1</commonality>
+      <tags>
+        <li>Spacer</li>
+        <li>SetExplorer</li>
+        <li>Glitter</li>
+        <li>Military</li>
+      </tags>
+    </apparel>
+    <colorGenerator Class="ColorGenerator_Options">
+      <options>
+        <li>
+          <weight>4</weight>
+          <only>RGBA(1,1,1,1)</only>
+        </li>
+      </options>
+    </colorGenerator>
+  </ThingDef>
+
+
+
+
+
+
+
+  <!--Medic-->
+
+  <ThingDef ParentName="ApparelBase">
+    <defName>Apparello_Medihelmet</defName>
+    <label>Medic's kevlar helmet</label>
+    <description>Essential part of personal armor. Used to help absorb the explosion of a grenade.</description>
+    <graphicData>
+	<texPath>BaseTextureModifications/Medihelm/KevlarHelmet</texPath>
+    <graphicClass>Graphic_Single</graphicClass>
+	</graphicData>
+	<thingCategories>
+      <li>ArmorHeadgear</li>
+    </thingCategories>
+    <statBases>
+      <MarketValue>950</MarketValue>
+	  <SellPriceFactor>0.05</SellPriceFactor>
+      <ArmorRating_Blunt>0.1</ArmorRating_Blunt>
+      <ArmorRating_Sharp>0.35</ArmorRating_Sharp>
+    </statBases>
+    <equippedStatOffsets>
+      <MoveSpeed>0.02</MoveSpeed>
+      <HealingSpeed>0.05</HealingSpeed>
+      <BaseHealingQuality>0.05</BaseHealingQuality>
+    </equippedStatOffsets>
+    <apparel>
+      <bodyPartGroups>
+        <li>UpperHead</li>
+      </bodyPartGroups>
+      <worngraphicPath>BaseTextureModifications/Medihelm/KevlarHelmet</worngraphicPath>
+      <layers>
+        <li>Overhead</li>
+      </layers>
+      <commonality>1</commonality>
+      <tags>
+        <li>SetMedical</li>
+        <li>Military</li>
+      </tags>
+      <defaultOutfitTags>
+        <li>Soldier</li>
+      </defaultOutfitTags>
+    </apparel>
+    <colorGenerator Class="ColorGenerator_Options">
+      <options>
+        <li>
+          <weight>4</weight>
+          <only>RGBA(1,1,1,1)</only>
+        </li>
+      </options>
+    </colorGenerator>
+  </ThingDef>
+
+
+
+
+  <!--Medband-->
+
+  <ThingDef ParentName="ApparelBase">
+    <defName>Apparello_Medband</defName>
+    <label>Medic's bandana</label>
+    <description>Medic's bandana. Used to point out medics from the crowd</description>
+    <graphicData>
+	<texPath>Hats/Display/Medband</texPath>
+    <graphicClass>Graphic_Single</graphicClass>
+	</graphicData>
+    <statBases>
+      <MarketValue>400</MarketValue>
+	  <SellPriceFactor>0.05</SellPriceFactor>
+      <ArmorRating_Blunt>0.01</ArmorRating_Blunt>
+      <ArmorRating_Sharp>0.01</ArmorRating_Sharp>
+      <Insulation_Heat>1</Insulation_Heat>
+    </statBases>
+    <equippedStatOffsets>
+      <BaseHealingQuality>0.05</BaseHealingQuality>
+    </equippedStatOffsets>
+    <apparel>
+      <bodyPartGroups>
+        <li>UpperHead</li>
+      </bodyPartGroups>
+      <worngraphicPath>Hats/Medband</worngraphicPath>
+      <layers>
+        <li>Overhead</li>
+      </layers>
+      <commonality>1</commonality>
+      <tags>
+        <li>SetMedical</li>
+        <li>Outlander</li>
+      </tags>
+    </apparel>
+    <colorGenerator Class="ColorGenerator_Options">
+      <options>
+        <li>
+          <weight>4</weight>
+          <only>RGBA(1,1,1,1)</only>
+        </li>
+      </options>
+    </colorGenerator>
+  </ThingDef>
+
+
+
+
+
+
+
+  <!--crowny-->
+
+  <ThingDef ParentName="ApparelBase">
+    <defName>Apparello_ohlala</defName>
+    <label>Shimmering crown</label>
+    <description>Awe inspiring crown, Makes your subjects hearts beat ever so faster around you.</description>
+    <graphicData>
+	<texPath>Hats/Display/Crown</texPath>
+    <graphicClass>Graphic_Single</graphicClass>
+	</graphicData>
+    <statBases>
+      <MarketValue>2250</MarketValue>
+	  <SellPriceFactor>0.05</SellPriceFactor>
+      <ArmorRating_Blunt>0.01</ArmorRating_Blunt>
+      <ArmorRating_Sharp>0.01</ArmorRating_Sharp>
+    </statBases>
+    <equippedStatOffsets>
+      <SocialImpact>0.50</SocialImpact>
+    </equippedStatOffsets>
+    <apparel>
+      <bodyPartGroups>
+        <li>UpperHead</li>
+      </bodyPartGroups>
+      <worngraphicPath>Hats/Crown</worngraphicPath>
+      <layers>
+        <li>Overhead</li>
+      </layers>
+      <commonality>1</commonality>
+      <tags>
+        <li>SetTalkerPlus</li>
+      </tags>
+    </apparel>
+    <colorGenerator Class="ColorGenerator_Options">
+      <options>
+        <li>
+          <weight>4</weight>
+          <only>RGBA(1,1,1,1)</only>
+        </li>
+      </options>
+    </colorGenerator>
+  </ThingDef>
+
+
+
+
+</ThingDefs>

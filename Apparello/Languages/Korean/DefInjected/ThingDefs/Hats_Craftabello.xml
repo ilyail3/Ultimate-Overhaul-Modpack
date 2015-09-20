@@ -1,0 +1,48 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<!--suppress ALL -->
+<LanguageData>
+  
+	<Apparello_Hivehat.label>군락갑옷 보호모</Apparello_Hivehat.label>
+	<Apparello_Hivehat.description>군락갑옷과 한 세트로, 짐승과도 같은 형상은 적들이 '젖은 바지 증후군'에 걸리도록 유도합니다.</Apparello_Hivehat.description>
+
+	<Apparello_Hivehell.label>증열장갑 보호모</Apparello_Hivehell.label>
+	<Apparello_Hivehell.description>증열장갑에 맞춰 제작된 커다란 보호모입니다. 모종의 이유로 칙칙폭폭 기차를 연상시킵니다. 허.
+	</Apparello_Hivehell.description>
+
+	<Apparello_Mojo.label>부족 가면</Apparello_Mojo.label>
+	<Apparello_Mojo.description>나무 느낌을 위한 기본적인 부족 가면입니다.
+	</Apparello_Mojo.description>
+
+	<Apparello_LPow.label>강화경갑 보호모</Apparello_LPow.label>
+	<Apparello_LPow.description>강화경갑과 한 세트로, 경보병들이 주로 사용합니다.
+	</Apparello_LPow.description>
+
+	<Apparello_LPowII.label>멋진 강화경갑 보호모</Apparello_LPowII.label>
+	<Apparello_LPowII.description>강화경갑과 한 세트로, 경보병들이 주로 사용합니다. 이 보호모는 더 '멋져'졌습니다.
+	</Apparello_LPowII.description>
+
+	<Apparello_Bucket.label>양동이</Apparello_Bucket.label>
+	<Apparello_Bucket.description>말이 필요한가요?
+	</Apparello_Bucket.description>
+
+	<Apparello_Docteur.label>의사의 모자</Apparello_Docteur.label>
+	<Apparello_Docteur.description>다른 사람의 장기를 만지고 있을 땐 위생적인 장비가 특히 중요합니다. 이 장비는 의사의 시력을 증폭기로 향상시켜줍니다. 그리고 마스크는 원치 않은 박테리아가 피해...환자에게 전해지는걸 방지합니다.
+	</Apparello_Docteur.description>
+
+	<Apparello_Chefhatplus.label>뚝딱 주방장 모자</Apparello_Chefhatplus.label>
+	<Apparello_Chefhatplus.description>타이머와 냄새 감지기로 무장한 모자로, 누구든지 제대로 된 요리를 할 수 있도록 도와줍니다. 위에 얹어진 주방장 모자는 이 장비의 용도를 알려주는 것 이상도 이하도 아닙니다.
+	</Apparello_Chefhatplus.description>
+
+	<Apparello_Proto.label>시험용 신경 향상기</Apparello_Proto.label>
+	<Apparello_Proto.description>신경 반응 속도의 향상을 위한 시험용 장비입니다. 고약할 정도의 부작용이 있는데, 신경과민, 이명, 이상한 잡음 그리고/또는 목소리입니다.
+	</Apparello_Proto.description>
+
+	<Apparello_ProtoFin.label>신경 향상기</Apparello_ProtoFin.label>
+	<Apparello_ProtoFin.description>신경 반응 속도의 향상을 위한 시험용 장비입니다. 여전히 고약할 정도의 부작용이 있지만 예전만큼은 아닙니다. 인공인격 핵을 장착한게 꽤 유효했습니다. 불행하게도 핵이 사용자의 정신 감응력을 증폭시키기 때문에 정신 공격에 매우 취약해집니다.
+	</Apparello_ProtoFin.description>
+
+	<Apparello_Antsyhat.label>인공인격 핵 신경 향상기</Apparello_Antsyhat.label>
+	<Apparello_Antsyhat.description>매우 호기심이 가는 기술의 산물입니다. 최종 제품으로, 부작용을 더욱 줄였습니다.
+	</Apparello_Antsyhat.description>
+
+</LanguageData>
