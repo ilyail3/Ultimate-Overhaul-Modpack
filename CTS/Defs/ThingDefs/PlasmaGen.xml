@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Buildings>
+
+  <ThingDef Name="BuildingBase" Abstract="True">
+    <category>Building</category>
+    <thingClass>Building</thingClass>
+    <soundImpactDefault>BulletImpactMetal</soundImpactDefault>
+    <selectable>true</selectable>
+    <drawerType>MapMeshAndRealTime</drawerType>
+    <terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
+    <repairEffect>Repair</repairEffect>
+    <leaveResourcesWhenKilled>true</leaveResourcesWhenKilled>
+    <filthLeaving>BuildingRubble</filthLeaving>
+  </ThingDef>
+  
+  <ThingDef ParentName="BuildingBase">
+    <defName>PlasmaGen</defName>
+    <label>Small Plasma Generator</label>
+    <thingClass>CTS.PlasmaGen</thingClass>
+	<graphicData>
+	<shaderType>Transparent</shaderType>
+     <texPath>PlasmaGenFrames/PlasmaGenOff</texPath>
+    <graphicClass>Graphic_Single</graphicClass>
+	<drawSize>(2,2)</drawSize>
+	</graphicData>
+    <altitudeLayer>BuildingTall</altitudeLayer>
+	<pathCost>70</pathCost>
+	<passability>PassThroughOnly</passability>
+    <fillPercent>1</fillPercent>
+    <statBases>
+      <MaxHitPoints>100</MaxHitPoints>
+      <WorkToMake>6000</WorkToMake>
+      <Flammability>1.0</Flammability>
+      <Beauty>-10</Beauty>
+    </statBases>
+    <tickerType>Normal</tickerType>
+    <Description>Produces tax free electricity from plasma discharges, needs to be fully charged first and charges fast.
+Energy Output: 1000w</Description>
+    <Size>(2,2)</Size>
+    <costList>
+			<SteelBar>60</SteelBar>
+			<PlasteelBar>20</PlasteelBar>
+			<Uranium>25</Uranium>
+			<Electronics>10</Electronics>
+            <Glass>20</Glass>
+    </costList>
+	<comps>
+      <li>
+        <compClass>CompPowerTrader</compClass>
+        <basePowerConsumption>1</basePowerConsumption>
+		<startElectricalFires>true</startElectricalFires>
+        <powerToggleable>false</powerToggleable>
+		<transmitsPower>true</transmitsPower>
+      </li>
+	  <li>
+		<compClass>CompGlower</compClass>
+				<glowRadius>3</glowRadius>
+				<glowColor>(0,255,246,1)</glowColor>
+			</li>
+			 <li>
+        <compClass>CompExplosive</compClass>
+        <explosiveRadius>5</explosiveRadius>
+        <explosiveDamageType>Flame</explosiveDamageType>
+      </li>
+    </comps>
+    <rotatable>false</rotatable>
+    <terrainAffordanceNeeded>Heavy</terrainAffordanceNeeded>
+    <DesignationCategory>Power</DesignationCategory>
+	<staticSunShadowHeight>0.20</staticSunShadowHeight>
+     <building>
+      <soundAmbient>GeothermalPlant_Ambience</soundAmbient>
+      <ignoreNeedsPower>false</ignoreNeedsPower>
+    </building>
+    <constructEffect>ConstructMetal</constructEffect>
+    <researchPrerequisite>PowerII</researchPrerequisite>
+  </ThingDef>
+  
+</Buildings>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ModMetaData>
+  <name>ED-Core</name>
+  <author>Jaxxa</author>
+  <url>https://github.com/jaxxa/RimWorld-Enhanced-Defence</url>
+  <description>
+This is the Core module of Enhanced Defence. It contains all of the .dll code that can be used by the other modules.
+This will usually have to be the first part that you activate.
+  </description>
+</ModMetaData>

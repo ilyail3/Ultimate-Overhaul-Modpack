@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ModMetaData>
+  <name>ED-Shields</name>
+  <author>Jaxxa</author>
+  <url>https://github.com/jaxxa/RimWorld-Enhanced-Defence</url>
+  <description>
+	Requires: ED-Core
+Adds a number of shield systems to the game as a protective method against hostile action.
+  </description>
+</ModMetaData>

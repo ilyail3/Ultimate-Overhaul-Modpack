@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ThingDefs>
+	<ThingDef>
+		<defName>EdBInterfaceBootstrap</defName>
+		<category>Building</category>
+		<menuHidden>true</menuHidden>
+		<label>EdB.Interface.Bootstrap</label>
+		<thingClass>EdB.Interface.Bootstrap</thingClass>
+		<inspectorTabs>
+			<li>EdB.Interface.Bootstrap</li>
+		</inspectorTabs>
+	</ThingDef>
+</ThingDefs>

@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+
+  <IncidentDef>
+    <defName>Eclipse</defName>
+    <WorkerClass>IncidentWorker_MakeMapCondition</WorkerClass>
+    <mapCondition>Eclipse</mapCondition>
+    <letterLabel>Eclipse</letterLabel>
+    <letterText>One of the moons of this planet has orbited in front of the sun. An eclipse has begun.</letterText>
+    <letterType>BadNonUrgent</letterType>
+    <chance>0</chance>
+    <minRefireDays>30</minRefireDays>
+    <durationDays>
+      <min>1.5</min>
+      <max>2.5</max>
+    </durationDays>
+  </IncidentDef>
+
+
+
+</Defs>

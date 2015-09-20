@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Buildings>
+
+  <ThingDef Name="BuildingBase" Abstract="True">
+    <category>Building</category>
+    <soundImpactDefault>BulletImpactMetal</soundImpactDefault>
+    <selectable>true</selectable>
+    <drawerType>MapMeshAndRealTime</drawerType>
+    <terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
+    <repairEffect>Repair</repairEffect>
+    <leaveResourcesWhenKilled>true</leaveResourcesWhenKilled>
+    <filthLeaving>BuildingRubble</filthLeaving>
+  </ThingDef>
+  
+  <ThingDef ParentName="BuildingBase">
+    <defName>PlasmaGeothermalPlant</defName>
+    <label>Plasma Geothermal Plant</label>
+    <thingClass>Building_PowerPlantSteam</thingClass>
+	<graphicData>
+     <texPath>PlasmaGeothermalPlantFrames/GeothermalPlantOFF</texPath>
+    <graphicClass>Graphic_Single</graphicClass>
+	<drawSize>(4,4)</drawSize>
+	</graphicData>
+    <altitudeLayer>BuildingTall</altitudeLayer>
+	<pathCost>70</pathCost>
+	<passability>PassThroughOnly</passability>
+    <fillPercent>1</fillPercent>
+	<blockLight>true</blockLight>
+    <statBases>
+      <MaxHitPoints>100</MaxHitPoints>
+      <WorkToMake>6000</WorkToMake>
+      <Flammability>1.0</Flammability>
+      <Beauty>-10</Beauty>
+    </statBases>
+    <tickerType>Normal</tickerType>
+    <Description>Produces tax free electricity from a steam geyser - plasma powered 
+Energy Output: 5500 Watts</Description>
+    <Size>(4,4)</Size>
+    <costList>
+			<SteelBar>200</SteelBar>
+			<PlasteelBar>100</PlasteelBar>
+			<Uranium>250</Uranium>
+            <Glass>40</Glass>
+    </costList>
+	<comps>
+      <li>
+        <compClass>CompPowerTrader</compClass>
+        <basePowerConsumption>-5500</basePowerConsumption>
+		 <transmitsPower>true</transmitsPower>
+        <powerToggleable>false</powerToggleable>
+      </li>
+	  <li>
+		<compClass>CompGlower</compClass>
+		<glowRadius>3</glowRadius>
+		<glowColor>(0,255,246,1)</glowColor>
+	  </li>
+	  <li>
+        <compClass>CompExplosive</compClass>
+        <explosiveRadius>5</explosiveRadius>
+        <explosiveDamageType>Flame</explosiveDamageType>
+      </li>
+	  <li Class="CommunityCoreLibrary.RestrictedPlacement_Properties">
+                <compClass>CommunityCoreLibrary.RestrictedPlacement_Comp</compClass>
+                <RestrictedThing>
+                    <li>SteamGeyser</li>
+                </RestrictedThing>
+            </li>
+    </comps>
+    <rotatable>false</rotatable>
+    <terrainAffordanceNeeded>Heavy</terrainAffordanceNeeded>
+    <DesignationCategory>Power</DesignationCategory>
+	<staticSunShadowHeight>0.5</staticSunShadowHeight>
+	<placeWorkers>
+            <li>CommunityCoreLibrary.PlaceWorker_OnlyOnThing</li>
+        </placeWorkers>
+     <building>
+      <soundAmbient>GeothermalPlant_Ambience</soundAmbient>
+      <ignoreNeedsPower>true</ignoreNeedsPower>
+    </building>
+    <constructEffect>ConstructMetal</constructEffect>
+    <researchPrerequisite>GeothermalPower</researchPrerequisite>
+  </ThingDef>
+  
+</Buildings>

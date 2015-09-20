@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Buildings>
+
+  <ThingDef Name="BuildingBase" Abstract="True">
+    <category>Building</category>
+    <thingClass>Building</thingClass>
+    <soundImpactDefault>BulletImpactMetal</soundImpactDefault>
+    <selectable>true</selectable>
+    <drawerType>MapMeshAndRealTime</drawerType>
+    <terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
+    <repairEffect>Repair</repairEffect>
+    <leaveResourcesWhenKilled>true</leaveResourcesWhenKilled>
+    <filthLeaving>BuildingRubble</filthLeaving>
+  </ThingDef>
+  
+  <ThingDef ParentName="BuildingBase">
+    <defName>TeslaLigthningPower</defName>
+    <label>Tesla Ligthning Power</label>
+    <thingClass>CTS.TeslaLigthningPower</thingClass>
+	<graphicData>
+	<shaderType>Transparent</shaderType>
+     <texPath>TeslaLigthningPowerFrames/TeslaPowerOFF</texPath>
+    <graphicClass>Graphic_Single</graphicClass>
+	<drawSize>(8,8)</drawSize>
+	</graphicData>
+    <AltitudeLayer>BuildingTall</AltitudeLayer>
+    <Passability>Impassable</Passability>
+     <fillPercent>0.5</fillPercent>
+    <statBases>
+      <MaxHitPoints>100</MaxHitPoints>
+      <WorkToMake>6000</WorkToMake>
+      <Flammability>1.0</Flammability>
+      <Beauty>-10</Beauty>
+    </statBases>
+    <tickerType>Normal</tickerType>
+    <Description>Harness the awesome power of lightning, needs cooling after time.
+Energy Output: 10000W</Description>
+    <Size>(8,8)</Size>
+    <costList>
+			<CopperWire>250</CopperWire>
+			<SteelBar>250</SteelBar>
+			<PlasteelBar>250</PlasteelBar>
+			<Uranium>350</Uranium>
+            <Glass>50</Glass>
+            <Gold>50</Gold>
+    </costList>
+	<comps>
+      <li>
+        <compClass>CompPowerTrader</compClass>
+        <basePowerConsumption>1</basePowerConsumption>
+	<transmitsPower>true</transmitsPower>	
+        <powerToggleable>false</powerToggleable>
+      </li>
+	  <li>
+		<compClass>CompGlower</compClass>
+				<glowRadius>10</glowRadius>
+				<glowColor>(0,0,220,1)</glowColor>
+			</li>
+			 <li>
+        <compClass>CompExplosive</compClass>
+        <explosiveRadius>5</explosiveRadius>
+        <explosiveDamageType>Flame</explosiveDamageType>
+      </li>
+    </comps>
+    <rotatable>false</rotatable>
+    <terrainAffordanceNeeded>Heavy</terrainAffordanceNeeded>
+    <DesignationCategory>Power</DesignationCategory>
+	<staticSunShadowHeight>0.5</staticSunShadowHeight>
+     <building>
+      <soundAmbient>GeothermalPlant_Ambience</soundAmbient>
+      <ignoreNeedsPower>false</ignoreNeedsPower>
+    </building>
+    <constructEffect>ConstructMetal</constructEffect>
+    <researchPrerequisite>PowerIV</researchPrerequisite>
+  </ThingDef>
+  
+</Buildings>

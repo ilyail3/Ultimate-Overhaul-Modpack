@@ -1,0 +1,1 @@
+To reactivate the eclipses, edit "Incidents_Bad_Misc.xml" and in the first entry for eclipse, change the <chance> tags from 0 to 3.

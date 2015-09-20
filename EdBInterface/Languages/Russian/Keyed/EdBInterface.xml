@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<LanguageData>
+	<EdB.ColonistBar.HideColonistBar>Скрыть иконки колонистов</EdB.ColonistBar.HideColonistBar>
+	<!-- NEEDS TRANSLATION --> <EdB.ColonistBar.Prefs>Colonist Bar</EdB.ColonistBar.Prefs>
+	<!-- CHECK TRANSLATION --> <EdB.ColonistBar.Prefs.Enable>Показывать персональные иконки колонистов</EdB.ColonistBar.Prefs.Enable> <!-- I've changed the name from "Colonist Status Bar" to "Colonist Bar" -->
+	<EdB.ColonistBar.Prefs.SmallIcons>Использовать маленькие иконки</EdB.ColonistBar.Prefs.SmallIcons>
+	<!-- NEEDS TRANSLATION --> <EdB.ColonistBar.Prefs.SmallIcons.Tip>Select this option to display small icons in the colonist status bar.\n\nThis option works best for smaller screen resolutions or colonies with lots of colonists.</EdB.ColonistBar.Prefs.SmallIcons.Tip>
+	<!-- SUGGEST BETTER TRANSLATION --> <EdB.ColonistBar.RemoveDeadColonist>Убрать</EdB.ColonistBar.RemoveDeadColonist> <!-- "Remove Dead Colonist" -->
+	<!-- SUGGEST BETTER TRANSLATION --> <EdB.ColonistBar.RemoveMissingColonist>Убрать</EdB.ColonistBar.RemoveMissingColonist> <!-- "Remove Missing Colonist" -->
+	<!-- SUGGEST BETTER TRANSLATION --> <EdB.ColonistBar.Status.BINGING>Пьяный</EdB.ColonistBar.Status.BINGING> <!-- Seems like this translation is not quite right, and should be all uppercase letters -->
+	<EdB.ColonistBar.Status.BROKEN>Ранен</EdB.ColonistBar.Status.BROKEN>
+	<!-- NEEDS TRANSLATION --> <EdB.ColonistBar.Status.CRYPTOSLEEP>CRYPTOSLEEP</EdB.ColonistBar.Status.CRYPTOSLEEP>
+	<EdB.ColonistBar.Status.DEAD>МЁРТВ</EdB.ColonistBar.Status.DEAD>
+	<EdB.ColonistBar.Status.KIDNAPPED>ПОХИЩЕН</EdB.ColonistBar.Status.KIDNAPPED>
+	<EdB.ColonistBar.Status.MISSING>ПОТЕРЯН</EdB.ColonistBar.Status.MISSING>
+	<EdB.ColonistBar.Status.RAMPAGE>БЕЗУМСТВО</EdB.ColonistBar.Status.RAMPAGE>
+
+	<EdB.EmptyStockpile.Prefs.EmptyStockpile>Отключить все ресурсы в новом сохранении</EdB.EmptyStockpile.Prefs.EmptyStockpile>
+	<!-- NEEDS TRANSLATION --> <EdB.EmptyStockpile.Prefs.EmptyStockpile.Tip>Select this option to disable all resources in newly created stockpiles without having to click the "Clear All" button.\n\nThe first stockpile that you create is an exception and will always be created with the default options.</EdB.EmptyStockpile.Prefs.EmptyStockpile.Tip>
+
+	<EdB.InterfaceOptions.Prefs.Miscellaneous>Дополнительные опции</EdB.InterfaceOptions.Prefs.Miscellaneous>
+	<EdB.InterfaceOptions.Button.InterfaceOptions>Опции интерфейса</EdB.InterfaceOptions.Button.InterfaceOptions>
+	<EdB.InterfaceOptions.Button.GameOptions>Игровые опции</EdB.InterfaceOptions.Button.GameOptions>
+
+	<EdB.MaterialSelection.Prefs.RightClickOnly>Выбирать строительные материалы правым кликом</EdB.MaterialSelection.Prefs.RightClickOnly>
+	<!-- NEEDS TRANSLATION --> <EdB.MaterialSelection.Prefs.RightClickOnly.Tip>Normally, you select materials by left-clicking or right-clicking on the building that you want to construct.\n\nEnable this option to select the material only when right-clicking.</EdB.MaterialSelection.Prefs.RightClickOnly.Tip>
+
+	<EdB.PauseOnStart.Prefs.PauseOnStart>Ставить паузу, после загрузки игры</EdB.PauseOnStart.Prefs.PauseOnStart>
+	<!-- NEEDS TRANSLATION --> <EdB.PauseOnStart.Prefs.PauseOnStart.Tip>Selecting this option will pause the game when loading a saved game or starting a new game.\n\nThis is different than the option in vanilla RimWorld, which only pauses when loading a saved game.</EdB.PauseOnStart.Prefs.PauseOnStart.Tip>
+</LanguageData>

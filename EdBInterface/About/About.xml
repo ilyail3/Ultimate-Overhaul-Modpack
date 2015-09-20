@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ModMetaData>
+	<name>EdB Interface</name>
+	<author>EdB</author>
+	<url></url>
+	<targetVersion>Alpha 12</targetVersion>
+	<description>This mod makes a handful of changes to the game's user interface.  Some features are only recommended for larger window sizes, but if you're running in a smaller window, you can shut off the features that do not work as well.
+	
+Adds the Colonist Status Bar along the top of the gameplay window, giving you another way to select colonists and to quickly see their status.
+	 
+Adds an Inventory dialog, showing counts of all of your colony's resources, apparel, weapons, buildings, etc.
+
+Adds a Colonist button next to the Architect button.  Clicking the button selects a colonist.  Continue clicking to select each colonist in turn.  Left-clicking selects the next colonist.  Right-clicking selects the previous colonist.
+
+Changes some of the game's panels and dialogs, including the Colonist panels, the Bills panel, the Growing panel and the Overview Work dialog.
+
+If you don't like a particular feature in the mod, turn it off in the Interface Options dialog which you can get to from the gameplay main menu.
+
+[Version 3.0.2 (Pre-Release)]
+	</description>
+</ModMetaData>

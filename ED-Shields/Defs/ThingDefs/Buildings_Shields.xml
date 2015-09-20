@@ -1,0 +1,244 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Things>
+
+	<ThingDef Name="BuildingBase" Abstract="True">
+		<category>Building</category>
+		<soundImpactDefault>BulletImpactMetal</soundImpactDefault>
+		<selectable>true</selectable>
+		<drawerType>MapMeshAndRealTime</drawerType>
+		<terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
+		<repairEffect>Repair</repairEffect>
+		<leaveResourcesWhenKilled>true</leaveResourcesWhenKilled>
+		<filthLeaving>BuildingRubble</filthLeaving>
+	</ThingDef>
+
+	<ThingDef Class="Enhanced_Development.Shields.ShieldBuildingThingDef" ParentName="BuildingBase" Name="ShieldBase" Abstract="True">
+		<category>Building</category>
+		<altitudeLayer>BuildingTall</altitudeLayer>
+		<leaveResourcesWhenKilled>true</leaveResourcesWhenKilled>
+		<blockLight>true</blockLight>
+		<drawerType>MapMeshAndRealTime</drawerType>
+		<staticSunShadowHeight>1.0</staticSunShadowHeight>
+		<fillPercent>1</fillPercent>
+		<size>(1,1)</size>
+		<rotatable>false</rotatable>
+		<terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
+		<designationCategory>Security</designationCategory>
+		<holdsRoof>false</holdsRoof>
+		<specialDisplayRadius>8</specialDisplayRadius>
+		<statBases>
+			<MaxHitPoints>500</MaxHitPoints>
+			<WorkToMake>2000</WorkToMake>
+			<Flammability>1.0</Flammability>
+			<Beauty>-2</Beauty>
+		</statBases>
+		<passability>Impassable</passability>
+		<combatTargetBuilding>true</combatTargetBuilding>
+		<selectable>true</selectable>
+		<tickerType>Normal</tickerType>
+	</ThingDef>
+
+	<ThingDef Class="Enhanced_Development.Shields.ShieldBuildingThingDef" ParentName="ShieldBase">
+		<defName>Building_ShieldStandard</defName>
+		<label>Standard Shield</label>
+		<description>Creates shield field to protect important infrastructure.</description>
+		<thingClass>Enhanced_Development.Shields.Building_Shield</thingClass>
+		<researchPrerequisite>Building_ShieldStandard_research</researchPrerequisite>
+		<graphicData>
+			<texPath>Things/ShieldBuilding_Blue</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>(1,1)</drawSize>
+		</graphicData>
+		<uiIconPath>Things/ShieldBuilding_Blue</uiIconPath>
+		<costList>
+			<SteelBar>75</SteelBar>
+			<CopperWire>50</CopperWire>
+			<PlasteelBar>50</PlasteelBar>
+			<IntegratedCircuitsBoard>15</IntegratedCircuitsBoard>
+		</costList>
+		<comps>
+			<li>
+				<compClass>CompPowerTrader</compClass>
+				<basePowerConsumption>1000</basePowerConsumption>
+			</li>
+		</comps>
+		<shieldMaxShieldStrength>2000</shieldMaxShieldStrength>
+		<shieldInitialShieldStrength>100</shieldInitialShieldStrength>
+		<shieldShieldRadius>8</shieldShieldRadius>
+		<shieldPowerRequiredCharging>-1500</shieldPowerRequiredCharging>
+		<shieldPowerRequiredSustaining>-1000</shieldPowerRequiredSustaining>
+		<shieldBlockIndirect>true</shieldBlockIndirect>
+		<shieldBlockDirect>true</shieldBlockDirect>
+		<shieldFireSupression>true</shieldFireSupression>
+		<shieldInterceptDropPod>false</shieldInterceptDropPod>
+		<shieldStructuralIntegrityMode>false</shieldStructuralIntegrityMode>
+		<shieldRechargeTickDelay>15</shieldRechargeTickDelay>
+		<shieldRecoverWarmup>900</shieldRecoverWarmup>
+		<colourRed>0.0</colourRed>
+		<colourGreen>0.3764705882352941</colourGreen>
+		<colourBlue>0.7294117647058823</colourBlue>
+	</ThingDef>
+
+	<ThingDef Class="Enhanced_Development.Shields.ShieldBuildingThingDef" ParentName="ShieldBase">
+		<defName>Building_ShieldSmall</defName>
+		<label>Small shield</label>
+		<description>Creates a smaller shield that allows people to stand on it.</description>
+		<thingClass>Enhanced_Development.Shields.Building_Shield</thingClass>
+		<researchPrerequisite>Building_ShieldSmall_research</researchPrerequisite>
+		<graphicData>
+			<texPath>Things/ShieldBuilding_Small_Blue</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>(1,1)</drawSize>
+		</graphicData>
+		<uiIconPath>Things/ShieldBuilding_Small_Blue</uiIconPath>
+		<passability>Standable</passability>
+		<costList>
+			<SteelBar>75</SteelBar>
+			<CopperWire>50</CopperWire>
+			<PlasteelBar>25</PlasteelBar>
+			<IntegratedCircuitsBoard>5</IntegratedCircuitsBoard>
+		</costList>
+		<comps>
+			<li>
+				<compClass>CompPowerTrader</compClass>
+				<basePowerConsumption>1000</basePowerConsumption>
+			</li>
+		</comps>
+		<specialDisplayRadius>2</specialDisplayRadius>
+		<shieldMaxShieldStrength>1000</shieldMaxShieldStrength>
+		<shieldInitialShieldStrength>100</shieldInitialShieldStrength>
+		<shieldShieldRadius>2</shieldShieldRadius>
+		<shieldPowerRequiredCharging>-1000</shieldPowerRequiredCharging>
+		<shieldPowerRequiredSustaining>-500</shieldPowerRequiredSustaining>
+		<shieldBlockIndirect>true</shieldBlockIndirect>
+		<shieldBlockDirect>true</shieldBlockDirect>
+		<shieldFireSupression>true</shieldFireSupression>
+		<shieldInterceptDropPod>false</shieldInterceptDropPod>
+		<shieldStructuralIntegrityMode>false</shieldStructuralIntegrityMode>
+		<shieldRechargeTickDelay>15</shieldRechargeTickDelay>
+		<shieldRecoverWarmup>900</shieldRecoverWarmup>
+		<colourRed>0.0</colourRed>
+		<colourGreen>0.3764705882352941</colourGreen>
+		<colourBlue>0.7294117647058823</colourBlue>
+	</ThingDef>
+
+	<ThingDef Class="Enhanced_Development.Shields.ShieldBuildingThingDef" ParentName="ShieldBase">
+		<defName>Building_Shield_Fortress</defName>
+		<label>Fortress shield</label>
+		<description>By refocusing the primary coil system into a vertical configuration the shields range can be extended, while lacking the flexability of the Fire Supression mode it does cover a large area and gain the ability to disrupt the avionic systems of DropPods, caulsing failure of their decent rockets and therefore a terminal velocity impact.</description>
+		<thingClass>Enhanced_Development.Shields.Building_Shield</thingClass>
+		<researchPrerequisite>Building_ShieldFortress_research</researchPrerequisite>
+		<graphicData>
+			<texPath>Things/ShieldBuilding_Green</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>(2,2)</drawSize>
+		</graphicData>
+		<uiIconPath>Things/ShieldBuilding_Green</uiIconPath>
+		<costList>
+			<SteelBar>75</SteelBar>
+			<CopperWire>50</CopperWire>
+			<PlasteelBar>100</PlasteelBar>
+			<IntegratedCircuitsBoard>20</IntegratedCircuitsBoard>
+		</costList>
+		<comps>
+			<li>
+				<compClass>CompPowerTrader</compClass>
+				<basePowerConsumption>1000</basePowerConsumption>
+			</li>
+		</comps>
+		<size>(2,2)</size>
+		<specialDisplayRadius>20</specialDisplayRadius>
+		<shieldMaxShieldStrength>8000</shieldMaxShieldStrength>
+		<shieldInitialShieldStrength>100</shieldInitialShieldStrength>
+		<shieldShieldRadius>20</shieldShieldRadius>
+		<shieldPowerRequiredCharging>-5000</shieldPowerRequiredCharging>
+		<shieldPowerRequiredSustaining>-2500</shieldPowerRequiredSustaining>
+		<shieldBlockIndirect>true</shieldBlockIndirect>
+		<shieldBlockDirect>true</shieldBlockDirect>
+		<shieldFireSupression>false</shieldFireSupression>
+		<shieldInterceptDropPod>true</shieldInterceptDropPod>
+		<shieldStructuralIntegrityMode>false</shieldStructuralIntegrityMode>
+		<shieldRechargeTickDelay>15</shieldRechargeTickDelay>
+		<shieldRecoverWarmup>900</shieldRecoverWarmup>
+		<colourRed>0.0</colourRed>
+		<colourGreen>1.0</colourGreen>
+		<colourBlue>0.5</colourBlue>
+	</ThingDef>
+
+	<ThingDef Class="Enhanced_Development.Shields.ShieldBuildingThingDef" ParentName="ShieldBase">
+		<defName>Building_ShieldSIF</defName>
+		<label>SIF shield</label>
+		<description>Rather than creating a large circular shield this generator will create an small individual shield over each wall/door object.</description>
+		<thingClass>Enhanced_Development.Shields.Building_Shield</thingClass>
+		<researchPrerequisite>Building_ShieldSIF_research</researchPrerequisite>
+		<graphicData>
+			<texPath>Things/ShieldBuilding_Yellow</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<uiIconPath>Things/ShieldBuilding_Yellow</uiIconPath>
+		<costList>
+			<SteelBar>75</SteelBar>
+			<CopperWire>50</CopperWire>
+			<PlasteelBar>50</PlasteelBar>
+			<IntegratedCircuitsBoard>15</IntegratedCircuitsBoard>
+		</costList>
+		<comps>
+			<li>
+				<compClass>CompPowerTrader</compClass>
+				<basePowerConsumption>1000</basePowerConsumption>
+			</li>
+		</comps>	
+		<shieldMaxShieldStrength>3000</shieldMaxShieldStrength>
+		<shieldInitialShieldStrength>100</shieldInitialShieldStrength>
+		<shieldShieldRadius>8</shieldShieldRadius>
+		<shieldPowerRequiredCharging>-2500</shieldPowerRequiredCharging>
+		<shieldPowerRequiredSustaining>-1500</shieldPowerRequiredSustaining>
+		<shieldBlockIndirect>false</shieldBlockIndirect>
+		<shieldBlockDirect>true</shieldBlockDirect>
+		<shieldFireSupression>true</shieldFireSupression>
+		<shieldInterceptDropPod>false</shieldInterceptDropPod>
+		<shieldStructuralIntegrityMode>true</shieldStructuralIntegrityMode>
+		<shieldRechargeTickDelay>15</shieldRechargeTickDelay>
+		<shieldRecoverWarmup>900</shieldRecoverWarmup>
+		<colourRed>0.0</colourRed>
+		<colourGreen>0.3764705882352941</colourGreen>
+		<colourBlue>0.7294117647058823</colourBlue>
+		<SIFBuildings>
+			<li>Sandbags</li>
+			<li>Wall</li>
+			<li>Door</li>
+			<li>Blastdoor</li>
+			<li>Autodoor</li>
+			<li>FenceGate</li>
+			<li>SCWall</li>
+			<li>RoofSupport</li>
+			<li>WallConduit</li>
+			<li>WallLighted</li>
+			<li>WallLight_Red</li>
+			<li>WallLight_Green</li>
+			<li>WallLight_Blue</li>
+			<li>WallLight_Yellow</li>
+			<li>WallLight_Purple</li>
+			<li>WallLight_Cyan</li>
+			<li>Fence</li>
+			<li>BunkerWall</li>
+			<li>Window</li>
+			<li>DoorGlass</li>
+			<li>DoorSafetyGlass</li>
+			<li>GlassWindows</li>
+			<li>SafetyWindows</li>
+			<li>CellDoor</li>
+			<li>BunkerFence</li>
+			<li>Ish_MedievalDefenses_Parapet</li>
+			<li>Ish_MedievalDefenses_ChevalDeFrise</li>
+			<li>Ish_MedievalDefenses_StampedEarthWall</li>
+			<li>WallWire</li>
+			<li>StoneEmbrasure</li>
+			<li>MD2MechEmbrasure</li>
+			<li>MechWallExtended</li>
+			<li>MechWallRecessed</li>
+			<li>Embrasure</li>
+		</SIFBuildings>
+	</ThingDef>
+
+</Things>

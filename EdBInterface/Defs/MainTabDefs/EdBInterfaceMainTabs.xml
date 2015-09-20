@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<MainTabDefs>
+
+  <MainTabDef>
+    <defName>Architect</defName>
+    <label>architect</label>
+    <description>Designate where and what colonists should build, farm, store items, and so on.</description>
+    <windowClass>EdB.Interface.MainTabWindow_Architect</windowClass>
+    <order>1</order>
+    <defaultToggleKey>Tab</defaultToggleKey>
+  </MainTabDef>
+
+  <MainTabDef>
+    <defName>Menu</defName>
+    <label>menu</label>
+    <description>Change options, save, load, or quit the game.</description>
+    <windowClass>EdB.Interface.MainTabWindow_Menu</windowClass>
+    <order>500</order>
+  </MainTabDef>
+
+</MainTabDefs>
