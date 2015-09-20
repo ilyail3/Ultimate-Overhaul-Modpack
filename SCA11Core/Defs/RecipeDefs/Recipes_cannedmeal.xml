@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+<RecipeDef>
+	<defName>Canmeal</defName>
+	<label>can food</label>
+	<description>Preserve food in a can to prevent spoiling.</description>
+	<jobString>Canning Food.</jobString>
+	<workSpeedStat>CookSpeed</workSpeedStat>
+	<workAmount>800</workAmount>
+	<effectWorking>Cook</effectWorking>
+    <soundWorking>Recipe_CookMeal</soundWorking>
+	<recipeUsers>
+         <li>Canningstove</li>
+      </recipeUsers>	
+	<allowMixingIngredients>true</allowMixingIngredients>
+	<ingredients>
+	<li>
+		<filter>
+		<categories>
+			<li>FoodRaw</li>
+		</categories>
+		</filter>
+		<count>10</count>
+	</li>
+	  <li>
+	    <filter>
+	      <thingDefs>
+	        <li>Steel</li>
+	      </thingDefs>
+	    </filter>
+	    <count>1</count>
+	  </li>
+	</ingredients>
+	<fixedIngredientFilter>
+	  <categories>
+		<li>FoodRaw</li>
+	  </categories>
+	  <thingDefs>
+	      <li>Steel</li>
+	  </thingDefs>
+	</fixedIngredientFilter>
+	<products>
+	  <MealCannedFood>1</MealCannedFood>
+	</products>
+	<workSkill>Cooking</workSkill>
+</RecipeDef>
+
+
+ 
+
+</Defs>

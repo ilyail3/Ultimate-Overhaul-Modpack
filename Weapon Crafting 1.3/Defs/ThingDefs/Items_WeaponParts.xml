@@ -1,0 +1,72 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Resources>
+
+
+	<!-- =========== bases =========== -->
+
+	
+	<ThingDef Name="ResourceBase" Abstract="True">
+		<thingClass>ThingWithComps</thingClass>
+		<label>unspecified resource</label>
+		<category>Item</category>
+		<resourceReadoutPriority>Middle</resourceReadoutPriority>
+		<useHitPoints>true</useHitPoints>
+		<selectable>true</selectable>
+		<altitudeLayer>Item</altitudeLayer>
+		<stackLimit>75</stackLimit>
+		<comps>
+			<li>
+				<compClass>CompForbiddable</compClass>
+			</li>
+		</comps>
+		<alwaysHaulable>true</alwaysHaulable>
+		<drawGUIOverlay>true</drawGUIOverlay>
+		<rotatable>false</rotatable>
+		<pathCost>15</pathCost>
+	</ThingDef>
+
+	<ThingDef Name="ResourceVerbBase" ParentName="ResourceBase" Abstract="True">
+		<equipmentType>Primary</equipmentType>
+		<techLevel>Neolithic</techLevel>
+		<comps>
+			<li>
+				<compClass>CompEquippable</compClass>
+			</li>
+		</comps>
+	</ThingDef>
+
+
+	
+	
+	<ThingDef ParentName="ResourceBase">
+		<defName>WeaponParts</defName>
+		<label>weapon parts</label>
+		<description>manufactured weapon parts used for crafting ranged weapons.</description>
+		<graphicData>
+		<texPath>Things/Parts</texPath>
+		<graphicClass>Graphic_Single</graphicClass><!--
+		<color>(205,133,63)</color>-->
+		</graphicData>
+		<statBases>
+			<MaxHitPoints>100</MaxHitPoints>
+			<MarketValue>0.05</MarketValue>
+			<Flammability>1.0</Flammability>
+			<DeteriorationRate>2</DeteriorationRate>
+		</statBases>
+		<stuffProps>
+			<categories>
+				<li>Parts</li>
+			</categories>
+			<color>(180,173,150)</color>
+			<statFactors>
+				<Beauty>1.0</Beauty>
+			</statFactors>
+		</stuffProps>
+		<thingCategories>
+			<li>Manufactured</li>
+		</thingCategories>
+	</ThingDef>
+
+
+
+</Resources>

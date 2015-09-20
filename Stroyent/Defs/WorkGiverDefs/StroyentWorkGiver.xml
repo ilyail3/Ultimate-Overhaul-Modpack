@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<WorkGivers>
+	<WorkGiverDef>
+		<defName>DoBillsStroyent</defName>
+		<giverClass>WorkGiver_DoBill</giverClass>
+		<workType>Cooking</workType>
+		<priorityInType>100</priorityInType>
+		<singleBillGiverDef>stroyenttable</singleBillGiverDef>
+		<verb>cook</verb>
+		<gerund>cooking</gerund>
+		<requiredCapacities>
+			<li>Manipulation</li>
+		</requiredCapacities>
+	</WorkGiverDef>
+</WorkGivers>

@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+<RecipeDef>
+	<defName>Distillcider</defName>
+	<label>Distill Apple Cider</label>
+	<description>Distills a bottle of Apple Cider.</description>
+	<jobString>Distilling Apple Cider.</jobString>
+	<workSpeedStat>BrewingSpeed</workSpeedStat>
+	<effectWorking>Cook</effectWorking>
+          <soundWorking>Recipe_Brewing</soundWorking>
+          <allowMixingIngredients>true</allowMixingIngredients>
+		  <workAmount>1500</workAmount>
+	<recipeUsers>
+         <li>Brewery</li>
+      </recipeUsers>
+          <targetCountAdjustment>1</targetCountAdjustment>
+	<ingredients>
+	  <li>
+	    <filter>
+	      <thingDefs>
+	        <li>Rawapple</li>
+	      </thingDefs>
+	    </filter>
+	    <count>25</count>
+	  </li>
+	  <li>
+	    <filter>
+	      <thingDefs>
+	        <li>Sugar</li>
+	      </thingDefs>
+	    </filter>
+	    <count>25</count>
+	  </li>
+	  <li>
+	    <filter>
+	      <thingDefs>
+	        <li>RawHops</li>
+	      </thingDefs>
+	    </filter>
+	    <count>10</count>
+	  </li>
+	</ingredients>
+	<fixedIngredientFilter>
+	  <thingDefs>
+	    <li>Rawapple</li>
+		<li>Sugar</li>
+		<li>RawHops</li>
+	  </thingDefs>
+	</fixedIngredientFilter>
+	<products>
+	  <cider>12</cider>
+	</products>
+	<workSkill>Cooking</workSkill>
+</RecipeDef>
+
+<RecipeDef>
+	<defName>Distillrum</defName>
+	<label>Distill Rum</label>
+	<description>Distills a bottle of Rum.</description>
+	<jobString>Distilling Rum.</jobString>
+	<workSpeedStat>BrewingSpeed</workSpeedStat>
+	<effectWorking>Cook</effectWorking>
+          <soundWorking>Recipe_Brewing</soundWorking>
+          <allowMixingIngredients>true</allowMixingIngredients>
+		  <workAmount>1500</workAmount>
+	<recipeUsers>
+         <li>Brewery</li>
+      </recipeUsers>
+          <targetCountAdjustment>1</targetCountAdjustment>
+	<ingredients>
+	  <li>
+	    <filter>
+	      <thingDefs>
+	        <li>Sugar</li>
+	      </thingDefs>
+	    </filter>
+	    <count>25</count>
+	  </li>
+	  <li>
+	    <filter>
+	      <thingDefs>
+	        <li>Rawwheat</li>
+	      </thingDefs>
+	    </filter>
+	    <count>25</count>
+	  </li>
+	  <li>
+	    <filter>
+	      <thingDefs>
+	        <li>RawHops</li>
+	      </thingDefs>
+	    </filter>
+	    <count>10</count>
+	  </li>
+	</ingredients>
+	<fixedIngredientFilter>
+	  <thingDefs>
+	    <li>Sugar</li>
+		<li>Rawwheat</li>
+		<li>RawHops</li>
+	  </thingDefs>
+	</fixedIngredientFilter>
+	<products>
+	  <rum>12</rum>
+	</products>
+	<workSkill>Cooking</workSkill>
+</RecipeDef>
+
+
+</Defs>

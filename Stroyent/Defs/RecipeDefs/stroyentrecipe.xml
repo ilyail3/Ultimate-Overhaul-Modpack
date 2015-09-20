@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<RecipeDefs>
+	<RecipeDef>
+		<defName>makestroyent</defName>
+		<label>Make Stroyent</label>
+		<description>Process Human flesh into Stroyent.</description>
+		<jobString>Making Stroyent.</jobString>
+		<workSpeedStat>CookSpeed</workSpeedStat>
+		<workAmount>300</workAmount>
+		<effectWorking>ButcherFlesh</effectWorking>
+		<soundWorking>Recipe_ButcherCorpseMechanoid</soundWorking>
+		<ingredients>
+			<li>
+				<filter>
+					<ThingDefs>
+						<li>Human_Meat</li>
+					</ThingDefs>
+				</filter>
+				<count>15</count>
+			</li>
+		</ingredients>
+		<products>
+			<stroyent>10</stroyent>
+		</products>
+		<fixedIngredientFilter>
+			<ThingDefs>
+				<li>Human_Meat</li>
+			</ThingDefs>
+		</fixedIngredientFilter>
+		<workSkill>Cooking</workSkill>
+	</RecipeDef>
+	<!--
+	<RecipeDef>
+		<defName>Norbalstroyent</defName>
+		<label>Make Norbal Stroyent</label>
+		<description>Process Human flesh into Stroyent.</description>
+		<jobString>Making Stroyent.</jobString>
+		<workSpeedStat>CookSpeed</workSpeedStat>
+		<workAmount>300</workAmount>
+		<effectWorking>ButcherFlesh</effectWorking>
+		<soundWorking>Recipe_ButcherCorpseMechanoid</soundWorking>
+		<ingredients>
+			<li>
+				<filter>
+					<ThingDefs>
+						<li>Norbal_Meat</li>
+					</ThingDefs>
+				</filter>
+				<count>15</count>
+			</li>
+		</ingredients>
+		<products>
+			<stroyent>10</stroyent>
+		</products>
+		<fixedIngredientFilter>
+			<ThingDefs>
+				<li>Norbal_Meat</li>
+			</ThingDefs>
+		</fixedIngredientFilter>
+		<workSkill>Crafting</workSkill>
+	</RecipeDef>
+-->
+	
+</RecipeDefs>

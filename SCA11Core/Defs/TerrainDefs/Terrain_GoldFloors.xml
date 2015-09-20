@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<TerrainDefs>
+
+
+  <TerrainDef Name="FloorBase" Abstract="True">
+  <layerable>true</layerable>
+    <affordances>
+      <li>Light</li>
+      <li>Heavy</li>
+      <li>SmoothHard</li>
+    </affordances>
+    <statBases>
+      <WorkToMake>135</WorkToMake>
+    </statBases>
+    <designationCategory>MetalFloors</designationCategory>
+    <Fertility>0</Fertility>
+    <constructEffect>ConstructDirt</constructEffect>
+    <AcceptTerrainSourceFilth>True</AcceptTerrainSourceFilth>
+    <terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
+  </TerrainDef>
+
+  
+  <TerrainDef  ParentName="FloorBase">
+    <DefName>GoldTile</DefName>
+    <label>Gold Tile</label>
+    <RenderPrecedence>240</RenderPrecedence>
+    <Description>Gold tiles, because you're worth it.</Description>
+    <texturePath>Terrain/Surfaces/GoldTile</texturePath>
+    <statBases>
+      <Beauty>5</Beauty>
+    <WorkToMake>85</WorkToMake>
+    </statBases>
+    <CostList>
+      <Gold>5</Gold>
+    </CostList>
+    <constructEffect>ConstructMetal</constructEffect>
+	<ResearchPrerequisite>ElectricSmelting</ResearchPrerequisite>
+  </TerrainDef>
+  
+  
+  <TerrainDef  ParentName="FloorBase">
+    <DefName>GoldSolid</DefName>
+    <label>Solid Gold</label>
+    <RenderPrecedence>240</RenderPrecedence>
+    <Description>Solid Gold, because you're wasteful.</Description>
+    <texturePath>Terrain/Surfaces/GoldSolid</texturePath>
+    <statBases>
+      <Beauty>10</Beauty>
+    <WorkToMake>85</WorkToMake>
+    </statBases>
+    <CostList>
+      <Gold>10</Gold>
+    </CostList>
+    <constructEffect>ConstructMetal</constructEffect>
+	<ResearchPrerequisite>ElectricSmelting</ResearchPrerequisite>
+  </TerrainDef>
+  
+  
+</TerrainDefs>

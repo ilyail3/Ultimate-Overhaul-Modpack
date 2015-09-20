@@ -1,0 +1,233 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+
+  <DesignationCategoryDef>
+    <DefName>Production</DefName>
+    <label>Medical</label>
+    <description>Structures used for producing medical related supplies.</description>
+    <order>409</order>
+    <specialDesignatorClasses>
+      <li>Designator_Cancel</li>
+      <li>Designator_Deconstruct</li>
+    </specialDesignatorClasses>
+  </DesignationCategoryDef>
+  
+  <DesignationCategoryDef>
+    <DefName>ProductionResources</DefName>
+    <label>Resources</label>
+    <description>Structures used for producing resources.</description>
+    <order>407</order>
+    <specialDesignatorClasses>
+      <li>Designator_Cancel</li>
+      <li>Designator_Deconstruct</li>
+    </specialDesignatorClasses>
+  </DesignationCategoryDef>
+  
+  <DesignationCategoryDef>
+    <DefName>ProductionFood</DefName>
+    <label>Food</label>
+    <description>Structures used for producing food.</description>
+    <order>405</order>
+    <specialDesignatorClasses>
+      <li>Designator_Cancel</li>
+      <li>Designator_Deconstruct</li>
+    </specialDesignatorClasses>
+  </DesignationCategoryDef>
+  
+  <DesignationCategoryDef>
+    <DefName>ProductionWeaponsArmor</DefName>
+    <label>Weapons / 
+Armor</label>
+    <description>Structures used for producing weapons and armor.</description>
+    <order>403</order>
+    <specialDesignatorClasses>
+      <li>Designator_Cancel</li>
+      <li>Designator_Deconstruct</li>
+    </specialDesignatorClasses>
+  </DesignationCategoryDef>
+  
+  <DesignationCategoryDef>
+    <DefName>ProductionGoods</DefName>
+    <label>Goods / 
+Services</label>
+    <description>Structures used for producing miscellaneous goods and droid services.</description>
+    <order>401</order>
+    <specialDesignatorClasses>
+      <li>Designator_Cancel</li>
+      <li>Designator_Deconstruct</li>
+    </specialDesignatorClasses>
+  </DesignationCategoryDef>
+  
+  <DesignationCategoryDef>
+    <DefName>Lighting</DefName>
+    <label>lighting</label>
+    <description>Lighting.</description>
+    <order>408</order>
+    <specialDesignatorClasses>
+      <li>Designator_Cancel</li>
+      <li>Designator_Deconstruct</li>
+    </specialDesignatorClasses>
+  </DesignationCategoryDef>
+  
+  <DesignationCategoryDef>
+    <DefName>Storage</DefName>
+    <label>storage</label>
+    <description>Storage.</description>
+    <order>406</order>
+    <specialDesignatorClasses>
+      <li>Designator_Cancel</li>
+      <li>Designator_Deconstruct</li>
+    </specialDesignatorClasses>
+  </DesignationCategoryDef>
+
+  <DesignationCategoryDef>
+    <DefName>Furniture</DefName>
+    <label>furniture</label>
+    <description>Small constructions.</description>
+    <order>404</order>
+    <specialDesignatorClasses>
+      <li>Designator_Cancel</li>
+      <li>Designator_Deconstruct</li>
+    </specialDesignatorClasses>
+  </DesignationCategoryDef>
+
+  <DesignationCategoryDef>
+    <DefName>Power</DefName>
+    <label>power</label>
+    <description>Electricity production, transmission, and management.</description>
+    <order>402</order>
+    <specialDesignatorClasses>
+      <li>Designator_Cancel</li>
+      <li>Designator_Deconstruct</li>
+    </specialDesignatorClasses>
+  </DesignationCategoryDef>
+
+  <DesignationCategoryDef>
+    <DefName>Security</DefName>
+    <label>security</label>
+    <description>Security and combat-oriented constructions.</description>
+    <order>300</order>
+    <specialDesignatorClasses>
+      <li>Designator_Cancel</li>
+      <li>Designator_Deconstruct</li>
+    </specialDesignatorClasses>
+  </DesignationCategoryDef>
+
+  <DesignationCategoryDef>
+    <DefName>Misc</DefName>
+    <label>misc</label>
+    <description>Miscellaneous constructibles.</description>
+    <order>250</order>
+    <specialDesignatorClasses>
+      <li>Designator_Cancel</li>
+      <li>Designator_Deconstruct</li>
+    </specialDesignatorClasses>
+  </DesignationCategoryDef>
+
+  <DesignationCategoryDef>
+    <DefName>Floors</DefName>
+    <label>wood floors</label>
+    <description>Flooring.</description>
+    <order>213</order>
+    <specialDesignatorClasses>
+      <li>Designator_Cancel</li>
+      <li>Designator_SmoothFloor</li>
+      <li>Designator_RemoveFloor</li>
+    </specialDesignatorClasses>
+  </DesignationCategoryDef>
+  
+  <DesignationCategoryDef>
+    <DefName>StoneFloors</DefName>
+    <label>stone floors</label>
+    <description>Flooring.</description>
+    <order>211</order>
+    <specialDesignatorClasses>
+      <li>Designator_Cancel</li>
+      <li>Designator_SmoothFloor</li>
+      <li>Designator_RemoveFloor</li>
+    </specialDesignatorClasses>
+  </DesignationCategoryDef>
+  
+  <DesignationCategoryDef>
+    <DefName>MetalFloors</DefName>
+    <label>metal floors</label>
+    <description>Flooring.</description>
+    <order>209</order>
+    <specialDesignatorClasses>
+      <li>Designator_Cancel</li>
+      <li>Designator_SmoothFloor</li>
+      <li>Designator_RemoveFloor</li>
+    </specialDesignatorClasses>
+  </DesignationCategoryDef>
+  
+  <DesignationCategoryDef>
+    <DefName>CarpetFloors</DefName>
+    <label>carpet floors</label>
+    <description>Flooring.</description>
+    <order>207</order>
+    <specialDesignatorClasses>
+      <li>Designator_Cancel</li>
+      <li>Designator_SmoothFloor</li>
+      <li>Designator_RemoveFloor</li>
+    </specialDesignatorClasses>
+  </DesignationCategoryDef>
+  
+  <DesignationCategoryDef>
+    <DefName>NaturalFloors</DefName>
+    <label>natural floors</label>
+    <description>Flooring.</description>
+    <order>205</order>
+    <specialDesignatorClasses>
+      <li>Designator_Cancel</li>
+      <li>Designator_SmoothFloor</li>
+      <li>Designator_RemoveFloor</li>
+    </specialDesignatorClasses>
+  </DesignationCategoryDef>
+
+  <DesignationCategoryDef>
+    <DefName>Joy</DefName>
+    <label>joy</label>
+    <description>Entertaining or pleasurable things for colonists to enjoy.</description>
+    <order>214</order>
+    <specialDesignatorClasses>
+      <li>Designator_Cancel</li>
+      <li>Designator_Deconstruct</li>
+    </specialDesignatorClasses>
+  </DesignationCategoryDef>
+
+  <DesignationCategoryDef>
+    <DefName>Ship</DefName>
+    <label>ship</label>
+    <description>Components of your escape ship.</description>
+    <order>212</order>
+    <specialDesignatorClasses>
+      <li>Designator_Cancel</li>
+      <li>Designator_Deconstruct</li>
+    </specialDesignatorClasses>
+  </DesignationCategoryDef>
+
+  <DesignationCategoryDef>
+    <DefName>Temperature</DefName>
+    <label>temperature</label>
+    <description>Things for controlling temperature.</description>
+    <order>210</order>
+    <specialDesignatorClasses>
+      <li>Designator_Cancel</li>
+      <li>Designator_Deconstruct</li>
+    </specialDesignatorClasses>
+  </DesignationCategoryDef>
+  
+  <DesignationCategoryDef>
+    <DefName>Training</DefName>
+    <label>training</label>
+    <description>Training devices.</description>
+    <order>206</order>
+    <specialDesignatorClasses>
+      <li>Designator_Cancel</li>
+      <li>Designator_Deconstruct</li>
+    </specialDesignatorClasses>
+  </DesignationCategoryDef>
+  
+  
+</Defs>

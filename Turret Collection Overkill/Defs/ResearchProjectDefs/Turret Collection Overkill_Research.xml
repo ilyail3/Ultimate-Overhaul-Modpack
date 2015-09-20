@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ResearchProjectDefs>
+
+
+    <ResearchProjectDef>
+		<defName>ChainGun</defName>
+		<label>Chain Gun</label>
+		<description>Bushmaster III 35mm chain gun.</description>
+		<totalCost>1700</totalCost>
+		<prerequisites><li>HighPoweredMannable</li></prerequisites>
+	</ResearchProjectDef>
+
+    <ResearchProjectDef>
+		<defName>AvengerTurret</defName>
+		<label>Avenger Turret</label>
+		<description>GAU-8 Avenger cannon.</description>
+		<totalCost>2400</totalCost>
+        <prerequisites><li>HighPoweredMannable</li></prerequisites>
+	</ResearchProjectDef>
+
+</ResearchProjectDefs>

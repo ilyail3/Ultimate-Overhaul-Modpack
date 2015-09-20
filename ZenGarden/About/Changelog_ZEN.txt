@@ -1,0 +1,8 @@
+v0.12:
+Fixed Border Path/Pond rendering issue
+Added rocks to Stacked Rocks
+Updated graphics
+v0.11:
+Added missing recipe for gravel 
+v0.10: 
+Initial release. Added Gravel, Border Path, Border Pond, Border Path Pillar, Gravel Floor, and Stacked Rocks.

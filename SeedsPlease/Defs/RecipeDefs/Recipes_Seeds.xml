@@ -1,0 +1,1133 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<RecipeDefs>
+
+	<RecipeDef>
+		<defName>SpectagoSeeds</defName>
+		<label>Take seeds from rainbow petals</label>
+		<description>Take seeds from rainbow petals</description>
+		<jobString>Taking seeds.</jobString>
+		<workSpeedStat>CookSpeed</workSpeedStat>
+		<effectWorking>Cook</effectWorking>
+    <ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>RainbowPetals</li>
+					</thingDefs>
+				</filter>
+				<count>8</count>
+			</li>
+		</ingredients>
+		<products>
+      <SpectagoSeeds>1</SpectagoSeeds>
+		</products>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>RainbowPetals</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+    <workSkill>Cooking</workSkill>
+	   <recipeUsers>
+		    <li>TableChemlab</li>
+	   </recipeUsers>
+	   <workAmount>600</workAmount>
+	</RecipeDef>
+
+	<RecipeDef>
+		<defName>HempSeeds</defName>
+		<label>Take seeds from weed</label>
+		<description>Take seeds from weed</description>
+		<jobString>Taking seeds.</jobString>
+		<workSpeedStat>CookSpeed</workSpeedStat>
+		<effectWorking>Cook</effectWorking>
+    <ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Weed</li>
+					</thingDefs>
+				</filter>
+				<count>8</count>
+			</li>
+		</ingredients>
+		<products>
+      <HempSeeds>1</HempSeeds>
+		</products>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>Weed</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+    <workSkill>Cooking</workSkill>
+	   <recipeUsers>
+		    <li>TableChemlab</li>
+			<li>TableHerbalMed</li>
+	   </recipeUsers>
+	   <workAmount>600</workAmount>
+	</RecipeDef>
+	
+	<RecipeDef>
+		<defName>XerigiumSeeds</defName>
+		<label>Take seeds from xerigium</label>
+		<description>Take seeds from xerigium</description>
+		<jobString>Taking seeds.</jobString>
+		<workSpeedStat>CookSpeed</workSpeedStat>
+		<effectWorking>Cook</effectWorking>
+    <ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>RawXerigium</li>
+					</thingDefs>
+				</filter>
+				<count>8</count>
+			</li>
+		</ingredients>
+		<products>
+      <XerigiumSeeds>1</XerigiumSeeds>
+		</products>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>RawXerigium</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+    <workSkill>Cooking</workSkill>
+	   <recipeUsers>
+		    <li>TableChemlab</li>
+			<li>TableHerbalMed</li>
+	   </recipeUsers>
+	   <workAmount>600</workAmount>
+	</RecipeDef>
+
+	<RecipeDef>
+		<defName>PotatoSeed</defName>
+		<label>Take seeds from potatoes</label>
+		<description>Take seeds from potatoes</description>
+		<jobString>Taking seeds.</jobString>
+		<workSpeedStat>CookSpeed</workSpeedStat>
+		<effectWorking>Cook</effectWorking>
+    <ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>RawPotatoes</li>
+					</thingDefs>
+				</filter>
+				<count>8</count>
+			</li>
+		</ingredients>
+		<products>
+      <PotatoSeeds>1</PotatoSeeds>
+		</products>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>RawPotatoes</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+    <workSkill>Cooking</workSkill>
+
+	   <recipeUsers>
+		    <li>TableChemlab</li>
+	   </recipeUsers>
+
+    <workAmount>600</workAmount>
+	</RecipeDef>
+
+	<RecipeDef>
+		<defName>CornSeed</defName>
+		<label>Take seeds from corn</label>
+		<description>Take seeds from corn</description>
+		<jobString>Taking seeds.</jobString>
+		<workSpeedStat>CookSpeed</workSpeedStat>
+		<effectWorking>Cook</effectWorking>
+    <ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>RawCorn</li>
+					</thingDefs>
+				</filter>
+				<count>18</count>
+			</li>
+		</ingredients>
+		<products>
+      <CornSeeds>1</CornSeeds>
+		</products>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>RawCorn</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+    <workSkill>Cooking</workSkill>
+
+	   <recipeUsers>
+		    <li>TableChemlab</li>
+	   </recipeUsers>
+
+    <workAmount>600</workAmount>
+	</RecipeDef>
+
+	<RecipeDef>
+		<defName>RiceSeed</defName>
+		<label>Take seeds from rice</label>
+		<description>Take seeds from rice</description>
+		<jobString>Taking seeds.</jobString>
+		<workSpeedStat>CookSpeed</workSpeedStat>
+		<effectWorking>Cook</effectWorking>
+    <ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>RawRice</li>
+					</thingDefs>
+				</filter>
+				<count>6</count>
+			</li>
+		</ingredients>
+		<products>
+      <RiceSeeds>1</RiceSeeds>
+		</products>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>RawRice</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+    <workSkill>Cooking</workSkill>
+
+	   <recipeUsers>
+		    <li>TableChemlab</li>
+	   </recipeUsers>
+
+    <workAmount>600</workAmount>
+	</RecipeDef>
+
+	<RecipeDef>
+		<defName>StrawberrySeed</defName>
+		<label>Take seeds from strawberry</label>
+		<description>Take seeds from strawberry</description>
+		<jobString>Taking seeds.</jobString>
+		<workSpeedStat>CookSpeed</workSpeedStat>
+		<effectWorking>Cook</effectWorking>
+    <ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>RawBerries</li>
+					</thingDefs>
+				</filter>
+				<count>6</count>
+			</li>
+		</ingredients>
+		<products>
+      <StrawberrySeeds>1</StrawberrySeeds>
+		</products>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>RawBerries</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+    <workSkill>Cooking</workSkill>
+
+	   <recipeUsers>
+		    <li>TableChemlab</li>
+	   </recipeUsers>
+
+    <workAmount>600</workAmount>
+	</RecipeDef>
+
+	<RecipeDef>
+		<defName>CottonSeed</defName>
+		<label>Take seeds from cotton</label>
+		<description>Take seeds from cotton</description>
+		<jobString>Taking seeds.</jobString>
+		<workSpeedStat>CookSpeed</workSpeedStat>
+		<effectWorking>Cook</effectWorking>
+    <ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>RawCotton</li>
+					</thingDefs>
+				</filter>
+				<count>15</count>
+			</li>
+		</ingredients>
+		<products>
+      <CottonSeeds>1</CottonSeeds>
+		</products>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>RawCotton</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+    <workSkill>Cooking</workSkill>
+
+	   <recipeUsers>
+		    <li>TableChemlab</li>
+	   </recipeUsers>
+
+    <workAmount>600</workAmount>
+	</RecipeDef>
+
+	<RecipeDef>
+		<defName>DevilstrandSeed</defName>
+		<label>Take seeds from raw devilstrand</label>
+		<description>Take seeds from raw devilstrand</description>
+		<jobString>Taking seeds.</jobString>
+		<workSpeedStat>CookSpeed</workSpeedStat>
+		<effectWorking>Cook</effectWorking>
+    <ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>RawDevilstrand</li>
+					</thingDefs>
+				</filter>
+				<count>25</count>
+			</li>
+		</ingredients>
+		<products>
+      <DevilstrandSeeds>1</DevilstrandSeeds>
+		</products>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>RawDevilstrand</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+    <workSkill>Cooking</workSkill>
+
+	   <recipeUsers>
+		    <li>TableChemlab</li>
+	   </recipeUsers>
+
+    <workAmount>600</workAmount>
+	</RecipeDef>
+
+	<RecipeDef>
+		<defName>HopSeed</defName>
+		<label>Take seeds from hop</label>
+		<description>Take seeds from hop</description>
+		<jobString>Taking seeds.</jobString>
+		<workSpeedStat>CookSpeed</workSpeedStat>
+		<effectWorking>Cook</effectWorking>
+    <ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>RawHops</li>
+					</thingDefs>
+				</filter>
+				<count>8</count>
+			</li>
+		</ingredients>
+		<products>
+      <HopsSeeds>1</HopsSeeds>
+		</products>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>RawHops</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+    <workSkill>Cooking</workSkill>
+
+	   <recipeUsers>
+		    <li>TableChemlab</li>
+	   </recipeUsers>
+
+    <workAmount>600</workAmount>
+	</RecipeDef>
+
+	<RecipeDef>
+		<defName>CoffeeSeed</defName>
+		<label>Take seeds from coffee</label>
+		<description>Take seeds from coffee</description>
+		<jobString>Taking seeds.</jobString>
+		<workSpeedStat>CookSpeed</workSpeedStat>
+		<effectWorking>Cook</effectWorking>
+    <ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>RawCoffee</li>
+					</thingDefs>
+				</filter>
+				<count>6</count>
+			</li>
+		</ingredients>
+		<products>
+      <CoffeeSeeds>1</CoffeeSeeds>
+		</products>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>RawCoffee</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+    <workSkill>Cooking</workSkill>
+
+	   <recipeUsers>
+		    <li>TableChemlab</li>
+	   </recipeUsers>
+
+    <workAmount>600</workAmount>
+	</RecipeDef>
+
+	<RecipeDef>
+		<defName>TobaccoSeed</defName>
+		<label>Take seeds from tobacco</label>
+		<description>Take seeds from tobacco</description>
+		<jobString>Taking seeds.</jobString>
+		<workSpeedStat>CookSpeed</workSpeedStat>
+		<effectWorking>Cook</effectWorking>
+    <ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>RawTobacco</li>
+					</thingDefs>
+				</filter>
+				<count>4</count>
+			</li>
+		</ingredients>
+		<products>
+      <PotatoSeeds>1</PotatoSeeds>
+		</products>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>RawTobacco</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+    <workSkill>Cooking</workSkill>
+
+	   <recipeUsers>
+		    <li>TableChemlab</li>
+	   </recipeUsers>
+
+    <workAmount>600</workAmount>
+	</RecipeDef>
+
+	<RecipeDef>
+		<defName>OmniGelSeed</defName>
+		<label>Take seeds from omnigel</label>
+		<description>Take seeds from omnigel</description>
+		<jobString>Taking seeds.</jobString>
+		<workSpeedStat>CookSpeed</workSpeedStat>
+		<effectWorking>Cook</effectWorking>
+    <ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>OmniGel</li>
+					</thingDefs>
+				</filter>
+				<count>15</count>
+			</li>
+		</ingredients>
+		<products>
+      <OmniGelSeeds>1</OmniGelSeeds>
+		</products>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>OmniGel</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+    <workSkill>Cooking</workSkill>
+
+	   <recipeUsers>
+		    <li>TableChemlab</li>
+	   </recipeUsers>
+
+    <workAmount>600</workAmount>
+	</RecipeDef>
+
+	<RecipeDef>
+		<defName>BlueberrySeed</defName>
+		<label>Take seeds from blueberry</label>
+		<description>Take seeds from blueberry</description>
+		<jobString>Taking seeds.</jobString>
+		<workSpeedStat>CookSpeed</workSpeedStat>
+		<effectWorking>Cook</effectWorking>
+    <ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Rawblueberry</li>
+					</thingDefs>
+				</filter>
+				<count>5</count>
+			</li>
+		</ingredients>
+		<products>
+      <BlueberrySeeds>1</BlueberrySeeds>
+		</products>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>Rawblueberry</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+    <workSkill>Cooking</workSkill>
+
+	   <recipeUsers>
+		    <li>TableChemlab</li>
+	   </recipeUsers>
+
+    <workAmount>600</workAmount>
+	</RecipeDef>
+
+	<RecipeDef>
+		<defName>PumpkinSeed</defName>
+		<label>Take seeds from pumpkin</label>
+		<description>Take seeds from pumpkin</description>
+		<jobString>Taking seeds.</jobString>
+		<workSpeedStat>CookSpeed</workSpeedStat>
+		<effectWorking>Cook</effectWorking>
+    <ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Rawpumpkin</li>
+					</thingDefs>
+				</filter>
+				<count>3</count>
+			</li>
+		</ingredients>
+		<products>
+      <PumpkinSeeds>1</PumpkinSeeds>
+		</products>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>Rawpumpkin</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+    <workSkill>Cooking</workSkill>
+
+	   <recipeUsers>
+		    <li>TableChemlab</li>
+	   </recipeUsers>
+
+    <workAmount>600</workAmount>
+	</RecipeDef>
+
+	<RecipeDef>
+		<defName>OnionSeed</defName>
+		<label>Take seeds from onion</label>
+		<description>Take seeds from onion</description>
+		<jobString>Taking seeds.</jobString>
+		<workSpeedStat>CookSpeed</workSpeedStat>
+		<effectWorking>Cook</effectWorking>
+    <ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Rawonion</li>
+					</thingDefs>
+				</filter>
+				<count>8</count>
+			</li>
+		</ingredients>
+		<products>
+      <OnionSeeds>1</OnionSeeds>
+		</products>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>Rawonion</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+    <workSkill>Cooking</workSkill>
+
+	   <recipeUsers>
+		    <li>TableChemlab</li>
+	   </recipeUsers>
+
+    <workAmount>600</workAmount>
+	</RecipeDef>
+
+	<RecipeDef>
+		<defName>WatermelonSeed</defName>
+		<label>Take seeds from watermelon</label>
+		<description>Take seeds from watermelon</description>
+		<jobString>Taking seeds.</jobString>
+		<workSpeedStat>CookSpeed</workSpeedStat>
+		<effectWorking>Cook</effectWorking>
+    <ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Rawwatermelon</li>
+					</thingDefs>
+				</filter>
+				<count>8</count>
+			</li>
+		</ingredients>
+		<products>
+      <WatermelonSeeds>1</WatermelonSeeds>
+		</products>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>Rawwatermelon</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+    <workSkill>Cooking</workSkill>
+
+	   <recipeUsers>
+		    <li>TableChemlab</li>
+	   </recipeUsers>
+
+    <workAmount>600</workAmount>
+	</RecipeDef>
+
+	<RecipeDef>
+		<defName>TomatoSeed</defName>
+		<label>Take seeds from tomatoes</label>
+		<description>Take seeds from tomatoes</description>
+		<jobString>Taking seeds.</jobString>
+		<workSpeedStat>CookSpeed</workSpeedStat>
+		<effectWorking>Cook</effectWorking>
+    <ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>RawTomatoes</li>
+					</thingDefs>
+				</filter>
+				<count>5</count>
+			</li>
+		</ingredients>
+		<products>
+      <TomatoSeeds>1</TomatoSeeds>
+		</products>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>RawTomatoes</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+    <workSkill>Cooking</workSkill>
+
+	   <recipeUsers>
+		    <li>TableChemlab</li>
+	   </recipeUsers>
+
+    <workAmount>600</workAmount>
+	</RecipeDef>
+
+	<RecipeDef>
+		<defName>LettuceSeed</defName>
+		<label>Take seeds from lettuce</label>
+		<description>Take seeds from lettuce</description>
+		<jobString>Taking seeds.</jobString>
+		<workSpeedStat>CookSpeed</workSpeedStat>
+		<effectWorking>Cook</effectWorking>
+    <ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>RawLettuce</li>
+					</thingDefs>
+				</filter>
+				<count>5</count>
+			</li>
+		</ingredients>
+		<products>
+      <LettuceSeeds>1</LettuceSeeds>
+		</products>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>RawLettuce</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+    <workSkill>Cooking</workSkill>
+
+	   <recipeUsers>
+		    <li>TableChemlab</li>
+	   </recipeUsers>
+
+    <workAmount>600</workAmount>
+	</RecipeDef>
+
+	<RecipeDef>
+		<defName>CarrotSeed</defName>
+		<label>Take seeds from carrots</label>
+		<description>Take seeds from carrots</description>
+		<jobString>Taking seeds.</jobString>
+		<workSpeedStat>CookSpeed</workSpeedStat>
+		<effectWorking>Cook</effectWorking>
+    <ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>RawCarrots</li>
+					</thingDefs>
+				</filter>
+				<count>5</count>
+			</li>
+		</ingredients>
+		<products>
+      <CarrotSeeds>1</CarrotSeeds>
+		</products>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>RawCarrots</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+    <workSkill>Cooking</workSkill>
+
+	   <recipeUsers>
+		    <li>TableChemlab</li>
+	   </recipeUsers>
+
+    <workAmount>600</workAmount>
+	</RecipeDef>
+
+	<RecipeDef>
+		<defName>WheatSeed</defName>
+		<label>Take seeds from wheat</label>
+		<description>Take seeds from wheat</description>
+		<jobString>Taking seeds.</jobString>
+		<workSpeedStat>CookSpeed</workSpeedStat>
+		<effectWorking>Cook</effectWorking>
+    <ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Rawflour</li>
+					</thingDefs>
+				</filter>
+				<count>5</count>
+			</li>
+		</ingredients>
+		<products>
+      <WheatSeeds>1</WheatSeeds>
+		</products>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>Rawflour</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+    <workSkill>Cooking</workSkill>
+
+	   <recipeUsers>
+		    <li>TableChemlab</li>
+	   </recipeUsers>
+
+    <workAmount>600</workAmount>
+	</RecipeDef>
+
+	<RecipeDef>
+		<defName>CocoaSeed</defName>
+		<label>Take seeds from cocoa</label>
+		<description>Take seeds from cocoa</description>
+		<jobString>Taking seeds.</jobString>
+		<workSpeedStat>CookSpeed</workSpeedStat>
+		<effectWorking>Cook</effectWorking>
+    <ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Rawcocoa</li>
+					</thingDefs>
+				</filter>
+				<count>6</count>
+			</li>
+		</ingredients>
+		<products>
+      <CocoaSeeds>1</CocoaSeeds>
+		</products>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>Rawcocoa</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+    <workSkill>Cooking</workSkill>
+
+	   <recipeUsers>
+		    <li>TableChemlab</li>
+	   </recipeUsers>
+
+    <workAmount>600</workAmount>
+	</RecipeDef>
+
+	<RecipeDef>
+		<defName>SugarcaneSeed</defName>
+		<label>Take seeds from sugarcane</label>
+		<description>Take seeds from sugarcane</description>
+		<jobString>Taking seeds.</jobString>
+		<workSpeedStat>CookSpeed</workSpeedStat>
+		<effectWorking>Cook</effectWorking>
+    <ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Rawsugar</li>
+					</thingDefs>
+				</filter>
+				<count>10</count>
+			</li>
+		</ingredients>
+		<products>
+      <SugarcaneSeeds>1</SugarcaneSeeds>
+		</products>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>Rawsugar</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+    <workSkill>Cooking</workSkill>
+	   <recipeUsers>
+		    <li>TableChemlab</li>
+	   </recipeUsers>
+    <workAmount>600</workAmount>
+	</RecipeDef>
+	
+	<RecipeDef>
+		<defName>EggplantSeed</defName>
+		<label>Take seeds from eggplant</label>
+		<description>Take seeds from eggplant</description>
+		<jobString>Taking seeds.</jobString>
+		<workSpeedStat>CookSpeed</workSpeedStat>
+		<effectWorking>Cook</effectWorking>
+    <ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Raweggplant</li>
+					</thingDefs>
+				</filter>
+				<count>10</count>
+			</li>
+		</ingredients>
+		<products>
+      <EggplantSeeds>1</EggplantSeeds>
+		</products>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>Raweggplant</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+    <workSkill>Cooking</workSkill>
+	   <recipeUsers>
+		    <li>TableChemlab</li>
+	   </recipeUsers>
+    <workAmount>600</workAmount>
+	</RecipeDef>
+	
+	<RecipeDef>
+		<defName>SquashSeed</defName>
+		<label>Take seeds from squash</label>
+		<description>Take seeds from squash</description>
+		<jobString>Taking seeds.</jobString>
+		<workSpeedStat>CookSpeed</workSpeedStat>
+		<effectWorking>Cook</effectWorking>
+    <ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Rawsquash</li>
+					</thingDefs>
+				</filter>
+				<count>10</count>
+			</li>
+		</ingredients>
+		<products>
+      <SquashSeeds>1</SquashSeeds>
+		</products>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>Rawsquash</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+    <workSkill>Cooking</workSkill>
+	   <recipeUsers>
+		    <li>TableChemlab</li>
+	   </recipeUsers>
+    <workAmount>600</workAmount>
+	</RecipeDef>
+	
+	<RecipeDef>
+		<defName>BeanSeed</defName>
+		<label>Take seeds from beans</label>
+		<description>Take seeds from beans</description>
+		<jobString>Taking seeds.</jobString>
+		<workSpeedStat>CookSpeed</workSpeedStat>
+		<effectWorking>Cook</effectWorking>
+    <ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Rawbean</li>
+					</thingDefs>
+				</filter>
+				<count>10</count>
+			</li>
+		</ingredients>
+		<products>
+      <BeanSeeds>1</BeanSeeds>
+		</products>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>Rawbean</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+    <workSkill>Cooking</workSkill>
+	   <recipeUsers>
+		    <li>TableChemlab</li>
+	   </recipeUsers>
+    <workAmount>600</workAmount>
+	</RecipeDef>
+	
+	<RecipeDef>
+		<defName>MushroomSeed</defName>
+		<label>Take spores from mushrooms</label>
+		<description>Take spores from mushrooms</description>
+		<jobString>Taking spores.</jobString>
+		<workSpeedStat>CookSpeed</workSpeedStat>
+		<effectWorking>Cook</effectWorking>
+    <ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Rawmushroom</li>
+					</thingDefs>
+				</filter>
+				<count>10</count>
+			</li>
+		</ingredients>
+		<products>
+      <MushroomSeeds>1</MushroomSeeds>
+		</products>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>Rawmushroom</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+    <workSkill>Cooking</workSkill>
+	   <recipeUsers>
+		    <li>TableChemlab</li>
+	   </recipeUsers>
+    <workAmount>600</workAmount>
+	</RecipeDef>
+	
+	<RecipeDef>
+		<defName>BambooSeed</defName>
+		<label>Take seeds from bamboo</label>
+		<description>Take seeds from bamboo</description>
+		<jobString>Taking seeds.</jobString>
+		<workSpeedStat>CookSpeed</workSpeedStat>
+		<effectWorking>Cook</effectWorking>
+    <ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Bamboo</li>
+					</thingDefs>
+				</filter>
+				<count>10</count>
+			</li>
+		</ingredients>
+		<products>
+      <BambooSeeds>1</BambooSeeds>
+		</products>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>Bamboo</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+    <workSkill>Cooking</workSkill>
+	   <recipeUsers>
+		    <li>TableChemlab</li>
+	   </recipeUsers>
+    <workAmount>600</workAmount>
+	</RecipeDef>
+	
+	<RecipeDef>
+		<defName>AppleSeed</defName>
+		<label>Take seeds from apples</label>
+		<description>Take seeds from apples</description>
+		<jobString>Taking seeds.</jobString>
+		<workSpeedStat>CookSpeed</workSpeedStat>
+		<effectWorking>Cook</effectWorking>
+    <ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Rawapple</li>
+					</thingDefs>
+				</filter>
+				<count>10</count>
+			</li>
+		</ingredients>
+		<products>
+      <AppleSeeds>1</AppleSeeds>
+		</products>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>Rawapple</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+    <workSkill>Cooking</workSkill>
+	   <recipeUsers>
+		    <li>TableChemlab</li>
+	   </recipeUsers>
+    <workAmount>600</workAmount>
+	</RecipeDef>
+	
+	<RecipeDef>
+		<defName>BananaSeed</defName>
+		<label>Take seeds from bananas</label>
+		<description>Take seeds from bananas</description>
+		<jobString>Taking seeds.</jobString>
+		<workSpeedStat>CookSpeed</workSpeedStat>
+		<effectWorking>Cook</effectWorking>
+    <ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Rawbanana</li>
+					</thingDefs>
+				</filter>
+				<count>10</count>
+			</li>
+		</ingredients>
+		<products>
+      <BananaSeeds>1</BananaSeeds>
+		</products>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>Rawbanana</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+    <workSkill>Cooking</workSkill>
+	   <recipeUsers>
+		    <li>TableChemlab</li>
+	   </recipeUsers>
+    <workAmount>600</workAmount>
+	</RecipeDef>
+	
+	<RecipeDef>
+		<defName>OrangeSeed</defName>
+		<label>Take seeds from oranges</label>
+		<description>Take seeds from oranges</description>
+		<jobString>Taking seeds.</jobString>
+		<workSpeedStat>CookSpeed</workSpeedStat>
+		<effectWorking>Cook</effectWorking>
+    <ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Raworange</li>
+					</thingDefs>
+				</filter>
+				<count>10</count>
+			</li>
+		</ingredients>
+		<products>
+      <OrangeSeeds>1</OrangeSeeds>
+		</products>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>Raworange</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+    <workSkill>Cooking</workSkill>
+	   <recipeUsers>
+		    <li>TableChemlab</li>
+	   </recipeUsers>
+    <workAmount>600</workAmount>
+	</RecipeDef>
+	
+	<RecipeDef>
+		<defName>PeachSeed</defName>
+		<label>Take seeds from peaches</label>
+		<description>Take seeds from peaches</description>
+		<jobString>Taking seeds.</jobString>
+		<workSpeedStat>CookSpeed</workSpeedStat>
+		<effectWorking>Cook</effectWorking>
+    <ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Rawpeach</li>
+					</thingDefs>
+				</filter>
+				<count>10</count>
+			</li>
+		</ingredients>
+		<products>
+      <PeachSeeds>1</PeachSeeds>
+		</products>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>Rawpeach</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+    <workSkill>Cooking</workSkill>
+	   <recipeUsers>
+		    <li>TableChemlab</li>
+	   </recipeUsers>
+    <workAmount>600</workAmount>
+	</RecipeDef>
+	
+	<RecipeDef>
+		<defName>PineappleSeed</defName>
+		<label>Take seeds from pineapples</label>
+		<description>Take seeds from pineapples</description>
+		<jobString>Taking seeds.</jobString>
+		<workSpeedStat>CookSpeed</workSpeedStat>
+		<effectWorking>Cook</effectWorking>
+    <ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Rawpineapple</li>
+					</thingDefs>
+				</filter>
+				<count>10</count>
+			</li>
+		</ingredients>
+		<products>
+      <PineappleSeeds>1</PineappleSeeds>
+		</products>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>Rawpineapple</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+    <workSkill>Cooking</workSkill>
+	   <recipeUsers>
+		    <li>TableChemlab</li>
+	   </recipeUsers>
+    <workAmount>600</workAmount>
+	</RecipeDef>
+	
+	<RecipeDef>
+		<defName>GrapeSeed</defName>
+		<label>Take seeds from grapes</label>
+		<description>Take seeds from grapes</description>
+		<jobString>Taking seeds.</jobString>
+		<workSpeedStat>CookSpeed</workSpeedStat>
+		<effectWorking>Cook</effectWorking>
+    <ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Rawgrape</li>
+					</thingDefs>
+				</filter>
+				<count>10</count>
+			</li>
+		</ingredients>
+		<products>
+      <GrapeSeeds>1</GrapeSeeds>
+		</products>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>Rawgrape</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+    <workSkill>Cooking</workSkill>
+	   <recipeUsers>
+		    <li>TableChemlab</li>
+	   </recipeUsers>
+    <workAmount>600</workAmount>
+	</RecipeDef>
+
+
+</RecipeDefs>

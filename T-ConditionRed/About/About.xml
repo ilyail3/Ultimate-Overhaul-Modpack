@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ModMetaData>
+  <name>[T] ConditionRed</name>
+  <author>Telkir</author>
+  <url>http://ludeon.com/forums/index.php?topic=4373.0</url>
+  <targetVersion>Alpha 12</targetVersion>
+  <description>Build alert lamps to provide suitable mood lighting for your colony when the going gets tough. They glow greenish-white when everything is safe but change to either yellow or flashing red depending on how many enemies are in the local area. Alert lamps require a threat sensor somewhere in your colony to work correctly and are available after researching colored lights.</description>
+</ModMetaData>

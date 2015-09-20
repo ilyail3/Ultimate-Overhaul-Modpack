@@ -1,0 +1,682 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ThingDefs>
+
+  <ThingDef Name="BuildingBase" Abstract="True">
+    <category>Building</category>
+    <soundImpactDefault>BulletImpactMetal</soundImpactDefault>
+    <selectable>true</selectable>
+    <drawerType>MapMeshAndRealTime</drawerType>
+    <terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
+    <repairEffect>Repair</repairEffect>
+    <leaveResourcesWhenKilled>true</leaveResourcesWhenKilled>
+    <filthLeaving>BuildingRubble</filthLeaving>
+  </ThingDef>
+
+ <!--=============== TC SmartMine ===============-->
+
+
+	<ThingDef ParentName="BuildingBase">
+    <defName>Turret_SmartMine</defName>
+    <label>smart mine</label>
+    <thingClass>TurretCollection.Building_SmartMine</thingClass>
+	<graphicData>
+		<texPath>Things/Building/Security/SmartMineBase</texPath>
+		<graphicClass>Graphic_Single</graphicClass>
+	</graphicData>
+    <altitudeLayer>Waist</altitudeLayer>
+    <statBases>
+      <MaxHitPoints>100</MaxHitPoints>
+      <Flammability>0</Flammability>
+      <WorkToMake>1000</WorkToMake>
+    </statBases>
+    <tickerType>Normal</tickerType>
+    <comps>
+      <li>
+        <compClass>CompForbiddable</compClass>
+      </li>
+      <li>
+        <compClass>CompExplosive</compClass>
+        <explosiveRadius>2.9</explosiveRadius>
+        <explosiveDamageType>Bomb</explosiveDamageType>
+        <startWickHitPointsPercent>0.2</startWickHitPointsPercent>
+        <wickTicks>
+          <min>20</min>
+          <max>90</max>
+        </wickTicks>
+      </li>
+    </comps>
+    <description>A smart anti-personnel mine, launch itself to the enemy within a small radius and explode.</description>
+    <size>(1,1)</size>
+    <passability>PassThroughOnly</passability>
+    <castEdgeShadows>false</castEdgeShadows>
+    <rotatable>false</rotatable>
+    <fillPercent>0</fillPercent>
+    <costList>
+     <SmartMine>1</SmartMine>
+    </costList>
+    <combatTargetBuilding>false</combatTargetBuilding>
+	<researchPrerequisite>IEDBomb</researchPrerequisite>
+    <leaveResourcesWhenKilled>false</leaveResourcesWhenKilled>
+    <terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
+    <designationCategory>Security</designationCategory>
+    <specialDisplayRadius>5</specialDisplayRadius>
+    <building>
+      <turretGunDef>Gun_SmartMine</turretGunDef>
+      <turretBurstWarmupTicks>30</turretBurstWarmupTicks>
+      <turretburstCooldownTicks>1</turretburstCooldownTicks>
+      <turretTopgraphicPath>Things/Projectile/SpotlightInv</turretTopgraphicPath>
+    </building>
+  </ThingDef>
+
+
+  <!--=============== TC turret ===============-->
+
+	<ThingDef ParentName="BuildingBase">
+    <defName>Turret_M2Browning</defName>
+    <label>M2 Browning machine gun</label>
+    <thingClass>Building_TurretGun</thingClass>
+	<graphicData>
+		<texPath>Things/Building/Security/MachineGunBase</texPath>
+		<graphicClass>Graphic_Single</graphicClass>
+		<drawSize>(4,4)</drawSize>
+	</graphicData>
+    <altitudeLayer>Waist</altitudeLayer>
+    <hasInteractionCell>True</hasInteractionCell>
+    <interactionCellOffset>(0,0,-1)</interactionCellOffset>
+    <statBases>
+      <MaxHitPoints>500</MaxHitPoints>
+      <Flammability>0.5</Flammability>
+      <WorkToMake>3250</WorkToMake>
+      <Beauty>-60</Beauty>
+    </statBases>
+    <tickerType>Normal</tickerType>
+    <comps>
+			<li>
+				<compClass>CompExplosive</compClass>
+				<explosiveRadius>3.9</explosiveRadius>
+				<explosiveDamageType>Bomb</explosiveDamageType>
+			</li>
+			<li>
+				<compClass>CompForbiddable</compClass>
+			</li>
+			<li>
+				<compClass>CompMannable</compClass>
+			</li>
+		</comps>
+    <description>A manned M2 browning machine gun. 
+	
+Requires MG 12.7mm bullets. 
+	
+Range: 36 
+Damage:20
+Burst: 4</description>
+	<size>(2,2)</size>
+    <passability>PassThroughOnly</passability>
+    <pathCost>50</pathCost>
+    <castEdgeShadows>true</castEdgeShadows>
+    <fillPercent>0.4</fillPercent>
+    <costList>
+		<SteelBar>350</SteelBar>
+		<Powder>50</Powder>
+	</costList>
+    <combatTargetBuilding>true</combatTargetBuilding>
+	<researchPrerequisite>HighPoweredMannable</researchPrerequisite>
+    <leaveResourcesWhenKilled>false</leaveResourcesWhenKilled>
+    <terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
+    <designationCategory>Security</designationCategory>
+    <specialDisplayRadius>36</specialDisplayRadius>
+    <building>
+      <turretGunDef>Gun_M2Browning</turretGunDef>
+	  <turretShellDef>HeavyMachinegunBullet</turretShellDef>
+      <turretburstCooldownTicks>250</turretburstCooldownTicks>
+      <turretTopgraphicPath>Things/Building/Security/TurretGun_M2Browning</turretTopgraphicPath>
+    </building>
+  </ThingDef>
+
+	<ThingDef ParentName="BuildingBase">
+    <defName>Turret_M134Minigun</defName>
+    <label>M134 minigun</label>
+    <thingClass>Building_TurretGun</thingClass>
+	<graphicData>
+		<texPath>Things/Building/Security/MachineGunBase</texPath>
+		<graphicClass>Graphic_Single</graphicClass>
+	<drawSize>(4,4)</drawSize>
+	</graphicData>
+    <altitudeLayer>Waist</altitudeLayer>
+    <hasInteractionCell>True</hasInteractionCell>
+    <interactionCellOffset>(0,0,-1)</interactionCellOffset>
+    <statBases>
+      <MaxHitPoints>500</MaxHitPoints>
+      <Flammability>0.5</Flammability>
+      <WorkToMake>3250</WorkToMake>
+      <Beauty>-60</Beauty>
+    </statBases>
+    <tickerType>Normal</tickerType>
+    <comps>
+			<li>
+				<compClass>CompExplosive</compClass>
+				<explosiveRadius>3.9</explosiveRadius>
+				<explosiveDamageType>Bomb</explosiveDamageType>
+			</li>
+      <li>
+        <compClass>CompMannable</compClass>
+      </li>
+			<li><compClass>CompForbiddable</compClass></li>
+			<li>
+				<compClass>CompPowerTrader</compClass>
+				<basePowerConsumption>350</basePowerConsumption>
+			</li>
+		</comps>
+    <description>A manned turret mounted with an electrically driven minigun. 
+	
+Requires MG 12.7mm bullets. 
+	
+Range: 30 
+Damage: 16
+Burst: 32</description>
+	<size>(2,2)</size>
+    <passability>PassThroughOnly</passability>
+    <pathCost>50</pathCost>
+    <castEdgeShadows>true</castEdgeShadows>
+    <fillPercent>0.4</fillPercent>
+    <costList>
+		<SteelBar>350</SteelBar>
+	</costList>
+    <combatTargetBuilding>true</combatTargetBuilding>
+	<researchPrerequisite>HighPoweredMannable</researchPrerequisite>
+    <leaveResourcesWhenKilled>false</leaveResourcesWhenKilled>
+    <terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
+    <designationCategory>Security</designationCategory>
+    <specialDisplayRadius>30</specialDisplayRadius>
+    <building>
+      <turretGunDef>Gun_M134Minigun</turretGunDef>
+	  <turretShellDef>HeavyMachinegunBullet</turretShellDef>
+      <turretburstCooldownTicks>280</turretburstCooldownTicks>
+      <turretTopgraphicPath>Things/Building/Security/TurretGun_M134Minigun</turretTopgraphicPath>
+    </building>
+  </ThingDef>
+
+	<ThingDef ParentName="BuildingBase">
+    <defName>Turret_Stun</defName>
+    <label>stun turret</label>
+    <thingClass>Building_TurretGun</thingClass>
+	<graphicData>
+		<texPath>Things/Building/Security/MachineGunBase</texPath>
+		<graphicClass>Graphic_Single</graphicClass>
+		<drawSize>(4,4)</drawSize>
+	</graphicData>
+    <altitudeLayer>Waist</altitudeLayer>
+    <hasInteractionCell>True</hasInteractionCell>
+    <interactionCellOffset>(0,0,-1)</interactionCellOffset>
+    <statBases>
+      <MaxHitPoints>500</MaxHitPoints>
+      <Flammability>1.0</Flammability>
+      <WorkToMake>3250</WorkToMake>
+      <Beauty>-60</Beauty>
+    </statBases>
+    <tickerType>Normal</tickerType>
+    <comps>
+			<li>
+				<compClass>CompExplosive</compClass>
+				<explosiveRadius>3.9</explosiveRadius>
+				<explosiveDamageType>Bomb</explosiveDamageType>
+			</li>
+      <li>
+        <compClass>CompForbiddable</compClass>
+      </li>
+      <li>
+        <compClass>CompMannable</compClass>
+      </li>
+    </comps>
+    <description>A manned stun turret, stuns enemies in range.
+	
+Requires turret EMP grenades.
+
+Range: 17
+Damage: Stun</description>
+	<size>(2,2)</size>
+    <passability>PassThroughOnly</passability>
+    <pathCost>50</pathCost>
+    <castEdgeShadows>true</castEdgeShadows>
+    <fillPercent>0.4</fillPercent>
+    <costList>
+     <SteelBar>250</SteelBar>
+    </costList>
+    <combatTargetBuilding>true</combatTargetBuilding>
+	<researchPrerequisite>SpecializedMannedTurrets</researchPrerequisite>
+    <leaveResourcesWhenKilled>false</leaveResourcesWhenKilled>
+    <terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
+    <designationCategory>Security</designationCategory>
+    <specialDisplayRadius>17</specialDisplayRadius>
+    <building>
+      <turretGunDef>Gun_TurretStunGun</turretGunDef>
+	  <turretShellDef>TurretEMPGrenades</turretShellDef>
+      <turretburstCooldownTicks>120</turretburstCooldownTicks>
+      <turretTopgraphicPath>Things/Building/Security/TurretGun_TurretStunGun</turretTopgraphicPath>
+    </building>
+  </ThingDef>
+
+		<ThingDef ParentName="BuildingBase">
+		<defName>AMTurretGun</defName>
+		<label>anti-materiel turret</label>
+		<thingClass>Building_TurretGun</thingClass>
+		<graphicData>
+			<texPath>Things/Building/Security/TurretGun</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>(4,4)</drawSize>
+		</graphicData>
+		<altitudeLayer>Waist</altitudeLayer>
+		<hasInteractionCell>True</hasInteractionCell>
+		<interactionCellOffset>(0,0,-1)</interactionCellOffset>
+		<statBases>
+			<MaxHitPoints>800</MaxHitPoints>
+			<Flammability>0.5</Flammability>
+			<WorkToMake>8000</WorkToMake>
+			<Beauty>-60</Beauty>
+		</statBases>
+		<tickerType>Normal</tickerType>
+		<comps>
+			<li>
+				<compClass>CompExplosive</compClass>
+				<explosiveRadius>3.9</explosiveRadius>
+				<explosiveDamageType>Bomb</explosiveDamageType>
+			</li>
+			<li><compClass>CompForbiddable</compClass></li>
+			<li>
+        <compClass>CompMannable</compClass>
+      </li>
+			<li>
+				<compClass>CompPowerTrader</compClass>
+				<basePowerConsumption>800</basePowerConsumption>
+			</li>
+		</comps>
+		<description>A manned turret mounted with a .50 Cal anti-materiel gun that deals armor-piercing damage. The turret explodes when heavily damaged.
+		
+Requires Anti-Materiel .50Cal Round. 
+		
+Range: 51 
+Damage: 40</description>
+		<size>(2,2)</size>
+		<passability>PassThroughOnly</passability>
+        <pathCost>50</pathCost>
+		<castEdgeShadows>true</castEdgeShadows>
+		<fillPercent>0.4</fillPercent>
+		<stuffCategories>
+			<li>Metallic</li>
+		</stuffCategories>
+		<costStuffCount>600</costStuffCount>
+		<costList>
+			<Electronics>50</Electronics>
+			<PlasteelBar>250</PlasteelBar>
+		</costList>
+		<combatTargetBuilding>true</combatTargetBuilding>
+		<researchPrerequisite>AMTurret</researchPrerequisite>
+		<leaveResourcesWhenKilled>false</leaveResourcesWhenKilled>
+		<terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
+		<designationCategory>Security</designationCategory>
+		<specialDisplayRadius>51</specialDisplayRadius>
+	<building>
+        <turretGunDef>Gun_AMTurret</turretGunDef>
+		<turretShellDef>AMRound</turretShellDef>
+        <turretBurstCooldownTicks>300</turretBurstCooldownTicks>
+        <turretTopgraphicPath>Things/Building/Security/AMTurretGun_Top</turretTopgraphicPath>
+    </building>
+                  
+</ThingDef>
+
+
+		<ThingDef ParentName="BuildingBase">
+		<defName>CannonTurretGun</defName>
+		<label>cannon turret</label>
+		<thingClass>Building_TurretGun</thingClass>
+		<graphicData>
+			<texPath>Things/Building/Security/TurretGun</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>(4,4)</drawSize>
+		</graphicData>
+		<altitudeLayer>Waist</altitudeLayer>
+        <hasInteractionCell>True</hasInteractionCell>
+        <interactionCellOffset>(0,0,-1)</interactionCellOffset>
+		<statBases>
+			<MaxHitPoints>800</MaxHitPoints>
+			<Flammability>0.5</Flammability>
+			<WorkToMake>8000</WorkToMake>
+			<Beauty>-60</Beauty>
+		</statBases>
+		<tickerType>Normal</tickerType>
+		<comps>
+			<li>
+				<compClass>CompExplosive</compClass>
+				<explosiveRadius>5.9</explosiveRadius>
+				<explosiveDamageType>Bomb</explosiveDamageType>
+			</li>
+			<li><compClass>CompForbiddable</compClass></li>
+      <li>
+        <compClass>CompMannable</compClass>
+      </li>
+		</comps>
+		<description>A turret mounted with a 120mm tank gun. deals extra armor-piercing damage if the round has a direct hit. The turret explodes when heavily damaged.
+		
+Requires cannon shells. 
+		
+Range: Between 12 and 100 
+Damage: 55</description>
+		<size>(2,2)</size>
+		<passability>PassThroughOnly</passability>
+        <pathCost>50</pathCost>
+		<castEdgeShadows>true</castEdgeShadows>
+		<fillPercent>0.4</fillPercent>
+		<stuffCategories>
+			<li>Metallic</li>
+		</stuffCategories>
+		<costStuffCount>800</costStuffCount>
+		<costList>
+			<Electronics>50</Electronics>
+			<PlasteelBar>300</PlasteelBar>
+		</costList>
+		<combatTargetBuilding>true</combatTargetBuilding>
+		<researchPrerequisite>CannonTurret</researchPrerequisite>
+		<leaveResourcesWhenKilled>false</leaveResourcesWhenKilled>
+		<terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
+		<designationCategory>Security</designationCategory>
+        <specialDisplayRadius>12</specialDisplayRadius>
+		<building>
+			<turretGunDef>Gun_CannonTurret</turretGunDef>
+            <turretShellDef>CannonShell</turretShellDef>
+			<turretburstCooldownTicks>720</turretburstCooldownTicks>
+      			<turretTopgraphicPath>Things/Building/Security/CannonTurretGun_Top</turretTopgraphicPath>
+				<buildingTags>
+				<li>Artillery</li>
+				<li>Artillery_BaseDestroyer</li>
+			</buildingTags>
+		</building>
+	</ThingDef>
+
+
+		<ThingDef ParentName="BuildingBase">
+		<defName>HowitzerTurretGun</defName>
+		<label>howitzer turret</label>
+		<thingClass>Building_TurretGun</thingClass>
+		<graphicData>
+			<texPath>Things/Building/Security/TurretGun_Seven</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>(4,4)</drawSize>
+		</graphicData>
+		<altitudeLayer>Waist</altitudeLayer>
+        <hasInteractionCell>True</hasInteractionCell>
+        <interactionCellOffset>(0,0,-1)</interactionCellOffset>
+		<statBases>
+			<MaxHitPoints>800</MaxHitPoints>
+			<Flammability>0.5</Flammability>
+			<WorkToMake>8000</WorkToMake>
+			<Beauty>-60</Beauty>
+		</statBases>
+		<tickerType>Normal</tickerType>
+		<comps>
+			<li>
+				<compClass>CompExplosive</compClass>
+				<explosiveRadius>5.9</explosiveRadius>
+				<explosiveDamageType>Bomb</explosiveDamageType>
+			</li>
+			<li><compClass>CompForbiddable</compClass></li>
+      <li>
+        <compClass>CompMannable</compClass>
+      </li>
+		</comps>
+            <placeWorkers>
+                <li>PlaceWorker_NotUnderRoof</li>
+            </placeWorkers>
+		<description>A turret mounted with a 155mm howitzer. Fires over wall, need to be manned. The turret explodes when heavily damaged.
+		
+Requires Howitzer 155mm shells. 
+		
+Range: Between 15 and 800
+Damage 50
+Burst: 1</description>
+		<size>(2,2)</size>
+		<passability>PassThroughOnly</passability>
+        <pathCost>50</pathCost>
+		<castEdgeShadows>true</castEdgeShadows>
+		<fillPercent>0.4</fillPercent>
+		<stuffCategories>
+			<li>Metallic</li>
+		</stuffCategories>
+		<costStuffCount>800</costStuffCount>
+		<costList>
+			<Electronics>50</Electronics>
+			<PlasteelBar>300</PlasteelBar>
+		</costList>
+		<combatTargetBuilding>true</combatTargetBuilding>
+		<researchPrerequisite>HowitzerTurret</researchPrerequisite>
+		<leaveResourcesWhenKilled>false</leaveResourcesWhenKilled>
+		<terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
+		<designationCategory>Security</designationCategory>
+        <specialDisplayRadius>15</specialDisplayRadius>
+		<building>
+			<turretGunDef>Gun_HowitzerTurret</turretGunDef>
+            <turretShellDef>HowitzerShell</turretShellDef>
+            <turretBurstWarmupTicks>200</turretBurstWarmupTicks>
+			<turretburstCooldownTicks>1800</turretburstCooldownTicks>
+      			<turretTopgraphicPath>Things/Building/Security/HowitzerTurretGun_Top</turretTopgraphicPath>
+				<buildingTags>
+				<li>Artillery</li>
+				<li>Artillery_BaseDestroyer</li>
+			</buildingTags>
+		</building>
+	</ThingDef>
+
+
+		<ThingDef ParentName="BuildingBase">
+		<defName>LaserTurretGun</defName>
+		<label>Laser Turret</label>
+		<thingClass>Building_TurretGun</thingClass>
+		<graphicData>
+			<texPath>Things/Building/Security/TurretGun_Four</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>(4,4)</drawSize>
+		</graphicData>
+		<altitudeLayer>Waist</altitudeLayer>
+		<statBases>
+			<MaxHitPoints>800</MaxHitPoints>
+			<Flammability>0.5</Flammability>
+			<WorkToMake>12000</WorkToMake>
+			<Beauty>-60</Beauty>
+		</statBases>
+		<tickerType>Normal</tickerType>
+		<comps>
+			<li>
+				<compClass>CompExplosive</compClass>
+				<explosiveRadius>3.9</explosiveRadius>
+				<explosiveDamageType>Bomb</explosiveDamageType>
+			</li>
+			<li><compClass>CompForbiddable</compClass></li>
+			<li>
+				<compClass>CompPowerTrader</compClass>
+				<basePowerConsumption>2500</basePowerConsumption>
+			</li>
+		</comps>
+		<description>A turret with laser weapon mounted on the top, sets target on fire and deals damage as well. The turret explodes when heavily damaged.
+		
+Range: 45 
+Damage: 17</description>
+		<size>(2,2)</size>
+		<passability>PassThroughOnly</passability>
+        <pathCost>50</pathCost>
+		<castEdgeShadows>true</castEdgeShadows>
+		<fillPercent>0.4</fillPercent>
+		<stuffCategories>
+		  <li>Metallic</li>
+		</stuffCategories>
+		<costStuffCount>800</costStuffCount>
+		<costList>
+		  <Electronics>50</Electronics>
+		  <PlasteelBar>350</PlasteelBar>
+		</costList>
+		<combatTargetBuilding>true</combatTargetBuilding>
+		<researchPrerequisite>LaserTurret</researchPrerequisite>
+		<leaveResourcesWhenKilled>false</leaveResourcesWhenKilled>
+		<terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
+		<designationCategory>Security</designationCategory>
+		<specialDisplayRadius>45</specialDisplayRadius>
+		<building>
+			<turretGunDef>Gun_LaserTurret</turretGunDef>
+			<ai_combatDangerous>true</ai_combatDangerous>
+			<turretburstCooldownTicks>200</turretburstCooldownTicks>
+      			<turretTopgraphicPath>Things/Building/Security/LaserTurretGun_Top</turretTopgraphicPath>
+		</building>
+	</ThingDef>
+
+
+	<ThingDef ParentName="BuildingBase">
+	<defName>RLGun</defName>
+	<label>Rocket Launcher</label>
+	<thingClass>Building_TurretGun</thingClass>
+	<graphicData>
+		<texPath>Things/Building/Security/TurretGun</texPath>
+		<graphicClass>Graphic_Single</graphicClass>
+		<drawSize>(4,4)</drawSize>
+	</graphicData>
+		<altitudeLayer>Waist</altitudeLayer>
+        <hasInteractionCell>True</hasInteractionCell>
+        <interactionCellOffset>(0,0,-1)</interactionCellOffset>
+		<statBases>
+			<MaxHitPoints>800</MaxHitPoints>
+			<Flammability>0.5</Flammability>
+			<WorkToMake>12000</WorkToMake>
+			<Beauty>-60</Beauty>
+		</statBases>
+		<tickerType>Normal</tickerType>
+		<comps>
+      <li>
+        <compClass>CompMannable</compClass>
+      </li>
+			<li>
+				<compClass>CompExplosive</compClass>
+				<explosiveRadius>4.9</explosiveRadius>
+				<explosiveDamageType>Bomb</explosiveDamageType>
+			</li>
+			<li><compClass>CompForbiddable</compClass></li>
+		</comps>
+            <placeWorkers>
+            <li>PlaceWorker_NotUnderRoof</li>
+            </placeWorkers>
+		<description>Rocket launcher fires 6 rockets at target area with each volley. Fires over wall, need to be manned. The turret explodes when heavily damaged.
+		
+Requires rockets. 
+
+Range: Between 20 and 800 
+Damage: 35
+Burst: 6</description>
+		<size>(2,2)</size>
+		<passability>PassThroughOnly</passability>
+        <pathCost>50</pathCost>
+		<castEdgeShadows>true</castEdgeShadows>
+		<fillPercent>0.4</fillPercent>
+		<stuffCategories>
+		  <li>Metallic</li>
+		</stuffCategories>
+		<costStuffCount>800</costStuffCount>
+		<costList>
+			<Electronics>50</Electronics>
+			<PlasteelBar>300</PlasteelBar>
+		</costList>
+		<combatTargetBuilding>true</combatTargetBuilding>
+		<researchPrerequisite>RocketLauncher</researchPrerequisite>
+		<leaveResourcesWhenKilled>false</leaveResourcesWhenKilled>
+		<terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
+		<designationCategory>Security</designationCategory>
+        <specialDisplayRadius>20</specialDisplayRadius>
+		<building>
+			<turretGunDef>Gun_RL</turretGunDef>
+            <turretShellDef>Rockets</turretShellDef>
+            <turretBurstWarmupTicks>400</turretBurstWarmupTicks>
+			<turretburstCooldownTicks>2400</turretburstCooldownTicks>
+      			<turretTopgraphicPath>Things/Building/Security/RLGun_Top</turretTopgraphicPath>
+				<buildingTags>
+				<li>Artillery</li>
+				<li>Artillery_BaseDestroyer</li>
+			</buildingTags>
+		</building>
+	</ThingDef>
+
+
+	<ThingDef ParentName="BuildingBase">
+	<defName>SpotlightTower</defName>
+	<label>Spotlight Tower</label>
+	<thingClass>Building_TurretGun</thingClass>
+	<graphicData>
+		<texPath>Things/Building/Security/SpotlightBase</texPath>
+		<graphicClass>Graphic_Single</graphicClass>
+		<drawSize>(1,1)</drawSize>
+	</graphicData>
+		<altitudeLayer>Waist</altitudeLayer>
+		<statBases>
+			<MaxHitPoints>300</MaxHitPoints>
+			<Flammability>0.5</Flammability>
+			<WorkToMake>1600</WorkToMake>
+			<Beauty>-60</Beauty>
+		</statBases>
+		<tickerType>Normal</tickerType>
+		<comps>
+			<li><compClass>CompForbiddable</compClass></li>
+			<li>
+				<compClass>CompPowerTrader</compClass>
+				<basePowerConsumption>300</basePowerConsumption>
+			</li>
+		</comps>
+            <placeWorkers>
+                <li>PlaceWorker_NotUnderRoof</li>
+            </placeWorkers>
+		<description>A spotlight tower, support home defence in darkness. (removes accuracy-penalty from darkness)</description>
+		<size>(1,1)</size>
+		<passability>PassThroughOnly</passability>
+        <pathCost>50</pathCost>
+		<castEdgeShadows>true</castEdgeShadows>
+		<fillPercent>0.4</fillPercent>
+		<costList>
+			<SteelBar>150</SteelBar>
+			<Glass>20</Glass>
+		</costList>
+		<combatTargetBuilding>true</combatTargetBuilding>
+		<researchPrerequisite>Outdoor_Lighting</researchPrerequisite>
+		<leaveResourcesWhenKilled>true</leaveResourcesWhenKilled>
+		<terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
+		<designationCategory>Lighting</designationCategory>
+		<specialDisplayRadius>50</specialDisplayRadius>
+		<building>
+			<turretGunDef>Gun_SpotlightTower</turretGunDef>
+			<turretburstCooldownTicks>800</turretburstCooldownTicks>
+      		<turretTopgraphicPath>Things/Building/Security/SpotlightTowerGun_Top</turretTopgraphicPath>
+		</building>
+	</ThingDef>
+
+	<ThingDef ParentName="BuildingBase">
+	<defName>SpotlightDeployed</defName>
+	<label>Spotlight Glower</label>
+	<thingClass>TurretCollection.Building_SpotlightGlower</thingClass>
+	<graphicData>    
+	<texPath>Things/Projectile/SpotlightInv</texPath>	
+	<graphicClass>Graphic_Single</graphicClass>
+	</graphicData>
+    <building>
+      <isEdifice>false</isEdifice>
+    </building>
+    <altitudeLayer>Item</altitudeLayer>
+    <passability>PassThroughOnly</passability>	
+	<useHitPoints>false</useHitPoints>
+	<comps>
+	<li>
+	<compClass>CompGlowerX</compClass>		
+	<glowRadius>11</glowRadius>
+	<overlightRadius>11</overlightRadius>
+	<glowColor>(450,450,450,0)</glowColor>
+	</li>
+	</comps>
+	<selectable>false</selectable>
+	<tickerType>Normal</tickerType>
+	<description></description>
+	</ThingDef>
+
+
+
+</ThingDefs>

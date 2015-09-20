@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ThingCategoryDefs>
+
+
+
+
+      <ThingCategoryDef>
+        <defName>Sodas</defName>
+        <label>sodas</label>
+        <parent>SweetMeals</parent>
+      </ThingCategoryDef>
+
+     
+
+</ThingCategoryDefs>

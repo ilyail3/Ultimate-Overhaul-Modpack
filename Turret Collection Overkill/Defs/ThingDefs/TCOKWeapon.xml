@@ -1,0 +1,205 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ThingDefs>
+
+  <ThingDef Name="BaseGun" Abstract="True">
+    <category>Item</category>
+    <thingClass>ThingWithComps</thingClass>
+    <equipmentType>Primary</equipmentType>
+    <pathCost>10</pathCost>
+    <useHitPoints>True</useHitPoints>
+    <selectable>True</selectable>
+    <graphicData>
+      <onGroundRandomRotateAngle>35</onGroundRandomRotateAngle>
+    </graphicData>
+    <drawGUIOverlay>true</drawGUIOverlay>
+    <statBases>
+      <MaxHitPoints>100</MaxHitPoints>
+      <Flammability>1.0</Flammability>
+      <DeteriorationRate>1</DeteriorationRate>
+      <SellPriceFactor>0.5</SellPriceFactor>
+    </statBases>
+    <altitudeLayer>Item</altitudeLayer>
+    <alwaysHaulable>True</alwaysHaulable>
+    <tickerType>Never</tickerType>
+    <techLevel>Midworld</techLevel>
+    <thingCategories>
+      <li>WeaponsRanged</li>
+    </thingCategories>
+    <inspectorTabs>
+      <li>ITab_Art</li>
+    </inspectorTabs>
+    <comps>
+      <li>
+        <compClass>CompForbiddable</compClass>
+      </li>
+      <li>
+        <compClass>CompEquippable</compClass>
+      </li>
+      <li>
+        <compClass>CompQuality</compClass>
+      </li>
+      <li>
+        <compClass>CompArt</compClass>
+        <nameMaker>NamerGun</nameMaker>
+        <descriptionMaker>ArtWeaponGun</descriptionMaker>
+        <minQualityForArtistic>Excellent</minQualityForArtistic>
+      </li>
+    </comps>
+    <smeltProducts>
+      <SteelBar>10</SteelBar>
+    </smeltProducts>
+  </ThingDef>
+
+  <ThingDef Name="BaseHumanGun" ParentName="BaseGun" Abstract="True">
+    <weaponTags>
+      <li>Gun</li>
+    </weaponTags>
+  </ThingDef>
+
+  <ThingDef Name="BaseBullet" Abstract="True">
+    <category>Projectile</category>
+    <tickerType>Normal</tickerType>
+    <altitudeLayer>Projectile</altitudeLayer>
+    <thingClass>Bullet</thingClass>
+    <label>bullet</label>
+    <useHitPoints>False</useHitPoints>
+    <neverMultiSelect>True</neverMultiSelect>
+    <graphicData>
+      <shaderType>Transparent</shaderType>
+    </graphicData>
+  </ThingDef>
+
+
+	<ThingDef Name="30mmGunBullet" Abstract="True">
+	<category>Projectile</category>
+	<tickerType>Normal</tickerType>
+	<altitudeLayer>Projectile</altitudeLayer>
+	<thingClass>TurretCollection.Projectile_30mmGunBullet</thingClass>
+	<useHitPoints>false</useHitPoints>		
+	<neverMultiSelect>True</neverMultiSelect>
+    <graphicData>
+      <shaderType>Transparent</shaderType>
+    </graphicData>
+	</ThingDef>
+
+
+<!-- ============================================== -->
+
+	<ThingDef ParentName="30mmGunBullet">
+    <defName>Bullet_Avenger</defName>
+    <label>30mm Round</label>
+	<graphicData>
+		<texPath>Things/Projectile/50CalRound</texPath>
+		<graphicClass>Graphic_Single</graphicClass>
+	</graphicData>
+    <projectile>
+            <flyOverhead>false</flyOverhead>
+			<damageDef>ArmorPiercing</damageDef>
+			<damageAmountBase>14</damageAmountBase>
+            <explosionRadius>1</explosionRadius>
+			<speed>125</speed>
+            <soundExplode>SmallExplosion</soundExplode>
+		</projectile>
+	</ThingDef>
+
+
+	<ThingDef ParentName="BaseGun">
+	<defName>Gun_Avenger</defName>
+	<label>30mm avenger cannon</label>
+	<graphicData>
+		<texPath>CH</texPath>
+		<graphicClass>Graphic_Single</graphicClass>
+	</graphicData>
+    <menuHidden>True</menuHidden>
+	<canBeSpawningInventory>false</canBeSpawningInventory>
+	<tradeability>Never</tradeability>
+    <statBases>
+      <MarketValue>13000</MarketValue>
+      <AccuracyTouch>0.95</AccuracyTouch>
+      <AccuracyShort>0.65</AccuracyShort>
+      <AccuracyMedium>0.35</AccuracyMedium>
+      <AccuracyLong>0.15</AccuracyLong>
+      <RangedWeapon_Cooldown>1</RangedWeapon_Cooldown>
+    </statBases>
+      <weaponTags>
+      <li>TurretGun</li>
+    </weaponTags>
+		<verbs>
+		   <li>
+			<verbClass>TurretCollection.Verb_ShootAVG</verbClass>
+        	<hasStandardCommand>true</hasStandardCommand>
+			<projectileDef>Bullet_Avenger</projectileDef>
+			<range>75</range>
+            <minRange>5</minRange>
+            <forcedMissRadius>1.5</forcedMissRadius>
+			<accuracyTouch>0.95</accuracyTouch>
+			<accuracyShort>0.65</accuracyShort>
+			<accuracyMedium>0.35</accuracyMedium>
+			<accuracyLong>0.15</accuracyLong>
+            <ticksBetweenBurstShots>2</ticksBetweenBurstShots>
+            <burstShotCount>15</burstShotCount>
+		   </li>
+		</verbs>
+	</ThingDef>
+
+
+	<ThingDef ParentName="30mmGunBullet">
+    <defName>Bullet_35mm</defName>
+    <label>35mm Round</label>
+	<graphicData>
+		<texPath>Things/Projectile/50CalRound</texPath>
+		<graphicClass>Graphic_Single</graphicClass>
+	</graphicData>
+    <projectile>
+        <flyOverhead>false</flyOverhead>
+		<damageDef>ArmorPiercing</damageDef>
+		<damageAmountBase>17</damageAmountBase>
+        <explosionRadius>1</explosionRadius>
+		<speed>250</speed>
+        <soundExplode>35mmExplosion</soundExplode>
+		</projectile>
+	</ThingDef>
+
+
+	<ThingDef ParentName="BaseGun">
+		<defName>Gun_ChainGun</defName>
+		<label>35mm chain gun</label>
+	<graphicData>
+        <texPath>CH</texPath>
+		<graphicClass>Graphic_Single</graphicClass>
+	</graphicData>
+    <menuHidden>True</menuHidden>
+	<canBeSpawningInventory>false</canBeSpawningInventory>
+	<tradeability>Never</tradeability>
+    <statBases>
+      <MarketValue>4800</MarketValue>
+      <AccuracyTouch>0.75</AccuracyTouch>
+      <AccuracyShort>0.35</AccuracyShort>
+      <AccuracyMedium>0.18</AccuracyMedium>
+      <AccuracyLong>0.06</AccuracyLong>
+      <RangedWeapon_Cooldown>1</RangedWeapon_Cooldown>
+    </statBases>
+      <weaponTags>
+      <li>TurretGun</li>
+    </weaponTags>
+		<verbs>
+		   <li>
+			<verbClass>Verb_Shoot</verbClass>
+        	<hasStandardCommand>true</hasStandardCommand>
+			<projectileDef>Bullet_35mm</projectileDef>
+			<range>80</range>
+            <minRange>5</minRange>
+			<accuracyTouch>0.75</accuracyTouch>
+			<accuracyShort>0.35</accuracyShort>
+			<accuracyMedium>0.18</accuracyMedium>
+			<accuracyLong>0.06</accuracyLong>
+            <ticksBetweenBurstShots>17</ticksBetweenBurstShots>
+            <burstShotCount>3</burstShotCount>
+			<soundCast>35mm_shot</soundCast>
+            <muzzleFlashScale>9</muzzleFlashScale>
+		   </li>
+		</verbs>
+	</ThingDef>
+
+
+</ThingDefs>

@@ -1,0 +1,306 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Resources>
+
+
+  <!-- =========== bases =========== -->
+
+  <ThingDef Name="ResourceBase" Abstract="True">
+    <thingClass>ThingWithComps</thingClass>
+    <label>unspecified resource</label>
+    <category>Item</category>
+    <resourceReadoutPriority>Middle</resourceReadoutPriority>
+    <useHitPoints>true</useHitPoints>
+    <selectable>true</selectable>
+    <altitudeLayer>Item</altitudeLayer>
+    <stackLimit>75</stackLimit>
+    <comps>
+      <li>
+        <compClass>CompForbiddable</compClass>
+      </li>
+    </comps>
+	<statBases>
+	  <SellPriceFactor>0.35</SellPriceFactor>
+	</statBases>
+    <alwaysHaulable>true</alwaysHaulable>
+    <drawGUIOverlay>true</drawGUIOverlay>
+    <rotatable>false</rotatable>
+    <pathCost>15</pathCost>
+  </ThingDef>
+
+  <ThingDef Name="ResourceVerbBase" ParentName="ResourceBase" Abstract="True">
+    <equipmentType>Primary</equipmentType>
+    <techLevel>Neolithic</techLevel>
+    <comps>
+      <li>
+        <compClass>CompEquippable</compClass>
+      </li>
+    </comps>
+  </ThingDef>
+
+<!--=============== TC ====================-->
+
+	<ThingDef ParentName="ResourceBase">
+	<defName>SmartMine</defName>
+	<label>smart mine</label>
+	<description>A smart anti-personnel mine, launch itself to the enemy within a small radius and explode.</description>
+	<graphicData>
+	  <texPath>Things/Item/Resource/SmartMine</texPath>
+	  <graphicClass>Graphic_Single</graphicClass>  
+	</graphicData>
+	<soundInteract>Standard_Drop</soundInteract>
+	<soundDrop>Standard_Drop</soundDrop>
+	<tickerType>Normal</tickerType>
+	<stackLimit>5</stackLimit>
+	<statBases>
+      <MarketValue>150</MarketValue>
+      <MaxHitPoints>100</MaxHitPoints>
+      <Flammability>0</Flammability>
+      <DeteriorationRate>0</DeteriorationRate>
+	</statBases>
+	<thingCategories>
+      <li>Manufactured</li>
+	</thingCategories> 
+	<comps>
+      <li>
+        <compClass>CompExplosive</compClass>
+        <explosiveRadius>2.9</explosiveRadius>
+        <explosiveDamageType>Bomb</explosiveDamageType>
+        <explosiveExpandPerStackcount>0.4</explosiveExpandPerStackcount>
+        <startWickHitPointsPercent>0.333</startWickHitPointsPercent>
+        <wickTicks>
+          <min>10</min>
+          <max>30</max>
+        </wickTicks>
+      </li>
+	</comps>
+	</ThingDef>
+
+
+	<ThingDef ParentName="ResourceBase">
+	<defName>AMRound</defName>
+	<label>Anti-Materiel .50Cal Round</label>
+	<description>Fired from Anti-Materiel .50Cal Round.</description>
+    <graphicData>
+	  <texPath>Things/Item/Resource/hmgb</texPath>
+	  <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+	<soundInteract>Metal_Drop</soundInteract>
+	<soundDrop>Standard_Drop</soundDrop>
+	<tickerType>Normal</tickerType>
+	<stackLimit>75</stackLimit>
+	<statBases>
+      <MarketValue>11</MarketValue>
+      <MaxHitPoints>70</MaxHitPoints>
+      <Flammability>1.0</Flammability>
+      <DeteriorationRate>0.5</DeteriorationRate>
+	</statBases>
+	<thingCategories>
+      <li>Ammo</li>
+	</thingCategories> 
+	<comps>
+      <li>
+        <compClass>CompExplosive</compClass>
+        <explosiveRadius>2.0</explosiveRadius>
+        <explosiveDamageType>Bomb</explosiveDamageType>
+        <explosiveExpandPerStackcount>0.4</explosiveExpandPerStackcount>
+        <startWickHitPointsPercent>0.333</startWickHitPointsPercent>
+        <wickTicks>
+          <min>10</min>
+          <max>30</max>
+        </wickTicks>
+      </li>
+	</comps>
+	</ThingDef>
+
+
+
+	<ThingDef ParentName="ResourceBase">
+	<defName>CannonShell</defName>
+	<label>cannon shell</label>
+	<description>Fired from cannon turret.</description>
+	<graphicData>
+	  <texPath>Things/Item/Resource/CannonShell</texPath>
+	  <graphicClass>Graphic_Single</graphicClass>  
+	</graphicData>
+	<soundInteract>Metal_Drop</soundInteract>
+	<soundDrop>Standard_Drop</soundDrop>
+	<tickerType>Normal</tickerType>
+	<stackLimit>25</stackLimit>
+	<statBases>
+      <MarketValue>14</MarketValue>
+      <MaxHitPoints>70</MaxHitPoints>
+      <Flammability>1.0</Flammability>
+      <DeteriorationRate>1</DeteriorationRate>
+	</statBases>
+	<thingCategories>
+    <li>Ammo</li>
+	</thingCategories> 
+	<comps>
+      <li>
+        <compClass>CompExplosive</compClass>
+        <explosiveRadius>2.9</explosiveRadius>
+        <explosiveDamageType>Bomb</explosiveDamageType>
+        <explosiveExpandPerStackcount>0.4</explosiveExpandPerStackcount>
+        <startWickHitPointsPercent>0.333</startWickHitPointsPercent>
+        <wickTicks>
+          <min>10</min>
+          <max>30</max>
+        </wickTicks>
+      </li>
+	</comps>
+	</ThingDef>
+
+
+
+	<ThingDef ParentName="ResourceBase">
+	<defName>Rockets</defName>
+	<label>rockets</label>
+	<description>6 Rocktes fired from rocket launcher.</description>
+	<graphicData>
+	  <texPath>Things/Item/Resource/Rocket</texPath>
+	  <graphicClass>Graphic_Single</graphicClass>  
+	</graphicData>
+	<soundInteract>Metal_Drop</soundInteract>
+	<soundDrop>Standard_Drop</soundDrop>
+	<tickerType>Normal</tickerType>
+	<stackLimit>2</stackLimit>
+	<statBases>
+      <MarketValue>160</MarketValue>
+      <MaxHitPoints>140</MaxHitPoints>
+      <Flammability>1.0</Flammability>
+      <DeteriorationRate>1</DeteriorationRate>
+	  <SellPriceFactor>0.25</SellPriceFactor>
+	</statBases>
+	<thingCategories>
+      <li>Ammo</li>
+	</thingCategories> 
+	<comps>
+      <li>
+        <compClass>CompExplosive</compClass>
+        <explosiveRadius>3.9</explosiveRadius>
+        <explosiveDamageType>Bomb</explosiveDamageType>
+        <explosiveExpandPerStackcount>0.4</explosiveExpandPerStackcount>
+        <startWickHitPointsPercent>0.333</startWickHitPointsPercent>
+        <wickTicks>
+          <min>10</min>
+          <max>30</max>
+        </wickTicks>
+      </li>
+	</comps>
+	</ThingDef>
+
+	<ThingDef ParentName="ResourceBase">
+	<defName>HeavyMachinegunBullet</defName>
+	<label>MG 12.7mm bullets</label>
+	<description>Machinegun 12.7mm bullets.</description>
+    <graphicData> 
+	  <texPath>Things/Item/Resource/hmgb</texPath>
+	  <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+	<soundInteract>Metal_Drop</soundInteract>
+	<soundDrop>Standard_Drop</soundDrop>
+	<tickerType>Normal</tickerType>
+	<stackLimit>75</stackLimit>
+	<statBases>
+      <MarketValue>2.2</MarketValue>
+      <MaxHitPoints>100</MaxHitPoints>
+      <Flammability>1.0</Flammability>
+      <DeteriorationRate>0.5</DeteriorationRate>
+	</statBases>
+	<thingCategories>
+    <li>Ammo</li>
+	</thingCategories> 
+	<comps>
+      <li>
+        <compClass>CompExplosive</compClass>
+        <explosiveRadius>1.1</explosiveRadius>
+        <explosiveDamageType>Bomb</explosiveDamageType>
+        <explosiveExpandPerStackcount>0.4</explosiveExpandPerStackcount>
+        <startWickHitPointsPercent>0.333</startWickHitPointsPercent>
+        <wickTicks>
+          <min>10</min>
+          <max>30</max>
+        </wickTicks>
+      </li>
+	</comps>
+	</ThingDef>
+
+
+
+	<ThingDef ParentName="ResourceBase">
+	<defName>HowitzerShell</defName>
+	<label>Howitzer 155mm shell</label>
+	<description>Fired from 155mm howitzer.</description>
+    <graphicData>
+	  <texPath>Things/Item/Resource/howizer</texPath>
+	  <graphicClass>Graphic_Single</graphicClass>  
+    </graphicData>
+	<soundInteract>Metal_Drop</soundInteract>
+	<soundDrop>Standard_Drop</soundDrop>
+	<tickerType>Normal</tickerType>
+	<stackLimit>25</stackLimit>
+	<statBases>
+      <MarketValue>40</MarketValue>
+      <MaxHitPoints>70</MaxHitPoints>
+      <Flammability>1.0</Flammability>
+      <DeteriorationRate>0.5</DeteriorationRate>
+	</statBases>
+	<thingCategories>
+      <li>Ammo</li>
+	</thingCategories> 
+	<comps>
+      <li>
+        <compClass>CompExplosive</compClass>
+        <explosiveRadius>2.9</explosiveRadius>
+        <explosiveDamageType>Bomb</explosiveDamageType>
+        <explosiveExpandPerStackcount>0.4</explosiveExpandPerStackcount>
+        <startWickHitPointsPercent>0.333</startWickHitPointsPercent>
+        <wickTicks>
+          <min>10</min>
+          <max>30</max>
+        </wickTicks>
+      </li>
+	</comps>
+	</ThingDef>
+
+
+	<ThingDef ParentName="ResourceBase">
+	<defName>TurretEMPGrenades</defName>
+	<label>turret EMP grenades</label>
+	<description>3 turret EMP grenades fired from emp launcher.</description>
+    <graphicData> 
+	  <texPath>Things/Item/Resource/TurretEMPGrenade</texPath>
+	  <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+	<soundInteract>Metal_Drop</soundInteract>
+	<soundDrop>Standard_Drop</soundDrop>
+	<tickerType>Normal</tickerType>  
+	<stackLimit>10</stackLimit> 
+	<statBases>
+      <MarketValue>40</MarketValue>
+      <MaxHitPoints>70</MaxHitPoints>
+      <Flammability>1.0</Flammability>
+      <DeteriorationRate>0.5</DeteriorationRate>
+	</statBases>
+	<thingCategories>
+      <li>Ammo</li>
+	</thingCategories> 
+	<comps>
+      <li>
+        <compClass>CompExplosive</compClass>
+        <explosiveRadius>3.9</explosiveRadius>
+        <explosiveDamageType>EMP</explosiveDamageType>
+        <explosiveExpandPerStackcount>0.4</explosiveExpandPerStackcount>
+        <startWickHitPointsPercent>0.333</startWickHitPointsPercent>
+        <wickTicks>
+          <min>10</min>
+          <max>30</max>
+        </wickTicks>
+      </li>
+	</comps>
+	</ThingDef>
+
+
+
+
+</Resources>

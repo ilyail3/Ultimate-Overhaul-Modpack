@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<WorkGivers>
+
+	<WorkGiverDef>
+		<defName>DoBillsCraftPrimitiveWeapons</defName>
+		<giverClass>WorkGiver_DoBill</giverClass>
+		<workType>Smithing</workType>
+		<priorityInType>12</priorityInType>
+		<singleBillGiverDef>PrimitiveWeaponCraftingWorkTable</singleBillGiverDef>
+		<verb>smith</verb>
+		<gerund>smithing at</gerund>
+		<requiredCapacities>
+			<li>Manipulation</li>
+		</requiredCapacities>
+	</WorkGiverDef>
+</WorkGivers>

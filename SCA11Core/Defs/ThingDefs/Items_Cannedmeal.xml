@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ThingDefs>
+
+  <ThingDef Name="MealBase" Abstract="True">
+    <label>meal</label>
+    <thingClass>Meal</thingClass>
+    <category>Item</category>
+    <useHitPoints>true</useHitPoints>
+    <selectable>true</selectable>
+    <statBases>
+      <MaxHitPoints>50</MaxHitPoints>
+      <Flammability>1.0</Flammability>
+    </statBases>
+    <altitudeLayer>Item</altitudeLayer>
+    <stackLimit>10</stackLimit>
+    <tickerType>Rare</tickerType>
+    <description>"Meal lacks desc."</description>
+    <socialPropernessMatters>true</socialPropernessMatters>
+    <thingCategories>
+      <li>FoodMeals</li>
+    </thingCategories>
+    <alwaysHaulable>true</alwaysHaulable>
+    <comps>
+      <li>
+        <compClass>CompForbiddable</compClass>
+      </li>
+    </comps>
+    <pathCost>15</pathCost>
+    <resourceReadoutPriority>Last</resourceReadoutPriority>
+    <drawGUIOverlay>true</drawGUIOverlay>
+    <ingestible>
+      <maxNumToIngestAtOnce>1</maxNumToIngestAtOnce>
+    </ingestible>
+  </ThingDef>
+
+  <ThingDef ParentName="MealBase" Name="MealRottable" Abstract="True">
+    <comps>
+      <li Class="CompProperties_Rottable">
+        <compClass>CompRottable</compClass>
+        <daysToRotStart>4</daysToRotStart>
+        <rotDestroys>true</rotDestroys>
+      </li>
+    </comps>
+  </ThingDef>
+
+
+  
+  
+  
+  
+  
+
+  <ThingDef ParentName="MealBase">
+    <defName>MealCannedFood</defName>
+    <label>canned meal</label>
+    <description>A meal preserved in cans to prevent it going bad.</description>
+	<graphicData>
+    <texPath>Things/Item/Meal/Cannedfood</texPath>
+    <graphicClass>Graphic_Single</graphicClass>
+	</graphicData>
+    <statBases>
+      <DeteriorationRate>0.25</DeteriorationRate>
+      <MarketValue>22</MarketValue>
+    </statBases>
+    <ingestible>
+      <preferability>Fine</preferability>
+      <nutrition>0.70</nutrition>
+      <joy>0.01</joy>
+      <eatEffect>EatVegetarian</eatEffect>
+      <soundEat>Meal_Eat</soundEat>
+    </ingestible>
+  </ThingDef>
+
+   
+
+
+</ThingDefs>

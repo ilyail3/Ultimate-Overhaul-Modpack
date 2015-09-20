@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<Defs>
+	
+	<ThoughtDef>
+		<defName>Soda</defName>
+		<workerClass>ThoughtWorker_Hediff</workerClass>
+		<hediff>Soda</hediff>
+		<stages>
+			<li>
+				<label>initial-hidden</label>
+				<description>Should not appear.</description>
+				<baseMoodEffect>0</baseMoodEffect>
+				<visible>false</visible>
+			</li>
+			<li>
+				<label>refreshed</label>
+				<description>I had a nice fizzy drink. It may not be much, but it's nice to have.</description>
+				<baseMoodEffect>5</baseMoodEffect>
+			</li> 
+		</stages>
+	</ThoughtDef>
+	
+	<ThoughtDef>
+		<defName>Syrup</defName>
+		<workerClass>ThoughtWorker_Hediff</workerClass>
+		<hediff>Syrup</hediff>
+		<stages>
+			<li>
+				<label>initial-hidden</label>
+				<description>Should not appear.</description>
+				<baseMoodEffect>0</baseMoodEffect>
+				<visible>false</visible>
+			</li>
+			<li>
+				<label>sweetened</label>
+				<description>That was a lot of sugar. It tasted really good, though.</description>
+				<baseMoodEffect>3</baseMoodEffect>
+			</li> 
+			<li>
+				<label>jittery</label>
+				<description>That was too much sugar. My hands are starting to shake.</description>
+				<baseMoodEffect>1</baseMoodEffect>
+			</li>
+			<li>
+				<label>hyperglycemic</label>
+				<description>I don't feel so good.</description>
+				<baseMoodEffect>-3</baseMoodEffect>
+			</li>
+			<li>
+				<label>sugar coma</label>
+				<description>I think I'm gonna pass out; I feel really lightheaded.</description>
+				<baseMoodEffect>-10</baseMoodEffect>
+			</li>
+		</stages>
+	</ThoughtDef>
+	
+	<ThoughtDef>
+		<defName>TastySoda</defName>
+		<workerClass>ThoughtWorker_Hediff</workerClass>
+		<hediff>TastySoda</hediff>
+		<stages>
+			<li>
+				<label>initial-hidden</label>
+				<description>Should not appear.</description>
+				<baseMoodEffect>0</baseMoodEffect>
+				<visible>false</visible>
+			</li>
+			<li>
+				<label>tasty soda</label>
+				<description>It's nice to have a tasty drink once in a while.</description>
+				<baseMoodEffect>5</baseMoodEffect>
+			</li> 
+		</stages>
+	</ThoughtDef>
+	
+	<ThoughtDef>
+		<defName>KokaSoda</defName>
+		<workerClass>ThoughtWorker_Hediff</workerClass>
+		<hediff>KokaSoda</hediff>
+		<stages>
+			<li>
+				<label>initial-hidden</label>
+				<description>Should not appear.</description>
+				<baseMoodEffect>0</baseMoodEffect>
+				<visible>false</visible>
+			</li>
+			<li>
+				<label>Koka soda</label>
+				<description>That was a stimulating drink.</description>
+				<baseMoodEffect>3</baseMoodEffect>
+			</li> 
+		</stages>
+	</ThoughtDef>
+	
+	<ThoughtDef>
+		<defName>PeppiSoda</defName>
+		<workerClass>ThoughtWorker_Hediff</workerClass>
+		<hediff>PeppiSoda</hediff>
+		<stages>
+			<li>
+				<label>initial-hidden</label>
+				<description>Should not appear.</description>
+				<baseMoodEffect>0</baseMoodEffect>
+				<visible>false</visible>
+			</li>
+			<li>
+				<label>Peppi soda</label>
+				<description>I can really focus after that drink.</description>
+				<baseMoodEffect>3</baseMoodEffect>
+			</li> 
+		</stages>
+	</ThoughtDef>
+	
+	<ThoughtDef>
+		<defName>ThrumboEnergy</defName>
+		<workerClass>ThoughtWorker_Hediff</workerClass>
+		<hediff>ThrumboEnergy</hediff>
+		<stages>
+			<li>
+				<label>initial-hidden</label>
+				<description>Should not appear.</description>
+				<baseMoodEffect>0</baseMoodEffect>
+				<visible>false</visible>
+			</li>
+			<li>
+				<label>energized</label>
+				<description>I have a bit more energy now.</description>
+				<baseMoodEffect>5</baseMoodEffect>
+			</li>
+			<li>
+				<label>wired</label>
+				<description>What a rush!</description>
+				<baseMoodEffect>10</baseMoodEffect>
+			</li>      
+		</stages>
+	</ThoughtDef>
+	
+</Defs>

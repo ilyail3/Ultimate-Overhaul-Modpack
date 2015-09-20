@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Resources>
+	<ThingDef Name="ResourceBase" Abstract="True">
+		<thingClass>ThingWithComps</thingClass>
+		<label>unspecified resource</label>
+		<category>Item</category>
+		<resourceReadoutPriority>Middle</resourceReadoutPriority>
+		<useHitPoints>true</useHitPoints>
+		<selectable>true</selectable>
+		<altitudeLayer>Item</altitudeLayer>
+		<stackLimit>75</stackLimit>
+		<socialPropernessMatters>true</socialPropernessMatters>
+		<comps>
+			<li>
+				<compClass>CompForbiddable</compClass>
+			</li>
+		</comps>
+		<alwaysHaulable>true</alwaysHaulable>
+		<drawGUIOverlay>true</drawGUIOverlay>
+		<ingestible>
+			<maxNumToIngestAtOnce>1</maxNumToIngestAtOnce>
+		</ingestible>
+		<tickerType>Rare</tickerType>
+		<rotatable>false</rotatable>
+		<pathCost>15</pathCost>
+	</ThingDef>
+	
+	<ThingDef ParentName="ResourceBase">
+		<defName>stroyent</defName>
+		<label>Stroyent</label>
+		<description>Distilled amino acids, minerals and enzymes. Processed from Human flesh. Vaguely beef flavored.</description>
+		<graphicData>
+		<texPath>stroyent</texPath>
+		<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<statBases>
+			<MaxHitPoints>100</MaxHitPoints>
+			<Flammability>1.0</Flammability>
+			<DeteriorationRate>1</DeteriorationRate>
+			<MarketValue>1.5</MarketValue>
+		</statBases>
+		<soundInteract>Food_Drop</soundInteract>
+		<soundDrop>Food_Drop</soundDrop>
+		<ingestible>
+			<preferability>Raw</preferability>
+			<ingestedDirectThought>AteRawFood</ingestedDirectThought>
+			<nutrition>0.05</nutrition>
+			<eatEffect>EatVegetarian</eatEffect>
+			<soundEat>RawVegetable_Eat</soundEat>
+		</ingestible>
+		<thingCategories>
+			<li>MeatRaw</li>
+		</thingCategories>
+	</ThingDef>
+</Resources>

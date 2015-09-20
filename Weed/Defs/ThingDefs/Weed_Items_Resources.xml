@@ -1,0 +1,106 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Resources>
+
+
+  <!-- =========== bases =========== -->
+
+  <ThingDef Name="ResourceBase" Abstract="True">
+    <thingClass>ThingWithComps</thingClass>
+    <label>unspecified resource</label>
+    <category>Item</category>
+    <resourceReadoutPriority>Middle</resourceReadoutPriority>
+    <useHitPoints>true</useHitPoints>
+    <selectable>true</selectable>
+    <altitudeLayer>Item</altitudeLayer>
+    <stackLimit>75</stackLimit>
+    <comps>
+      <li>
+        <compClass>CompForbiddable</compClass>
+      </li>
+    </comps>
+    <alwaysHaulable>true</alwaysHaulable>
+    <drawGUIOverlay>true</drawGUIOverlay>
+    <rotatable>false</rotatable>
+    <pathCost>15</pathCost>
+  </ThingDef>
+
+  <ThingDef Name="ResourceVerbBase" ParentName="ResourceBase" Abstract="True">
+    <equipmentType>Primary</equipmentType>
+    <techLevel>Neolithic</techLevel>
+    <comps>
+      <li>
+        <compClass>CompForbiddable</compClass>
+      </li>
+    </comps>
+  </ThingDef>
+
+
+
+  
+  
+  <!--=============== Pure stuffs: Fabric, leather, etc  ====================-->
+
+  <ThingDef ParentName="ResourceBase">
+    <defName>WeedCloth</defName>
+    <label>Hemp</label>
+    <description>Cloth woven from the stuff those guys are smoking who decided that wearing this was a good idea?.</description>
+	<graphicData>
+    <texPath>WeedCloth</texPath>
+    <graphicClass>Graphic_Single</graphicClass>
+	<color>(1,100,14)</color>
+	</graphicData>
+    <statBases>
+      <MaxHitPoints>100</MaxHitPoints>
+      <MarketValue>2</MarketValue>
+      <Flammability>2.0</Flammability>
+      <DeteriorationRate>0.5</DeteriorationRate>
+    </statBases>
+    <stuffProps>
+      <categories>
+        <li>Fabric</li>
+      </categories>
+      <color>(1,100,14)</color>
+      <allowColorGenerators>false</allowColorGenerators>
+    </stuffProps>
+    <thingCategories>
+      <li>Textiles</li>
+    </thingCategories>
+    <comps>
+      <li>
+        <compClass>CompColorable</compClass>
+      </li>
+    </comps>
+  </ThingDef>
+  
+  <!-- Medicine -->
+  
+  <ThingDef ParentName="ResourceBase">
+    <defName>MedicalMarijuana</defName>
+    <label>Medical Marijuana</label>
+    <description>A Medical form of the Weed made from the oil that you extracted.</description>
+    <thingClass>Medicine</thingClass>
+	<graphicData>
+    <texPath>WeedMedicine</texPath>
+    <graphicClass>Graphic_Single</graphicClass>
+	</graphicData>
+    <soundInteract>Standard_Drop</soundInteract>
+    <soundDrop>Standard_Drop</soundDrop>
+    <statBases>
+      <MaxHitPoints>100</MaxHitPoints>
+      <MarketValue>15</MarketValue>
+      <Flammability>1.0</Flammability>
+      <MedicalPotency>0.8</MedicalPotency>
+      <DeteriorationRate>2</DeteriorationRate>
+    </statBases>
+    <thingCategories>
+      <li>Medicine</li>
+    </thingCategories>
+    <tickerType>Rare</tickerType>
+    <comps>
+      <li Class="CompProperties_Rottable">
+        <daysToRotStart>20</daysToRotStart>
+      </li>
+    </comps>
+  </ThingDef>
+  
+</Resources>

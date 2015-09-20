@@ -1,0 +1,879 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ThingDefs>
+
+	<ThingDef Name="BuildingBase" Abstract="True">
+		<category>Building</category>
+		<soundImpactDefault>BulletImpactMetal</soundImpactDefault>
+		<selectable>true</selectable>
+		<drawerType>MapMeshAndRealTime</drawerType>
+		<terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
+		<repairEffect>Repair</repairEffect>
+		<leaveResourcesWhenKilled>true</leaveResourcesWhenKilled>
+		<filthLeaving>BuildingRubble</filthLeaving>
+	</ThingDef>
+	
+	
+	<!--========================= Sandbags =============================-->
+
+
+	<ThingDef ParentName="BuildingBase">
+		<defName>Sandbags</defName>
+		<label>sandbags</label>
+		<thingClass>Building</thingClass>
+		<category>Building</category>
+		<graphicData>
+      <texPath>Things/Building/Linked/Sandbags_Atlas</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <linkType>Basic</linkType>
+      <linkFlags>
+        <li>Sandbags</li>
+      </linkFlags>
+    </graphicData>
+    <blueprintGraphicData>
+      <texPath>Things/Building/Linked/Sandbags_Blueprint_Atlas</texPath>
+    </blueprintGraphicData>
+		<uiIconPath>Things/Building/Linked/Sandbags_MenuIcon</uiIconPath>
+		<altitudeLayer>Waist</altitudeLayer>
+		<pathCost>40</pathCost>
+		<passability>PassThroughOnly</passability>
+		<castEdgeShadows>true</castEdgeShadows>
+		<fillPercent>0.65</fillPercent>
+		<statBases>
+			<MaxHitPoints>450</MaxHitPoints>
+			<Beauty>-10</Beauty>
+			<WorkToMake>180</WorkToMake>
+			<Flammability>0</Flammability>
+		</statBases>
+		<description>A sandbag barrier that provides cover from gunfire.</description>
+		<placingDraggableDimensions>1</placingDraggableDimensions>
+		<costList>
+			<Sand>5</Sand>
+		</costList>
+		<filthLeaving>SandbagRubble</filthLeaving>
+		<rotatable>false</rotatable>
+		<selectable>true</selectable>
+		<neverMultiSelect>true</neverMultiSelect>
+		<terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
+		<designationCategory>Security</designationCategory>
+		<staticSunShadowHeight>0.20</staticSunShadowHeight>
+		<constructEffect>ConstructDirt</constructEffect>
+		<repairEffect>ConstructDirt</repairEffect>
+	</ThingDef>
+  
+  
+	<!--========================= Embrasures =============================-->
+	
+	<!--
+	<ThingDef ParentName="BuildingBase">
+		<defName>StoneEmbrasure</defName>
+		<label>embrasure</label>
+		<thingClass>Building</thingClass>
+		<category>Building</category>
+		<graphicData>
+		<texPath>Things/Building/SCSecurity/StoneEmbrasure_Atlas</texPath>
+		<graphicClass>Graphic_Single</graphicClass>
+		<shaderType>CutoutComplex</shaderType>
+		<linkType>Basic</linkType>
+		<linkFlags>
+			<li>Custom2</li>
+		</linkFlags>
+		</graphicData>
+		<blueprintGraphicData>
+		<texPath>Things/Building/Linked/Sandbags_Blueprint_Atlas</texPath>
+		</blueprintGraphicData>
+		<uiIconPath>Things/Building/SCSecurity/StoneEmbrasure_MenuIcon</uiIconPath>
+		<altitudeLayer>Waist</altitudeLayer>
+		<passability>Impassable</passability>
+		<castEdgeShadows>true</castEdgeShadows>
+		<fillPercent>0.9</fillPercent>
+		<statBases>
+			<MaxHitPoints>350</MaxHitPoints>
+			<Beauty>-10</Beauty>
+			<WorkToMake>250</WorkToMake>
+			<Flammability>0</Flammability>
+		</statBases>
+		<description>A stone embrasure that provides exceptional cover from gunfire.</description>
+		<placingDraggableDimensions>1</placingDraggableDimensions>
+		<costStuffCount>10</costStuffCount>
+	    <stuffCategories>
+			<li>Stony</li>
+		</stuffCategories>
+		<filthLeaving>SandbagRubble</filthLeaving>
+		<rotatable>false</rotatable>
+		<selectable>true</selectable>
+		<neverMultiSelect>true</neverMultiSelect>
+		<terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
+		<designationCategory>Security</designationCategory>
+		<staticSunShadowHeight>0.20</staticSunShadowHeight>
+		<repairEffect>ConstructDirt</repairEffect>
+		<researchPrerequisite>Embrasures</researchPrerequisite>
+	</ThingDef>
+	-->
+
+	<!--=============== Manned turrets ===============-->
+	
+	
+	<ThingDef ParentName="BuildingBase">
+		<defName>TurretGunManned</defName>
+		<label>manned turret</label>
+		<thingClass>Building_TurretGun</thingClass>
+		<graphicData>
+		<graphicClass>Graphic_Single</graphicClass>
+		<texPath>Things/Building/SCSecurity/MannedGun_bottom</texPath>
+		<drawSize>(3,3)</drawSize>
+		</graphicData>
+		<uiIconPath>Things/Building/SCSecurity/MannedGunIco</uiIconPath>
+		<altitudeLayer>Waist</altitudeLayer>
+		<hasInteractionCell>True</hasInteractionCell>
+		<interactionCellOffset>(0,0,-1)</interactionCellOffset>
+		<statBases>
+			<MaxHitPoints>500</MaxHitPoints>
+			<Flammability>1.0</Flammability>
+			<WorkToMake>3250</WorkToMake>
+			<Beauty>-60</Beauty>
+		</statBases>
+		<tickerType>Normal</tickerType>
+		<comps>
+			<li>
+				<compClass>CompExplosive</compClass>
+				<explosiveRadius>3.9</explosiveRadius>
+				<explosiveDamageType>Bomb</explosiveDamageType>
+			</li>
+			<li>
+				<compClass>CompForbiddable</compClass>
+			</li>
+			<li>
+				<compClass>CompMannable</compClass>
+			</li>
+		</comps>
+		<description>A simple turret that can be manned to fire at nearby enemies. Explodes when damaged.
+Range:	 35
+Damage:   7
+Burst:	  3</description>
+		<size>(1,1)</size>
+		<passability>PassThroughOnly</passability>
+		<pathCost>50</pathCost>
+		<castEdgeShadows>true</castEdgeShadows>
+		<fillPercent>0.4</fillPercent>
+		<hasTooltip>true</hasTooltip>
+		<costList>
+			<SteelBar>250</SteelBar>
+		</costList>
+		<combatTargetBuilding>true</combatTargetBuilding>
+		<terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
+		<designationCategory>Security</designationCategory>
+		<specialDisplayRadius>34.9</specialDisplayRadius>
+		<building>
+			<turretGunDef>Gun_TurretImprovised</turretGunDef>
+			<turretBurstCooldownTicks>400</turretBurstCooldownTicks>
+			<turretTopgraphicPath>Things/Building/SCSecurity/SentryGun_Top</turretTopgraphicPath>
+		</building>
+		<researchPrerequisite>SecurityI</researchPrerequisite>
+	</ThingDef>
+	
+	
+	<ThingDef ParentName="BuildingBase">
+		<defName>TurretGunMannedGatling</defName>
+		<label>manned gatling turret</label>
+		<thingClass>Building_TurretGun</thingClass>
+		<graphicData>
+		<graphicClass>Graphic_Single</graphicClass>
+		<texPath>Things/Building/SCSecurity/MannedGun_bottom</texPath>
+		<drawSize>(3,3)</drawSize>
+		</graphicData>
+		<uiIconPath>Things/Building/SCSecurity/MannedGunGatlingIco</uiIconPath>
+		<altitudeLayer>Waist</altitudeLayer>
+		<hasInteractionCell>True</hasInteractionCell>
+		<interactionCellOffset>(0,0,-1)</interactionCellOffset>
+		<statBases>
+			<MaxHitPoints>500</MaxHitPoints>
+			<Flammability>1.0</Flammability>
+			<WorkToMake>3250</WorkToMake>
+			<Beauty>-60</Beauty>
+		</statBases>
+		<tickerType>Normal</tickerType>
+		<comps>
+			<li>
+				<compClass>CompExplosive</compClass>
+				<explosiveRadius>3.9</explosiveRadius>
+				<explosiveDamageType>Bomb</explosiveDamageType>
+			</li>
+			<li>
+				<compClass>CompForbiddable</compClass>
+			</li>
+			<li>
+				<compClass>CompMannable</compClass>
+			</li>
+		</comps>
+		<description>A gatling turret that can be manned to fire at nearby enemies. Explodes when damaged.
+Range:	 32
+Damage:   8
+Burst:	 30</description>
+		<size>(1,1)</size>
+		<passability>PassThroughOnly</passability>
+		<pathCost>50</pathCost>
+		<castEdgeShadows>true</castEdgeShadows>
+		<fillPercent>0.4</fillPercent>
+		<hasTooltip>true</hasTooltip>
+		<costList>
+			<SteelBar>250</SteelBar>
+		</costList>
+		<combatTargetBuilding>true</combatTargetBuilding>
+		<terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
+		<designationCategory>Security</designationCategory>
+		<specialDisplayRadius>31.9</specialDisplayRadius>
+		<building>
+			<turretGunDef>Gun_TurretGatling</turretGunDef>
+			<turretBurstCooldownTicks>300</turretBurstCooldownTicks>
+			<turretTopgraphicPath>Things/Building/SCSecurity/SentryGunGatling_Top</turretTopgraphicPath>
+		</building>
+		<researchPrerequisite>SpecializedMannedTurrets</researchPrerequisite>
+	</ThingDef>
+	
+	
+	<ThingDef ParentName="BuildingBase">
+		<defName>TurretGunMannedShotgun</defName>
+		<label>manned shotgun turret</label>
+		<thingClass>Building_TurretGun</thingClass>
+		<graphicData>
+		<graphicClass>Graphic_Single</graphicClass>
+		<texPath>Things/Building/SCSecurity/MannedGun_bottom</texPath>
+		<drawSize>(3,3)</drawSize>
+		</graphicData>
+		<uiIconPath>Things/Building/SCSecurity/MannedGunShotgunIco</uiIconPath>
+		<altitudeLayer>Waist</altitudeLayer>
+		<hasInteractionCell>True</hasInteractionCell>
+		<interactionCellOffset>(0,0,-1)</interactionCellOffset>
+		<statBases>
+			<MaxHitPoints>500</MaxHitPoints>
+			<Flammability>1.0</Flammability>
+			<WorkToMake>3250</WorkToMake>
+			<Beauty>-60</Beauty>
+		</statBases>
+		<tickerType>Normal</tickerType>
+		<comps>
+			<li>
+				<compClass>CompExplosive</compClass>
+				<explosiveRadius>3.9</explosiveRadius>
+				<explosiveDamageType>Bomb</explosiveDamageType>
+			</li>
+			<li>
+				<compClass>CompForbiddable</compClass>
+			</li>
+			<li>
+				<compClass>CompMannable</compClass>
+			</li>
+		</comps>
+		<description>A shotgun turret that can be manned to fire at nearby enemies. Explodes when damaged.
+Range:	 16
+Damage:  20
+Burst:	  1</description>
+		<size>(1,1)</size>
+		<passability>PassThroughOnly</passability>
+		<pathCost>50</pathCost>
+		<castEdgeShadows>true</castEdgeShadows>
+		<fillPercent>0.4</fillPercent>
+		<hasTooltip>true</hasTooltip>
+		<costList>
+			<SteelBar>250</SteelBar>
+		</costList>
+		<combatTargetBuilding>true</combatTargetBuilding>
+		<terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
+		<designationCategory>Security</designationCategory>
+		<specialDisplayRadius>15.9</specialDisplayRadius>
+		<building>
+			<turretGunDef>Gun_TurretShotgun</turretGunDef>
+			<turretBurstCooldownTicks>240</turretBurstCooldownTicks>
+			<turretTopgraphicPath>Things/Building/SCSecurity/SentryGunShotgun_Top</turretTopgraphicPath>
+		</building>
+		<researchPrerequisite>SpecializedMannedTurrets</researchPrerequisite>
+	</ThingDef>
+	
+	
+	<ThingDef ParentName="BuildingBase">
+		<defName>TurretGunMannedSniper</defName>
+		<label>manned sniper turret</label>
+		<thingClass>Building_TurretGun</thingClass>
+		<graphicData>
+		<graphicClass>Graphic_Single</graphicClass>
+		<texPath>Things/Building/SCSecurity/MannedGun_bottom</texPath>
+		<drawSize>(3,3)</drawSize>
+		</graphicData>
+		<uiIconPath>Things/Building/SCSecurity/MannedGunSniperIco</uiIconPath>
+		<altitudeLayer>Waist</altitudeLayer>
+		<hasInteractionCell>True</hasInteractionCell>
+		<interactionCellOffset>(0,0,-1)</interactionCellOffset>
+		<statBases>
+			<MaxHitPoints>500</MaxHitPoints>
+			<Flammability>1.0</Flammability>
+			<WorkToMake>3250</WorkToMake>
+			<Beauty>-60</Beauty>
+		</statBases>
+		<tickerType>Normal</tickerType>
+		<comps>
+			<li>
+				<compClass>CompExplosive</compClass>
+				<explosiveRadius>3.9</explosiveRadius>
+				<explosiveDamageType>Bomb</explosiveDamageType>
+			</li>
+			<li>
+				<compClass>CompForbiddable</compClass>
+			</li>
+			<li>
+				<compClass>CompMannable</compClass>
+			</li>
+		</comps>
+		<description>A sniper turret that can be manned to fire at nearby enemies. Explodes when damaged.
+Range:	 45
+Damage:  40
+Burst:	  1</description>
+		<size>(1,1)</size>
+		<passability>PassThroughOnly</passability>
+		<pathCost>50</pathCost>
+		<castEdgeShadows>true</castEdgeShadows>
+		<fillPercent>0.4</fillPercent>
+		<hasTooltip>true</hasTooltip>
+		<costList>
+			<SteelBar>250</SteelBar>
+		</costList>
+		<combatTargetBuilding>true</combatTargetBuilding>
+		<terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
+		<designationCategory>Security</designationCategory>
+		<specialDisplayRadius>44.9</specialDisplayRadius>
+		<building>
+			<turretGunDef>Gun_TurretSniper</turretGunDef>
+			<turretBurstWarmupTicks>240</turretBurstWarmupTicks>
+			<turretburstCooldownTicks>240</turretburstCooldownTicks>
+			<turretTopgraphicPath>Things/Building/SCSecurity/SentryGunSniper_Top</turretTopgraphicPath>
+		</building>
+		<researchPrerequisite>SpecializedMannedTurrets</researchPrerequisite>
+	</ThingDef>
+	
+	
+	<!--=============== AI turrets ===============-->
+  
+  
+	<ThingDef ParentName="BuildingBase">
+		<defName>TurretGun</defName>
+		<label>sentry turret</label>
+		<thingClass>Building_TurretGun</thingClass>
+		<graphicData>
+		<graphicClass>Graphic_Single</graphicClass>
+		<texPath>Things/Building/SCSecurity/SentryGun_bottom</texPath>
+		<drawSize>(3,3)</drawSize>
+		</graphicData>
+		<uiIconPath>Things/Building/SCSecurity/SentryGunIco</uiIconPath>
+		<altitudeLayer>Waist</altitudeLayer>
+		<statBases>
+			<MaxHitPoints>550</MaxHitPoints>
+			<Flammability>1.0</Flammability>
+			<WorkToMake>6250</WorkToMake>
+			<Beauty>-60</Beauty>
+		</statBases>
+		<tickerType>Normal</tickerType>
+		<comps>
+			<li>
+				<compClass>CompExplosive</compClass>
+				<explosiveRadius>3.9</explosiveRadius>
+				<explosiveDamageType>Bomb</explosiveDamageType>
+			</li>
+			<li>
+				<compClass>CompForbiddable</compClass>
+			</li>
+			<li>
+				<compClass>CompPowerTrader</compClass>
+				<basePowerConsumption>350</basePowerConsumption>
+			</li>
+		</comps>
+		<description>A simple auto-turret that can fire at nearby enemies. Explodes when damaged.
+Range:	 35
+Damage:   7
+Burst:	  3</description>
+		<size>(1,1)</size>
+		<passability>PassThroughOnly</passability>
+		<pathCost>50</pathCost>
+		<castEdgeShadows>true</castEdgeShadows>
+		<fillPercent>0.4</fillPercent>
+		<hasTooltip>true</hasTooltip>
+		<costList>
+			<SteelBar>250</SteelBar>
+			<Electronics>25</Electronics>
+		</costList>
+		<combatTargetBuilding>true</combatTargetBuilding>
+		<terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
+		<designationCategory>Security</designationCategory>
+		<specialDisplayRadius>34.9</specialDisplayRadius>
+		<building>
+			<turretGunDef>Gun_TurretImprovised</turretGunDef>
+			<turretBurstCooldownTicks>400</turretBurstCooldownTicks>
+			<turretTopgraphicPath>Things/Building/SCSecurity/SentryGun_Top</turretTopgraphicPath>
+		</building>
+		<researchPrerequisite>GunTurretCooling</researchPrerequisite>
+	</ThingDef>
+	
+	
+	<ThingDef ParentName="BuildingBase">
+		<defName>TurretGunGatling</defName>
+		<label>gatling sentry turret</label>
+		<thingClass>Building_TurretGun</thingClass>
+		<graphicData>
+		<graphicClass>Graphic_Single</graphicClass>
+		<texPath>Things/Building/SCSecurity/SentryGun_bottom</texPath>
+		<drawSize>(3,3)</drawSize>
+		</graphicData>
+		<uiIconPath>Things/Building/SCSecurity/SentryGunGatlingIco</uiIconPath>
+		<altitudeLayer>Waist</altitudeLayer>
+		<statBases>
+			<MaxHitPoints>550</MaxHitPoints>
+			<Flammability>1.0</Flammability>
+			<WorkToMake>6250</WorkToMake>
+			<Beauty>-60</Beauty>
+		</statBases>
+		<tickerType>Normal</tickerType>
+		<comps>
+			<li>
+				<compClass>CompExplosive</compClass>
+				<explosiveRadius>3.9</explosiveRadius>
+				<explosiveDamageType>Bomb</explosiveDamageType>
+			</li>
+			<li>
+				<compClass>CompForbiddable</compClass>
+			</li>
+			<li>
+				<compClass>CompPowerTrader</compClass>
+				<basePowerConsumption>350</basePowerConsumption>
+			</li>
+		</comps>
+		<description>A gatling sentry turret that can be manned to fire at nearby enemies. Explodes when damaged.
+Range:	 32
+Damage:   8
+Burst:	 30</description>
+		<size>(1,1)</size>
+		<passability>PassThroughOnly</passability>
+		<pathCost>50</pathCost>
+		<castEdgeShadows>true</castEdgeShadows>
+		<fillPercent>0.4</fillPercent>
+		<hasTooltip>true</hasTooltip>
+		<costList>
+			<SteelBar>250</SteelBar>
+			<Electronics>25</Electronics>
+		</costList>
+		<combatTargetBuilding>true</combatTargetBuilding>
+		<terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
+		<designationCategory>Security</designationCategory>
+		<specialDisplayRadius>31.9</specialDisplayRadius>
+		<building>
+			<turretGunDef>Gun_TurretGatling</turretGunDef>
+			<turretBurstCooldownTicks>300</turretBurstCooldownTicks>
+			<turretTopgraphicPath>Things/Building/SCSecurity/SentryGunGatling_Top</turretTopgraphicPath>
+		</building>
+		<researchPrerequisite>SpecializedAITurrets</researchPrerequisite>
+	</ThingDef>
+	
+	
+	<ThingDef ParentName="BuildingBase">
+		<defName>TurretGunShotgun</defName>
+		<label>shotgun sentry turret</label>
+		<thingClass>Building_TurretGun</thingClass>
+		<graphicData>
+		<graphicClass>Graphic_Single</graphicClass>
+		<texPath>Things/Building/SCSecurity/SentryGun_bottom</texPath>
+		<drawSize>(3,3)</drawSize>
+		</graphicData>
+		<uiIconPath>Things/Building/SCSecurity/SentryGunShotgunIco</uiIconPath>
+		<altitudeLayer>Waist</altitudeLayer>
+		<statBases>
+			<MaxHitPoints>550</MaxHitPoints>
+			<Flammability>1.0</Flammability>
+			<WorkToMake>6250</WorkToMake>
+			<Beauty>-60</Beauty>
+		</statBases>
+		<tickerType>Normal</tickerType>
+		<comps>
+			<li>
+				<compClass>CompExplosive</compClass>
+				<explosiveRadius>3.9</explosiveRadius>
+				<explosiveDamageType>Bomb</explosiveDamageType>
+			</li>
+			<li>
+				<compClass>CompForbiddable</compClass>
+			</li>
+			<li>
+				<compClass>CompPowerTrader</compClass>
+				<basePowerConsumption>350</basePowerConsumption>
+			</li>
+		</comps>
+		<description>A shotgun turret that can be manned to fire at nearby enemies. Explodes when damaged.
+Range:	 16
+Damage:  20
+Burst:	  1</description>
+		<size>(1,1)</size>
+		<passability>PassThroughOnly</passability>
+		<pathCost>50</pathCost>
+		<castEdgeShadows>true</castEdgeShadows>
+		<fillPercent>0.4</fillPercent>
+		<hasTooltip>true</hasTooltip>
+		<costList>
+			<SteelBar>250</SteelBar>
+			<Electronics>25</Electronics>
+		</costList>
+		<combatTargetBuilding>true</combatTargetBuilding>
+		<terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
+		<designationCategory>Security</designationCategory>
+		<specialDisplayRadius>15.9</specialDisplayRadius>
+		<building>
+			<turretGunDef>Gun_TurretShotgun</turretGunDef>
+			<turretBurstCooldownTicks>240</turretBurstCooldownTicks>
+			<turretTopgraphicPath>Things/Building/SCSecurity/SentryGunShotgun_Top</turretTopgraphicPath>
+		</building>
+		<researchPrerequisite>SpecializedAITurrets</researchPrerequisite>
+	</ThingDef>
+	
+	
+	<ThingDef ParentName="BuildingBase">
+		<defName>TurretGunSniper</defName>
+		<label>sniper sentry turret</label>
+		<thingClass>Building_TurretGun</thingClass>
+		<graphicData>
+		<graphicClass>Graphic_Single</graphicClass>
+		<texPath>Things/Building/SCSecurity/SentryGun_bottom</texPath>
+		<drawSize>(3,3)</drawSize>
+		</graphicData>
+		<uiIconPath>Things/Building/SCSecurity/SentryGunSniperIco</uiIconPath>
+		<altitudeLayer>Waist</altitudeLayer>
+		<statBases>
+			<MaxHitPoints>550</MaxHitPoints>
+			<Flammability>1.0</Flammability>
+			<WorkToMake>6250</WorkToMake>
+			<Beauty>-60</Beauty>
+		</statBases>
+		<tickerType>Normal</tickerType>
+		<comps>
+			<li>
+				<compClass>CompExplosive</compClass>
+				<explosiveRadius>3.9</explosiveRadius>
+				<explosiveDamageType>Bomb</explosiveDamageType>
+			</li>
+			<li>
+				<compClass>CompForbiddable</compClass>
+			</li>
+			<li>
+				<compClass>CompPowerTrader</compClass>
+				<basePowerConsumption>350</basePowerConsumption>
+			</li>
+		</comps>
+		<description>A sniper turret that can be manned to fire at nearby enemies. Explodes when damaged.
+Range:	 45
+Damage:  40
+Burst:	  1</description>
+		<size>(1,1)</size>
+		<passability>PassThroughOnly</passability>
+		<pathCost>50</pathCost>
+		<castEdgeShadows>true</castEdgeShadows>
+		<fillPercent>0.4</fillPercent>
+		<hasTooltip>true</hasTooltip>
+		<costList>
+			<SteelBar>250</SteelBar>
+			<Electronics>25</Electronics>
+		</costList>
+		<combatTargetBuilding>true</combatTargetBuilding>
+		<terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
+		<designationCategory>Security</designationCategory>
+		<specialDisplayRadius>44.9</specialDisplayRadius>
+		<building>
+			<turretGunDef>Gun_TurretSniper</turretGunDef>
+			<turretBurstWarmupTicks>240</turretBurstWarmupTicks>
+			<turretBurstCooldownTicks>240</turretBurstCooldownTicks>
+			<turretTopgraphicPath>Things/Building/SCSecurity/SentryGunSniper_Top</turretTopgraphicPath>
+		</building>
+		<researchPrerequisite>SpecializedAITurrets</researchPrerequisite>
+	</ThingDef>
+
+
+	<!--=============== Mortar turret ===============-->
+  
+  
+	<ThingDef ParentName="BuildingBase">
+		<defName>Turret_MortarIncendiary</defName>
+		<label>incendiary mortar</label>
+		<thingClass>Building_TurretGun</thingClass>
+		<graphicData>
+		<texPath>Things/Building/Security/TurretMortarBase</texPath>
+		<graphicClass>Graphic_Single</graphicClass>
+		<drawSize>(4,4)</drawSize>
+		</graphicData>
+		<altitudeLayer>Waist</altitudeLayer>
+		<hasInteractionCell>True</hasInteractionCell>
+		<interactionCellOffset>(0,0,-1)</interactionCellOffset>
+		<statBases>
+			<MaxHitPoints>500</MaxHitPoints>
+			<Flammability>1.0</Flammability>
+			<WorkToMake>6250</WorkToMake>
+			<Beauty>-60</Beauty>
+		</statBases>
+		<tickerType>Normal</tickerType>
+		<comps>
+			<li>
+				<compClass>CompExplosive</compClass>
+				<explosiveRadius>4.9</explosiveRadius>
+				<explosiveDamageType>Flame</explosiveDamageType>
+			</li>
+			<li>
+				<compClass>CompForbiddable</compClass>
+			</li>
+			<li>
+				<compClass>CompMannable</compClass>
+			</li>
+		</comps>
+		<description>A mortar that launches incendiary shells. Must be manned. Explodes when damaged.</description>
+		<size>(2,2)</size>
+		<passability>PassThroughOnly</passability>
+		<pathCost>50</pathCost>
+		<castEdgeShadows>true</castEdgeShadows>
+		<fillPercent>0.4</fillPercent>
+		<stuffCategories>
+			<li>Metallic</li>
+		</stuffCategories>
+		<costStuffCount>100</costStuffCount>
+		<costList>
+			<SteelBar>150</SteelBar>
+		</costList>
+		<combatTargetBuilding>true</combatTargetBuilding>
+		<terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
+		<designationCategory>Security</designationCategory>
+		<building>
+			<turretGunDef>Artillery_MortarIncendiary</turretGunDef>
+			<turretShellDef>ArtilleryShell</turretShellDef>
+			<turretBurstWarmupTicks>300</turretBurstWarmupTicks>
+			<turretBurstCooldownTicks>3000</turretBurstCooldownTicks>
+			<turretTopgraphicPath>Things/Building/Security/TurretMortarIncendiary_Top</turretTopgraphicPath>
+			<buildingTags>
+				<li>Artillery</li>
+				<li>Artillery_BaseDestroyer</li>
+			</buildingTags>
+		</building>
+		<placeWorkers>
+			<li>PlaceWorker_NotUnderRoof</li>
+		</placeWorkers>
+		<researchPrerequisite>Mortars</researchPrerequisite>
+	</ThingDef>
+
+
+	<ThingDef ParentName="BuildingBase">
+		<defName>Turret_MortarBomb</defName>
+		<label>mortar</label>
+		<thingClass>Building_TurretGun</thingClass>
+		<graphicData>
+		<texPath>Things/Building/Security/TurretMortarBase</texPath>
+		<graphicClass>Graphic_Single</graphicClass>
+		<drawSize>(4,4)</drawSize>
+		</graphicData>
+		<altitudeLayer>Waist</altitudeLayer>
+		<hasInteractionCell>True</hasInteractionCell>
+		<interactionCellOffset>(0,0,-1)</interactionCellOffset>
+		<statBases>
+			<MaxHitPoints>500</MaxHitPoints>
+			<Flammability>1.0</Flammability>
+			<WorkToMake>6250</WorkToMake>
+			<Beauty>-60</Beauty>
+		</statBases>
+		<tickerType>Normal</tickerType>
+		<comps>
+			<li>
+				<compClass>CompExplosive</compClass>
+				<explosiveRadius>4.9</explosiveRadius>
+				<explosiveDamageType>Bomb</explosiveDamageType>
+			</li>
+			<li>
+				<compClass>CompForbiddable</compClass>
+			</li>
+			<li>
+				<compClass>CompMannable</compClass>
+			</li>
+		</comps>
+		<description>A mortar that launches explosive shells. Must be manned. Explodes when damaged.</description>
+		<size>(2,2)</size>
+		<passability>PassThroughOnly</passability>
+		<pathCost>50</pathCost>
+		<castEdgeShadows>true</castEdgeShadows>
+		<fillPercent>0.4</fillPercent>
+		<stuffCategories>
+			<li>Metallic</li>
+		</stuffCategories>
+		<costStuffCount>100</costStuffCount>
+		<costList>
+			<SteelBar>150</SteelBar>
+		</costList>
+		<combatTargetBuilding>true</combatTargetBuilding>
+		<terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
+		<designationCategory>Security</designationCategory>
+		<building>
+			<turretGunDef>Artillery_MortarBomb</turretGunDef>
+			<turretShellDef>ArtilleryShell</turretShellDef>
+			<turretBurstWarmupTicks>300</turretBurstWarmupTicks>
+			<turretBurstCooldownTicks>3000</turretBurstCooldownTicks>
+			<turretTopgraphicPath>Things/Building/Security/TurretMortarBomb_Top</turretTopgraphicPath>
+			<buildingTags>
+				<li>Artillery</li>
+				<li>Artillery_BaseDestroyer</li>
+			</buildingTags>
+		</building>
+		<placeWorkers>
+			<li>PlaceWorker_NotUnderRoof</li>
+		</placeWorkers>
+		<researchPrerequisite>Mortars</researchPrerequisite>
+	</ThingDef>
+
+
+	<ThingDef ParentName="BuildingBase">
+		<defName>Turret_MortarEMP</defName>
+		<label>EMP mortar</label>
+		<thingClass>Building_TurretGun</thingClass>
+		<graphicData>
+		<texPath>Things/Building/Security/TurretMortarBase</texPath>
+		<graphicClass>Graphic_Single</graphicClass>
+		<drawSize>(4,4)</drawSize>
+		</graphicData>
+		<altitudeLayer>Waist</altitudeLayer>
+		<hasInteractionCell>True</hasInteractionCell>
+		<interactionCellOffset>(0,0,-1)</interactionCellOffset>
+		<statBases>
+			<MaxHitPoints>500</MaxHitPoints>
+			<Flammability>1.0</Flammability>
+			<WorkToMake>6250</WorkToMake>
+			<Beauty>-60</Beauty>
+		</statBases>
+		<tickerType>Normal</tickerType>
+		<comps>
+			<li>
+				<compClass>CompExplosive</compClass>
+				<explosiveRadius>4.9</explosiveRadius>
+				<explosiveDamageType>EMP</explosiveDamageType>
+			</li>
+			<li>
+				<compClass>CompForbiddable</compClass>
+			</li>
+			<li>
+				<compClass>CompMannable</compClass>
+			</li>
+		</comps>
+		<description>A mortar that launches EMP bombs. Must be manned. Explodes when damaged.</description>
+		<size>(2,2)</size>
+		<passability>PassThroughOnly</passability>
+		<pathCost>50</pathCost>
+		<castEdgeShadows>true</castEdgeShadows>
+		<fillPercent>0.4</fillPercent>
+		<stuffCategories>
+			<li>Metallic</li>
+		</stuffCategories>
+		<costStuffCount>100</costStuffCount>
+		<costList>
+			<SteelBar>150</SteelBar>
+		</costList>
+		<combatTargetBuilding>true</combatTargetBuilding>
+		<terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
+		<designationCategory>Security</designationCategory>
+		<building>
+			<turretGunDef>Artillery_MortarEMP</turretGunDef>
+			<turretShellDef>TurretEMPGrenades</turretShellDef>
+			<turretBurstWarmupTicks>300</turretBurstWarmupTicks>
+			<turretBurstCooldownTicks>3000</turretBurstCooldownTicks>
+			<turretTopgraphicPath>Things/Building/Security/TurretMortarEMP_Top</turretTopgraphicPath>
+			<buildingTags>
+				<li>Artillery</li>
+			</buildingTags>
+		</building>
+		<placeWorkers>
+			<li>PlaceWorker_NotUnderRoof</li>
+		</placeWorkers>
+		<researchPrerequisite>Mortars</researchPrerequisite>
+	</ThingDef>
+	
+	
+	<ThingDef ParentName="BuildingBase">
+    <defName>TrapIEDBomb</defName>
+    <label>IED trap</label>
+    <thingClass>Building_TrapExplosive</thingClass>
+    <graphicData>
+      <texPath>Things/Building/Security/IEDBomb</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <altitudeLayer>Waist</altitudeLayer>
+    <drawerType>RealtimeOnly</drawerType>
+    <rotatable>false</rotatable>
+    <tickerType>Normal</tickerType>
+    <statBases>
+      <MaxHitPoints>40</MaxHitPoints>
+      <WorkToMake>5000</WorkToMake>
+      <Beauty>-4</Beauty>
+      <TrapSpringChance>0.8</TrapSpringChance>
+    </statBases>
+    <description>An artillery shell connected to a homemade trigger. When someone disturbs the trigger, the shell explodes. The improvised trigger has a random delay that might allow an nimble enemy to escape.</description>
+    <costList>
+      <ArtilleryShell>5</ArtilleryShell>
+      <SteelBar>50</SteelBar>
+    </costList>
+    <designationCategory>Security</designationCategory>
+    <building>
+      <isTrap>true</isTrap>
+    </building>
+    <comps>
+      <li>
+        <compClass>CompExplosive</compClass>
+        <explosiveRadius>2.9</explosiveRadius>
+        <explosiveDamageType>Bomb</explosiveDamageType>
+        <startWickHitPointsPercent>0.2</startWickHitPointsPercent>
+        <wickTicks>
+          <min>15</min>
+          <max>80</max>
+        </wickTicks>
+      </li>
+    </comps>
+    <researchPrerequisite>IEDBomb</researchPrerequisite>
+  </ThingDef>
+
+
+
+  <ThingDef ParentName="BuildingBase">
+    <defName>TrapIEDIncendiary</defName>
+    <label>IED incendiary trap</label>
+    <thingClass>Building_TrapExplosive</thingClass>
+    <graphicData>
+      <texPath>Things/Building/Security/IEDIncendiary</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <altitudeLayer>Waist</altitudeLayer>
+    <drawerType>RealtimeOnly</drawerType>
+    <rotatable>false</rotatable>
+    <tickerType>Normal</tickerType>
+    <statBases>
+      <MaxHitPoints>40</MaxHitPoints>
+      <WorkToMake>5000</WorkToMake>
+      <Beauty>-4</Beauty>
+      <TrapSpringChance>0.8</TrapSpringChance>
+    </statBases>
+    <description>Explosives mixed into an incendiary paste with a chemical trigger for dispersal. When someone disturbs the chemical trigger, it ignites burning fuel sprays. Since it doesn't need to detonate high exposives, the chemical trigger is simpler and more reliable than some others.</description>
+    <costList>
+      <ArtilleryShell>5</ArtilleryShell>
+      <SteelBar>50</SteelBar>
+    </costList>
+    <designationCategory>Security</designationCategory>
+    <building>
+      <isTrap>true</isTrap>
+    </building>
+    <comps>
+      <li>
+        <compClass>CompExplosive</compClass>
+        <explosiveRadius>2.9</explosiveRadius>
+        <explosiveDamageType>Flame</explosiveDamageType>
+        <startWickHitPointsPercent>0.2</startWickHitPointsPercent>
+        <wickTicks>
+          <min>10</min>
+          <max>60</max>
+        </wickTicks>
+      </li>
+    </comps>
+    <researchPrerequisite>IEDIncendiary</researchPrerequisite>
+  </ThingDef>
+
+</ThingDefs>

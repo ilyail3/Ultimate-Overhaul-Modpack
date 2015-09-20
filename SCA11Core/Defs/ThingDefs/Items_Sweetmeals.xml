@@ -1,0 +1,235 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ThingDefs>
+   
+   <ThingDef Name="MealBase" Abstract="True">
+      <label>meal</label>
+      <thingClass>Meal</thingClass>
+      <category>Item</category>
+      <useHitPoints>true</useHitPoints>
+      <selectable>true</selectable>
+      <statBases>
+         <MaxHitPoints>50</MaxHitPoints>
+         <Flammability>1.0</Flammability>
+      </statBases>
+      <altitudeLayer>Item</altitudeLayer>
+      <stackLimit>75</stackLimit>
+      <tickerType>Rare</tickerType>
+      <description>"Meal lacks desc."</description>
+      <socialPropernessMatters>true</socialPropernessMatters>
+      <thingCategories>
+         <li>SweetMeals</li>
+      </thingCategories>
+      <alwaysHaulable>true</alwaysHaulable>
+      <comps>
+         <li>
+            <compClass>CompForbiddable</compClass>
+         </li>
+      </comps>
+      <pathCost>15</pathCost>
+      <resourceReadoutPriority>Last</resourceReadoutPriority>
+      <drawGUIOverlay>true</drawGUIOverlay>
+      <ingestible>
+         <maxNumToIngestAtOnce>1</maxNumToIngestAtOnce>
+      </ingestible>
+   </ThingDef>
+   <ThingDef ParentName="MealBase" Name="MealRottable" Abstract="True">
+      <comps>
+         <li Class="CompProperties_Rottable">
+            <compClass>CompRottable</compClass>
+            <daysToRotStart>4</daysToRotStart>
+            <rotDestroys>true</rotDestroys>
+         </li>
+      </comps>
+   </ThingDef>
+   
+		
+   
+   <ThingDef ParentName="MealRottable">
+      <defName>Caramel</defName>
+      <label>Caramel</label>
+      <description>A sweet candy made from sugar</description>
+      <graphicData>
+      <texPath>Things/Item/Meal/caramel</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+      <statBases>
+         <DeteriorationRate>10</DeteriorationRate>
+         <MarketValue>2</MarketValue>
+         <WorkToMake>450</WorkToMake>
+      </statBases>
+      <ingestible>
+         <preferability>NeverForNutrition</preferability>
+	    <isPleasureDrug>true</isPleasureDrug>
+         <nutrition>0.05</nutrition>
+         <joy>0.1</joy>
+         <ingestedDirectThought>AteCandy</ingestedDirectThought>
+         <eatEffect>EatVegetarian</eatEffect>
+         <soundEat>Meal_Eat</soundEat>
+      </ingestible>
+   </ThingDef>
+
+<ThingDef ParentName="MealRottable">
+      <defName>Hardcandy</defName>
+      <label>Hardcandy</label>
+      <description>A hard candy made from sugar</description>
+      <graphicData>
+      <texPath>Things/Item/Meal/hardcandy</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+      <statBases>
+         <DeteriorationRate>10</DeteriorationRate>
+         <MarketValue>2</MarketValue>
+         <WorkToMake>450</WorkToMake>
+      </statBases>
+      <ingestible>
+         <preferability>NeverForNutrition</preferability>
+	    <isPleasureDrug>true</isPleasureDrug>
+         <nutrition>0.05</nutrition>
+         <joy>0.1</joy>
+         <ingestedDirectThought>AteCandy</ingestedDirectThought>
+         <eatEffect>EatVegetarian</eatEffect>
+         <soundEat>Meal_Eat</soundEat>
+      </ingestible>
+   </ThingDef>
+
+<ThingDef ParentName="MealRottable">
+      <defName>Taffy</defName>
+      <label>Taffy</label>
+      <description>A chewy sweet candy</description>
+      <graphicData>
+      <texPath>Things/Item/Meal/taffy</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+
+      <statBases>
+         <DeteriorationRate>10</DeteriorationRate>
+         <MarketValue>2</MarketValue>
+         <WorkToMake>450</WorkToMake>
+      </statBases>
+      <ingestible>
+         <preferability>NeverForNutrition</preferability>
+	    <isPleasureDrug>true</isPleasureDrug>
+         <nutrition>0.05</nutrition>
+         <joy>0.1</joy>
+         <ingestedDirectThought>AteCandy</ingestedDirectThought>
+         <eatEffect>EatVegetarian</eatEffect>
+         <soundEat>Meal_Eat</soundEat>
+      </ingestible>
+   </ThingDef>
+
+<ThingDef ParentName="MealRottable">
+		<defName>cookie</defName>
+		<label>cookie</label>
+		<description>Fresh baked cookies!</description>
+		<graphicData>
+      <texPath>Things/Item/Meal/cookie</texPath>
+      <graphicClass>Graphic_StackCount</graphicClass>
+	    </graphicData>
+    <statBases>
+      <DeteriorationRate>10</DeteriorationRate>
+      <MarketValue>5</MarketValue>
+      <WorkToMake>600</WorkToMake>
+    </statBases>
+    <ingestible>
+      <preferability>Lavish</preferability>
+      <nutrition>0.7</nutrition>
+      <joy>0.02</joy>
+      <eatEffect>EatVegetarian</eatEffect>
+      <soundEat>Meal_Eat</soundEat>
+    </ingestible>
+	</ThingDef>
+
+<ThingDef ParentName="MealRottable">
+      <defName>BlueberryPie</defName>
+      <label>Blueberry Pie Slice</label>
+      <description>A slice of bluberry pie.</description>
+      <graphicData>
+      <texPath>Things/Item/Meal/BlueberryPie</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+
+      <statBases>
+         <DeteriorationRate>10</DeteriorationRate>
+         <MarketValue>5</MarketValue>
+         <WorkToMake>1500</WorkToMake>
+      </statBases>
+      <ingestible>
+         <preferability>NeverForNutrition</preferability>
+	    <isPleasureDrug>true</isPleasureDrug>
+         <nutrition>0.05</nutrition>
+         <joy>0.4</joy>
+         <ingestedDirectThought>AtePie</ingestedDirectThought>
+         <eatEffect>EatVegetarian</eatEffect>
+         <soundEat>Meal_Eat</soundEat>
+
+      </ingestible>
+   </ThingDef>
+
+<ThingDef ParentName="MealRottable">
+      <defName>PumpkinPie</defName>
+      <label>Pumpkin Pie Slice</label>
+      <description>A slice of pumpkin pie.</description>
+   <graphicData>
+      <texPath>Things/Item/Meal/PumpkinPie</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+
+      <statBases>
+         <DeteriorationRate>10</DeteriorationRate>
+         <MarketValue>5</MarketValue>
+         <WorkToMake>1500</WorkToMake>
+      </statBases>
+      <ingestible>
+         <preferability>NeverForNutrition</preferability>
+	    <isPleasureDrug>true</isPleasureDrug>
+         <nutrition>0.05</nutrition>
+         <joy>0.4</joy>
+         <ingestedDirectThought>AtePie</ingestedDirectThought>
+         <eatEffect>EatVegetarian</eatEffect>
+         <soundEat>Meal_Eat</soundEat>
+
+      </ingestible>
+   </ThingDef>
+   
+   
+   
+  
+  
+<!--
+<ThingDef ParentName="MealRottable">
+      <defName>Cuptea</defName>
+      <label>Cup of Tea</label>
+      <description>A drink made from brew tea leaves.</description>
+      <graphicData>
+      <texPath>Things/Item/Meal/cuptea</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+
+      <statBases>
+         <DeteriorationRate>10</DeteriorationRate>
+         <MarketValue>12</MarketValue>
+         <WorkToMake>450</WorkToMake>
+      </statBases>
+      <ingestible>
+         <preferability>NeverForNutrition</preferability>
+           <nutrition>0.04</nutrition>
+           <joy>0.3</joy>
+           <joyKind>Social</joyKind>
+           <maxNumToIngestAtOnce>1</maxNumToIngestAtOnce>
+           <soundEat>Ingest_Beer</soundEat>
+           <isPleasureDrug>true</isPleasureDrug>
+	  <hediffGivers>
+		<li>
+		<chance>1</chance>
+		<hediffDef>Caffeine</hediffDef>
+		</li>
+	  </hediffGivers>
+
+<ingestedDirectThought>Hotdrink</ingestedDirectThought>
+      </ingestible>
+   </ThingDef>
+
+-->
+ 
+</ThingDefs>

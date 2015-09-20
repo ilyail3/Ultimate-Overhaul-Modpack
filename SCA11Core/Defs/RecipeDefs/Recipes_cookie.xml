@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+<RecipeDef>
+	<defName>CraftCookie</defName>
+	<label>bake cookie</label>
+	<description>bake cookies.</description>
+	<jobString>Bake Cookies.</jobString>
+	<workSpeedStat>CookSpeed</workSpeedStat>
+	<effectWorking>Cook</effectWorking>
+	<workAmount>800</workAmount>
+    <soundWorking>Recipe_CookMeal</soundWorking>          
+	<allowMixingIngredients>true</allowMixingIngredients>
+	<recipeUsers>
+         <li>ElectricOven</li>
+      </recipeUsers>
+	<ingredients>
+	  <li>
+	    <filter>
+	      <thingDefs>
+	        <li>Chocolate</li>
+	      </thingDefs>
+	    </filter>
+	    <count>5</count>
+	  </li>
+	<li>
+	    <filter>
+	      <thingDefs>
+	        <li>Sugar</li>
+	      </thingDefs>
+	    </filter>
+	    <count>5</count>
+	  </li>
+	<li>
+	    <filter>
+	      <thingDefs>
+	        <li>Rawflour</li>
+	      </thingDefs>
+	    </filter>
+	    <count>5</count>
+	  </li>
+	</ingredients>
+	<fixedIngredientFilter>
+	  <thingDefs>
+	    <li>Chocolate</li>
+	    <li>Sugar</li>
+	    <li>Rawflour</li>
+	  </thingDefs>
+	</fixedIngredientFilter>
+	<products>
+	  <cookie>12</cookie>
+	</products>
+	<workSkill>Cooking</workSkill>
+</RecipeDef>
+
+</Defs>

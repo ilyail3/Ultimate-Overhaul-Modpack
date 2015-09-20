@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<RecipeDefs>
+
+  <!--=============== Sweet ====================-->
+
+   <RecipeDef>
+	<defName>MakeHardcandy</defName>
+	<label>Make Hardcandy</label>
+	<description>Turns sugar into a sweet hard candy.</description>
+	<jobString>Making candy.</jobString>
+	<workSpeedStat>CookSpeed</workSpeedStat>
+		<effectWorking>Cook</effectWorking>
+<workAmount>900</workAmount>
+    <soundWorking>Recipe_CookMeal</soundWorking>          <allowMixingIngredients>true</allowMixingIngredients>
+	<recipeUsers>
+         <li>ElectricOven</li>
+      </recipeUsers>
+	<ingredients>
+	  <li>
+	    <filter>
+	      <thingDefs>
+	        <li>Sugar</li>
+	      </thingDefs>
+	    </filter>
+	    <count>10</count>
+	  </li>
+	</ingredients>
+	<fixedIngredientFilter>
+	  <thingDefs>
+	    <li>Sugar</li>
+	  </thingDefs>
+	</fixedIngredientFilter>
+	<products>
+	  <Hardcandy>4</Hardcandy>
+	</products>
+	<workSkill>Cooking</workSkill>
+</RecipeDef>
+  
+   <RecipeDef>
+	<defName>MakeCaramel</defName>
+	<label>Make Caramel</label>
+	<description>Turns sugar into a sweet candy.</description>
+	<jobString>Making candy.</jobString>
+	<workSpeedStat>CookSpeed</workSpeedStat>
+		<effectWorking>Cook</effectWorking>
+<workAmount>900</workAmount>
+    <soundWorking>Recipe_CookMeal</soundWorking>          <allowMixingIngredients>true</allowMixingIngredients>
+	<recipeUsers>
+         <li>ElectricOven</li>
+      </recipeUsers>
+	<ingredients>
+	  <li>
+	    <filter>
+	      <thingDefs>
+	        <li>Sugar</li>
+	      </thingDefs>
+	    </filter>
+	    <count>10</count>
+	  </li>
+	</ingredients>
+	<fixedIngredientFilter>
+	  <thingDefs>
+	    <li>Sugar</li>
+	  </thingDefs>
+	</fixedIngredientFilter>
+	<products>
+	  <Caramel>4</Caramel>
+	</products>
+	<workSkill>Cooking</workSkill>
+</RecipeDef>
+
+   <RecipeDef>
+	<defName>MakeTaffy</defName>
+	<label>Make Taffy</label>
+	<description>Turns sugar into a sweet candy.</description>
+	<jobString>Making candy.</jobString>
+	<workSpeedStat>CookSpeed</workSpeedStat>
+		<effectWorking>Cook</effectWorking>
+<workAmount>900</workAmount>
+    <soundWorking>Recipe_CookMeal</soundWorking>          <allowMixingIngredients>true</allowMixingIngredients>
+	<recipeUsers>
+         <li>ElectricOven</li>
+      </recipeUsers>
+	<ingredients>
+	  <li>
+	    <filter>
+	      <thingDefs>
+	        <li>Sugar</li>
+	      </thingDefs>
+	    </filter>
+	    <count>10</count>
+	  </li>
+	</ingredients>
+	<fixedIngredientFilter>
+	  <thingDefs>
+	    <li>Sugar</li>
+	  </thingDefs>
+	</fixedIngredientFilter>
+	<products>
+	  <Taffy>4</Taffy>
+	</products>
+	<workSkill>Cooking</workSkill>
+</RecipeDef>
+
+
+</RecipeDefs>

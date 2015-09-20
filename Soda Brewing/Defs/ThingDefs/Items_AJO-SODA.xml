@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Resources>
+	
+	<ThingDef Name="ResourceBase" Abstract="True">
+		<thingClass>ThingWithComps</thingClass>
+		<label>unspecified resource</label>
+		<category>Item</category>
+		<resourceReadoutPriority>Middle</resourceReadoutPriority>
+		<useHitPoints>true</useHitPoints>
+		<statBases>
+			<Flammability>1.0</Flammability>
+		</statBases>
+		<selectable>true</selectable>
+		<altitudeLayer>Item</altitudeLayer>
+		<stackLimit>75</stackLimit>
+		<comps>
+			<li>
+				<compClass>CompForbiddable</compClass>
+			</li>
+		</comps>
+		<alwaysHaulable>true</alwaysHaulable>
+		<drawGUIOverlay>true</drawGUIOverlay>
+		<rotatable>false</rotatable>
+		<pathCost>15</pathCost>
+	</ThingDef>
+	
+	
+	
+	<ThingDef ParentName="ResourceBase">
+		<defName>SpectagoSoda</defName>
+		<label>spectago soda</label>
+		<description>Spectago tea infused with CO2 carbonation with added sweetener.</description>
+		<graphicData>
+			<texPath>Things/Items/SpectagoSoda</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<socialPropernessMatters>true</socialPropernessMatters>
+		<stackLimit>24</stackLimit>
+		<statBases>
+			<MaxHitPoints>100</MaxHitPoints>
+			<MarketValue>15</MarketValue>
+		</statBases>
+		<thingCategories>
+			<li>Sodas</li>
+		</thingCategories>
+		<ingestible>
+			<preferability>DesperateOnly</preferability>
+			<nutrition>0.10</nutrition>
+			<joy>0.10</joy>
+			<joyKind>Gluttonous</joyKind>
+			<maxNumToIngestAtOnce>1</maxNumToIngestAtOnce>
+			<soundEat>Ingest_Beer</soundEat>
+			<isPleasureDrug>false</isPleasureDrug>
+			<hediffGivers>
+				<li>
+					<chance>1</chance>
+					<hediffDef>Soda</hediffDef>
+				</li>
+				<li>
+					<chance>1</chance>
+					<hediffDef>SpectagoSoda</hediffDef>
+				</li>
+				<li>
+					<chance>1</chance>
+					<hediffDef>TastySoda</hediffDef>
+				</li>
+			</hediffGivers>
+		</ingestible>
+		<tradeTags>
+			<li>JoyItem</li>
+		</tradeTags>
+	</ThingDef>
+	
+	
+</Resources>
+
+
+
+
+
+

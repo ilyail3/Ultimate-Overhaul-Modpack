@@ -1,0 +1,457 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Resources>
+	
+	<ThingDef Name="ResourceBase" Abstract="True">
+		<thingClass>ThingWithComps</thingClass>
+		<label>unspecified resource</label>
+		<category>Item</category>
+		<resourceReadoutPriority>Middle</resourceReadoutPriority>
+		<useHitPoints>true</useHitPoints>
+		<statBases>
+			<Flammability>1.0</Flammability>
+		</statBases>
+		<selectable>true</selectable>
+		<altitudeLayer>Item</altitudeLayer>
+		<stackLimit>75</stackLimit>
+		<comps>
+			<li>
+				<compClass>CompForbiddable</compClass>
+			</li>
+		</comps>
+		<alwaysHaulable>true</alwaysHaulable>
+		<drawGUIOverlay>true</drawGUIOverlay>
+		<rotatable>false</rotatable>
+		<pathCost>15</pathCost>
+	</ThingDef>
+	
+	
+	
+	<ThingDef ParentName="ResourceBase">
+		<defName>SeltzerSoda</defName>
+		<label>seltzer soda</label>
+		<description>A bottle of water that has been carbonated. Guaranteed to be 20% more refreshing than regular water.</description>
+		<graphicData>
+			<texPath>Things/Items/Seltzer</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<socialPropernessMatters>true</socialPropernessMatters>
+		<stackLimit>24</stackLimit>
+		<statBases>
+			<MaxHitPoints>100</MaxHitPoints>
+			<MarketValue>2</MarketValue>
+		</statBases>
+		<thingCategories>
+			<li>Sodas</li>
+		</thingCategories>
+		<ingestible>
+			<preferability>NeverForNutrition</preferability>
+			<nutrition>0.01</nutrition>
+			<joy>0.10</joy>
+			<joyKind>Gluttonous</joyKind>
+			<maxNumToIngestAtOnce>1</maxNumToIngestAtOnce>
+			<soundEat>Ingest_Beer</soundEat>
+			<isPleasureDrug>false</isPleasureDrug>
+			<hediffGivers>
+				<li>
+					<chance>1</chance>
+					<hediffDef>Soda</hediffDef>
+				</li>
+			</hediffGivers>
+		</ingestible>
+		<tradeTags>
+			<li>Exotic</li>
+			<li>JoyItem</li>
+		</tradeTags>
+	</ThingDef>
+	
+	<ThingDef ParentName="ResourceBase">
+		<defName>Syrup</defName>
+		<label>syrup</label>
+		<description>A bottle of syrup made by reducing foods containing a large amount of sugar.</description>
+		<graphicData>
+			<texPath>Things/Items/Syrup</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<socialPropernessMatters>true</socialPropernessMatters>
+		<stackLimit>25</stackLimit>
+		<statBases>
+			<MaxHitPoints>100</MaxHitPoints>
+			<MarketValue>25</MarketValue>
+		</statBases>
+		<thingCategories>
+			<li>Sodas</li>
+		</thingCategories>
+		<ingestible>
+			<preferability>DesperateOnly</preferability>
+			<nutrition>0.1</nutrition>
+			<joy>0.10</joy>
+			<joyKind>Gluttonous</joyKind>
+			<maxNumToIngestAtOnce>1</maxNumToIngestAtOnce>
+			<soundEat>Ingest_Beer</soundEat>
+			<isPleasureDrug>false</isPleasureDrug>
+			<hediffGivers>
+				<li>
+					<chance>1</chance>
+					<hediffDef>Syrup</hediffDef>
+				</li>
+			</hediffGivers>
+		</ingestible>
+		<tradeTags>
+			<li>Exotic</li>
+			<li>JoyItem</li>
+		</tradeTags>
+	</ThingDef>
+	
+	<ThingDef ParentName="ResourceBase">
+		<defName>Nigori</defName>
+		<label>nigori</label>
+		<description>A lightly carbonated, sweet, alcoholic beverage made from rice.</description>
+		<graphicData>
+			<texPath>Things/Items/Nigori</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<socialPropernessMatters>true</socialPropernessMatters>
+		<stackLimit>24</stackLimit>
+		<statBases>
+			<MaxHitPoints>100</MaxHitPoints>
+			<MarketValue>20</MarketValue>
+		</statBases>
+		<thingCategories>
+			<li>DrugMeals</li>
+		</thingCategories>
+		<ingestible>
+			<preferability>NeverForNutrition</preferability>
+			<nutrition>0.08</nutrition>
+			<joy>0.20</joy>
+			<joyKind>Chemical</joyKind>
+			<maxNumToIngestAtOnce>1</maxNumToIngestAtOnce>
+			<soundEat>Ingest_Beer</soundEat>
+			<isPleasureDrug>true</isPleasureDrug>
+			<hediffGivers>
+				<li>
+					<chance>1</chance>
+					<hediffDef>Soda</hediffDef>
+				</li>
+				<li>
+					<chance>1</chance>
+					<hediffDef>Alcohol</hediffDef>
+				</li>
+			</hediffGivers>
+		</ingestible>
+		<tradeTags>
+			<li>Exotic</li>
+			<li>JoyItem</li>
+		</tradeTags>
+	</ThingDef>
+	
+	<ThingDef ParentName="ResourceBase">
+		<defName>ChocolateSoda</defName>
+		<label>chocolate soda</label>
+		<description>A mixture of chocolate, milk, and soda. Best served cold.</description>
+		<graphicData>
+			<texPath>Things/Items/ChocolateSoda</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<socialPropernessMatters>true</socialPropernessMatters>
+		<stackLimit>24</stackLimit>
+		<statBases>
+			<MaxHitPoints>100</MaxHitPoints>
+			<MarketValue>15</MarketValue>
+		</statBases>
+		<thingCategories>
+			<li>Sodas</li>
+		</thingCategories>
+		<ingestible>
+			<preferability>DesperateOnly</preferability>
+			<nutrition>0.15</nutrition>
+			<joy>0.12</joy>
+			<joyKind>Gluttonous</joyKind>
+			<maxNumToIngestAtOnce>1</maxNumToIngestAtOnce>
+			<soundEat>Ingest_Beer</soundEat>
+			<isPleasureDrug>false</isPleasureDrug>
+			<hediffGivers>
+				<li>
+					<chance>1</chance>
+					<hediffDef>Soda</hediffDef>
+				</li>
+				<li>
+					<chance>1</chance>
+					<hediffDef>TastySoda</hediffDef>
+				</li>
+			</hediffGivers>
+		</ingestible>
+		<tradeTags>
+			<li>Exotic</li>
+			<li>JoyItem</li>
+		</tradeTags>
+	</ThingDef>
+	
+	<ThingDef ParentName="ResourceBase">
+		<defName>RootBeerSoda</defName>
+		<label>root beer</label>
+		<description>An unusual ancient brew consisting of roots and bark from trees and plants. A favorite among colonial settlers.</description>
+		<graphicData>
+			<texPath>Things/Items/RootBeer</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<socialPropernessMatters>true</socialPropernessMatters>
+		<stackLimit>24</stackLimit>
+		<statBases>
+			<MaxHitPoints>100</MaxHitPoints>
+			<MarketValue>10</MarketValue>
+		</statBases>
+		<thingCategories>
+			<li>Sodas</li>
+		</thingCategories>
+		<ingestible>
+			<preferability>DesperateOnly</preferability>
+			<nutrition>0.05</nutrition>
+			<joy>0.10</joy>
+			<joyKind>Gluttonous</joyKind>
+			<maxNumToIngestAtOnce>1</maxNumToIngestAtOnce>
+			<soundEat>Ingest_Beer</soundEat>
+			<isPleasureDrug>false</isPleasureDrug>
+			<hediffGivers>
+				<li>
+					<chance>1</chance>
+					<hediffDef>Soda</hediffDef>
+				</li>
+				<li>
+					<chance>1</chance>
+					<hediffDef>TastySoda</hediffDef>
+				</li>
+				<li>
+					<chance>1</chance>
+					<hediffDef>RootBeer</hediffDef>
+				</li>
+			</hediffGivers>
+		</ingestible>
+		<tradeTags>
+			<li>Exotic</li>
+			<li>JoyItem</li>
+		</tradeTags>
+	</ThingDef>
+	
+	<ThingDef ParentName="ResourceBase">
+		<defName>BerrySoda</defName>
+		<label>berry soda</label>
+		<description>The perfect mixture of sweet and tart, combined with refreshing bubbles.</description>
+		<graphicData>
+			<texPath>Things/Items/BerrySoda</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<socialPropernessMatters>true</socialPropernessMatters>
+		<stackLimit>24</stackLimit>
+		<statBases>
+			<MaxHitPoints>100</MaxHitPoints>
+			<MarketValue>15</MarketValue>
+		</statBases>
+		<thingCategories>
+			<li>Sodas</li>
+		</thingCategories>
+		<ingestible>
+			<preferability>DesperateOnly</preferability>
+			<nutrition>0.05</nutrition>
+			<joy>0.10</joy>
+			<joyKind>Gluttonous</joyKind>
+			<maxNumToIngestAtOnce>1</maxNumToIngestAtOnce>
+			<soundEat>Ingest_Beer</soundEat>
+			<isPleasureDrug>false</isPleasureDrug>
+			<hediffGivers>
+				<li>
+					<chance>1</chance>
+					<hediffDef>Soda</hediffDef>
+				</li>
+				<li>
+					<chance>1</chance>
+					<hediffDef>TastySoda</hediffDef>
+				</li>
+			</hediffGivers>
+		</ingestible>
+		<tradeTags>
+			<li>Exotic</li>
+			<li>JoyItem</li>
+		</tradeTags>
+	</ThingDef>
+	
+	<ThingDef ParentName="ResourceBase">
+		<defName>AgaveSoda</defName>
+		<label>agave soda</label>
+		<description>A lightly flavored, sweetened soda made from cacti. Favored amongst shrubland muffalo herders. </description>
+		<graphicData>
+			<texPath>Things/Items/AgaveSoda</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<socialPropernessMatters>true</socialPropernessMatters>
+		<stackLimit>24</stackLimit>
+		<statBases>
+			<MaxHitPoints>100</MaxHitPoints>
+			<MarketValue>15</MarketValue>
+		</statBases>
+		<thingCategories>
+			<li>Sodas</li>
+		</thingCategories>
+		<ingestible>
+			<preferability>DesperateOnly</preferability>
+			<nutrition>0.05</nutrition>
+			<joy>0.10</joy>
+			<joyKind>Gluttonous</joyKind>
+			<maxNumToIngestAtOnce>1</maxNumToIngestAtOnce>
+			<soundEat>Ingest_Beer</soundEat>
+			<isPleasureDrug>false</isPleasureDrug>
+			<hediffGivers>
+				<li>
+					<chance>1</chance>
+					<hediffDef>Soda</hediffDef>
+				</li>
+				<li>
+					<chance>1</chance>
+					<hediffDef>TastySoda</hediffDef>
+				</li>
+			</hediffGivers>
+		</ingestible>
+		<tradeTags>
+			<li>Exotic</li>
+			<li>JoyItem</li>
+		</tradeTags>
+	</ThingDef>
+	
+	<ThingDef ParentName="ResourceBase">
+		<defName>KokaSoda</defName>
+		<label>Koka soda</label>
+		<description>An uplifting soda popular throughout the galaxy. Banned in some sectors due to its pharmaceutical ingredients.</description>
+		<graphicData>
+			<texPath>Things/Items/KokaSoda</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<socialPropernessMatters>true</socialPropernessMatters>
+		<stackLimit>24</stackLimit>
+		<statBases>
+			<MaxHitPoints>100</MaxHitPoints>
+			<MarketValue>25</MarketValue>
+		</statBases>
+		<thingCategories>
+			<li>Sodas</li>
+		</thingCategories>
+		<ingestible>
+			<preferability>DesperateOnly</preferability>
+			<nutrition>0.05</nutrition>
+			<joy>0.10</joy>
+			<joyKind>Gluttonous</joyKind>
+			<maxNumToIngestAtOnce>1</maxNumToIngestAtOnce>
+			<soundEat>Ingest_Beer</soundEat>
+			<isPleasureDrug>true</isPleasureDrug>
+			<hediffGivers>
+				<li>
+					<chance>1</chance>
+					<hediffDef>Soda</hediffDef>
+				</li>
+				<li>
+					<chance>1</chance>
+					<hediffDef>TastySoda</hediffDef>
+				</li>
+				<li>
+					<chance>1</chance>
+					<hediffDef>KokaSoda</hediffDef>
+				</li>
+			</hediffGivers>
+		</ingestible>
+		<tradeTags>
+			<li>Exotic</li>
+			<li>JoyItem</li>
+		</tradeTags>
+	</ThingDef>
+	
+	<ThingDef ParentName="ResourceBase">
+		<defName>PeppiSoda</defName>
+		<label>Peppi soda</label>
+		<description>A stronger version of Koka, Peppi is known for its stimulating properties. Favored among hunters and doctors.</description>
+		<graphicData>
+			<texPath>Things/Items/PeppiSoda</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<socialPropernessMatters>true</socialPropernessMatters>
+		<stackLimit>24</stackLimit>
+		<statBases>
+			<MaxHitPoints>100</MaxHitPoints>
+			<MarketValue>30</MarketValue>
+		</statBases>
+		<thingCategories>
+			<li>Sodas</li>
+		</thingCategories>
+		<ingestible>
+			<preferability>DesperateOnly</preferability>
+			<nutrition>0.05</nutrition>
+			<joy>0.10</joy>
+			<joyKind>Gluttonous</joyKind>
+			<maxNumToIngestAtOnce>1</maxNumToIngestAtOnce>
+			<soundEat>Ingest_Beer</soundEat>
+			<isPleasureDrug>true</isPleasureDrug>
+			<hediffGivers>
+				<li>
+					<chance>1</chance>
+					<hediffDef>Soda</hediffDef>
+				</li>
+				<li>
+					<chance>1</chance>
+					<hediffDef>TastySoda</hediffDef>
+				</li>
+				<li>
+					<chance>1</chance>
+					<hediffDef>PeppiSoda</hediffDef>
+				</li>
+			</hediffGivers>
+		</ingestible>
+		<tradeTags>
+			<li>Exotic</li>
+			<li>JoyItem</li>
+		</tradeTags>
+	</ThingDef>
+	
+	<ThingDef ParentName="ResourceBase">
+		<defName>ThrumboEnergy</defName>
+		<label>Thrumbo energy drink</label>
+		<description>"Take a blow from a Thrumbo!"</description>
+		<graphicData>
+			<texPath>Things/Items/ThrumboEnergy</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<socialPropernessMatters>true</socialPropernessMatters>
+		<stackLimit>24</stackLimit>
+		<statBases>
+			<MaxHitPoints>100</MaxHitPoints>
+			<MarketValue>20</MarketValue>
+		</statBases>
+		<thingCategories>
+			<li>Sodas</li>
+		</thingCategories>
+		<ingestible>
+			<preferability>NeverForNutrition</preferability>
+			<nutrition>0.1</nutrition>
+			<joy>0.10</joy>
+			<joyKind>Chemical</joyKind>
+			<maxNumToIngestAtOnce>1</maxNumToIngestAtOnce>
+			<soundEat>Ingest_Beer</soundEat>
+			<isPleasureDrug>true</isPleasureDrug>
+			<hediffGivers>
+				<li>
+					<chance>1</chance>
+					<hediffDef>ThrumboEnergy</hediffDef>
+				</li>
+			</hediffGivers>
+		</ingestible>
+	<tradeTags>
+			<li>Exotic</li>
+			<li>JoyItem</li>
+		</tradeTags>
+	</ThingDef>
+	
+	
+	
+</Resources>
+
+
+
+
+
+

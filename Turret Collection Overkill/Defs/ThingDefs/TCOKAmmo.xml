@@ -1,0 +1,118 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Resources>
+
+
+  <!-- =========== bases =========== -->
+
+  <ThingDef Name="ResourceBase" Abstract="True">
+    <thingClass>ThingWithComps</thingClass>
+    <label>unspecified resource</label>
+    <category>Item</category>
+    <resourceReadoutPriority>Middle</resourceReadoutPriority>
+    <useHitPoints>true</useHitPoints>
+    <selectable>true</selectable>
+    <altitudeLayer>Item</altitudeLayer>
+    <stackLimit>75</stackLimit>
+    <comps>
+      <li>
+        <compClass>CompForbiddable</compClass>
+      </li>
+    </comps>
+	<statBases>
+	  <SellPriceFactor>0.35</SellPriceFactor>
+	</statBases>
+    <alwaysHaulable>true</alwaysHaulable>
+    <drawGUIOverlay>true</drawGUIOverlay>
+    <rotatable>false</rotatable>
+    <pathCost>15</pathCost>
+  </ThingDef>
+
+  <ThingDef Name="ResourceVerbBase" ParentName="ResourceBase" Abstract="True">
+    <equipmentType>Primary</equipmentType>
+    <techLevel>Neolithic</techLevel>
+    <comps>
+      <li>
+        <compClass>CompEquippable</compClass>
+      </li>
+    </comps>
+  </ThingDef>
+
+<!--=============== TC ====================-->
+
+
+	<ThingDef ParentName="ResourceBase">
+	<defName>AvengerShell</defName>
+	<label>Avenger 30mm shell</label>
+	<description>Fired from 30mm avenger cannon.</description>
+    <graphicData>  
+	  <texPath>Things/Item/Resource/avenger</texPath>
+	  <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+	<soundInteract>Metal_Drop</soundInteract>
+	<soundDrop>Standard_Drop</soundDrop>
+	<tickerType>Normal</tickerType>
+	<stackLimit>75</stackLimit>
+	<statBases>
+      <MarketValue>10</MarketValue>
+      <MaxHitPoints>70</MaxHitPoints>
+      <Flammability>1.0</Flammability>
+      <DeteriorationRate>0.5</DeteriorationRate>
+	</statBases>
+	<thingCategories>
+      <li>Ammo</li>
+	</thingCategories> 
+	<comps>
+      <li>
+        <compClass>CompExplosive</compClass>
+        <explosiveRadius>2.4</explosiveRadius>
+        <explosiveDamageType>Bomb</explosiveDamageType>
+        <explosiveExpandPerStackcount>0.4</explosiveExpandPerStackcount>
+        <startWickHitPointsPercent>0.333</startWickHitPointsPercent>
+        <wickTicks>
+          <min>10</min>
+          <max>30</max>
+        </wickTicks>
+      </li>
+	</comps>
+	</ThingDef>
+
+
+
+
+	<ThingDef ParentName="ResourceBase">
+	<defName>ChainShell</defName>
+	<label>Chain 35mm round</label>
+	<description>Fired from 35mm chain cannon.</description>
+    <graphicData>
+	  <texPath>Things/Item/Resource/autocannon</texPath>
+	  <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+	<soundInteract>Metal_Drop</soundInteract>
+	<soundDrop>Standard_Drop</soundDrop>
+	<tickerType>Normal</tickerType>
+	<stackLimit>75</stackLimit>
+	<statBases>
+      <MarketValue>7</MarketValue>
+      <MaxHitPoints>70</MaxHitPoints>
+      <Flammability>1.0</Flammability>
+      <DeteriorationRate>0.5</DeteriorationRate>
+	</statBases>
+	<thingCategories>
+      <li>Ammo</li>
+	</thingCategories> 
+	<comps>
+      <li>
+        <compClass>CompExplosive</compClass>
+        <explosiveRadius>2.0</explosiveRadius>
+        <explosiveDamageType>Bomb</explosiveDamageType>
+        <explosiveExpandPerStackcount>0.4</explosiveExpandPerStackcount>
+        <startWickHitPointsPercent>0.333</startWickHitPointsPercent>
+        <wickTicks>
+          <min>10</min>
+          <max>30</max>
+        </wickTicks>
+      </li>
+	</comps>
+	</ThingDef>
+
+</Resources>

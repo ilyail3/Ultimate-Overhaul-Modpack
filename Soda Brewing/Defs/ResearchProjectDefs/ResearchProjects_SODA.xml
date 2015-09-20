@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ResearchProjectDefs>
+
+	<ResearchProjectDef>
+		<defName>SodaBrewing</defName>
+		<label>Soda Brewing</label>
+		<description>The fermenting yeast of the brewery can be used to add CO2 to water, producing a desirable effervescent effect.</description>
+		<totalCost>500</totalCost>
+		<prerequisites>
+			<li>Brewing</li>
+		</prerequisites>
+	</ResearchProjectDef>
+
+</ResearchProjectDefs>

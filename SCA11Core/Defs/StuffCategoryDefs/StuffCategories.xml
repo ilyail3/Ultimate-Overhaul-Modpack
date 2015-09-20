@@ -1,0 +1,59 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<StuffCategoryDef>
+		<defName>Matty</defName>
+		<label>matty</label>
+	</StuffCategoryDef>
+	
+	<StuffCategoryDef>
+		<defName>Parts</defName>
+		<label>parts</label>
+	</StuffCategoryDef>
+	
+	<StuffCategoryDef>
+		<defName>Stuffing</defName>
+		<label>stuffing</label>
+	</StuffCategoryDef>
+	
+	 <StuffCategoryDef>
+    <defName>Foody</defName>
+    <label>foody</label>
+  </StuffCategoryDef>
+	
+	<StuffCategoryDef>
+		<defName>Precious</defName>
+		<label>precious</label>
+	</StuffCategoryDef>
+
+	<StuffCategoryDef>
+		<defName>Metallic</defName>
+		<label>metallic</label>
+	</StuffCategoryDef>
+
+	<StuffCategoryDef>
+		<defName>Woody</defName>
+		<label>woody</label>
+	</StuffCategoryDef>
+	
+	<StuffCategoryDef>
+    <defName>Glassy</defName>
+    <label>glassy</label>
+  </StuffCategoryDef>
+
+	<StuffCategoryDef>
+		<defName>Stony</defName>
+		<label>stony</label>
+	</StuffCategoryDef>
+
+	<StuffCategoryDef>
+		<defName>Fabric</defName>
+		<label>fabric</label>
+	</StuffCategoryDef>
+
+	<StuffCategoryDef>
+		<defName>Leathery</defName>
+		<label>leathery</label>
+	</StuffCategoryDef>  
+
+</Defs>

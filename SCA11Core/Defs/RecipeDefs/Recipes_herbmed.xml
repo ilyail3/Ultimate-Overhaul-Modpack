@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+<RecipeDef>
+	<defName>Makeherbmeds</defName>
+	<label>make aloe</label>
+	<description>Turns raw Xerigium into Aloe.</description>
+	<jobString>Mixing Herbs.</jobString>
+	<workSpeedStat>SmithingSpeed</workSpeedStat>
+	<workAmount>800</workAmount>
+		<effectWorking>Cook</effectWorking>
+    <soundWorking>Recipe_CookMeal</soundWorking>          
+	<allowMixingIngredients>true</allowMixingIngredients>
+	<recipeUsers>
+         <li>TableChemlab</li>
+      </recipeUsers>
+	<ingredients>
+	<li>
+	    <filter>
+	      <thingDefs>
+	        <li>RawXerigium</li>
+	      </thingDefs>
+	    </filter>
+	    <count>10</count>
+	  </li>
+	</ingredients>
+	<fixedIngredientFilter>
+	   <thingDefs>
+	    <li>RawXerigium</li>
+	   </thingDefs>
+	</fixedIngredientFilter>
+	<products>
+	  <aloe>10</aloe>
+	</products>
+	<workSkill>Medicine</workSkill>
+</RecipeDef>
+
+<RecipeDef>
+	<defName>Makeherbalmeds</defName>
+	<label>make herbal medicine</label>
+	<description>Combines Aloe and Cloth into a herbal medical kit.</description>
+	<jobString>Mixing Herbs.</jobString>
+	<workSpeedStat>SmithingSpeed</workSpeedStat>
+	<workAmount>1200</workAmount>
+		<effectWorking>Cook</effectWorking>
+    <soundWorking>Recipe_CookMeal</soundWorking>          
+	<allowMixingIngredients>true</allowMixingIngredients>
+	<recipeUsers>
+         <li>TableChemlab</li>
+      </recipeUsers>
+	<ingredients>
+	<li>
+	    <filter>
+	      <thingDefs>
+	        <li>aloe</li>
+	      </thingDefs>
+	    </filter>
+	    <count>10</count>
+	  </li>
+	
+     <li>
+	    <filter>
+	      <thingDefs>
+	        <li>Cloth</li>
+	      </thingDefs>
+	    </filter>
+	    <count>10</count>
+	  </li>
+	</ingredients>
+	<fixedIngredientFilter>
+	   <thingDefs>
+	    <li>aloe</li>
+		<li>Cloth</li>
+	   </thingDefs>
+	</fixedIngredientFilter>
+	<products>
+	  <HerbalMedicine>10</HerbalMedicine>
+	</products>
+	<workSkill>Medicine</workSkill>
+</RecipeDef>
+
+<RecipeDef>
+	<defName>Makeherbmedicine</defName>
+	<label>make aloe</label>
+	<description>Turns raw Xerigium into Aloe.</description>
+	<jobString>Mixing Herbs.</jobString>
+	<workSpeedStat>SmithingSpeed</workSpeedStat>
+	<workAmount>800</workAmount>
+		<effectWorking>Cook</effectWorking>
+    <soundWorking>Recipe_CookMeal</soundWorking>          
+	<allowMixingIngredients>true</allowMixingIngredients>
+	<recipeUsers>
+         <li>TableHerbalMed</li>
+      </recipeUsers>
+	<ingredients>
+	<li>
+	    <filter>
+	      <thingDefs>
+	        <li>RawXerigium</li>
+	      </thingDefs>
+	    </filter>
+	    <count>10</count>
+	  </li>
+	</ingredients>
+	<fixedIngredientFilter>
+	   <thingDefs>
+	    <li>RawXerigium</li>
+	   </thingDefs>
+	</fixedIngredientFilter>
+	<products>
+	  <aloe>5</aloe>
+	</products>
+	<workSkill>Medicine</workSkill>
+</RecipeDef>
+
+<RecipeDef>
+	<defName>Makeherbalmedkits</defName>
+	<label>make herbal medicine</label>
+	<description>Combines Aloe and Cloth into a herbal medical kit.</description>
+	<jobString>Mixing Herbs.</jobString>
+	<workSpeedStat>SmithingSpeed</workSpeedStat>
+	<workAmount>1200</workAmount>
+		<effectWorking>Cook</effectWorking>
+    <soundWorking>Recipe_CookMeal</soundWorking>          
+	<allowMixingIngredients>true</allowMixingIngredients>
+	<recipeUsers>
+         <li>TableHerbalMed</li>
+      </recipeUsers>
+	<ingredients>
+	<li>
+	    <filter>
+	      <thingDefs>
+	        <li>aloe</li>
+	      </thingDefs>
+	    </filter>
+	    <count>10</count>
+	  </li>
+     <li>
+	    <filter>
+	      <thingDefs>
+	        <li>Cloth</li>
+	      </thingDefs>
+	    </filter>
+	    <count>10</count>
+	  </li>
+	</ingredients>
+	<fixedIngredientFilter>
+	   <thingDefs>
+	    <li>aloe</li>
+		<li>Cloth</li>
+	   </thingDefs>
+	</fixedIngredientFilter>
+	<products>
+	  <HerbalMedicine>5</HerbalMedicine>
+	</products>
+	<workSkill>Medicine</workSkill>
+</RecipeDef>
+
+
+ 
+
+</Defs>

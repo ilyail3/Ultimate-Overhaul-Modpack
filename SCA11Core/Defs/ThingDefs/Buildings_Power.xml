@@ -1,0 +1,539 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Buildings>
+
+
+	<ThingDef Name="BuildingBase" Abstract="True">
+		<category>Building</category>
+		<soundImpactDefault>BulletImpactMetal</soundImpactDefault>
+		<selectable>true</selectable>
+		<drawerType>MapMeshAndRealTime</drawerType>
+		<terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
+		<repairEffect>Repair</repairEffect>
+		<leaveResourcesWhenKilled>true</leaveResourcesWhenKilled>
+		<filthLeaving>BuildingRubble</filthLeaving>
+	</ThingDef>
+
+
+	<ThingDef ParentName="BuildingBase">
+		<defName>PowerConduit</defName>
+		<label>power conduit</label>
+		<thingClass>Building</thingClass>
+		<category>Building</category>
+		<graphicData>
+		<texPath>Things/Building/Linked/PowerConduit_Atlas</texPath>
+		<graphicClass>Graphic_Single</graphicClass>
+		<linkType>Transmitter</linkType>
+		<linkFlags>
+        <li>PowerConduit</li>
+		</linkFlags>
+		</graphicData>
+		<blueprintGraphicData>
+		<texPath>Things/Building/Linked/PowerConduit_Blueprint_Atlas</texPath>
+		</blueprintGraphicData>
+		<uiIconPath>Things/Building/Linked/PowerConduit_MenuIcon</uiIconPath>
+		<building>
+			<isInert>true</isInert>
+			<ignoreNeedsPower>true</ignoreNeedsPower>
+			<isEdifice>false</isEdifice>
+		</building>
+		<altitudeLayer>FloorEmplacement</altitudeLayer>
+		<passability>Standable</passability>
+		<leaveResourcesWhenKilled>false</leaveResourcesWhenKilled>
+		<statBases>
+			<MaxHitPoints>80</MaxHitPoints>
+			<WorkToMake>35</WorkToMake>
+			<Flammability>0.4</Flammability>
+			<Beauty>-2</Beauty>
+		</statBases>
+		<description>A set of electrical cables for moving power around.</description>
+		<placingDraggableDimensions>1</placingDraggableDimensions>
+		<costList>
+			<CopperWire>1</CopperWire>
+		</costList>
+		<comps>
+			<li>
+				<compClass>CompPowerTransmitter</compClass>
+				<transmitsPower>true</transmitsPower>
+			</li>
+		</comps>
+		<placeWorkers>
+			<li>PlaceWorker_Conduit</li>
+		</placeWorkers>
+		<rotatable>false</rotatable>
+		<selectable>true</selectable>
+		<neverMultiSelect>true</neverMultiSelect>
+		<soundImpactDefault>BulletImpactMetal</soundImpactDefault>
+		<terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
+		<designationCategory>Power</designationCategory>
+		<constructEffect>ConstructMetal</constructEffect>
+		<researchPrerequisite>PowerI</researchPrerequisite>
+	</ThingDef>
+  <!--
+
+	<ThingDef ParentName="BuildingBase">
+		<defName>PowerSwitch</defName>
+		<label>power switch</label>
+		<thingClass>Building_PowerSwitch</thingClass>
+		<category>Building</category>
+		<description>Switches power on/off.</description>
+		<graphicData>
+		<texPath>Things/Building/Power/PowerSwitch_On</texPath>
+		<graphicClass>Graphic_Single</graphicClass>
+		<shaderType>Transparent</shaderType>
+		</graphicData>
+		<building>
+			<ignoreNeedsPower>true</ignoreNeedsPower>
+			<isEdifice>true</isEdifice>
+			<allowWireConnection>false</allowWireConnection>
+		</building>
+		<altitudeLayer>Waist</altitudeLayer>
+		<passability>Standable</passability>
+		<leaveResourcesWhenKilled>false</leaveResourcesWhenKilled>
+		<statBases>
+			<MaxHitPoints>120</MaxHitPoints>
+			<WorkToMake>200</WorkToMake>
+			<Flammability>0.4</Flammability>
+			<Beauty>-2</Beauty>
+		</statBases>
+		<placingDraggableDimensions>0</placingDraggableDimensions>
+		<costList>
+			<SteelBar>20</SteelBar>
+		</costList>
+		<comps>
+			<li>
+				<compClass>CompPowerTransmitter</compClass>
+				<transmitsPower>true</transmitsPower>
+			</li>
+		</comps>
+		<rotatable>false</rotatable>
+		<selectable>true</selectable>
+		<neverMultiSelect>false</neverMultiSelect>
+		<tickerType>Normal</tickerType>
+		<designationCategory>Power</designationCategory>
+		<constructEffect>ConstructMetal</constructEffect>
+		<researchPrerequisite>PowerI</researchPrerequisite>
+	</ThingDef>
+	
+	-->
+	<ThingDef ParentName="BuildingBase">
+		<defName>Battery</defName>
+		<label>battery</label>
+		<thingClass>Building_Battery</thingClass>
+		<graphicData>
+		<texPath>Things/Building/Power/Battery</texPath>
+		<graphicClass>Graphic_Multi</graphicClass>
+		<drawSize>(2,3)</drawSize>
+		</graphicData>
+		<altitudeLayer>BuildingTall</altitudeLayer>
+		<passability>PassThroughOnly</passability>
+		<pathCost>70</pathCost>
+		<castEdgeShadows>true</castEdgeShadows>
+		<fillPercent>0.4</fillPercent>
+		<tickerType>Normal</tickerType>
+		<minifiedDef>MinifiedFurniture</minifiedDef>
+		<statBases>
+			<MaxHitPoints>100</MaxHitPoints>
+			<WorkToMake>800</WorkToMake>
+			<Flammability>1.0</Flammability>
+			<Beauty>-15</Beauty>
+		</statBases>
+		<description>Stores electricity when there is excess power and yields it when there is not. Warning - charged batteries tend to explode when heated or wet.</description>
+		<size>(1,2)</size>
+		<building>
+			<ignoreNeedsPower>true</ignoreNeedsPower>
+		</building>
+		<costList>
+			<CopperBar>25</CopperBar>
+			<SteelBar>25</SteelBar>
+		</costList>
+		<comps>
+		<li>
+			<compClass>CompPowerBattery</compClass>
+			<storedEnergyMax>1000</storedEnergyMax>
+			<efficiency>0.5</efficiency>
+			<startElectricalFires>true</startElectricalFires>
+			<transmitsPower>true</transmitsPower>
+		</li>
+		</comps>
+		<terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
+		<designationCategory>Power</designationCategory>
+		<staticSunShadowHeight>0.20</staticSunShadowHeight>
+		<constructEffect>ConstructMetal</constructEffect>
+		<researchPrerequisite>PowerI</researchPrerequisite>
+	</ThingDef>
+	
+	
+	<ThingDef ParentName="BuildingBase">
+		<defName>SteamGenerator</defName>
+		<label>steam generator</label>
+		<thingClass>SuperiorCrafting.Building_SteamGenerator</thingClass>
+		<graphicData>
+		<texPath>Things/Building/SCPower/SteamGenerator2x2</texPath>
+		<graphicClass>Graphic_Single</graphicClass>
+		<drawSize>(2,2)</drawSize>
+		</graphicData>
+		<altitudeLayer>Waist</altitudeLayer>
+		<passability>PassThroughOnly</passability>
+		<pathCost>70</pathCost>
+		<fillPercent>1</fillPercent>
+		<castEdgeShadows>true</castEdgeShadows>
+		<statBases>
+			<MaxHitPoints>200</MaxHitPoints>
+			<WorkToMake>2500</WorkToMake>
+			<Flammability>1.0</Flammability>
+		</statBases>
+		<tickerType>Normal</tickerType>
+		<description>A steam turbine generator that produces electricity.  Requires a hopper filled with wood logs, or ethanol for fuel.
+Energy Output:  750W</description>
+		<size>(2,2)</size>
+		<building>
+			<ignoreNeedsPower>true</ignoreNeedsPower>
+			<wantsHopperAdjacent>true</wantsHopperAdjacent>
+		</building>
+		<costList>
+			<SteelBar>75</SteelBar>
+			<CopperBar>25</CopperBar>
+		</costList>
+		<comps>
+			<li>
+				<compClass>CompPowerTrader</compClass>
+				<shortCircuitInRain>false</shortCircuitInRain>
+				<basePowerConsumption>-1</basePowerConsumption>
+				<transmitsPower>true</transmitsPower>
+				<powerToggleable>true</powerToggleable>
+			</li>
+			<li>
+				<compClass>CompHeatPusher</compClass>
+				<heatPerSecond>3</heatPerSecond>
+				<heatPushMaxTemperature>25000</heatPushMaxTemperature>
+			</li>
+			<li>
+				<compClass>CompGlower</compClass>
+				<glowRadius>6</glowRadius>
+				<glowColor>(217,112,33,0)</glowColor>
+			</li>
+		</comps>
+		<terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
+		<designationCategory>Power</designationCategory>
+		<staticSunShadowHeight>0.20</staticSunShadowHeight>
+		<constructEffect>ConstructMetal</constructEffect>
+		<researchPrerequisite>PowerI</researchPrerequisite>
+	</ThingDef>
+	
+	
+	<ThingDef ParentName="BuildingBase">
+		<defName>GenHopper</defName>
+		<label>generator hopper</label>
+		<thingClass>Building_Storage</thingClass>
+		<graphicData>
+		<texPath>Things/Building/SCPower/GenHopper</texPath>
+		<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<altitudeLayer>Waist</altitudeLayer>
+		<passability>PassThroughOnly</passability>
+		<fillPercent>0.5</fillPercent>
+		<pathCost>70</pathCost>
+		<building>
+			<fixedStorageSettings>
+			<priority>Important</priority>
+				<filter>
+					<categories>
+						<li>Manufactured</li>
+					</categories>
+					<exceptedCategories>
+						<li>FoodRaw</li>
+						<li>ResourcesRaw</li>
+						<li>Textiles</li>
+						<li>Electronics</li>
+						<li>StoneBlocks</li>
+						<li>Leathers</li>
+						<li>Medicine</li>
+					</exceptedCategories>
+					<exceptedThingDefs>
+						<li>Silver</li>
+						<li>Copper</li>
+						<li>CopperBar</li>
+						<li>CopperWire</li>
+						<li>WeaponParts</li>
+						<li>ScrapMetal</li>
+						<li>Gold</li>
+						<li>Uranium</li>
+						<li>Steel</li>
+						<li>SafetyGlass</li>
+						<li>SmartMine</li>
+						<li>AMRound</li>
+						<li>CannonShell</li>
+						<li>Rockets</li>
+						<li>HeavyMachinegunBullet</li>
+						<li>HowitzerShell</li>
+						<li>AvengerShell</li>
+						<li>TurretEMPGrenades</li>
+						<li>Powder</li>
+						<li>AvengerShell</li>
+						<li>ChainShell</li>
+						<li>Plasteel</li>
+						<li>RawCotton</li>
+						<li>RawDevilstrand</li>
+						<li>RawHops</li>
+						<li>WoodPlank</li>
+						<li>SteelBar</li>
+						<li>PlasteelBar</li>
+						<li>Glass</li>
+						<li>Mulch</li>
+						<li>Sand</li>
+						<li>Electronics</li>
+						<li>Biomatter</li>
+						<li>ArtilleryShell</li>
+						</exceptedThingDefs>
+				</filter>
+			</fixedStorageSettings>
+			<defaultStorageSettings>
+				<priority>Important</priority>
+				<filter>
+					<categories>
+						<li>Manufactured</li>
+					</categories>
+				</filter>
+			</defaultStorageSettings>
+		</building>
+		<inspectorTabs>
+			<li>ITab_Storage</li>
+		</inspectorTabs>
+		<castEdgeShadows>true</castEdgeShadows>
+		<statBases>
+			<WorkToMake>450</WorkToMake>
+			<MaxHitPoints>100</MaxHitPoints>
+			<Flammability>1.0</Flammability>
+		</statBases>
+		<description>Holds resources for the Steam Generator.</description>
+		<costList>
+			<SteelBar>15</SteelBar>
+		</costList>
+		<tickerType>Never</tickerType>
+		<rotatable>true</rotatable>
+		<neverMultiSelect>true</neverMultiSelect>
+		<designationCategory>Power</designationCategory>
+		<staticSunShadowHeight>0.20</staticSunShadowHeight>
+		<surfaceType>Item</surfaceType>
+		<placeWorkers>
+			<li>PlaceWorker_NextToHopperAccepter</li>
+		</placeWorkers>
+		<constructEffect>ConstructMetal</constructEffect>
+		<researchPrerequisite>PowerI</researchPrerequisite>
+	</ThingDef>
+  
+  
+	<ThingDef ParentName="BuildingBase">
+		<defName>WindTurbine</defName>
+		<thingClass>Building_WindTurbine</thingClass>
+		<label>wind turbine</label>
+		<description>A wind-powered electrical generator. Requires a large clear space in front and behind for optimal air flow.</description>
+		<graphicData>
+		<texPath>Things/Building/Power/WindTurbine/WindTurbineBody</texPath>
+		<graphicClass>Graphic_Single</graphicClass>
+		<drawSize>(5,2)</drawSize>
+        <shadowData>
+        <volume>(0.2, 1.0, 0.8)</volume>
+      </shadowData>
+		</graphicData>
+		<altitudeLayer>BuildingTall</altitudeLayer>
+		<passability>Impassable</passability>
+		<fillPercent>0.5</fillPercent>
+		<statBases>
+			<MaxHitPoints>200</MaxHitPoints>
+			<WorkToMake>2500</WorkToMake>
+			<Flammability>0.4</Flammability>
+			<Beauty>-12</Beauty>
+		</statBases>
+		<tickerType>Normal</tickerType>
+		<size>(5,2)</size>
+		<selectable>true</selectable>
+		<drawPlaceWorkersWhileSelected>true</drawPlaceWorkersWhileSelected>
+		<rotatable>true</rotatable>
+		<designationCategory>Power</designationCategory>
+		<building>
+			<ignoreNeedsPower>true</ignoreNeedsPower>
+		</building>
+		<costList>
+			<SteelBar>125</SteelBar>
+			<CopperBar>25</CopperBar>
+		</costList>
+		<constructEffect>ConstructMetal</constructEffect>
+		<placeWorkers>
+			<li>PlaceWorker_WindTurbine</li>
+		</placeWorkers>
+		<comps>
+			<li>
+				<compClass>CompPowerTrader</compClass>
+				<basePowerConsumption>-2000</basePowerConsumption>
+				<transmitsPower>true</transmitsPower>
+				<powerToggleable>false</powerToggleable>
+			</li>
+		</comps>
+		<researchPrerequisite>PowerI</researchPrerequisite>
+	</ThingDef>
+
+
+	<ThingDef ParentName="BuildingBase">
+		<defName>SolarGenerator</defName>
+		<label>solar generator</label>
+		<thingClass>Building_SmallSolar</thingClass>
+		<graphicData>
+		<texPath>Things/Building/SCPower/SolarPanel2x2</texPath>
+		<graphicClass>Graphic_Single</graphicClass>
+		<drawSize>(2,2)</drawSize>
+		</graphicData>
+		<altitudeLayer>Waist</altitudeLayer>
+		<passability>PassThroughOnly</passability>
+		<pathCost>70</pathCost>
+		<fillPercent>0.5</fillPercent>
+		<castEdgeShadows>true</castEdgeShadows>
+		<statBases>
+			<MaxHitPoints>300</MaxHitPoints>
+			<WorkToMake>2500</WorkToMake>
+			<Flammability>0.4</Flammability>
+		</statBases>
+		<tickerType>Normal</tickerType>
+		<description>Produces electricity from sunlight. Does not work in the dark.
+Max Energy Output:  500W</description>
+		<size>(2,2)</size>
+		<building>
+			<ignoreNeedsPower>true</ignoreNeedsPower>
+		</building>
+		<costList>
+			<SteelBar>25</SteelBar>
+			<CopperBar>25</CopperBar>
+			<Glass>50</Glass>
+		</costList>
+		<comps>
+			<li>
+				<compClass>CompPowerTrader</compClass>
+				<basePowerConsumption>-1</basePowerConsumption>
+				<transmitsPower>true</transmitsPower>
+				<powerToggleable>false</powerToggleable>
+			</li>
+		</comps>
+		<rotatable>false</rotatable>
+		<terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
+		<designationCategory>Power</designationCategory>
+		<staticSunShadowHeight>0.15</staticSunShadowHeight>
+		<constructEffect>ConstructMetal</constructEffect>
+		<researchPrerequisite>PowerII</researchPrerequisite>
+	</ThingDef>
+
+
+	<ThingDef ParentName="BuildingBase">
+		<defName>GeothermalGenerator</defName>
+		<label>geothermal generator</label>
+		<thingClass>Building_PowerPlantSteam</thingClass>
+		<graphicData>
+		<texPath>Things/Building/Power/GeothermalPlant</texPath>
+		<graphicClass>Graphic_Single</graphicClass>
+		<drawSize>(6,6)</drawSize>
+		</graphicData>
+		<altitudeLayer>BuildingTall</altitudeLayer>
+		<pathCost>70</pathCost>
+		<passability>PassThroughOnly</passability>
+		<castEdgeShadows>true</castEdgeShadows>
+		<fillPercent>1</fillPercent>
+		<statBases>
+			<MaxHitPoints>800</MaxHitPoints>
+			<WorkToMake>8000</WorkToMake>
+			<Flammability>1.0</Flammability>
+			<Beauty>-40</Beauty>
+		</statBases>
+		<tickerType>Normal</tickerType>
+		<description>Produces electricity from geothermal steam geysers. Must be placed on a geyser.
+Energy Output:  3600W</description>
+		<size>(6,6)</size>
+		<costList>
+			<SteelBar>300</SteelBar>
+			<CopperBar>50</CopperBar>
+			<Electronics>50</Electronics>
+		</costList>
+		<comps>
+			<li>
+				<compClass>CompPowerTrader</compClass>
+				<basePowerConsumption>-3600</basePowerConsumption>
+				<transmitsPower>true</transmitsPower>
+				<powerToggleable>false</powerToggleable>
+			</li>
+		</comps>
+		<rotatable>false</rotatable>
+		<terrainAffordanceNeeded>Heavy</terrainAffordanceNeeded>
+		<designationCategory>Power</designationCategory>
+		<staticSunShadowHeight>0.5</staticSunShadowHeight>
+		<placeWorkers>
+			<li>PlaceWorker_OnSteamGeyser</li>
+		</placeWorkers>
+		<building>
+			<soundAmbient>GeothermalPlant_Ambience</soundAmbient>
+			<ignoreNeedsPower>true</ignoreNeedsPower>
+		</building>
+		<constructEffect>ConstructMetal</constructEffect>
+		<researchPrerequisite>GeothermalPower</researchPrerequisite>
+	</ThingDef>
+	
+
+	<ThingDef ParentName="BuildingBase">
+		<defName>NuclearGenerator</defName>
+		<label>radioisotope thermoelectric generator</label>
+		<thingClass>Building_PowerPlantSteam</thingClass>
+		<graphicData>
+		<texPath>Things/Building/SCPower/NuclearGenerator6x6</texPath>
+		<graphicClass>Graphic_Single</graphicClass>
+		<drawSize>(6,6)</drawSize>
+		</graphicData>
+		<altitudeLayer>BuildingTall</altitudeLayer>
+		<pathCost>70</pathCost>
+		<passability>PassThroughOnly</passability>
+		<castEdgeShadows>true</castEdgeShadows>
+		<fillPercent>1</fillPercent>
+		<statBases>
+			<MaxHitPoints>1800</MaxHitPoints>
+			<WorkToMake>22500</WorkToMake>
+			<Flammability>1.0</Flammability>
+			<Beauty>-40</Beauty>
+		</statBases>
+		<tickerType>Normal</tickerType>
+		<description>Produces electricity from a nuclear reaction. Requires a large amount of uranium and electronics to build, but is not restricted in it's placement.
+Energy Output 9000W</description>
+		<size>(6,6)</size>
+		<costList>
+			<SteelBar>900</SteelBar>
+			<PlasteelBar>200</PlasteelBar>
+			<Uranium>400</Uranium>
+			<Electronics>150</Electronics>
+		</costList>
+		<comps>
+			<li>
+				<compClass>CompPowerTrader</compClass>
+				<basePowerConsumption>-9000</basePowerConsumption>
+				<transmitsPower>true</transmitsPower>
+				<powerToggleable>false</powerToggleable>
+			</li>
+			<li>
+				<compClass>CompHeatPusher</compClass>
+				<heatPerSecond>20</heatPerSecond>
+				<heatPushMaxTemperature>250000</heatPushMaxTemperature>
+			</li>
+			<li>
+				<compClass>CompGlower</compClass>
+				<glowRadius>12</glowRadius>
+				<glowColor>(20,50,230,0)</glowColor>
+			</li>
+		</comps>
+		<rotatable>true</rotatable>
+		<terrainAffordanceNeeded>Heavy</terrainAffordanceNeeded>
+		<designationCategory>Power</designationCategory>
+		<staticSunShadowHeight>0.5</staticSunShadowHeight>
+		<building>
+			<soundAmbient>GeothermalPlant_Ambience</soundAmbient>
+			<ignoreNeedsPower>true</ignoreNeedsPower>
+		</building>
+		<constructEffect>ConstructMetal</constructEffect>
+		<researchPrerequisite>PowerIV</researchPrerequisite>
+	</ThingDef>
+
+
+</Buildings>

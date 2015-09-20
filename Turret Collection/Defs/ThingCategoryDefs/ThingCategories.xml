@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ThingCategoryDefs>
+
+        <ThingCategoryDef>
+          <defName>Ammo</defName>
+          <label>ammo</label>
+          <parent>Weapons</parent>
+          <iconPath>Things/Item/Resource/CannonShell</iconPath>
+        </ThingCategoryDef>
+
+
+</ThingCategoryDefs>

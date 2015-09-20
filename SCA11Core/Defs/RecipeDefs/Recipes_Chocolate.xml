@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+<RecipeDef>
+	<defName>CraftChocolate</defName>
+	<label>make chocolate</label>
+	<description>Roasting beans into chocolate.</description>
+	<jobString>Making Chocolate.</jobString>
+	<workSpeedStat>CookSpeed</workSpeedStat>
+	<workAmount>700</workAmount>
+		<effectWorking>Cook</effectWorking>
+    <soundWorking>Recipe_CookMeal</soundWorking>          
+	<allowMixingIngredients>true</allowMixingIngredients>
+	<recipeUsers>
+         <li>ElectricOven</li>
+      </recipeUsers>
+	<ingredients>
+	  <li>
+	    <filter>
+	      <thingDefs>
+	        <li>Rawcocoa</li>
+	      </thingDefs>
+	    </filter>
+	    <count>5</count>
+	  </li>
+	<li>
+	    <filter>
+	      <thingDefs>
+	        <li>Sugar</li>
+	      </thingDefs>
+	    </filter>
+	    <count>5</count>
+	  </li>
+	</ingredients>
+	<fixedIngredientFilter>
+	  <thingDefs>
+	    <li>Rawcocoa</li>
+	    <li>Sugar</li>
+	  </thingDefs>
+	</fixedIngredientFilter>
+	<products>
+	  <Chocolate>10</Chocolate>
+	</products>
+	<workSkill>Cooking</workSkill>
+</RecipeDef>
+
+<RecipeDef>
+      <defName>GroundSugar</defName>
+	<label>Ground sugar</label>
+      <description>Beat and grind those canes to get at that sugar!</description>
+      <jobString>Making sugar.</jobString>
+      <workAmount>1100</workAmount>
+      <recipeUsers>
+         <li>StoneMill</li>
+      </recipeUsers>
+      <workSpeedStat>CookSpeed</workSpeedStat>
+      <effectWorking>Cook</effectWorking>
+      <soundWorking>Recipe_CookMeal</soundWorking>
+      <products>
+         <Sugar>3</Sugar>
+      </products>
+      <ingredients>
+         <li>
+            <filter>
+               <thingDefs>
+                  <li>Rawsugar</li>
+               </thingDefs>
+            </filter>
+            <count>5</count>
+         </li>
+      </ingredients>
+      <fixedIngredientFilter>
+         <thingDefs>
+            <li>Rawsugar</li>
+         </thingDefs>
+      </fixedIngredientFilter>
+      <workSkill>Cooking</workSkill>
+   </RecipeDef>
+
+
+ 
+
+</Defs>

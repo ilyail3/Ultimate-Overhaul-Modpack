@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<RecipeDefs>
+
+    <RecipeDef>
+	<defName>BakeBlueberryPie</defName>
+	<label>Bake Blueberry Pie</label>
+	<description>Bake a tasty pie.</description>
+	<jobString>Bake Pie.</jobString>
+	<workSpeedStat>CookSpeed</workSpeedStat>
+	<effectWorking>Cook</effectWorking>
+	<workAmount>1500</workAmount>
+    <soundWorking>Recipe_CookMeal</soundWorking>          <allowMixingIngredients>true</allowMixingIngredients>
+	<recipeUsers>
+         <li>ElectricOven</li>
+      </recipeUsers>
+	<ingredients>
+	  <li>
+	    <filter>
+	      <thingDefs>
+	        <li>Rawflour</li>
+	      </thingDefs>
+	    </filter>
+	    <count>5</count>
+	  </li>
+	<li>
+	    <filter>
+	      <thingDefs>
+	        <li>Sugar</li>
+	      </thingDefs>
+	    </filter>
+	    <count>4</count>
+	  </li>
+	<li>
+	    <filter>
+	      <thingDefs>
+	        <li>Rawblueberry</li>
+	      </thingDefs>
+	    </filter>
+	    <count>15</count>
+	  </li>
+	</ingredients>
+	<fixedIngredientFilter>
+	  <thingDefs>
+	    <li>Sugar</li>
+	    <li>Rawflour</li>
+	    <li>Rawblueberry</li>
+	  </thingDefs>
+	</fixedIngredientFilter>
+	<products>
+	  <BlueberryPie>4</BlueberryPie>
+	</products>
+	<workSkill>Cooking</workSkill>
+</RecipeDef>
+  
+   <RecipeDef>
+	<defName>BakePumpkinPie</defName>
+	<label>Bake Pumpkin Pie</label>
+	<description>Bake a tasty pie.</description>
+	<jobString>Bake Pie.</jobString>
+	<workSpeedStat>CookSpeed</workSpeedStat>
+	<effectWorking>Cook</effectWorking>
+	<workAmount>1500</workAmount>
+    <soundWorking>Recipe_CookMeal</soundWorking>          <allowMixingIngredients>true</allowMixingIngredients>
+	<recipeUsers>
+         <li>ElectricOven</li>
+      </recipeUsers>
+	<ingredients>
+	  <li>
+	    <filter>
+	      <thingDefs>
+	        <li>Rawflour</li>
+	      </thingDefs>
+	    </filter>
+	    <count>5</count>
+	  </li>
+	<li>
+	    <filter>
+	      <thingDefs>
+	        <li>Sugar</li>
+	      </thingDefs>
+	    </filter>
+	    <count>4</count>
+	  </li>
+	<li>
+	    <filter>
+	      <thingDefs>
+	        <li>Rawpumpkin</li>
+	      </thingDefs>
+	    </filter>
+	    <count>1</count>
+	  </li>
+	</ingredients>
+	<fixedIngredientFilter>
+	  <thingDefs>
+	    <li>Sugar</li>
+	    <li>Rawflour</li>
+	    <li>Rawpumpkin</li>
+	  </thingDefs>
+	</fixedIngredientFilter>
+	<products>
+	  <PumpkinPie>4</PumpkinPie>
+	</products>
+	<workSkill>Cooking</workSkill>
+</RecipeDef>
+
+
+</RecipeDefs>

@@ -1,0 +1,238 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Resources>
+
+  <ThingDef Name="ResourceBase" Abstract="True">
+    <thingClass>ThingWithComps</thingClass>
+    <label>unspecified resource</label>
+    <category>Item</category>
+    <resourceReadoutPriority>Middle</resourceReadoutPriority>
+    <useHitPoints>true</useHitPoints>
+    <selectable>true</selectable>
+    <altitudeLayer>Item</altitudeLayer>
+    <stackLimit>75</stackLimit>
+    <comps>
+      <li>
+        <compClass>CompForbiddable</compClass>
+      </li>
+    </comps>
+    <alwaysHaulable>true</alwaysHaulable>
+    <drawGUIOverlay>true</drawGUIOverlay>
+    <rotatable>false</rotatable>
+    <pathCost>15</pathCost>
+  </ThingDef>
+  
+  <ThingDef Abstract="True" ParentName="ResourceBase" Name="PlantProductBase">
+    <graphicData>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <soundInteract>Food_Drop</soundInteract>
+    <soundDrop>Food_Drop</soundDrop>
+    <socialPropernessMatters>true</socialPropernessMatters>
+    <statBases>
+      <MaxHitPoints>100</MaxHitPoints>
+      <Flammability>1.0</Flammability>
+      <DeteriorationRate>5</DeteriorationRate>
+    </statBases>
+    <tickerType>Rare</tickerType>
+  </ThingDef>
+  
+  <ThingDef Abstract="True" ParentName="PlantProductBase" Name="RawFoodBase">
+    <ingestible>
+      <preferability>Awful</preferability>
+      <nutrition>.25</nutrition>
+      <eatEffect>EatVegetarian</eatEffect>
+      <soundEat>RawVegetable_Eat</soundEat>
+    </ingestible>
+    <thingCategories>
+      <li>FruitFoodRaw</li>
+    </thingCategories>
+  </ThingDef>
+
+	
+
+	<!-- New crop items -->
+	<!-- ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+	
+  
+
+<ThingDef ParentName="RawFoodBase">
+		<defName>Rawapple</defName>
+		<label>apples</label>
+		<description>A red fruit grow on trees.</description>
+		<graphicData>
+      <texPath>Things/Item/Resource/apple</texPath>
+    </graphicData>
+    <statBases>
+      <MarketValue>2</MarketValue>
+    </statBases>
+    <ingestible>
+	<nutrition>.25</nutrition>
+      <joy>0.006</joy>
+    </ingestible>
+    <comps>
+      <li Class="CompProperties_Rottable">
+        <daysToRotStart>8</daysToRotStart>
+      </li>
+    </comps>
+    
+  </ThingDef>
+
+<ThingDef ParentName="RawFoodBase">
+		<defName>Rawbanana</defName>
+		<label>banana</label>
+		<description>A yellow fruit that grows on trees.</description>
+		<graphicData>
+      <texPath>Things/Item/Resource/banana</texPath>
+    </graphicData>
+
+    <statBases>
+      <MarketValue>3.5</MarketValue>
+    </statBases>
+    <ingestible>
+	 <nutrition>.25</nutrition>
+      <joy>0.006</joy>
+    </ingestible>
+    <comps>
+      <li Class="CompProperties_Rottable">
+        <daysToRotStart>8</daysToRotStart>
+      </li>
+    </comps>
+    
+  </ThingDef>
+
+<ThingDef ParentName="RawFoodBase">
+		<defName>Rawgrape</defName>
+		<label>grapes</label>
+		<description>A sweet fruit that grows on vines.</description>
+		<graphicData>
+      <texPath>Things/Item/Resource/grape</texPath>
+    </graphicData>
+
+    <statBases>
+      <MarketValue>5</MarketValue>
+    </statBases>
+    <ingestible>
+	 <nutrition>.25</nutrition>
+      <joy>0.006</joy>
+    </ingestible>
+    <comps>
+      <li Class="CompProperties_Rottable">
+        <daysToRotStart>8</daysToRotStart>
+      </li>
+    </comps>
+    
+  </ThingDef>
+
+<ThingDef ParentName="RawFoodBase">
+		<defName>Raworange</defName>
+		<label>orange</label>
+		<description>A sweet fruit that grows on trees.</description>
+		<graphicData>
+      <texPath>Things/Item/Resource/orange</texPath>
+    </graphicData>
+
+    <statBases>
+      <MarketValue>4</MarketValue>
+    </statBases>
+    <ingestible>
+	 <nutrition>.25</nutrition>
+      <joy>0.006</joy>
+    </ingestible>
+    <comps>
+      <li Class="CompProperties_Rottable">
+        <daysToRotStart>8</daysToRotStart>
+      </li>
+    </comps>
+    
+  </ThingDef>
+
+<ThingDef ParentName="RawFoodBase">
+		<defName>Rawpeach</defName>
+		<label>peach</label>
+		<description>A sweet fruit that grows on trees.</description>
+		<graphicData>
+      <texPath>Things/Item/Resource/peach</texPath>
+    </graphicData>
+
+    <statBases>
+      <MarketValue>4.5</MarketValue>
+    </statBases>
+    <ingestible>
+	 <nutrition>.25</nutrition>
+      <joy>0.006</joy>
+    </ingestible>
+    <comps>
+      <li Class="CompProperties_Rottable">
+        <daysToRotStart>8</daysToRotStart>
+      </li>
+    </comps>
+    
+  </ThingDef>
+
+<ThingDef ParentName="RawFoodBase">
+		<defName>Rawpineapple</defName>
+		<label>pineapple</label>
+		<description>A sweet fruit with a tough skin that grows on a bush.</description>
+		<graphicData>
+      <texPath>Things/Item/Resource/pineapple</texPath>
+    </graphicData>
+
+    <statBases>
+      <MarketValue>4</MarketValue>
+    </statBases>
+    <ingestible>
+	 <nutrition>.25</nutrition>
+      <joy>0.006</joy>
+    </ingestible>
+    <comps>
+      <li Class="CompProperties_Rottable">
+        <daysToRotStart>10</daysToRotStart>
+      </li>
+    </comps>
+    
+  </ThingDef>
+  
+<ThingDef ParentName="RawFoodBase">
+		<defName>Rawblueberry</defName>
+		<label>blueberry</label>
+		<description>Blue colored berry that grows in bushes. Even good raw.</description>
+		<graphicData>
+		<texPath>Things/Item/Resource/blueberry</texPath>
+		</graphicData>
+    <statBases>
+      <MarketValue>1.4</MarketValue>
+    </statBases>
+    <ingestible>
+      <joy>0.004</joy>
+    </ingestible>
+    <comps>
+      <li Class="CompProperties_Rottable">
+        <daysToRotStart>8</daysToRotStart>
+      </li>
+    </comps>
+    
+  </ThingDef>
+
+<ThingDef ParentName="RawFoodBase">
+		<defName>Rawwatermelon</defName>
+		<label>watermelon</label>
+		<description> This fruit is rich in vitamins A and C and can be eaten raw or cooked in a variety of ways.</description>
+		<graphicData>
+		<texPath>Things/Item/Resource/watermelon</texPath>
+		</graphicData>
+    <statBases>
+      <MarketValue>3</MarketValue>
+    </statBases>
+    <ingestible>
+      <joy>0.008</joy>
+    </ingestible>
+    <comps>
+      <li Class="CompProperties_Rottable">
+        <daysToRotStart>8</daysToRotStart>
+      </li>
+    </comps>
+    
+  </ThingDef>
+
+
+</Resources>

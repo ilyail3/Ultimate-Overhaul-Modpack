@@ -1,0 +1,69 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Resources>
+
+
+  <!-- =========== bases =========== -->
+
+  <ThingDef Name="ResourceBase" Abstract="True">
+    <thingClass>ThingWithComps</thingClass>
+    <label>unspecified resource</label>
+    <category>Item</category>
+    <resourceReadoutPriority>Middle</resourceReadoutPriority>
+    <useHitPoints>true</useHitPoints>
+    <selectable>true</selectable>
+    <altitudeLayer>Item</altitudeLayer>
+    <stackLimit>75</stackLimit>
+    <comps>
+      <li>
+        <compClass>CompForbiddable</compClass>
+      </li>
+    </comps>
+    <alwaysHaulable>true</alwaysHaulable>
+    <drawGUIOverlay>true</drawGUIOverlay>
+    <rotatable>false</rotatable>
+    <pathCost>15</pathCost>
+  </ThingDef>
+  
+  
+  
+  <ThingDef Name="ResourceVerbBase" ParentName="ResourceBase" Abstract="True">
+    <equipmentType>Primary</equipmentType>
+    <techLevel>Neolithic</techLevel>
+    <comps>
+      <li>
+        <compClass>CompEquippable</compClass>
+      </li>
+    </comps>
+  </ThingDef>
+
+<!--=============== Powder SK ====================-->
+
+
+
+
+	<ThingDef ParentName="ResourceBase">
+	<defName>Powder</defName>
+	<label>Gunpowder</label>
+	<description>Gunpowder needs to make shells.</description>
+    <graphicData>  
+	  <texPath>Things/Item/Resource/Powder</texPath>
+	  <graphicClass>Graphic_Single</graphicClass> 
+	</graphicData> 
+	<soundInteract>Standard_Drop</soundInteract>
+	<soundDrop>Standard_Drop</soundDrop>
+	<tickerType>Normal</tickerType>
+	<stackLimit>75</stackLimit>
+	<statBases>
+      <MarketValue>2</MarketValue>
+      <MaxHitPoints>100</MaxHitPoints>
+      <Flammability>1</Flammability>
+      <DeteriorationRate>0</DeteriorationRate>
+	</statBases> 
+	<thingCategories>
+      <li>Manufactured</li> 
+	</thingCategories> 
+	</ThingDef>
+
+
+
+</Resources>

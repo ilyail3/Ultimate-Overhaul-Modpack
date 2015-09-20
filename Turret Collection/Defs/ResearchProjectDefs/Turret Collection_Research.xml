@@ -1,0 +1,53 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+
+	<ResearchProjectDefs>
+		<ResearchProjectDef>
+		<defName>HighPoweredMannable</defName>
+		<label>high powered turrets</label>
+		<description>Unlocks research for powerful manned turrets that will require ammunition.</description>
+		<totalCost>2000</totalCost>
+        <prerequisites><li>SpecializedMannedTurrets</li></prerequisites>
+	</ResearchProjectDef>
+
+    <ResearchProjectDef>
+		<defName>AMTurret</defName>
+		<label>Anti-Materiel Turret</label>
+		<description>Powerful and accurate for long range shots, deals armor-piercing damage.</description>
+		<totalCost>1700</totalCost>
+        <prerequisites><li>HighPoweredMannable</li></prerequisites>
+	</ResearchProjectDef>
+
+    <ResearchProjectDef>
+		<defName>HowitzerTurret</defName>
+		<label>Howitzer Turret</label>
+		<description>Long range artillery, has an onboard computer to imporve accuracy. Fires over wall, need to be manned.</description>
+		<totalCost>1700</totalCost>
+        <prerequisites><li>HighPoweredMannable</li></prerequisites>
+	</ResearchProjectDef>
+
+    <ResearchProjectDef>
+		<defName>RocketLauncher</defName>
+		<label>Rocket Launcher</label>
+		<description>Fires 6 rockets at target area with each volley, but has long reload time. Fires over wall, need to be manned.</description>
+		<totalCost>1700</totalCost>
+        <prerequisites><li>HighPoweredMannable</li></prerequisites>
+	</ResearchProjectDef>
+
+    <ResearchProjectDef>
+		<defName>LaserTurret</defName>
+		<label>Laser Turret</label>
+		<description>Sets target on fire and deals damage as well. 7200W power consumption.</description>
+		<totalCost>1700</totalCost>
+        <prerequisites><li>HighPoweredMannable</li></prerequisites>
+	</ResearchProjectDef>
+
+	<ResearchProjectDef>
+		<defName>CannonTurret</defName>
+		<label>Cannon Turret</label>
+		<description>Mounted with a 120mm tank gun, long range, powerful and accurate. deals extra armor-piercing damage if the round has a direct hit.</description>
+		<totalCost>1700</totalCost>
+        <prerequisites><li>HighPoweredMannable</li></prerequisites>
+	</ResearchProjectDef>
+
+</ResearchProjectDefs>

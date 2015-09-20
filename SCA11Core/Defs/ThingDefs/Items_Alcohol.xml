@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ThingDefs>
+
+    <ThingDef Name="MealBase" Abstract="True">
+    <label>meal</label>
+    <thingClass>Meal</thingClass>
+    <category>Item</category>
+    <useHitPoints>true</useHitPoints>
+    <selectable>true</selectable>
+    <statBases>
+      <MaxHitPoints>50</MaxHitPoints>
+      <Flammability>1.0</Flammability>
+    </statBases>
+    <altitudeLayer>Item</altitudeLayer>
+    <stackLimit>75</stackLimit>
+    <tickerType>Rare</tickerType>
+    <socialPropernessMatters>true</socialPropernessMatters>
+    <thingCategories>
+      <li>DrugMeals</li>
+    </thingCategories>
+    <alwaysHaulable>true</alwaysHaulable>
+    <comps>
+      <li>
+        <compClass>CompForbiddable</compClass>
+      </li>
+    </comps>
+    <pathCost>15</pathCost>
+    <resourceReadoutPriority>Last</resourceReadoutPriority>
+    <drawGUIOverlay>true</drawGUIOverlay>
+	<ingestible>
+      <maxNumToIngestAtOnce>1</maxNumToIngestAtOnce>
+    </ingestible>
+
+  </ThingDef>
+
+
+
+<ThingDef ParentName="MealBase">
+	<defName>cider</defName>
+	<label>bottle of apple cider</label>
+	<description>A sweet alcohol from apples.</description>
+	<graphicData>
+      <texPath>Things/Item/Meal/cider</texPath>
+      <graphicClass>Graphic_StackCount</graphicClass>
+    </graphicData>
+	<equippedAngleOffset>-150</equippedAngleOffset>
+	<rotatable>false</rotatable>
+	<stackLimit>12</stackLimit>
+	<statBases>
+	  <DeteriorationRate>0</DeteriorationRate>
+	  <MarketValue>10</MarketValue>
+	  <MeleeWeapon_DamageAmount>7</MeleeWeapon_DamageAmount>
+	  <MeleeWeapon_Cooldown>1.8</MeleeWeapon_Cooldown>
+	</statBases>
+	<ingestible>
+	  <nutrition>0.06</nutrition>
+	  <joy>0.15</joy>
+           <joyKind>Chemical</joyKind>
+	  <maxNumToIngestAtOnce>1</maxNumToIngestAtOnce>
+	  <preferability>NeverForNutrition</preferability>
+	  <soundEat>Ingest_Beer</soundEat>
+	  <isPleasureDrug>true</isPleasureDrug>
+	  <hediffGivers>
+		<li>
+		<chance>1</chance>
+		<hediffDef>MidAlcohol</hediffDef>
+		</li>
+	  </hediffGivers>
+	</ingestible>
+         <equipmentType>Primary</equipmentType>
+         <techLevel>Neolithic</techLevel>
+         <comps>
+           <li>
+             <compClass>CompEquippable</compClass>
+           </li>
+          </comps>
+         <verbs>
+           <li>
+             <verbClass>Verb_MeleeAttack</verbClass>
+             <hasStandardCommand>true</hasStandardCommand>
+             <meleeDamageDef>Blunt</meleeDamageDef>
+           </li>
+         </verbs>
+</ThingDef>
+
+
+<ThingDef ParentName="MealBase">
+	<defName>rum</defName>
+	<label>bottle of rum</label>
+	<description>Where's all the rum gone?</description>
+	<graphicData>
+      <texPath>Things/Item/Meal/rum</texPath>
+      <graphicClass>Graphic_StackCount</graphicClass>
+    </graphicData>
+	<equippedAngleOffset>-150</equippedAngleOffset>
+	<rotatable>false</rotatable>
+	<stackLimit>12</stackLimit>
+	<statBases>
+	  <DeteriorationRate>0</DeteriorationRate>
+	  <MarketValue>20</MarketValue>
+	  <MeleeWeapon_DamageAmount>7</MeleeWeapon_DamageAmount>
+	  <MeleeWeapon_Cooldown>1.8</MeleeWeapon_Cooldown>
+	</statBases>
+	<ingestible>
+	  <nutrition>0.04</nutrition>
+	  <joy>0.2</joy>
+           <joyKind>Chemical</joyKind>
+	  <maxNumToIngestAtOnce>1</maxNumToIngestAtOnce>
+	  <preferability>NeverForNutrition</preferability>
+	  <soundEat>Ingest_Beer</soundEat>
+	  <isPleasureDrug>true</isPleasureDrug>
+	  <hediffGivers>
+		<li>
+		<chance>1</chance>
+		<hediffDef>StrongAlcohol</hediffDef>
+		</li>
+	  </hediffGivers>
+	</ingestible>
+</ThingDef>
+
+
+
+</ThingDefs>

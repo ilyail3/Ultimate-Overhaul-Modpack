@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+<RecipeDef>
+	<defName>CraftFlour</defName>
+	<label>Grind flour from wheat</label>
+	<description>Grind wheat into flour.</description>
+	<jobString>Grinding Flour.</jobString>
+	<workSpeedStat>CookSpeed</workSpeedStat>
+		<effectWorking>Cook</effectWorking>
+<workAmount>600</workAmount>
+    <soundWorking>Recipe_CookMeal</soundWorking>          
+	<allowMixingIngredients>true</allowMixingIngredients>
+	<recipeUsers>
+         <li>StoneMill</li>
+      </recipeUsers>
+	<ingredients>
+	  <li>
+	    <filter>
+	      <thingDefs>
+	        <li>Rawwheat</li>
+	      </thingDefs>
+	    </filter>
+	    <count>10</count>
+	  </li>
+	</ingredients>
+	<fixedIngredientFilter>
+	  <thingDefs>
+	    <li>Rawwheat</li>
+	  </thingDefs>
+	</fixedIngredientFilter>
+	<products>
+	  <Rawflour>10</Rawflour>
+	</products>
+	<workSkill>Cooking</workSkill>
+</RecipeDef>
+
+<RecipeDef>
+	<defName>CraftFlourSeeds</defName>
+	<label>Grind flour from seeds</label>
+	<description>Grind wheat into flour.</description>
+	<jobString>Grinding Flour.</jobString>
+	<workSpeedStat>CookSpeed</workSpeedStat>
+		<effectWorking>Cook</effectWorking>
+<workAmount>600</workAmount>
+    <soundWorking>Recipe_CookMeal</soundWorking>          
+	<allowMixingIngredients>true</allowMixingIngredients>
+	<recipeUsers>
+         <li>StoneMill</li>
+      </recipeUsers>
+	<ingredients>
+			<li>
+				<filter>
+					<categories>
+						<li>SeedsCategory</li>
+					</categories>
+				</filter>
+				<count>10</count>
+			</li>
+		</ingredients>
+	<fixedIngredientFilter>
+			<categories>
+				<li>SeedsCategory</li>
+			</categories>
+		</fixedIngredientFilter>
+	<products>
+	  <Rawflour>10</Rawflour>
+	</products>
+	<workSkill>Cooking</workSkill>
+</RecipeDef>
+
+<RecipeDef>
+	<defName>bread</defName>
+	<label>Bake Bread</label>
+	<description>Bakes a loaf of bread.</description>
+	<jobString>Baking Bread.</jobString>
+	<workSpeedStat>CookSpeed</workSpeedStat>
+		<effectWorking>Cook</effectWorking>
+    <soundWorking>Recipe_CookMeal</soundWorking>
+          <allowMixingIngredients>true</allowMixingIngredients>
+	<recipeUsers>
+         <li>ElectricOven</li>
+      </recipeUsers>
+	<ingredients>
+	  <li>
+	    <filter>
+	      <thingDefs>
+	        <li>Rawflour</li>
+	      </thingDefs>
+	    </filter>
+	    <count>10</count>
+	  </li>
+	</ingredients>
+	<fixedIngredientFilter>
+	  <thingDefs>
+	    <li>Rawflour</li>
+	  </thingDefs>
+	</fixedIngredientFilter>
+	<products>
+	  <bread>2</bread>
+	</products>
+	<workSkill>Cooking</workSkill>
+</RecipeDef>
+
+</Defs>

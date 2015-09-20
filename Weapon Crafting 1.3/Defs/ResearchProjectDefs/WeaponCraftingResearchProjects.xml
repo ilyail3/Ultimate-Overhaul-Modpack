@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ResearchProjectDefs>
+
+	<ResearchProjectDef>
+		<defName>PrimitiveWeaponCrafting</defName>
+		<label>Primitive Weapon Crafting</label>
+		<description>Build primitive weapons from nature.</description>
+		<totalCost>600</totalCost>
+		<prerequisites><li>CraftingI</li></prerequisites>
+	</ResearchProjectDef>
+
+	<ResearchProjectDef>
+		<defName>ModernWeaponCrafting</defName>
+		<label>Modern Weapon Crafting</label>
+		<description>Build guns from scrap.</description>
+		<totalCost>600</totalCost>
+		<prerequisites><li>PrimitiveWeaponCrafting</li></prerequisites>
+	</ResearchProjectDef>
+	
+</ResearchProjectDefs>

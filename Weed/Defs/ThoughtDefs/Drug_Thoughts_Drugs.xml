@@ -1,0 +1,142 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+
+  <ThoughtDef>
+    <defName>Weed</defName>
+    <workerClass>ThoughtWorker_Hediff</workerClass>
+    <hediff>Weed</hediff>
+    <stages>
+      <li>
+        <label>buzzed-hidden</label>
+        <description>Should not appear.</description>
+        <baseMoodEffect>0</baseMoodEffect>
+        <visible>false</visible>
+      </li>
+      <li>
+        <label>Woo this is nice</label>
+        <description>I just feel a bit more relaxed. That's good.</description>
+        <baseMoodEffect>10</baseMoodEffect>
+      </li>
+      <li>
+        <label>I see preaty lights guys!!</label>
+        <description>I see pretty lights guys!!</description>
+        <baseMoodEffect>20</baseMoodEffect>
+      </li>     
+      <li>
+        <label>Tripping Hard</label>
+        <description>Wooo. I am just the best guy ever!!!</description>
+        <baseMoodEffect>40</baseMoodEffect>
+      </li>
+      <li>
+        <label>Down and Out</label>
+        <description>Nope Not like this guys please.</description>
+        <baseMoodEffect>-30</baseMoodEffect>
+      </li>   
+    </stages>
+  </ThoughtDef>
+  
+  <ThoughtDef>
+    <defName>OneKickDeathA</defName>
+    <workerClass>ThoughtWorker_Hediff</workerClass>
+    <hediff>OnekickDeath</hediff>
+    <stages>
+      <li>
+        <label>buzzed-hidden</label>
+        <description>Should not appear.</description>
+        <baseMoodEffect>0</baseMoodEffect>
+        <visible>false</visible>
+      </li>
+      <li>
+        <label>Pain</label>
+        <description>I am in Pain</description>
+        <baseMoodEffect>-10</baseMoodEffect>
+      </li>
+      <li>
+        <label>Insane</label>
+        <description>Ahhhhhhhhhhhhhhhhhhhhgggggggggggrrrrrrrrrrrrrr!!!!!!!!!!!!</description>
+        <baseMoodEffect>-25</baseMoodEffect>
+      </li>     
+      <li>
+        <label>Insane</label>
+        <description>I want to feast on your SOUL!!!!!!!!!!!!!</description>
+        <baseMoodEffect>-40</baseMoodEffect>
+      </li>
+      <li>
+        <label>Death to All</label>
+        <description>It all should BURN!!!!!!!.</description>
+        <baseMoodEffect>-80</baseMoodEffect>
+      </li>   
+    </stages>
+  </ThoughtDef>
+  
+  <ThoughtDef>
+    <defName>OneKickGoodA</defName>
+    <workerClass>ThoughtWorker_Hediff</workerClass>
+    <hediff>OnekickGood</hediff>
+    <stages>
+      <li>
+        <label>buzzed-hidden</label>
+        <description>Should not appear.</description>
+        <baseMoodEffect>0</baseMoodEffect>
+        <visible>false</visible>
+      </li>
+      <li>
+        <label>Stable</label>
+        <description>I am in control of this</description>
+        <baseMoodEffect>10</baseMoodEffect>
+      </li>
+      <li>
+        <label>Stable</label>
+        <description>I am in control of this</description>
+        <baseMoodEffect>10</baseMoodEffect>
+      </li>     
+      <li>
+        <label>Stable</label>
+        <description>I am in control of this</description>
+        <baseMoodEffect>10</baseMoodEffect>
+      </li>
+      <li>
+        <label>Ouch</label>
+        <description>I feel a bit sad.</description>
+        <baseMoodEffect>-10</baseMoodEffect>
+      </li>   
+    </stages>
+  </ThoughtDef>
+  
+  <ThoughtDef>
+    <defName>Brownie</defName>
+    <workerClass>ThoughtWorker_Hediff</workerClass>
+    <hediff>Brownies</hediff>
+    <stages>
+      <li>
+        <label>buzzed-hidden</label>
+        <description>Should not appear.</description>
+        <baseMoodEffect>0</baseMoodEffect>
+        <visible>false</visible>
+      </li>
+      <li>
+        <label>What a nice Brownie</label>
+        <description>This Brownie taste good.</description>
+        <baseMoodEffect>10</baseMoodEffect>
+      </li>
+      <li>
+        <label>Hmmmm i just cant stop eating!!</label>
+        <description>Hmmmm I just cant stop eating!!!</description>
+        <baseMoodEffect>30</baseMoodEffect>
+      </li>     
+      <li>
+        <label>Tripping Hard</label>
+        <description>Wooo. Brownies!!!</description>
+        <baseMoodEffect>50</baseMoodEffect>
+      </li>
+      <li>
+        <label>Well that was fun</label>
+        <description>Maybe I could eat them again.</description>
+        <baseMoodEffect>5</baseMoodEffect>
+      </li>   
+    </stages>
+  </ThoughtDef>
+
+
+</Defs>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<WorkGivers>
+
+
+  <WorkGiverDef>
+    <defName>DoBillsSell</defName>
+    <giverClass>WorkGiver_DoBill</giverClass>
+    <workType>Cooking</workType>
+    <priorityInType>100</priorityInType>
+    <singleBillGiverDef>DeepWeb</singleBillGiverDef>
+    <verb>Use</verb>
+    <gerund>Use</gerund>
+    <requiredCapacities>
+      <li>Manipulation</li>
+    </requiredCapacities>
+  </WorkGiverDef>
+
+
+
+</WorkGivers>

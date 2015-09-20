@@ -1,0 +1,250 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+
+  <ThingDef Name="MealBase" Abstract="True">
+    <label>meal</label>
+    <thingClass>Meal</thingClass>
+    <category>Item</category>
+    <useHitPoints>True</useHitPoints>
+    <selectable>true</selectable>
+    <statBases>
+      <MaxHitPoints>50</MaxHitPoints>
+      <Flammability>1.0</Flammability>
+    </statBases>
+    <altitudeLayer>Item</altitudeLayer>
+    <stackLimit>10</stackLimit>
+    <tickerType>Rare</tickerType>
+    <description>"Meal lacks desc."</description>
+    <socialPropernessMatters>true</socialPropernessMatters>
+    <thingCategories>
+      <li>DrugMeals</li>
+    </thingCategories>
+    <alwaysHaulable>true</alwaysHaulable>
+    <comps>
+      <li>
+        <compClass>CompForbiddable</compClass>
+      </li>
+    </comps>
+    <pathCost>15</pathCost>
+    <resourceReadoutPriority>Last</resourceReadoutPriority>
+    <drawGUIOverlay>true</drawGUIOverlay>
+  </ThingDef>
+
+
+
+
+
+  <ThingDef ParentName="MealBase">
+    <defName>Weed</defName>
+    <label>Weed</label>
+    <description>It turns out that Frank may of been on to something when he burnt the weeds, it is quite soothing.</description>
+	<graphicData>
+    <texPath>weed</texPath>
+    <graphicClass>Graphic_Single</graphicClass>
+	</graphicData>
+    <rotatable>false</rotatable>
+    <stackLimit>75</stackLimit>
+    <statBases>
+      <DeteriorationRate>0.25</DeteriorationRate>
+      <MarketValue>25</MarketValue>
+	  <SellPriceFactor>0.15</SellPriceFactor>
+    </statBases>
+    <ingestible>
+      <preferability>NeverForNutrition</preferability>
+      <nutrition>0.05</nutrition>
+	<joy>0.17</joy>
+	<joyKind>Chemical</joyKind>
+      <maxNumToIngestAtOnce>1</maxNumToIngestAtOnce>
+      <soundEat>Ingest_Beer</soundEat>
+      <isPleasureDrug>true</isPleasureDrug>
+      <hediffGivers>
+        <li>
+          <chance>1</chance>
+          <hediffDef>Weed</hediffDef>
+        </li>
+      </hediffGivers>
+    </ingestible>
+  </ThingDef>
+
+
+  <ThingDef ParentName="MealBase">
+    <defName>WeedCig</defName>
+    <label>Joint</label>
+    <description>Now that its rolled it is much nicer.</description>
+	<graphicData>
+    <texPath>WeedCig</texPath>
+    <graphicClass>Graphic_Single</graphicClass>
+	</graphicData>
+    <rotatable>false</rotatable>
+    <stackLimit>25</stackLimit>
+    <statBases>
+      <DeteriorationRate>0.25</DeteriorationRate>
+      <MarketValue>20</MarketValue>
+	  <SellPriceFactor>0.25</SellPriceFactor>
+    </statBases>
+    <ingestible>
+      <preferability>Awful</preferability>
+      <nutrition>0.02</nutrition>
+	<joy>0.20</joy>
+	<joyKind>Chemical</joyKind>
+      <maxNumToIngestAtOnce>1</maxNumToIngestAtOnce>
+      <soundEat>Ingest_Beer</soundEat>
+      <isPleasureDrug>true</isPleasureDrug>
+      <hediffGivers>
+        <li>
+          <chance>1</chance>
+          <hediffDef>Weed</hediffDef>
+        </li>
+      </hediffGivers>
+    </ingestible>
+  </ThingDef>
+  
+  <ThingDef ParentName="MealBase">
+    <defName>OneKick</defName>
+    <label>One Kick</label>
+    <description>A powerful drug that will boost you in many ways but you might go insane.</description>
+	<graphicData>
+    <texPath>WOODrug</texPath>
+    <graphicClass>Graphic_Single</graphicClass>
+	</graphicData>
+    <rotatable>false</rotatable>
+    <stackLimit>25</stackLimit>
+    <statBases>
+      <DeteriorationRate>0.25</DeteriorationRate>
+      <MarketValue>25</MarketValue>
+	  <SellPriceFactor>0.25</SellPriceFactor>
+    </statBases>
+    <ingestible>
+	<preferability>NeverForNutrition</preferability>
+      <nutrition>0.05</nutrition>
+	<joy>0.30</joy>
+	<joyKind>Chemical</joyKind>
+      <maxNumToIngestAtOnce>1</maxNumToIngestAtOnce>
+      <soundEat>Ingest_Beer</soundEat>
+      <isPleasureDrug>false</isPleasureDrug>
+      <hediffGivers>
+        <li>
+          <chance>0.8</chance>
+          <hediffDef>OnekickGood</hediffDef>
+		</li>
+		<li>
+		  <chance>0.1</chance>
+		  <hediffDef>OnekickDeath</hediffDef>
+        </li>
+      </hediffGivers>
+    </ingestible>
+  </ThingDef>
+  
+   <ThingDef ParentName="MealBase">
+    <defName>SpaceSpice</defName>
+    <label>Space Spice</label>
+    <description>A powerful drug that is a refined chemical I wonder what it does...</description>
+	<graphicData>
+    <texPath>SpaceSpice</texPath>
+    <graphicClass>Graphic_Single</graphicClass>
+	</graphicData>
+    <rotatable>false</rotatable>
+    <stackLimit>25</stackLimit>
+    <statBases>
+      <DeteriorationRate>0.05</DeteriorationRate>
+      <MarketValue>100</MarketValue>
+	  <SellPriceFactor>0.1</SellPriceFactor>
+    </statBases>
+    <ingestible>
+      <nutrition>0.05</nutrition>
+	<preferability>NeverForNutrition</preferability>
+	<joy>0.35</joy>
+	<joyKind>Chemical</joyKind>
+      <maxNumToIngestAtOnce>1</maxNumToIngestAtOnce>
+      <soundEat>Ingest_Beer</soundEat>
+      <isPleasureDrug>false</isPleasureDrug>
+      <hediffGivers>
+        <li>
+          <chance>0.8</chance>
+          <hediffDef>SpaceSpiceA</hediffDef>
+		</li>
+		<li>
+		  <chance>0.5</chance>
+		  <hediffDef>SpaceSpiceB</hediffDef>
+        </li>
+		<li>
+		  <chance>0.2</chance>
+		  <hediffDef>SpaceSpiceC</hediffDef>
+        </li>
+		<li>
+		  <chance>0.05</chance>
+		  <hediffDef>SpaceSpiceD</hediffDef>
+        </li>
+      </hediffGivers>
+    </ingestible>
+  </ThingDef>
+  
+  <ThingDef ParentName="MealBase">
+    <defName>WeedOil</defName>
+    <label>Weed Oil</label>
+    <description>Now that we have this as an oil maybe we can use it for something more then getting high.</description>
+	<graphicData>
+    <texPath>WeedOil</texPath>
+    <graphicClass>Graphic_Single</graphicClass>
+	</graphicData>
+    <rotatable>false</rotatable>
+    <stackLimit>25</stackLimit>
+    <statBases>
+      <DeteriorationRate>0.05</DeteriorationRate>
+      <MarketValue>40</MarketValue>
+	  <SellPriceFactor>0.25</SellPriceFactor>
+    </statBases>
+    <ingestible>
+	<preferability>NeverForNutrition</preferability>
+      <nutrition>0.05</nutrition>
+	<joy>0.17</joy>
+	<joyKind>Chemical</joyKind>
+      <maxNumToIngestAtOnce>1</maxNumToIngestAtOnce>
+      <soundEat>Ingest_Beer</soundEat>
+      <isPleasureDrug>true</isPleasureDrug>
+      <hediffGivers>
+        <li>
+          <chance>1</chance>
+          <hediffDef>Weed</hediffDef>
+        </li>
+      </hediffGivers>
+    </ingestible>
+  </ThingDef>
+  
+  
+  <ThingDef ParentName="MealBase">
+    <defName>Brownie</defName>
+    <label>Brownie</label>
+    <description>A nice Brownie which is 100% natural.</description>
+	<graphicData>
+    <texPath>Brownie</texPath>
+    <graphicClass>Graphic_Single</graphicClass>
+	</graphicData>
+    <rotatable>false</rotatable>
+    <stackLimit>25</stackLimit>
+    <statBases>
+      <DeteriorationRate>0.5</DeteriorationRate>
+      <MarketValue>5</MarketValue>
+    </statBases>
+	<thingCategories>
+         <li>SweetMeals</li>
+      </thingCategories>
+    <ingestible>
+      <preferability>Awful</preferability>
+      <nutrition>0.5</nutrition>
+	<joy>0.20</joy>
+	<joyKind>Chemical</joyKind>
+      <maxNumToIngestAtOnce>1</maxNumToIngestAtOnce>
+      <soundEat>Ingest_Beer</soundEat>
+      <isPleasureDrug>true</isPleasureDrug>
+      <hediffGivers>
+        <li>
+          <chance>1</chance>
+          <hediffDef>Brownies</hediffDef>
+        </li>
+      </hediffGivers>
+    </ingestible>
+  </ThingDef>
+
+</Defs>

@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<RecipeDefs>
+
+	
+	<RecipeDef>
+		<defName>BrewSpectagoSoda</defName>
+		<label>brew spectago soda (petals)</label>
+		<description>Spectago tea infused with CO2 carbonation and added sweetener. </description>
+		<jobString>Brewing spectago soda</jobString>
+		<workSpeedStat>BrewingSpeed</workSpeedStat>
+		<workAmount>1000</workAmount>
+		<effectWorking>Cook</effectWorking>
+		<soundWorking>Recipe_Brewing</soundWorking>
+		<allowMixingIngredients>true</allowMixingIngredients>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>RainbowPetals</li>
+					</thingDefs>
+				</filter>
+				<count>10</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Syrup</li>
+					</thingDefs>
+				</filter>
+				<count>5</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>SeltzerSoda</li>
+					</thingDefs>
+				</filter>
+				<count>6</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+			<li>RainbowPetals</li>
+			<li>Syrup</li>
+			<li>SeltzerSoda</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<products>
+			<SpectagoSoda>6</SpectagoSoda>
+		</products>
+		<recipeUsers>
+			<li>Brewery</li>
+		</recipeUsers>
+		<skillRequirements>
+			<li>
+				<skill>Cooking</skill>
+				<minLevel>6</minLevel>
+			</li>
+		</skillRequirements>
+		<workSkill>Cooking</workSkill>
+		<researchPrerequisite>SodaBrewing</researchPrerequisite>
+	</RecipeDef>
+	
+	
+</RecipeDefs>

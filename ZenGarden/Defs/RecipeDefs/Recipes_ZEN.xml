@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<RecipeDefs>
+	
+	<RecipeDef>
+		<defName>CrushGravel</defName>
+		<label>crush gravel</label>
+		<description>Crush and chisel gravel.</description>
+		<jobString>Making gravel.</jobString>
+		<workAmount>1000</workAmount>
+		<workSpeedStat>StonecuttingSpeed</workSpeedStat>
+		<workSkill>Mining</workSkill>
+		<workSkillLearnFactor>0.25</workSkillLearnFactor>
+		<effectWorking>CutStone</effectWorking>
+		<soundWorking>Recipe_MakeStoneBlocks</soundWorking>
+		<ingredients>
+			<li>
+				<filter>
+					<categories>
+						<li>StoneChunks</li>
+					</categories>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+		<categories>
+			<li>StoneChunks</li>
+		</categories>
+		</fixedIngredientFilter>
+		<products>
+			<Gravel>10</Gravel>
+		</products>
+		<recipeUsers>
+			<li>TableStonecutter</li>
+		</recipeUsers>
+	</RecipeDef>
+	
+</RecipeDefs>

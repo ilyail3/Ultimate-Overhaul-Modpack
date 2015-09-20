@@ -1,0 +1,95 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<Defs>
+
+ 
+ 
+<ThingDef Name="MoteBase" Abstract="True">
+  
+  <thingClass>MoteThrown</thingClass>
+  
+  <label>Mote</label>
+  
+  <category>Mote</category>
+  
+  <graphicData>
+    
+  <graphicClass>Graphic_Mote</graphicClass>
+   
+   <shaderType>Mote</shaderType>
+  
+  </graphicData>
+  
+  <altitudeLayer>MoteLow</altitudeLayer>
+  
+  <tickerType>Normal</tickerType>
+  
+  <useHitPoints>false</useHitPoints>
+  
+  <isSaveable>false</isSaveable>
+  
+  <rotatable>false</rotatable>
+ 
+ </ThingDef>
+
+ 
+
+ <ThingDef ParentName="MoteBase">
+  
+  <defName>Mote_BigExplode</defName>
+  
+  <graphicData>
+   
+   <texPath>Things/Mote/BigExplode</texPath>
+  
+  </graphicData>
+  
+  <altitudeLayer>MoteOverhead</altitudeLayer>
+  
+  <mote>
+    
+  <fadeinDuration>5</fadeinDuration>
+   
+   <ticksBeforeStartFadeout>60</ticksBeforeStartFadeout>
+   
+   <fadeoutDuration>90</fadeoutDuration>
+   
+   <growthRate>0.015</growthRate>
+  
+  </mote>
+ 
+ </ThingDef>
+
+ 
+
+ <ThingDef ParentName="MoteBase">
+  
+  <defName>Mote_BloodSplatter</defName>
+  
+  <graphicData>
+   
+   <texPath>Things/Mote/BloodSplatter</texPath>
+  
+  </graphicData>
+  
+  <altitudeLayer>MoteOverhead</altitudeLayer>
+  
+  <mote>
+       
+   <fadeinDuration>0</fadeinDuration>
+   
+   <ticksBeforeStartFadeout>5</ticksBeforeStartFadeout>
+   
+   <fadeoutDuration>15</fadeoutDuration>
+    
+   <growthRate>0.06</growthRate>
+  
+  </mote>
+ 
+ </ThingDef>
+
+ 
+
+
+
+</Defs>

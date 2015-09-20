@@ -1,0 +1,143 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<LanguageData>
+
+<!-- Алкоголь -->
+
+	<rep>
+    <path>MidInebriated.stages[0].label</path>
+    <trans>Опьянение (лёгкое)</trans>
+  </rep>
+  <rep>
+    <path>MidInebriated.stages[0].description</path>
+    <trans>Такое приятное расслабление... Хорошо.</trans>
+  </rep>
+  <rep>
+    <path>MidInebriated.stages[1].label</path>
+    <trans>Опьянение (среднее)</trans>
+  </rep>
+  <rep>
+    <path>MidInebriated.stages[1].description</path>
+    <trans>Я как будто летаю. Вот это ощущения!</trans>
+  </rep>
+  <rep>
+    <path>MidInebriated.stages[2].label</path>
+    <trans>Опьянение (тяжелое)</trans>
+  </rep>
+  <rep>
+    <path>MidInebriated.stages[2].description</path>
+    <trans>Да я эт- *ик* этих ме-х-хах-ноидо *ик* одним высрелом! Толь-*ик*-ко приселсь...</trans>
+  </rep>
+  <rep>
+    <path>MidInebriated.stages[3].label</path>
+    <trans>Опьянение (до полусмерти)</trans>
+  </rep>
+  <rep>
+    <path>MidInebriated.stages[3].description</path>
+    <trans>У-у-у.. э-э-э... ещё... невесомость...</trans>
+  </rep>
+  
+  <rep>
+    <path>StrongInebriated.stages[0].label</path>
+    <trans>Опьянение (лёгкое)</trans>
+  </rep>
+  <rep>
+    <path>StrongInebriated.stages[0].description</path>
+    <trans>Такое приятное раслабление... Хорошо.</trans>
+  </rep>
+  <rep>
+    <path>StrongInebriated.stages[1].label</path>
+    <trans>Опьянение (среднее)</trans>
+  </rep>
+  <rep>
+    <path>StrongInebriated.stages[1].description</path>
+    <trans>Я как будто летаю. Вот это ощущения!</trans>
+  </rep>
+  <rep>
+    <path>StrongInebriated.stages[2].label</path>
+    <trans>Опьянение (тяжелое)</trans>
+  </rep>
+  <rep>
+    <path>StrongInebriated.stages[2].description</path>
+    <trans>Да я эт- *ик* этих ме-х-хах-ноидо *ик* одним высрелом! Толь-*ик*-ко приселсь...</trans>
+  </rep>
+  <rep>
+    <path>StrongInebriated.stages[3].label</path>
+    <trans>Опьянение (до полусмерти)</trans>
+  </rep>
+  <rep>
+    <path>StrongInebriated.stages[3].description</path>
+    <trans>У-у-у.. э-э-э... ещё... невесомость...</trans>
+  </rep>
+  
+  <!-- Кофе -->
+  
+ <rep>
+    <path>HadCoffee.stages[0].label</path>
+    <trans>Чашка бодрящего кофе</trans>
+  </rep>
+  <rep>
+    <path>HadCoffee.stages[0].description</path>
+    <trans>Здравствуй новый день!</trans>
+  </rep>
+  <rep>
+    <path>HadCoffee.stages[1].label</path>
+    <trans>Чашка крепкого кофе</trans>
+  </rep>
+  <rep>
+    <path>HadCoffee.stages[1].description</path>
+    <trans>Ух ты! И правда крепкий!</trans>
+  </rep>
+
+  <rep>
+    <path>HadStrongCoffee.stages[0].label</path>
+    <trans>Чашка бодрящего кофе</trans>
+  </rep>
+  <rep>
+    <path>HadStrongCoffee.stages[0].description</path>
+    <trans>Здравствуй новый день!</trans>
+  </rep>
+  <rep>
+    <path>HadStrongCoffee.stages[1].label</path>
+    <trans>Чашка крепкого кофе</trans>
+  </rep>
+  <rep>
+    <path>HadStrongCoffee.stages[1].description</path>
+    <trans>Ух ты! И правда крепкий!</trans>
+  </rep>
+  
+  <!-- Табак -->
+  
+  <rep>
+    <path>Smoking.stages[0].label</path>
+    <trans>Затяжка (приятная расслабленность)</trans>
+  </rep>
+  <rep>
+    <path>Smoking.stages[0].description</path>
+    <trans>...Тишина, спокойствие, собранность...</trans>
+  </rep>
+  <rep>
+    <path>Smoking.stages[1].label</path>
+    <trans>Затяжка (лёгка эйфория)</trans>
+  </rep>
+  <rep>
+    <path>Smoking.stages[1].description</path>
+    <trans>Я будто в невесомости!</trans>
+  </rep>
+  
+  <rep>
+    <path>StrongSmoking.stages[0].label</path>
+    <trans>Затяжка (приятная расслабленность)</trans>
+  </rep>
+  <rep>
+    <path>StrongSmoking.stages[0].description</path>
+    <trans>...Тишина, спокойствие, собранность...</trans>
+  </rep>
+  <rep>
+    <path>StrongSmoking.stages[1].label</path>
+    <trans>Затяжка (лёгка эйфория)</trans>
+  </rep>
+  <rep>
+    <path>StrongSmoking.stages[1].description</path>
+    <trans>Я будто в невесомости!</trans>
+  </rep>
+</LanguageData>

@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ThingCategoryDefs>
+         
+        <ThingCategoryDef>
+          <defName>FruitFoodRaw</defName>
+          <label>fruits</label>
+          <parent>PlantFoodRaw</parent>
+          <iconPath>Ui/Icons/ThingCategories/FruitFoodRaw</iconPath>
+        </ThingCategoryDef>
+
+   <ThingCategoryDef>
+        <defName>SweetMeals</defName>
+        <label>sweets</label>
+        <parent>FoodMeals</parent>
+        <iconPath>Ui/Icons/ThingCategories/Sweets</iconPath>
+      </ThingCategoryDef>
+	  
+	  <ThingCategoryDef>
+        <defName>DrugMeals</defName>
+        <label>drugs</label>
+        <parent>FoodMeals</parent>
+        <iconPath>Ui/Icons/ThingCategories/Rums</iconPath>
+      </ThingCategoryDef>
+	  
+	  
+	  <ThingCategoryDef>
+      <defName>Exotic</defName>
+      <label>exotic</label>
+      <parent>Items</parent>
+    </ThingCategoryDef>
+	
+	<ThingCategoryDef>
+    <defName>Shields</defName>
+    <label>shields</label>
+    <parent>Weapons</parent>
+  </ThingCategoryDef>
+	
+	<ThingCategoryDef>
+    <defName>Apparel</defName>
+    <label>gear</label>
+    <parent>Root</parent>
+  </ThingCategoryDef>
+  
+  <ThingCategoryDef>
+    <defName>Tools</defName>
+    <label>tools</label>
+    <parent>Apparel</parent>
+  </ThingCategoryDef>
+  
+  <ThingCategoryDef>
+    <defName>Eyewear</defName>
+    <label>eyewear</label>
+    <parent>Headgear</parent>
+  </ThingCategoryDef>
+  
+  <ThingCategoryDef>
+    <defName>Pants</defName>
+    <label>bottoms</label>
+    <parent>Apparel</parent>
+  </ThingCategoryDef>
+  
+  <ThingCategoryDef>
+    <defName>Shirts</defName>
+    <label>tops</label>
+    <parent>Apparel</parent>
+  </ThingCategoryDef>
+  
+  
+  <ThingCategoryDef>
+    <defName>Gloves</defName>
+    <label>gloves</label>
+    <parent>Apparel</parent>
+  </ThingCategoryDef>
+  
+  <ThingCategoryDef>
+    <defName>Feet</defName>
+    <label>foot wear</label>
+    <parent>Apparel</parent>
+  </ThingCategoryDef>
+  
+  <ThingCategoryDef>
+    <defName>Armor</defName>
+    <label>armor</label>
+    <parent>Apparel</parent>
+  </ThingCategoryDef>
+  
+  <ThingCategoryDef>
+    <defName>ArmorHeadgear</defName>
+    <label>armor headgear</label>
+    <parent>Armor</parent>
+  </ThingCategoryDef>
+  
+  <ThingCategoryDef>
+    <defName>PersonalShields</defName>
+    <label>personal shields</label>
+    <parent>Armor</parent>
+  </ThingCategoryDef>
+  
+  <ThingCategoryDef>
+    <defName>ArmorPants</defName>
+    <label>armor bottoms</label>
+    <parent>Armor</parent>
+  </ThingCategoryDef>
+
+  <ThingCategoryDef>
+    <defName>ArmorShirts</defName>
+    <label>armor tops</label>
+    <parent>Armor</parent>
+  </ThingCategoryDef>
+  
+  <ThingCategoryDef>
+    <defName>ArmorSuits</defName>
+    <label>armor suits</label>
+    <parent>Armor</parent>
+  </ThingCategoryDef>
+  
+	  <ThingCategoryDef>
+    <defName>Electronics</defName>
+    <label>electronics</label>
+    <parent>Manufactured</parent>
+    <iconPath>Ui/Icons/ThingCategories/Electronics</iconPath>
+  </ThingCategoryDef>
+  
+  <ThingCategoryDef>
+        <defName>Ingredients</defName>
+        <label>ingredients</label>
+        <parent>Resources</parent>
+        <iconPath>Ui/Icons/ThingCategories/Cookingstuff</iconPath>
+    </ThingCategoryDef>
+	
+	<ThingCategoryDef>
+        <defName>RawIngredients</defName>
+        <label>raw ingredients</label>
+        <parent>Ingredients</parent>
+        <iconPath>Ui/Icons/ThingCategories/Cookingstuff</iconPath>
+    </ThingCategoryDef>
+	
+	<ThingCategoryDef>
+        <defName>RefinedIngredients</defName>
+        <label>refined ingredients</label>
+        <parent>Ingredients</parent>
+        <iconPath>Ui/Icons/ThingCategories/Cookingstuff</iconPath>
+    </ThingCategoryDef>
+
+
+</ThingCategoryDefs>

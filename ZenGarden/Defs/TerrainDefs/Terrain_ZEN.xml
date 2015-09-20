@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<TerrainDefs>
+	
+	<TerrainDef Name="FloorBase" Abstract="True">
+		<layerable>true</layerable>
+		<affordances>
+			<li>Light</li>
+			<li>Heavy</li>
+			<li>SmoothHard</li>
+		</affordances>
+		<statBases>
+			<WorkToMake>135</WorkToMake>
+		</statBases>
+		<designationCategory>NaturalFloors</designationCategory>
+		<Fertility>0</Fertility>
+		<constructEffect>ConstructDirt</constructEffect>
+		<AcceptTerrainSourceFilth>True</AcceptTerrainSourceFilth>
+		<terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
+		<ResearchPrerequisite>Stonecutting</ResearchPrerequisite>
+	</TerrainDef>
+
+
+
+	<TerrainDef ParentName="FloorBase">
+		<DefName>GravelHoriz</DefName>
+		<label>horizontal gravel</label>
+		<description>Gravel flooring that has been raked horizontally.</description>
+		<texturePath>Things/Terrain/GravelHoriz</texturePath>
+		<RenderPrecedence>150</RenderPrecedence>
+		<EdgeType>Hard</EdgeType>
+		<PathCost>2</PathCost>
+		<acceptFilth>false</acceptFilth>
+		<avoidWander>true</avoidWander>
+		<takeFootprints>false</takeFootprints>
+		<holdSnow>false</holdSnow>
+		<statBases>
+			<WorkToMake>50</WorkToMake>
+			<Beauty>5</Beauty>
+		</statBases>
+		<CostList>
+			<Gravel>10</Gravel>
+		</CostList>
+	</TerrainDef>	
+	
+	<TerrainDef ParentName="FloorBase">
+		<DefName>GravelVert</DefName>
+		<label>vertical gravel</label>
+		<description>Gravel flooring that has been raked vertically.</description>
+		<texturePath>Things/Terrain/GravelVert</texturePath>
+		<RenderPrecedence>150</RenderPrecedence>
+		<EdgeType>Hard</EdgeType>
+		<PathCost>2</PathCost>
+		<acceptFilth>false</acceptFilth>
+		<avoidWander>true</avoidWander>
+		<takeFootprints>false</takeFootprints>
+		<holdSnow>false</holdSnow>
+		<statBases>
+			<WorkToMake>50</WorkToMake>
+			<Beauty>5</Beauty>
+		</statBases>
+		<CostList>
+			<Gravel>10</Gravel>
+		</CostList>
+	</TerrainDef>
+	
+</TerrainDefs>

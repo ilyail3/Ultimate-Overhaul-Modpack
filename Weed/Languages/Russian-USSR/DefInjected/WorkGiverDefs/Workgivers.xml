@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<LanguageData>
+
+	<DoBillsStill.verb>Получение</DoBillsStill.verb>
+	<DoBillsStill.gerund>Получаем</DoBillsStill.gerund>
+  
+	<DoBillsTobacco.verb>Скручивать</DoBillsTobacco.verb>
+	<DoBillsTobacco.gerund>Скручиваем</DoBillsTobacco.gerund>
+
+	<DoBillsCoffee.verb>Готовить</DoBillsCoffee.verb>
+	<DoBillsCoffee.gerund>Готовим</DoBillsCoffee.gerund>
+
+	<DoBillsWeed.verb>Делать</DoBillsWeed.verb>
+	<DoBillsWeed.gerund>Делаем</DoBillsWeed.gerund>
+
+	<DoBillsSell.verb>Торговать</DoBillsSell.verb>
+	<DoBillsSell.gerund>Торгуем</DoBillsSell.gerund>
+
+	<DoBillswcig.verb>Скручивать</DoBillswcig.verb>
+	<DoBillswcig.gerund>Скручиваем</DoBillswcig.gerund>
+
+	<DoBillsBrown.verb>Лепить</DoBillsBrown.verb>
+	<DoBillsBrown.gerund>Лепим</DoBillsBrown.gerund>
+
+	<DoBillsMedicalWeed.verb>Делать</DoBillsMedicalWeed.verb>
+	<DoBillsMedicalWeed.gerund>Делаем</DoBillsMedicalWeed.gerund>
+
+	<DoBillsOil.verb>Делать</DoBillsOil.verb>
+	<DoBillsOil.gerund>Делаем</DoBillsOil.gerund>
+
+</LanguageData>

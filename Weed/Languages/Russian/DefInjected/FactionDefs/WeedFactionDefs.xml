@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<LanguageData>
+
+	<Gang.label>Местная банда</Gang.label>
+	<Gang.description>Местная банда наркоторговцев.</Gang.description>
+  
+	<IGDB.label>МСБН</IGDB.label>
+	<IGDB.description>Межгалактическая служба по борьбе с наркотиками. Главная задача: поиск и устранение наркоторговцев.</IGDB.description>
+
+</LanguageData>

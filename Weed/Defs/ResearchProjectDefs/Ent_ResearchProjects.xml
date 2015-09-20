@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ResearchProjectDefs>
+
+	<ResearchProjectDef>
+		<defName>DeepWeb</defName>
+		<label>Deep web</label>
+		<description>Deep web drug trading.</description>
+		<totalCost>900</totalCost>
+		<prerequisites>
+			<li>Communications</li>
+		</prerequisites>
+	</ResearchProjectDef>
+
+</ResearchProjectDefs>

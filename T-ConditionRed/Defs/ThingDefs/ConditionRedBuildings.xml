@@ -1,0 +1,114 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Buildings>
+
+  <ThingDef Name="BuildingBase" Abstract="True">
+    <category>Building</category>
+    <thingClass>Building</thingClass>
+    <soundImpactDefault>BulletImpactMetal</soundImpactDefault>
+    <selectable>true</selectable>
+    <drawerType>MapMeshAndRealTime</drawerType>
+    <terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
+    <repairEffect>Repair</repairEffect>
+    <leaveResourcesWhenKilled>true</leaveResourcesWhenKilled>
+    <filthLeaving>BuildingRubble</filthLeaving>
+  </ThingDef>
+
+	
+	
+  <ThingDef ParentName="BuildingBase">
+		<defName>ThreatSensor</defName>
+		<label>threat sensor</label>
+		<thingClass>ConditionRed.ThreatSensor</thingClass>
+    <graphicData>
+      <texPath>Things/Building/ThreatSensor</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <shadowData>
+        <volume>(0.4, 0.7, 0.4)</volume>
+      </shadowData>
+    </graphicData>
+		<altitudeLayer>Waist</altitudeLayer>
+    <statBases>
+      <MaxHitPoints>75</MaxHitPoints>
+      <WorkToMake>1000</WorkToMake>
+      <Flammability>1.0</Flammability>
+      <Beauty>-20</Beauty>
+    </statBases>
+		<selectable>true</selectable>
+		<description>A basic local-area radar for assessing threats to the colony. When powered, provides data that allows alert lamps to function. Cannot be built under a roof.</description>
+    <costList>
+      <SteelBar>50</SteelBar>
+	  <CopperWire>20</CopperWire>
+	  <IntegratedCircuitsBoard>1</IntegratedCircuitsBoard>
+    </costList>
+    <comps>
+      <li>
+        <compClass>CompPowerTrader</compClass>
+        <basePowerConsumption>200</basePowerConsumption>
+        <shortCircuitInRain>false</shortCircuitInRain>
+        <soundPowerOn>PowerOnSmall</soundPowerOn>
+        <soundPowerOff>PowerOffSmall</soundPowerOff>
+      </li>
+    </comps>
+		<designationCategory>Security</designationCategory>
+		<rotatable>false</rotatable>
+    <placeWorkers>
+      <li>PlaceWorker_NotUnderRoof</li>
+    </placeWorkers>
+    <tickerType>Normal</tickerType>
+	<researchPrerequisite>ColoredLights</researchPrerequisite>
+  </ThingDef>
+	
+	
+
+  <ThingDef ParentName="BuildingBase">
+    <defName>AlertLamp</defName>
+    <label>alert lamp</label>
+    <thingClass>ConditionRed.AlertLamp</thingClass>
+    <category>Building</category>
+    <graphicData>
+      <texPath>Things/Building/Furniture/LampStanding</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <shadowData>
+        <volume>(0.3, 0.6, 0.3)</volume>
+        <offset>(0,0,-0.1)</offset>
+      </shadowData>
+    </graphicData>
+    <minifiedDef>MinifiedFurniture</minifiedDef>
+    <altitudeLayer>Waist</altitudeLayer>
+    <passability>PassThroughOnly</passability>
+    <statBases>
+      <MaxHitPoints>50</MaxHitPoints>
+      <WorkToMake>170</WorkToMake>
+      <Flammability>1.0</Flammability>
+    </statBases>
+    <selectable>true</selectable>
+    <description>A smart lamp whose color will change to indicate the colony's current threat level. Requires a powered threat sensor in order to function correctly.</description>
+    <costList>
+		<CopperWire>20</CopperWire>
+		<Glass>5</Glass>
+	</costList>
+    <leaveResourcesWhenKilled>false</leaveResourcesWhenKilled>
+    <comps>
+      <li>
+        <compClass>CompPowerTrader</compClass>
+        <basePowerConsumption>75</basePowerConsumption>
+        <shortCircuitInRain>false</shortCircuitInRain>
+        <soundPowerOn>PowerOnSmall</soundPowerOn>
+        <soundPowerOff>PowerOffSmall</soundPowerOff>
+      </li>
+      <li>
+        <compClass>CompGlower</compClass>
+        <glowRadius>8</glowRadius>
+        <glowColor>(0,32,64,0)</glowColor>
+      </li>
+      <li>
+        <compClass>CompQuality</compClass>
+      </li>
+    </comps>
+    <designationCategory>Lighting</designationCategory>
+    <rotatable>false</rotatable>
+    <researchPrerequisite>ColoredLights</researchPrerequisite>
+    <tickerType>Normal</tickerType>
+  </ThingDef>
+  
+</Buildings>

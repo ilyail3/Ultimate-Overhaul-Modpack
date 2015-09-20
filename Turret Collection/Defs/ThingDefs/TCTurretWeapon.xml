@@ -1,0 +1,742 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ThingDefs>
+
+  <ThingDef Name="BaseGun" Abstract="True">
+    <category>Item</category>
+    <thingClass>ThingWithComps</thingClass>
+    <equipmentType>Primary</equipmentType>
+    <pathCost>10</pathCost>
+    <useHitPoints>True</useHitPoints>
+    <selectable>True</selectable>
+    <graphicData>
+      <onGroundRandomRotateAngle>35</onGroundRandomRotateAngle>
+    </graphicData>
+    <drawGUIOverlay>true</drawGUIOverlay>
+    <statBases>
+      <MaxHitPoints>100</MaxHitPoints>
+      <Flammability>1.0</Flammability>
+      <DeteriorationRate>1</DeteriorationRate>
+      <SellPriceFactor>0.25</SellPriceFactor>
+    </statBases>
+    <altitudeLayer>Item</altitudeLayer>
+    <alwaysHaulable>True</alwaysHaulable>
+    <tickerType>Never</tickerType>
+    <techLevel>Midworld</techLevel>
+    <thingCategories>
+      <li>WeaponsRanged</li>
+    </thingCategories>
+    <inspectorTabs>
+      <li>ITab_Art</li>
+    </inspectorTabs>
+    <comps>
+      <li>
+        <compClass>CompForbiddable</compClass>
+      </li>
+      <li>
+        <compClass>CompEquippable</compClass>
+      </li>
+      <li>
+        <compClass>CompQuality</compClass>
+      </li>
+      <li>
+        <compClass>CompArt</compClass>
+        <nameMaker>NamerGun</nameMaker>
+        <descriptionMaker>ArtWeaponGun</descriptionMaker>
+        <minQualityForArtistic>Excellent</minQualityForArtistic>
+      </li>
+    </comps>
+    <smeltProducts>
+      <SteelBar>10</SteelBar>
+    </smeltProducts>
+  </ThingDef>
+
+  <ThingDef Name="BaseHumanGun" ParentName="BaseGun" Abstract="True">
+    <weaponTags>
+      <li>Gun</li>
+    </weaponTags>
+  </ThingDef>
+
+  <ThingDef Name="BaseBullet" Abstract="True">
+    <category>Projectile</category>
+    <tickerType>Normal</tickerType>
+    <altitudeLayer>Projectile</altitudeLayer>
+    <thingClass>Bullet</thingClass>
+    <label>bullet</label>
+    <useHitPoints>False</useHitPoints>
+    <neverMultiSelect>True</neverMultiSelect>
+    <graphicData>
+      <shaderType>Transparent</shaderType>
+    </graphicData>
+  </ThingDef>
+
+
+	<ThingDef Name="StunBullet" Abstract="True">
+	<category>Projectile</category>
+	<tickerType>Normal</tickerType>
+	<altitudeLayer>Projectile</altitudeLayer>
+	<thingClass>TurretCollection.Projectile_StunBullet</thingClass>
+	<useHitPoints>false</useHitPoints>		
+	<neverMultiSelect>True</neverMultiSelect>
+    <graphicData>
+      <shaderType>Transparent</shaderType>
+    </graphicData>
+	</ThingDef>
+
+
+
+	<ThingDef Name="AMBullet" Abstract="True">
+	<category>Projectile</category>
+	<tickerType>Normal</tickerType>
+	<altitudeLayer>Projectile</altitudeLayer>
+	<thingClass>TurretCollection.Projectile_AMBullet</thingClass>
+	<useHitPoints>false</useHitPoints>		
+	<neverMultiSelect>True</neverMultiSelect>
+    <graphicData>
+      <shaderType>Transparent</shaderType>
+    </graphicData>
+	</ThingDef>
+
+
+
+	<ThingDef Name="CannonGunBullet" Abstract="True">
+	<category>Projectile</category>
+	<tickerType>Normal</tickerType>
+	<altitudeLayer>Projectile</altitudeLayer>
+	<thingClass>TurretCollection.Projectile_CannonGunBullet</thingClass>
+	<useHitPoints>false</useHitPoints>		
+	<neverMultiSelect>True</neverMultiSelect>
+    <graphicData>
+      <shaderType>Transparent</shaderType>
+    </graphicData>
+	</ThingDef>
+
+
+
+	<ThingDef Name="RLBullet" Abstract="True">
+	<category>Projectile</category>
+	<tickerType>Normal</tickerType>
+	<altitudeLayer>Projectile</altitudeLayer>
+	<thingClass>TurretCollection.Projectile_RLBullet</thingClass>
+	<useHitPoints>false</useHitPoints>		
+	<neverMultiSelect>True</neverMultiSelect>
+    <graphicData>
+      <shaderType>Transparent</shaderType>
+    </graphicData>
+	</ThingDef>
+
+
+	<ThingDef Name="HWBullet" Abstract="True">
+	<category>Projectile</category>
+	<tickerType>Normal</tickerType>
+	<altitudeLayer>Projectile</altitudeLayer>
+	<thingClass>TurretCollection.Projectile_HWBullet</thingClass>
+	<useHitPoints>false</useHitPoints>		
+	<neverMultiSelect>True</neverMultiSelect>
+    <graphicData>
+      <shaderType>Transparent</shaderType>
+    </graphicData>
+	</ThingDef>
+
+
+	<ThingDef Name="SMBullet" Abstract="True">
+	<category>Projectile</category>
+	<tickerType>Normal</tickerType>
+	<altitudeLayer>Projectile</altitudeLayer>
+	<thingClass>TurretCollection.Projectile_SMBullet</thingClass>
+	<useHitPoints>false</useHitPoints>		
+	<neverMultiSelect>True</neverMultiSelect>
+    <graphicData>
+      <shaderType>Transparent</shaderType>
+    </graphicData>
+	
+	</ThingDef>
+
+
+	<ThingDef Name="SpotlightTowerBullet" Abstract="True">
+	<category>Projectile</category>
+	<tickerType>Normal</tickerType>
+	<altitudeLayer>Projectile</altitudeLayer>
+	<thingClass>TurretCollection.Projectile_SpotlightTowerBullet</thingClass>
+	<useHitPoints>false</useHitPoints>
+	<neverMultiSelect>True</neverMultiSelect>
+    <graphicData>
+      <shaderType>Transparent</shaderType>
+    </graphicData>
+	</ThingDef>
+
+<!-- ============================================== -->
+
+
+	<ThingDef ParentName="SpotlightTowerBullet">
+    <defName>Bullet_SpotlightTower</defName>
+    <label>spotlight round</label>
+	<graphicData>
+    <texPath>Things/Projectile/SpotlightInv</texPath>
+    <graphicClass>Graphic_Single</graphicClass>
+	</graphicData>
+	<projectile>
+        <flyOverhead>true</flyOverhead>
+		<damageDef>Stun</damageDef>
+        <DamageAmountBase>0</DamageAmountBase>
+        <Speed>1000</Speed>
+    </projectile>
+    </ThingDef>
+
+
+
+
+
+	<ThingDef ParentName="BaseGun">
+	<defName>Gun_SpotlightTower</defName>
+	<label>spotlight tower lamp</label>
+	<graphicData>
+        <texPath>CH</texPath>
+		<graphicClass>Graphic_Single</graphicClass>
+	</graphicData>
+    <destroyOnDrop>True</destroyOnDrop>
+    <menuHidden>True</menuHidden>
+    <tradeability>Never</tradeability>
+    <statBases>
+      <MarketValue>1500</MarketValue>
+      <AccuracyTouch>1.00</AccuracyTouch>
+      <AccuracyShort>1.00</AccuracyShort>
+      <AccuracyMedium>1.00</AccuracyMedium>
+      <AccuracyLong>1.00</AccuracyLong>
+      <RangedWeapon_Cooldown>1</RangedWeapon_Cooldown>
+    </statBases>
+    <weaponTags>
+      <li>TurretGun</li>
+    </weaponTags>
+		<verbs>
+		   <li>
+			<verbClass>Verb_LaunchProjectile</verbClass>
+        	<hasStandardCommand>true</hasStandardCommand>
+			<projectileDef>Bullet_SpotlightTower</projectileDef>
+			<range>50</range>
+            <minRange>6</minRange>
+			<soundCast>SpotlightOn</soundCast>
+		   </li>
+		</verbs>
+	</ThingDef>
+
+	<ThingDef ParentName="SMBullet">
+    <defName>Bullet_SmartMine</defName>
+    <label>smart mine round</label>
+	<graphicData>
+		<texPath>Things/Projectile/SmartMine</texPath>
+		<graphicClass>Graphic_Single</graphicClass>
+	</graphicData>
+	    <projectile>
+            <damageDef>Bomb</damageDef>
+		    <damageAmountBase>15</damageAmountBase>
+		    <explosionRadius>2.9</explosionRadius>
+		    <speed>22</speed>
+			<soundExplode>Explosion</soundExplode>
+		    <flyOverhead>false</flyOverhead>
+		</projectile>	
+    </ThingDef>
+
+
+
+
+
+	<ThingDef ParentName="BaseGun">
+	<defName>Gun_SmartMine</defName>
+	<label>smart mine</label>
+	<graphicData>
+        <texPath>Things/Item/Resource/SmartMine</texPath>
+		<graphicClass>Graphic_Single</graphicClass>
+	</graphicData>
+	<destroyOnDrop>True</destroyOnDrop>
+    <menuHidden>True</menuHidden>
+    <tradeability>Never</tradeability>
+    <statBases>
+      <AccuracyTouch>1.00</AccuracyTouch>
+      <AccuracyShort>1.00</AccuracyShort>
+      <AccuracyMedium>1.00</AccuracyMedium>
+      <AccuracyLong>1.00</AccuracyLong>
+      <RangedWeapon_Cooldown>1</RangedWeapon_Cooldown>
+    </statBases>
+    <weaponTags>
+      <li>TurretGun</li>
+    </weaponTags>
+		<verbs>
+		   <li>
+			<verbClass>Verb_LaunchProjectile</verbClass>
+        	<hasStandardCommand>false</hasStandardCommand>
+			<projectileDef>Bullet_SmartMine</projectileDef>
+			<range>5</range>
+			<soundCast>InteractGrenade</soundCast>
+		   </li>
+		</verbs>
+	</ThingDef>
+
+<!-- ============================================== -->
+
+	<ThingDef ParentName="BaseBullet">
+    <defName>Bullet_M2Browning</defName>
+    <label>M2 Browning round</label>
+ <graphicData>
+    <texPath>Things/Projectile/50CalRound_Browning</texPath>
+    <graphicClass>Graphic_Single</graphicClass>
+ </graphicData>
+    <projectile>
+            <flyOverhead>false</flyOverhead>
+			<damageDef>Bullet</damageDef>
+			<damageAmountBase>20</damageAmountBase>
+			<speed>100</speed>
+		</projectile>
+	</ThingDef>
+
+
+	<ThingDef ParentName="BaseGun">
+	<defName>Gun_M2Browning</defName>
+	<label>M2 browning machine gun</label>
+	<graphicData>
+        <texPath>CH</texPath>
+		<graphicClass>Graphic_Single</graphicClass>
+	</graphicData>
+    <destroyOnDrop>True</destroyOnDrop>
+    <menuHidden>True</menuHidden>
+    <tradeability>Never</tradeability>
+	<canBeSpawningInventory>false</canBeSpawningInventory>
+    <statBases>
+      <MarketValue>2500</MarketValue>
+      <AccuracyTouch>1.00</AccuracyTouch>
+      <AccuracyShort>0.72</AccuracyShort>
+      <AccuracyMedium>0.36</AccuracyMedium>
+      <AccuracyLong>0.12</AccuracyLong>
+      <RangedWeapon_Cooldown>1</RangedWeapon_Cooldown>
+    </statBases>
+      <weaponTags>
+      <li>TurretGun</li>
+    </weaponTags>
+		<verbs>
+		   <li>
+			<verbClass>Verb_Shoot</verbClass>
+        	<hasStandardCommand>true</hasStandardCommand>
+			<projectileDef>Bullet_M2Browning</projectileDef>
+			<range>36</range>
+            <minRange>1</minRange>
+			<accuracyTouch>1.00</accuracyTouch>
+			<accuracyShort>0.72</accuracyShort>
+			<accuracyMedium>0.36</accuracyMedium>
+			<accuracyLong>0.12</accuracyLong>
+            <ticksBetweenBurstShots>9</ticksBetweenBurstShots>
+            <burstShotCount>4</burstShotCount>
+			<soundCast>50Cal_Browning</soundCast>
+            <muzzleFlashScale>9</muzzleFlashScale>
+		   </li>
+		</verbs>
+	</ThingDef>
+
+
+	<ThingDef ParentName="BaseBullet">
+    <defName>Bullet_M134Minigun</defName>
+    <label>M134 minigun round</label>
+	<graphicData>
+		<texPath>Things/Projectile/M134Round</texPath>
+		<graphicClass>Graphic_Single</graphicClass>
+	</graphicData>
+    <projectile>
+            <flyOverhead>false</flyOverhead>
+			<damageDef>Bullet</damageDef>
+			<damageAmountBase>16</damageAmountBase>
+			<speed>90</speed>
+		</projectile>
+	</ThingDef>
+
+
+	<ThingDef ParentName="BaseGun">
+	<defName>Gun_M134Minigun</defName>
+	<label>M134 minigun</label>
+	<graphicData>
+        <texPath>CH</texPath>
+		<graphicClass>Graphic_Single</graphicClass>
+	</graphicData>
+    <destroyOnDrop>True</destroyOnDrop>
+    <menuHidden>True</menuHidden>
+	<canBeSpawningInventory>false</canBeSpawningInventory>
+    <tradeability>Never</tradeability>
+    <statBases>
+      <MarketValue>3500</MarketValue>
+      <AccuracyTouch>0.79</AccuracyTouch>
+      <AccuracyShort>0.42</AccuracyShort>
+      <AccuracyMedium>0.12</AccuracyMedium>
+      <AccuracyLong>0.02</AccuracyLong>
+      <RangedWeapon_Cooldown>1</RangedWeapon_Cooldown>
+    </statBases>
+      <weaponTags>
+      <li>TurretGun</li>
+    </weaponTags>
+		<verbs>
+		   <li>
+			<verbClass>TurretCollection.Verb_ShootMini</verbClass>
+        	<hasStandardCommand>true</hasStandardCommand>
+			<projectileDef>Bullet_M134Minigun</projectileDef>
+			<range>30</range>
+            <minRange>1</minRange>
+			<accuracyTouch>0.79</accuracyTouch>
+			<accuracyShort>0.42</accuracyShort>
+			<accuracyMedium>0.12</accuracyMedium>
+			<accuracyLong>0.02</accuracyLong>
+            <ticksBetweenBurstShots>2</ticksBetweenBurstShots>
+            <burstShotCount>32</burstShotCount>
+		   </li>
+		</verbs>
+	</ThingDef>
+
+	<ThingDef ParentName="StunBullet">
+    <defName>Bullet_StunTurret</defName>
+    <label>rubber bullet</label>
+	<graphicData>
+    <texPath>Things/Projectile/RubberBullet</texPath>
+    <graphicClass>Graphic_Single</graphicClass>
+	</graphicData>
+    <projectile>
+            <flyOverhead>false</flyOverhead>
+			<damageDef>Stun</damageDef>
+			<damageAmountBase>18</damageAmountBase>
+			<speed>70</speed>
+		</projectile>
+	</ThingDef>
+
+
+	<ThingDef ParentName="BaseGun">
+	<defName>Gun_TurretStunGun</defName>
+	<label>turret stun gun</label>
+	<graphicData>
+		<texPath>CH</texPath>
+		<graphicClass>Graphic_Single</graphicClass>
+	</graphicData>
+    <destroyOnDrop>True</destroyOnDrop>
+    <menuHidden>True</menuHidden>
+	<canBeSpawningInventory>false</canBeSpawningInventory>
+    <tradeability>Never</tradeability>
+    <statBases>
+      <MarketValue>1500</MarketValue>
+      <AccuracyTouch>1.00</AccuracyTouch>
+      <AccuracyShort>0.95</AccuracyShort>
+      <AccuracyMedium>0.85</AccuracyMedium>
+      <AccuracyLong>0.70</AccuracyLong>
+      <RangedWeapon_Cooldown>1</RangedWeapon_Cooldown>
+    </statBases>
+      <weaponTags>
+      <li>TurretGun</li>
+    </weaponTags>
+		<verbs>
+		   <li>
+			<verbClass>Verb_Shoot</verbClass>
+        	<hasStandardCommand>true</hasStandardCommand>
+			<projectileDef>Bullet_StunTurret</projectileDef>
+			<range>17</range>
+            <minRange>1</minRange>
+			<accuracyTouch>1.00</accuracyTouch>
+			<accuracyShort>0.95</accuracyShort>
+			<accuracyMedium>0.85</accuracyMedium>
+			<accuracyLong>0.70</accuracyLong>
+			<soundCast>Mortar_LaunchA</soundCast>
+		   </li>
+		</verbs>
+	</ThingDef>
+
+
+	<ThingDef ParentName="AMBullet">
+    <defName>Bullet_AMTurret</defName>
+    <label>Anti-Materiel Turret Rounds</label>
+	<graphicData>
+    <texPath>Things/Projectile/50CalRound</texPath>
+	<graphicClass>Graphic_Single</graphicClass>
+	<shaderType>TransparentPostLight</shaderType>
+	</graphicData>
+    <projectile>
+			<damageDef>ArmorPiercing</damageDef>
+			<damageAmountBase>40</damageAmountBase>
+			<speed>275</speed>
+		</projectile>
+	</ThingDef>
+
+	<ThingDef ParentName="BaseGun">
+		<defName>Gun_AMTurret</defName>
+		<label>.50 cal turret anti-materiel gun</label>
+	<graphicData>
+    <texPath>CH</texPath>
+    <graphicClass>Graphic_Single</graphicClass>
+	</graphicData>
+    <menuHidden>True</menuHidden>
+	<canBeSpawningInventory>false</canBeSpawningInventory>
+	<tradeability>Never</tradeability>
+    <statBases>
+	<MarketValue>10600</MarketValue>
+      <AccuracyTouch>1.00</AccuracyTouch>
+      <AccuracyShort>1.00</AccuracyShort>
+      <AccuracyMedium>1.00</AccuracyMedium>
+      <AccuracyLong>1.00</AccuracyLong>
+      <RangedWeapon_Cooldown>1.00</RangedWeapon_Cooldown>
+    </statBases>
+    <weaponTags>
+      <li>Artillery</li>
+      <li>Artillery_BaseDestroyer</li>
+    </weaponTags>
+		<verbs>
+		   <li>
+			<verbClass>Verb_Shoot</verbClass>
+        	<hasStandardCommand>true</hasStandardCommand>
+			<projectileDef>Bullet_AMTurret</projectileDef>
+			<range>51</range>
+			<accuracyTouch>1.00</accuracyTouch>
+			<accuracyShort>1.00</accuracyShort>
+			<accuracyMedium>1.00</accuracyMedium>
+			<accuracyLong>1.00</accuracyLong>
+			<soundCast>50Cal</soundCast>
+                                                <muzzleFlashScale>9</muzzleFlashScale>
+		   </li>
+		</verbs>
+	</ThingDef>
+
+
+
+	<ThingDef ParentName="CannonGunBullet">
+    <defName>Bullet_CannonTurret</defName>
+    <label>120mm HEAT round</label>
+	<graphicData>
+    <texPath>Things/Projectile/120mmShell</texPath>
+	<graphicClass>Graphic_Single</graphicClass>
+	<shaderType>TransparentPostLight</shaderType>
+	</graphicData>
+	    <projectile>
+            <damageDef>ArmorPiercing</damageDef>
+		    <damageAmountBase>55</damageAmountBase>
+		    <explosionRadius>2.7</explosionRadius>
+		    <speed>285</speed>
+			<soundExplode>Explosion</soundExplode>
+		</projectile>
+	</ThingDef>
+
+
+	<ThingDef ParentName="BaseGun">
+	<defName>Gun_CannonTurret</defName>
+	<label>120mm tank gun</label>
+	<graphicData>
+		<texPath>CH</texPath>
+		<graphicClass>Graphic_Single</graphicClass>
+	</graphicData>
+    <menuHidden>True</menuHidden>
+	<canBeSpawningInventory>false</canBeSpawningInventory>
+	<tradeability>Never</tradeability>
+    <statBases>
+      <MarketValue>13000</MarketValue>
+      <AccuracyTouch>1.00</AccuracyTouch>
+      <AccuracyShort>0.85</AccuracyShort>
+      <AccuracyMedium>0.65</AccuracyMedium>
+      <AccuracyLong>0.35</AccuracyLong>
+      <RangedWeapon_Cooldown>1</RangedWeapon_Cooldown>
+    </statBases>
+    <weaponTags>
+      <li>Artillery</li>
+      <li>Artillery_BaseDestroyer</li>
+    </weaponTags>
+		<verbs>
+		   <li>
+			<verbClass>Verb_Shoot</verbClass>
+        	<hasStandardCommand>true</hasStandardCommand>
+			<projectileDef>Bullet_CannonTurret</projectileDef>
+            <minRange>12</minRange>
+			<range>100</range>
+			<accuracyTouch>1.00</accuracyTouch>
+            <accuracyShort>0.85</accuracyShort>
+            <accuracyMedium>0.65</accuracyMedium>
+            <accuracyLong>0.35</accuracyLong>
+            <soundCast>120mm</soundCast>
+            <muzzleFlashScale>9</muzzleFlashScale>
+		   </li>
+		</verbs>
+	</ThingDef>
+
+
+
+	<ThingDef ParentName="HWBullet">
+    <defName>Bullet_HowitzerTurret</defName>
+    <label>155mm HE round</label>
+	<graphicData>
+    <texPath>Things/Projectile/155mmShell</texPath>
+	<graphicClass>Graphic_Single</graphicClass>
+	<shaderType>TransparentPostLight</shaderType>
+	</graphicData>
+	     <projectile>
+            <damageDef>Bomb</damageDef>
+		    <damageAmountBase>50</damageAmountBase>
+		    <explosionRadius>3.5</explosionRadius>
+		    <speed>80</speed>
+			<soundExplode>Explosion</soundExplode>
+	<soundHitThickRoof>ArtilleryHitThickRoof</soundHitThickRoof>
+      <soundImpactAnticipate>RL_PreImpact</soundImpactAnticipate>
+		    <flyOverhead>true</flyOverhead>
+		</projectile>
+	</ThingDef>
+
+
+	<ThingDef ParentName="BaseGun">
+	<defName>Gun_HowitzerTurret</defName>
+	<label>155mm howitzer</label>
+	<graphicData>
+    <texPath>CH</texPath>
+    <graphicClass>Graphic_Single</graphicClass>
+	</graphicData>
+    <menuHidden>True</menuHidden>
+	<canBeSpawningInventory>false</canBeSpawningInventory>
+	<tradeability>Never</tradeability>
+    <statBases>
+      <MarketValue>13600</MarketValue>
+      <AccuracyTouch>0.79</AccuracyTouch>
+      <AccuracyShort>0.42</AccuracyShort>
+      <AccuracyMedium>0.18</AccuracyMedium>
+      <AccuracyLong>0.06</AccuracyLong>
+      <RangedWeapon_Cooldown>1</RangedWeapon_Cooldown>
+    </statBases>
+      <weaponTags>
+      <li>Artillery</li>
+      <li>Artillery_BaseDestroyer</li>
+    </weaponTags>
+		<verbs>
+		   <li>
+			<verbClass>Verb_Shoot</verbClass>
+        	<hasStandardCommand>true</hasStandardCommand>
+			<projectileDef>Bullet_HowitzerTurret</projectileDef>
+            <forcedMissRadius>9</forcedMissRadius>
+            <minRange>15</minRange>
+			<range>800</range>
+			<accuracyTouch>0.79</accuracyTouch>
+            <accuracyShort>0.42</accuracyShort>
+            <accuracyMedium>0.18</accuracyMedium>
+            <accuracyLong>0.06</accuracyLong>
+            <burstShotCount>1</burstShotCount>
+            <soundCast>155mm</soundCast>
+            <muzzleFlashScale>9</muzzleFlashScale>
+		   </li>
+		</verbs>
+	</ThingDef>
+
+
+	<ThingDef ParentName="RLBullet">
+    <defName>Bullet_RL</defName>
+    <label>130mm rocket</label>
+	<graphicData>
+    <texPath>Things/Projectile/130mmRocket</texPath>
+	<graphicClass>Graphic_Single</graphicClass>
+	<shaderType>TransparentPostLight</shaderType>
+	</graphicData>
+	<projectile>
+        <damageDef>Bomb</damageDef>
+		<damageAmountBase>35</damageAmountBase>
+		<explosionRadius>3.2</explosionRadius>
+		<speed>50</speed>
+		<flyOverhead>true</flyOverhead>
+		<soundHitThickRoof>ArtilleryHitThickRoof</soundHitThickRoof>
+		<soundAmbient>MortarRound_Ambient</soundAmbient>
+		<soundImpactAnticipate>RL_PreImpact</soundImpactAnticipate>
+		<soundExplode>Explosion</soundExplode>
+	</projectile>
+	</ThingDef>
+
+
+	<ThingDef ParentName="BaseGun">
+	<defName>Gun_RL</defName>
+	<label>130mm rocket launcher</label>
+	<graphicData>
+        <texPath>CH</texPath>
+		<graphicClass>Graphic_Single</graphicClass>
+	</graphicData>
+    <menuHidden>True</menuHidden>
+    <tradeability>Never</tradeability>
+    <statBases>
+      <MarketValue>4800</MarketValue>
+      <AccuracyTouch>0.79</AccuracyTouch>
+      <AccuracyShort>0.42</AccuracyShort>
+      <AccuracyMedium>0.18</AccuracyMedium>
+      <AccuracyLong>0.06</AccuracyLong>
+      <RangedWeapon_Cooldown>1</RangedWeapon_Cooldown>
+    </statBases>
+    <weaponTags>
+      <li>Artillery</li>
+      <li>Artillery_BaseDestroyer</li>
+    </weaponTags>
+		<verbs>
+		   <li>
+			<verbClass>Verb_Shoot</verbClass>
+        	<hasStandardCommand>true</hasStandardCommand>
+			<projectileDef>Bullet_RL</projectileDef>
+            <forcedMissRadius>16</forcedMissRadius>
+            <minRange>20</minRange>
+			<range>800</range>
+			<accuracyTouch>0.79</accuracyTouch>
+            <accuracyShort>0.42</accuracyShort>
+            <accuracyMedium>0.18</accuracyMedium>
+            <accuracyLong>0.06</accuracyLong>
+            <ticksBetweenBurstShots>20</ticksBetweenBurstShots>
+            <burstShotCount>6</burstShotCount>
+            <soundCast>130mmRocket</soundCast>
+            <muzzleFlashScale>9</muzzleFlashScale>
+		   </li>
+		</verbs>
+	</ThingDef>
+
+	<ThingDef Class="Projectile_Laser.ThingDef_LaserProjectile" ParentName="BaseBullet">
+	<defName>Bullet_LaserTurret</defName>
+	<label>turret laser beam</label>
+    <thingClass>Projectile_Laser.Projectile_LaserRifle</thingClass>
+	<graphicData>
+    <texPath>Things/Projectile/LaserRay</texPath>
+    <graphicClass>Graphic_Single</graphicClass>
+	<shaderType>TransparentPostLight</shaderType>
+	</graphicData>
+		<projectile>
+            <damageDef>LaserBurn</damageDef>
+			<DamageAmountBase>17</DamageAmountBase>
+		</projectile>
+<!-- Projectile_Laser.ThingDef_LaserProjectile parameters -->
+    <preFiringInitialIntensity>0</preFiringInitialIntensity>
+    <preFiringFinalIntensity>1</preFiringFinalIntensity>
+    <postFiringInitialIntensity>1</postFiringInitialIntensity>
+    <postFiringFinalIntensity>0</postFiringFinalIntensity>
+    <preFiringDuration>7</preFiringDuration>
+    <postFiringDuration>18</postFiringDuration>
+  </ThingDef>
+  
+	<ThingDef ParentName="BaseGun">
+    <defName>Gun_LaserTurret</defName>
+    <label>turret laser gun</label>
+	<graphicData>
+		<texPath>CH</texPath>
+		<graphicClass>Graphic_Single</graphicClass>
+	</graphicData>
+    <menuHidden>True</menuHidden>
+	<canBeSpawningInventory>false</canBeSpawningInventory>
+    <tradeability>Never</tradeability>
+    <statBases>
+      <MarketValue>4500</MarketValue>
+      <AccuracyTouch>1.00</AccuracyTouch>
+      <AccuracyShort>1.00</AccuracyShort>
+      <AccuracyMedium>1.00</AccuracyMedium>
+      <AccuracyLong>1.00</AccuracyLong>
+      <RangedWeapon_Cooldown>1</RangedWeapon_Cooldown>
+    </statBases>
+    <weaponTags>
+      <li>TurretGun</li>
+    </weaponTags>
+    <verbs>
+      <li>
+        <verbClass>Verb_Shoot</verbClass>
+        <projectileDef>Bullet_LaserTurret</projectileDef>
+        <hasStandardCommand>true</hasStandardCommand>
+        <accuracyTouch>1.00</accuracyTouch>
+        <accuracyShort>1.00</accuracyShort>
+        <accuracyMedium>1.00</accuracyMedium>
+        <accuracyLong>1.00</accuracyLong>
+        <range>45</range>
+        <soundCast>LaserBeam</soundCast>
+      </li>
+    </verbs>
+  </ThingDef>
+
+</ThingDefs>

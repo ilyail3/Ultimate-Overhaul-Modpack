@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+<RecipeDef>
+	<defName>Maketofu</defName>
+	<label>make tofu</label>
+	<description>Turns beans into tofu. Tofu is use in place of meat in meals or eatten raw.</description>
+	<jobString>Pressing tofu.</jobString>
+	<workSpeedStat>CookSpeed</workSpeedStat>
+	<workAmount>600</workAmount>
+		<effectWorking>Cook</effectWorking>
+    <soundWorking>Recipe_CookMeal</soundWorking>          
+	<allowMixingIngredients>true</allowMixingIngredients>
+	<recipeUsers>
+         <li>Canningstove</li>
+      </recipeUsers>
+	<ingredients>
+	<li>
+	    <filter>
+	      <thingDefs>
+	        <li>Rawbean</li>
+	      </thingDefs>
+	    </filter>
+	    <count>10</count>
+	  </li>
+	</ingredients>
+	<fixedIngredientFilter>
+	   <thingDefs>
+	        <li>Rawbean</li>
+	      </thingDefs>
+	</fixedIngredientFilter>
+	<products>
+	  <Rawtofu>5</Rawtofu>
+	</products>
+	<workSkill>Cooking</workSkill>
+</RecipeDef>
+
+<RecipeDef>
+	<defName>Makebulktofu</defName>
+	<label>make bulk tofu</label>
+	<description>Your increased cooking skill allows you to mass produce tofu more efficiently!</description>
+	<jobString>Pressing tofu.</jobString>
+	<workSpeedStat>CookSpeed</workSpeedStat>
+	<workAmount>1800</workAmount>
+		<effectWorking>Cook</effectWorking>
+    <soundWorking>Recipe_CookMeal</soundWorking>    
+	<recipeUsers>
+         <li>Canningstove</li>
+      </recipeUsers>
+      <allowMixingIngredients>true</allowMixingIngredients>
+	<ingredients>
+	<li>
+	    <filter>
+	      <thingDefs>
+	        <li>Rawbean</li>
+	      </thingDefs>
+	    </filter>
+	    <count>40</count>
+	  </li>
+	</ingredients>
+	<fixedIngredientFilter>
+	   <thingDefs>
+	        <li>Rawbean</li>
+	      </thingDefs>
+	</fixedIngredientFilter>
+		<skillRequirements>
+			<li>
+				<skill>Cooking</skill>
+				<minLevel>7</minLevel>
+			</li>
+		</skillRequirements>
+	<products>
+	  <Rawtofu>26</Rawtofu>
+	</products>
+	<workSkill>Cooking</workSkill>
+</RecipeDef>
+
+
+ 
+
+</Defs>

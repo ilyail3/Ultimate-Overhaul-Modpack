@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ThingDefs>
+
+
+	<ThingDef Name="BuildingBase" Abstract="True">
+		<category>Building</category>
+		<soundImpactDefault>BulletImpactMetal</soundImpactDefault>
+		<selectable>true</selectable>
+		<drawerType>MapMeshAndRealTime</drawerType>
+		<terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
+		<repairEffect>Repair</repairEffect>
+		<leaveResourcesWhenKilled>true</leaveResourcesWhenKilled>
+		<filthLeaving>BuildingRubble</filthLeaving>
+		<ResearchPrerequisite>Stonecutting</ResearchPrerequisite>
+	</ThingDef>
+	
+	
+	
+	<ThingDef ParentName="BuildingBase">
+		<defName>BorderPath</defName>
+		<label>border path</label>
+		<description>A nice border for a walkway, path, or rock garden.</description>
+		<thingClass>Building</thingClass>
+		<category>Building</category>
+		<graphicData>
+			<texPath>Things/Terrain/Linked/BorderPath</texPath>
+			<shaderType>CutoutComplex</shaderType>
+			<graphicClass>Graphic_Single</graphicClass>
+			<linkType>Basic</linkType>
+			<linkFlags>
+				<li>Custom4</li>
+			</linkFlags>
+		</graphicData>
+		<blueprintGraphicData>
+			<texPath>Things/Terrain/Linked/BorderPathBlueprint</texPath>
+		</blueprintGraphicData>
+		<uiIconPath>Things/Terrain/Linked/BorderPathIcon</uiIconPath>
+		<altitudeLayer>Terrain</altitudeLayer>
+		<pathCost>0</pathCost>
+		<passability>PassThroughOnly</passability>
+		<castEdgeShadows>false</castEdgeShadows>
+		<fillPercent>0</fillPercent>
+		<useHitPoints>false</useHitPoints>
+		<coversFloor>true</coversFloor>
+		<statBases>
+			<Beauty>5</Beauty>
+			<WorkToMake>180</WorkToMake>
+			<Flammability>0</Flammability>
+		</statBases>
+		<building>
+			<isInert>true</isInert>
+			<ignoreNeedsPower>true</ignoreNeedsPower>
+		</building>
+		<placingDraggableDimensions>1</placingDraggableDimensions>
+		<stuffCategories>
+			<li>Stony</li>
+		</stuffCategories>
+		<costStuffCount>4</costStuffCount>
+		<costList>
+			<Gravel>4</Gravel>
+		</costList>
+		<rotatable>false</rotatable>
+		<selectable>true</selectable>
+		<neverMultiSelect>true</neverMultiSelect>
+		<terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
+		<designationCategory>Floors</designationCategory>
+		<blockLight>false</blockLight>
+	</ThingDef>
+	
+	<ThingDef ParentName="BuildingBase">
+		<defName>BorderPond</defName>
+		<label>border pond</label>
+		<description>A border path filled with a small amount of water. Very relaxing.</description>
+		<thingClass>Building</thingClass>
+		<category>Building</category>
+		<graphicData>
+			<texPath>Things/Terrain/Linked/BorderPond</texPath>
+			<shaderType>CutoutComplex</shaderType>
+			<graphicClass>Graphic_Single</graphicClass>
+			<linkType>Basic</linkType>
+			<linkFlags>
+				<li>Custom5</li>
+			</linkFlags>
+		</graphicData>
+		<blueprintGraphicData>
+			<texPath>Things/Terrain/Linked/BorderPathBlueprint</texPath>
+		</blueprintGraphicData>
+		<uiIconPath>Things/Terrain/Linked/BorderPondIcon</uiIconPath>
+		<altitudeLayer>Terrain</altitudeLayer>
+		<pathCost>0</pathCost>
+		<passability>PassThroughOnly</passability>
+		<castEdgeShadows>false</castEdgeShadows>
+		<fillPercent>0</fillPercent>
+		<useHitPoints>false</useHitPoints>
+		<coversFloor>true</coversFloor>
+		<statBases>
+			<Beauty>5</Beauty>
+			<WorkToMake>180</WorkToMake>
+			<Flammability>0</Flammability>
+		</statBases>
+		<building>
+			<isInert>true</isInert>
+			<ignoreNeedsPower>true</ignoreNeedsPower>
+		</building>
+		<placingDraggableDimensions>1</placingDraggableDimensions>
+		<stuffCategories>
+			<li>Stony</li>
+		</stuffCategories>
+		<costStuffCount>6</costStuffCount>
+		<costList>
+			<Gravel>2</Gravel>
+		</costList>
+		<rotatable>false</rotatable>
+		<selectable>true</selectable>
+		<neverMultiSelect>true</neverMultiSelect>
+		<terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
+		<designationCategory>Floors</designationCategory>
+		<blockLight>false</blockLight>
+	</ThingDef>
+	
+	<ThingDef ParentName="BuildingBase">
+		<defName>StackedRocks</defName>
+		<label>stacked rocks</label>
+		<description>Rocks that are stacked on top of each other. Conveys a sense of balance.</description>
+		<thingClass>Building</thingClass>
+		<category>Building</category>
+		<graphicData>
+			<texPath>Things/Terrain/StackedRocks</texPath>
+			<shaderType>CutoutComplex</shaderType>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<uiIconPath>Things/Terrain/StackedRocks</uiIconPath>
+		<altitudeLayer>Waist</altitudeLayer>
+		<pathCost>70</pathCost>
+		<passability>PassThroughOnly</passability>
+		<castEdgeShadows>false</castEdgeShadows>
+		<fillPercent>0</fillPercent>
+		<useHitPoints>true</useHitPoints>
+		<statBases>
+			<MaxHitPoints>500</MaxHitPoints>
+			<Beauty>20</Beauty>
+			<WorkToMake>1000</WorkToMake>
+			<Flammability>0</Flammability>
+		</statBases>
+		<building>
+			<isInert>true</isInert>
+			<ignoreNeedsPower>true</ignoreNeedsPower>
+		</building>
+		<stuffCategories>
+			<li>Stony</li>
+		</stuffCategories>
+		<costStuffCount>20</costStuffCount>
+		<costList>
+			<Gravel>4</Gravel>
+		</costList>
+		<rotatable>false</rotatable>
+		<selectable>true</selectable>
+		<terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
+		<designationCategory>Floors</designationCategory>
+		<blockLight>false</blockLight>
+	</ThingDef>
+		
+	<ThingDef ParentName="BuildingBase">
+		<defName>bpPillar</defName>
+		<label>border path pillar</label>
+		<description>An ornate pillar with an over-sized cap. Can be used to support roofs.</description>
+		<thingClass>Building</thingClass>
+		<category>Building</category>
+		<graphicData>
+			<texPath>Things/Terrain/BorderPathPillar</texPath>
+			<shaderType>CutoutComplex</shaderType>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shadowData>
+			<volume>(0.5, 1, 0.5)</volume>
+			</shadowData>
+		</graphicData>
+		<altitudeLayer>BuildingTall</altitudeLayer>
+		<passability>Impassable</passability>
+		<fillPercent>0.75</fillPercent>
+		<useHitPoints>true</useHitPoints>
+		<statBases>
+			<MaxHitPoints>500</MaxHitPoints>
+			<Beauty>10</Beauty>
+			<WorkToMake>1000</WorkToMake>
+			<Flammability>0</Flammability>
+		</statBases>
+		<coversFloor>true</coversFloor>
+		<building>
+			<isInert>true</isInert>
+			<ignoreNeedsPower>true</ignoreNeedsPower>
+		</building>
+		<stuffCategories>
+			<li>Stony</li>
+		</stuffCategories>
+		<costStuffCount>60</costStuffCount>
+		<rotatable>false</rotatable>
+		<selectable>true</selectable>
+		<terrainAffordanceNeeded>Heavy</terrainAffordanceNeeded>
+		<holdsRoof>true</holdsRoof>
+		<designationCategory>Floors</designationCategory>
+		<blockLight>true</blockLight>
+	</ThingDef>
+		
+		
+		
+		
+	
+	
+	
+	
+
+	
+	
+	
+
+	
+	
+	
+	
+	
+	
+</ThingDefs>
+
+
+
+
+
+

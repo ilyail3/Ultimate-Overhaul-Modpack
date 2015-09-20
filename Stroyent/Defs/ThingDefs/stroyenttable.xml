@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ThingDefs>
+
+	<ThingDef Name="BuildingBase" Abstract="True">
+		<category>Building</category>
+		<soundImpactDefault>BulletImpactMetal</soundImpactDefault>
+		<selectable>true</selectable>
+		<drawerType>MapMeshAndRealTime</drawerType>
+		<terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
+		<repairEffect>Repair</repairEffect>
+		<leaveResourcesWhenKilled>true</leaveResourcesWhenKilled>
+		<filthLeaving>BuildingRubble</filthLeaving>
+	</ThingDef>
+	
+	<ThingDef ParentName="BuildingBase">
+		<DefName>stroyenttable</DefName>
+		<Label>Stroyent Processor</Label>
+		<ThingClass>Building_WorkTable</ThingClass>
+		<Description>A machine to processes Human flesh into Stroyent.</Description>
+		<graphicData>
+		<texPath>stroyenttable</texPath>
+		<graphicClass>Graphic_Single</graphicClass>
+		<shadowData>
+        <volume>(0.3, 0.6, 0.3)</volume>
+		</shadowData>
+		</graphicData>
+		<minifiedDef>MinifiedFurniture</minifiedDef>
+		<constructEffect>ConstructMetal</constructEffect>
+		<CostList>
+			<SteelBar>100</SteelBar>
+			<CopperBar>20</CopperBar>
+			<WoodPlank>50</WoodPlank>
+		</CostList>
+		<AltitudeLayer>Waist</AltitudeLayer>
+		<fillPercent>0.5</fillPercent>
+		<useHitPoints>True</useHitPoints>
+		<statBases>
+			<WorkToMake>1200</WorkToMake>
+			<MaxHitPoints>180</MaxHitPoints>
+		</statBases>
+		<Size>(1,1)</Size>
+		<pathCost>30</pathCost>
+		<selectable>true</selectable>
+		<DesignationCategory>ProductionFood</DesignationCategory>
+		<Passability>PassThroughOnly</Passability>
+		<hasInteractionCell>True</hasInteractionCell>
+		<rotatable>true</rotatable>
+		<neverMultiSelect>true</neverMultiSelect>
+		<interactionCellOffset>(0,0,-1)</interactionCellOffset>
+		<surfaceType>Item</surfaceType>
+		<tickerType>Normal</tickerType>
+		<comps>
+			<li>
+				<compClass>CompPowerTrader</compClass>
+				<startElectricalFires>true</startElectricalFires>
+				<basePowerConsumption>200</basePowerConsumption>
+				<soundPowerOn>PowerOnSmall</soundPowerOn>
+				<soundPowerOff>PowerOffSmall</soundPowerOff>
+			</li>
+			<li>
+				<compClass>CompGlower</compClass>
+				<glowRadius>6</glowRadius>
+				<glowColor>(217,112,33,0)</glowColor>
+			</li>
+			<li Class="CommunityCoreLibrary.CompProperties_LowIdleDraw">
+                <compClass>CommunityCoreLibrary.CompPowerLowIdleDraw</compClass>
+                <idlePowerFactor>0.25</idlePowerFactor>
+				<operationalMode>InUse</operationalMode>
+            </li>
+		</comps>
+		<recipes>
+			<li>makestroyent</li>
+		</recipes>
+		<inspectorTabs>
+			<li>ITab_Bills</li>
+		</inspectorTabs>
+		<researchPrerequisite>ProteinReplication</researchPrerequisite>
+		<building>
+			<spawnedConceptLearnOpportunity>BillsTab</spawnedConceptLearnOpportunity>
+		</building>
+	</ThingDef>
+</ThingDefs>

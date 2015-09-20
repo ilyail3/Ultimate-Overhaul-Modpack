@@ -1,0 +1,83 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ThingDefs>
+
+
+  <ThingDef Name="BuildingBase" Abstract="True">
+    <category>Building</category>
+    <soundImpactDefault>BulletImpactMetal</soundImpactDefault>
+    <selectable>true</selectable>
+    <drawerType>MapMeshAndRealTime</drawerType>
+    <terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
+    <repairEffect>Repair</repairEffect>
+    <leaveResourcesWhenKilled>true</leaveResourcesWhenKilled>
+    <filthLeaving>BuildingRubble</filthLeaving>
+  </ThingDef>
+
+
+  <ThingDef ParentName="BuildingBase">
+    <DefName>DeepWeb</DefName>
+    <label>Deep web</label>
+    <thingClass>Building_WorkTable</thingClass>
+    <Description>A computer connected to the anonymity network.</Description>
+	<graphicData>
+    <texPath>Computer</texPath>
+    <graphicClass>Graphic_Single</graphicClass>
+	<drawSize>(3,1)</drawSize>
+	</graphicData>
+    <constructEffect>ConstructWood</constructEffect>
+    <CostList>
+      <WoodPlank>100</WoodPlank>
+      <SteelBar>200</SteelBar>
+	  <CopperWire>50</CopperWire>
+      <Weed>20</Weed>
+    </CostList>
+    <AltitudeLayer>Waist</AltitudeLayer>
+    <fillPercent>0.5</fillPercent>
+    <useHitPoints>True</useHitPoints>
+    <statBases>
+      <WorkToMake>3000</WorkToMake>
+      <MaxHitPoints>300</MaxHitPoints>
+      <Flammability>1.0</Flammability>
+    </statBases>
+    <Size>(3,1)</Size>
+    <DesignationCategory>ProductionGoods</DesignationCategory>
+	<staticSunShadowHeight>0.20</staticSunShadowHeight>
+    <Passability>PassThroughOnly</Passability>
+    <pathCost>70</pathCost>
+    <hasInteractionCell>True</hasInteractionCell>
+    <interactionCellOffset>(0,0,-1)</interactionCellOffset>
+    <surfaceType>Item</surfaceType>
+    <recipes>
+      <li>SellWeed</li>
+	  <li>BuySpaceSpice</li>
+	  <li>BuyOneKick</li>
+    </recipes>
+	<tickerType>Normal</tickerType>
+	<comps>
+           <li>
+		<compClass>CompPowerTrader</compClass>
+		<startElectricalFires>true</startElectricalFires>
+		<basePowerConsumption>250</basePowerConsumption>
+		<soundPowerOn>PowerOnSmall</soundPowerOn>
+		<soundPowerOff>PowerOffSmall</soundPowerOff>
+	  </li>
+	  <li Class="CommunityCoreLibrary.CompProperties_LowIdleDraw">
+                <compClass>CommunityCoreLibrary.CompPowerLowIdleDraw</compClass>
+                <idlePowerFactor>0.2</idlePowerFactor>
+				<operationalMode>InUse</operationalMode>
+            </li>
+	</comps>
+    <inspectorTabs>
+      <li>ITab_Bills</li>
+    </inspectorTabs>
+    <building>
+      <spawnedConceptLearnOpportunity>BillsTab</spawnedConceptLearnOpportunity>
+    </building>
+    <researchPrerequisite>DeepWeb</researchPrerequisite>
+  </ThingDef>
+
+
+  
+
+
+</ThingDefs>

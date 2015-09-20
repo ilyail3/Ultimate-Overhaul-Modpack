@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+
+
+<RecipeDef>
+	<defName>DryFruit</defName>
+	<label>Dry Fruit</label>
+	<description>Dries out fruit to increase its lifespan.</description>
+	<jobString>Drying Fruit.</jobString>
+	<workSpeedStat>CookSpeed</workSpeedStat>
+		<effectWorking>Cook</effectWorking>
+     <soundWorking>Recipe_CookMeal</soundWorking>
+     <allowMixingIngredients>true</allowMixingIngredients>
+	<recipeUsers>
+         <li>ElectricOven</li>
+      </recipeUsers>
+	<ingredients>
+	  <li>
+				<filter>
+					<categories>
+						<li>FruitFoodRaw</li>
+					</categories>
+				</filter>
+				<count>10</count>
+			</li>
+	</ingredients>
+	<fixedIngredientFilter>
+	<categories>
+		<li>FruitFoodRaw</li>
+	</categories>
+	</fixedIngredientFilter>
+	<products>
+	  <driedfruit>10</driedfruit>
+	</products>
+	<workSkill>Cooking</workSkill>
+</RecipeDef>
+
+
+
+</Defs>

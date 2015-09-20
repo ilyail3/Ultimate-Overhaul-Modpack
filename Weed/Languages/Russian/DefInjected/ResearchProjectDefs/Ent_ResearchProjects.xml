@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<LanguageData>
+
+  <Distillation.label>Дистилляция</Distillation.label>
+  <Distillation.description>Позволяет создать дистиллятор - аппарат, который перегоняет органические продукты в алкоголь.</Distillation.description>
+  
+    <Coffee.label>Кофемашина</Coffee.label>
+  <Coffee.description>Позволяет создать сложную кофемашину, которая превращает ягоды кофе в горячий ароматный напиток.</Coffee.description>
+
+   <HempResearch.label>Методы использования конопли</HempResearch.label>
+  <HempResearch.description>Позволяет освоить методы использования конопли для множества целей.</HempResearch.description>
+
+     <DeepWeb.label>ТОР коннектор</DeepWeb.label>
+  <DeepWeb.description>Позволяет создать компьютер с возможностью выхода в анонимную сеть ТОР.</DeepWeb.description>
+
+</LanguageData>

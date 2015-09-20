@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  
+  <ThingDef Name="BuildingBase" Abstract="True">
+    <category>Building</category>
+    <soundImpactDefault>BulletImpactMetal</soundImpactDefault>
+    <selectable>true</selectable>
+    <drawerType>MapMeshAndRealTime</drawerType>
+    <terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
+    <repairEffect>Repair</repairEffect>
+    <leaveResourcesWhenKilled>true</leaveResourcesWhenKilled>
+    <filthLeaving>BuildingRubble</filthLeaving>
+  </ThingDef>
+
+
+  <ThingDef ParentName="BuildingBase">
+    <defName>EHeatedFloor</defName>
+    <label>Electric Heated Floor</label>
+    <thingClass>Building_Heater</thingClass>
+    <graphicData>
+      <texPath>Things/Building/SCMisc/EHeatedFloor</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <building>
+      <isEdifice>false</isEdifice>
+    </building>
+    <altitudeLayer>FloorEmplacement</altitudeLayer>
+    <passability>Standable</passability>
+    <tickerType>Normal</tickerType>
+    <castEdgeShadows>false</castEdgeShadows>
+    <rotatable>false</rotatable>
+    <description>Heated flooring tiles which utilize copper wires and convection heating to warm a room.</description>
+    <statBases>
+      <MaxHitPoints>80</MaxHitPoints>
+      <WorkToMake>100</WorkToMake>
+      <Flammability>1.0</Flammability>
+    </statBases>
+    <selectable>false</selectable>
+    <placingDraggableDimensions>2</placingDraggableDimensions>
+    <costList>
+      <CopperBar>8</CopperBar>
+    </costList>
+    <soundImpactDefault>BulletImpactGround</soundImpactDefault>
+    <leaveResourcesWhenKilled>false</leaveResourcesWhenKilled>
+    <placeWorkers>
+      <li>PlaceWorker_Heater</li>
+    </placeWorkers>
+    <drawPlaceWorkersWhileSelected>true</drawPlaceWorkersWhileSelected>
+    <comps>
+      <li>
+        <compClass>CompPowerTrader</compClass>
+        <startElectricalFires>true</startElectricalFires>
+        <soundPowerOn>PowerOnSmall</soundPowerOn>
+        <soundPowerOff>PowerOffSmall</soundPowerOff>
+        <basePowerConsumption>5</basePowerConsumption>
+      </li>
+      <li>
+        <compClass>CompHeatPusher</compClass>
+        <heatPerSecond>0.5</heatPerSecond>
+        <heatPushMaxTemperature>24</heatPushMaxTemperature>
+      </li>
+    </comps>
+    <designationCategory>Temperature</designationCategory>
+    <researchPrerequisite>HeatedFlooring</researchPrerequisite>
+  </ThingDef>
+
+
+  <ThingDef ParentName="BuildingBase">
+    <defName>SmallFan</defName>
+    <label>small fan</label>
+    <thingClass>Building_Heater</thingClass>
+    <graphicData>
+      <texPath>Things/Building/SCMisc/Fan</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <shadowData>
+        <volume>(0.5, 1.0, 0.5)</volume>
+      </shadowData>
+    </graphicData>
+    <altitudeLayer>BuildingTall</altitudeLayer>
+    <passability>PassThroughOnly</passability>
+    <castEdgeShadows>false</castEdgeShadows>
+    <rotatable>false</rotatable>
+    <fillPercent>1</fillPercent>
+    <statBases>
+      <WorkToMake>500</WorkToMake>
+      <MaxHitPoints>100</MaxHitPoints>
+      <Flammability>1.0</Flammability>
+    </statBases>
+	<minifiedDef>MinifiedFurniture</minifiedDef>
+    <tickerType>Rare</tickerType>
+    <description>A small desk fan, to help cool a colonists bedroom during those hot summers.</description>
+    <costList>
+      <SteelBar>50</SteelBar>
+    </costList>
+    <leaveResourcesWhenKilled>true</leaveResourcesWhenKilled>
+    <terrainAffordanceNeeded>Heavy</terrainAffordanceNeeded>
+    <placeWorkers>
+      <li>PlaceWorker_Heater</li>
+    </placeWorkers>
+    <drawPlaceWorkersWhileSelected>true</drawPlaceWorkersWhileSelected>
+    <comps>
+      <li>
+        <compClass>CompPowerTrader</compClass>
+        <startElectricalFires>true</startElectricalFires>
+        <soundPowerOn>PowerOnSmall</soundPowerOn>
+        <soundPowerOff>PowerOffSmall</soundPowerOff>
+        <basePowerConsumption>50</basePowerConsumption>
+      </li>
+      <li>
+        <compClass>CompTempControl</compClass>
+        <energyPerSecond>-10</energyPerSecond>
+      </li>
+	  <li>
+        <compClass>CompQuality</compClass>
+      </li>
+    </comps>
+    <designationCategory>Temperature</designationCategory>
+	<researchPrerequisite>PowerI</researchPrerequisite>
+  </ThingDef>
+
+</Defs>

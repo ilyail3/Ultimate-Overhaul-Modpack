@@ -1,0 +1,151 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ThingDefs>
+
+  <ThingDef Name="BuildingBase" Abstract="True">
+    <category>Building</category>
+    <soundImpactDefault>BulletImpactMetal</soundImpactDefault>
+    <selectable>true</selectable>
+    <drawerType>MapMeshAndRealTime</drawerType>
+    <terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
+    <repairEffect>Repair</repairEffect>
+    <leaveResourcesWhenKilled>true</leaveResourcesWhenKilled>
+    <filthLeaving>BuildingRubble</filthLeaving>
+  </ThingDef>
+
+  <!--=============== TC turret ===============-->
+
+
+	<ThingDef ParentName="BuildingBase">
+		<defName>AvengerTurretGun</defName>
+		<label>Avenger Turret</label>
+		<thingClass>Building_TurretGun</thingClass>
+    <graphicData>
+		<texPath>Things/Building/Security/TurretGun_two</texPath>
+    		<graphicClass>Graphic_Single</graphicClass>
+      	<drawSize>(4,4)</drawSize>
+    </graphicData>
+		<altitudeLayer>Waist</altitudeLayer>
+    <hasInteractionCell>True</hasInteractionCell>
+    <interactionCellOffset>(0,0,-1)</interactionCellOffset>
+		<statBases>
+			<MaxHitPoints>500</MaxHitPoints>
+			<Flammability>0.5</Flammability>
+			<WorkToMake>3250</WorkToMake>
+			<Beauty>-60</Beauty>
+		</statBases>
+		<tickerType>Normal</tickerType>
+		<comps>
+			<li>
+				<compClass>CompExplosive</compClass>
+				<explosiveRadius>3.9</explosiveRadius>
+				<explosiveDamageType>Bomb</explosiveDamageType>
+			</li>
+			<li>
+				<compClass>CompForbiddable</compClass>
+			</li>
+			<li>
+				<compClass>CompMannable</compClass>
+			</li>
+		</comps>
+        <placeWorkers>
+            <li>PlaceWorker_NotUnderRoof</li>
+        </placeWorkers>
+		<description>A manned turret mounted with a GAU-8 Avenger cannon that fires at enemies, deals extra armor-piercing damage if the round has a direct hit. The turret explodes when heavily damaged.
+		
+Requires Avenger 30mm shells. 
+
+Range: Between 5 and 75 
+Damage: 14
+Burst: 15</description>
+		<size>(2,2)</size>
+		<passability>PassThroughOnly</passability>
+        <pathCost>50</pathCost>
+		<castEdgeShadows>true</castEdgeShadows>
+		<hasTooltip>true</hasTooltip>
+		<fillPercent>0.4</fillPercent>
+    <costList>
+		<SteelBar>350</SteelBar>
+	</costList>
+        <specialDisplayRadius>5</specialDisplayRadius>
+		<combatTargetBuilding>true</combatTargetBuilding>
+		<researchPrerequisite>AvengerTurret</researchPrerequisite>
+		<leaveResourcesWhenKilled>false</leaveResourcesWhenKilled>
+		<terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
+		<designationCategory>Security</designationCategory>
+		<building>
+            <turretShellDef>AvengerShell</turretShellDef>
+			<turretGunDef>Gun_Avenger</turretGunDef>
+            <turretBurstWarmupTicks>120</turretBurstWarmupTicks>
+			<turretburstCooldownTicks>250</turretburstCooldownTicks>
+			<turretTopgraphicPath>Things/Building/Security/AvengerTurretGun_Top</turretTopgraphicPath>
+		</building>
+	</ThingDef>
+
+
+ <ThingDef ParentName="BuildingBase">
+    <defName>Turret_ChainGun</defName>
+    <label>Chain Gun Turret</label>
+    <thingClass>Building_TurretGun</thingClass>
+    <graphicData>
+    <texPath>Things/Building/Security/TurretGun_three</texPath>
+  <graphicClass>Graphic_Single</graphicClass>
+      	<drawSize>(4,4)</drawSize>
+    </graphicData>
+    <altitudeLayer>Waist</altitudeLayer>
+    <hasInteractionCell>True</hasInteractionCell>
+    <interactionCellOffset>(0,0,-1)</interactionCellOffset>
+    <statBases>
+      <MaxHitPoints>500</MaxHitPoints>
+      <Flammability>0.5</Flammability>
+      <WorkToMake>3250</WorkToMake>
+      <Beauty>-60</Beauty>
+    </statBases>
+    <tickerType>Normal</tickerType>
+    <comps>
+			<li>
+				<compClass>CompExplosive</compClass>
+				<explosiveRadius>3.9</explosiveRadius>
+				<explosiveDamageType>Bomb</explosiveDamageType>
+			</li>
+			<li>
+				<compClass>CompForbiddable</compClass>
+			</li>
+			<li>
+				<compClass>CompMannable</compClass>
+			</li>
+		</comps>
+    <placeWorkers>
+        <li>PlaceWorker_NotUnderRoof</li>
+    </placeWorkers>
+    <description>A manned turret mounted with a 35mm chain gun, deals extra armor-piercing damage if the round has a direct hit. The turret explodes when heavily damaged.
+	
+Requires Chain 35mm rounds. 
+
+Range: Between 5 and 80 
+Damage: 17
+Burst: 3</description>
+	<size>(2,2)</size>
+    <passability>PassThroughOnly</passability>
+    <pathCost>50</pathCost>
+    <castEdgeShadows>true</castEdgeShadows>
+    <hasTooltip>true</hasTooltip>
+    <fillPercent>0.4</fillPercent>
+    <costList>
+		<SteelBar>350</SteelBar>
+	</costList>
+    <specialDisplayRadius>5</specialDisplayRadius>
+    <combatTargetBuilding>true</combatTargetBuilding>
+    <leaveResourcesWhenKilled>false</leaveResourcesWhenKilled>
+    <terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
+    <designationCategory>Security</designationCategory>
+    <building>
+	  <turretShellDef>ChainShell</turretShellDef>
+      <turretGunDef>Gun_ChainGun</turretGunDef>
+      <turretBurstWarmupTicks>120</turretBurstWarmupTicks>
+      <turretburstCooldownTicks>250</turretburstCooldownTicks>
+      <turretTopgraphicPath>Things/Building/Security/ChainGunTurretGun_Top</turretTopgraphicPath>
+    </building>
+    <researchPrerequisite>ChainGun</researchPrerequisite>
+  </ThingDef>
+
+</ThingDefs>
