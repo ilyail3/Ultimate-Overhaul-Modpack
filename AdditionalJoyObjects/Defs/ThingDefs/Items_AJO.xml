@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Resources>
+	
+	<ThingDef Name="ResourceBase" Abstract="True">
+		<thingClass>ThingWithComps</thingClass>
+		<label>unspecified resource</label>
+		<category>Item</category>
+		<resourceReadoutPriority>Middle</resourceReadoutPriority>
+		<useHitPoints>true</useHitPoints>
+		<statBases>
+			<Flammability>1.0</Flammability>
+		</statBases>
+		<selectable>true</selectable>
+		<altitudeLayer>Item</altitudeLayer>
+		<stackLimit>75</stackLimit>
+		<comps>
+			<li>
+				<compClass>CompForbiddable</compClass>
+			</li>
+		</comps>
+		<alwaysHaulable>true</alwaysHaulable>
+		<drawGUIOverlay>true</drawGUIOverlay>
+		<rotatable>false</rotatable>
+		<pathCost>15</pathCost>
+	</ThingDef>
+	
+	
+	
+	<ThingDef ParentName="ResourceBase">
+		<defName>PileOfBooks</defName>
+		<label>pile of books</label>
+		<description>A random assortment of books. Most are old and discarded classics, but occasionally a good quality book can be found. </description>
+		<graphicData>
+			<texPath>Things/Items/Resources/PileOfBooks</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<resourceReadoutPriority>First</resourceReadoutPriority>
+		<soundInteract>Wood_Drop</soundInteract>
+		<soundDrop>Wood_Drop</soundDrop>
+		<useHitPoints>false</useHitPoints>
+		<statBases>
+			<MarketValue>35</MarketValue>
+		</statBases>
+		<stackLimit>10</stackLimit>
+		<thingCategories>
+			<li>ResourcesRaw</li>
+		</thingCategories>
+		<tradeTags>
+			<li>Exotic</li>
+			<li>JoyItem</li>
+		</tradeTags>
+		<techLevel>Spacer</techLevel>
+		<canBeSpawningInventory>true</canBeSpawningInventory>		
+	</ThingDef>
+	
+	<ThingDef ParentName="ResourceBase">
+		<defName>PaintingSupplies</defName>
+		<label>painting supplies</label>
+		<description>A large assortment of brushes and paints, perfect for any artist.</description>
+		<graphicData>
+			<texPath>Things/Items/Resources/PaintingSupplies</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<resourceReadoutPriority>First</resourceReadoutPriority>
+		<soundInteract>Wood_Drop</soundInteract>
+		<soundDrop>Wood_Drop</soundDrop>
+		<useHitPoints>false</useHitPoints>
+		<statBases>
+			<MarketValue>20</MarketValue>
+		</statBases>
+		<stackLimit>10</stackLimit>
+		<thingCategories>
+			<li>ResourcesRaw</li>
+		</thingCategories>
+		<tradeTags>
+			<li>Exotic</li>
+			<li>JoyItem</li>
+		</tradeTags>
+		<techLevel>Neolithic</techLevel>
+		<canBeSpawningInventory>true</canBeSpawningInventory>
+		<stuffProps>
+			<categories>
+				<li>Paint</li>
+			</categories>
+		</stuffProps>
+	</ThingDef>
+	
+	
+	<ThingDef ParentName="ResourceBase">
+		<defName>RainbowPetals</defName>
+		<label>rainbow petals</label>
+		<description>A small bundle of multi-colored flower petals.</description>
+		<graphicData>
+			<texPath>Things/Items/Resources/RainbowPetals</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<resourceReadoutPriority>First</resourceReadoutPriority>
+		<useHitPoints>false</useHitPoints>
+		<statBases>
+			<MarketValue>5</MarketValue>
+		</statBases>
+		<comps>
+			<li Class="CompProperties_Rottable">
+				<daysToRotStart>5</daysToRotStart>
+				<rotDestroys>true</rotDestroys>
+			</li>
+		</comps>
+		<stackLimit>100</stackLimit>
+		<thingCategories>
+			<li>ResourcesRaw</li>
+		</thingCategories>
+		<tradeTags>
+			<li>Exotic</li>
+		</tradeTags>
+		<techLevel>Spacer</techLevel>
+		<canBeSpawningInventory>true</canBeSpawningInventory>	
+	</ThingDef>
+	
+	<ThingDef ParentName="ResourceBase">
+		<defName>SpectagoTea</defName>
+		<label>spectago tea</label>
+		<description>A delicious preparation of brewed spectago leaves and water. Very pleasurable to drink.</description>
+		<graphicData>
+			<texPath>Things/Items/Resources/SpectagoTea</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<socialPropernessMatters>true</socialPropernessMatters>
+		<stackLimit>50</stackLimit>
+		<statBases>
+			<MaxHitPoints>100</MaxHitPoints>
+			<MarketValue>10</MarketValue>
+		</statBases>
+		<thingCategories>
+			<li>FoodMeals</li>
+		</thingCategories>
+		<ingestible>
+			<preferability>NeverForNutrition</preferability>
+			<nutrition>0.1</nutrition>
+			<joy>0.10</joy>
+			<joyKind>Meditative</joyKind>
+			<maxNumToIngestAtOnce>1</maxNumToIngestAtOnce>
+			<soundEat>Ingest_Beer</soundEat>
+			<isPleasureDrug>false</isPleasureDrug>
+			<hediffGivers>
+				<li>
+					<chance>1</chance>
+					<hediffDef>SpectagoTea</hediffDef>
+				</li>
+			</hediffGivers>
+		</ingestible>
+	</ThingDef>
+	
+	<ThingDef ParentName="ResourceBase">
+		<defName>Perodyne</defName>
+		<label>Perodyne</label>
+		<description>Euphoria-inducing painkillers.</description>
+		<thingClass>Medicine</thingClass>
+		<graphicData>
+			<texPath>Things/Items/Resources/Perodyne</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<socialPropernessMatters>true</socialPropernessMatters>
+		<stackLimit>20</stackLimit>
+		<statBases>
+			<MaxHitPoints>100</MaxHitPoints>
+			<MarketValue>15</MarketValue>
+		</statBases>
+		<thingCategories>
+			<li>Medicine</li>
+		</thingCategories>
+		<ingestible>
+			<preferability>NeverForNutrition</preferability>
+			<nutrition>0.1</nutrition>
+			<joy>0.1</joy>
+			<joyKind>Chemical</joyKind>
+			<maxNumToIngestAtOnce>1</maxNumToIngestAtOnce>
+			<soundEat>Meal_Eat</soundEat>
+			<isPleasureDrug>true</isPleasureDrug>
+			<hediffGivers>
+				<li>
+					<chance>1</chance>
+					<hediffDef>Perodyne</hediffDef>
+				</li>
+			</hediffGivers>
+		</ingestible>
+		<tickerType>Rare</tickerType>
+		<comps>
+			<li Class="CompProperties_Rottable">
+				<daysToRotStart>300</daysToRotStart>
+			</li>
+    </comps>
+	<tradeTags>
+			<li>Exotic</li>
+			<li>JoyItem</li>
+		</tradeTags>
+	</ThingDef>
+	
+
+	
+</Resources>
+
+
+
+
+
+

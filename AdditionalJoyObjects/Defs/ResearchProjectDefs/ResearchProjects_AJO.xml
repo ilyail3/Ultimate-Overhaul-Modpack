@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ResearchProjectDefs>
+
+	<ResearchProjectDef>
+		<defName>TemperaPainting</defName>
+		<label>Tempera Paint</label>
+		<description>Allows more efficient paint making by binding spectago pigment with eggs.</description>
+		<totalCost>500</totalCost>
+		<prerequisites>
+			<li>CraftingI</li>
+		</prerequisites>
+	</ResearchProjectDef>
+
+</ResearchProjectDefs>

@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+  <AbilityDef>
+    <defName>AlienEggEvolveAbility</defName>
+    <label>Hatching</label>
+    <races>
+      <li>Ant_Egg</li>
+    </races>
+    <validity Class="AbilityPack.AbilityRequeriment_CasterConscious" />
+    <requeriment Class="AbilityPack.AbilityRequeriment_All">
+      <items>
+        <li Class="AbilityPack.AbilityRequeriment_TimeFixed">
+          <value>200</value>
+        </li>
+        <li Class="AbilityPack.AbilityRequeriment_RandomChance">
+          <accepts>1</accepts>
+          <total>200</total>
+        </li>
+      </items>
+    </requeriment>
+    <priority Class="AbilityPack.AbilityPriority_Fixed">
+      <value>10</value>
+    </priority>
+    <target Class="AbilityPack.AbilityTarget_Self" />
+    <effect Class="AbilityPack.AbilityEffect_Evolve">
+      <canBeInterrupted>false</canBeInterrupted>
+      <castTime>400</castTime>
+      <items>
+        <li>
+          <from>
+            <li>Ant_Egg</li>
+          </from>
+          <to>
+            <li>AntWorker</li>
+          </to>
+        </li>
+      </items>
+      <casterMote Class="AbilityPack.AbilityMote_Default" />
+    </effect>
+  </AbilityDef>  
+
+  <AbilityDef>
+    <defName>AlienQueenSpawnAbility</defName>
+    <label>Hatching Eggs</label>
+    <races>
+      <li>Ant_Queen</li>
+    </races>
+    <validity Class="AbilityPack.AbilityRequeriment_CasterConscious" />
+    <!-- One of this conditions must be true to execute -->
+    <requeriment Class="AbilityPack.AbilityRequeriment_All">
+      <items>
+        <li Class="AbilityPack.AbilityRequeriment_TimeFixed">
+          <value>300</value>
+        </li>
+        <li Class="AbilityPack.AbilityRequeriment_RandomChance">
+          <accepts>1</accepts>
+          <total>200</total>
+        </li>
+      </items>
+    </requeriment>
+    <priority Class="AbilityPack.AbilityPriority_Fixed">
+      <value>10</value>
+    </priority>
+    <target Class="AbilityPack.AbilityTarget_Self" />
+    <effect Class="AbilityPack.AbilityEffect_Spawn">
+      <castTime>250</castTime>
+	  <manaCost>60</manaCost>
+      <canBeInterrupted>true</canBeInterrupted>
+      <range>2</range>
+      <pawnKinds>
+        <li>AntEgg</li>
+      </pawnKinds>
+      <casterMote Class="AbilityPack.AbilityMote_Default" />
+      <spawnedMote Class="AbilityPack.AbilityMote_Default" />
+    </effect>
+  </AbilityDef>
+
+  <AbilityDef>
+    <defName>AlienNurseHealingAbility</defName>
+    <label>Healing Friends</label>
+    <races>
+      <li>Ant_Nurse</li>
+    </races>
+    <validity Class="AbilityPack.AbilityRequeriment_CasterConscious" />
+    <requeriment Class="AbilityPack.AbilityRequeriment_TimeFixed">
+      <value>300</value>
+    </requeriment>
+    <priority Class="AbilityPack.AbilityPriority_Fixed">
+      <value>10</value>
+    </priority>
+    <target Class="AbilityPack.AbilityTarget_Range">
+      <maximumRange>25</maximumRange>
+      <closestFirst>true</closestFirst>
+      <target Class="AbilityPack.AbilityTarget_Friendly" />
+    </target>
+    <effect Class="AbilityPack.AbilityEffect_Heal">
+      <manaCost>30</manaCost>
+      <canBeInterrupted>true</canBeInterrupted>
+      <castTime>250</castTime>
+      <treatLocalInjuryPowerUse>8</treatLocalInjuryPowerUse>
+      <healLocalInjuryPowerUse>2</healLocalInjuryPowerUse>
+      <totalPower>60</totalPower>
+      <targetPower>0</targetPower>
+      <healthTrashHold>0.75</healthTrashHold>
+      <casterMote Class="AbilityPack.AbilityMote_Default" />
+      <targetMote Class="AbilityPack.AbilityMote_Default" />
+    </effect>
+  </AbilityDef>
+  
+</Defs>

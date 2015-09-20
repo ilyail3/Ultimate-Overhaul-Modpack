@@ -1,0 +1,356 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+  
+  <ThingDef Name="BasePawn" Abstract="True">
+    <thingClass>Pawn</thingClass>
+    <category>Pawn</category>
+    <selectable>true</selectable>
+    <tickerType>Normal</tickerType>
+    <altitudeLayer>Pawn</altitudeLayer>
+    <useHitPoints>false</useHitPoints>
+    <hasTooltip>true</hasTooltip>
+    <soundImpactDefault>BulletImpactFlesh</soundImpactDefault>
+    <inspectorTabs>
+      <li>ITab_Pawn_Health</li>
+      <li>ITab_Pawn_Needs</li>
+      <li>ITab_Pawn_Character</li>
+      <li>ITab_Pawn_Training</li>
+      <li>ITab_Pawn_Gear</li>
+      <li>ITab_Pawn_Guest</li>
+      <li>ITab_Pawn_Prisoner</li>
+    </inspectorTabs>
+    <comps>
+      <li>
+        <compClass>CompAttachBase</compClass>
+      </li>
+    </comps>
+    <drawGUIOverlay>true</drawGUIOverlay>
+  </ThingDef>
+
+  <ThingDef ParentName="BasePawn" Name="BaseAnimal" Abstract="True">
+    <statBases>
+      <Flammability>1.0</Flammability>
+      <LeatherAmount>20</LeatherAmount>
+    </statBases>
+    <race>
+      <thinkTree>Animal</thinkTree>
+      <minFoodPreferability>Plant</minFoodPreferability>
+      <isFlesh>true</isFlesh>
+      <hasGenders>true</hasGenders>
+      <nameGenerator>NamerAnimalGeneric</nameGenerator>
+      <manhunterOnDamageChance>0.0125</manhunterOnDamageChance>
+      <nameOnNuzzleChance>0.5</nameOnNuzzleChance>
+      <hediffGiverSets>
+        <li>OrganicStandard</li>
+      </hediffGiverSets>
+    </race>
+  </ThingDef>
+
+  <ThingDef ParentName="BaseAnimal" Name="BaseAnt" Abstract="True">
+    <statBases>
+      <ComfyTemperatureMin>-100</ComfyTemperatureMin>
+      <ComfyTemperatureMax>250</ComfyTemperatureMax>
+      <LeatherAmount>0</LeatherAmount>      
+    </statBases>
+  </ThingDef>
+
+  <!-- ============================ Ants ========================== -->  
+
+  <ThingDef ParentName="BaseAnt">
+    <defName>Ant_Egg</defName>
+    <label>ant egg</label>
+    <description>This is a ant egg, soon it will hatch.</description>
+    <statBases>
+      <MoveSpeed>0.00000001</MoveSpeed>
+      <MeatAmount>1</MeatAmount>
+    </statBases>
+    <verbs>
+      <li>
+        <verbClass>Verb_MeleeAttack</verbClass>
+        <defaultCooldownTicks>10000</defaultCooldownTicks>
+        <meleeDamageBaseAmount>0</meleeDamageBaseAmount>
+        <meleeDamageDef>Cut</meleeDamageDef>
+        <linkedBodyPartsGroup>Mouth</linkedBodyPartsGroup>
+      </li>
+    </verbs>
+    <race>
+      <intelligence>ToolUser</intelligence>
+      <mechanoid>false</mechanoid>
+      <thinkTree>DoNothingTinkTree</thinkTree>
+      <body>AntLike</body>
+      <baseBodySize>0.1</baseBodySize>
+      <baseHungerRate>0.001</baseHungerRate>
+      <baseHealthScale>0.5</baseHealthScale>
+      <meatLabel>ant meat</meatLabel>
+      <diet>Omnivorous</diet>
+      <lifeExpectancy>1</lifeExpectancy>
+      <lifeStageAges>
+        <li>
+          <def>EusocialInsectLarva</def>
+          <minAge>0</minAge>
+        </li>
+        <li>
+          <def>EusocialInsectJuvenile</def>
+          <minAge>0.03</minAge>
+        </li>
+        <li>
+          <def>EusocialInsectAdult</def>
+          <minAge>0.4</minAge>
+        </li>
+      </lifeStageAges>
+      <soundMeleeHitPawn>Pawn_Melee_SmallScratch_HitPawn</soundMeleeHitPawn>
+      <soundMeleeHitBuilding>Pawn_Melee_SmallScratch_HitBuilding</soundMeleeHitBuilding>
+      <soundMeleeMiss>Pawn_Melee_SmallScratch_Miss</soundMeleeMiss>
+    </race>
+  </ThingDef>
+
+  <ThingDef ParentName="BaseAnt">
+    <defName>Ant_Worker</defName>
+    <label>ant worker</label>
+    <description>This is a worker ant, which performs the colony labor work.</description>
+    <statBases>
+      <MoveSpeed>3.5</MoveSpeed>
+      <ArmorRating_Sharp>0.2</ArmorRating_Sharp>
+      <MarketValue>10</MarketValue>
+      <MeatAmount>5</MeatAmount>
+    </statBases>
+    <verbs>
+      <li>
+        <verbClass>Verb_MeleeAttack</verbClass>
+        <defaultCooldownTicks>100</defaultCooldownTicks>
+        <meleeDamageBaseAmount>6</meleeDamageBaseAmount>
+        <meleeDamageDef>Cut</meleeDamageDef>
+        <linkedBodyPartsGroup>Mouth</linkedBodyPartsGroup>
+      </li>
+    </verbs>
+    <race>
+      <intelligence>ToolUser</intelligence>
+      <mechanoid>false</mechanoid>
+      <thinkTree>AbilityThinkTree</thinkTree>
+      <body>AntLike</body>
+      <baseBodySize>0.3</baseBodySize>
+      <baseHungerRate>0.20</baseHungerRate>
+      <baseHealthScale>0.3</baseHealthScale>
+      <meatLabel>ant meat</meatLabel>
+      <diet>Omnivorous</diet>
+      <wildness>0.95</wildness>
+      <manhunterOnTameFailChance>0.01</manhunterOnTameFailChance>
+      <manhunterOnDamageChance>1</manhunterOnDamageChance>
+      <nuzzlePower>0.4</nuzzlePower>
+      <nuzzleChancePerHour>0</nuzzleChancePerHour>
+      <lifeExpectancy>1</lifeExpectancy>
+      <lifeStageAges>
+        <li>
+          <def>EusocialInsectLarva</def>
+          <minAge>0</minAge>
+        </li>
+        <li>
+          <def>EusocialInsectJuvenile</def>
+          <minAge>0.03</minAge>
+        </li>
+        <li>
+          <def>EusocialInsectAdult</def>
+          <minAge>0.08</minAge>
+          <soundWounded>Pawn_Megascarab_Wounded</soundWounded>
+          <soundDeath>Pawn_Megascarab_Death</soundDeath>
+          <soundCall>Pawn_Megascarab_Call</soundCall>
+          <soundAngry>Pawn_Megascarab_Angry</soundAngry>
+        </li>
+      </lifeStageAges>
+      <soundMeleeHitPawn>Pawn_Melee_SmallScratch_HitPawn</soundMeleeHitPawn>
+      <soundMeleeHitBuilding>Pawn_Melee_SmallScratch_HitBuilding</soundMeleeHitBuilding>
+      <soundMeleeMiss>Pawn_Melee_SmallScratch_Miss</soundMeleeMiss>
+    </race>
+  </ThingDef>
+
+  <ThingDef ParentName="BaseAnt">
+    <defName>Ant_Warrior</defName>
+    <label>ant warrior</label>
+    <description>This is a melee fighter ant, responsible for attacking invaders of the colony.</description>
+    <statBases>
+      <MoveSpeed>3.0</MoveSpeed>
+      <ArmorRating_Blunt>0.1</ArmorRating_Blunt>
+      <ArmorRating_Sharp>0.5</ArmorRating_Sharp>
+      <MarketValue>50</MarketValue>
+      <MeatAmount>25</MeatAmount>
+    </statBases>
+    <verbs>
+      <li>
+        <verbClass>Verb_MeleeAttack</verbClass>
+        <defaultCooldownTicks>100</defaultCooldownTicks>
+        <meleeDamageBaseAmount>16</meleeDamageBaseAmount>
+        <meleeDamageDef>Cut</meleeDamageDef>
+        <linkedBodyPartsGroup>Mouth</linkedBodyPartsGroup>
+      </li>
+    </verbs>
+    <race>
+      <intelligence>ToolUser</intelligence>
+      <mechanoid>false</mechanoid>
+      <thinkTree>AbilityThinkTree</thinkTree>
+      <body>AntLike</body>
+      <baseBodySize>1.5</baseBodySize>
+      <baseHungerRate>0.20</baseHungerRate>
+      <baseHealthScale>1.0</baseHealthScale>
+      <meatLabel>ant meat</meatLabel>
+      <diet>Omnivorous</diet>
+      <wildness>0.95</wildness>
+      <lifeExpectancy>10</lifeExpectancy>
+      <lifeStageAges>
+        <li>
+          <def>EusocialInsectAdult</def>
+          <minAge>0.0</minAge>
+          <soundWounded>Pawn_Megascarab_Wounded</soundWounded>
+          <soundDeath>Pawn_Megascarab_Death</soundDeath>
+          <soundCall>Pawn_Megascarab_Call</soundCall>
+          <soundAngry>Pawn_Megascarab_Angry</soundAngry>
+        </li>
+      </lifeStageAges>
+      <soundMeleeHitPawn>Pawn_Melee_SmallScratch_HitPawn</soundMeleeHitPawn>
+      <soundMeleeHitBuilding>Pawn_Melee_SmallScratch_HitBuilding</soundMeleeHitBuilding>
+      <soundMeleeMiss>Pawn_Melee_SmallScratch_Miss</soundMeleeMiss>
+    </race>
+  </ThingDef>
+
+  <ThingDef ParentName="BaseAnt">
+    <defName>Ant_Stinger</defName>
+    <label>ant stinger</label>
+    <description>This is a ranged fighter ant, responsible for defending the colony.</description>
+    <statBases>
+      <MoveSpeed>2.95</MoveSpeed>
+      <ArmorRating_Sharp>0.4</ArmorRating_Sharp>
+      <MarketValue>50</MarketValue>
+      <MeatAmount>10</MeatAmount>
+    </statBases>
+    <verbs>
+      <li>
+        <verbClass>Verb_MeleeAttack</verbClass>
+        <defaultCooldownTicks>100</defaultCooldownTicks>
+        <meleeDamageBaseAmount>10</meleeDamageBaseAmount>
+        <meleeDamageDef>Cut</meleeDamageDef>
+        <linkedBodyPartsGroup>Mouth</linkedBodyPartsGroup>
+      </li>
+    </verbs>
+    <race>
+      <intelligence>ToolUser</intelligence>
+      <mechanoid>false</mechanoid>
+      <thinkTree>AbilityThinkTree</thinkTree>
+      <body>AntLike</body>
+      <baseBodySize>0.8</baseBodySize>
+      <baseHungerRate>0.20</baseHungerRate>
+      <baseHealthScale>0.8</baseHealthScale>
+      <meatLabel>ant meat</meatLabel>
+      <diet>Omnivorous</diet>
+      <wildness>0.95</wildness>
+      <lifeExpectancy>10</lifeExpectancy>
+      <lifeStageAges>
+        <li>
+          <def>EusocialInsectAdult</def>
+          <minAge>0.0</minAge>
+          <soundWounded>Pawn_Megascarab_Wounded</soundWounded>
+          <soundDeath>Pawn_Megascarab_Death</soundDeath>
+          <soundCall>Pawn_Megascarab_Call</soundCall>
+          <soundAngry>Pawn_Megascarab_Angry</soundAngry>
+        </li>
+      </lifeStageAges>
+      <soundMeleeHitPawn>Pawn_Melee_SmallScratch_HitPawn</soundMeleeHitPawn>
+      <soundMeleeHitBuilding>Pawn_Melee_SmallScratch_HitBuilding</soundMeleeHitBuilding>
+      <soundMeleeMiss>Pawn_Melee_SmallScratch_Miss</soundMeleeMiss>
+    </race>
+  </ThingDef>
+  
+  <ThingDef ParentName="BaseAnt">
+    <defName>Ant_Nurse</defName>
+    <label>ant nurse</label>
+    <description>This is a healer ant, responsible for healing other injured ants.</description>
+    <statBases>
+      <MoveSpeed>2.95</MoveSpeed>
+      <ArmorRating_Sharp>0.2</ArmorRating_Sharp>
+      <MarketValue>50</MarketValue>
+      <MeatAmount>10</MeatAmount>
+    </statBases>
+    <verbs>
+      <li>
+        <verbClass>Verb_MeleeAttack</verbClass>
+        <defaultCooldownTicks>100</defaultCooldownTicks>
+        <meleeDamageBaseAmount>6</meleeDamageBaseAmount>
+        <meleeDamageDef>Cut</meleeDamageDef>
+        <linkedBodyPartsGroup>Mouth</linkedBodyPartsGroup>
+      </li>
+    </verbs>
+    <race>
+      <intelligence>ToolUser</intelligence>
+      <mechanoid>false</mechanoid>
+      <thinkTree>AbilityThinkTree</thinkTree>
+      <body>AntLike</body>
+      <baseBodySize>0.9</baseBodySize>
+      <baseHungerRate>0.20</baseHungerRate>
+      <baseHealthScale>1.0</baseHealthScale>
+      <meatLabel>ant meat</meatLabel>
+      <diet>Omnivorous</diet>
+      <wildness>0.95</wildness>
+      <lifeExpectancy>10</lifeExpectancy>
+      <lifeStageAges>
+        <li>
+          <def>EusocialInsectAdult</def>
+          <minAge>0.0</minAge>
+          <soundWounded>Pawn_Megascarab_Wounded</soundWounded>
+          <soundDeath>Pawn_Megascarab_Death</soundDeath>
+          <soundCall>Pawn_Megascarab_Call</soundCall>
+          <soundAngry>Pawn_Megascarab_Angry</soundAngry>
+        </li>
+      </lifeStageAges>
+      <soundMeleeHitPawn>Pawn_Melee_SmallScratch_HitPawn</soundMeleeHitPawn>
+      <soundMeleeHitBuilding>Pawn_Melee_SmallScratch_HitBuilding</soundMeleeHitBuilding>
+      <soundMeleeMiss>Pawn_Melee_SmallScratch_Miss</soundMeleeMiss>
+    </race>
+  </ThingDef>
+
+  <ThingDef ParentName="BaseAnt">
+    <defName>Ant_Queen</defName>
+    <label>ant queen</label>
+    <description>This is a queen ant, responsible for giving birth to new ants.</description>
+    <statBases>
+      <MoveSpeed>2.7</MoveSpeed>
+      <ArmorRating_Blunt>0.3</ArmorRating_Blunt>
+      <ArmorRating_Sharp>0.9</ArmorRating_Sharp>
+      <MarketValue>1000</MarketValue>
+      <MeatAmount>75</MeatAmount>
+    </statBases>
+    <verbs>
+      <li>
+        <verbClass>Verb_MeleeAttack</verbClass>
+        <defaultCooldownTicks>140</defaultCooldownTicks>
+        <meleeDamageBaseAmount>25</meleeDamageBaseAmount>
+        <meleeDamageDef>Cut</meleeDamageDef>
+        <linkedBodyPartsGroup>Mouth</linkedBodyPartsGroup>
+      </li>
+    </verbs>
+    <race>
+      <intelligence>ToolUser</intelligence>
+      <mechanoid>false</mechanoid>
+      <thinkTree>AbilityThinkTree</thinkTree>
+      <body>AntLike</body>
+      <baseBodySize>3.9</baseBodySize>
+      <baseHungerRate>0.40</baseHungerRate>
+      <baseHealthScale>3.9</baseHealthScale>
+      <meatLabel>ant meat</meatLabel>
+      <diet>Omnivorous</diet>
+      <wildness>0.95</wildness>
+      <lifeExpectancy>10</lifeExpectancy>
+      <lifeStageAges>
+        <li>
+          <def>EusocialInsectAdult</def>
+          <minAge>0.4</minAge>
+          <soundWounded>Pawn_Megascarab_Wounded</soundWounded>
+          <soundDeath>Pawn_Megascarab_Death</soundDeath>
+          <soundCall>Pawn_Megascarab_Call</soundCall>
+          <soundAngry>Pawn_Megascarab_Angry</soundAngry>
+        </li>
+      </lifeStageAges>
+      <soundMeleeHitPawn>Pawn_Melee_SmallScratch_HitPawn</soundMeleeHitPawn>
+      <soundMeleeHitBuilding>Pawn_Melee_SmallScratch_HitBuilding</soundMeleeHitBuilding>
+      <soundMeleeMiss>Pawn_Melee_SmallScratch_Miss</soundMeleeMiss>
+    </race>
+  </ThingDef>
+
+</Defs>

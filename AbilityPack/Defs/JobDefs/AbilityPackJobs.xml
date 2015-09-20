@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<JobDefs>
+
+	<JobDef>
+		<defName>AbilityEffect_JobDef</defName>
+		<driverClass>AbilityPack.JobDriver_AbilityEffect</driverClass>
+		<reportString>Executing a custom ability.</reportString>
+    <canCheckOverrideOnDamage>false</canCheckOverrideOnDamage>
+	</JobDef>
+
+  <JobDef>
+    <defName>AbilityEffect_JobDef_Interruptable</defName>
+    <driverClass>AbilityPack.JobDriver_AbilityEffect</driverClass>
+    <reportString>Executing a custom ability.</reportString>
+    <canCheckOverrideOnDamage>true</canCheckOverrideOnDamage>
+  </JobDef>  
+
+</JobDefs>

@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<LanguageData>
+  <AbilityPack.TabAbility>Abilities</AbilityPack.TabAbility>
+  <AbilityPack.Mana>Mana: </AbilityPack.Mana>
+  <AbilityPack.Abilities>Abilities</AbilityPack.Abilities>
+  <AbilityPack.ExecutionNumber>Num</AbilityPack.ExecutionNumber>
+  <AbilityPack.TicksSinseExecution>Coldown</AbilityPack.TicksSinseExecution>
+  <AbilityPack.AbilityName>Ability</AbilityPack.AbilityName>
+</LanguageData>

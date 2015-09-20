@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<ThinkTrees>
+
+	<ThinkTreeDef>
+		<defName>AbilityThinkTree</defName>
+		<thinkRoot Class="ThinkNode_Priority">
+			<subNodes>
+				<li Class="AbilityPack.ThinkNode_StartAbility" />
+				<li Class="ThinkNode_Subtree">
+					<treeDef>SquadBrainDuty</treeDef>
+				</li>
+				<li Class="JobGiver_WanderCurrentRoom">
+					<maxDanger>Some</maxDanger>
+				</li>
+				<li Class="JobGiver_WanderAnywhere">
+					<maxDanger>Deadly</maxDanger>
+				</li>
+				<li Class="JobGiver_IdleError"/>
+			</subNodes>
+		</thinkRoot>
+	</ThinkTreeDef>
+  
+</ThinkTrees>

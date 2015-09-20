@@ -1,0 +1,12 @@
+Well I suck at Photoshop, then I store here some data about the textures, the aren't obrigatory, feel free to change anithing you like!
+
+HeadDegradeColorLight: cc4c05
+HeadDegradeColorDark: a83e03
+
+AbdomenDegradeColorLight: bd4300
+AbdomenDegradeColorDark: 8b3200
+
+TailDegradeColorLight: 737373
+AbdomenDegradeColorDark: 373737
+
+Antenna and Tusk Colors: 8e8e8e

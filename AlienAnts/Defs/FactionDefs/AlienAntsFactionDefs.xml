@@ -1,0 +1,55 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<FactionDefs>
+  <FactionDef>
+    <defName>AlienAnts</defName>
+    <label>alien ants</label>
+    <description>This is an alien ants enemy faction.</description>
+    <pawnsPlural>alien ants</pawnsPlural>
+    <requiredCountAtGameStart>1</requiredCountAtGameStart>
+    <fixedName>the alien ants</fixedName>
+    <raidCommonality>45</raidCommonality>
+    <humanlikeFaction>false</humanlikeFaction>
+    <hidden>true</hidden>
+    <canSiege>false</canSiege>
+    <canStageAttacks>false</canStageAttacks>
+    <canFlee>false</canFlee>
+    <techLevel>Neolithic</techLevel>
+    <startingGoodwill>
+      <min>-100</min>
+      <max>-100</max>
+    </startingGoodwill>
+    <mustStartOneEnemy>true</mustStartOneEnemy>
+    <naturalColonyGoodwill>
+      <min>-100</min>
+      <max>-100</max>
+    </naturalColonyGoodwill>
+    <pawnGroupMakers>
+      <li>
+        <options>
+          <li>
+            <selectionWeight>200</selectionWeight>
+            <kind>AntWorker</kind>
+          </li>
+          <li>
+            <selectionWeight>10</selectionWeight>
+            <kind>AntWarrior</kind>
+          </li>
+          <li>
+            <selectionWeight>10</selectionWeight>
+            <kind>AntStinger</kind>
+          </li>
+          <li>
+            <selectionWeight>10</selectionWeight>
+            <kind>AntNurse</kind>
+          </li>
+          <li>
+            <selectionWeight>3</selectionWeight>
+            <kind>AntQueen</kind>
+          </li>
+        </options>
+      </li>
+    </pawnGroupMakers>
+    <homeIconPath>World/FactionHomes/DefaultHome</homeIconPath>
+    <homeIconColor>(150,150,150)</homeIconColor>
+  </FactionDef>
+</FactionDefs>

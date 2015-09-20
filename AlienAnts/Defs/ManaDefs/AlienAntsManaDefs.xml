@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+  <ManaDef>
+    <defName>ManaDefAlientAntQueen</defName>
+    <label>Alien Ant Queen mana replenish</label>
+    <races>
+      <li>Ant_Nurse</li>
+	  <li>Ant_Queen</li>
+    </races>
+    <initial>80</initial>
+    <replenish Class="AbilityPack.ManaReplenish_Regenerate">
+      <ammount>0.0078125</ammount>
+      <ammountDead>0.0078125</ammountDead>
+    </replenish>
+  </ManaDef>
+</Defs>
