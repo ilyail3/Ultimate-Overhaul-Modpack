@@ -1,0 +1,431 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<RecipeDefs>
+
+ <RecipeDef Name="BaseShieldRecipe" Abstract="true">
+    <jobString>Creating Shield.</jobString>
+    <workAmount>10000</workAmount>
+    <workSpeedStat>SmeltingSpeed</workSpeedStat>
+    <effectWorking>Smelt</effectWorking>
+    <soundWorking>Interact_ConstructMetal</soundWorking>
+  </RecipeDef>
+
+  <RecipeDef ParentName="BaseShieldRecipe">
+	<defName>CraftShieldHeated</defName>
+	<label>Make Cozy Shield</label>
+	<description>Re-purpose a Shield by adding a heater</description>
+	<skillRequirements>
+		<li>
+			<skill>Crafting</skill>
+			<minLevel>6</minLevel>
+		</li>
+	</skillRequirements>
+	<recipeUsers>
+         <li>TableSmithing</li>
+     </recipeUsers>
+	<ingredients>
+		<li>
+			<filter>
+				<thingDefs>
+					<li>PlasteelBar</li>
+				</thingDefs>
+			</filter>
+			<count>50</count>
+		</li>
+		<li>
+			<filter>
+				<thingDefs>
+					<li>Apparel_PersonalShield</li>
+				</thingDefs>
+			</filter>
+			<count>1</count>
+		</li>
+		</ingredients>
+		<products>
+			<Apparel_PersonalShield_Heat>1</Apparel_PersonalShield_Heat>
+		</products>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>PlasteelBar</li>
+				<li>Apparel_PersonalShield</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<workSkill>Crafting</workSkill>
+	</RecipeDef>
+	
+	  <RecipeDef ParentName="BaseShieldRecipe">
+	<defName>CraftShieldCooled</defName>
+	<label>Make Chilled Shield</label>
+	<description>Re-purpose a Shield by adding an Air-conditioner</description>
+	<skillRequirements>
+		<li>
+			<skill>Crafting</skill>
+			<minLevel>6</minLevel>
+		</li>
+	</skillRequirements>
+	<recipeUsers>
+         <li>TableSmithing</li>
+    </recipeUsers>
+	<ingredients>
+		<li>
+			<filter>
+				<thingDefs>
+					<li>PlasteelBar</li>
+				</thingDefs>
+			</filter>
+			<count>50</count>
+		</li>
+		<li>
+			<filter>
+				<thingDefs>
+					<li>Apparel_PersonalShield</li>
+				</thingDefs>
+			</filter>
+			<count>1</count>
+		</li>
+		</ingredients>
+		<products>
+			<Apparel_PersonalShield_Cold>1</Apparel_PersonalShield_Cold>
+		</products>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>PlasteelBar</li>
+				<li>Apparel_PersonalShield</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<workSkill>Crafting</workSkill>
+	</RecipeDef>
+	
+	  <RecipeDef ParentName="BaseShieldRecipe">
+	<defName>CraftShieldCoolHaul</defName>
+	<label>Make Chilled Speed Shield</label>
+	<description>Re-purpose a Shield by adding an Air-conditioner...Also aids move speed by .40 and workspeed by .15</description>
+	<skillRequirements>
+		<li>
+			<skill>Crafting</skill>
+			<minLevel>6</minLevel>
+		</li>
+	</skillRequirements>
+	<recipeUsers>
+         <li>TableSmithing</li>
+    </recipeUsers>
+	<ingredients>
+		<li>
+			<filter>
+				<thingDefs>
+					<li>PlasteelBar</li>
+				</thingDefs>
+			</filter>
+			<count>25</count>
+		</li>
+		<li>
+			<filter>
+				<thingDefs>
+					<li>Apparel_PersonalShield_Cold</li>
+				</thingDefs>
+			</filter>
+			<count>1</count>
+		</li>
+		</ingredients>
+		<products>
+			<Apparel_PersonalShield_Cold_HaulR>1</Apparel_PersonalShield_Cold_HaulR>
+		</products>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>PlasteelBar</li>
+				<li>Apparel_PersonalShield_Cold</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<workSkill>Crafting</workSkill>
+	</RecipeDef>
+	
+		  <RecipeDef ParentName="BaseShieldRecipe">
+	<defName>CraftShieldCoolHeat</defName>
+	<label>Make Cozy Speed Shield</label>
+	<description>Re-purpose a Shield by adding a Heater...Also aids move speed by .40 and workspeed by .15</description>
+	<skillRequirements>
+		<li>
+			<skill>Crafting</skill>
+			<minLevel>6</minLevel>
+		</li>
+	</skillRequirements>
+	<recipeUsers>
+         <li>TableSmithing</li>
+    </recipeUsers>
+	<ingredients>
+		<li>
+			<filter>
+				<thingDefs>
+					<li>PlasteelBar</li>
+				</thingDefs>
+			</filter>
+			<count>25</count>
+		</li>
+		<li>
+			<filter>
+				<thingDefs>
+					<li>Apparel_PersonalShield_Heat</li>
+				</thingDefs>
+			</filter>
+			<count>1</count>
+		</li>
+		</ingredients>
+		<products>
+			<Apparel_PersonalShield_Heat_HaulR>1</Apparel_PersonalShield_Heat_HaulR>
+		</products>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>PlasteelBar</li>
+				<li>Apparel_PersonalShield_Heat</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<workSkill>Crafting</workSkill>
+	</RecipeDef>
+
+	
+	
+	<RecipeDef ParentName="BaseShieldRecipe">
+	<defName>CraftShieldHeatShoot</defName>
+	<label>Build Cozy Shooter Shield</label>
+	<description>Create advanced shield that allows shooting while having heater</description>
+	<skillRequirements>
+		<li>
+			<skill>Crafting</skill>
+			<minLevel>8</minLevel>
+		</li>
+	</skillRequirements>
+	<recipeUsers>
+         <li>TableSmithing</li>
+    </recipeUsers>
+	<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Vancidium</li>
+					</thingDefs>
+				</filter>
+				<count>10</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Gold</li>
+					</thingDefs>
+				</filter>
+				<count>2</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>PlasteelBar</li>
+					</thingDefs>
+				</filter>
+				<count>50</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Apparel_PersonalShield_Heat</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<products>
+			<Apparel_PersonalShield_Heat_Enhanced>1</Apparel_PersonalShield_Heat_Enhanced>
+		</products>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>Vancidium</li>
+				<li>Gold</li>
+				<li>PlasteelBar</li>
+				<li>Apparel_PersonalShield_Heat</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<workSkill>Crafting</workSkill>
+	</RecipeDef>
+	
+		<RecipeDef ParentName="BaseShieldRecipe">
+	<defName>CraftShieldCoolShoot</defName>
+	<label>Build Chilled Shooter Shield</label>
+	<description>Create advanced shield that allows shooting while having Air-conditioning</description>
+	<skillRequirements>
+		<li>
+			<skill>Crafting</skill>
+			<minLevel>8</minLevel>
+		</li>
+	</skillRequirements>
+	<recipeUsers>
+         <li>TableSmithing</li>
+    </recipeUsers>
+	<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Vancidium</li>
+					</thingDefs>
+				</filter>
+				<count>10</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Gold</li>
+					</thingDefs>
+				</filter>
+				<count>2</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>PlasteelBar</li>
+					</thingDefs>
+				</filter>
+				<count>50</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Apparel_PersonalShield_Cold</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<products>
+			<Apparel_PersonalShield_Cold_Enhanced>1</Apparel_PersonalShield_Cold_Enhanced>
+		</products>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>Vancidium</li>
+				<li>Gold</li>
+				<li>PlasteelBar</li>
+				<li>Apparel_PersonalShield_Cold</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<workSkill>Crafting</workSkill>
+	</RecipeDef>
+	
+	
+	<RecipeDef ParentName="BaseShieldRecipe">
+	<defName>CraftAdvShieldCoolShoot</defName>
+	<label>Build Adv Chilled Shooter Shield</label>
+	<description>Create advanced shield that allows shooting while having Air-conditioning</description>
+	<skillRequirements>
+		<li>
+			<skill>Crafting</skill>
+			<minLevel>8</minLevel>
+		</li>
+	</skillRequirements>
+	<recipeUsers>
+         <li>TableSmithing</li>
+    </recipeUsers>
+	<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Vancidium</li>
+					</thingDefs>
+				</filter>
+				<count>10</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Gold</li>
+					</thingDefs>
+				</filter>
+				<count>2</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>PlasteelBar</li>
+					</thingDefs>
+				</filter>
+				<count>50</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Apparel_PersonalShield_Cold_Enhanced</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<products>
+			<Apparel_PersonalShield_Cold_Advanced>1</Apparel_PersonalShield_Cold_Advanced>
+		</products>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>Vancidium</li>
+				<li>Gold</li>
+				<li>PlasteelBar</li>
+				<li>Apparel_PersonalShield_Cold_Enhanced</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<workSkill>Crafting</workSkill>
+	</RecipeDef>
+	
+	<RecipeDef ParentName="BaseShieldRecipe">
+	<defName>CraftAdvShieldHeatShoot</defName>
+	<label>Build Adv Cozy Shooter Shield</label>
+	<description>Create advanced shield that allows shooting while having heater</description>
+	<skillRequirements>
+		<li>
+			<skill>Crafting</skill>
+			<minLevel>8</minLevel>
+		</li>
+	</skillRequirements>
+	<recipeUsers>
+         <li>TableSmithing</li>
+    </recipeUsers>
+	<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Vancidium</li>
+					</thingDefs>
+				</filter>
+				<count>10</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Gold</li>
+					</thingDefs>
+				</filter>
+				<count>2</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>PlasteelBar</li>
+					</thingDefs>
+				</filter>
+				<count>50</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Apparel_PersonalShield_Heat_Enhanced</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<products>
+			<Apparel_PersonalShield_Heat_Advanced>1</Apparel_PersonalShield_Heat_Advanced>
+		</products>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>Vancidium</li>
+				<li>Gold</li>
+				<li>PlasteelBar</li>
+				<li>Apparel_PersonalShield_Heat_Enhanced</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<workSkill>Crafting</workSkill>
+	</RecipeDef>
+	
+</RecipeDefs> 
