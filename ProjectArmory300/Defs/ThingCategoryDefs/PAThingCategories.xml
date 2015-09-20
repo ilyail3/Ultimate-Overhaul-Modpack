@@ -1,0 +1,91 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ThingCategoryDefs>
+
+  <ThingCategoryDef>
+    <defName>Weapons</defName>
+    <label>weapons</label>
+    <parent>Root</parent>
+  </ThingCategoryDef>
+
+    <ThingCategoryDef>
+      <defName>WeaponsMelee</defName>
+      <label>melee weapons</label>
+      <parent>Weapons</parent>
+    </ThingCategoryDef>
+
+    <ThingCategoryDef>
+      <defName>WeaponsRanged</defName>
+      <label>ranged weapons</label>
+      <parent>Weapons</parent>
+    </ThingCategoryDef>
+
+      <ThingCategoryDef>
+        <defName>Grenades</defName>
+        <label>grenades</label>
+        <parent>WeaponsRanged</parent>
+      </ThingCategoryDef>
+
+	<ThingCategoryDef>
+	  <defName>WeaponsRangedAssaultRifles</defName>
+	  <label>Assault Rifles</label>
+	  <parent>WeaponsRanged</parent>
+	  <iconPath></iconPath>
+	</ThingCategoryDef>
+	<ThingCategoryDef>
+	  <defName>WeaponsRangedRifles</defName>
+	  <label>Rifles</label>
+	  <parent>WeaponsRanged</parent>
+	  <iconPath></iconPath>
+	</ThingCategoryDef>
+	<ThingCategoryDef>
+	  <defName>WeaponsRangedShotty</defName>
+	  <label>Shotguns</label>
+	  <parent>WeaponsRanged</parent>
+	  <iconPath></iconPath>
+	</ThingCategoryDef>
+	<ThingCategoryDef>
+	  <defName>WeaponsRangedBows</defName>
+	  <label>Neolithic</label>
+	  <parent>WeaponsRanged</parent>
+	  <iconPath></iconPath>
+	</ThingCategoryDef>
+	<ThingCategoryDef>
+	  <defName>WeaponsRangedSniperRifles</defName>
+	  <label>Sniper Rifles</label>
+	  <parent>WeaponsRanged</parent>
+	  <iconPath></iconPath>
+	</ThingCategoryDef>
+	<ThingCategoryDef>
+	  <defName>WeaponsRangedSubmachineGuns</defName>
+	  <label>Submachine guns</label>
+	  <parent>WeaponsRanged</parent>
+	  <iconPath></iconPath>
+	</ThingCategoryDef>
+	<ThingCategoryDef>
+	  <defName>WeaponsRangedPistols</defName>
+	  <label>Pistols</label>
+	  <parent>WeaponsRanged</parent>
+	  <iconPath></iconPath>
+	</ThingCategoryDef>
+	<ThingCategoryDef>
+	  <defName>WeaponsRangedMachineguns</defName>
+	  <label>Machine guns</label>
+	  <parent>WeaponsRanged</parent>
+	  <iconPath></iconPath>
+	</ThingCategoryDef>
+	<ThingCategoryDef>
+	  <defName>WeaponsRangedLaunchers</defName>
+	  <label>Launchers</label>
+	  <parent>WeaponsRanged</parent>
+	  <iconPath></iconPath>
+	</ThingCategoryDef>
+	<!--
+	<ThingCategoryDef>
+	  <defName>NeolithicRanged</defName>
+	  <label>Launchers</label>
+	  <parent>WeaponsRanged</parent>
+	  <iconPath></iconPath>
+	</ThingCategoryDef>
+	-->
+	
+</ThingCategoryDefs>

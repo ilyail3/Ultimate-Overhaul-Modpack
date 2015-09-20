@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ThingDefs>
+
+<!--
+PROJECT ARMORY WEAPON
+
+CODE AUTHOR: Evul
+
+USER LICENSE:
+All weapons texture and code may be altered to the users
+liking to fit the world the user wants to create.
+You may add or remove weapons of your downloaded
+Project Armory Pack to further more customize your world.
+You are also allowed to publish Project Armory weapons
+in your own modpack or mod. The only thing we ask for
+is that you link to our forum page so people that like
+the weapons can download more of them.
+
+-->
+
+	<ThingDef Name="BaseBullet" Abstract="True">
+			<category>Projectile</category>
+			<tickerType>Normal</tickerType>
+			<altitudeLayer>Projectile</altitudeLayer>
+			<thingClass>Bullet</thingClass>
+			<label>bullet</label>
+			<useHitPoints>False</useHitPoints>
+			<neverMultiSelect>True</neverMultiSelect>
+			<graphicData>
+      <shaderType>Transparent</shaderType>
+    </graphicData>
+	</ThingDef>
+	
+<!--
+BULLETS:
+  Bullet_7mmLefaucheux_P_PA
+  Bullet_8x50mmR_R_PA
+  Bullet_455Webley_P_PA
+  Bullet_8x18mm_P_PA
+  Bullet_763mmMannlicher_P_PA
+ -->
+	
+<!-- ============================================================== -->
+	<!-- 7 mm Lefaucheux -->
+	<!-- Velocity:   100 m/s -->
+	<!-- Energy:     300 J -->
+<!-- ============================================================== -->
+
+	<!-- SHOTGUN -->
+	<ThingDef ParentName="BaseBullet">
+		<defName>Bullet_7mmLefaucheux_P_PA</defName>
+		<label>7 mm Lefaucheux</label>
+		<graphicData>
+		<texPath>Things/Projectile/Bullet_Small</texPath>
+		<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<projectile>
+			<damageDef>Bullet</damageDef>
+			<DamageAmountBase>10</DamageAmountBase>
+			<Speed>54</Speed>
+		</projectile>
+	</ThingDef>
+	
+<!-- ============================================================== -->
+	<!-- 8x50mm Rifle -->
+	<!-- Velocity:   590 m/s -->
+	<!-- Energy:     2792 J -->
+<!-- ============================================================== -->
+
+	<!-- Rifle -->
+	<ThingDef ParentName="BaseBullet">
+		<defName>Bullet_8x50mmR_R_PA</defName>
+		<label>8x50mm Rifle</label>
+		<graphicData>
+		<texPath>Things/Projectile/Bullet_Small</texPath>
+		<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<projectile>
+			<damageDef>Bullet</damageDef>
+			<DamageAmountBase>17</DamageAmountBase>
+			<Speed>68</Speed>
+		</projectile>
+	</ThingDef>
+	
+	<!-- LightMachineGun -->
+	<ThingDef ParentName="BaseBullet">
+		<defName>Bullet_8x50mmR_LMG_PA</defName>
+		<label>8x50mm LMG</label>
+		<graphicData>
+		<texPath>Things/Projectile/Bullet_Small</texPath>
+		<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<projectile>
+			<damageDef>Bullet</damageDef>
+			<DamageAmountBase>17</DamageAmountBase>
+			<Speed>68</Speed>
+		</projectile>
+	</ThingDef>
+	
+<!-- ============================================================== -->
+	<!-- 8x18mm  -->
+	<!-- Velocity:   332 m/s -->
+	<!-- Energy:     409 J -->
+<!-- ============================================================== -->
+
+	<!-- Pistol -->
+	<ThingDef ParentName="BaseBullet">
+		<defName>Bullet_8x18mm_P_PA</defName>
+		<label>8x50mm Rifle</label>
+		<graphicData>
+		<texPath>Things/Projectile/Bullet_Small</texPath>
+		<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<projectile>
+			<damageDef>Bullet</damageDef>
+			<DamageAmountBase>10</DamageAmountBase>
+			<Speed>55</Speed>
+		</projectile>
+	</ThingDef>
+	
+<!-- ============================================================== -->
+	<!-- .455 Webley -->
+	<!-- Velocity:   210 m/s -->
+	<!-- Energy:     392 J -->
+<!-- ============================================================== -->
+
+	<!-- Pistol -->
+	<ThingDef ParentName="BaseBullet">
+		<defName>Bullet_455Webley_P_PA</defName>
+		<label>.455 Webley</label>
+		<graphicData>
+		<texPath>Things/Projectile/Bullet_Small</texPath>
+		<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<projectile>
+			<damageDef>Bullet</damageDef>
+			<DamageAmountBase>10</DamageAmountBase>
+			<Speed>55</Speed>
+		</projectile>
+	</ThingDef>	
+	
+<!-- ============================================================== -->
+	<!-- .442 Webley -->
+	<!-- Velocity:   m/s -->
+	<!-- Energy:     J -->
+<!-- ============================================================== -->
+	
+	
+	<ThingDef ParentName="BaseBullet">
+		<defName>Bullet_British_Bulldog_442_PA</defName>
+		<label>.442 Webley</label>
+		<graphicData>
+		<texPath>Things/Projectile/Bullet_Small</texPath>
+		<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<projectile>
+			<damageDef>Bullet</damageDef>
+			<DamageAmountBase>9</DamageAmountBase>
+			<Speed>55</Speed>
+		</projectile>
+	</ThingDef>
+	
+<!-- ============================================================== -->
+	<!-- 7.63mm Mannlicher -->
+	<!-- Velocity:   m/s -->
+	<!-- Energy:     J -->
+<!-- ============================================================== -->
+	
+	
+	<ThingDef ParentName="BaseBullet">
+		<defName>Bullet_763mmMannlicher_P_PA</defName>
+		<label>7.63mm Mannlicher</label>
+		<graphicData>
+		<texPath>Things/Projectile/Bullet_Small</texPath>
+		<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<projectile>
+			<damageDef>Bullet</damageDef>
+			<DamageAmountBase>7</DamageAmountBase>
+			<Speed>55</Speed>
+		</projectile>
+	</ThingDef>
+</ThingDefs>

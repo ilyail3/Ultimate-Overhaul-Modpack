@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ThingDefs>
+
+<!--
+PROJECT ARMORY WEAPON
+
+CODE AUTHOR: Plymouth
+TEXTURE MAKER: Plymouth
+
+
+USER LICENSE:
+All weapons texture and code may be altered to the users
+liking to fit the world the user wants to create.
+You may add or remove weapons of your downloaded
+Project Armory Pack to further more customize your world.
+You are also allowed to publish Project Armory weapons
+in your own modpack or mod. The only thing we ask for
+is that you link to our forum page so people that like
+the weapons can download more of them.
+-->
+
+  <ThingDef Name="BaseWeaponNeolithic" Abstract="True">
+    <category>Item</category>
+
+    <thingClass>ThingWithComps</thingClass>
+    <equipmentType>Primary</equipmentType>
+    <pathCost>10</pathCost>
+    <useHitPoints>True</useHitPoints>
+    <selectable>True</selectable>
+    <graphicData>
+      <onGroundRandomRotateAngle>35</onGroundRandomRotateAngle>
+    </graphicData>
+	<drawGUIOverlay>true</drawGUIOverlay>
+    <statBases>
+      <MaxHitPoints>100</MaxHitPoints>
+      <Flammability>1.0</Flammability>
+	  <DeteriorationRate>1</DeteriorationRate>
+	  <SellPriceFactor>0.25</SellPriceFactor>
+    </statBases>
+    <altitudeLayer>Item</altitudeLayer>
+    <alwaysHaulable>True</alwaysHaulable>
+    <tickerType>Never</tickerType>
+    <techLevel>Neolithic</techLevel>
+    <weaponTags>
+      <li>Neolithic</li>
+    </weaponTags>
+    <thingCategories>
+      <li>WeaponsRangedBows</li>
+    </thingCategories>
+    <comps>
+      <li>
+        <compClass>CompForbiddable</compClass>
+      </li>
+      <li>
+        <compClass>CompEquippable</compClass>
+      </li>
+      <li>
+        <compClass>CompQuality</compClass>
+      </li>
+    </comps>
+  </ThingDef>
+
+
+
+  <ThingDef Name="BaseProjectileNeolithic" Abstract="True">
+    <category>Projectile</category>
+    <tickerType>Normal</tickerType>
+    <altitudeLayer>Projectile</altitudeLayer>
+    <thingClass>Bullet</thingClass>
+    <label>arrow</label>
+    <useHitPoints>False</useHitPoints>
+    <neverMultiSelect>True</neverMultiSelect>
+    <graphicData>
+      <shaderType>Transparent</shaderType>
+    </graphicData>
+  </ThingDef>
+
+	<!-- ============================================================== -->
+	
+  <ThingDef ParentName="BaseProjectileNeolithic">
+    <defName>Arrow_Longbow</defName>
+    <label>Bodkin Arrow</label>
+	<graphicData>
+    <texPath>Things/Projectile/Longbow_Arrow</texPath>
+	<graphicClass>Graphic_Single</graphicClass>
+	</graphicData>
+    <projectile>
+      <flyOverhead>false</flyOverhead>
+      <damageDef>Bullet</damageDef>
+      <DamageAmountBase>16</DamageAmountBase>
+      <Speed>50</Speed>
+    </projectile>
+  </ThingDef>
+
+	<ThingDef ParentName="BaseWeaponNeolithic">
+		<defName>Bow_YewLongbow</defName>
+		<label>Longbow</label>
+		<description> A yew longbow armed with bodkin arrows. Longbows are roughly as tall as the person weilding them and have a fairly long draw. Usful for both hunting and warfare.</description>
+		<graphicData>
+		<texPath>Things/Item/Bow_L_YewLongbow</texPath>
+		<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<soundInteract>BowLarge</soundInteract>
+		<statBases>
+		  <WorkToMake>1700</WorkToMake>
+		  <MarketValue>130</MarketValue>
+		  <AccuracyTouch>0.76</AccuracyTouch>
+			<AccuracyShort>0.79</AccuracyShort>
+			<AccuracyMedium>0.68</AccuracyMedium>
+			<AccuracyLong>0.34</AccuracyLong>
+			<RangedWeapon_Cooldown>0.77</RangedWeapon_Cooldown>
+		</statBases>
+		<weaponTags>
+			<li>NeolithicRanged</li>
+		</weaponTags>
+		<costList>
+			<Cloth>20</Cloth>
+			<WoodPlank>120</WoodPlank>
+		</costList>
+		<recipeMaker>
+			<skillRequirements>
+				<li>
+					<skill>Crafting</skill>
+					<minLevel>6</minLevel>
+				</li>
+			</skillRequirements>
+			<workSpeedStat>SmithingSpeed</workSpeedStat>
+			<workSkill>Crafting</workSkill>
+			<effectWorking>Smith</effectWorking>
+			<soundWorking>Recipe_Smith</soundWorking>
+			<recipeUsers>
+				<li>PrimitiveWeaponCraftingWorkTable</li>
+			</recipeUsers>
+			<unfinishedThingDef>UnfinishedWeapon</unfinishedThingDef>
+		</recipeMaker>
+		<verbs>
+			<li>
+				<verbClass>Verb_Shoot</verbClass>
+				<hasStandardCommand>true</hasStandardCommand>
+				<projectileDef>Arrow_Longbow</projectileDef>
+				<warmupTicks>240</warmupTicks>
+				<range>38</range>
+				<soundCast>BowSmall</soundCast>
+			</li>
+		</verbs>
+
+	</ThingDef>
+</ThingDefs>

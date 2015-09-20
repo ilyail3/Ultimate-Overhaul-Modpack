@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<LanguageData>
+
+  <Building_RTQuantumRelaySmall.label>양자 전송기</Building_RTQuantumRelaySmall.label>
+  <Building_RTQuantumRelaySmall.description>양자 창고의 원격 확장물입니다. 필터에서 선택된 물품은 가져오고, 근처 물품들은 보냅니다.</Building_RTQuantumRelaySmall.description>
+  
+</LanguageData>

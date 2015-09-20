@@ -1,0 +1,286 @@
+===========================================
+Project Armory - Change Log
+===========================================
+
+===========================================
+(RimWorld) Project Armory - 3.00 (2015-04-25)
+===========================================
+
+- [MAJOR] Complete Weapon overhaule and balancing
+- [MAJOR] Make the mod compatible with alpha 10
+- [ADDED] New Launcher: [Starship Troopers] Tactical Oxygen Nuke Launcher
+- [ADDED] New Weapon : CZ SCORPION EVO 3 A1
+- [ADDED] New Weapon: [Half Life 2] OSIPR
+- [ADDED] New Weapon: [Mass Effect] M-15 Vindicator
+- [ADDED] New Weapon: [Mass Effect] M-3 Predator
+- [ADDED] New Weapon: [Warhammer 40k] Heavy Bolter
+- [ADDED] New Weapon: [Warhammer 40k] Heresy Pattern Bolter 1
+- [ADDED] New Weapon: [Warhammer 40k] Heresy Pattern Bolter 10
+- [ADDED] New Weapon: [Warhammer 40k] Heresy Pattern Bolter 11
+- [ADDED] New Weapon: [Warhammer 40k] Heresy Pattern Bolter 12
+- [ADDED] New Weapon: [Warhammer 40k] Heresy Pattern Bolter 13
+- [ADDED] New Weapon: [Warhammer 40k] Heresy Pattern Bolter 14
+- [ADDED] New Weapon: [Warhammer 40k] Heresy Pattern Bolter 15
+- [ADDED] New Weapon: [Warhammer 40k] Heresy Pattern Bolter 19
+- [ADDED] New Weapon: [Warhammer 40k] Heresy Pattern Bolter 2
+- [ADDED] New Weapon: [Warhammer 40k] Heresy Pattern Bolter 3
+- [ADDED] New Weapon: [Warhammer 40k] Heresy Pattern Bolter 4
+- [ADDED] New Weapon: [Warhammer 40k] Heresy Pattern Bolter 5
+- [ADDED] New Weapon: [Warhammer 40k] Heresy Pattern Bolter 6
+- [ADDED] New Weapon: [Warhammer 40k] Heresy Pattern Bolter 7
+- [ADDED] New Weapon: [Warhammer 40k] Heresy Pattern Bolter 8
+- [ADDED] New Weapon: [Warhammer 40k] Heresy Pattern Bolter 9
+- [ADDED] New Weapon: [Warhammer 40k] Hesh Pattern Bolter
+- [ADDED] New Weapon: [Warhammer 40k] Long Las
+- [ADDED] New Weapon: [Warhammer 40k] Mark 1 Phobos Pattern Bolter
+- [ADDED] New Weapon: [Warhammer 40k] Mark 2 Mars Pattern Bolter
+- [ADDED] New Weapon: [Warhammer 40k] Mark 3 Godwyn Pattern Bolter
+- [ADDED] New Weapon: [Warhammer 40k] Mark 4 Stalker Bolter
+- [ADDED] New Weapon: [Warhammer 40k] Mark 4 Ultima Pattern
+- [ADDED] New Weapon: [Warhammer 40k] Mark 4 Ultima-Ryza Pattern
+- [ADDED] New Weapon: [Warhammer 40k] Tigrus Pattern Bolter
+- [ADDED] New Weapon: [Warhammer 40k] Umbra Pattern Bolter
+- [ADDED] New Weapon: AK-101
+- [ADDED] New Weapon: AK-12
+- [ADDED] New Weapon: AK-74M
+- [ADDED] New Weapon: British L85
+- [ADDED] New Weapon: Glock 17
+- [ADDED] New Weapon: Glock 18
+- [ADDED] New Weapon: H&K MP5A1
+- [ADDED] New Weapon: H&K MP5A3
+- [ADDED] New Weapon: H&K MP5A4
+- [ADDED] New Weapon: H&K MP5A5
+- [ADDED] New Weapon: H&K MP5K
+- [ADDED] New Weapon: H&K MP5KA1
+- [ADDED] New Weapon: H&K MP5KA4
+- [ADDED] New Weapon: M14A1
+- [ADDED] New Weapon: M4A1 (Iron Sight)
+- [ADDED] New Weapon: M4A2
+- [ADDED] New Weapon: M79 Shortened
+- [CHANGED] Add H&K to the name of the MP5A2
+- [CHANGED] Change name on the "FN P90" to "FN P90 TR"
+- [CHANGED] Make that so MassEffect weapons give you 10 Plasteel when melted
+- [CHANGED] New Warhammer 40K Bolt Pistol graphic
+- [CHANGED] Remove the "PAEquipment" Texture Path
+- [CHANGED] Rename and fix PK
+- [FIXED] Balance M4A1 Pulse Rifle
+- [FIXED] Fix the bolster so they have random texture again.
+- [FIXED] M-8 avenger rebalancing
+- [FIXED] Make the RPG-7 usable once only and more devastating.
+- [FIXED] Rename all def and xml file name from H&K to HoK to avid xml code problems
+
+===========================================
+(RimWorld) Project Armory - 2.17 (2014-12-16)
+===========================================
+
+- [MAJOR] Make the mod compatible with Alpha 8
+- [FIXED] The Bren Bullet have weird typo
+
+===========================================
+Project Armory - 2.16 Dev (Released 2014-11-16) 
+===========================================
+
+- [ADDED] Add categories to all weapons
+- [ADDED] New Weapon: [Project Armory] CS-18
+- [ADDED] New weapon: [Star Wars] DH17 Blaster
+- [ADDED] New Weapon: [Star Wars] DL44 Blaster
+- [ADDED] New Weapon: [Star Wars] EE-3 Carbine Rifle
+- [CHANGED] Bolter and Bolt Pistol secondary explosions added. Stat tweaks. (Need to be tested)
+- [CHANGED] Lowered damage on M-81 Pulse Rifle
+- [CHANGED] Range is to long SA.58 Tactical
+- [CHANGED] Range is to short FAMAS-G2
+- [FIXED] Mauser C96 is named M2 Browning
+- [FIXED] Vanilla weapons was deactivated and the Pistol missed its texture
+
+
+===========================================
+Project Armory - 2.15 (Released 2014-10-15) 
+===========================================
+
+- [MAJOR] Make the weapons compatible with Alpha 7
+- [CHANGED] Possibly remove NeolithicRanged tag from Crossbow and Yew Longbow
+- [CHANGED] Balance Renaissance Hand Mortar
+- [CHANGED] Balance RPG-7 (Evul) - resolved.
+- [CHANGED] Balance M79 Grenade Launcher
+- [CHANGED] Tweaked Falarica to set people on fire
+- [CHANGED] Added damage value to RPG7
+- [CHANGED] Added damage value to Renaissance Hand Mortar
+- [CHANGED] Adding damage value to M79, changed damagedef, and increased blast radius (and Alpha7 update)
+- [CHANGED] Changed Vanilla M-16 name to M16A1
+
+===========================================
+Project Armory - 2.14 (Released 2014-10-13) 
+===========================================
+
+- [MAJOR] Made mod partly compatible with Alpha 5
+
+===========================================
+Project Armory - 2.13 (Released 2014-08-17) 
+===========================================
+
+- [ADDED] New Weapon: [Project Armoury Exclusive] Plasma Venter
+- [ADDED] New Weapon: [Star Wars] Thermal Detonators
+- [ADDED] New Weapon: Kentucky Long Rifle
+- [ADDED] New Weapon: Sjögren Shotgun
+- [ADDED] New Weapon: Sjögren Rifle
+- [ADDED] New Weapon: Flintlock Fowler Shot
+- [ADDED] New Weapon: Flintlock Fowler Ball
+- [ADDED] New Weapon: [Project Armoury Exclusive] Plasma Pulse Venter
+- [ADDED] New Weapon: Boys Anti-Tank Rifle
+- [ADDED] New Weapon: M25
+- [ADDED] New Weapon: M-14 EBR
+- [ADDED] New Weapon: Hand Mortar
+- [ADDED] New Weapon: [Turok 2] Razor Wind
+- [ADDED] New Weapon: Boomerang
+- [ADDED] New Weapon: Chakram
+- [ADDED] New Weapon: Bolas
+- [ADDED] New Weapon: Kpinga
+- [ADDED] New Weapon: Atlatl
+- [ADDED] New Weapon: Falarica
+- [ADDED] New Weapon: Woomera
+- [ADDED] New Weapon: Longbow
+- [ADDED] New Weapon: WA2000
+- [ADDED] New Weapon: Madsen-Ramussen M1896
+- [ADDED] New Weapon: Walther PPK (supressed)
+- [FIXED] Fix spinning and returning weapons for Alpha 6
+
+===========================================
+Project Armory - 2.12 Dev (Released 2014-07-15) 
+===========================================
+
+- [ADDED] New Weapon: [DOOM 3] Plasma gun
+- [ADDED] New Weapon: [007] Moonraker Pistol
+- [ADDED] New Weapon: [007] Goldeneye Moonraker Laser
+- [ADDED] New Weapon: Mateba Autorevolver
+- [ADDED] New Weapon: Mateba Grifone
+- [ADDED] New Weapon: Roth-Steyr M1907
+- [ADDED] New Weapon: Star M1914
+- [ADDED] New Weapon: Steyr M1912
+- [ADDED] New Weapon: Steyr M1912 MP
+- [ADDED] New Weapon: Steyr-Mannlicher M1901
+- [ADDED] New Weapon: Webley Revolver
+- [ADDED] New Weapon: Winchester M1907
+- [ADDED] New Weapon: British Apache
+- [ADDED] New Weapon: Thompson M1928A1
+- [ADDED] New Weapon: Huot Automatic Rifle
+- [ADDED] New Weapon: [Turok 2] Plasma Rifle
+- [ADDED] New Weapon: [Turok: Rage Wars] Plasma Rifle
+- [ADDED] New Weapon: [007] Moonraker Laser
+- [ADDED] New Weapon: Gabbett-Fairfax Mars
+- [ADDED] New Weapon: Walther PPK
+- [ADDED] New Weapon: USAS-12
+- [ADDED] New Weapon: Smith & Wesson Model 29
+- [ADDED] New Weapon: Saiga-12
+- [ADDED] New Weapon: AA-12
+- [ADDED] New Weapon: LeMat Carbine
+- [ADDED] New Weapon: LeMat Revolver
+- [ADDED] New Weapon: Pancor Jackhammer
+- [ADDED] New Weapon: Apache
+- [ADDED] New Weapon: British Bulldog
+- [ADDED] New Weapon: Lebman M1911
+- [ADDED] New Weapon: Browning Auto-5
+- [ADDED] New Weapon: Colt Monitor
+- [ADDED] New Weapon: Lebman M1907
+- [ADDED] New Weapon: Sawn-off Browning Auto-5
+- [ADDED] New Weapon: Carcano M91
+- [ADDED] New Weapon: Chauchat
+- [ADDED] New Weapon: M1918 BAR
+- [ADDED] New Weapon: MP-18
+- [ADDED] New Weapon: Ross Rifle
+- [ADDED] New Weapon: Steyr-Mannlicher M1894
+- [ADDED] New Weapon: Steyr-Mannlicher M1895
+- [ADDED] New Weapon: Dragon
+- [ADDED] New Weapon: Webley-Fosbery Automatic Revolver
+- [ADDED] New Weapon: McMillan Tac-50
+- [ADDED] New Weapon: KRISS Vector
+- [ADDED] New weapon: [Mass Effect] M-8 Avenger
+- [CHANGED] Glock 17 and 18 texture replaced.
+- [CHANGED] Damage on the for FN P90 to low.
+- [CHANGED] Lower the warmup tick value for support weapons. (M60 machine gun, M2 Browning and Bren)
+
+Known Issue:
+- Weapons Kit Switcher are missing new weapon categorie.
+- CS19 is missing its texture. (Have placeholder)
+
+===========================================
+Project Armory - 2.11 (Released 2014-07-05) 
+===========================================
+
+- [MAJOR] Made mod compatible with Alpha 5
+
+===========================================
+Project Armory - 2.10 (Released 2014-06-24) 
+===========================================
+
+- [FIXED] Spacing in label and description for M79, FAMASG2 vz58P, vz58V, Pistol, Shotgun
+- [FIXED] Fix textureFolderPath for Bolters
+
+===========================================
+Project Armory - 2.09 Dev (Released 2014-06-19) 
+===========================================
+
+- [ADDED] New Weapon: FN P90 (Silencer)
+- [FIXED] Typo in the def for FAMASG2
+- [FIXED] Picture Gun_BarrettM107 have a typo.
+- [FIXED] Picture Gun_BarrettM82 have a typo.
+
+===========================================
+Project Armory - 2.08 Dev (Released 2014-06-10) 
+===========================================
+
+- [ADDED] Add weapon description stats (by: Goatlike)
+- [ADDED] New Weapon: FAMAS-G2
+- [ADDED] New weapon: M79 grenade launcher
+- [ADDED] New Weapon: vz. 58 P
+- [ADDED] New Weapon: vz. 58 V
+- [FIXED] Mossberg 500 label is wrong
+
+===========================================
+Project Armory - 2.07 Dev (Released 2014-06-03) 
+===========================================
+
+- [ADDED] Weapons Kit Switcher tool for changing weapons.
+
+===========================================
+Project Armory - 2.06 (Released 2014-06-02) 
+===========================================
+
+- [MAJOR] Project Armory Compatible with Alpha 4
+- [MAJOR] Bullet damage on sniper and support weapons different then caliber damage.
+- [ADDED] New Weapon: Bolter
+- [CHANGED] Change texture of the Boltpistol
+- [FIXED] Some files are missing ThingDefs at the end
+- [TEXT] Add Project Armory License, code and texture maker, to all weapons.
+
+===========================================
+Project Armory - 2.05 (Released 2014-05-03) 
+===========================================
+
+- [ADDED] New weapon: AS Val
+- [ADDED] New weapon: Colt M1911
+- [ADDED] New weapon: ENERGY "BRX-A1"
+- [ADDED] New weapon: ENERGY "BRX-A2"
+- [ADDED] New Weapon: Heckler & Koch UMP
+- [ADDED] New weapon: M14 Rifle
+- [ADDED] New weapon: M249
+- [ADDED] New Weapon: MP 40
+- [ADDED] New weapon: Nambu
+- [ADDED] New Weapon: PK
+- [ADDED] New weapon: Pump Shotgun Mossbearg500
+- [ADDED] New weapon: RPD
+- [ADDED] New weapon: SA.58 Tactical
+- [ADDED] New Weapon: Vera
+- [ADDED] New Weapon: Winchester Model 70
+- [CHANGED] Franchi SPAS-12 balancing
+- [CHANGED] Las weapon rifle vs pistol damage
+- [CHANGED] Re work the Weapons_Guns.xml and only edit the weapons that actually is changed.
+- [CHANGED] The HALO MA5D ICWS rifle
+- [FIXED] AKS 74U has the same stats as the AK 47
+- [FIXED] Forgot to edit the description of the about.xml
+- [FIXED] Franchi SPAS-12 are using wrong <texturePath> 
+- [FIXED] Lupara
+- [FIXED] PA_ModernWeapon-Mac10.xml labe is wrong
+- [FIXED] PA_WorldWar2Weapon-Nambu have wrong defName
+- [FIXED] PA_WorldWar2Weapon-Thompson1920.xml lable name is wrong
+
+===========================================

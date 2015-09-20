@@ -1,0 +1,245 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ThingDefs>
+
+  <ThingDef Name="ApparelBase" Abstract="True">
+    <thingClass>Apparel</thingClass>
+    <category>Item</category>
+    <selectable>True</selectable>
+    <pathCost>10</pathCost>
+    <useHitPoints>True</useHitPoints>
+    <graphicData>
+      <onGroundRandomRotateAngle>35</onGroundRandomRotateAngle>
+    </graphicData>
+    <drawGUIOverlay>true</drawGUIOverlay>
+    <statBases>
+      <MaxHitPoints>100</MaxHitPoints>
+      <Flammability>1.0</Flammability>
+      <DeteriorationRate>1</DeteriorationRate>
+      <SellPriceFactor>0.05</SellPriceFactor>
+    </statBases>
+    <altitudeLayer>Item</altitudeLayer>
+    <alwaysHaulable>True</alwaysHaulable>
+    <tickerType>Never</tickerType>
+    <thingCategories>
+      <li>ArmorHeadgear</li>
+    </thingCategories>
+    <comps>
+      <li>
+        <compClass>CompForbiddable</compClass>
+      </li>
+      <li>
+        <compClass>CompColorable</compClass>
+      </li>
+      <li>
+        <compClass>CompQuality</compClass>
+      </li>
+    </comps>
+  </ThingDef>
+
+
+
+  <ThingDef ParentName="ApparelBase">
+    <defName>Apparello_PTAerodynamic</defName>
+    <label>transcended aerodynamic visor</label>
+    <description>Pre transcended technology.</description>
+    <graphicData>
+      <texPath>PreAcs/AcsHelm</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <statBases>
+      <MarketValue>1500</MarketValue>
+      <ArmorRating_Blunt>0.1</ArmorRating_Blunt>
+      <ArmorRating_Sharp>0.53</ArmorRating_Sharp>
+      <ArmorRating_Electric>-1</ArmorRating_Electric>
+      <Insulation_Heat>10</Insulation_Heat>
+      <Insulation_Cold>-10</Insulation_Cold>
+    </statBases>
+    <equippedStatOffsets>
+      <SocialImpact>0.15</SocialImpact>
+      <MoveSpeed>-0.02</MoveSpeed>
+      <PsychicSensitivity>-0.05</PsychicSensitivity>
+      <MentalBreakThreshold>-0.01</MentalBreakThreshold>
+      <GlobalLearningFactor>0.02</GlobalLearningFactor>
+    </equippedStatOffsets>
+    <apparel>
+      <bodyPartGroups>
+        <li>FullHead</li>
+      </bodyPartGroups>
+      <worngraphicPath>PreAcs/AcsHelm</worngraphicPath>
+      <layers>
+        <li>Overhead</li>
+      </layers>
+      <commonality>1</commonality>
+      <tags>
+        <li>PreTranny</li>
+      </tags>
+    </apparel>
+    <colorGenerator Class="ColorGenerator_Options">
+      <options>
+        <li>
+          <weight>20</weight>
+          <only>RGBA(1,1,1,1)</only>
+        </li>
+      </options>
+    </colorGenerator>
+  </ThingDef>
+
+
+
+
+
+
+
+
+  <ThingDef ParentName="ApparelBase">
+    <defName>Apparello_PTKurt</defName>
+    <label>transcended cowl</label>
+    <description>Pre transcended technology.</description>
+    <graphicData>
+      <texPath>PreAcsElite/Kurt</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <statBases>
+      <MarketValue>1500</MarketValue>
+      <ArmorRating_Blunt>0.3</ArmorRating_Blunt>
+      <ArmorRating_Sharp>0.35</ArmorRating_Sharp>
+      <DeteriorationRate>0.1</DeteriorationRate>
+    </statBases>
+    <equippedStatOffsets>
+      <ShootingAccuracy>0.15</ShootingAccuracy>
+    </equippedStatOffsets>
+    <apparel>
+      <bodyPartGroups>
+        <li>FullHead</li>
+      </bodyPartGroups>
+      <worngraphicPath>PreAcsElite/Kurt</worngraphicPath>
+      <layers>
+        <li>Overhead</li>
+      </layers>
+      <commonality>1</commonality>
+      <tags>
+        <li>PreTrannyElite</li>
+      </tags>
+    </apparel>
+    <colorGenerator Class="ColorGenerator_Options">
+      <options>
+        <li>
+          <weight>20</weight>
+          <only>RGBA(1,1,1,1)</only>
+        </li>
+      </options>
+    </colorGenerator>
+  </ThingDef>
+
+
+
+  <!--Commissar-->
+
+  <ThingDef ParentName="ApparelBase">
+    <defName>Apparello_PTCommissar</defName>
+    <label>transcended peaked cap</label>
+    <description>Often seen on military officers.</description>
+    <useHitPoints>True</useHitPoints>
+    <graphicData>
+      <texPath>PreAcs/DisCommissar</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <thingCategories>
+      <li>Headgear</li>
+    </thingCategories>
+    <statBases>
+      <MarketValue>250</MarketValue>
+      <ArmorRating_Blunt>0.08</ArmorRating_Blunt>
+      <ArmorRating_Sharp>0.08</ArmorRating_Sharp>
+      <Insulation_Cold>-1</Insulation_Cold>
+      <Insulation_Heat>-1</Insulation_Heat>
+      <MaxHitPoints>100</MaxHitPoints>
+      <Flammability>1.0</Flammability>
+      <DeteriorationRate>1</DeteriorationRate>
+      <SellPriceFactor>0.35</SellPriceFactor>
+    </statBases>
+    <equippedStatOffsets>
+      <MentalBreakThreshold>-0.10</MentalBreakThreshold>
+    </equippedStatOffsets>
+    <apparel>
+      <bodyPartGroups>
+        <li>UpperHead</li>
+      </bodyPartGroups>
+      <worngraphicPath>PreAcs/Commissar</worngraphicPath>
+      <layers>
+        <li>Overhead</li>
+      </layers>
+      <commonality>1</commonality>
+      <tags>
+        <li>PTHattegat</li>
+      </tags>
+    </apparel>
+    <colorGenerator Class="ColorGenerator_Options">
+      <options>
+        <li>
+          <weight>4</weight>
+          <only>RGBA(1,1,1,1)</only>
+        </li>
+      </options>
+    </colorGenerator>
+  </ThingDef>
+
+  <ThingDef ParentName="ApparelBase">
+    <defName>Apparello_PTAerodynamicDROP</defName>
+    <label>pre-transcended aerodynamic visor</label>
+    <description>Pre transcended technology.</description>
+    <graphicData>
+      <texPath>PreAcs/AcsHelm</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+	<useHitPoints>True</useHitPoints>
+    <thingCategories>
+      <li>Headgear</li>
+    </thingCategories>
+    <statBases>
+      <MaxHitPoints>200</MaxHitPoints>
+      <Flammability>1.0</Flammability>
+      <DeteriorationRate>0.5</DeteriorationRate>
+      <SellPriceFactor>0.1</SellPriceFactor>
+      <MarketValue>1000</MarketValue>
+      <ArmorRating_Blunt>0.5</ArmorRating_Blunt>
+      <ArmorRating_Sharp>0.53</ArmorRating_Sharp>
+      <ArmorRating_Electric>-1</ArmorRating_Electric>
+      <Insulation_Heat>5</Insulation_Heat>
+      <Insulation_Cold>-5</Insulation_Cold>
+    </statBases>
+    <equippedStatOffsets>
+      <SocialImpact>0.15</SocialImpact>
+      <MoveSpeed>-0.02</MoveSpeed>
+      <PsychicSensitivity>-0.05</PsychicSensitivity>
+      <MentalBreakThreshold>-0.01</MentalBreakThreshold>
+      <GlobalLearningFactor>0.02</GlobalLearningFactor>
+    </equippedStatOffsets>
+    <apparel>
+      <bodyPartGroups>
+        <li>FullHead</li>
+      </bodyPartGroups>
+      <worngraphicPath>PreAcs/AcsHelm</worngraphicPath>
+      <layers>
+        <li>Overhead</li>
+      </layers>
+      <commonality>0.8</commonality>
+      <tags>
+        <li>PreTranny</li>
+      </tags>
+    </apparel>
+    <colorGenerator Class="ColorGenerator_Options">
+      <options>
+        <li>
+          <weight>20</weight>
+          <only>RGBA(1,1,1,1)</only>
+        </li>
+        <li>
+          <weight>20</weight>
+          <only>RGBA(1,0.9,0.8,1)</only>
+        </li>
+      </options>
+    </colorGenerator>
+  </ThingDef>
+
+</ThingDefs>

@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<ThingDef Name="BuildingBase" Abstract="True">
+		<category>Building</category>
+
+		<soundImpactDefault>BulletImpactSteel</soundImpactDefault>
+
+		<selectable>true</selectable>
+		<rotatable>true</rotatable>
+
+		<terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
+		<constructEffect>ConstructMetal</constructEffect>
+		<repairEffect>Repair</repairEffect>
+		<holdsRoof>false</holdsRoof>
+		<blockLight>false</blockLight>
+		<leaveResourcesWhenKilled>true</leaveResourcesWhenKilled>
+		<filthLeaving>BuildingRubble</filthLeaving>
+
+		<altitudeLayer>Waist</altitudeLayer>
+		<passability>PassThroughOnly</passability>
+		<pathCost>60</pathCost>
+
+		<drawerType>MapMeshAndRealTime</drawerType>
+		<castEdgeShadows>true</castEdgeShadows>
+		<fillPercent>1</fillPercent>
+		<staticSunShadowHeight>0.34</staticSunShadowHeight>
+
+		<tickerType>Normal</tickerType>
+
+		<designationCategory>ConveyorOptions</designationCategory>
+		<researchPrerequisite>A2B_Teleporters</researchPrerequisite>
+	</ThingDef>
+
+	<ThingDef ParentName="BuildingBase">
+		<defName>A2BTeleporter</defName>
+		<label>teleporter</label>
+		<thingClass>Building</thingClass>
+		<graphicData>
+			<texPath>Things/Building/Teleporter</texPath>
+			<drawSize>(2,1)</drawSize>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<statBases>
+			<WorkToMake>1000</WorkToMake>
+			<MaxHitPoints>300</MaxHitPoints>
+			<Flammability>1.0</Flammability>
+			<Beauty>0</Beauty>
+		</statBases>
+		<description>Teleports items to the closest available receiver on the same channel.</description>
+		<comps>
+			<li>
+				<compClass>CompPowerTrader</compClass>
+				<basePowerConsumption>100</basePowerConsumption>
+				<shortCircuitInRain>false</shortCircuitInRain>
+				<soundPowerOn>PowerOnSmall</soundPowerOn>
+				<soundPowerOff>PowerOffSmall</soundPowerOff>
+				<transmitsPower>true</transmitsPower>
+				<startElectricalFires>true</startElectricalFires> 
+			</li>
+			<li>
+				<compClass>CompGlower</compClass>
+				<glowRadius>3</glowRadius>
+				<glowColor>(255,58,0,0)</glowColor>
+			</li>
+			<li>
+				<compClass>A2B_Teleport.BeltSenderComponent</compClass>
+			</li>
+		</comps>
+		<size>(2,1)</size>
+		<costList>
+			<SteelBar>50</SteelBar>
+			<PlasteelBar>100</PlasteelBar>
+		</costList>
+	</ThingDef>
+
+	<ThingDef ParentName="BuildingBase">
+		<defName>A2BReceiver</defName>
+		<label>receiver</label>
+		<thingClass>Building</thingClass>
+		<graphicData>
+			<texPath>Things/Building/Receiver</texPath>
+			<drawSize>(2,1)</drawSize>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<statBases>
+			<WorkToMake>800</WorkToMake>
+			<MaxHitPoints>300</MaxHitPoints>
+			<Flammability>1.0</Flammability>
+			<Beauty>0</Beauty>
+		</statBases>
+		<description>Receives items from a teleporter.  Be sure to use matching channels.</description>
+		<comps>
+			<li>
+				<compClass>CompPowerTrader</compClass>
+				<basePowerConsumption>100</basePowerConsumption>
+				<shortCircuitInRain>false</shortCircuitInRain>
+				<soundPowerOn>PowerOnSmall</soundPowerOn>
+				<soundPowerOff>PowerOffSmall</soundPowerOff>
+				<transmitsPower>true</transmitsPower>
+				<startElectricalFires>true</startElectricalFires>
+			</li>
+			<li>
+				<compClass>CompGlower</compClass>
+				<glowRadius>2</glowRadius>
+				<glowColor>(0,230,0,0)</glowColor>
+			</li>
+			<li>
+				<compClass>A2B_Teleport.BeltReceiverComponent</compClass>
+			</li>
+		</comps>
+		<size>(2,1)</size>
+		<costList>
+			<SteelBar>50</SteelBar>
+			<PlasteelBar>100</PlasteelBar>
+		</costList>
+	</ThingDef>
+
+</Defs>

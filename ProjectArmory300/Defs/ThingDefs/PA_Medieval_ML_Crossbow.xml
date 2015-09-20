@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ThingDefs>
+
+<!--
+PROJECT ARMORY WEAPON
+
+CODE AUTHOR: Generalcrusher
+TEXTURE MAKER: Generalcrusher
+
+
+USER LICENSE:
+All weapons texture and code may be altered to the users
+liking to fit the world the user wants to create.
+You may add or remove weapons of your downloaded
+Project Armory Pack to further more customize your world.
+You are also allowed to publish Project Armory weapons
+in your own modpack or mod. The only thing we ask for
+is that you link to our forum page so people that like
+the weapons can download more of them.
+-->
+
+  <ThingDef Name="BaseWeaponNeolithic" Abstract="True">
+    <category>Item</category>
+
+    <thingClass>ThingWithComps</thingClass>
+    <equipmentType>Primary</equipmentType>
+    <pathCost>10</pathCost>
+    <useHitPoints>True</useHitPoints>
+    <selectable>True</selectable>
+    <graphicData>
+      <onGroundRandomRotateAngle>35</onGroundRandomRotateAngle>
+    </graphicData>
+    <drawGUIOverlay>true</drawGUIOverlay>
+    <statBases>
+      <MaxHitPoints>100</MaxHitPoints>
+      <Flammability>1.0</Flammability>
+      <DeteriorationRate>1</DeteriorationRate>
+      <SellPriceFactor>0.25</SellPriceFactor>
+    </statBases>
+    <altitudeLayer>Item</altitudeLayer>
+    <alwaysHaulable>True</alwaysHaulable>
+    <tickerType>Never</tickerType>
+    <techLevel>Neolithic</techLevel>
+    <weaponTags>
+      <li>Neolithic</li>
+    </weaponTags>
+    <thingCategories>
+      <li>WeaponsRangedBows</li>
+    </thingCategories>
+    <comps>
+      <li>
+        <compClass>CompForbiddable</compClass>
+      </li>
+	  <li>
+        <compClass>CompEquippable</compClass>
+      </li>
+      <li>
+        <compClass>CompQuality</compClass>
+      </li>
+    </comps>
+  </ThingDef>
+
+  <ThingDef Name="BaseProjectileNeolithic" Abstract="True">
+    <category>Projectile</category>
+    <tickerType>Normal</tickerType>
+    <altitudeLayer>Projectile</altitudeLayer>
+    <thingClass>Bullet</thingClass>
+    <label>arrow</label>
+    <useHitPoints>False</useHitPoints>
+    <neverMultiSelect>True</neverMultiSelect>
+    <graphicData>
+      <shaderType>Transparent</shaderType>
+    </graphicData>
+  </ThingDef>
+
+
+	<!-- ========================== SPECIFICS ============================== -->
+
+	<ThingDef ParentName="BaseProjectileNeolithic">
+		<defName>Crossbow_Dart_PA</defName>
+		<label>Crossbow Dart</label>
+		<graphicData>
+		<texPath>Things/Projectile/Atlatl_Dart</texPath>
+		<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<projectile>
+			<damageDef>Bullet</damageDef>
+			<DamageAmountBase>10</DamageAmountBase>
+			<Speed>44</Speed>
+		</projectile>
+	</ThingDef>
+ 
+  <ThingDef ParentName="BaseWeaponNeolithic">
+    <defName>Gun_Crossbow_PA</defName>
+    <label>Crossbow</label>
+	<description>A very old Crossbow.</description>
+	<graphicData>
+    <texPath>Things/Item/Gun_L_Crossbow</texPath>
+    <graphicClass>Graphic_Single</graphicClass>
+	</graphicData>
+    <soundInteract>BowSmall</soundInteract>
+    <statBases>
+      <WorkToMake>2400</WorkToMake>
+      <MarketValue>100</MarketValue>
+      <AccuracyTouch>0.56</AccuracyTouch>
+      <AccuracyShort>0.60</AccuracyShort>
+      <AccuracyMedium>0.68</AccuracyMedium>
+      <AccuracyLong>0.70</AccuracyLong>
+      <RangedWeapon_Cooldown>0.66</RangedWeapon_Cooldown>
+    </statBases>
+	<weaponTags>
+      <li>NeolithicRanged</li>
+    </weaponTags>
+	<costList>
+			<SteelBar>10</SteelBar>
+			<WoodPlank>150</WoodPlank>
+		</costList>
+		<recipeMaker>
+			<skillRequirements>
+				<li>
+					<skill>Crafting</skill>
+					<minLevel>4</minLevel>
+				</li>
+			</skillRequirements>
+			<workSpeedStat>SmithingSpeed</workSpeedStat>
+			<workSkill>Crafting</workSkill>
+			<effectWorking>Smith</effectWorking>
+			<soundWorking>Recipe_Smith</soundWorking>
+			<recipeUsers>
+				<li>PrimitiveWeaponCraftingWorkTable</li>
+			</recipeUsers>
+			<unfinishedThingDef>UnfinishedWeapon</unfinishedThingDef>
+		</recipeMaker>
+    <verbs>
+      <li>
+        <verbClass>Verb_Shoot</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <projectileDef>Crossbow_Dart_PA</projectileDef>
+        <warmupTicks>285</warmupTicks>
+        <range>32</range>
+        <soundCast>BowSmall</soundCast>
+      </li>
+    </verbs>
+  </ThingDef>
+</ThingDefs>

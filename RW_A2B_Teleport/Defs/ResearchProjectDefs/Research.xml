@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<ResearchProjectDef>
+		<defName>A2B_Teleporters</defName>
+		<label>[A2B] Teleporters</label>
+		<description>An advanced component using molecular disintegration, wireless data transmission and subsequent reintegration to move items.\n\nThese components are very power hungry.</description>
+		<totalCost>1000</totalCost>
+		<prerequisites>
+			<li>A2B2</li>
+		</prerequisites>
+	</ResearchProjectDef>
+
+	<ResearchProjectDef>
+		<defName>A2B_TeleporterPower</defName>
+		<label>[A2B] Teleporter Efficiency</label>
+		<description>Highly efficient microprocessors and circuitry reduces the power requirements when teleporting items. This should stop complaints about rolling black-outs!</description>
+		<totalCost>1000</totalCost>
+		<prerequisites>
+			<li>A2B_Teleporters</li>
+		</prerequisites>
+	</ResearchProjectDef>
+
+	<ResearchProjectDef>
+		<defName>A2B_TeleporterHeat</defName>
+		<label>[A2B] Teleporter Coolant</label>
+		<description>An improved teleporter design using liquid nitrogen coolant reduces the heat generated when teleporting items. No more flash fires!</description>
+		<totalCost>1000</totalCost>
+		<prerequisites>
+			<li>A2B_Teleporters</li>
+		</prerequisites>
+	</ResearchProjectDef>
+
+	<ResearchProjectDef>
+		<defName>A2B_TeleporterChannels</defName>
+		<label>[A2B] Teleporter Channels</label>
+		<description>Increased network bands allows for more network channels to teleport on.</description>
+		<totalCost>1000</totalCost>
+		<prerequisites>
+			<li>A2B_Teleporters</li>
+		</prerequisites>
+	</ResearchProjectDef>
+
+	<ResearchProjectDef>
+		<defName>A2B_TeleporterSpeed</defName>
+		<label>[A2B] Teleporter Speed</label>
+		<description>Increased network bandwidth allows for more more data to be pushed at once translating into faster teleportation.</description>
+		<totalCost>1000</totalCost>
+		<prerequisites>
+			<li>A2B_Teleporters</li>
+		</prerequisites>
+	</ResearchProjectDef>
+
+</Defs>

@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<ThingDef Name="BuildingBase" Abstract="True">
+		<category>Building</category>
+
+		<soundImpactDefault>BulletImpactSteel</soundImpactDefault>
+
+		<selectable>true</selectable>
+		<rotatable>true</rotatable>
+
+		<terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
+		<constructEffect>ConstructMetal</constructEffect>
+		<repairEffect>Repair</repairEffect>
+		<holdsRoof>false</holdsRoof>
+		<blockLight>false</blockLight>
+		<leaveResourcesWhenKilled>true</leaveResourcesWhenKilled>
+		<filthLeaving>BuildingRubble</filthLeaving>
+
+		<altitudeLayer>FloorEmplacement</altitudeLayer>
+		<passability>PassThroughOnly</passability>
+
+		<drawerType>MapMeshAndRealTime</drawerType>
+		<fillPercent>0</fillPercent>
+
+		<tickerType>Normal</tickerType>
+
+		<designationCategory>ConveyorOptions</designationCategory>
+		<researchPrerequisite>A2B2</researchPrerequisite>
+	</ThingDef>
+
+	<ThingDef ParentName="BuildingBase">
+		<defName>A2BSelectorOpposite</defName>
+		<label>opposite selector</label>
+		<thingClass>Building_Storage</thingClass>
+		<graphicData>
+			<texPath>Things/Building/SelectorOpposite</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<inspectorTabs>
+			<li>ITab_Storage</li>
+		</inspectorTabs>
+		<statBases>
+			<WorkToMake>550</WorkToMake>
+			<MaxHitPoints>200</MaxHitPoints>
+			<Flammability>1.0</Flammability>
+			<Beauty>0</Beauty>
+		</statBases>
+		<description>Sort and redirect items.</description>
+		<comps>
+			<li>
+				<compClass>CompPowerTrader</compClass>
+				<basePowerConsumption>25</basePowerConsumption>
+				<shortCircuitInRain>false</shortCircuitInRain>
+				<soundPowerOn>PowerOnSmall</soundPowerOn>
+				<soundPowerOff>PowerOffSmall</soundPowerOff>
+				<transmitsPower>true</transmitsPower>
+				<startElectricalFires>true</startElectricalFires>
+			</li>
+			<li>
+				<compClass>CompGlower</compClass>
+				<glowRadius>1</glowRadius>
+				<glowColor>(255,200,0,0)</glowColor>
+			</li>
+			<li>
+				<compClass>A2B_Selector.Opposite</compClass>
+			</li>
+		</comps>
+		<size>(1,1)</size>
+		<costList>
+			<SteelBar>25</SteelBar>
+		</costList>
+	</ThingDef>
+
+</Defs>

@@ -1,0 +1,88 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<PawnKindDefs>
+
+  <PawnKindDef>
+    <defName>PTdrone</defName>
+    <label>drone</label>
+    <race>Mechanoid_PTdrone</race>
+    <combatPower>160</combatPower>
+    <defaultFactionType>PreTransfaction</defaultFactionType>
+    <aiAvoidCover>false</aiAvoidCover>
+	<lifeStages>
+      <li>
+        <bodyGraphicData>
+          <texPath>Squib/Cybot</texPath>
+          <graphicClass>Graphic_Multi</graphicClass>
+          <drawSize>1</drawSize>
+          <shadowData>
+            <volume>(0.4, 0.8, 0.4)</volume>
+          </shadowData>
+        </bodyGraphicData>
+      </li>
+    </lifeStages>
+    <weaponMoney>
+      <min>8000</min>
+      <max>8000</max>
+    </weaponMoney>
+    <weaponTags>
+      <li>TransOrange</li>
+    </weaponTags>
+  </PawnKindDef>
+
+  <PawnKindDef>
+    <defName>PTdronetwo</defName>
+    <label>combat drone</label>
+    <race>Mechanoid_PTdrone</race>
+    <combatPower>160</combatPower>
+    <defaultFactionType>PreTransfaction</defaultFactionType>
+    <aiAvoidCover>false</aiAvoidCover>
+	<lifeStages>
+      <li>
+        <bodyGraphicData>
+          <texPath>Squib/Cybotwo</texPath>
+          <graphicClass>Graphic_Multi</graphicClass>
+          <drawSize>1</drawSize>
+          <shadowData>
+            <volume>(0.4, 0.8, 0.4)</volume>
+          </shadowData>
+        </bodyGraphicData>
+      </li>
+    </lifeStages>
+    <weaponMoney>
+      <min>8000</min>
+      <max>8000</max>
+    </weaponMoney>
+    <weaponTags>
+      <li>TransBlue</li>
+    </weaponTags>
+  </PawnKindDef>
+
+  <PawnKindDef>
+    <defName>PTandroid</defName>
+    <label>android</label>
+    <race>Mechanoid_PTSocialbot</race>
+    <combatPower>190</combatPower>
+    <defaultFactionType>PreTransfaction</defaultFactionType>
+    <aiAvoidCover>true</aiAvoidCover>
+	<lifeStages>
+      <li>
+        <bodyGraphicData>
+          <texPath>Squib/Socialbot</texPath>
+          <graphicClass>Graphic_Multi</graphicClass>
+          <drawSize>1</drawSize>
+          <shadowData>
+            <volume>(0.4, 0.8, 0.4)</volume>
+          </shadowData>
+        </bodyGraphicData>
+      </li>
+    </lifeStages>
+    <weaponMoney>
+      <min>8000</min>
+      <max>8000</max>
+    </weaponMoney>
+    <weaponTags>
+      <li>TransORB</li>
+    </weaponTags>
+  </PawnKindDef>
+
+</PawnKindDefs>

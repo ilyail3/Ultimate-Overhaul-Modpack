@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ThingDefs>
+
+<!--
+PROJECT ARMORY WEAPON
+
+CODE AUTHOR: Bog
+
+TEXTURE MAKER: Bog
+
+
+USER LICENSE:
+All weapons texture and code may be altered to the users
+liking to fit the world the user wants to create.
+You may add or remove weapons of your downloaded
+Project Armory Pack to further more customize your world.
+You are also allowed to publish Project Armory weapons
+in your own modpack or mod. The only thing we ask for
+is that you link to our forum page so people that like
+the weapons can download more of them.
+-->
+
+	<!-- ==================== Bases ========================== -->
+
+	<ThingDef Name="BaseEquipment" Abstract="True">
+
+		<equipmentType>Secondary</equipmentType>
+		<label>equipment lacks label</label>
+		<thingClass>ThingWithComps</thingClass>
+		<category>Item</category>
+		<useHitPoints>true</useHitPoints>
+		<selectable>true</selectable>
+		<graphicData>
+      <onGroundRandomRotateAngle>35</onGroundRandomRotateAngle>
+    </graphicData>
+		<drawGUIOverlay>true</drawGUIOverlay>
+		<statBases>
+			  <MaxHitPoints>100</MaxHitPoints>
+			  <Flammability>1.0</Flammability>
+			<DeteriorationRate>1</DeteriorationRate>
+			<SellPriceFactor>0.25</SellPriceFactor>
+		</statBases>
+		<altitudeLayer>Item</altitudeLayer>
+		<description>Equipment lacks desc.</description>
+		<weaponTags>
+			<li>Grenade</li>
+		</weaponTags>
+		<comps>
+			<li>
+				<compClass>CompForbiddable</compClass>
+			</li>
+			<li>
+				<compClass>CompEquippable</compClass>
+			</li>
+			<li>
+				<compClass>CompQuality</compClass>
+			</li>
+		<li>
+			<compClass>CompArt</compClass>
+			<nameMaker>NamerGun</nameMaker>
+			<descriptionMaker>ArtWeaponGun</descriptionMaker>
+			<minQualityForArtistic>Excellent</minQualityForArtistic>
+		</li>
+		</comps>
+		<smeltProducts>
+			<SteelBar>10</SteelBar>
+		</smeltProducts>
+		<alwaysHaulable>true</alwaysHaulable>
+		<thingCategories>
+			<li>WeaponsRangedLaunchers</li>
+		</thingCategories>
+		<tickerType>Never</tickerType>
+	  </ThingDef>
+
+
+	<ThingDef Name="BaseGrenade" Abstract="True">
+		<category>Projectile</category>
+		<altitudeLayer>Projectile</altitudeLayer>
+		<thingClass>Projectile_Explosive</thingClass>
+		<label>projectile</label>
+		<tickerType>Normal</tickerType>
+		<useHitPoints>False</useHitPoints>
+		<neverMultiSelect>True</neverMultiSelect>
+		<graphicData>
+      <shaderType>Transparent</shaderType>
+    </graphicData>
+		<projectile>
+			  <speed>20</speed>
+			  <flyOverhead>false</flyOverhead>
+		</projectile>
+	</ThingDef>
+
+
+
+	<ThingDef ParentName="BaseGrenade">
+		<defName>Proj_HandMortar</defName>
+		<label>grenade</label>
+		<thingClass>Projectile_Explosive</thingClass>
+		<graphicData>
+		<texPath>Things/Projectile/HandMortar_Grenade</texPath>
+		<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<projectile>
+			  <explosionRadius >1.1</explosionRadius >
+			  <damageDef>Bomb</damageDef>
+			  <damageAmountBase>12</damageAmountBase>
+			  <explosionDelay>120</explosionDelay>
+		</projectile>
+	</ThingDef>
+
+	<ThingDef ParentName="BaseEquipment">
+		<defName>Hand_Mortar_wea</defName>
+		<equipmentType>Primary</equipmentType>
+		<label>Hand Mortar</label>
+		<description>This grenade launching wheel-lock pistol dates back to the 1580's. It's designed to fire 2" calibre greanades.</description>
+		<graphicData>
+		<texPath>Things/Item/Gun_L_HandMortar</texPath>
+		<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<soundInteract>InteractRifle</soundInteract>
+		<statBases>
+			<MarketValue>220</MarketValue>
+			<WorkToMake>1000</WorkToMake>
+			<AccuracyTouch>0.82</AccuracyTouch>
+			<AccuracyShort>0.41</AccuracyShort>
+			<AccuracyMedium>0.30</AccuracyMedium>
+			<AccuracyLong>0.19</AccuracyLong>
+			<RangedWeapon_Cooldown>0.66</RangedWeapon_Cooldown>
+		</statBases>
+		<costList>
+			<WeaponParts>100</WeaponParts>
+		</costList>
+		<recipeMaker>
+			<skillRequirements>
+				<li>
+					<skill>Crafting</skill>
+					<minLevel>6</minLevel>
+				</li>
+			</skillRequirements>
+			<workSpeedStat>SmithingSpeed</workSpeedStat>
+			<workSkill>Crafting</workSkill>
+			<effectWorking>Smith</effectWorking>
+			<soundWorking>Recipe_Smith</soundWorking>
+			<recipeUsers>
+				<li>WeaponCraftingWorkTable</li>
+			</recipeUsers>
+			<unfinishedThingDef>UnfinishedWeapon</unfinishedThingDef>
+		</recipeMaker>
+		<techLevel>Midworld</techLevel>
+		<verbs>
+			<li>
+				<verbClass>Verb_LaunchProjectile</verbClass>
+				<hasStandardCommand>true</hasStandardCommand>
+				<range>20</range>
+				<forcedMissRadius>2.8</forcedMissRadius>
+				<warmupTicks>220</warmupTicks>
+				<noiseRadius>4</noiseRadius>
+				<ai_IsBuildingDestroyer>true</ai_IsBuildingDestroyer>
+				<soundCast>GunShotA</soundCast>
+				<targetParams>
+					<canTargetLocations>true</canTargetLocations>
+				</targetParams>
+				<projectileDef>Proj_HandMortar</projectileDef>
+			</li>
+		</verbs>
+	</ThingDef>
+	
+</ThingDefs>

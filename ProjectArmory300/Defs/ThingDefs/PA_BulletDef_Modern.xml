@@ -1,0 +1,1130 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ThingDefs>
+
+<!--
+PROJECT ARMORY WEAPON
+
+CODE AUTHOR: Evul and Felime
+
+USER LICENSE:
+All weapons texture and code may be altered to the users
+liking to fit the world the user wants to create.
+You may add or remove weapons of your downloaded
+Project Armory Pack to further more customize your world.
+You are also allowed to publish Project Armory weapons
+in your own modpack or mod. The only thing we ask for
+is that you link to our forum page so people that like
+the weapons can download more of them.
+
+-->
+
+	<ThingDef Name="BaseBullet" Abstract="True">
+			<category>Projectile</category>
+			<tickerType>Normal</tickerType>
+			<altitudeLayer>Projectile</altitudeLayer>
+			<thingClass>Bullet</thingClass>
+			<label>bullet</label>
+			<useHitPoints>False</useHitPoints>
+			<neverMultiSelect>True</neverMultiSelect>
+			<graphicData>
+      <shaderType>Transparent</shaderType>
+    </graphicData>
+	</ThingDef>
+	
+<!--
+BULLETS:
+  Bullet_127x108mm_R_PA
+  Bullet_127x99mmNATO_HMG_PA
+    Bullet_50BMG_HMG_PA
+  Bullet_127x99mmNATO_R_PA
+    Bullet_50BMG_R_PA
+  Bullet_127x99mmNATO_SR_PA
+    Bullet_50BMG_SR_PA
+  Bullet_12gauge_S_PA
+    Bullet_12gaugeShotshells_S_PA
+	Bullet_12gaugeBuckshot_S_PA
+	Bullet_12gaugeSlug_S_PA
+	Bullet_12gaugeSabots_S_PA
+	Bullet_12gaugeBrenneke_S_PA
+	Bullet_12gaugeFlechette_S_PA
+  Bullet_20gauge_S_PA
+  
+  
+ -->
+ 
+<!-- ============================================================== -->
+	<!-- 12.7x108mm -->
+	<!-- Velocity:   820 m/s -->
+	<!-- Energy:   16240 J -->
+<!-- ============================================================== -->
+	<!-- RIFLE -->
+	<ThingDef ParentName="BaseBullet">
+		<defName>Bullet_127x108mm_R_PA</defName>
+		<label>12.7x108mm</label>
+		<graphicData>
+		<texPath>Things/Projectile/Bullet_Big</texPath>
+		<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<projectile>
+			<damageDef>Bullet</damageDef>
+			<DamageAmountBase>43</DamageAmountBase>
+			<Speed>69</Speed>
+		</projectile>
+	</ThingDef>
+<!-- ============================================================== -->
+	<!-- 12.7x99mm NATO | .50 BMG -->
+	<!-- Velocity:  3044 m/s -->
+	<!-- Energy:   18050 J -->
+<!-- ============================================================== -->
+	<!-- HMG -->
+	<ThingDef ParentName="BaseBullet" Name="XML_127x99mmNATO_HMG_PA">
+		<defName>Bullet_127x99mmNATO_HMG_PA</defName>
+		<label>12.7x99mm NATO</label>
+		<graphicData>
+		<texPath>Things/Projectile/Bullet_Big</texPath>
+		<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<projectile>
+			<damageDef>Bullet</damageDef>
+			<DamageAmountBase>36</DamageAmountBase>
+			<Speed>70</Speed>
+		</projectile>
+	</ThingDef>
+				<ThingDef ParentName="XML_127x99mmNATO_HMG_PA">
+					<defName>Bullet_50BMG_HMG_PA</defName>
+					<label>.50 BMG</label>
+				</ThingDef>
+	<!-- RIFLE -->
+	<ThingDef ParentName="BaseBullet" Name="XML_127x99mmNATO_R_PA">
+		<defName>Bullet_127x99mmNATO_R_PA</defName>
+		<label>12.7x99mm NATO</label>
+		<graphicData>
+		<texPath>Things/Projectile/Bullet_Big</texPath>
+		<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<projectile>
+			<damageDef>Bullet</damageDef>
+			<DamageAmountBase>47</DamageAmountBase>
+			<Speed>81</Speed>
+		</projectile>
+	</ThingDef>
+				<ThingDef ParentName="XML_127x99mmNATO_R_PA">
+					<defName>Bullet_50BMG_R_PA</defName>
+					<label>.50 BMG</label>
+				</ThingDef>
+	<!-- SNIPER RIFLE -->
+	<ThingDef ParentName="BaseBullet" Name="XML_127x99mmNATO_SR_PA">
+		<defName>Bullet_127x99mmNATO_SR_PA</defName>
+		<label>12.7x99mm NATO</label>
+		<graphicData>
+		<texPath>Things/Projectile/Bullet_Big</texPath>
+		<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<projectile>
+			<damageDef>Bullet</damageDef>
+			<DamageAmountBase>63</DamageAmountBase>
+			<Speed>100</Speed>
+		</projectile>
+	</ThingDef>
+				<ThingDef ParentName="XML_127x99mmNATO_SR_PA">
+					<defName>Bullet_50BMG_SR_PA</defName>
+					<label>.50 BMG</label>
+				</ThingDef>
+<!-- ============================================================== -->
+	<!-- .351 Winchester Self-Loading -->
+	<!-- Velocity:   570 m/s -->
+	<!-- Energy:    1900 J -->
+<!-- ============================================================== -->
+	<!-- RIFLE -->
+	<ThingDef ParentName="BaseBullet" Name="XML_351WinchesterSelfLoading_R_PA">
+		<defName>Bullet_351WinchesterSelfLoading_R_PA</defName>
+		<label>.351 Winchester Self-Loading</label>
+		<graphicData>
+		<texPath>Things/Projectile/Bullet_Small</texPath>
+		<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<projectile>
+			<damageDef>Bullet</damageDef>
+			<DamageAmountBase>15</DamageAmountBase>
+			<Speed>68</Speed>
+		</projectile>
+	</ThingDef>
+				<ThingDef ParentName="XML_351WinchesterSelfLoading_R_PA">
+					<defName>Bullet_351SL_R_PA</defName>
+					<label>.351 SL</label>
+				</ThingDef>
+				<ThingDef ParentName="XML_351WinchesterSelfLoading_R_PA">
+					<defName>Bullet_351WSL_R_PA</defName>
+					<label>.351 WSL</label>
+				</ThingDef>				
+<!-- ============================================================== -->
+	<!-- 12 gauge -->
+	<!-- Velocity:   N/A m/s -->
+	<!-- Energy:     N/A J -->
+<!-- ============================================================== -->
+	<!-- SHOTGUN -->
+	<ThingDef ParentName="BaseBullet"  Name="XML_12gauge_S_PA">
+		<defName>Bullet_12gauge_S_PA</defName>
+		<label>12 gauge</label>
+		<graphicData>
+		<texPath>Things/Projectile/Bullet_Shotgun</texPath>
+		<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<projectile>
+			<damageDef>Bullet</damageDef>
+			<DamageAmountBase>20</DamageAmountBase>
+			<Speed>55</Speed>
+		</projectile>
+	</ThingDef>
+				<ThingDef ParentName="XML_12gauge_S_PA">
+					<defName>Bullet_12gaugeShotshells_S_PA</defName>
+					<label>12 gauge (Shotshells)</label>
+					<graphicData>
+					<texPath>Things/Projectile/Bullet_Shotgun</texPath>
+					<graphicClass>Graphic_Single</graphicClass>
+					</graphicData>
+					<projectile>
+						<damageDef>Bullet</damageDef>
+						<DamageAmountBase>15</DamageAmountBase>
+						<Speed>50</Speed>
+					</projectile>
+				</ThingDef>
+				<ThingDef ParentName="XML_12gauge_S_PA">
+					<defName>Bullet_12gaugeBuckshot_S_PA</defName>
+					<label>12 gauge (Buckshot)</label>
+				</ThingDef>
+				<ThingDef ParentName="XML_12gauge_S_PA">
+					<defName>Bullet_12gaugeSlug_S_PA</defName>
+					<label>12 gauge (Slug)</label>
+					<graphicData>
+					<texPath>Things/Projectile/Bullet_Big</texPath>
+					<graphicClass>Graphic_Single</graphicClass>
+					</graphicData>
+					<projectile>
+						<damageDef>Bullet</damageDef>
+						<DamageAmountBase>15</DamageAmountBase>
+						<Speed>52</Speed>
+					</projectile>
+				</ThingDef>	
+				<ThingDef ParentName="XML_12gauge_S_PA">
+					<defName>Bullet_12gaugeSabots_S_PA</defName>
+					<label>12 gauge (Sabots)</label>
+					<graphicData>
+					<texPath>Things/Projectile/Bullet_Small</texPath>
+					<graphicClass>Graphic_Single</graphicClass>
+					</graphicData>
+					<projectile>
+						<damageDef>Bullet</damageDef>
+						<DamageAmountBase>25</DamageAmountBase>
+						<Speed>58</Speed>
+					</projectile>
+				</ThingDef>			
+				<ThingDef ParentName="XML_12gauge_S_PA">
+					<defName>Bullet_12gaugeBrenneke_S_PA</defName>
+					<label>12 gauge (Brenneke)</label>
+					<graphicData>
+					<texPath>Things/Projectile/Bullet_Small</texPath>
+					<graphicClass>Graphic_Single</graphicClass>
+					</graphicData>
+					<projectile>
+						<damageDef>Bullet</damageDef>
+						<DamageAmountBase>26</DamageAmountBase>
+						<Speed>55</Speed>
+					</projectile>
+				</ThingDef>
+				<ThingDef ParentName="XML_12gauge_S_PA">
+					<defName>Bullet_12gaugeFlechette_S_PA</defName>
+					<label>12 gauge (Flechette)</label>
+					<graphicData>
+					<texPath>Things/Projectile/Bullet_Shotgun</texPath>
+					<graphicClass>Graphic_Single</graphicClass>
+					</graphicData>
+					<projectile>
+						<damageDef>Bullet</damageDef>
+						<DamageAmountBase>22</DamageAmountBase>
+						<Speed>55</Speed>
+					</projectile>
+				</ThingDef>
+<!-- ============================================================== -->
+	<!-- 20 gauge -->
+	<!-- Velocity:   N/A m/s -->
+	<!-- Energy:     N/A J -->
+<!-- ============================================================== -->
+	<!-- SHOTGUN -->
+	<ThingDef ParentName="BaseBullet">
+		<defName>Bullet_20gauge_S_PA</defName>
+		<label>20 gauge</label>
+		<graphicData>
+		<texPath>Things/Projectile/Bullet_Shotgun</texPath>
+		<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<projectile>
+			<damageDef>Bullet</damageDef>
+			<DamageAmountBase>16</DamageAmountBase>
+			<Speed>55</Speed>
+		</projectile>
+	</ThingDef>
+	
+<!-- ============================================================== -->
+	<!-- .300 Winchester Magnum -->
+	<!-- Velocity:   3029 m/s -->
+	<!-- Energy:     4092 J -->
+<!-- ============================================================== -->	
+
+	<!-- SNIPER RIFLE -->
+	<ThingDef ParentName="BaseBullet">
+		<defName>Bullet_300WinchesterMagnum_SR_PA</defName>
+		<label>.300 Winchester Magnum</label>
+		<graphicData>
+		<texPath>Things/Projectile/Bullet_Big</texPath>
+		<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<projectile>
+			<damageDef>Bullet</damageDef>
+			<DamageAmountBase>35</DamageAmountBase>
+			<Speed>110</Speed>
+		</projectile>
+	</ThingDef>
+
+<!-- ============================================================== -->
+	<!-- .303 British | 7.7x56mmR -->
+	<!-- Velocity:     844 m/s -->
+	<!-- Energy:      3463 J -->
+<!-- ============================================================== -->
+
+	<!-- LIGHT MACHINE GUN -->
+	<ThingDef ParentName="BaseBullet" Name="XML_303British_LMG_PA">
+		<defName>Bullet_303British_LMG_PA</defName>
+		<label>.303 British</label>
+		<graphicData>
+		<texPath>Things/Projectile/Bullet_Big</texPath>
+		<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<projectile>
+			<damageDef>Bullet</damageDef>
+			<DamageAmountBase>8</DamageAmountBase>
+			<Speed>70</Speed>
+		</projectile>
+	</ThingDef>
+				<ThingDef ParentName="XML_303British_LMG_PA">
+					<defName>Bullet_77x56mmR_LMG_PA</defName>
+					<label>7.7x56mmR</label>
+				</ThingDef>
+				
+	<!-- RIFLE -->
+	<ThingDef ParentName="BaseBullet" Name="XML_303British_R_PA">
+		<defName>Bullet_303British_R_PA</defName>
+		<label>.303 British</label>
+		<graphicData>
+		<texPath>Things/Projectile/Bullet_Big</texPath>
+		<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<projectile>
+			<damageDef>Bullet</damageDef>
+			<DamageAmountBase>18</DamageAmountBase>
+			<Speed>70</Speed>
+		</projectile>
+	</ThingDef>
+				<ThingDef ParentName="XML_303British_R_PA">
+					<defName>Bullet_77x56mmR_R_PA</defName>
+					<label>7.7x56mmR</label>
+				</ThingDef>
+
+<!-- ============================================================== -->
+	<!-- .308 Winchester  -->
+	<!-- Velocity:   860 m/s -->
+	<!-- Energy:    3590 J -->
+<!-- ============================================================== -->
+
+	<!-- SNIPER RIFLE -->
+	<ThingDef ParentName="BaseBullet">
+		<defName>Bullet_308Winchester_SR_PA</defName>
+		<label>.308 Winchester</label>
+		<graphicData>
+		<texPath>Things/Projectile/Bullet_Big</texPath>
+		<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<projectile>
+			<damageDef>Bullet</damageDef>
+			<DamageAmountBase>34</DamageAmountBase>
+			<Speed>100</Speed>
+		</projectile>
+	</ThingDef>	
+	
+<!-- ============================================================== -->
+	<!-- .32 S&W Long | .32 Colt New Police -->
+	<!-- Velocity:   219 m/s -->
+	<!-- Energy:     152 J -->
+<!-- ============================================================== -->
+
+	<!-- PISTOL -->
+	<ThingDef ParentName="BaseBullet" Name="XML_32SoWLong_P_PA">
+		<defName>Bullet_32SoWLong_P_PA</defName>
+		<label>.32 S&amp;W Long</label>
+		<graphicData>
+		<texPath>Things/Projectile/Bullet_Small</texPath>
+		<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<projectile>
+			<damageDef>Bullet</damageDef>
+			<DamageAmountBase>9</DamageAmountBase>
+			<Speed>54</Speed>
+		</projectile>
+	</ThingDef>
+				<ThingDef ParentName="XML_32SoWLong_P_PA">
+					<defName>Bullet_32ColtNewPolice_R_PA</defName>
+					<label>.32 Colt New Police</label>
+				</ThingDef>
+
+<!-- ============================================================== -->
+	<!-- .338 Lapua Magnum | 8.6x70mm | 8.58x70mm) -->
+	<!-- Velocity:   1005 m/s -->
+	<!-- Energy:     6734 J -->
+<!-- ============================================================== -->
+
+	<!-- SNIPER RIFLE -->
+	<ThingDef ParentName="BaseBullet" Name="XML_338LapuaMagnum_SR_PA">
+		<defName>Bullet_338LapuaMagnum_SR_PA</defName>
+		<label>.338 Lapua Magnum</label>
+		<graphicData>
+		<texPath>Things/Projectile/Bullet_Small</texPath>
+		<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<projectile>
+			<damageDef>Bullet</damageDef>
+			<DamageAmountBase>40</DamageAmountBase>
+			<Speed>100</Speed>
+		</projectile>
+	</ThingDef>
+				<ThingDef ParentName="XML_338LapuaMagnum_SR_PA">
+					<defName>Bullet_86x70mm_SR_PA</defName>
+					<label>8.6x70mm</label>
+				</ThingDef>
+				<ThingDef ParentName="XML_338LapuaMagnum_SR_PA">
+					<defName>Bullet_858x70mm_SR_PA</defName>
+					<label>8.58x70mm</label>
+				</ThingDef>
+
+<!-- ============================================================== -->
+	<!-- .357 Magnum -->
+	<!-- Velocity:   490 m/s -->
+	<!-- Energy:     960 J -->
+<!-- ============================================================== -->
+
+	<!-- PISTOL -->
+	<ThingDef ParentName="BaseBullet">
+		<defName>Bullet_357Magnum_P_PA</defName>
+		<label>.357 Magnum</label>
+		<graphicData>
+		<texPath>Things/Projectile/Bullet_Small</texPath>
+		<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<projectile>
+			<damageDef>Bullet</damageDef>
+			<DamageAmountBase>11</DamageAmountBase>
+			<Speed>56</Speed>
+		</projectile>
+	</ThingDef>
+
+<!-- ============================================================== -->
+	<!-- .44 Magnum -->
+	<!-- Velocity:    391 m/s -->
+	<!-- Energy:     1030 J -->
+<!-- ============================================================== -->
+
+	<!-- PISTOL -->
+	<ThingDef ParentName="BaseBullet">
+		<defName>Bullet_44Magnum_P_PA</defName>
+		<label>.44 Magnum</label>
+		<graphicData>
+		<texPath>Things/Projectile/Bullet_Small</texPath>
+		<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<projectile>
+			<damageDef>Bullet</damageDef>
+			<DamageAmountBase>11</DamageAmountBase>
+			<Speed>55</Speed>
+		</projectile>
+	</ThingDef>
+
+<!-- ============================================================== -->
+	<!-- .455 Webley -->
+	<!-- Velocity:   392 m/s -->
+	<!-- Energy:     210 J -->
+<!-- ============================================================== -->
+
+	<!-- PISTOL -->
+	<ThingDef ParentName="BaseBullet">
+		<defName>Bullet_455Webley_P_PA</defName>
+		<label>.455 Webley</label>
+		<graphicData>
+		<texPath>Things/Projectile/Bullet_Small</texPath>
+		<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<projectile>
+			<damageDef>Bullet</damageDef>
+			<DamageAmountBase>10</DamageAmountBase>
+			<Speed>54</Speed>
+		</projectile>
+	</ThingDef>
+	
+<!-- ============================================================== -->
+	<!-- .45 ACP | 11.43x23mm | .45 Auto -->
+	<!-- Velocity:   250 m/s -->
+	<!-- Energy:     477 J -->
+<!-- ============================================================== -->
+
+	<!-- PISTOL -->
+	<ThingDef ParentName="BaseBullet" Name="XML_45ACP_P_PA">
+		<defName>Bullet_45ACP_P_PA</defName>
+		<label>.45 ACP</label>
+		<graphicData>
+		<texPath>Things/Projectile/Bullet_Small</texPath>
+		<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<projectile>
+			<damageDef>Bullet</damageDef>
+			<DamageAmountBase>10</DamageAmountBase>
+			<Speed>55</Speed>
+		</projectile>
+	</ThingDef>
+				<ThingDef ParentName="XML_45ACP_P_PA">
+					<defName>Bullet_1143x23mm_P_PA</defName>
+					<label>11.43x23mm</label>
+				</ThingDef>
+				<ThingDef ParentName="XML_45ACP_P_PA">
+					<defName>Bullet_45Auto_P_PA</defName>
+					<label>.45 Auto</label>
+				</ThingDef>
+
+	<!-- SMG -->
+	<ThingDef ParentName="BaseBullet" Name="XML_45ACP_SMG_PA">
+		<defName>Bullet_45ACP_SMG_PA</defName>
+		<label>.45 ACP</label>
+		<graphicData>
+		<texPath>Things/Projectile/Bullet_Small</texPath>
+		<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<projectile>
+			<damageDef>Bullet</damageDef>
+			<DamageAmountBase>4</DamageAmountBase>
+			<Speed>55</Speed>
+		</projectile>
+	</ThingDef>
+				<ThingDef ParentName="XML_45ACP_SMG_PA">
+					<defName>Bullet_1143x23mm_SMG_PA</defName>
+					<label>11.43x23mm</label>
+				</ThingDef>
+				<ThingDef ParentName="XML_45ACP_SMG_PA">
+					<defName>Bullet_45Auto_SMG_PA</defName>
+					<label>.45 Auto</label>
+				</ThingDef>
+	
+<!-- ============================================================== -->
+	<!-- 4.73x25mm caseless -->
+	<!-- Velocity:   930.0 m/s -->
+	<!-- Energy:    1416.0 J -->
+<!-- ============================================================== -->
+
+	<!-- ASSAULT RIFLE -->
+	<ThingDef ParentName="BaseBullet">
+		<defName>Bullet_473x25mmcaseless_AR_PA</defName>
+		<label>4.73x25mm caseless</label>
+		<graphicData>
+		<texPath>Things/Projectile/Bullet_Small</texPath>
+		<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<projectile>
+			<damageDef>Bullet</damageDef>
+			<DamageAmountBase>6</DamageAmountBase>
+			<Speed>70</Speed>
+		</projectile>
+	</ThingDef>
+
+<!-- ============================================================== -->
+	<!-- 5.56x45mm NATO -->
+	<!-- Velocity:   940 m/s -->
+	<!-- Energy:   1,767 J -->
+<!-- ============================================================== -->
+
+	<!-- ASSAULT RIFLE -->
+	<ThingDef ParentName="BaseBullet">
+		<defName>Bullet_556x45mmNATO_AR_PA</defName>
+		<label>5.56x45mm NATO</label>
+		<graphicData>
+		<texPath>Things/Projectile/Bullet_Big</texPath>
+		<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<projectile>
+			<damageDef>Bullet</damageDef>
+			<DamageAmountBase>7</DamageAmountBase>
+			<Speed>70</Speed>
+		</projectile>
+	</ThingDef>
+	
+	<!-- LIGHT MACHINE GUN -->
+	<ThingDef ParentName="BaseBullet">
+		<defName>Bullet_556x45mmNATO_LMG_PA</defName>
+		<label>5.56x45mm NATO</label>
+		<graphicData>
+		<texPath>Things/Projectile/Bullet_Big</texPath>
+		<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<projectile>
+			<damageDef>Bullet</damageDef>
+			<DamageAmountBase>5</DamageAmountBase>
+			<Speed>71</Speed>
+		</projectile>
+	</ThingDef>
+
+<!-- ============================================================== -->
+	<!-- 7.62x39mm -->
+	<!-- Velocity:   730.3 m/s -->
+	<!-- Energy:   2,108 J -->
+<!-- ============================================================== -->
+
+	<!-- ASSAULT RIFLE -->
+	<ThingDef ParentName="BaseBullet">
+		<defName>Bullet_762x39mm_AR_PA</defName>
+		<label>7.62x39mm</label>
+		<graphicData>
+		<texPath>Things/Projectile/Bullet_Big</texPath>
+		<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<projectile>
+			<damageDef>Bullet</damageDef>
+			<DamageAmountBase>7</DamageAmountBase>
+			<Speed>69</Speed>
+		</projectile>
+	</ThingDef>
+	
+	<!-- LIGHT MACHINE GUN -->
+	<ThingDef ParentName="BaseBullet">
+		<defName>Bullet_762x39mm_LMG_PA</defName>
+		<label>7.62x39mm</label>
+		<graphicData>
+		<texPath>Things/Projectile/Bullet_Big</texPath>
+		<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<projectile>
+			<damageDef>Bullet</damageDef>
+			<DamageAmountBase>7</DamageAmountBase>
+			<Speed>69</Speed>
+		</projectile>
+	</ThingDef>
+	
+<!-- !!!!!!!!!!!!!!!!!!!!!!!!! STUFF NOT YET SORTED !!!!!!!!!!!!!!!!!!!!!!!!! -->
+
+<!-- ============================================================== -->
+	<!-- 7.62x54mmR -->
+	<!-- Velocity:   786 m/s -->
+	<!-- Energy:   3,593 J -->
+<!-- ============================================================== -->	
+
+	<!-- SNIPER RIFLE -->
+	<ThingDef ParentName="BaseBullet">
+		<defName>Bullet_762x54mmR_SR_PA</defName>
+		<label>7.62x54mmR</label>
+		<graphicData>
+		<texPath>Things/Projectile/Bullet_Big</texPath>
+		<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<projectile>
+			<damageDef>Bullet</damageDef>
+			<DamageAmountBase>34</DamageAmountBase>
+			<Speed>99</Speed>
+		</projectile>
+	</ThingDef>
+	
+	<!-- LIGHT MACHINE GUN -->
+	<ThingDef ParentName="BaseBullet">
+		<defName>Bullet_762x54mmR_LMG_PA</defName>
+		<label>7.62x54mmR</label>
+		<graphicData>
+		<texPath>Things/Projectile/Bullet_Big</texPath>
+		<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<projectile>
+			<damageDef>Bullet</damageDef>
+			<DamageAmountBase>8</DamageAmountBase>
+			<Speed>70</Speed>
+		</projectile>
+	</ThingDef>
+	
+<!-- ============================================================== -->
+	<!-- 5.45x39mm -->
+	<!-- Velocity:   880 m/s -->
+	<!-- Energy:   1,328 J -->
+<!-- ============================================================== -->
+
+	<!-- ASSAULT RIFLE -->
+	<ThingDef ParentName="BaseBullet">
+		<defName>Bullet_545x39mm_AR_PA</defName>
+		<label>5.45x39mm</label>
+		<graphicData>
+		<texPath>Things/Projectile/Bullet_Big</texPath>
+		<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<projectile>
+			<damageDef>Bullet</damageDef>
+			<DamageAmountBase>6</DamageAmountBase>
+			<Speed>69</Speed>
+		</projectile>
+	</ThingDef>
+
+<!-- ============================================================== -->
+	<!-- FN 5.7x28mm -->
+	<!-- Velocity:   850 m/s -->
+	<!-- Energy:     540 J -->
+<!-- ============================================================== -->
+	
+	<!-- SMG -->
+	<ThingDef ParentName="BaseBullet">
+		<defName>Bullet_FN57x28mm_SMG_PA</defName>
+		<label>FN 5.7x28mm</label>
+		<graphicData>
+		<texPath>Things/Projectile/Bullet_Small</texPath>
+		<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<projectile>
+			<damageDef>Bullet</damageDef>
+			<DamageAmountBase>4</DamageAmountBase>
+			<Speed>57</Speed>
+		</projectile>
+	</ThingDef>
+	
+<!-- ============================================================== -->
+	<!-- 7.62x51mm NATO -->
+	<!-- Velocity:   833 m/s -->
+	<!-- Energy:   3,304 J -->
+<!-- ============================================================== -->
+
+	<!-- ASSAULT RIFLE -->
+	<ThingDef ParentName="BaseBullet">
+		<defName>Bullet_762x51mmNATO_AR_PA</defName>
+		<label>7.62x51mm NATO</label>
+		<graphicData>
+		<texPath>Things/Projectile/Bullet_Big</texPath>
+		<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<projectile>
+			<damageDef>Bullet</damageDef>
+			<DamageAmountBase>10</DamageAmountBase>
+			<Speed>69</Speed>
+		</projectile>
+	</ThingDef>
+
+	<!-- RIFLE -->
+	<ThingDef ParentName="BaseBullet">
+		<defName>Bullet_762x51mmNATO_R_PA</defName>
+		<label>7.62x51mm NATO</label>
+		<graphicData>
+		<texPath>Things/Projectile/Bullet_Big</texPath>
+		<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<projectile>
+			<damageDef>Bullet</damageDef>
+			<DamageAmountBase>18</DamageAmountBase>
+			<Speed>69</Speed>
+		</projectile>
+	</ThingDef>
+	
+	<!-- SNIPER RIFLE -->
+	<ThingDef ParentName="BaseBullet">
+		<defName>Bullet_762x51mmNATO_SR_PA</defName>
+		<label>7.62x51mm NATO</label>
+		<graphicData>
+		<texPath>Things/Projectile/Bullet_Big</texPath>
+		<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<projectile>
+			<damageDef>Bullet</damageDef>
+			<DamageAmountBase>34</DamageAmountBase>
+			<Speed>89</Speed>
+		</projectile>
+	</ThingDef>
+	
+	<!-- LIGHT MACHINE GUN -->
+	<ThingDef ParentName="BaseBullet">
+		<defName>Bullet_762x51mmNATO_LMG_PA</defName>
+		<label>7.62x51mm NATO</label>
+		<graphicData>
+		<texPath>Things/Projectile/Bullet_Big</texPath>
+		<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<projectile>
+			<damageDef>Bullet</damageDef>
+			<DamageAmountBase>8</DamageAmountBase>
+			<Speed>70</Speed>
+		</projectile>
+	</ThingDef>
+
+<!-- ============================================================== -->
+	<!-- 9x39 mm -->
+	<!-- Velocity:   280,0 m/s -->
+	<!-- Energy:     658,5 J -->
+<!-- ============================================================== -->
+
+	<!-- ASSAULT RIFLE -->
+	<ThingDef ParentName="BaseBullet">
+		<defName>Bullet_9x39mm_AR_PA</defName>
+		<label>9x39 mm</label>
+		<graphicData>
+		<texPath>Things/Projectile/Bullet_Small</texPath>
+		<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<projectile>
+			<damageDef>Bullet</damageDef>
+			<DamageAmountBase>6</DamageAmountBase>
+			<Speed>67</Speed>
+		</projectile>
+	</ThingDef>
+	
+	<!-- SNIPER RIFLE -->
+	<ThingDef ParentName="BaseBullet">
+		<defName>Bullet_9x39mm_SR_PA</defName>
+		<label>9x39 mm</label>
+		<graphicData>
+		<texPath>Things/Projectile/Bullet_Small</texPath>
+		<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<projectile>
+			<damageDef>Bullet</damageDef>
+			<DamageAmountBase>35</DamageAmountBase>
+			<Speed>97</Speed>
+		</projectile>
+	</ThingDef>
+	
+<!-- ============================================================== -->
+	<!-- 9x19mm Parabellum -->
+	<!-- Velocity:   390 m/s -->
+	<!-- Energy:     570 J -->
+<!-- ============================================================== -->
+
+	<!-- SMG -->
+	<ThingDef ParentName="BaseBullet">
+		<defName>Bullet_9x19mmParabellum_SMG_PA</defName>
+		<label>9x19mm Parabellum</label>
+		<graphicData>
+		<texPath>Things/Projectile/Bullet_Small</texPath>
+		<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<projectile>
+			<damageDef>Bullet</damageDef>
+			<DamageAmountBase>5</DamageAmountBase>
+			<Speed>55</Speed>
+		</projectile>
+	</ThingDef>
+	
+	<!-- PISTOL -->
+	<ThingDef ParentName="BaseBullet">
+		<defName>Bullet_9x19mmParabellum_P_PA</defName>
+		<label>9x19mm Parabellum</label>
+		<graphicData>
+		<texPath>Things/Projectile/Bullet_Small</texPath>
+		<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<projectile>
+			<damageDef>Bullet</damageDef>
+			<DamageAmountBase>9</DamageAmountBase>
+			<Speed>51</Speed>
+		</projectile>
+	</ThingDef>
+
+<!-- ============================================================== -->
+	<!-- 8x22mm Nambu -->
+	<!-- Velocity:   290.0 m/s -->
+	<!-- Energy:     274.0 J -->
+<!-- ============================================================== -->
+
+	<!-- PISTOL -->
+	<ThingDef ParentName="BaseBullet">
+		<defName>Bullet_8x22mmNambu_P_PA</defName>
+		<label>8x22mm Nambu</label>
+		<graphicData>
+		<texPath>Things/Projectile/Bullet_Small</texPath>
+		<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<projectile>
+			<damageDef>Bullet</damageDef>
+			<DamageAmountBase>10</DamageAmountBase>
+			<Speed>54</Speed>
+		</projectile>
+	</ThingDef>
+
+<!-- ============================================================== -->
+	<!-- 7.65x17mm Browning SR -->
+	<!-- Velocity:   282.0 m/s -->
+	<!-- Energy:     218.0 J -->
+<!-- ============================================================== -->
+
+	<!-- PISTOL -->
+	<ThingDef ParentName="BaseBullet">
+		<defName>Bullet_765x17mmBrowningSR_P_PA</defName>
+		<label>7.65x17mm BrowningSR</label>
+		<graphicData>
+		<texPath>Things/Projectile/Bullet_Small</texPath>
+		<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<projectile>
+			<damageDef>Bullet</damageDef>
+			<DamageAmountBase>9</DamageAmountBase>
+			<Speed>54</Speed>
+		</projectile>
+	</ThingDef>
+	
+<!-- ============================================================== -->
+	<!-- 7.92x57mm Mauser -->
+	<!-- Velocity:    820 m/s -->
+	<!-- Energy:     3934 J -->
+<!-- ============================================================== -->
+
+	<!-- RIFLE -->
+	<ThingDef ParentName="BaseBullet">
+		<defName>Bullet_792x57mmMauser_R_PA</defName>
+		<label>7.92x57mm Mauser</label>
+		<graphicData>
+		<texPath>Things/Projectile/Bullet_Big</texPath>
+		<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<projectile>
+			<damageDef>Bullet</damageDef>
+			<DamageAmountBase>19</DamageAmountBase>
+			<Speed>69</Speed>
+		</projectile>
+	</ThingDef>
+	
+<!-- ============================================================== -->
+	<!-- 8x50mmR Mannlicher | 8x50mmR M93-->
+	<!-- Velocity:    590 m/s -->
+	<!-- Energy:     2792 J -->
+<!-- ============================================================== -->
+
+	<!-- RIFLE -->
+	<ThingDef ParentName="BaseBullet" Name="XML_8x50mmRMannlicher_R_PA">
+		<defName>Bullet_8x50mmRMannlicher_R_PA</defName>
+		<label>8x50mmR Mannlicher</label>
+		<graphicData>
+		<texPath>Things/Projectile/Bullet_Small</texPath>
+		<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<projectile>
+			<damageDef>Bullet</damageDef>
+			<DamageAmountBase>17</DamageAmountBase>
+			<Speed>68</Speed>
+		</projectile>
+	</ThingDef>
+				<ThingDef ParentName="XML_8x50mmRMannlicher_R_PA">
+					<defName>Bullet_8x50mmRM93_R_PA</defName>
+					<label>8x50mmR M93</label>
+				</ThingDef>
+
+
+<!-- ============================================================== -->
+	<!-- Laser Beam-->
+	<!-- Velocity: Light Speed  -->
+	<!-- Energy:    One charging small muffalo J -->
+<!-- ============================================================== -->
+				<ThingDef ParentName="BaseBullet">
+		<defName>Bullet_BRXA1_R_PA</defName>
+		<label>Laser</label>
+		<graphicData>
+		<texPath>Things/Projectile/Bullet_Laser_Red</texPath>
+		<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<projectile>
+			<damageDef>Bullet</damageDef>
+			<DamageAmountBase>22</DamageAmountBase>
+			<Speed>100</Speed>
+		</projectile>
+	</ThingDef>
+	
+	
+	<!-- ============================================================== -->
+	<!--Hot gas-->
+	<!-- Velocity: Faster than fart  -->
+	<!-- Energy:    A bit better than average toster J -->
+<!-- ============================================================== -->
+				<ThingDef ParentName="BaseBullet">
+		<defName>Bullet_BRXA1_R_PA</defName>
+		<label>Laser</label>
+		<graphicData>
+		<texPath>Things/Projectile/GreenCharge_Small</texPath>
+		<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<projectile>
+			<damageDef>Bullet</damageDef>
+			<DamageAmountBase>21</DamageAmountBase>
+			<Speed>125</Speed>
+		</projectile>
+	</ThingDef>
+	
+	
+		<!-- ============================================================== -->
+	<!--Bullet_610Ball_P_PA-->
+	<!-- Velocity:900   -->
+	<!-- Energy:    1727 J -->
+<!-- ============================================================== -->
+				<ThingDef ParentName="BaseBullet">
+		<defName>Bullet_610Ball_P_PA</defName>
+		<label>610Ball</label>
+		<graphicData>
+		<texPath>Things/Projectile/Bullet_Small</texPath>
+		<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<projectile>
+			<damageDef>Bullet</damageDef>
+			<DamageAmountBase>12</DamageAmountBase>
+			<Speed>58</Speed>
+		</projectile>
+	</ThingDef>
+	
+	
+			<!-- ============================================================== -->
+	<!--610Ball-->
+	<!-- Velocity:570 m/s   -->
+	<!-- Energy:    1,900  J -->
+<!-- ============================================================== -->
+				<ThingDef ParentName="BaseBullet">
+		<defName>Bullet_351WinchesterSelfLoading_R_PA</defName>
+		<label>351 Winchester Self-Loading</label>
+		<graphicData>
+		<texPath>Things/Projectile/Bullet_Small</texPath>
+		<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<projectile>
+			<damageDef>Bullet</damageDef>
+			<DamageAmountBase>15</DamageAmountBase>
+			<Speed>68</Speed>
+		</projectile>
+	</ThingDef>
+	
+<!-- ============================================================== -->
+	<!--6.5x55mm Swedish One of 40 types of bullets that it was modified for so i choose something with "swedish" in name -->
+	<!--Velocity:570 m/s -->
+	<!-- Energy:    2,962  J -->
+<!-- ============================================================== -->
+<ThingDef ParentName="BaseBullet">
+		<defName>Bullet_6_5x55mm_Swedish</defName>
+		<label>6.5x55mm round</label>
+		<graphicData>
+		<texPath>Things/Projectile/Bullet_Small</texPath>
+		<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<projectile>
+			<damageDef>Bullet</damageDef>
+			<DamageAmountBase>19</DamageAmountBase>
+			<Speed>69</Speed>
+		</projectile>
+	</ThingDef>
+	
+	
+	
+<!-- ============================================================== -->
+	<!--8x58RKrag-->
+	<!-- Velocity:548,64m/s   -->
+	<!-- Energy:    1727   J -->
+<!-- ============================================================== -->
+				<ThingDef ParentName="BaseBullet">
+		<defName>Bullet_8x58RKrag_R_PA</defName>
+		<label>8x58RKrag round</label>
+		<graphicData>
+		<texPath>Things/Projectile/Bullet_Small</texPath>
+		<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<projectile>
+			<damageDef>Bullet</damageDef>
+			<DamageAmountBase>14</DamageAmountBase>
+			<Speed>68</Speed>
+		</projectile>
+	</ThingDef>
+	
+	
+	
+	
+<!-- ============================================================== -->
+	<!--8x58RKrag-->
+	<!-- Velocity:180 m/s   -->
+	<!-- Energy:    287    J -->
+<!-- ============================================================== -->
+				<ThingDef ParentName="BaseBullet">
+		<defName>Bullet_455WebleyMkII_P_PA</defName>
+		<label>455 Webley MkII round</label>
+		<graphicData>
+		<texPath>Things/Projectile/Bullet_Small</texPath>
+		<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<projectile>
+			<damageDef>Bullet</damageDef>
+			<DamageAmountBase>10</DamageAmountBase>
+			<Speed>54</Speed>
+		</projectile>
+	</ThingDef>
+	
+	
+	<!-- ============================================================== -->
+	<!--85mmMars-->
+	<!-- Velocity:470  m/s   -->
+	<!-- Energy:    1,000     J -->
+<!-- ============================================================== -->
+				<ThingDef ParentName="BaseBullet">
+		<defName>Bullet_85mmMars_P_PA</defName>
+		<label>85mm Mars round</label>
+		<graphicData>
+		<texPath>Things/Projectile/Bullet_Small</texPath>
+		<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<projectile>
+			<damageDef>Bullet</damageDef>
+			<DamageAmountBase>11</DamageAmountBase>
+			<Speed>55</Speed>
+		</projectile>
+	</ThingDef>
+	
+	
+	<!-- ============================================================== -->
+	<!--.442Webley-->
+	<!-- Velocity:210   m/s   -->
+	<!-- Energy:  324     J -->
+<!-- ============================================================== -->
+				<ThingDef ParentName="BaseBullet">
+		<defName>Bullet_442Webley_P_PA</defName>
+		<label>.442Webley round</label>
+		<graphicData>
+		<texPath>Things/Projectile/Bullet_Small</texPath>
+		<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<projectile>
+			<damageDef>Bullet</damageDef>
+			<DamageAmountBase>10</DamageAmountBase>
+			<Speed>54</Speed>
+		</projectile>
+	</ThingDef>
+	
+	
+	<!-- ============================================================== -->
+	<!--..42 bal-->
+	<!-- Velocity:360   m/s   -->
+	<!-- Energy:  575   J -->
+<!-- ============================================================== -->
+				<ThingDef ParentName="BaseBullet">
+		<defName>Bullet_42Ball_PA</defName>
+		<label>.42 ball</label>
+		<graphicData>
+		<texPath>Things/Projectile/Bullet_Small</texPath>
+		<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<projectile>
+			<damageDef>Bullet</damageDef>
+			<DamageAmountBase>10</DamageAmountBase>
+			<Speed>55</Speed>
+		</projectile>
+	</ThingDef>
+	
+	
+	
+	
+
+
+	
+</ThingDefs>

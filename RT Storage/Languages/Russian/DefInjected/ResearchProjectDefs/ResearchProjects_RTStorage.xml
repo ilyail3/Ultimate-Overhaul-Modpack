@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<LanguageData>
+
+  <RTStorage_QuantumStockpile_0.label>квантовый запасник</RTStorage_QuantumStockpile_0.label>
+  <RTStorage_QuantumStockpile_0.description>Позволяет строить квантовые запасники, которые, потребляя небольшое количество электроэнергии, сделают Ваш склад в 4 раза компактнее.
+  </RTStorage_QuantumStockpile_0.description>
+
+  <RTStorage_QuantumStockpile_SelfDefrag.label>квантовый запасник - самораспределение</RTStorage_QuantumStockpile_SelfDefrag.label>
+  <RTStorage_QuantumStockpile_SelfDefrag.description>Позволяет квантовому запаснику периодически минимизировать количество хранимых неполных штабелей.
+  </RTStorage_QuantumStockpile_SelfDefrag.description>
+
+  <RTStorage_QuantumStockpile_Miniaturization.label>квантовый запасник - миниатюризация</RTStorage_QuantumStockpile_Miniaturization.label>
+    <RTStorage_QuantumStockpile_Miniaturization.description>Позволяет строить уменьшенную, но менее экономную версию квантового запасника.
+    </RTStorage_QuantumStockpile_Miniaturization.description>
+
+  <RTStorage_QuantumWarehouse_0.label>квантовый склад</RTStorage_QuantumWarehouse_0.label>
+  <RTStorage_QuantumWarehouse_0.description>Позволяет строить квантовый склад, который, потребляя умеренное количество электроэнергии, соединяет все квантовые запасники в зоне склада воедино, минимизируя количество хранимых неполных штабелей и перераспределяя штабели между клетками квантовых запасников.
+Также сами выступают в качестве квантовых запасников, но строить больше одного склада в зоне бесполезно.
+</RTStorage_QuantumWarehouse_0.description>
+
+  <RTStorage_QuantumWarehouse_Miniaturization.label>квантовый склад - миниатюризация</RTStorage_QuantumWarehouse_Miniaturization.label>
+  <RTStorage_QuantumWarehouse_Miniaturization.description>Позволяет строить уменьшенную, но менее экономную версию квантового склада.
+  </RTStorage_QuantumWarehouse_Miniaturization.description>
+
+  <RTStorage_QuantumRelay_0.label>квантовый ретранслятор</RTStorage_QuantumRelay_0.label>
+  <RTStorage_QuantumRelay_0.description>Позволяет строить квантовые ретрансляторы, которые, потребляя небольшое количество электроэнергии, будут перемещать разрешенные фильтром предметы из подсоединенного квантового склада в себя, и отсылать в него подходящие вещи из сосдних клеток. Работает удаленно, на любом расстоянии.
+  </RTStorage_QuantumRelay_0.description>
+
+  <RTStorage_QuantumRelay_Miniaturization.label>квантовый ретранслятор - миниатюризация</RTStorage_QuantumRelay_Miniaturization.label>
+  <RTStorage_QuantumRelay_Miniaturization.description>Позволяет строить уменьшенную, но менее экономную версию квантового ретранслятора.
+  </RTStorage_QuantumRelay_Miniaturization.description>
+  
+  <RTStorage_QuantumStockpile_1.label>квантовый запасник - усовершенствование №1</RTStorage_QuantumStockpile_1.label>
+  <RTStorage_QuantumStockpile_1.description>Клетки квантового запасника хранят на один штабель больше (в общей сложности 5 на клетку).
+  </RTStorage_QuantumStockpile_1.description>
+  
+  <RTStorage_QuantumStockpile_2.label>квантовый запасник - усовершенствование №2</RTStorage_QuantumStockpile_2.label>
+  <RTStorage_QuantumStockpile_2.description>Клетки квантового запасника хранят на один штабель больше (в общей сложности 6 на клетку).
+  </RTStorage_QuantumStockpile_2.description>
+
+  <RTStorage_QuantumStockpile_3.label>квантовый запасник - усовершенствование №3</RTStorage_QuantumStockpile_3.label>
+  <RTStorage_QuantumStockpile_3.description>Клетки квантового запасника хранят на один штабель больше (в общей сложности 7 на клетку).
+  </RTStorage_QuantumStockpile_3.description>
+
+  <RTStorage_QuantumStockpile_4.label>квантовый запасник - усовершенствование №4</RTStorage_QuantumStockpile_4.label>
+  <RTStorage_QuantumStockpile_4.description>Абсолютная вершина емкости! Клетки квантового запасника хранят на один штабель больше (в общей сложности 8 на клетку).
+  </RTStorage_QuantumStockpile_4.description>
+  
+
+
+</LanguageData>

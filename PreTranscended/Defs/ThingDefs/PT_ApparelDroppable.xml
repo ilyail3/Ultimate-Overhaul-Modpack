@@ -1,0 +1,96 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ThingDefs>
+
+  <ThingDef Name="ApparelBase" Abstract="True">
+    <thingClass>Apparel</thingClass>
+    <category>Item</category>
+    <selectable>True</selectable>
+    <pathCost>10</pathCost>
+    <useHitPoints>True</useHitPoints>
+    <graphicData>
+      <onGroundRandomRotateAngle>35</onGroundRandomRotateAngle>
+    </graphicData>
+    <drawGUIOverlay>true</drawGUIOverlay>
+    <statBases>
+      <MaxHitPoints>100</MaxHitPoints>
+      <Flammability>1.0</Flammability>
+      <DeteriorationRate>1</DeteriorationRate>
+      <SellPriceFactor>0.05</SellPriceFactor>
+    </statBases>
+    <altitudeLayer>Item</altitudeLayer>
+    <alwaysHaulable>True</alwaysHaulable>
+    <tickerType>Never</tickerType>
+   <thingCategories>
+      <li>ArmorSuits</li>
+    </thingCategories>
+    <comps>
+      <li>
+        <compClass>CompForbiddable</compClass>
+      </li>
+      <li>
+        <compClass>CompColorable</compClass>
+      </li>
+      <li>
+        <compClass>CompQuality</compClass>
+      </li>
+    </comps>
+  </ThingDef>
+
+
+
+
+  <ThingDef ParentName="ApparelBase">
+    <defName>Apparello_PTArmorDROP</defName>
+    <label>old transcended armor suit</label>
+    <description>Pre transcended technology.</description>
+    <graphicData>
+      <texPath>PreAcs/PreAcs</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <tradeability>Sellable</tradeability>
+    <statBases>
+      <MaxHitPoints>350</MaxHitPoints>
+      <MarketValue>4500</MarketValue>
+      <ArmorRating_Blunt>0.3</ArmorRating_Blunt>
+      <ArmorRating_Sharp>0.3</ArmorRating_Sharp>
+      <ArmorRating_Heat>0.3</ArmorRating_Heat>
+      <ArmorRating_Electric>-1</ArmorRating_Electric>
+      <Insulation_Cold>-15</Insulation_Cold>
+      <Insulation_Heat>5</Insulation_Heat>
+    </statBases>
+    <equippedStatOffsets>
+      <MoveSpeed>1</MoveSpeed>
+      <WorkSpeedGlobal>-0.25</WorkSpeedGlobal>
+    </equippedStatOffsets>
+    <apparel>
+      <bodyPartGroups>
+        <li>Torso</li>
+        <li>Shoulders</li>
+        <li>Arms</li>
+        <li>Legs</li>
+      </bodyPartGroups>
+      <worngraphicPath>PreAcs/PreAcs</worngraphicPath>
+      <layers>
+        <li>Middle</li>
+        <li>Shell</li>
+      </layers>
+      <commonality>0.8</commonality>
+      <tags>
+        <li>PreTranny</li>
+      </tags>
+    </apparel>
+		<colorGenerator Class="ColorGenerator_Options">
+			<options>
+				<li>
+					<weight>20</weight>
+					<only>RGBA(1,1,1,1)</only>
+				</li>
+				<li>
+					<weight>20</weight>
+					<only>RGBA(1,0.9,0.8,1)</only>
+				</li>
+			</options>
+		</colorGenerator>
+  </ThingDef>
+
+</ThingDefs>

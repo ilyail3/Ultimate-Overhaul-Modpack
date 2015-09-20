@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--suppress ALL -->
+<LanguageData>
+	
+	
+	<Wavyshort.label>웨이브 숏</Wavyshort.label>
+	
+	<Straightshort.label>스트레이트 숏</Straightshort.label>
+
+	<Fauxhawk.label>소프트 모히칸</Fauxhawk.label>
+
+	
+
+
+
+	<OneSideUp.label>웨이브 롱</OneSideUp.label>
+	<StraightLong.label>스트레이트 롱</StraightLong.label>
+	<Vintage.label>빈티지</Vintage.label>
+	<RHPonytail.label>포니테일</RHPonytail.label>
+	<StrongCurly.label>강한 곱슬</StrongCurly.label>
+	<Blowzy.label>더벅머리</Blowzy.label>
+	<FemShort.label>단발</FemShort.label>
+	<RHEmo.label>중2병</RHEmo.label>
+	<PunkKnot.label>땋은 펑크</PunkKnot.label>
+	<ClassyF.label>클래지</ClassyF.label>
+	<ClassyM.label>클래지</ClassyM.label>
+	<Neat.label>깔끔</Neat.label>
+	<Hime.label>히메컷</Hime.label>
+</LanguageData>

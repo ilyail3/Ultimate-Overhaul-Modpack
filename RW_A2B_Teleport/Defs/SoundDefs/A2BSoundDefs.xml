@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?><DefPackage-SoundDef>
+
+  <SoundDef>
+    <defName>A2B_Teleport</defName>
+    <eventNames />
+    <maxSimultaneous>4</maxSimultaneous>  
+    <subSounds>
+      <li>
+        <name>False</name>      
+        <grains>
+          <li Class="AudioGrain_Clip">
+            <clipPath>crack</clipPath>
+          </li>
+        </grains>      
+        <volumeRange>
+          <min>7</min>        
+          <max>8</max>
+        </volumeRange>      
+        <pitchRange>
+          <min>1.162353</min>        
+          <max>1.383529</max>
+        </pitchRange>
+      </li>
+    </subSounds>
+  </SoundDef>
+  
+</DefPackage-SoundDef>

@@ -1,0 +1,177 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<DefPackage-HairDef>
+  
+<HairDef>
+    <label>Blowzy</label>
+    <hairGender>Male</hairGender>
+    <texPath>Hairs/Blowzy</texPath>
+    <defName>Blowzy</defName>
+		<hairTags>
+			<li>Urban</li>
+			<li>Rural</li>
+		</hairTags>
+  </HairDef>
+
+<HairDef>
+    <label>Emo</label>
+    <hairGender>Any</hairGender>
+    <texPath>Hairs/AniEmo</texPath>
+    <defName>RHEmo</defName>
+		<hairTags>
+			<li>Urban</li>
+		</hairTags>
+  </HairDef>
+
+<HairDef>
+    <label>Fauxhawk</label>
+    <hairGender>Male</hairGender>
+    <texPath>Hairs/Fauxhawk</texPath>
+    <defName>Fauxhawk</defName>
+		<hairTags>
+			<li>Urban</li>
+			<li>Rural</li>
+		</hairTags>
+  </HairDef>
+
+<HairDef>
+    <label>Wavy long</label>
+    <hairGender>Female</hairGender>
+    <texPath>Hairs/WavyLong</texPath>
+    <defName>OneSideUp</defName>
+		<hairTags>
+			<li>Urban</li>
+			<li>Rural</li>
+		</hairTags>
+  </HairDef>
+
+<HairDef>
+    <label>Straight long</label>
+    <hairGender>Female</hairGender>
+    <texPath>Hairs/StraightLong</texPath>
+    <defName>StraightLong</defName>
+		<hairTags>
+			<li>Urban</li>
+			<li>Rural</li>
+		</hairTags>
+  </HairDef>
+
+<HairDef>
+    <label>Wavy short</label>
+    <hairGender>Female</hairGender>
+    <texPath>Hairs/WavyShort</texPath>
+    <defName>Wavyshort</defName>
+		<hairTags>
+			<li>Urban</li>
+			<li>Rural</li>
+		</hairTags>
+  </HairDef>
+
+<HairDef>
+    <label>Straight short</label>
+    <hairGender>Female</hairGender>
+    <texPath>Hairs/StraightShort</texPath>
+    <defName>Straightshort</defName>
+		<hairTags>
+			<li>Urban</li>
+			<li>Rural</li>
+		</hairTags>
+  </HairDef>
+
+<HairDef>
+    <label>Short</label>
+    <hairGender>Female</hairGender>
+    <texPath>Hairs/FemShort</texPath>
+    <defName>FemShort</defName>
+		<hairTags>
+			<li>Urban</li>
+			<li>Rural</li>
+		</hairTags>
+  </HairDef>
+
+<HairDef>
+    <label>Ponytail</label>
+    <hairGender>Female</hairGender>
+    <texPath>Hairs/Ponytail</texPath>
+    <defName>RHPonytail</defName>
+		<hairTags>
+			<li>Urban</li>
+			<li>Rural</li>
+		</hairTags>
+  </HairDef>
+
+<HairDef>
+    <label>Punk Knot</label>
+    <hairGender>Any</hairGender>
+    <texPath>Hairs/PunkKnot</texPath>
+    <defName>PunkKnot</defName>
+		<hairTags>
+			<li>Urban</li>
+			<li>Punk</li>
+		</hairTags>
+  </HairDef>
+
+<HairDef>
+    <label>Strong curly</label>
+    <hairGender>Female</hairGender>
+    <texPath>Hairs/StrongCurly</texPath>
+    <defName>StrongCurly</defName>
+		<hairTags>
+			<li>Urban</li>
+			<li>Rural</li>
+		</hairTags>
+  </HairDef>
+
+<HairDef>
+    <label>Vintage</label>
+    <hairGender>Male</hairGender>
+    <texPath>Hairs/Vintage</texPath>
+    <defName>Vintage</defName>
+		<hairTags>
+			<li>Urban</li>
+			<li>Rural</li>
+		</hairTags>
+  </HairDef>
+
+<HairDef>
+    <label>Classy</label>
+    <hairGender>Male</hairGender>
+    <texPath>Hairs/ClassyM</texPath>
+    <defName>ClassyM</defName>
+		<hairTags>
+			<li>Urban</li>
+		</hairTags>
+  </HairDef>
+
+<HairDef>
+    <label>Classy</label>
+    <hairGender>Female</hairGender>
+    <texPath>Hairs/ClassyF</texPath>
+    <defName>ClassyF</defName>
+		<hairTags>
+			<li>Urban</li>
+		</hairTags>
+  </HairDef>
+
+<HairDef>
+    <label>Hime cut</label>
+    <hairGender>Female</hairGender>
+    <texPath>Hairs/Hime</texPath>
+    <defName>Hime</defName>
+		<hairTags>
+			<li>Urban</li>
+			<li>Rural</li>
+		</hairTags>
+  </HairDef>
+
+<HairDef>
+    <label>Neat</label>
+    <hairGender>Male</hairGender>
+    <texPath>Hairs/Neat</texPath>
+    <defName>Neat</defName>
+		<hairTags>
+			<li>Urban</li>
+			<li>Rural</li>
+		</hairTags>
+  </HairDef>
+ 
+</DefPackage-HairDef>

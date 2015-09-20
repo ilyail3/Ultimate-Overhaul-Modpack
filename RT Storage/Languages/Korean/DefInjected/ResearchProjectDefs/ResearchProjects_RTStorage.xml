@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<LanguageData>
+
+  <RTStorage_QuantumStockpile_0.label>양자 저장소</RTStorage_QuantumStockpile_0.label>
+  <RTStorage_QuantumStockpile_0.description>적은 양의 전력으로 네 배의 저장 효율을 보여주는 양자 저장소를 만들 수 있습니다.
+  </RTStorage_QuantumStockpile_0.description>
+
+  <RTStorage_QuantumStockpile_SelfDefrag.label>양자 저장소 자가 조각모음</RTStorage_QuantumStockpile_SelfDefrag.label>
+  <RTStorage_QuantumStockpile_SelfDefrag.description>양자 저장소가 주기적으로 나뉘어진 물건 더미들을 합쳐 공간을 확보할 수 있습니다.
+  </RTStorage_QuantumStockpile_SelfDefrag.description>
+
+  <RTStorage_QuantumStockpile_Miniaturization.label>양자 저장소 소형화</RTStorage_QuantumStockpile_Miniaturization.label>
+    <RTStorage_QuantumStockpile_Miniaturization.description>더 작지만 비효율적인 양자 저장소를 만들 수 있습니다.
+    </RTStorage_QuantumStockpile_Miniaturization.description>
+
+  <RTStorage_QuantumWarehouse_0.label>양자 창고</RTStorage_QuantumWarehouse_0.label>
+  <RTStorage_QuantumWarehouse_0.description>중간 수준의 전력으로 같은 저장구역 아래의 모든 양자 저장소를 점검하고 최적화하는 양자 창고를 만들 수 있습니다.
+  	\n스스로도 양자 저장소로 작동하지만 하나의 저장구역에 두 개 이상 만드는 것은 효과가 없습니다.
+</RTStorage_QuantumWarehouse_0.description>
+
+  <RTStorage_QuantumWarehouse_Miniaturization.label>양자 창고 소형화</RTStorage_QuantumWarehouse_Miniaturization.label>
+  <RTStorage_QuantumWarehouse_Miniaturization.description>더 작지만 비효율적인 양자 창고를 만들 수 있습니다.
+  </RTStorage_QuantumWarehouse_Miniaturization.description>
+
+  <RTStorage_QuantumRelay_0.label>양자 전송기</RTStorage_QuantumRelay_0.label>
+  <RTStorage_QuantumRelay_0.description>적은 양의 전력으로 선택된 양자 창고에 원격으로 물건을 보낼 수 있는 양자 전송기를 만들 수 있습니다. 거리에 상관하지 않습니다.
+  </RTStorage_QuantumRelay_0.description>
+
+  <RTStorage_QuantumRelay_Miniaturization.label>양자 전송기 소형화</RTStorage_QuantumRelay_Miniaturization.label>
+  <RTStorage_QuantumRelay_Miniaturization.description>더 작지만 비효율적인 양자 전송기를 만들 수 있습니다.
+  </RTStorage_QuantumRelay_Miniaturization.description>
+  
+  <RTStorage_QuantumStockpile_1.label>양자 저장소 강화 1</RTStorage_QuantumStockpile_1.label>
+  <RTStorage_QuantumStockpile_1.description>양자 저장소가 한 칸당 두 개의 추가 더미를 저장할 수 있습니다.
+  </RTStorage_QuantumStockpile_1.description>
+  
+  <RTStorage_QuantumStockpile_2.label>양자 저장소 강화 2</RTStorage_QuantumStockpile_2.label>
+  <RTStorage_QuantumStockpile_2.description>양자 저장소가 한 칸당 한 개의 추가 더미를 저장할 수 있습니다. (6개)
+  </RTStorage_QuantumStockpile_2.description>
+
+  <RTStorage_QuantumStockpile_3.label>양자 저장소 강화 3</RTStorage_QuantumStockpile_3.label>
+  <RTStorage_QuantumStockpile_3.description>양자 저장소가 한 칸당 한 개의 추가 더미를 저장할 수 있습니다. (7개)
+  </RTStorage_QuantumStockpile_3.description>
+
+  <RTStorage_QuantumStockpile_4.label>양자 저장소 강화 4</RTStorage_QuantumStockpile_4.label>
+  <RTStorage_QuantumStockpile_4.description>용량의 절정입니다! 양자 저장소가 한 칸당 한 개의 추가 더미를 저장할 수 있습니다. (8개)
+  </RTStorage_QuantumStockpile_4.description>
+  
+
+
+</LanguageData>

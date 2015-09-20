@@ -1,0 +1,476 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<RecipeDefs>
+
+
+	<RecipeDef>
+		<defName>MakeScrapTextile</defName>
+		<label>make textile strips</label>
+		<description>Recycle clothing into strips.</description>
+		<jobString>Recycle clothing.</jobString>
+		<workAmount>600</workAmount>
+		<workSpeedStat>TailoringSpeed</workSpeedStat>
+		<effectWorking>Tailor</effectWorking>
+		<soundWorking>Recipe_Tailor</soundWorking>
+		<allowMixingIngredients>true</allowMixingIngredients>
+		<recipeUsers>
+			<li>TableLoom</li>
+		</recipeUsers>
+		<ingredients>
+			<li>
+				<filter>
+					<categories>
+						<li>Headgear</li>
+						<li>Pants</li>
+						<li>Shirts</li>
+						<li>Gloves</li>
+						<li>Feet</li>
+					</categories>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<products>
+			<TextileStrips>40</TextileStrips>
+		</products>
+		<fixedIngredientFilter>
+			<categories>
+				<li>Headgear</li>
+				<li>Pants</li>
+				<li>Shirts</li>
+				<li>Gloves</li>
+				<li>Feet</li>
+			</categories>
+			<exceptedCategories>
+				<li>Armor</li>
+				<li>Eyewear</li>
+			</exceptedCategories>
+		</fixedIngredientFilter><!--
+		<defaultIngredientFilter>
+      <exceptedCategories>
+        <li>Armor</li>
+      </exceptedCategories>
+    </defaultIngredientFilter>-->
+		<workSkill>Crafting</workSkill>
+	</RecipeDef>
+	
+	<RecipeDef>
+		<defName>MakeScrapPlasteelTextile</defName>
+		<label>make plasteel textile strips</label>
+		<description>Make plasteel textile strips.</description>
+		<jobString>Making strips.</jobString>
+		<workAmount>800</workAmount>
+		<workSpeedStat>TailoringSpeed</workSpeedStat>
+		<effectWorking>Tailor</effectWorking>
+		<soundWorking>Recipe_Tailor</soundWorking>
+		<allowMixingIngredients>true</allowMixingIngredients>
+		<recipeUsers>
+			<li>TableLoom</li>
+		</recipeUsers>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>PlasteelBar</li>
+					</thingDefs>
+				</filter>
+				<count>10</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>TextileStrips</li>
+					</thingDefs>
+				</filter>
+				<count>20</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>PlasteelBar</li>
+				<li>TextileStrips</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<products>
+			<PlasteelTextileStrips>20</PlasteelTextileStrips>
+		</products>
+		<workSkill>Crafting</workSkill>
+	</RecipeDef>
+	
+	
+	<RecipeDef>
+		<defName>MakeScrapCloth</defName>
+		<label>make recycled cloth</label>
+		<description>Make cloth from raw cotton.</description>
+		<jobString>Making cloth.</jobString>
+		<workAmount>1200</workAmount>
+		<workSpeedStat>TailoringSpeed</workSpeedStat>
+		<effectWorking>Tailor</effectWorking>
+		<soundWorking>Recipe_Tailor</soundWorking>
+		<allowMixingIngredients>true</allowMixingIngredients>
+		<recipeUsers>
+			<li>TableLoom</li>
+		</recipeUsers>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>RawCotton</li>
+					</thingDefs>
+				</filter>
+				<count>10</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>TextileStrips</li>
+					</thingDefs>
+				</filter>
+				<count>10</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>RawCotton</li>
+				<li>TextileStrips</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<products>
+			<Cloth>20</Cloth>
+		</products>
+		<workSkill>Crafting</workSkill>
+	</RecipeDef>
+	
+	<RecipeDef>
+		<defName>MakeStripCloth</defName>
+		<label>make recycled cloth (Strips Only)</label>
+		<description>Make cloth from raw cotton.</description>
+		<jobString>Making cloth.</jobString>
+		<workAmount>1200</workAmount>
+		<workSpeedStat>TailoringSpeed</workSpeedStat>
+		<effectWorking>Tailor</effectWorking>
+		<soundWorking>Recipe_Tailor</soundWorking>
+		<allowMixingIngredients>true</allowMixingIngredients>
+		<recipeUsers>
+			<li>TableLoom</li>
+		</recipeUsers>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>TextileStrips</li>
+					</thingDefs>
+				</filter>
+				<count>20</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>TextileStrips</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<products>
+			<Cloth>20</Cloth>
+		</products>
+		<workSkill>Crafting</workSkill>
+	</RecipeDef>
+	
+	<RecipeDef>
+		<defName>MakeScrapSynthreadCloth</defName>
+		<label>make recycled synthread cloth</label>
+		<description>Make synthread cloth from raw cotton and plasteel.</description>
+		<jobString>Making synthread cloth.</jobString>
+		<workAmount>2000</workAmount>
+		<workSpeedStat>TailoringSpeed</workSpeedStat>
+		<effectWorking>Tailor</effectWorking>
+		<soundWorking>Recipe_Tailor</soundWorking>
+		<allowMixingIngredients>true</allowMixingIngredients>
+		<recipeUsers>
+			<li>TableLoom</li>
+		</recipeUsers>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>RawCotton</li>
+					</thingDefs>
+				</filter>
+				<count>5</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>TextileStrips</li>
+					</thingDefs>
+				</filter>
+				<count>5</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Plasteel</li>
+					</thingDefs>
+				</filter>
+				<count>3</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>RawCotton</li>
+				<li>Plasteel</li>
+				<li>TextileStrips</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<products>
+			<Synthread>10</Synthread>
+		</products>
+		<workSkill>Crafting</workSkill>
+	</RecipeDef>
+	
+	<RecipeDef>
+		<defName>MakeScrapDevilstrand</defName>
+		<label>make recycled devilstrand cloth</label>
+		<description>Make devilstrand cloth from raw devilstrand.</description>
+		<jobString>Making devilstrand cloth.</jobString>
+		<workAmount>1500</workAmount>
+		<workSpeedStat>TailoringSpeed</workSpeedStat>
+		<effectWorking>Tailor</effectWorking>
+		<soundWorking>Recipe_Tailor</soundWorking>
+		<allowMixingIngredients>true</allowMixingIngredients>
+		<recipeUsers>
+			<li>TableLoom</li>
+		</recipeUsers>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>RawDevilstrand</li>
+					</thingDefs>
+				</filter>
+				<count>10</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>TextileStrips</li>
+					</thingDefs>
+				</filter>
+				<count>10</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>RawDevilstrand</li>
+				<li>TextileStrips</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<products>
+			<DevilstrandCloth>10</DevilstrandCloth>
+		</products>
+		<workSkill>Crafting</workSkill>
+	</RecipeDef>
+	
+	<RecipeDef>
+		<defName>MakeScrapHyperweaveCloth</defName>
+		<label>make recycled hyperweave cloth</label>
+		<description>Make hyperweave cloth from synthread and devilstrand cloth.</description>
+		<jobString>Making hyperweave cloth.</jobString>
+		<workAmount>2400</workAmount>
+		<workSpeedStat>TailoringSpeed</workSpeedStat>
+		<effectWorking>Tailor</effectWorking>
+		<soundWorking>Recipe_Tailor</soundWorking>
+		<allowMixingIngredients>true</allowMixingIngredients>
+		<recipeUsers>
+			<li>TableLoom</li>
+		</recipeUsers>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Synthread</li>
+					</thingDefs>
+				</filter>
+				<count>5</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>DevilstrandCloth</li>
+					</thingDefs>
+				</filter>
+				<count>5</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>TextileStrips</li>
+					</thingDefs>
+				</filter>
+				<count>10</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>Synthread</li>
+				<li>DevilstrandCloth</li>
+				<li>TextileStrips</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<products>
+			<Hyperweave>10</Hyperweave>
+		</products>
+		<workSkill>Crafting</workSkill>
+	</RecipeDef>
+	
+	<RecipeDef>
+		<defName>MakeScrapMetal</defName>
+		<label>Recycle armor</label>
+		<description>Recycle armor into scrap metal.</description>
+		<jobString>Recycling armor.</jobString>
+		<workAmount>600</workAmount>
+		<workSpeedStat>TailoringSpeed</workSpeedStat>
+		<effectWorking>Tailor</effectWorking>
+		<soundWorking>Recipe_Smelt</soundWorking>
+		<allowMixingIngredients>true</allowMixingIngredients>
+		<recipeUsers>
+			<li>TableMachining</li>
+		</recipeUsers>
+		<ingredients>
+			<li>
+				<filter>
+					<categories>
+						<li>Armor</li>
+					</categories>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<products>
+			<ScrapMetal>40</ScrapMetal>
+		</products>
+		<fixedIngredientFilter>
+			<categories>
+				<li>Armor</li>
+			</categories>
+			<exceptedCategories>
+				<li>Headgear</li>
+				<li>Pants</li>
+				<li>Shirts</li>
+				<li>Gloves</li>
+				<li>Feet</li>
+				<li>Eyewear</li>
+			</exceptedCategories>
+		</fixedIngredientFilter><!--
+		<defaultIngredientFilter>
+      <exceptedCategories>
+        <li>Armor</li>
+      </exceptedCategories>
+    </defaultIngredientFilter>-->
+		<workSkill>Crafting</workSkill>
+	</RecipeDef>
+	
+	<RecipeDef>
+		<defName>MakeScrapSteel</defName>
+		<label>smelt scrap metal into steelbars</label>
+		<description>Use heat and strong electromagnets to separate useful metal from metal scraps.</description>
+		<jobString>Smelting metal from scraps.</jobString>
+		<workAmount>600</workAmount>
+		<workSpeedStat>SmeltingSpeed</workSpeedStat>
+		<effectWorking>Smelt</effectWorking>
+		<soundWorking>Recipe_Smelt</soundWorking>
+		<recipeUsers>
+			<li>ElectricSmelter</li>
+		</recipeUsers>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>ScrapMetal</li>
+					</thingDefs>
+				</filter>
+				<count>40</count>
+			</li>
+		</ingredients>
+		<products>
+			<SteelBar>15</SteelBar>
+		</products>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>ScrapMetal</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<workSkill>Crafting</workSkill>
+	</RecipeDef>
+	
+	
+	
+	<RecipeDef>
+		<defName>MakeCopperWire_Hand</defName>
+		<label>make copper wire</label>
+		<description>Make copper wire.</description>
+		<jobString>Making copper wire.</jobString>
+		<workAmount>800</workAmount>
+		<workSpeedStat>SmeltingSpeed</workSpeedStat>
+		<effectWorking>Smelt</effectWorking>
+		<soundWorking>Recipe_Smelt</soundWorking>
+		<allowMixingIngredients>true</allowMixingIngredients>
+		<recipeUsers>
+			<li>TableStonecutter</li>
+		</recipeUsers>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>CopperBar</li>
+					</thingDefs>
+				</filter>
+				<count>10</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>CopperBar</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<products>
+			<CopperWire>20</CopperWire>
+		</products>
+		<workSkill>Crafting</workSkill>
+	</RecipeDef>
+	
+	
+	<RecipeDef>
+		<defName>MakeCopperWire_Electric</defName>
+		<label>make copper wire</label>
+		<description>Make copper wire.</description>
+		<jobString>Making copper wire.</jobString>
+		<workAmount>800</workAmount>
+		<workSpeedStat>SmeltingSpeed</workSpeedStat>
+		<effectWorking>Smelt</effectWorking>
+		<soundWorking>Recipe_Smelt</soundWorking>
+		<allowMixingIngredients>true</allowMixingIngredients>
+		<recipeUsers>
+			<li>TableMachining</li>
+		</recipeUsers>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>CopperBar</li>
+					</thingDefs>
+				</filter>
+				<count>20</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>CopperBar</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<products>
+			<CopperWire>40</CopperWire>
+		</products>
+		<workSkill>Crafting</workSkill>
+	</RecipeDef>
+	
+
+</RecipeDefs>

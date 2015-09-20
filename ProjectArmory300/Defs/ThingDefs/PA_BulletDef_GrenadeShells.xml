@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ThingDefs>
+
+<!--
+PROJECT ARMORY WEAPON
+
+CODE AUTHOR: Evul and Felime
+
+USER LICENSE:
+All weapons texture and code may be altered to the users
+liking to fit the world the user wants to create.
+You may add or remove weapons of your downloaded
+Project Armory Pack to further more customize your world.
+You are also allowed to publish Project Armory weapons
+in your own modpack or mod. The only thing we ask for
+is that you link to our forum page so people that like
+the weapons can download more of them.
+
+-->
+
+	<ThingDef Name="BaseBullet" Abstract="True">
+			<category>Projectile</category>
+			<tickerType>Normal</tickerType>
+			<altitudeLayer>Projectile</altitudeLayer>
+			<thingClass>Bullet</thingClass>
+			<label>bullet</label>
+			<useHitPoints>False</useHitPoints>
+			<neverMultiSelect>True</neverMultiSelect>
+			<graphicData>
+			<shaderType>Transparent</shaderType>
+			</graphicData>
+	</ThingDef>
+	
+<!--
+BULLETS:
+  Bullet_Grenade_40mm_PA
+  
+  
+ -->
+	
+<!-- ============================================================== -->
+	<!-- 40mm Grenade -->
+	<!-- Velocity:   76 m/s -->
+	<!-- Energy:     ? J -->
+<!-- ============================================================== -->
+
+	<ThingDef ParentName="BaseBullet">
+		<defName>Bullet_Grenade40mm_PA</defName>
+		<label>40x46mm grenade</label>
+		<graphicData>
+		<texPath>Things/Projectile/Grenade_40mm</texPath>
+		<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<thingClass>Projectile_Explosive</thingClass>
+		<projectile>
+			<explosionRadius>1.9</explosionRadius>
+			<damageDef>Bomb</damageDef>
+			<DamageAmountBase>12</DamageAmountBase>
+			<Speed>30</Speed>
+		</projectile>
+	</ThingDef>
+
+
+	
+</ThingDefs>

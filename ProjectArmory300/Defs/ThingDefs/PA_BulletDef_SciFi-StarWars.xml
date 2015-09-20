@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ThingDefs>
+
+<!--
+PROJECT ARMORY WEAPON
+
+CODE AUTHOR: Evul and Felime
+
+USER LICENSE:
+All weapons texture and code may be altered to the users
+liking to fit the world the user wants to create.
+You may add or remove weapons of your downloaded
+Project Armory Pack to further more customize your world.
+You are also allowed to publish Project Armory weapons
+in your own modpack or mod. The only thing we ask for
+is that you link to our forum page so people that like
+the weapons can download more of them.
+
+-->
+
+	<ThingDef Name="BaseBullet" Abstract="True">
+			<category>Projectile</category>
+			<tickerType>Normal</tickerType>
+			<altitudeLayer>Projectile</altitudeLayer>
+			<thingClass>Bullet</thingClass>
+			<label>bullet</label>
+			<useHitPoints>False</useHitPoints>
+			<neverMultiSelect>True</neverMultiSelect>
+			<graphicData>
+      <shaderType>Transparent</shaderType>
+    </graphicData>
+	</ThingDef>
+
+<!-- ============================================================== -->
+	<!-- Blaster -->
+	<!-- Velocity:   m/s -->
+	<!-- Energy:     J -->
+<!-- ============================================================== -->
+
+	<!-- RIFLE -->
+	<ThingDef ParentName="BaseBullet">
+		<defName>Bullet_Blaster25_R_PA</defName>
+		<label>Laser</label>
+		<graphicData>
+		<texPath>Things/Projectile/Bullet_Laser_Red</texPath>
+		<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<projectile>
+			<damageDef>Bullet</damageDef>
+			<DamageAmountBase>4</DamageAmountBase>
+			<Speed>90</Speed>
+		</projectile>
+	</ThingDef>
+	
+	<ThingDef ParentName="BaseBullet">
+		<defName>Bullet_Blaster50_R_PA</defName>
+		<label>Laser</label>
+		<graphicData>
+		<texPath>Things/Projectile/Bullet_Laser_Red</texPath>
+		<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<projectile>
+			<damageDef>Bullet</damageDef>
+			<DamageAmountBase>8</DamageAmountBase>
+			<Speed>90</Speed>
+		</projectile>
+	</ThingDef>
+	
+	<ThingDef ParentName="BaseBullet">
+		<defName>Bullet_Blaster75_R_PA</defName>
+		<label>Laser</label>
+		<graphicData>
+		<texPath>Things/Projectile/Bullet_Laser_Red</texPath>
+		<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<projectile>
+			<damageDef>Bullet</damageDef>
+			<DamageAmountBase>12</DamageAmountBase>
+			<Speed>90</Speed>
+		</projectile>
+	</ThingDef>
+	
+	<ThingDef ParentName="BaseBullet">
+		<defName>Bullet_Blaster100_R_PA</defName>
+		<label>Laser</label>
+		<graphicData>
+		<texPath>Things/Projectile/Bullet_Laser_Red</texPath>
+		<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<projectile>
+			<damageDef>Bullet</damageDef>
+			<DamageAmountBase>16</DamageAmountBase>
+			<Speed>90</Speed>
+		</projectile>
+	</ThingDef>
+
+	<!-- PISTOL -->
+	<ThingDef ParentName="BaseBullet">
+		<defName>Bullet_Blaster25_P_PA</defName>
+		<label>Laser</label>
+		<graphicData>
+		<texPath>Things/Projectile/Bullet_Laser_Red</texPath>
+		<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<projectile>
+			<damageDef>Bullet</damageDef>
+			<DamageAmountBase>5</DamageAmountBase>
+			<Speed>90</Speed>
+		</projectile>
+	</ThingDef>
+	<ThingDef ParentName="BaseBullet">
+		<defName>Bullet_Blaster50_P_PA</defName>
+		<label>Laser</label>
+		<graphicData>
+		<texPath>Things/Projectile/Bullet_Laser_Red</texPath>
+		<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<projectile>
+			<damageDef>Bullet</damageDef>
+			<DamageAmountBase>10</DamageAmountBase>
+			<Speed>90</Speed>
+		</projectile>
+	</ThingDef>
+	<ThingDef ParentName="BaseBullet">
+		<defName>Bullet_Blaster75_P_PA</defName>
+		<label>Laser</label>
+		<graphicData>
+		<texPath>Things/Projectile/Bullet_Laser_Red</texPath>
+		<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<projectile>
+			<damageDef>Bullet</damageDef>
+			<DamageAmountBase>15</DamageAmountBase>
+			<Speed>90</Speed>
+		</projectile>
+	</ThingDef>
+	<ThingDef ParentName="BaseBullet">
+		<defName>Bullet_Blaster100_P_PA</defName>
+		<label>Laser</label>
+		<graphicData>
+		<texPath>Things/Projectile/Bullet_Laser_Red</texPath>
+		<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<projectile>
+			<damageDef>Bullet</damageDef>
+			<DamageAmountBase>20</DamageAmountBase>
+			<Speed>90</Speed>
+		</projectile>
+	</ThingDef>
+
+<!-- ============================================================== -->
+	<!-- Disintegrator Beam -->
+	<!-- Velocity:   m/s -->
+	<!-- Energy:     J -->
+<!-- ============================================================== -->
+
+	<!-- PISTOL -->
+	<ThingDef ParentName="BaseBullet">
+		<defName>Bullet_DisintegratorBeam_P_PA</defName>
+		<label>Disintegrator Beam</label>
+		<graphicData>
+		<texPath>Things/Projectile/Bullet_DisintegratorBeam</texPath>
+		<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<projectile>
+			<damageDef>Bullet</damageDef>
+			<DamageAmountBase>24</DamageAmountBase>
+			<Speed>40</Speed>
+		</projectile>
+	</ThingDef>	
+
+</ThingDefs>

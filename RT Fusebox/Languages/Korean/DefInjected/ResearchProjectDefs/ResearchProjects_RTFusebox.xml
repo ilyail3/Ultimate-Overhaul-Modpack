@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<LanguageData>
+
+  <RTFusebox_BasicFuses.label>기본 퓨즈</RTFusebox_BasicFuses.label>
+  <RTFusebox_BasicFuses.description>강철 실로 즉석에서 퓨즈를 만들 수 있습니다. 각 퓨즈는 2500 Wd(축전지 약 두 개 분량)의 방전을 막을 수 있지만, 그 양을 초과할 경우 망가져 다시 사용할 수 없습니다.</RTFusebox_BasicFuses.description>
+
+  <RTFusebox_AdvancedFuses.label>고급 퓨즈</RTFusebox_AdvancedFuses.label>
+  <RTFusebox_AdvancedFuses.description>플라스틸 실로 만든 퓨즈 여러 개로 두꺼비집을 만들 수 있습니다. 각 두꺼비집은 3000 Wd(축전지 세 개 분량)의 방전을 막을 수 있으며, 이 양을 초과해도 완전히 망가지지 않습니다.</RTFusebox_AdvancedFuses.description>
+
+  <RTFusebox_FlareShield.label>흑점 폭발 보호막</RTFusebox_FlareShield.label>
+  <RTFusebox_FlareShield.description>흑점 폭발로부터 주변 전자기기를 보호할 수 있는 자기적 보호막을 건설할 수 있습니다.</RTFusebox_FlareShield.description>
+
+</LanguageData>

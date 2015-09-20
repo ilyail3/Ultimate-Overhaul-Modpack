@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<NameMakerDefs>
+
+  <RulePackDef>
+    <defName>NamerPTFaction</defName>
+    <rulePack>
+      <rulesStrings>
+        <li>name->[FrontalPT] [PosteriorPT]</li>
+        <li>name->[FrontalPT] [Nikki][Naime] [PosteriorPT]</li>
+      </rulesStrings>
+      <rulesRaw>
+        <li Class="Rule_File">
+          <keyword>FrontalPT</keyword>
+          <path>BankyPT/Frontal</path>
+        </li>
+        <li Class="Rule_File">
+          <keyword>PosteriorPT</keyword>
+          <path>BankyPT/Posterior</path>
+        </li>
+        <li Class="Rule_File">
+          <keyword>Nikki</keyword>
+          <path>BankyPT/Nikki</path>
+        </li>
+        <li Class="Rule_File">
+          <keyword>Naime</keyword>
+          <path>BankyPT/Naime</path>
+        </li>
+      </rulesRaw>
+    </rulePack>
+  </RulePackDef>
+
+</NameMakerDefs>
+
+
+
+
+
+
+

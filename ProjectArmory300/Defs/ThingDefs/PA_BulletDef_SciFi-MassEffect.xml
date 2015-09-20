@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ThingDefs>
+
+<!--
+PROJECT ARMORY WEAPON
+
+CODE AUTHOR: Evul
+
+USER LICENSE:
+All weapons texture and code may be altered to the users
+liking to fit the world the user wants to create.
+You may add or remove weapons of your downloaded
+Project Armory Pack to further more customize your world.
+You are also allowed to publish Project Armory weapons
+in your own modpack or mod. The only thing we ask for
+is that you link to our forum page so people that like
+the weapons can download more of them.
+
+-->
+
+	<ThingDef Name="BaseBullet" Abstract="True">
+			<category>Projectile</category>
+			<tickerType>Normal</tickerType>
+			<altitudeLayer>Projectile</altitudeLayer>
+			<thingClass>Bullet</thingClass>
+			<label>bullet</label>
+			<useHitPoints>False</useHitPoints>
+			<neverMultiSelect>True</neverMultiSelect>
+			<graphicData>
+      <shaderType>Transparent</shaderType>
+    </graphicData>
+	</ThingDef>
+	
+<!--
+BULLETS:
+  Bullet_M8AvengerModel_AR_PA
+ -->
+
+<!-- ============================================================== -->
+	<!-- M-8 Avenger Model, Mass Accelerated Slug -->
+	<!-- Velocity: 1,600 m/s -->
+	<!-- Energy:   1,300 J   (ME3:[13 damage]*100)-->
+<!-- ============================================================== -->
+
+	<!-- ASSAULT RIFLE -->
+	<ThingDef ParentName="BaseBullet">
+		<defName>Bullet_M8AvengerModel_AR_PA</defName>
+		<label>Mass Accelerated Slug</label>
+		<graphicData>
+		<texPath>Things/Projectile/Bullet_Small</texPath>
+		<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<projectile>
+			<damageDef>Bullet</damageDef>
+			<DamageAmountBase>6</DamageAmountBase>
+			<Speed>73</Speed>
+		</projectile>
+	</ThingDef>
+	
+<!-- ============================================================== -->
+	<!-- M-96 Mattock Model, Mass Accelerated Slug -->
+	<!-- Velocity: 1,600 m/s -->
+	<!-- Energy:   2,200 J   (ME3:[22 damage]*100)-->
+<!-- ============================================================== -->
+
+	<!-- ASSAULT RIFLE -->
+	<ThingDef ParentName="BaseBullet">
+		<defName>Bullet_M96Mattock_AR_PA</defName>
+		<label>Mass Accelerated Slug</label>
+		<graphicData>
+		<texPath>Things/Projectile/Bullet_Small</texPath>
+		<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<projectile>
+			<damageDef>Bullet</damageDef>
+			<DamageAmountBase>13</DamageAmountBase>
+			<Speed>73</Speed>
+		</projectile>
+	</ThingDef>
+	
+<!-- ============================================================== -->
+	<!-- M-96 Mattock Model, Mass Accelerated Slug -->
+	<!-- Velocity: 1,600 m/s -->
+	<!-- Energy:   2,200 J   (ME3:[22 damage]*100)-->
+<!-- ============================================================== -->
+
+	<!-- ASSAULT RIFLE -->
+	<ThingDef ParentName="BaseBullet">
+		<defName>Bullet_CerberusHarrier_AR_PA</defName>
+		<label>Mass Accelerated Slug</label>
+		<graphicData>
+		<texPath>Things/Projectile/Bullet_Small</texPath>
+		<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<projectile>
+			<damageDef>Bullet</damageDef>
+			<DamageAmountBase>10</DamageAmountBase>
+			<Speed>73</Speed>
+		</projectile>
+	</ThingDef>
+	
+<!-- ============================================================== -->
+	<!-- M7 Lancer Model, Mass Accelerated Slug -->
+	<!-- Velocity: 1,600 m/s -->
+	<!-- Energy:   2,500 J   (ME3:[25 damage]*100)-->
+<!-- ============================================================== -->
+
+	<!-- ASSAULT RIFLE -->
+	<ThingDef ParentName="BaseBullet">
+		<defName>Bullet_M7Lancer_AR_PA</defName>
+		<label>Mass Accelerated Slug</label>
+		<graphicData>
+		<texPath>Things/Projectile/Bullet_Small</texPath>
+		<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<projectile>
+			<damageDef>Bullet</damageDef>
+			<DamageAmountBase>12</DamageAmountBase>
+			<Speed>73</Speed>
+		</projectile>
+	</ThingDef>
+	
+<!-- ============================================================== -->
+	<!-- M-15 Vindicator Model, Mass Accelerated Slug -->
+	<!-- Velocity: 1,600 m/s -->
+	<!-- Energy:   2,200 J   (ME3:[22 damage]*100)-->
+<!-- ============================================================== -->
+
+	<!-- ASSAULT RIFLE -->
+	<ThingDef ParentName="BaseBullet">
+		<defName>Bullet_M15Vindicator_AR_PA</defName>
+		<label>Mass Accelerated Slug</label>
+		<graphicData>
+		<texPath>Things/Projectile/Bullet_Small</texPath>
+		<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<projectile>
+			<damageDef>Bullet</damageDef>
+			<DamageAmountBase>9</DamageAmountBase>
+			<Speed>73</Speed>
+		</projectile>
+	</ThingDef>
+	
+<!-- ============================================================== -->
+	<!-- M-76 Revenant Model, Mass Accelerated Slug -->
+	<!-- Velocity: 1,600 m/s -->
+	<!-- Energy:   2,000 J   (ME3:[20 damage]*100)-->
+<!-- ============================================================== -->
+
+	<!-- ASSAULT RIFLE -->
+	<ThingDef ParentName="BaseBullet">
+		<defName>Bullet_M76Revenant_AR_PA</defName>
+		<label>Mass Accelerated Slug</label>
+		<graphicData>
+		<texPath>Things/Projectile/Bullet_Small</texPath>
+		<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<projectile>
+			<damageDef>Bullet</damageDef>
+			<DamageAmountBase>10</DamageAmountBase>
+			<Speed>73</Speed>
+		</projectile>
+	</ThingDef>
+	
+<!-- ============================================================== -->
+	<!-- M-55 Argus Model, Mass Accelerated Slug -->
+	<!-- Velocity: 1,600 m/s -->
+	<!-- Energy:   2,700 J   (ME3:[27 damage]*100)-->
+<!-- ============================================================== -->
+
+	<!-- ASSAULT RIFLE -->
+	<ThingDef ParentName="BaseBullet">
+		<defName>Bullet_M55Argus_AR_PA</defName>
+		<label>Mass Accelerated Slug</label>
+		<graphicData>
+		<texPath>Things/Projectile/Bullet_Small</texPath>
+		<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<projectile>
+			<damageDef>Bullet</damageDef>
+			<DamageAmountBase>14</DamageAmountBase>
+			<Speed>73</Speed>
+		</projectile>
+	</ThingDef>
+	
+<!-- ============================================================== -->
+	<!-- N7 Valkyre Model, Mass Accelerated Slug -->
+	<!-- Velocity: 1,600 m/s -->
+	<!-- Energy:   2,000 J   (ME3:[20 damage]*100)-->
+<!-- ============================================================== -->
+
+	<!-- ASSAULT RIFLE -->
+	<ThingDef ParentName="BaseBullet">
+		<defName>Bullet_N7Valkyre_AR_PA</defName>
+		<label>Mass Accelerated Slug</label>
+		<graphicData>
+		<texPath>Things/Projectile/Bullet_Small</texPath>
+		<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<projectile>
+			<damageDef>Bullet</damageDef>
+			<DamageAmountBase>10</DamageAmountBase>
+			<Speed>73</Speed>
+		</projectile>
+	</ThingDef>
+
+<!-- ============================================================== -->
+	<!-- M-3 Predator Model, Mass Accelerated Slug -->
+	<!-- Velocity:   800 m/s -->
+	<!-- Energy:   2,000 J   (ME3:[20 damage]*100)-->
+<!-- ============================================================== -->
+
+	<!-- PISTOL -->
+	<ThingDef ParentName="BaseBullet">
+		<defName>Bullet_M3PredatorModel_P_PA</defName>
+		<label>Mass Accelerated Slug</label>
+		<graphicData>
+		<texPath>Things/Projectile/Bullet_Small</texPath>
+		<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<projectile>
+			<damageDef>Bullet</damageDef>
+			<DamageAmountBase>13</DamageAmountBase>
+			<Speed>68</Speed>
+		</projectile>
+	</ThingDef>
+
+</ThingDefs>

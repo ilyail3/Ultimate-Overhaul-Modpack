@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<LanguageData>
+
+  <CompRTQuantumWarehouse_ConnectedQS>연결된 양자 저장소: </CompRTQuantumWarehouse_ConnectedQS>
+  <CompRTQuantumWarehouse_NotValid>양자 창고 이미 존재.</CompRTQuantumWarehouse_NotValid>
+  <CompRTQuantumWarehouse_SparklesToggle>양자 창고 범위 표시</CompRTQuantumWarehouse_SparklesToggle>
+  <CompRTQuantumWarehouse_SparklesAreOn>활성화</CompRTQuantumWarehouse_SparklesAreOn>
+  <CompRTQuantumWarehouse_SparkelsAreOff>비활성화</CompRTQuantumWarehouse_SparkelsAreOff>
+
+</LanguageData>

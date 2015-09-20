@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<DefPackage-HairDef>
+  <HairDef>
+    <defName>Techplug</defName>
+    <label>wires</label>
+    <hairGender>Any</hairGender>
+    <texPath>PTplug</texPath>
+		<hairTags>
+			<li>TrannyHair</li>
+		</hairTags>
+  </HairDef>
+
+</DefPackage-HairDef>

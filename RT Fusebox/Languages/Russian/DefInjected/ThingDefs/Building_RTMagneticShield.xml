@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<LanguageData>
+
+  <Building_RTMagneticShield.label>magnetic shield</Building_RTMagneticShield.label>
+  <Building_RTMagneticShield.description>Защищает технику колонии от солнечных вспышек, потербляя огромное количество электроэнергии и значительно нагреваясь. Держать более одного щита активным бесполезно и только создаст лишних проблем.</Building_RTMagneticShield.description>
+ 
+</LanguageData>

@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ModMetaData>
+	<name>Roof Support</name>
+    <url>https://ludeon.com/forums/index.php?topic=7458.0</url>
+	<author></author>
+	<targetVersion>Modpack</targetVersion>
+	<description>Nommy, Igabod, Minus, Shinzy, Vas
+	
+Version 0.8.3 (released 21-12-2014)
+
+A structural column capable of holding up a roof. Does not impede movement or provide any cover.
+
+There's other textures included in the RoofSupport\Textures\Things\Building folder which can be renamed to 'RoofSupport.png' to be used. So if you want to have skinny skeleton statues holding your roof up, look there!
+</description>
+</ModMetaData>

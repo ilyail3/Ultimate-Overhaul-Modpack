@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<!--suppress ALL -->
+<LanguageData>
+
+	<Accipiter.label>어시피터 페리오딕</Accipiter.label>
+	<Accipiter.description>연화 정밀의 홍보담당자 어시피터는 좀 이상한 방식으로 이야기를 전개합니다. 큰 일은 항상 정확한 운율에 맞춰 일어나야 한다는 겁니다. ※ 주말마다 습격자를 보냄</Accipiter.description>
+	<Accipiter.quotation>무릇 끝내주는 이야기라면 시처럼 운율이 있어야지. 안그래?</Accipiter.quotation>
+
+	<Sereniz.label>세레니즈 새디스틱</Sereniz.label>
+	<Sereniz.description>탈주 연방 평화유지군 지휘관 세레니즈는 전 직업 특성상 수많은 고통스러운 이야기를 알고 있습니다. 등장인물들은 끝없는 고통에 몸부림치다 파멸을 맞이하죠. 세레니즈는 그런 이야기를 좋아합니다. ※ 습격자는 적게 보내나 사건사고가 자주 일어남.</Sereniz.description>
+	<Sereniz.quotation>비극에도 나름대로의 미학이 있죠. 부디 즐겨주시길.</Sereniz.quotation>
+
+	<Hildegarde.label>힐데가르드 에픽</Hildegarde.label>
+	<Hildegarde.description>요튠하임 강습 공병대의 음유시인이자 베테랑 전사인 힐데가르드가 들려주는 이야기는 분노와 화염으로 가득합니다. 마치 요튠하임의 사람들처럼요. ※ 사건 사고는 적으나 습격이 더 자주 일어남.</Hildegarde.description>
+	<Hildegarde.quotation>진정으로 누군가의 가치를 재단할 수 있는 척도는 오로지 하나뿐. 전쟁의 모루, 시련의 단조를 겪는 것.</Hildegarde.quotation>
+
+</LanguageData>

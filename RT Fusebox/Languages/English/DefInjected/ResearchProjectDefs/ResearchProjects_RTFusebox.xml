@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<LanguageData>
+
+  <RTFusebox_BasicFuses.label>basic fuses</RTFusebox_BasicFuses.label>
+  <RTFusebox_BasicFuses.description>Build makeshift fuses out of steel strips. Each one is enough to dissipate up to 2500 Wd (over two standard batteries) discharge, but will burn out if exceeded.</RTFusebox_BasicFuses.description>
+
+  <RTFusebox_AdvancedFuses.label>advanced fuses</RTFusebox_AdvancedFuses.label>
+  <RTFusebox_AdvancedFuses.description>Build proper fuseboxes out of plasteel rods. Each one is enough to dissipate up to 3000 Wd (three standard batteries) discharge, and will never burn itself out.</RTFusebox_AdvancedFuses.description>
+
+  <RTFusebox_FlareShield.label>solar flare shielding</RTFusebox_FlareShield.label>
+  <RTFusebox_FlareShield.description>Construct a magnetic shield that will protect electric devices in your colony from solar flares.</RTFusebox_FlareShield.description>
+</LanguageData>

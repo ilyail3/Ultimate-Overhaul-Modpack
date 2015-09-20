@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ThingDefs>
+
+<!--
+PROJECT ARMORY WEAPON
+
+CODE AUTHOR: Evul and Felime
+
+USER LICENSE:
+All weapons texture and code may be altered to the users
+liking to fit the world the user wants to create.
+You may add or remove weapons of your downloaded
+Project Armory Pack to further more customize your world.
+You are also allowed to publish Project Armory weapons
+in your own modpack or mod. The only thing we ask for
+is that you link to our forum page so people that like
+the weapons can download more of them.
+
+-->
+
+	<ThingDef Name="BaseBullet" Abstract="True">
+			<category>Projectile</category>
+			<tickerType>Normal</tickerType>
+			<altitudeLayer>Projectile</altitudeLayer>
+			<thingClass>ProjectArmory.PA_Bullet</thingClass>
+			<label>bullet</label>
+			<useHitPoints>False</useHitPoints>
+			<neverMultiSelect>True</neverMultiSelect>
+			<graphicData>
+      <shaderType>Transparent</shaderType>
+    </graphicData>
+	</ThingDef>
+
+<!-- THIS BULLET FILE REQUIRES ProjectArmory.dll to function.-->
+	
+<!--
+BULLETS:
+  Bullet_Blunderbuss_P_PA
+  
+ -->
+
+<!-- ============================================================== -->
+	<!-- Ball -->
+	<!-- Velocity:   300 m/s -->
+	<!-- Energy:     600 J -->
+<!-- ============================================================== -->
+
+	<!-- PISTOL -->
+	<ThingDef Class="ProjectArmory.PABulletDef" ParentName="BaseBullet" Name="XML_RenaissanceBall_P_PA">
+		<defName>Bullet_RenaissanceBall_P_PA</defName>
+		<label>Ball</label>
+		<graphicData>
+		<texPath>Things/Projectile/Bullet_Small</texPath>
+		<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<projectile>
+			<damageDef>Bullet</damageDef>
+			<DamageAmountBase>10</DamageAmountBase>
+			<Speed>54.8</Speed>
+		</projectile>
+		<MinDamageValue>2</MinDamageValue>
+	</ThingDef>
+				<ThingDef Class="ProjectArmory.PABulletDef" ParentName="XML_RenaissanceBall_P_PA">
+				<defName>Bullet_WhellockPistolBall_P_PA</defName>
+				<label>Wheellock Pistol</label>
+				<graphicData>
+				<texPath>Things/Projectile/Bullet_Small</texPath>
+				<graphicClass>Graphic_Single</graphicClass>
+				</graphicData>
+				<projectile>
+				<damageDef>Bullet</damageDef>
+				<DamageAmountBase>12</DamageAmountBase>
+				<Speed>55</Speed>
+			</projectile>
+			<MinDamageValue>8</MinDamageValue>
+	</ThingDef>
+	<ThingDef Class="ProjectArmory.PABulletDef" ParentName="XML_RenaissanceBall_P_PA">
+		<defName>Bullet_BlunderbussPistol_P_PA</defName>
+		<label>Blunderbuss Pistol</label>
+		<graphicData>
+		<texPath>Things/Projectile/Bullet_Shotgun</texPath>
+		<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<projectile>
+			<damageDef>Bullet</damageDef>
+			<DamageAmountBase>12</DamageAmountBase>
+			<Speed>45</Speed>
+		</projectile>
+		<MinDamageValue>5</MinDamageValue>
+	</ThingDef>
+				
+	<!-- RIFLE -->
+	<ThingDef Class="ProjectArmory.PABulletDef" ParentName="BaseBullet" Name="XML_RenaissanceBall_R_PA">
+		<defName>Bullet_RenaissanceBall_R_PA</defName>
+		<label>Ball</label>
+		<graphicData>
+		<texPath>Things/Projectile/Bullet_Small</texPath>
+		<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<projectile>
+			<damageDef>Bullet</damageDef>
+			<DamageAmountBase>12</DamageAmountBase>
+			<Speed>66.8</Speed>
+		</projectile>
+		<MinDamageValue>4</MinDamageValue>
+	</ThingDef>			
+	<ThingDef Class="ProjectArmory.PABulletDef" ParentName="XML_RenaissanceBall_R_PA">
+		<defName>Bullet_ArquebusBall_R_PA</defName>
+		<label>Arquebus</label>
+		<graphicData>
+		<texPath>Things/Projectile/Bullet_Big</texPath>
+		<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<projectile>
+			<damageDef>Bullet</damageDef>
+			<DamageAmountBase>18</DamageAmountBase>
+			<Speed>66.8</Speed>
+		</projectile>
+		<MinDamageValue>8</MinDamageValue>
+	</ThingDef>
+	<ThingDef Class="ProjectArmory.PABulletDef" ParentName="XML_RenaissanceBall_R_PA">
+		<defName>Bullet_SwedishSnaphanceBall_R_PA</defName>
+		<label>Arquebus</label>
+		<graphicData>
+		<texPath>Things/Projectile/Bullet_Big</texPath>
+		<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<projectile>
+			<damageDef>Bullet</damageDef>
+			<DamageAmountBase>24</DamageAmountBase>
+			<Speed>70</Speed>
+		</projectile>
+		<MinDamageValue>12</MinDamageValue>
+	</ThingDef>
+	<ThingDef Class="ProjectArmory.PABulletDef" ParentName="XML_RenaissanceBall_R_PA">
+	<defName>Bullet_HandCannonBall_R_PA</defName>
+		<label>Hand Cannon</label>
+		<graphicData>
+		<texPath>Things/Projectile/HandCannon_Ball</texPath>
+		<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<projectile>
+			<damageDef>Bullet</damageDef>
+			<DamageAmountBase>32</DamageAmountBase>
+			<Speed>55</Speed>
+		</projectile>
+		<MinDamageValue>12</MinDamageValue>
+	</ThingDef>
+
+<!-- ============================================================== -->
+	<!-- Blunderbuss -->
+	<!-- Velocity:   300 m/s -->
+	<!-- Energy:     900 J -->
+<!-- ============================================================== -->
+
+	<ThingDef Class="ProjectArmory.PABulletDef" ParentName="BaseBullet" Name="XML_RenaissanceBlunderbuss_S_PA">
+		<defName>Bullet_RenaissanceBlunderbuss_S_PA</defName>
+		<label>Ball</label>
+		<graphicData>
+		<texPath>Things/Projectile/Bullet_Shotgun</texPath>
+		<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<projectile>
+			<damageDef>Bullet</damageDef>
+			<DamageAmountBase>16</DamageAmountBase>
+			<Speed>53.8</Speed>
+		</projectile>
+		<MinDamageValue>5</MinDamageValue>
+	</ThingDef>			
+	</ThingDefs>

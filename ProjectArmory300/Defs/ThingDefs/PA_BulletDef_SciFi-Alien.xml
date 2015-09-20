@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ThingDefs>
+
+<!--
+PROJECT ARMORY WEAPON
+
+CODE AUTHOR: Evul
+
+USER LICENSE:
+All weapons texture and code may be altered to the users
+liking to fit the world the user wants to create.
+You may add or remove weapons of your downloaded
+Project Armory Pack to further more customize your world.
+You are also allowed to publish Project Armory weapons
+in your own modpack or mod. The only thing we ask for
+is that you link to our forum page so people that like
+the weapons can download more of them.
+
+-->
+
+	<ThingDef Name="BaseBullet" Abstract="True">
+			<category>Projectile</category>
+			<tickerType>Normal</tickerType>
+			<altitudeLayer>Projectile</altitudeLayer>
+			<thingClass>Bullet</thingClass>
+			<label>bullet</label>
+			<useHitPoints>False</useHitPoints>
+			<neverMultiSelect>True</neverMultiSelect>
+			<graphicData>
+      <shaderType>Transparent</shaderType>
+    </graphicData>
+	</ThingDef>
+	
+<!--
+BULLETS:
+  Bullet_10x24mmCaseless_AS_PA
+ -->
+
+<!-- ============================================================== -->
+	<!-- 10x24mm Caseless -->
+	<!-- Velocity:   1030 m/s -->
+	<!-- Energy:     1216 J -->
+<!-- ============================================================== -->
+
+	<!-- ASSAULT RIFLE -->
+	<ThingDef ParentName="BaseBullet">
+		<defName>Bullet_10x24mmCaseless_AS_PA</defName>
+		<label>10x24mm Caseless</label>
+		<graphicData>
+		<texPath>Things/Projectile/Bullet_Small</texPath>
+		<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<projectile>
+			<damageDef>Bullet</damageDef>
+			<DamageAmountBase>5</DamageAmountBase>
+			<Speed>70</Speed>
+		</projectile>
+	</ThingDef>
+</ThingDefs>

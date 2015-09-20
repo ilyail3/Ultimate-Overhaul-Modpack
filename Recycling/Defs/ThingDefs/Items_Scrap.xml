@@ -1,0 +1,158 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Resources>
+
+
+	<!-- =========== bases =========== -->
+
+	
+	<ThingDef Name="ResourceBase" Abstract="True">
+		<thingClass>ThingWithComps</thingClass>
+		<label>unspecified resource</label>
+		<category>Item</category>
+		<resourceReadoutPriority>Middle</resourceReadoutPriority>
+		<useHitPoints>true</useHitPoints>
+		<selectable>true</selectable>
+		<altitudeLayer>Item</altitudeLayer>
+		<stackLimit>75</stackLimit>
+		<comps>
+			<li>
+				<compClass>CompForbiddable</compClass>
+			</li>
+		</comps>
+		<alwaysHaulable>true</alwaysHaulable>
+		<drawGUIOverlay>true</drawGUIOverlay>
+		<rotatable>false</rotatable>
+		<pathCost>15</pathCost>
+	</ThingDef>
+
+	<ThingDef Name="ResourceVerbBase" ParentName="ResourceBase" Abstract="True">
+		<equipmentType>Primary</equipmentType>
+		<techLevel>Neolithic</techLevel>
+		<comps>
+			<li>
+				<compClass>CompEquippable</compClass>
+			</li>
+		</comps>
+	</ThingDef>
+
+
+	
+	<ThingDef ParentName="ResourceBase">
+		<defName>TextileStrips</defName>
+		<label>textile strips</label>
+		<description>Textile strips torn from clothing.</description>
+		<graphicData>
+		<texPath>Things/Item/Resource/textile</texPath>
+		<graphicClass>Graphic_Single</graphicClass>
+		<color>(255,255,255)</color>
+		</graphicData>
+		<statBases>
+			<MaxHitPoints>100</MaxHitPoints>
+			<MarketValue>0.05</MarketValue>
+			<Flammability>1.0</Flammability>
+			<DeteriorationRate>2</DeteriorationRate>
+		</statBases>
+		<stuffProps>
+			<categories>
+				<li>Scrap</li>
+			</categories>
+			<color>(174,157,152)</color>
+			<statFactors>
+				<Beauty>1.0</Beauty>
+			</statFactors>
+		</stuffProps>
+		<thingCategories>
+			<li>Textiles</li>
+		</thingCategories>
+	</ThingDef>
+	
+	<ThingDef ParentName="ResourceBase">
+		<defName>PlasteelTextileStrips</defName>
+		<label>plasteel textile strips</label>
+		<description>Plasteel textile strips.</description>
+		<graphicData>
+		<texPath>Things/Item/Resource/textile</texPath>
+		<graphicClass>Graphic_Single</graphicClass>
+		<color>(135,206,250)</color>
+		</graphicData>
+		<statBases>
+			<MaxHitPoints>100</MaxHitPoints>
+			<MarketValue>0.1</MarketValue>
+			<Flammability>1.0</Flammability>
+			<DeteriorationRate>2</DeteriorationRate>
+		</statBases>
+		<stuffProps>
+			<categories>
+				<li>Scrap</li>
+			</categories>
+			<color>(174,157,152)</color>
+			<statFactors>
+				<Beauty>1.0</Beauty>
+			</statFactors>
+		</stuffProps>
+		<thingCategories>
+			<li>Textiles</li>
+		</thingCategories>
+	</ThingDef>
+	
+	<ThingDef ParentName="ResourceBase">
+		<defName>ScrapMetal</defName>
+		<label>scrap metal</label>
+		<description>Scrap metal recycled from metalic items.</description>
+		<graphicData>
+		<texPath>Tables/Alloy</texPath>
+		<graphicClass>Graphic_Single</graphicClass>
+		<color>(162,157,152)</color>
+		</graphicData>
+		<statBases>
+			<MaxHitPoints>100</MaxHitPoints>
+			<MarketValue>0.05</MarketValue>
+			<Flammability>1.0</Flammability>
+			<DeteriorationRate>2</DeteriorationRate>
+		</statBases>
+		<stuffProps>
+			<categories>
+				<li>Scrap</li>
+			</categories>
+			<color>(180,173,150)</color>
+			<statFactors>
+				<Beauty>1.0</Beauty>
+			</statFactors>
+		</stuffProps>
+		<thingCategories>
+			<li>Manufactured</li>
+		</thingCategories>
+	</ThingDef>
+	
+	<ThingDef ParentName="ResourceBase">
+		<defName>CopperWire</defName>
+		<label>copper wire</label>
+		<description>Copper wire refined from copper bars.</description>
+		<graphicData>
+		<texPath>Things/Item/Resource/CopperWire</texPath>
+		<graphicClass>Graphic_Single</graphicClass>
+		<color>(205,133,63)</color>
+		</graphicData>
+		<statBases>
+			<MaxHitPoints>100</MaxHitPoints>
+			<MarketValue>0.05</MarketValue>
+			<Flammability>1.0</Flammability>
+			<DeteriorationRate>2</DeteriorationRate>
+		</statBases>
+		<stuffProps>
+			<categories>
+				<li>Matty</li>
+			</categories>
+			<color>(205,133,63)</color>
+			<statFactors>
+				<Beauty>1.0</Beauty>
+			</statFactors>
+		</stuffProps>
+		<thingCategories>
+			<li>Manufactured</li>
+		</thingCategories>
+	</ThingDef>
+
+
+
+</Resources>

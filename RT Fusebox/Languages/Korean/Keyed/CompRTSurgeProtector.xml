@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<LanguageData>
+
+  <CompRTSurgeProtector_ProtectsAgainst>{0} Wd까지의 방전 완화 가능.</CompRTSurgeProtector_ProtectsAgainst>
+  <CompRTSurgeProtector_SingleUse>초과 시 재사용 불가능.</CompRTSurgeProtector_SingleUse>
+  
+ </LanguageData>

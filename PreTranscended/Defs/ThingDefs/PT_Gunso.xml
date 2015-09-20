@@ -1,0 +1,385 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ThingDefs>
+
+
+  <ThingDef Name="BaseGun" Abstract="True">
+    <category>Item</category>
+    <thingClass>ThingWithComps</thingClass>
+    <equipmentType>Primary</equipmentType>
+    <pathCost>10</pathCost>
+    <useHitPoints>True</useHitPoints>
+    <selectable>True</selectable>
+    <graphicData>
+      <onGroundRandomRotateAngle>35</onGroundRandomRotateAngle>
+    </graphicData>
+    <drawGUIOverlay>true</drawGUIOverlay>
+    <statBases>
+      <MaxHitPoints>100</MaxHitPoints>
+      <Flammability>1.0</Flammability>
+      <DeteriorationRate>1</DeteriorationRate>
+      <SellPriceFactor>0.05</SellPriceFactor>
+    </statBases>
+    <altitudeLayer>Item</altitudeLayer>
+    <alwaysHaulable>True</alwaysHaulable>
+    <tickerType>Never</tickerType>
+	<thingCategories>
+		<li>Transcended</li>
+	</thingCategories>
+    <inspectorTabs>
+      <li>ITab_Art</li>
+    </inspectorTabs>
+    <comps>
+      <li>
+        <compClass>CompForbiddable</compClass>
+      </li>
+      <li>
+        <compClass>CompEquippable</compClass>
+      </li>
+      <li>
+        <compClass>CompQuality</compClass>
+      </li>
+      <li>
+        <compClass>CompArt</compClass>
+        <nameMaker>NamerGun</nameMaker>
+        <descriptionMaker>ArtWeaponGun</descriptionMaker>
+        <minQualityForArtistic>Excellent</minQualityForArtistic>
+      </li>
+    </comps>
+	<smeltProducts>
+			<SteelBar>10</SteelBar>
+	</smeltProducts>
+  </ThingDef>
+
+
+
+  <ThingDef Name="BaseBullet" Abstract="True">
+    <category>Projectile</category>
+    <tickerType>Normal</tickerType>
+    <altitudeLayer>Projectile</altitudeLayer>
+    <thingClass>Bullet</thingClass>
+    <label>bullet</label>
+    <useHitPoints>False</useHitPoints>
+    <neverMultiSelect>True</neverMultiSelect>
+    <graphicData>
+      <shaderType>Transparent</shaderType>
+    </graphicData>
+  </ThingDef>
+
+
+
+
+
+  <ThingDef ParentName="BaseBullet">
+    <defName>Bullet_ChargoDeLanco</defName>
+    <label>hypercharged shot</label>
+    <graphicData>
+      <texPath>PacsGunnar/CShot</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <shaderType>TransparentPostLight</shaderType>
+      <drawSize>(3,3)</drawSize>
+    </graphicData>
+    <projectile>
+      <damageDef>Bullet</damageDef>
+      <damageAmountBase>27</damageAmountBase>
+      <speed>120</speed>
+    </projectile>
+  </ThingDef>
+  <ThingDef ParentName="BaseGun">
+    <defName>Gunnar_ChargoDeLanco</defName>
+    <label>charged sniper rifle</label>
+    <description>Charged-shot Sniper rifle. Fires a single charged shot at high velocity.</description>
+    <graphicData>
+      <texPath>PacsGunnar/Csnipe</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <statBases>
+      <MarketValue>1200</MarketValue>
+      <AccuracyTouch>0.6</AccuracyTouch>
+      <AccuracyShort>0.8</AccuracyShort>
+      <AccuracyMedium>0.92</AccuracyMedium>
+      <AccuracyLong>0.88</AccuracyLong>
+      <RangedWeapon_Cooldown>2.8</RangedWeapon_Cooldown>
+    </statBases>
+    <techLevel>Spacer</techLevel>
+    <weaponTags>
+      <li>TransBlue</li>
+    </weaponTags>
+    <verbs>
+      <li>
+        <verbClass>Verb_Shoot</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <projectileDef>Bullet_ChargoDeLanco</projectileDef>
+        <warmupTicks>120</warmupTicks>
+        <range>37</range>
+        <burstShotCount>1</burstShotCount>
+        <soundCast>ChargeLance_Fire</soundCast>
+        <soundCastTail>GunTail_Heavy</soundCastTail>
+        <muzzleFlashScale>9</muzzleFlashScale>
+      </li>
+    </verbs>
+  </ThingDef>
+  <ThingDef ParentName="BaseGun">
+    <defName>Gunnar_ChargoDeLancoTwo</defName>
+    <label>charged sniper rifle</label>
+    <description>Charged-shot Sniper rifle. Fires a single charged shot at high velocity.</description>
+    <graphicData>
+      <texPath>PacsGunnar/Csnipelite</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <statBases>
+      <MarketValue>1300</MarketValue>
+      <AccuracyTouch>0.6</AccuracyTouch>
+      <AccuracyShort>0.8</AccuracyShort>
+      <AccuracyMedium>0.92</AccuracyMedium>
+      <AccuracyLong>0.88</AccuracyLong>
+      <RangedWeapon_Cooldown>1</RangedWeapon_Cooldown>
+    </statBases>
+    <techLevel>Spacer</techLevel>
+    <weaponTags>
+      <li>TransOrange</li>
+    </weaponTags>
+    <verbs>
+      <li>
+        <verbClass>Verb_Shoot</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <projectileDef>Bullet_ChargoDeLanco</projectileDef>
+        <warmupTicks>100</warmupTicks>
+        <range>25</range>
+        <burstShotCount>2</burstShotCount>
+        <soundCast>ChargeLance_Fire</soundCast>
+        <soundCastTail>GunTail_Heavy</soundCastTail>
+        <muzzleFlashScale>9</muzzleFlashScale>
+      </li>
+    </verbs>
+  </ThingDef>
+
+
+  <!-- ==================== T-9 incendiary launcher ========================== -->
+
+  <ThingDef ParentName="BaseBullet">
+    <defName>Bulletto_IncendiaryLauncheroos</defName>
+    <label>incendiary bolt</label>
+    <graphicData>
+      <texPath>PacsGunnar/FlameCharge</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <shaderType>TransparentPostLight</shaderType>
+    </graphicData>
+    <thingClass>Projectile_Explosive</thingClass>
+    <projectile>
+      <speed>50</speed>
+      <damageDef>Flame</damageDef>
+      <damageAmountBase>20</damageAmountBase>
+      <explosionRadius>1.4</explosionRadius>
+      <postExplosionSpawnThingDef>Puddle_Fuel</postExplosionSpawnThingDef>
+      <explosionSpawnChance>0.8</explosionSpawnChance>
+    </projectile>
+  </ThingDef>
+
+  <ThingDef ParentName="BaseGun">
+    <defName>Gunnar_IncendiaryInsidious</defName>
+    <label>incendiary cannon</label>
+    <description>Incendiary bolt cannon. Starts fires.</description>
+    <graphicData>
+      <texPath>PacsGunnar/ChargeCannon</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <soundInteract>InteractRifle</soundInteract>
+    <statBases>
+      <MarketValue>500</MarketValue>
+      <AccuracyTouch>0.79</AccuracyTouch>
+      <AccuracyShort>0.42</AccuracyShort>
+      <AccuracyMedium>0.18</AccuracyMedium>
+      <AccuracyLong>0.06</AccuracyLong>
+      <RangedWeapon_Cooldown>1.66</RangedWeapon_Cooldown>
+    </statBases>
+    <techLevel>Spacer</techLevel>
+    <weaponTags>
+      <li>TransOrange</li>
+    </weaponTags>
+    <verbs>
+      <li>
+        <verbClass>Verb_Shoot</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <projectileDef>Bulletto_IncendiaryLauncheroos</projectileDef>
+        <ai_IsIncendiary>true</ai_IsIncendiary>
+        <warmupTicks>400</warmupTicks>
+        <range>24</range>
+        <burstShotCount>1</burstShotCount>
+        <soundCast>ShotIncendiaryLauncher</soundCast>
+        <soundCastTail>GunTail_Medium</soundCastTail>
+        <muzzleFlashScale>14</muzzleFlashScale>
+      </li>
+    </verbs>
+  </ThingDef>
+
+
+
+
+  <ThingDef ParentName="BaseBullet">
+    <defName>Bulletto_IncendiaryLauncheroosTwo</defName>
+    <label>incendiary bolt</label>
+    <graphicData>
+      <texPath>PacsGunnar/FlameCharge</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <shaderType>TransparentPostLight</shaderType>
+    </graphicData>
+    <thingClass>Projectile_Explosive</thingClass>
+    <projectile>
+      <speed>50</speed>
+      <damageDef>Flame</damageDef>
+      <damageAmountBase>5</damageAmountBase>
+      <explosionRadius>1</explosionRadius>
+      <postExplosionSpawnThingDef>Puddle_Fuel</postExplosionSpawnThingDef>
+      <explosionSpawnChance>0.3</explosionSpawnChance>
+    </projectile>
+  </ThingDef>
+
+  <ThingDef ParentName="BaseGun">
+    <defName>Gunnar_IncendiaryInsidiousTwo</defName>
+    <label>incendiary chargecannon</label>
+    <description>Incendiary bolt rapidfire cannon. Starts fires.</description>
+    <graphicData>
+      <texPath>PacsGunnar/ChargeCannonTwo</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <soundInteract>InteractRifle</soundInteract>
+    <statBases>
+      <MarketValue>500</MarketValue>
+      <AccuracyTouch>0.79</AccuracyTouch>
+      <AccuracyShort>0.42</AccuracyShort>
+      <AccuracyMedium>0.18</AccuracyMedium>
+      <AccuracyLong>0.06</AccuracyLong>
+      <RangedWeapon_Cooldown>1.66</RangedWeapon_Cooldown>
+    </statBases>
+    <techLevel>Spacer</techLevel>
+    <weaponTags>
+      <li>TransOrange</li>
+    </weaponTags>
+    <verbs>
+      <li>
+        <verbClass>Verb_Shoot</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <projectileDef>Bulletto_IncendiaryLauncheroosTwo</projectileDef>
+        <ai_IsIncendiary>true</ai_IsIncendiary>
+        <warmupTicks>400</warmupTicks>
+        <range>24</range>
+        <burstShotCount>6</burstShotCount>
+        <soundCast>ShotIncendiaryLauncher</soundCast>
+        <soundCastTail>GunTail_Medium</soundCastTail>
+        <muzzleFlashScale>14</muzzleFlashScale>
+      </li>
+    </verbs>
+  </ThingDef>
+
+
+
+  <!-- ===================== Charge rifle ========================= -->
+
+  <ThingDef ParentName="BaseBullet">
+    <defName>Bullet_ChargoDiRiflo</defName>
+    <label>hypercharged shot</label>
+    <graphicData>
+      <texPath>PacsGunnar/CShot</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <projectile>
+      <damageDef>Bullet</damageDef>
+      <damageAmountBase>10</damageAmountBase>
+      <speed>70</speed>
+    </projectile>
+  </ThingDef>
+
+  <ThingDef ParentName="BaseGun">
+    <defName>Gunnar_HyperchargedRifle</defName>
+    <label>hypercharged rifle</label>
+    <description>Charged-shot energy/projectile assault rifle.</description>
+    <graphicData>
+      <texPath>PacsGunnar/Crifle</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <soundInteract>InteractChargeRifle</soundInteract>
+    <statBases>
+      <MarketValue>1500</MarketValue>
+      <AccuracyTouch>0.80</AccuracyTouch>
+      <AccuracyShort>0.83</AccuracyShort>
+      <AccuracyMedium>0.68</AccuracyMedium>
+      <AccuracyLong>0.53</AccuracyLong>
+      <RangedWeapon_Cooldown>0.66</RangedWeapon_Cooldown>
+    </statBases>
+    <techLevel>Spacer</techLevel>
+    <weaponTags>
+      <li>TransBlue</li>
+    </weaponTags>
+    <verbs>
+      <li>
+        <verbClass>Verb_Shoot</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <projectileDef>Bullet_ChargoDiRiflo</projectileDef>
+        <warmupTicks>90</warmupTicks>
+        <range>24</range>
+        <ticksBetweenBurstShots>12</ticksBetweenBurstShots>
+        <burstShotCount>5</burstShotCount>
+        <soundCast>ShotChargeRifle</soundCast>
+        <soundCastTail>GunTail_Medium</soundCastTail>
+        <muzzleFlashScale>9</muzzleFlashScale>
+      </li>
+    </verbs>
+  </ThingDef>
+
+
+
+
+  <ThingDef ParentName="BaseBullet">
+    <defName>Bullet_ORB</defName>
+    <label>subjucation wave</label>
+    <graphicData>
+      <texPath>PacsGunnar/ORBwave</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <projectile>
+      <damageDef>Stun</damageDef>
+      <damageAmountBase>5</damageAmountBase>
+      <speed>100</speed>
+    </projectile>
+  </ThingDef>
+  <ThingDef ParentName="BaseGun">
+    <defName>Gunnar_ORB</defName>
+    <label>Subjucation crystal</label>
+    <description>Quite the STUNNING technology!</description>
+    <graphicData>
+      <texPath>PacsGunnar/ORB</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <soundInteract>Interact_BeatFire</soundInteract>
+    <statBases>
+      <MarketValue>1500</MarketValue>
+      <AccuracyTouch>1</AccuracyTouch>
+      <AccuracyShort>1</AccuracyShort>
+      <AccuracyMedium>1</AccuracyMedium>
+      <AccuracyLong>1</AccuracyLong>
+      <RangedWeapon_Cooldown>0.4</RangedWeapon_Cooldown>
+    </statBases>
+    <techLevel>Spacer</techLevel>
+    <weaponTags>
+      <li>TransORB</li>
+    </weaponTags>
+    <verbs>
+      <li>
+        <verbClass>Verb_Shoot</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <projectileDef>Bullet_ORB</projectileDef>
+        <warmupTicks>20</warmupTicks>
+        <range>24</range>
+        <ticksBetweenBurstShots>3</ticksBetweenBurstShots>
+        <burstShotCount>10</burstShotCount>
+        <soundCast>Interact_BeatFire</soundCast>
+        <soundCastTail>GunTail_Light</soundCastTail>
+        <muzzleFlashScale>9</muzzleFlashScale>
+      </li>
+    </verbs>
+  </ThingDef>
+
+
+
+
+</ThingDefs>

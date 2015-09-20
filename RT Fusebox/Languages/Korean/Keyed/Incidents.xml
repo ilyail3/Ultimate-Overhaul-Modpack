@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<LanguageData>
+
+  <ShortCircuitPartial>{0}의 결함으로 합선이 발생했습니다.
+  	\n\n연결되어있던 모든 축전지가 지녔던 {1} Wd의 예비 전력이 모두 방전되었지만, 그 중 {2} Wd는 퓨즈에 의해 완화되었습니다.</ShortCircuitPartial>
+  
+  <ShortCircuitProtected>{0}의 결함으로 합선이 발생했습니다.
+  	\n\n연결되어있던 모든 축전지가 지녔던 {1} Wd의 예비 전력이 모두 방전되었지만, 퓨즈로 인해 심각한 피해는 일어나지 않았습니다.</ShortCircuitProtected>
+  
+ </LanguageData>

@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<LanguageData>
+
+  <CompRTQuantumStockpile_SelfDefrag>자동으로 조각모음.</CompRTQuantumStockpile_SelfDefrag>
+  <CompRTQuantumStockpile_QWConnect>양자 창고에 연결됨.</CompRTQuantumStockpile_QWConnect>
+  <CompRTQuantumStockpile_MaxStacks>칸당 최대 더미 수:</CompRTQuantumStockpile_MaxStacks>
+  <CompRTQuantumStockpile_SparklesToggle>양자 저장소 범위 표시</CompRTQuantumStockpile_SparklesToggle>
+  <CompRTQuantumStockpile_SparklesAreOn>활성화</CompRTQuantumStockpile_SparklesAreOn>
+  <CompRTQuantumStockpile_SparkelsAreOff>비활성화</CompRTQuantumStockpile_SparkelsAreOff>
+
+</LanguageData>

@@ -1,0 +1,83 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<FactionDefs>
+
+  <FactionDef>
+		<defName>PreTransfaction</defName>
+		<label>PreTranscended</label>
+    <description>Frontier expedition of highly advanced humans. They're more machine than human and hard to reason with.</description>
+    <pawnsPlural>pre transcendents</pawnsPlural>
+    <requiredCountAtGameStart>1</requiredCountAtGameStart>
+    <canMakeRandomly>true</canMakeRandomly>
+    <canFlee>false</canFlee>
+    <raidCommonality>70</raidCommonality>
+    <canSiege>false</canSiege>
+    <canStageAttacks>true</canStageAttacks>
+    <leaderTitle>Overseer</leaderTitle>
+    <startingGoodwill>
+      <min>-100</min>
+      <max>-100</max>
+    </startingGoodwill>
+		<factionNameMaker>NamerPTBase</factionNameMaker>
+		<pawnNameMaker>NamerPTFaction</pawnNameMaker>
+    		<techLevel>Spacer</techLevel>
+		<backstoryCategory>Civil</backstoryCategory>
+		<hairTags>
+			<li>TrannyHair</li>
+		</hairTags>
+    <naturalColonyGoodwill>
+      <min>-100</min>
+      <max>-100</max>
+    </naturalColonyGoodwill>
+    <pawnGroupMakers>
+      <li>
+        <options>
+          <li>
+            <selectionWeight>100</selectionWeight>
+            <kind>PreTrainInfantry</kind>
+          </li>
+          <li>
+            <selectionWeight>80</selectionWeight>
+            <kind>PreTrainGrenadier</kind>
+          </li>
+          <li>
+            <selectionWeight>80</selectionWeight>
+            <kind>PreTrainHeavy</kind>
+          </li>
+
+          <li>
+            <selectionWeight>150</selectionWeight>
+            <kind>PreTrainKnight</kind>
+          </li>
+          <li>
+            <selectionWeight>150</selectionWeight>
+            <kind>PreTrainKnightLOOT</kind>
+          </li>
+          <li>
+            <selectionWeight>100</selectionWeight>
+            <kind>PreTrainSpecialist</kind>
+          </li>
+          <li>
+            <selectionWeight>50</selectionWeight>
+            <kind>PreTrainOverseer</kind>
+          </li>
+
+          <li>
+            <selectionWeight>150</selectionWeight>
+            <kind>PTdrone</kind>
+          </li>
+          <li>
+            <selectionWeight>100</selectionWeight>
+            <kind>PTdronetwo</kind>
+          </li>
+          <li>
+            <selectionWeight>70</selectionWeight>
+            <kind>PTandroid</kind>
+          </li>
+        </options>
+      </li>
+    </pawnGroupMakers>
+    <homeIconPath>World/FactionHomes/DefaultHome</homeIconPath>
+    <homeIconColor>(255,255,255)</homeIconColor>
+  </FactionDef>
+
+</FactionDefs>

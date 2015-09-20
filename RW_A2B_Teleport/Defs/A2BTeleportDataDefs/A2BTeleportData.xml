@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<!--
+		This was changed from being hard-coded in pre v0.11.0.0 to
+		being defined in defs to allow modders to more easily integrate
+		A2B into modpiles and users to tweak settings to their own
+		tastes.
+		
+		Hints:
+		Base - How much without research
+		Offset - Added to base after research is complete
+		Research - All listed research must be complete
+		
+	-->
+	<A2BTeleportDataDef>
+		
+		<!-- DO NOT CHANGE "defName" -->
+		<defName>A2BTeleport</defName>
+		
+		<!-- Required Core version -->
+		<RequiredVersion>0.11.2</RequiredVersion>
+		
+		<!-- Watts necessary to teleport -->
+		<BasePowerConsumptionBase>200</BasePowerConsumptionBase>
+		<BasePowerConsumptionOffset>-50</BasePowerConsumptionOffset>
+		
+		<!-- Watts per cell teleported -->
+		<WattsPerCellBase>50</WattsPerCellBase>
+		<WattsPerCellOffset>-25</WattsPerCellOffset>
+		
+		<PowerResearch>
+			<li>A2B_TeleporterPower</li>
+		</PowerResearch>
+		
+		<!-- Degrees celcius per cell teleported -->
+		<DegreesPerCellBase>0.675</DegreesPerCellBase>
+		<DegreesPerCellOffset>-0.3375</DegreesPerCellOffset>
+		
+		<HeatResearch>
+			<li>A2B_TeleporterHeat</li>
+		</HeatResearch>
+		
+		<!-- Number of teleporter channels available -->
+		<NumTeleporterChannelsBase>8</NumTeleporterChannelsBase>
+		<NumTeleporterChannelsOffset>8</NumTeleporterChannelsOffset>
+		
+		<ChannelsResearch>
+			<li>A2B_TeleporterChannels</li>
+		</ChannelsResearch>
+		
+		<!-- Teleporter speed multiplier -->
+		<SpeedMultiplierBase>0.5</SpeedMultiplierBase>
+		<SpeedMultiplierOffset>0.3</SpeedMultiplierOffset>
+		
+		<SpeedResearch>
+			<li>A2B_TeleporterSpeed</li>
+		</SpeedResearch>
+		
+	</A2BTeleportDataDef>
+
+</Defs>

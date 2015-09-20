@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<LanguageData>
+
+  <RTStorage_QuantumStockpile_0.label>quantum stockpiles</RTStorage_QuantumStockpile_0.label>
+  <RTStorage_QuantumStockpile_0.description>Build quantum stockpiles which, at a small power cost, will make your storage space four times as efficient.
+  </RTStorage_QuantumStockpile_0.description>
+
+  <RTStorage_QuantumStockpile_SelfDefrag.label>quantum stockpiles self-defrag</RTStorage_QuantumStockpile_SelfDefrag.label>
+  <RTStorage_QuantumStockpile_SelfDefrag.description>Allows quantum stockpiles to periodically minimize the amount of stored incomplete stacks.
+  </RTStorage_QuantumStockpile_SelfDefrag.description>
+
+  <RTStorage_QuantumStockpile_Miniaturization.label>quantum stockpile miniaturization</RTStorage_QuantumStockpile_Miniaturization.label>
+    <RTStorage_QuantumStockpile_Miniaturization.description>Build smaller but slightly less efficient versions of quantum stockpile.
+    </RTStorage_QuantumStockpile_Miniaturization.description>
+
+  <RTStorage_QuantumWarehouse_0.label>quantum warehouses</RTStorage_QuantumWarehouse_0.label>
+  <RTStorage_QuantumWarehouse_0.description>Build quantum warehouses which, at a moderate power cost, will iterate over all quantum stockpiles in a single stockpile zone, minimizing amount of incomplete stacks and redistributing item stacks among quantum stockpile cells.
+Also act as quantum stockpiles themselves, but building more than one warehouse per zone is useless.
+</RTStorage_QuantumWarehouse_0.description>
+
+  <RTStorage_QuantumWarehouse_Miniaturization.label>quantum warehouse miniaturization</RTStorage_QuantumWarehouse_Miniaturization.label>
+  <RTStorage_QuantumWarehouse_Miniaturization.description>Build smaller but slightly less efficient versions of quantum warehouse.
+  </RTStorage_QuantumWarehouse_Miniaturization.description>
+
+  <RTStorage_QuantumRelay_0.label>quantum relays</RTStorage_QuantumRelay_0.label>
+  <RTStorage_QuantumRelay_0.description>Build quantum relays which, at a small power cost, will try to connect to a selected quantum warehouse to draw items enabled in the filter onto themselves, and send any applicable adjacent items into the warehouse. Works remotely, across any distance.
+  </RTStorage_QuantumRelay_0.description>
+
+  <RTStorage_QuantumRelay_Miniaturization.label>quantum relay miniaturization</RTStorage_QuantumRelay_Miniaturization.label>
+  <RTStorage_QuantumRelay_Miniaturization.description>Build smaller but slightly less efficient versions of quantum relay.
+  </RTStorage_QuantumRelay_Miniaturization.description>
+  
+  <RTStorage_QuantumStockpile_1.label>quantum stockpiles upgrade 1</RTStorage_QuantumStockpile_1.label>
+  <RTStorage_QuantumStockpile_1.description>Allows quantum stockpiles to store two additional stacks of items.
+  </RTStorage_QuantumStockpile_1.description>
+  
+  <RTStorage_QuantumStockpile_2.label>quantum stockpiles upgrade 2</RTStorage_QuantumStockpile_2.label>
+  <RTStorage_QuantumStockpile_2.description>Quantum stockpiles store one more stack of items for a total of six per cell.
+  </RTStorage_QuantumStockpile_2.description>
+
+  <RTStorage_QuantumStockpile_3.label>quantum stockpiles upgrade 3</RTStorage_QuantumStockpile_3.label>
+  <RTStorage_QuantumStockpile_3.description>Quantum stockpiles store one more stack of items for a total of seven per cell.
+  </RTStorage_QuantumStockpile_3.description>
+
+  <RTStorage_QuantumStockpile_4.label>quantum stockpiles upgrade 4</RTStorage_QuantumStockpile_4.label>
+  <RTStorage_QuantumStockpile_4.description>Absolute pinnacle of capacity! Quantum stockpiles store one more stack of items for a total of eight per cell.
+  </RTStorage_QuantumStockpile_4.description>
+  
+
+
+</LanguageData>

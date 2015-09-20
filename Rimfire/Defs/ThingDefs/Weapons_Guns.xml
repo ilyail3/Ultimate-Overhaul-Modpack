@@ -1,0 +1,1586 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ThingDefs>
+
+	<ThingDef Name="BaseGun" Abstract="True">
+		<category>Item</category>
+		<thingClass>ThingWithComps</thingClass>
+		<equipmentType>Primary</equipmentType>
+		<pathCost>10</pathCost>
+		<useHitPoints>True</useHitPoints>
+		<selectable>True</selectable>
+		<graphicData>
+			<onGroundRandomRotateAngle>35</onGroundRandomRotateAngle>
+		</graphicData>
+		<drawGUIOverlay>true</drawGUIOverlay>
+		<statBases>
+			<MaxHitPoints>100</MaxHitPoints>
+			<Flammability>1.0</Flammability>
+			<DeteriorationRate>1</DeteriorationRate>
+			<SellPriceFactor>0.25</SellPriceFactor>
+		</statBases>
+		<altitudeLayer>Item</altitudeLayer>
+		<alwaysHaulable>True</alwaysHaulable>
+		<tickerType>Never</tickerType>
+		<techLevel>Midworld</techLevel>
+		<inspectorTabs>
+			<li>ITab_Art</li>
+		</inspectorTabs>
+		<comps>
+			<li>
+				<compClass>CompForbiddable</compClass>
+			</li>
+			<li>
+				<compClass>CompEquippable</compClass>
+			</li>
+			<li>
+				<compClass>CompQuality</compClass>
+			</li>
+			<li>
+				<compClass>CompArt</compClass>
+				<nameMaker>NamerGun</nameMaker>
+				<descriptionMaker>ArtWeaponGun</descriptionMaker>
+				<minQualityForArtistic>Excellent</minQualityForArtistic>
+			</li>
+		</comps>
+		<smeltProducts>
+			<Steel>20</Steel>
+		</smeltProducts>
+	</ThingDef>
+
+	<ThingDef Name="BaseHumanGun" ParentName="BaseGun" Abstract="True">
+		<weaponTags>
+			<li>Gun</li>
+		</weaponTags>
+	</ThingDef>
+
+	<ThingDef Name="BaseBullet" Abstract="True">
+		<category>Projectile</category>
+		<tickerType>Normal</tickerType>
+		<altitudeLayer>Projectile</altitudeLayer>
+		<thingClass>Bullet</thingClass>
+		<label>bullet</label>
+		<useHitPoints>False</useHitPoints>
+		<neverMultiSelect>True</neverMultiSelect>
+		<graphicData>
+			<shaderType>Transparent</shaderType>
+		</graphicData>
+	</ThingDef>
+	
+	<ThingDef ParentName="BaseBullet" Name="BaseAntiMateriel" Class="AntiMateriel.ThingDef_AntiMateriel" Abstract="True">
+		<thingClass>AntiMateriel.Projectile_AntiMateriel</thingClass>
+	</ThingDef>
+
+<!-- P I S T O L S -->
+	<!-- ==================== Deringer ================================ 
+			- 0.5x hitpoints
+			- 0.3x smelt products
+			- Low value
+			- Very low range
+			- Slightly high damage
+			
+			011 DMG - 060 SPD - 048 WMP - 018 RNG
+			Cooldown 0.70
+			% 0.96 - 0.71 - 0.45 - 0.28
+			
+			240 $
+	-->
+
+	<ThingDef ParentName="BaseBullet">
+		<defName>RF_Bullet_Deringer</defName>
+		<label>pocket revolver bullet</label>
+		<graphicData>
+			<texPath>Things/Projectile/Bullet_Small</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<projectile>
+			<flyOverhead>false</flyOverhead>
+			<damageDef>Bullet</damageDef>
+			<DamageAmountBase>11</DamageAmountBase>
+			<Speed>60</Speed>
+		</projectile>
+	</ThingDef>
+
+	<ThingDef ParentName="BaseHumanGun">
+		<defName>RF_Gun_Deringer</defName>
+		<label>pocket revolver</label>
+		<description>A small decorated revolver. Accurate at short range only, moderately damaging with a short aim- and cooldown period.</description>
+		<graphicData>
+			<texPath>Things/A10/Deringer</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<soundInteract>InteractPistol</soundInteract>
+		<statBases>
+			<MarketValue>240</MarketValue>
+			<MaxHitPoints>50</MaxHitPoints>
+				<AccuracyTouch>0.96</AccuracyTouch>
+				<AccuracyShort>0.71</AccuracyShort>
+				<AccuracyMedium>0.45</AccuracyMedium>
+				<AccuracyLong>0.28</AccuracyLong>
+				<RangedWeapon_Cooldown>0.7</RangedWeapon_Cooldown>
+		</statBases>
+		<thingCategories>
+			<li>WeaponsRangedPistols</li>
+		</thingCategories>
+		<verbs>
+			<li>
+				<verbClass>Verb_Shoot</verbClass>
+				<hasStandardCommand>true</hasStandardCommand>
+				<projectileDef>RF_Bullet_Deringer</projectileDef>
+				<warmupTicks>48</warmupTicks>
+				<range>18</range>
+				<soundCast>RF_ShotDeringer</soundCast>
+				<muzzleFlashScale>9</muzzleFlashScale>
+			</li>
+		</verbs>
+		<smeltProducts>
+			<Steel>6</Steel>
+		</smeltProducts>
+	</ThingDef>
+
+	<!-- ==================== Sphinx AT 2000 ========================== 
+			- High accuracy
+			- High range
+			- Low detoriation rate
+			- High value
+			- High damage
+			
+			012 DMG - 060 SPD - 057 WMP - 027 RNG
+			Cooldown 0.72
+			% 0.95 - 0.80 - 0.65 - 0.35
+			
+			1000 $
+	-->
+
+	<ThingDef ParentName="BaseBullet">
+		<defName>RF_Bullet_AT2K</defName>
+		<label>detective pistol bullet</label>
+		<graphicData>
+			<texPath>Things/Projectile/Bullet_Small</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<projectile>
+			<damageDef>Bullet</damageDef>
+			<damageAmountBase>12</damageAmountBase>
+			<speed>60</speed>
+		</projectile>
+	</ThingDef>
+
+	<ThingDef ParentName="BaseHumanGun">
+		<defName>RF_Gun_AT2K</defName>
+		<label>detective pistol</label>
+		<description>A high quality and highly durable handgun, used by elite forces and sports shooters. Great accuracy, moderate damage and a tad slow.</description>
+		<graphicData>
+			<texPath>Things/A10/SphinxAT2000</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<soundInteract>InteractPistol</soundInteract>
+		<statBases>
+			<MarketValue>1000</MarketValue>
+				<AccuracyTouch>0.95</AccuracyTouch>
+				<AccuracyShort>0.80</AccuracyShort>
+				<AccuracyMedium>0.65</AccuracyMedium>
+				<AccuracyLong>0.35</AccuracyLong>
+				<RangedWeapon_Cooldown>0.72</RangedWeapon_Cooldown>
+			<DeteriorationRate>0.3</DeteriorationRate>	<!-- HIGHLY DURABLE -->
+		</statBases>
+		<thingCategories>
+			<li>WeaponsRangedPistols</li>
+		</thingCategories>
+		<verbs>
+			<li>
+				<verbClass>Verb_Shoot</verbClass>
+				<hasStandardCommand>true</hasStandardCommand>
+				<projectileDef>RF_Bullet_AT2K</projectileDef>
+				<warmupTicks>57</warmupTicks>
+				<range>27</range>
+				<soundCast>RF_ShotAT2K</soundCast>
+				<muzzleFlashScale>9</muzzleFlashScale>
+			</li>
+		</verbs>
+	</ThingDef>
+
+	<!-- ==================== Vektor CP-1 ============================= 
+			- High fire rate
+			- Low value
+			- Low range
+			- Low damage
+			
+			008 DMG - 057 SPD - 052 WMP - 021 RNG
+			Cooldown 0.62
+			% 0.91 - 0.74 - 0.49 - 0.30
+			
+			280 $
+	-->
+
+	<ThingDef ParentName="BaseBullet">
+		<defName>RF_Bullet_VektorCP</defName>
+		<label>curved frame pistol bullet</label>
+		<graphicData>
+			<texPath>Things/Projectile/Bullet_Small</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<projectile>
+			<damageDef>Bullet</damageDef>
+			<damageAmountBase>8</damageAmountBase>
+			<speed>57</speed>
+		</projectile>
+	</ThingDef>
+
+	<ThingDef ParentName="BaseHumanGun">
+		<defName>RF_Gun_VektorCP</defName>
+		<label>curved frame pistol</label>
+		<description>An ergonomical handgun with a drastically non-rectangular design. Good accuracy and low recoil, but weak and with a slightly lower range.</description>
+		<graphicData>
+			<texPath>Things/A10/VektorCP1</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<soundInteract>InteractPistol</soundInteract>
+		<statBases>
+			<MarketValue>280</MarketValue>
+				<AccuracyTouch>0.91</AccuracyTouch>
+				<AccuracyShort>0.74</AccuracyShort>
+				<AccuracyMedium>0.49</AccuracyMedium>
+				<AccuracyLong>0.30</AccuracyLong>
+				<RangedWeapon_Cooldown>0.62</RangedWeapon_Cooldown>
+		</statBases>
+		<thingCategories>
+			<li>WeaponsRangedPistols</li>
+		</thingCategories>
+		<verbs>
+			<li>
+				<verbClass>Verb_Shoot</verbClass>
+				<hasStandardCommand>true</hasStandardCommand>
+				<projectileDef>RF_Bullet_VektorCP</projectileDef>
+				<warmupTicks>52</warmupTicks>
+				<range>21</range>
+				<soundCast>RF_ShotVektorCP1</soundCast>
+				<muzzleFlashScale>9</muzzleFlashScale>
+			</li>
+		</verbs>
+	</ThingDef>
+
+	<!-- ==================== Para-Ordnance P14-45 ===================== 
+			- Average fire rate
+			- Slightly high range
+			- Slightly low value
+			- Average damage
+			
+			010 DMG - 060 SPD - 050 WMP - 025 RNG
+			Cooldown 0.77
+			% 0.92 - 0.81 - 0.60 - 0.28
+			
+			460 $
+	-->
+
+	<ThingDef ParentName="BaseBullet">
+		<defName>RF_Bullet_ParaOrdnancePFourteenFortyfive</defName>
+		<label>counterfeit handgun bullet</label>
+		<graphicData>
+			<texPath>Things/Projectile/Bullet_Small</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<projectile>
+			<damageDef>Bullet</damageDef>
+			<damageAmountBase>10</damageAmountBase>
+			<speed>60</speed>
+		</projectile>
+	</ThingDef>
+
+	<ThingDef ParentName="BaseHumanGun">
+		<defName>RF_Gun_ParaOrdnancePFourteenFortyfive</defName>
+		<label>counterfeit handgun</label>
+		<description>A counterfeit ancient 45 ACP handgun with slightly improved internal mechanisms and plastic frame. High accuracy and above average range, average fire rate and damage.</description>
+		<graphicData>
+			<texPath>Things/A10/ParaOrdnanceP1445</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<soundInteract>InteractPistol</soundInteract>
+		<statBases>
+			<MarketValue>460</MarketValue>
+				<AccuracyTouch>0.92</AccuracyTouch>
+				<AccuracyShort>0.81</AccuracyShort>
+				<AccuracyMedium>0.60</AccuracyMedium>
+				<AccuracyLong>0.28</AccuracyLong>
+				<RangedWeapon_Cooldown>0.77</RangedWeapon_Cooldown>
+		</statBases>
+		<thingCategories>
+			<li>WeaponsRangedPistols</li>
+		</thingCategories>
+		<verbs>
+			<li>
+				<verbClass>Verb_Shoot</verbClass>
+				<hasStandardCommand>true</hasStandardCommand>
+				<projectileDef>RF_Bullet_ParaOrdnancePFourteenFortyfive</projectileDef>
+				<warmupTicks>50</warmupTicks>
+				<range>25</range>
+				<soundCast>RF_ShotParaOrdnanceP1445</soundCast>
+				<muzzleFlashScale>9</muzzleFlashScale>
+			</li>
+		</verbs>
+	</ThingDef>
+
+	<!-- ==================== Tokarev TT ============================== 
+			- Average range
+			- High muzzle velocity
+			- Slightly high accuracy
+			- Slightly high damage
+			- Slightly high value
+			
+			011 DMG - 070 SPD - 050 WMP - 023 RNG
+			Cooldown 0.70
+			% 0.92 - 0.75 - 0.52 - 0.32
+			
+			630 $
+	-->
+
+	<ThingDef ParentName="BaseBullet">
+		<defName>RF_Bullet_TokarevTT</defName>
+		<label>soviet pistol bullet</label>
+		<graphicData>
+			<texPath>Things/Projectile/Bullet_Small</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<projectile>
+			<damageDef>Bullet</damageDef>
+			<damageAmountBase>11</damageAmountBase>
+			<speed>70</speed>
+		</projectile>
+	</ThingDef>
+
+	<ThingDef ParentName="BaseHumanGun">
+		<defName>RF_Gun_TokarevTT</defName>
+		<label>soviet pistol</label>
+		<description>A small semi-automatic handgun with a bite. Has high bullet velocity and does moderate damage, decent accuracy and moderate recoil.</description>
+		<graphicData>
+			<texPath>Things/A10/TokarevTT</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<soundInteract>InteractPistol</soundInteract>
+		<statBases>
+			<MarketValue>630</MarketValue>
+				<AccuracyTouch>0.92</AccuracyTouch>
+				<AccuracyShort>0.75</AccuracyShort>
+				<AccuracyMedium>0.52</AccuracyMedium>
+				<AccuracyLong>0.32</AccuracyLong>
+				<RangedWeapon_Cooldown>0.70</RangedWeapon_Cooldown>
+		</statBases>
+		<thingCategories>
+			<li>WeaponsRangedPistols</li>
+		</thingCategories>
+		<verbs>
+			<li>
+				<verbClass>Verb_Shoot</verbClass>
+				<hasStandardCommand>true</hasStandardCommand>
+				<projectileDef>RF_Bullet_TokarevTT</projectileDef>
+				<warmupTicks>50</warmupTicks>
+				<range>23</range>
+				<soundCast>RF_ShotTokarevTT</soundCast>
+				<muzzleFlashScale>9</muzzleFlashScale>
+			</li>
+		</verbs>
+	</ThingDef>
+
+	<!-- ==================== Tec-9 =================================== 
+			- Very high fire rate
+			- Slightly low accuracy
+			- Low damage
+			- Slightly high value
+			
+			008 DMG - 055 SPD - 030 WMP - 019 RNG
+			Cooldown 0.10
+			% 0.92 - 0.72 - 0.48 - 0.31
+			
+			560 $
+	-->
+
+	<ThingDef ParentName="BaseBullet">
+		<defName>RF_Bullet_Tecnine</defName>
+		<label>machinepistol bullet</label>
+		<graphicData>
+			<texPath>Things/Projectile/Bullet_Small</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<projectile>
+			<damageDef>Bullet</damageDef>
+			<damageAmountBase>8</damageAmountBase>
+			<speed>55</speed>
+		</projectile>
+	</ThingDef>
+
+	<ThingDef ParentName="BaseHumanGun">
+		<defName>RF_Gun_Tecnine</defName>
+		<label>machinepistol</label>
+		<description>A lightweight semi-automatic pistol with a quick draw, low damage and very high firerate. Operates at a short range.</description>
+		<graphicData>
+			<texPath>Things/A10/Tec9</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<soundInteract>InteractSMG</soundInteract>
+		<statBases>
+			<MarketValue>560</MarketValue>
+				<AccuracyTouch>0.92</AccuracyTouch>
+				<AccuracyShort>0.72</AccuracyShort>
+				<AccuracyMedium>0.48</AccuracyMedium>
+				<AccuracyLong>0.31</AccuracyLong>
+				<RangedWeapon_Cooldown>0.1</RangedWeapon_Cooldown>
+		</statBases>
+		<thingCategories>
+			<li>WeaponsRangedSubmachineGuns</li>
+		</thingCategories>
+		<verbs>
+			<li>
+				<verbClass>Verb_Shoot</verbClass>
+				<hasStandardCommand>true</hasStandardCommand>
+				<projectileDef>RF_Bullet_Tecnine</projectileDef>
+				<warmupTicks>30</warmupTicks>
+				<range>19</range>
+				<soundCast>RF_ShotTec9</soundCast>
+				<muzzleFlashScale>9</muzzleFlashScale>
+			</li>
+		</verbs>
+	</ThingDef>
+
+	<!-- ==================== 93R machinepistol ======================= 
+			- Low damage
+			- High burstfire rate
+			- High value
+			- Low accuracy
+			
+			007 DMG - 060 SPD - 050 WMP - 023 RNG
+			Cooldown 0.66
+			Burst 4x 004
+			% 0.91 - 0.69 - 0.47 - 0.25
+			
+			700 $
+	-->
+
+	<ThingDef ParentName="BaseBullet">
+		<defName>RF_Bullet_93R</defName>
+		<label>burstfire machinepistol bullet</label>
+		<graphicData>
+			<texPath>Things/Projectile/Bullet_Small</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<projectile>
+			<damageDef>Bullet</damageDef>
+			<damageAmountBase>7</damageAmountBase>
+			<speed>60</speed>
+		</projectile>
+	</ThingDef>
+
+	<ThingDef ParentName="BaseHumanGun">
+		<defName>RF_Gun_93R</defName>
+		<label>burstfire machinepistol</label>
+		<description>A nice-looking machinepistol with a very fast burstfire mode, low stopping power and hits up to pistol range.</description>
+		<graphicData>
+			<texPath>Things/A10/93R</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<soundInteract>InteractSMG</soundInteract>
+		<statBases>
+			<MarketValue>700</MarketValue>
+				<AccuracyTouch>0.91</AccuracyTouch>
+				<AccuracyShort>0.69</AccuracyShort>
+				<AccuracyMedium>0.47</AccuracyMedium>
+				<AccuracyLong>0.25</AccuracyLong>
+				<RangedWeapon_Cooldown>0.66</RangedWeapon_Cooldown>
+		</statBases>
+		<thingCategories>
+			<li>WeaponsRangedSubmachineGuns</li>
+		</thingCategories>
+		<verbs>
+			<li>
+				<verbClass>Verb_Shoot</verbClass>
+				<hasStandardCommand>true</hasStandardCommand>
+				<projectileDef>RF_Bullet_93R</projectileDef>
+				<burstShotCount>4</burstShotCount>
+				<ticksBetweenBurstShots>4</ticksBetweenBurstShots>
+				<warmupTicks>50</warmupTicks>
+				<range>23</range>
+				<soundCast>RF_Shot93R</soundCast>
+				<muzzleFlashScale>9</muzzleFlashScale>
+			</li>
+		</verbs>
+	</ThingDef>
+
+<!-- S M G S -->
+	<!-- ==================== TMP ===================================== -->
+
+	<ThingDef ParentName="BaseBullet">
+		<defName>RF_Bullet_TMP</defName>
+		<label>silenced PDW bullet</label>
+		<graphicData>
+			<texPath>Things/Projectile/Bullet_Small</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<projectile>
+			<damageDef>Bullet</damageDef>
+			<damageAmountBase>6</damageAmountBase>
+			<speed>55</speed>
+		</projectile>
+	</ThingDef>
+
+	<ThingDef ParentName="BaseHumanGun">
+		<defName>RF_Gun_TMP</defName>
+		<label>silenced PDW</label>
+		<description>A big machinepistol or small submachinegun. Somewhat accurate long range, fast burstfire with low stopping power.</description>
+		<graphicData>
+			<texPath>Things/A10/TMP</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<soundInteract>InteractSMG</soundInteract>
+		<statBases>
+			<MarketValue>440</MarketValue>
+				<AccuracyTouch>0.70</AccuracyTouch>
+				<AccuracyShort>0.59</AccuracyShort>
+				<AccuracyMedium>0.39</AccuracyMedium>
+				<AccuracyLong>0.13</AccuracyLong>
+				<RangedWeapon_Cooldown>0.75</RangedWeapon_Cooldown>
+		</statBases>
+		<thingCategories>
+			<li>WeaponsRangedSubmachineGuns</li>
+		</thingCategories>
+		<verbs>
+			<li>
+				<verbClass>Verb_Shoot</verbClass>
+				<hasStandardCommand>true</hasStandardCommand>
+				<projectileDef>RF_Bullet_TMP</projectileDef>
+				<burstShotCount>3</burstShotCount>
+				<ticksBetweenBurstShots>6</ticksBetweenBurstShots>
+				<warmupTicks>50</warmupTicks>
+				<range>24</range>
+				<soundCast>RF_ShotTMP</soundCast>
+				<muzzleFlashScale>9</muzzleFlashScale>
+			</li>
+		</verbs>
+	</ThingDef>
+
+	<!-- ==================== Skorpion ================================ -->
+
+	<ThingDef ParentName="BaseBullet">
+		<defName>RF_Bullet_Skorpion</defName>
+		<label>folding stock SMG bullet</label>
+		<graphicData>
+			<texPath>Things/Projectile/Bullet_Small</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<projectile>
+			<damageDef>Bullet</damageDef>
+			<damageAmountBase>5</damageAmountBase>
+			<speed>60</speed>
+		</projectile>
+	</ThingDef>
+
+	<ThingDef ParentName="BaseHumanGun">
+		<defName>RF_Gun_Skorpion</defName>
+		<label>folding stock SMG</label>
+		<description>A machinepistol or light SMG with a notorious folding stock design. Fires weak ammunition in quick five shot-bursts at pistol range.</description>
+		<graphicData>
+			<texPath>Things/A10/Skorpion</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<soundInteract>InteractSMG</soundInteract>
+		<statBases>
+			<MarketValue>620</MarketValue>
+				<AccuracyTouch>0.73</AccuracyTouch>
+				<AccuracyShort>0.62</AccuracyShort>
+				<AccuracyMedium>0.44</AccuracyMedium>
+				<AccuracyLong>0.17</AccuracyLong>
+				<RangedWeapon_Cooldown>0.50</RangedWeapon_Cooldown>
+		</statBases>
+		<thingCategories>
+			<li>WeaponsRangedSubmachineGuns</li>
+		</thingCategories>
+		<verbs>
+			<li>
+				<verbClass>Verb_Shoot</verbClass>
+				<hasStandardCommand>true</hasStandardCommand>
+				<projectileDef>RF_Bullet_Skorpion</projectileDef>
+				<burstShotCount>5</burstShotCount>
+				<ticksBetweenBurstShots>5</ticksBetweenBurstShots>
+				<warmupTicks>65</warmupTicks>
+				<range>23</range>
+				<soundCast>RF_ShotSkorpion</soundCast>
+				<muzzleFlashScale>9</muzzleFlashScale>
+			</li>
+		</verbs>
+	</ThingDef>
+
+	<!-- ==================== Vector ================================== -->
+
+	<ThingDef ParentName="BaseBullet">
+		<defName>RF_Bullet_Vector</defName>
+		<label>modern SMG bullet</label>
+		<graphicData>
+			<texPath>Things/Projectile/Bullet_Small</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<projectile>
+			<damageDef>Bullet</damageDef>
+			<damageAmountBase>7</damageAmountBase>
+			<speed>55</speed>
+		</projectile>
+	</ThingDef>
+
+	<ThingDef ParentName="BaseHumanGun">
+		<defName>RF_Gun_Vector</defName>
+		<label>modern SMG</label>
+		<description>A submachinegun that fires in medium length bursts. Its substantially reduced knockback causes it to be accurate up to medium range, but its bullet drop limits maximal range by a lot.</description>
+		<graphicData>
+			<texPath>Things/A10/Vector</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<soundInteract>InteractSMG</soundInteract>
+		<statBases>
+			<MarketValue>920</MarketValue>
+				<AccuracyTouch>0.79</AccuracyTouch>
+				<AccuracyShort>0.68</AccuracyShort>
+				<AccuracyMedium>0.47</AccuracyMedium>
+				<AccuracyLong>0.18</AccuracyLong>
+				<RangedWeapon_Cooldown>0.50</RangedWeapon_Cooldown>
+		</statBases>
+		<thingCategories>
+			<li>WeaponsRangedSubmachineGuns</li>
+		</thingCategories>
+		<verbs>
+			<li>
+				<verbClass>Verb_Shoot</verbClass>
+				<hasStandardCommand>true</hasStandardCommand>
+				<projectileDef>RF_Bullet_Vector</projectileDef>
+				<burstShotCount>4</burstShotCount>
+				<ticksBetweenBurstShots>13</ticksBetweenBurstShots>
+				<warmupTicks>45</warmupTicks>
+				<range>23</range>
+				<soundCast>RF_ShotVector</soundCast>
+				<muzzleFlashScale>9</muzzleFlashScale>
+			</li>
+		</verbs>
+	</ThingDef>
+
+	<!-- ==================== M-3 submachinegun ======================= -->
+
+	<ThingDef ParentName="BaseBullet">
+		<defName>RF_Bullet_GreaseGun</defName>
+		<label>greasegun SMG bullet</label>
+		<graphicData>
+			<texPath>Things/Projectile/Bullet_Small</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<projectile>
+			<damageDef>Bullet</damageDef>
+			<damageAmountBase>8</damageAmountBase>
+			<speed>55</speed>
+		</projectile>
+	</ThingDef>
+
+	<ThingDef ParentName="BaseHumanGun">
+		<defName>RF_Gun_GreaseGun</defName>
+		<label>greasegun SMG</label>
+		<description>A very simplistic submachinegun design for todays standards. Low damage, high firerate, short range.</description>
+		<graphicData>
+			<texPath>Things/A10/GreaseGun</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<soundInteract>InteractSMG</soundInteract>
+		<statBases>
+			<MarketValue>710</MarketValue>
+				<AccuracyTouch>0.78</AccuracyTouch>
+				<AccuracyShort>0.61</AccuracyShort>
+				<AccuracyMedium>0.39</AccuracyMedium>
+				<AccuracyLong>0.11</AccuracyLong>
+				<RangedWeapon_Cooldown>0.66</RangedWeapon_Cooldown>
+		</statBases>
+		<thingCategories>
+			<li>WeaponsRangedSubmachineGuns</li>
+		</thingCategories>
+		<verbs>
+			<li>
+				<verbClass>Verb_Shoot</verbClass>
+				<hasStandardCommand>true</hasStandardCommand>
+				<projectileDef>RF_Bullet_GreaseGun</projectileDef>
+				<burstShotCount>5</burstShotCount>
+				<ticksBetweenBurstShots>9</ticksBetweenBurstShots>
+				<warmupTicks>70</warmupTicks>
+				<range>27</range>
+				<soundCast>RF_ShotGreaseGun</soundCast>
+				<muzzleFlashScale>9</muzzleFlashScale>
+			</li>
+		</verbs>
+	</ThingDef>
+
+<!-- C A R B I N E S -->
+	<!-- ==================== Beretta CX4 ============================= -->
+
+	<ThingDef ParentName="BaseBullet">
+		<defName>RF_Bullet_CXfour</defName>
+		<label>storm carbine bullet</label>
+		<graphicData>
+			<texPath>Things/Projectile/Bullet_Small</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<projectile>
+			<damageDef>Bullet</damageDef>
+			<damageAmountBase>13</damageAmountBase>
+			<speed>70</speed>
+		</projectile>
+	</ThingDef>
+
+	<ThingDef ParentName="BaseHumanGun">
+		<defName>RF_Gun_CXfour</defName>
+		<label>storm carbine</label>
+		<description>A highly reliable, compact pistol calibre carbine designed to fire pistol rounds up to rifle range. Below average damage, average fire rate, above average range and fires in two round burst.</description>
+		<graphicData>
+			<texPath>Things/A10/CX4</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<soundInteract>InteractRifle</soundInteract>
+		<statBases>
+			<MarketValue>600</MarketValue>
+				<AccuracyTouch>0.91</AccuracyTouch>
+				<AccuracyShort>0.92</AccuracyShort>
+				<AccuracyMedium>0.89</AccuracyMedium>
+				<AccuracyLong>0.70</AccuracyLong>
+				<RangedWeapon_Cooldown>0.69</RangedWeapon_Cooldown>
+		</statBases>
+		<thingCategories>
+			<li>WeaponsRangedAssaultRifles</li>
+		</thingCategories>
+		<verbs>
+			<li>
+				<verbClass>Verb_Shoot</verbClass>
+				<hasStandardCommand>true</hasStandardCommand>
+				<projectileDef>RF_Bullet_CXfour</projectileDef>
+				<burstShotCount>2</burstShotCount>
+				<ticksBetweenBurstShots>21</ticksBetweenBurstShots>
+				<warmupTicks>92</warmupTicks>
+				<range>31</range>
+				<soundCast>RF_ShotCX4</soundCast>
+				<muzzleFlashScale>9</muzzleFlashScale>
+			</li>
+		</verbs>
+	</ThingDef>
+
+	<!-- ==================== Ruger PC-9 ============================== -->
+
+	<ThingDef ParentName="BaseBullet">
+		<defName>RF_Bullet_PCnine</defName>
+		<label>police carbine bullet</label>
+		<graphicData>
+			<texPath>Things/Projectile/Bullet_Small</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<projectile>
+			<damageDef>Bullet</damageDef>
+			<damageAmountBase>14</damageAmountBase>
+			<speed>65</speed>
+		</projectile>
+	</ThingDef>
+
+	<ThingDef ParentName="BaseHumanGun">
+		<defName>RF_Gun_PCnine</defName>
+		<label>police carbine</label>
+		<description>A pistol calibre carbine sidearm carried on the back. Its long barrel allows it to fire pistol bullets at rifle range. Average damage, above average fire rate and range.</description>
+		<graphicData>
+			<texPath>Things/A10/RugerPC9</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<soundInteract>InteractRifle</soundInteract>
+		<statBases>
+			<MarketValue>560</MarketValue>
+				<AccuracyTouch>0.92</AccuracyTouch>
+				<AccuracyShort>0.96</AccuracyShort>
+				<AccuracyMedium>0.90</AccuracyMedium>
+				<AccuracyLong>0.70</AccuracyLong>
+				<RangedWeapon_Cooldown>0.60</RangedWeapon_Cooldown>
+		</statBases>
+		<thingCategories>
+			<li>WeaponsRangedAssaultRifles</li>
+		</thingCategories>
+		<verbs>
+			<li>
+				<verbClass>Verb_Shoot</verbClass>
+				<hasStandardCommand>true</hasStandardCommand>
+				<projectileDef>RF_Bullet_PCnine</projectileDef>
+				<warmupTicks>75</warmupTicks>
+				<range>34</range>
+				<soundCast>RF_ShotRugerPC9</soundCast>
+				<muzzleFlashScale>9</muzzleFlashScale>
+			</li>
+		</verbs>
+	</ThingDef>
+
+	<!-- ==================== HK USC ================================== -->
+
+	<ThingDef ParentName="BaseBullet">
+		<defName>RF_Bullet_USC</defName>
+		<label>civilian PCC bullet</label>
+		<graphicData>
+			<texPath>Things/Projectile/Bullet_Small</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<projectile>
+			<damageDef>Bullet</damageDef>
+			<damageAmountBase>12</damageAmountBase>
+			<speed>72</speed>
+		</projectile>
+	</ThingDef>
+
+	<ThingDef ParentName="BaseHumanGun">
+		<defName>RF_Gun_USC</defName>
+		<label>civilian PCC</label>
+		<description>A stable semi-automatic pistol calibre carbine with low kickback and an unusual stock design. Average damage, above average fire rate and range, fires three round bursts.</description>
+		<graphicData>
+			<texPath>Things/A10/USC</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<soundInteract>InteractRifle</soundInteract>
+		<statBases>
+			<MarketValue>640</MarketValue>
+				<AccuracyTouch>0.93</AccuracyTouch>
+				<AccuracyShort>0.95</AccuracyShort>
+				<AccuracyMedium>0.91</AccuracyMedium>
+				<AccuracyLong>0.70</AccuracyLong>
+				<RangedWeapon_Cooldown>0.66</RangedWeapon_Cooldown>
+		</statBases>
+		<thingCategories>
+			<li>WeaponsRangedPistols</li>
+		</thingCategories>
+		<verbs>
+			<li>
+				<verbClass>Verb_Shoot</verbClass>
+				<hasStandardCommand>true</hasStandardCommand>
+				<projectileDef>RF_Bullet_USC</projectileDef>
+				<burstShotCount>3</burstShotCount>
+				<ticksBetweenBurstShots>11</ticksBetweenBurstShots>
+				<warmupTicks>83</warmupTicks>
+				<range>32</range>
+				<soundCast>RF_ShotUSC</soundCast>
+				<muzzleFlashScale>9</muzzleFlashScale>
+			</li>
+		</verbs>
+	</ThingDef>
+
+<!-- S H O T G U N S -->
+	<!-- ==================== Striker ================================= -->
+
+	<ThingDef ParentName="BaseBullet">
+		<defName>RF_Bullet_Striker</defName>
+		<label>combat shotgun blast</label>
+		<graphicData>
+			<texPath>Things/Projectile/Bullet_Shotgun</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<projectile>
+			<damageDef>Bullet</damageDef>
+			<damageAmountBase>16</damageAmountBase>
+			<speed>55</speed>
+		</projectile>
+	</ThingDef>
+
+	<ThingDef ParentName="BaseHumanGun">
+		<defName>RF_Gun_Striker</defName>
+		<label>combat shotgun</label>
+		<description>A cheap-looking semi-automatic shotgun. Has a higher fire rate and high damage output, but low range.</description>
+		<graphicData>
+			<texPath>Things/A10/Striker</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<soundInteract>InteractShotgun</soundInteract>
+		<statBases>
+			<MarketValue>460</MarketValue>
+				<AccuracyTouch>0.78</AccuracyTouch>
+				<AccuracyShort>0.88</AccuracyShort>
+				<AccuracyMedium>0.75</AccuracyMedium>
+				<AccuracyLong>0.60</AccuracyLong>
+				<RangedWeapon_Cooldown>0.83</RangedWeapon_Cooldown>
+		</statBases>
+		<thingCategories>
+			<li>WeaponsRangedShotty</li>
+		</thingCategories>
+		<verbs>
+			<li>
+				<verbClass>Verb_Shoot</verbClass>
+				<hasStandardCommand>true</hasStandardCommand>
+				<projectileDef>RF_Bullet_Striker</projectileDef>
+				<warmupTicks>50</warmupTicks>
+				<range>15</range>
+				<soundCast>RF_ShotStriker</soundCast>
+				<muzzleFlashScale>9</muzzleFlashScale>
+			</li>
+		</verbs>
+	</ThingDef>
+
+	<!-- ==================== AA-12 autoshotgun ======================= -->
+
+	<ThingDef ParentName="BaseBullet">
+		<defName>RF_Bullet_AAtwelve</defName>
+		<label>automatic shotgun blast</label>
+		<graphicData>
+			<texPath>Things/Projectile/Bullet_Shotgun</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<projectile>
+			<damageDef>Bullet</damageDef>
+			<damageAmountBase>10</damageAmountBase>
+			<speed>60</speed>
+		</projectile>
+	</ThingDef>
+
+	<ThingDef ParentName="BaseHumanGun">
+		<defName>RF_Gun_AAtwelve</defName>
+		<label>automatic shotgun</label>
+		<description>An automatic shotgun with almost no recoil. Burstfires, moderately accurate just under rifle range, and has high damage output.</description>
+		<graphicData>
+			<texPath>Things/A10/AA12</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<soundInteract>InteractShotgun</soundInteract>
+		<statBases>
+			<MarketValue>900</MarketValue>
+				<AccuracyTouch>0.82</AccuracyTouch>
+				<AccuracyShort>0.89</AccuracyShort>
+				<AccuracyMedium>0.80</AccuracyMedium>
+				<AccuracyLong>0.69</AccuracyLong>
+				<RangedWeapon_Cooldown>1.0</RangedWeapon_Cooldown>
+		</statBases>
+		<thingCategories>
+			<li>WeaponsRangedShotty</li>
+		</thingCategories>
+		<verbs>
+			<li>
+				<verbClass>Verb_Shoot</verbClass>
+				<hasStandardCommand>true</hasStandardCommand>
+				<projectileDef>RF_Bullet_AAtwelve</projectileDef>
+				<burstShotCount>3</burstShotCount>
+				<ticksBetweenBurstShots>12</ticksBetweenBurstShots>
+				<warmupTicks>80</warmupTicks>
+				<range>28</range>
+				<soundCast>RF_ShotAA12</soundCast>
+				<muzzleFlashScale>9</muzzleFlashScale>
+			</li>
+		</verbs>
+	</ThingDef>
+
+<!-- R I F L E S -->
+	<!-- ==================== Galil =================================== -->
+
+	<ThingDef ParentName="BaseBullet">
+		<defName>RF_Bullet_Galil</defName>
+		<label>iraqi rifle bullet</label>
+		<graphicData>
+			<texPath>Things/Projectile/Bullet_Small</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<projectile>
+			<damageDef>Bullet</damageDef>
+			<damageAmountBase>7</damageAmountBase>
+			<speed>70</speed>
+		</projectile>
+	</ThingDef>
+
+	<ThingDef ParentName="BaseHumanGun">
+		<defName>RF_Gun_Galil</defName>
+		<label>iraqi rifle</label>
+		<description>Ancient pattern military weapon. Three-round burst. Good range, low power, high rate of fire.</description>
+		<graphicData>
+			<texPath>Things/A10/Galil</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<soundInteract>InteractRifle</soundInteract>
+		<statBases>
+			<MarketValue>620</MarketValue>
+				<AccuracyTouch>0.95</AccuracyTouch>
+				<AccuracyShort>0.82</AccuracyShort>
+				<AccuracyMedium>0.73</AccuracyMedium>
+				<AccuracyLong>0.61</AccuracyLong>
+				<RangedWeapon_Cooldown>1.0</RangedWeapon_Cooldown>
+		</statBases>
+		<thingCategories>
+			<li>WeaponsRangedAssaultRifles</li>
+		</thingCategories>
+		<verbs>
+			<li>
+				<verbClass>Verb_Shoot</verbClass>
+				<hasStandardCommand>true</hasStandardCommand>
+				<projectileDef>RF_Bullet_Galil</projectileDef>
+				<burstShotCount>3</burstShotCount>
+				<ticksBetweenBurstShots>6</ticksBetweenBurstShots>
+				<warmupTicks>75</warmupTicks>
+				<range>29</range>
+				<soundCast>RF_ShotGalil</soundCast>
+				<muzzleFlashScale>9</muzzleFlashScale>
+			</li>
+		</verbs>
+	</ThingDef>
+
+	<!-- ==================== XM-8 ==================================== -->
+
+	<ThingDef ParentName="BaseBullet">
+		<defName>RF_Bullet_XMeight</defName>
+		<label>military rifle bullet</label>
+		<graphicData>
+			<texPath>Things/Projectile/Bullet_Small</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<projectile>
+			<damageDef>Bullet</damageDef>
+			<damageAmountBase>7</damageAmountBase>
+			<speed>70</speed>
+		</projectile>
+	</ThingDef>
+
+	<ThingDef ParentName="BaseHumanGun">
+		<defName>RF_Gun_XMeight</defName>
+		<label>military rifle</label>
+		<description>Ancient pattern military weapon. Three-round burst. Good range, low power, high rate of fire.</description>
+		<graphicData>
+			<texPath>Things/A10/XM8</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<soundInteract>InteractRifle</soundInteract>
+		<statBases>
+			<MarketValue>760</MarketValue>
+				<AccuracyTouch>0.94</AccuracyTouch>
+				<AccuracyShort>0.87</AccuracyShort>
+				<AccuracyMedium>0.78</AccuracyMedium>
+				<AccuracyLong>0.69</AccuracyLong>
+				<RangedWeapon_Cooldown>0.92</RangedWeapon_Cooldown>
+		</statBases>
+		<thingCategories>
+			<li>WeaponsRangedAssaultRifles</li>
+		</thingCategories>
+		<verbs>
+			<li>
+				<verbClass>Verb_Shoot</verbClass>
+				<hasStandardCommand>true</hasStandardCommand>
+				<projectileDef>RF_Bullet_XMeight</projectileDef>
+				<burstShotCount>3</burstShotCount>
+				<ticksBetweenBurstShots>5</ticksBetweenBurstShots>
+				<warmupTicks>80</warmupTicks>
+				<range>32</range>
+				<soundCast>RF_ShotXM8</soundCast>
+				<muzzleFlashScale>9</muzzleFlashScale>
+			</li>
+		</verbs>
+	</ThingDef>
+
+<!-- S N I P E R R I F L E S -->
+	<!-- ==================== Mosin =================================== -->
+
+	<ThingDef ParentName="BaseBullet">
+		<defName>RF_Bullet_Mosin</defName>
+		<label>3-line rifle bullet</label>
+		<graphicData>
+			<texPath>Things/Projectile/Bullet_Big</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<projectile>
+			<damageDef>Bullet</damageDef>
+			<damageAmountBase>20</damageAmountBase>
+			<speed>70</speed>
+		</projectile>
+	</ThingDef>
+
+	<ThingDef ParentName="BaseHumanGun">
+		<defName>RF_Gun_Mosin</defName>
+		<label>3-line rifle</label>
+		<description>Ancient bolt-action rifle. Probably pulled from a basement somewhere. Good range, Good power, low rate of fire.</description>
+		<graphicData>
+			<texPath>Things/A10/Mosin</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<soundInteract>InteractRifle</soundInteract>
+		<statBases>
+			<MarketValue>440</MarketValue>
+				<AccuracyTouch>0.75</AccuracyTouch>
+				<AccuracyShort>0.97</AccuracyShort>
+				<AccuracyMedium>0.98</AccuracyMedium>
+				<AccuracyLong>0.92</AccuracyLong>
+				<RangedWeapon_Cooldown>0.92</RangedWeapon_Cooldown>
+		</statBases>
+		<thingCategories>
+			<li>WeaponsRangedAssaultRifles</li>
+		</thingCategories>
+		<verbs>
+			<li>
+				<verbClass>Verb_Shoot</verbClass>
+				<hasStandardCommand>true</hasStandardCommand>
+				<projectileDef>RF_Bullet_Mosin</projectileDef>
+				<warmupTicks>146</warmupTicks>
+				<range>36</range>
+				<soundCast>RF_ShotMosin</soundCast>
+				<muzzleFlashScale>9</muzzleFlashScale>
+			</li>
+		</verbs>
+	</ThingDef>
+
+	<!-- ==================== WA-2000 ================================= 
+			- 1.5x hitpoints
+			- Average fire rate
+			- High accuracy
+			- High damage
+			- Average recoil
+			
+			045 DMG - 100 SPD - 210 WMP - 045 RNG
+			Cooldown 2.50
+			% 0.50 - 0.90 - 0.90 - 0.91
+			
+			1050 $
+	-->
+
+	<ThingDef ParentName="BaseBullet">
+		<defName>RF_Bullet_WA2K</defName>
+		<label>specialist rifle bullet</label>
+		<graphicData>
+			<texPath>Things/Projectile/Bullet_Big</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<projectile>
+			<damageDef>Bullet</damageDef>
+			<damageAmountBase>45</damageAmountBase>
+			<speed>100</speed>
+		</projectile>
+	</ThingDef>
+
+	<ThingDef ParentName="BaseHumanGun">
+		<defName>RF_Gun_WA2K</defName>
+		<label>specialist rifle</label>
+		<description>Limited edition olden days sniper rifle. Great range, exceptional accuracy, very high damage and very low fire rate.</description>
+		<graphicData>
+			<texPath>Things/A10/WA2K</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<soundInteract>InteractRifle</soundInteract>
+		<statBases>
+			<MarketValue>1050</MarketValue>
+			<MaxHitPoints>150</MaxHitPoints>
+				<AccuracyTouch>0.50</AccuracyTouch>
+				<AccuracyShort>0.90</AccuracyShort>
+				<AccuracyMedium>0.90</AccuracyMedium>
+				<AccuracyLong>0.91</AccuracyLong>
+				<RangedWeapon_Cooldown>2.5</RangedWeapon_Cooldown>
+		</statBases>
+		<thingCategories>
+			<li>WeaponsRangedSniperRifles</li>
+		</thingCategories>
+		<verbs>
+			<li>
+				<verbClass>Verb_Shoot</verbClass>
+				<hasStandardCommand>true</hasStandardCommand>
+				<projectileDef>RF_Bullet_WA2K</projectileDef>
+				<warmupTicks>110</warmupTicks>
+				<range>45</range>
+				<soundCast>RF_ShotWA2K</soundCast>
+				<muzzleFlashScale>9</muzzleFlashScale>
+			</li>
+		</verbs>
+		<weaponTags>
+			<li>SniperRifle</li>
+		</weaponTags>
+	</ThingDef>
+
+	<!-- ==================== Scout =================================== 
+			- Slightly high fire rate
+			- Average accuracy
+			- Slightly low damage
+			- Low recoil
+			
+			038 DMG - 100 SPD - 200 WMP - 050 RNG
+			Cooldown 1.92
+			% 0.40 - 0.86 - 0.89 - 0.91
+			
+			1170 $
+	-->
+
+	<ThingDef ParentName="BaseBullet">
+		<defName>RF_Bullet_Scout</defName>
+		<label>hunting rifle bullet</label>
+		<graphicData>
+			<texPath>Things/Projectile/Bullet_Big</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<projectile>
+			<damageDef>Bullet</damageDef>
+			<damageAmountBase>38</damageAmountBase>
+			<speed>100</speed>
+		</projectile>
+	</ThingDef>
+
+	<ThingDef ParentName="BaseHumanGun">
+		<defName>RF_Gun_Scout</defName>
+		<label>hunting rifle</label>
+		<description>Relatively lightweight, nylon hunting rifle with a great long-range scope. Low firerate, high damage, high accuracy, high range.</description>
+		<graphicData>
+			<texPath>Things/A10/Scout</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<soundInteract>InteractRifle</soundInteract>
+		<statBases>
+			<MarketValue>1170</MarketValue>
+				<AccuracyTouch>0.40</AccuracyTouch>
+				<AccuracyShort>0.86</AccuracyShort>
+				<AccuracyMedium>0.89</AccuracyMedium>
+				<AccuracyLong>0.91</AccuracyLong>
+				<RangedWeapon_Cooldown>1.92</RangedWeapon_Cooldown>
+		</statBases>
+		<thingCategories>
+			<li>WeaponsRangedSniperRifles</li>
+		</thingCategories>
+		<verbs>
+			<li>
+				<verbClass>Verb_Shoot</verbClass>
+				<hasStandardCommand>true</hasStandardCommand>
+				<projectileDef>RF_Bullet_Scout</projectileDef>
+				<warmupTicks>150</warmupTicks>
+				<range>50</range>
+				<soundCast>RF_ShotScout</soundCast>
+				<muzzleFlashScale>9</muzzleFlashScale>
+			</li>
+		</verbs>
+		<weaponTags>
+			<li>SniperRifle</li>
+		</weaponTags>
+	</ThingDef>
+
+	<!-- ==================== Armalite AR-50 ========================== 
+			- Average fire rate
+			- Slightly high accuracy
+			- Slightly high damage
+			- Extremely low recoil
+			- High value
+			
+			043 DMG - 100 SPD - 210 WMP - 055 RNG
+			Cooldown 1.80
+			% 0.41 - 0.85 - 0.90 - 0.92
+			
+			1550 $
+	-->
+
+	<ThingDef ParentName="BaseBullet">
+		<defName>RF_Bullet_ARFifty</defName>
+		<label>deadeye rifle bullet</label>
+		<graphicData>
+			<texPath>Things/Projectile/Bullet_Big</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<projectile>
+			<damageDef>Bomb</damageDef>
+			<damageAmountBase>43</damageAmountBase>
+			<speed>100</speed>
+		</projectile>
+	</ThingDef>
+
+	<ThingDef ParentName="BaseHumanGun">
+		<defName>RF_Gun_ARFifty</defName>
+		<label>deadeye rifle</label>
+		<description>A heavy and accurate, military-grade bolt-action rifle chambered for .50 calibre bullets. Its weight and muzzle brake significantly lower recoil. Average firerate, very high damage, accuracy and range.</description>
+		<graphicData>
+			<texPath>Things/A10/ArmaliteAR50</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<soundInteract>InteractRifle</soundInteract>
+		<statBases>
+			<MarketValue>1550</MarketValue>
+				<AccuracyTouch>0.41</AccuracyTouch>
+				<AccuracyShort>0.85</AccuracyShort>
+				<AccuracyMedium>0.90</AccuracyMedium>
+				<AccuracyLong>0.92</AccuracyLong>
+				<RangedWeapon_Cooldown>1.80</RangedWeapon_Cooldown>
+		</statBases>
+		<thingCategories>
+			<li>WeaponsRangedSniperRifles</li>
+		</thingCategories>
+		<verbs>
+			<li>
+				<verbClass>Verb_Shoot</verbClass>
+				<hasStandardCommand>true</hasStandardCommand>
+				<projectileDef>RF_Bullet_ARFifty</projectileDef>
+				<warmupTicks>210</warmupTicks>
+				<range>55</range>
+				<soundCast>RF_ShotARFifty</soundCast>
+				<muzzleFlashScale>9</muzzleFlashScale>
+			</li>
+		</verbs>
+		<weaponTags>
+			<li>SniperRifle</li>
+		</weaponTags>
+	</ThingDef>
+
+<!-- A N T I M A T E R I E L R I F L E S -->
+	<!-- ==================== MD 50 =================================== 
+			- Low fire rate
+			- Extremely high damage
+			- Extremely high accuracy
+			- Very high value
+			- Anti-materiel
+			
+			70 DMG - 110 SPD - 240 WMP - 053 RNG
+			Cooldown 1.50
+			% 0.35 - 0.85 - 0.94 - 0.98
+			
+			2110 $
+	-->
+
+	<ThingDef ParentName="BaseAntiMateriel" Class="AntiMateriel.ThingDef_AntiMateriel">
+		<defName>RF_Bullet_MDFifty</defName>
+		<label>heavy AMR bullet</label>
+		<graphicData>
+			<texPath>Things/Projectile/Bullet_Big</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<projectile>
+			<damageDef>AntiMateriel</damageDef>
+			<damageAmountBase>70</damageAmountBase>
+			<speed>110</speed>
+			<flyOverhead>false</flyOverhead>
+			<explosionRadius>1.4</explosionRadius>
+		</projectile>
+		<antiMaterielDamage>210</antiMaterielDamage>
+	</ThingDef>
+
+	<ThingDef ParentName="BaseHumanGun">
+		<defName>RF_Gun_MDFifty</defName>
+		<label>heavy AMR</label>
+		<description>An autoloading anti-materiel rifle with a compact bullpup design allowing it to be operated and carried by a single person. Used to destroy walls. Low fire rate, high range, extremely high damage and accuracy.</description>
+		<graphicData>
+			<texPath>Things/A10/MD50</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<soundInteract>InteractRifle</soundInteract>
+		<statBases>
+			<MarketValue>2110</MarketValue>
+				<AccuracyTouch>0.35</AccuracyTouch>
+				<AccuracyShort>0.85</AccuracyShort>
+				<AccuracyMedium>0.94</AccuracyMedium>
+				<AccuracyLong>0.98</AccuracyLong>
+				<RangedWeapon_Cooldown>1.50</RangedWeapon_Cooldown>
+		</statBases>
+		<thingCategories>
+			<li>WeaponsRangedSniperRifles</li>
+		</thingCategories>
+		<verbs>
+			<li>
+				<verbClass>Verb_Shoot</verbClass>
+				<hasStandardCommand>true</hasStandardCommand>
+				<projectileDef>RF_Bullet_MDFifty</projectileDef>
+				<ai_IsBuildingDestroyer>true</ai_IsBuildingDestroyer>
+				<warmupTicks>240</warmupTicks>
+				<range>53</range>
+				<targetParams>
+					<canTargetLocations>true</canTargetLocations>
+				</targetParams>
+				<soundCast>RF_ShotMDFifty</soundCast>
+				<muzzleFlashScale>14</muzzleFlashScale>
+			</li>
+		</verbs>
+		<equippedStatOffsets>
+			<MoveSpeed>-0.06</MoveSpeed>
+		</equippedStatOffsets>
+		<weaponTags>
+			<li>SniperRifle</li>
+		</weaponTags>
+	</ThingDef>
+
+	<!-- ==================== Ultima Ratio 'Hecate II' ================ 
+			- Very low fire rate
+			- Very high damage
+			- Very high accuracy
+			- Very high value
+			- Anti-materiel
+			
+			65 DMG - 105 SPD - 240 WMP - 047 RNG
+			Cooldown 2.20
+			% 0.34 - 0.80 - 0.92 - 0.96
+			
+			1820 $
+	-->
+
+	<ThingDef ParentName="BaseAntiMateriel" Class="AntiMateriel.ThingDef_AntiMateriel">
+		<defName>RF_Bullet_HecateII</defName>
+		<label>SASR bullet</label>
+		<graphicData>
+			<texPath>Things/Projectile/Bullet_Big</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<projectile>
+			<damageDef>AntiMateriel</damageDef>
+			<damageAmountBase>65</damageAmountBase>
+			<speed>105</speed>
+			<flyOverhead>false</flyOverhead>
+			<explosionRadius>1.4</explosionRadius>
+		</projectile>
+		<antiMaterielDamage>180</antiMaterielDamage>
+	</ThingDef>
+
+	<ThingDef ParentName="BaseHumanGun">
+		<defName>RF_Gun_HecateII</defName>
+		<label>SASR</label>
+		<description>A special application scoped rifle with a long muzzle break and wooden stock. Packs and ton both in battle and when carried, greatly slowing any wielders pace. Used to destroy walls. Low fire rate, high range, very high damage and accuracy.</description>
+		<graphicData>
+			<texPath>Things/A10/UltimaRatioHecate2</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<soundInteract>InteractRifle</soundInteract>
+		<statBases>
+			<MarketValue>1820</MarketValue>
+				<AccuracyTouch>0.34</AccuracyTouch>
+				<AccuracyShort>0.80</AccuracyShort>
+				<AccuracyMedium>0.92</AccuracyMedium>
+				<AccuracyLong>0.96</AccuracyLong>
+				<RangedWeapon_Cooldown>2.20</RangedWeapon_Cooldown>
+		</statBases>
+		<thingCategories>
+			<li>WeaponsRangedSniperRifles</li>
+		</thingCategories>
+		<verbs>
+			<li>
+				<verbClass>Verb_Shoot</verbClass>
+				<hasStandardCommand>true</hasStandardCommand>
+				<projectileDef>RF_Bullet_HecateII</projectileDef>
+				<ai_IsBuildingDestroyer>true</ai_IsBuildingDestroyer>
+				<warmupTicks>240</warmupTicks>
+				<range>47</range>
+				<targetParams>
+					<canTargetLocations>true</canTargetLocations>
+				</targetParams>
+				<soundCast>RF_ShotHecateII</soundCast>
+				<muzzleFlashScale>14</muzzleFlashScale>
+			</li>
+		</verbs>
+		<equippedStatOffsets>
+			<MoveSpeed>-0.15</MoveSpeed>
+		</equippedStatOffsets>
+		<weaponTags>
+			<li>SniperRifle</li>
+		</weaponTags>
+	</ThingDef>
+
+<!-- M A C H I N E G U N S -->
+	<!-- ==================== M134 machinegun ========================= -->
+
+	<ThingDef ParentName="BaseBullet">
+		<defName>RF_Bullet_Mhundredthirtyfour</defName>
+		<label>mitrailleuse bullet</label>
+		<graphicData>
+			<texPath>Things/Projectile/Bullet_Small</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<projectile>
+			<damageDef>Bullet</damageDef>
+			<damageAmountBase>8</damageAmountBase>
+			<speed>70</speed>
+		</projectile>
+	</ThingDef>
+
+	<ThingDef ParentName="BaseHumanGun">
+		<defName>RF_Gun_Mhundredthirtyfour</defName>
+		<label>mitrailleuse</label>
+		<description>A multi-barrel machine gun with an extremely high rate of fire. Slightly superior accuracy.</description>
+		<graphicData>
+			<texPath>Things/A10/M134</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<soundInteract>InteractRifle</soundInteract>
+		<techLevel>Spacer</techLevel>
+		<statBases>
+			<MarketValue>2700</MarketValue>
+			<MaxHitPoints>300</MaxHitPoints>
+			<Flammability>0.3</Flammability>
+				<AccuracyTouch>0.50</AccuracyTouch>
+				<AccuracyShort>0.40</AccuracyShort>
+				<AccuracyMedium>0.20</AccuracyMedium>
+				<AccuracyLong>0.10</AccuracyLong>
+				<RangedWeapon_Cooldown>1.2</RangedWeapon_Cooldown>
+		</statBases>
+		<thingCategories>
+			<li>WeaponsRangedMachineguns</li>
+		</thingCategories>
+		<weaponTags>
+			<li>GunHeavy</li>
+		</weaponTags>
+		<equippedStatOffsets>
+			<MoveSpeed>-0.20</MoveSpeed>
+		</equippedStatOffsets>
+		<verbs>
+			<li>
+				<verbClass>Verb_Shoot</verbClass>
+				<hasStandardCommand>true</hasStandardCommand>
+				<projectileDef>RF_Bullet_Mhundredthirtyfour</projectileDef>
+				<burstShotCount>20</burstShotCount>
+				<ticksBetweenBurstShots>3</ticksBetweenBurstShots>
+				<warmupTicks>160</warmupTicks>
+				<range>32</range>
+				<soundCast>RF_ShotM134</soundCast>
+				<muzzleFlashScale>9</muzzleFlashScale>
+			</li>
+		</verbs>
+		<smeltProducts>
+			<Steel>30</Steel>
+		</smeltProducts>
+	</ThingDef>
+
+<!-- E X P L O S I V E S -->
+	<!-- ==================== Milkor MGL ============================== -->
+
+	<ThingDef ParentName="BaseBullet">
+		<defName>Projectile_MilkorMGL</defName>
+		<label>MGL grenade</label>
+		<thingClass>Projectile_Explosive</thingClass>
+		<graphicData>
+			<texPath>Things/A10/MilkorMGL_Projectile</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>TransparentPostLight</shaderType>
+		</graphicData>
+		<projectile>
+			<speed>20</speed>
+			<flyOverhead>false</flyOverhead>
+			<damageDef>Bomb</damageDef>
+			<damageAmountBase>40</damageAmountBase>
+			<explosionRadius>1.9</explosionRadius>
+			<!--<explosionDelay>90</explosionDelay>-->
+		</projectile>
+	</ThingDef>
+
+	<ThingDef ParentName="BaseHumanGun">
+		<defName>Gun_MilkorMGL</defName>
+		<label>multiple grenade launcher</label>
+		<description>A launcher type weapon that fires 40mm concussive grenades at a higher rate than a human could.</description>
+		<graphicData>
+			<texPath>Things/A10/MilkorMGL</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<soundInteract>InteractRifle</soundInteract>
+		<statBases>
+			<MarketValue>1200</MarketValue>
+			<AccuracyTouch>0.65</AccuracyTouch>
+			<AccuracyShort>0.48</AccuracyShort>
+			<AccuracyMedium>0.16</AccuracyMedium>
+			<AccuracyLong>0.04</AccuracyLong>
+			<RangedWeapon_Cooldown>1.66</RangedWeapon_Cooldown>
+		</statBases>
+		<thingCategories>
+			<li>WeaponsRangedLaunchers</li>
+		</thingCategories>
+		<weaponTags>
+			<li>GunHeavy</li>
+		</weaponTags>
+		<verbs>
+			<li>
+				<verbClass>Verb_Shoot</verbClass>
+				<hasStandardCommand>true</hasStandardCommand>
+				<projectileDef>Projectile_MilkorMGL</projectileDef>
+				<ai_IsBuildingDestroyer>true</ai_IsBuildingDestroyer>
+				<warmupTicks>100</warmupTicks>
+				<noiseRadius>4</noiseRadius>
+				<forcedMissRadius>1.0</forcedMissRadius>
+				<range>16</range>	<!-- grenades at 12.9 -->
+				<targetParams>
+					<canTargetLocations>true</canTargetLocations>
+				</targetParams>
+				<soundCast>RF_ShotMilkorMGL</soundCast>
+				<muzzleFlashScale>14</muzzleFlashScale>
+			</li>
+		</verbs>
+	</ThingDef>
+
+</ThingDefs>
