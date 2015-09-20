@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+	<!-- ITab_Infusion !-->
+	<TabInfusion>상세</TabInfusion>
+
+	<!-- Notify messages !-->
+	<Infused>마법부여!</Infused>
+	<InfusionMessage>{0}에 마법이 부여되었습니다!</InfusionMessage>
+
+	<!-- (prefix +) {golden sword} of {stream} !-->
+	<InfusionOf>{1}의 {0}</InfusionOf>
+
+	<!-- StatPart description !-->
+	<InfusionDescBonus>마법부여 효과</InfusionDescBonus>
+
+	<!-- Item description opener -->
+	<ThisApparel>이 옷은</ThisApparel>
+	<ThisWeapon>이 무기는</ThisWeapon>
+
+	<!-- Infusion bonus description -->
+	<InfusionDescFrom>"{0}"(으)로부터:</InfusionDescFrom>
+
+</LanguageData>

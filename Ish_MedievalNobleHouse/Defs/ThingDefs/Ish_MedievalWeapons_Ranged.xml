@@ -1,0 +1,328 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ThingDefs>
+
+
+  <ThingDef Name="BaseWeaponNeolithic" Abstract="True">
+    <category>Item</category>
+    <thingClass>ThingWithComps</thingClass>
+    <equipmentType>Primary</equipmentType>
+    <pathCost>10</pathCost>
+    <useHitPoints>True</useHitPoints>
+    <selectable>True</selectable>
+    <graphicData>
+      <onGroundRandomRotateAngle>35</onGroundRandomRotateAngle>
+    </graphicData>
+    <drawGUIOverlay>true</drawGUIOverlay>
+    <statBases>
+      <MaxHitPoints>100</MaxHitPoints>
+      <Flammability>1.0</Flammability>
+      <DeteriorationRate>1</DeteriorationRate>
+      <SellPriceFactor>0.5</SellPriceFactor>
+    </statBases>
+    <altitudeLayer>Item</altitudeLayer>
+    <alwaysHaulable>True</alwaysHaulable>
+    <tickerType>Never</tickerType>
+    <techLevel>Neolithic</techLevel>
+    <weaponTags>
+      <!--<li>Neolithic</li>-->
+    </weaponTags>
+    <thingCategories>
+      <li>WeaponsRangedBows</li>
+    </thingCategories>
+    <comps>
+      <li>
+        <compClass>CompForbiddable</compClass>
+      </li>
+      <li>
+        <compClass>CompEquippable</compClass>
+      </li>
+      <li>
+        <compClass>CompQuality</compClass>
+      </li>
+    </comps>
+    <recipeMaker>
+      <workSpeedStat>SmithingSpeed</workSpeedStat>
+      <workSkill>Crafting</workSkill>
+      <recipeUsers>
+        <li>PrimitiveWeaponCraftingWorkTable</li>
+      </recipeUsers>
+      <effectWorking>Smelt</effectWorking>
+    </recipeMaker>
+  </ThingDef>
+
+
+
+  <ThingDef Name="BaseProjectileNeolithic" Abstract="True">
+    <category>Projectile</category>
+    <tickerType>Normal</tickerType>
+    <altitudeLayer>Projectile</altitudeLayer>
+    <thingClass>Bullet</thingClass>
+    <label>arrow</label>
+    <useHitPoints>False</useHitPoints>
+    <neverMultiSelect>True</neverMultiSelect>
+    <graphicData>
+      <shaderType>Transparent</shaderType>
+    </graphicData>
+  </ThingDef>
+
+
+  <!-- ========================== SPECIFICS ============================== -->
+
+  <ThingDef ParentName="BaseProjectileNeolithic">
+    <defName>Ish_MedievalWeapons_Arrow_Longbow</defName>
+    <label>longbow arrow</label>
+    <graphicData>
+      <texPath>Things/Projectile/Arrow_Small</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <projectile>
+      <flyOverhead>false</flyOverhead>
+      <damageDef>Arrow</damageDef>
+      <DamageAmountBase>15</DamageAmountBase>
+      <Speed>49</Speed>
+    </projectile>
+  </ThingDef>
+  <ThingDef ParentName="BaseWeaponNeolithic">
+    <defName>Ish_MedievalWeapons_Longbow</defName>
+    <label>longbow</label>
+    <description>A longbow in the English tradition with great range and accuracy.</description>
+    <graphicData>
+      <texPath>Things/Item/Equipment/WeaponRanged/BowGreat</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <soundInteract>BowLarge</soundInteract>
+    <costList>
+      <WoodPlank>120</WoodPlank>
+	  <Cloth>20</Cloth>
+    </costList>
+    <statBases>
+      <WorkToMake>1700</WorkToMake>
+      <MarketValue>180</MarketValue>
+      <AccuracyTouch>0.95</AccuracyTouch>
+      <AccuracyShort>0.9</AccuracyShort>
+      <AccuracyMedium>0.8</AccuracyMedium>
+      <AccuracyLong>0.6</AccuracyLong>
+      <RangedWeapon_Cooldown>0.66</RangedWeapon_Cooldown>
+    </statBases>
+    <weaponTags>
+      <li>MedievalRanged</li>
+    </weaponTags>
+    <verbs>
+      <li>
+        <verbClass>Verb_Shoot</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <projectileDef>Ish_MedievalWeapons_Arrow_Longbow</projectileDef>
+        <warmupTicks>170</warmupTicks>
+        <range>40</range>
+        <soundCast>BowGreat</soundCast>
+      </li>
+    </verbs>
+  </ThingDef>
+
+  <ThingDef ParentName="BaseProjectileNeolithic">
+    <defName>Ish_MedievalWeapons_Arrow_Recurve</defName>
+    <label>recurve bow arrow</label>
+    <graphicData>
+      <texPath>Things/Projectile/Arrow_Small</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <projectile>
+      <flyOverhead>false</flyOverhead>
+      <damageDef>Arrow</damageDef>
+      <DamageAmountBase>18</DamageAmountBase>
+      <Speed>49</Speed>
+    </projectile>
+  </ThingDef>
+  <ThingDef ParentName="BaseWeaponNeolithic">
+    <defName>Ish_MedievalWeapons_Bow_Recurve</defName>
+    <label>recurve bow</label>
+    <description>A compact but powerful recurve bow.</description>
+    <graphicData>
+      <texPath>Things/Item/Equipment/WeaponRanged/Ish_MedievalWeapons_Bow_Recurve</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <soundInteract>BowLarge</soundInteract>
+    <costList>
+      <WoodPlank>180</WoodPlank>
+	  <Cloth>30</Cloth>
+    </costList>
+    <statBases>
+      <WorkToMake>3000</WorkToMake>
+      <MarketValue>180</MarketValue>
+      <AccuracyTouch>0.93</AccuracyTouch>
+      <AccuracyShort>0.85</AccuracyShort>
+      <AccuracyMedium>0.75</AccuracyMedium>
+      <AccuracyLong>0.50</AccuracyLong>
+      <RangedWeapon_Cooldown>0.66</RangedWeapon_Cooldown>
+    </statBases>
+    <weaponTags>
+      <li>NeolithicRanged</li>
+      <li>MedievalRanged</li>
+    </weaponTags>
+    <verbs>
+      <li>
+        <verbClass>Verb_Shoot</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <projectileDef>Ish_MedievalWeapons_Arrow_Recurve</projectileDef>
+        <warmupTicks>170</warmupTicks>
+        <range>32</range>
+        <soundCast>BowGreat</soundCast>
+      </li>
+    </verbs>
+  </ThingDef>
+
+  <ThingDef ParentName="BaseProjectileNeolithic">
+    <defName>Ish_MedievalWeapons_Bolt_Crossbow</defName>
+    <label>crossbow bolt</label>
+    <graphicData>
+      <texPath>Things/Projectile/Arrow_Small</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <projectile>
+      <flyOverhead>false</flyOverhead>
+      <damageDef>Arrow</damageDef>
+      <DamageAmountBase>18</DamageAmountBase>
+      <Speed>49</Speed>
+    </projectile>
+  </ThingDef>
+  <ThingDef ParentName="BaseWeaponNeolithic">
+    <defName>Ish_MedievalWeapons_Crossbow</defName>
+    <label>crossbow</label>
+    <description>A crossbow, easier to use than a regular bow, but slower to reload.</description>
+    <graphicData>
+      <texPath>Things/Item/Equipment/WeaponRanged/Ish_MedievalWeapons_Crossbow</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <soundInteract>BowLarge</soundInteract>
+    <costList>
+      <WoodPlank>150</WoodPlank>
+	  <SteelBar>10</SteelBar>
+    </costList>
+    <statBases>
+      <WorkToMake>3000</WorkToMake>
+      <MarketValue>210</MarketValue>
+      <AccuracyTouch>0.95</AccuracyTouch>
+      <AccuracyShort>0.9</AccuracyShort>
+      <AccuracyMedium>0.8</AccuracyMedium>
+      <AccuracyLong>0.6</AccuracyLong>
+      <RangedWeapon_Cooldown>2</RangedWeapon_Cooldown>
+    </statBases>
+    <weaponTags>
+      <li>MedievalRanged</li>
+    </weaponTags>
+    <verbs>
+      <li>
+        <verbClass>Verb_Shoot</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <projectileDef>Ish_MedievalWeapons_Bolt_Crossbow</projectileDef>
+        <warmupTicks>150</warmupTicks>
+        <range>32</range>
+        <soundCast>BowGreat</soundCast>
+      </li>
+    </verbs>
+  </ThingDef>
+
+  <ThingDef ParentName="BaseProjectileNeolithic">
+    <defName>Ish_MedievalWeapons_Bolt_Arbalest</defName>
+    <label>arbalest bolt</label>
+    <graphicData>
+      <texPath>Things/Projectile/Arrow_Small</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <projectile>
+      <flyOverhead>false</flyOverhead>
+      <damageDef>Arrow</damageDef>
+      <DamageAmountBase>21</DamageAmountBase>
+      <Speed>49</Speed>
+    </projectile>
+  </ThingDef>
+  <ThingDef ParentName="BaseWeaponNeolithic">
+    <defName>Ish_MedievalWeapons_Arbalest</defName>
+    <label>arbalest</label>
+    <description>A powerful crossbow made of steel.</description>
+    <graphicData>
+      <texPath>Things/Item/Equipment/WeaponRanged/Ish_MedievalWeapons_Arbalest</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <soundInteract>BowLarge</soundInteract>
+    <costList>
+      <SteelBar>180</SteelBar>
+    </costList>
+    <statBases>
+      <WorkToMake>4000</WorkToMake>
+      <MarketValue>240</MarketValue>
+      <AccuracyTouch>0.95</AccuracyTouch>
+      <AccuracyShort>0.9</AccuracyShort>
+      <AccuracyMedium>0.8</AccuracyMedium>
+      <AccuracyLong>0.6</AccuracyLong>
+      <RangedWeapon_Cooldown>2</RangedWeapon_Cooldown>
+    </statBases>
+    <weaponTags>
+      <li>MedievalRanged</li>
+    </weaponTags>
+    <verbs>
+      <li>
+        <verbClass>Verb_Shoot</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <projectileDef>Ish_MedievalWeapons_Bolt_Arbalest</projectileDef>
+        <warmupTicks>150</warmupTicks>
+        <range>32</range>
+        <soundCast>BowGreat</soundCast>
+      </li>
+    </verbs>
+  </ThingDef>
+
+  <!--<ThingDef ParentName="BaseProjectileNeolithic">
+    <defName>Arrow_Great</defName>
+    <label>greatbow arrow</label>
+    <graphicData>
+      <texPath>Things/Projectile/Arrow_Small</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <projectile>
+      <flyOverhead>false</flyOverhead>
+      <damageDef>Arrow</damageDef>
+      <DamageAmountBase>18</DamageAmountBase>
+      <Speed>49</Speed>
+    </projectile>
+  </ThingDef>-->
+  <ThingDef ParentName="BaseWeaponNeolithic">
+    <defName>Ish_MedievalWeapons_Crossbow_Repeating</defName>
+    <label>repeating crossbow</label>
+    <description>A crossbow with a mechanism that allows a quick volley of several shots.</description>
+    <graphicData>
+      <texPath>Things/Item/Equipment/WeaponRanged/Ish_MedievalWeapons_Crossbow_Repeating</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <soundInteract>BowLarge</soundInteract>
+    <costList>
+      <WoodPlank>180</WoodPlank>
+	  <SteelBar>20</SteelBar>
+    </costList>
+    <statBases>
+      <WorkToMake>4000</WorkToMake>
+      <MarketValue>180</MarketValue>
+      <AccuracyTouch>0.89</AccuracyTouch>
+      <AccuracyShort>0.64</AccuracyShort>
+      <AccuracyMedium>0.41</AccuracyMedium>
+      <AccuracyLong>0.22</AccuracyLong>
+      <RangedWeapon_Cooldown>4</RangedWeapon_Cooldown>
+    </statBases>
+    <weaponTags>
+      <li>MedievalRanged</li>
+    </weaponTags>
+    <verbs>
+      <li>
+        <verbClass>Verb_Shoot</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <projectileDef>Ish_MedievalWeapons_Bolt_Crossbow</projectileDef>
+        <warmupTicks>140</warmupTicks>
+        <range>32</range>
+        <burstShotCount>5</burstShotCount>
+        <ticksBetweenBurstShots>20</ticksBetweenBurstShots>
+        <soundCast>BowGreat</soundCast>
+      </li>
+    </verbs>
+  </ThingDef>
+
+</ThingDefs>

@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ThingDefs>
+
+  <ThingDef Name="ApparelBase" Abstract="True">
+    <thingClass>Apparel</thingClass>
+    <category>Item</category>
+    <selectable>True</selectable>
+    <pathCost>10</pathCost>
+    <useHitPoints>True</useHitPoints>
+    <graphicData>
+      <onGroundRandomRotateAngle>35</onGroundRandomRotateAngle>
+    </graphicData>
+    <drawGUIOverlay>true</drawGUIOverlay>
+    <statBases>
+      <MaxHitPoints>100</MaxHitPoints>
+      <Flammability>1.0</Flammability>
+      <DeteriorationRate>1</DeteriorationRate>
+      <SellPriceFactor>0.25</SellPriceFactor>
+    </statBases>
+    <altitudeLayer>Item</altitudeLayer>
+    <alwaysHaulable>True</alwaysHaulable>
+    <tickerType>Never</tickerType>
+   <thingCategories>
+      <li>ArmorShirts</li>
+    </thingCategories>
+    <comps>
+      <li>
+        <compClass>CompForbiddable</compClass>
+      </li>
+      <li>
+        <compClass>CompColorable</compClass>
+      </li>
+      <li>
+        <compClass>CompQuality</compClass>
+      </li>
+    </comps>
+  </ThingDef>
+
+  <ThingDef Name="ApparelMakeableBase" ParentName="ApparelBase" Abstract="True">
+    <recipeMaker>
+      <workSpeedStat>TailoringSpeed</workSpeedStat>
+      <workSkill>Crafting</workSkill>
+      <effectWorking>Tailor</effectWorking>
+      <soundWorking>Recipe_Tailor</soundWorking>
+        <recipeUsers>
+        <li>TableTailor</li>
+      </recipeUsers>
+      <unfinishedThingDef>UnfinishedApparel</unfinishedThingDef>
+    </recipeMaker>
+  </ThingDef>
+  
+  <ThingDef Name="ApparelSmithableBase" ParentName="ApparelBase" Abstract="True">
+    <recipeMaker>
+      <workSpeedStat>SmithingSpeed</workSpeedStat>
+      <workSkill>Crafting</workSkill>
+      <effectWorking>Smith</effectWorking>
+      <soundWorking>Recipe_Smith</soundWorking>
+      <recipeUsers>
+	<li>TableSmithing</li>
+      </recipeUsers>
+      <unfinishedThingDef>UnfinishedWeapon</unfinishedThingDef>
+      <defaultIngredientFilter>
+	<categories>
+	  <li>Root</li>
+	</categories>
+	<exceptedThingDefs>
+	  <li>Silver</li>
+	  <li>Gold</li>
+	</exceptedThingDefs>
+      </defaultIngredientFilter>
+    </recipeMaker>
+  </ThingDef>
+  
+  
+  
+
+  <ThingDef ParentName="ApparelMakeableBase">
+    <defName>Ish_MedievalArmor_Gambeson</defName>
+    <label>gambeson</label>
+    <description>Also known as an aketon, padded jack, or arming doublet, this padded defensive jacket provides decent protection, especially when worn in conjuction with a mail hauberk or plate armor.</description>
+    <graphicData>
+      <texPath>Things/Pawn/Humanlike/Apparel/Ish_MedievalArmor_Gambeson/Ish_MedievalArmor_Gambeson</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <costStuffCount>200</costStuffCount>
+    <stuffCategories>
+      <li>Fabric</li>
+      <li>Leathery</li>
+    </stuffCategories>
+    <statBases>
+      <WorkToMake>30000</WorkToMake>
+      <MaxHitPoints>200</MaxHitPoints>
+      <ArmorRating_Blunt>0.15</ArmorRating_Blunt>
+      <ArmorRating_Sharp>0.1</ArmorRating_Sharp>
+      <Insulation_Cold>-15</Insulation_Cold>
+      <Insulation_Heat>-2</Insulation_Heat>
+    </statBases>
+    <equippedStatOffsets>
+      <MoveSpeed>-0.05</MoveSpeed>
+    </equippedStatOffsets>
+    <apparel>
+      <worngraphicPath>Things/Pawn/Humanlike/Apparel/Ish_MedievalArmor_Gambeson/Ish_MedievalArmor_Gambeson</worngraphicPath>
+      <bodyPartGroups>
+        <li>Torso</li>
+	<li>Shoulders</li>
+	<li>Arms</li>
+      </bodyPartGroups>
+      <layers>
+        <li>OnSkin</li>
+      </layers>
+      <commonality>1</commonality>
+      <tags>
+        <li>Medieval</li>
+        <li>MedievalKnightly</li>
+      </tags>
+      <defaultOutfitTags>
+      </defaultOutfitTags>
+    </apparel>
+    <colorGenerator Class="ColorGenerator_StandardApparel" />
+  </ThingDef>
+
+  <ThingDef ParentName="ApparelSmithableBase">
+    <defName>Ish_MedievalArmor_Hauberk</defName>
+    <label>hauberk</label>
+    <description>A long coat of interlocking metal rings, which provides good protection from slicing attacks.</description>
+    <graphicData>
+      <texPath>Things/Pawn/Humanlike/Apparel/Ish_MedievalArmor_Hauberk/Ish_MedievalArmor_Hauberk</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <costStuffCount>250</costStuffCount>
+    <stuffCategories>
+      <li>Metallic</li>
+    </stuffCategories>
+    <statBases>
+      <WorkToMake>100000</WorkToMake>
+      <MaxHitPoints>250</MaxHitPoints>
+      <ArmorRating_Blunt>0.05</ArmorRating_Blunt>
+      <ArmorRating_Sharp>0.3</ArmorRating_Sharp>
+    </statBases>
+    <equippedStatOffsets>
+      <MoveSpeed>-0.05</MoveSpeed>
+      <WorkSpeedGlobal>-0.05</WorkSpeedGlobal>
+    </equippedStatOffsets>
+    <apparel>
+      <worngraphicPath>Things/Pawn/Humanlike/Apparel/Ish_MedievalArmor_Hauberk/Ish_MedievalArmor_Hauberk</worngraphicPath>
+      <bodyPartGroups>
+        <li>Torso</li>
+	<li>Shoulders</li>
+	<li>Arms</li>
+      </bodyPartGroups>
+      <layers>
+        <li>Middle</li>
+      </layers>
+      <commonality>1</commonality>
+      <tags>
+        <li>Medieval</li>
+        <li>MedievalKnightly</li>
+      </tags>
+      <defaultOutfitTags>
+      </defaultOutfitTags>
+    </apparel>
+    <colorGenerator Class="ColorGenerator_StandardApparel" />
+  </ThingDef>
+
+  <ThingDef ParentName="ApparelSmithableBase">
+    <defName>Ish_MedievalArmor_PlateArmor</defName>
+    <label>plate armor</label>
+    <description>This heavy armor made of metal plates provides good protection from all sorts of attacks, but at the cost of slowing the wearer down, and it can be uncomfortable in hot climates.</description>
+    <graphicData>
+      <texPath>Things/Pawn/Humanlike/Apparel/Ish_MedievalArmor_Plate/Ish_MedievalArmor_Plate</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <costStuffCount>800</costStuffCount>
+    <stuffCategories>
+      <li>Metallic</li>
+    </stuffCategories>
+    <statBases>
+      <WorkToMake>150000</WorkToMake>
+      <MaxHitPoints>300</MaxHitPoints>
+      <ArmorRating_Blunt>0.15</ArmorRating_Blunt>
+      <ArmorRating_Sharp>0.4</ArmorRating_Sharp>
+      <Insulation_Cold>-15</Insulation_Cold>
+      <Insulation_Heat>-5</Insulation_Heat>
+    </statBases>
+    <equippedStatOffsets>
+      <MoveSpeed>-0.15</MoveSpeed>
+      <WorkSpeedGlobal>-0.15</WorkSpeedGlobal>
+    </equippedStatOffsets>
+    <apparel>
+      <worngraphicPath>Things/Pawn/Humanlike/Apparel/Ish_MedievalArmor_Plate/Ish_MedievalArmor_Plate</worngraphicPath>
+      <bodyPartGroups>
+        <li>Torso</li>
+	<li>Shoulders</li>
+	<li>Arms</li>
+      </bodyPartGroups>
+      <layers>
+        <li>Middle</li>
+	<li>Shell</li>
+      </layers>
+      <commonality>1</commonality>
+      <tags>
+        <li>Medieval</li>
+        <li>MedievalKnightly</li>
+      </tags>
+      <defaultOutfitTags>
+      </defaultOutfitTags>
+    </apparel>
+    <colorGenerator Class="ColorGenerator_StandardApparel" />
+  </ThingDef>
+
+</ThingDefs>

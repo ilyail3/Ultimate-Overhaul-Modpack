@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+
+    <Light.label>가벼운</Light.label>
+    <Light.description>깃털처럼 가볍습니다</Light.description>
+
+        <LightApparel.label>가벼운</LightApparel.label>
+        <LightApparel.description>깃털처럼 가볍습니다</LightApparel.description>
+
+    <Heavy.label>무거운</Heavy.label>
+    <Heavy.description>돌처럼 무겁습니다</Heavy.description>
+
+    <Studded.label>징 박힌</Studded.label>
+    <Studded.description>약간의 보강을 받았습니다</Studded.description>
+
+    <Fast.label>빠른</Fast.label>
+    <Fast.description>빠르고 날랩니다</Fast.description>
+
+    <Lasting.label>유지되는</Lasting.label>
+    <Lasting.description>거친 환경도 견뎌냅니다</Lasting.description>
+
+    <Small.label>작은</Small.label>
+    <Small.description>다른 사람들의 눈에 안보이게 감출 수 있습니다</Small.description>
+
+    <Big.label>큰</Big.label>
+    <Big.description>과시할만한 크기입니다</Big.description>
+
+    <Soft.label>부드러운</Soft.label>
+    <Soft.description>부드러운 가죽 손잡이를 가졌습니다</Soft.description>
+
+    <SoftApparel.label>부드러운</SoftApparel.label>
+    <SoftApparel.description>뛰어나게 부드럽습니다</SoftApparel.description>
+
+    <Warm.label>따듯한</Warm.label>
+    <Warm.description>따듯합니다</Warm.description>
+
+    <Breezing.label>시원한</Breezing.label>
+    <Breezing.description>시원합니다</Breezing.description>
+
+    <Precise.label>정확한</Precise.label>
+    <Precise.description>정확하지만 튼튼하지 못합니다</Precise.description>
+
+    <Shiny.label>반짝이는</Shiny.label>
+    <Shiny.description>관리가 잘 되었습니다</Shiny.description>
+
+    <Clean.label>깨끗한</Clean.label>
+    <Clean.description>상태가 좋습니다</Clean.description>
+
+    <Rapid.label>연속의</Rapid.label>
+    <Rapid.description>연속해서 사용하기 좋습니다</Rapid.description>
+
+    <Sterilized.label>소독된</Sterilized.label>
+    <Sterilized.description>전혀 오염되지 않았습니다</Sterilized.description>
+
+    <Hunters.label>사냥꾼의</Hunters.label>
+    <Hunters.description>사냥용입니다</Hunters.description>
+
+    <Cooks.label>요리사의</Cooks.label>
+    <Cooks.description>요리사의 도구로 쓸 수 있습니다</Cooks.description>
+
+    <Miners.label>광부의</Miners.label>
+    <Miners.description>무슨 이유에선가 곡괭이가 달려있습니다</Miners.description>
+
+    <Hot.label>뜨거운</Hot.label>
+    <Hot.description>뜨겁습니다</Hot.description>
+
+    <Cold.label>차가운</Cold.label>
+    <Cold.description>차갑습니다</Cold.description>
+
+    <Comfortable.label>편안한</Comfortable.label>
+    <Comfortable.description>잡고 있기에 좋습니다</Comfortable.description>
+
+    <ComfortableApparel.label>편안한</ComfortableApparel.label>
+    <ComfortableApparel.description>어마어마하게 편안합니다</ComfortableApparel.description>
+
+    <Targeting.label>조준하는</Targeting.label>
+    <Targeting.description>조준을 도와주는 저사양 인공지능이 들어있습니다</Targeting.description>
+
+    <Swift.label>발빠른</Swift.label>
+    <Swift.description>사용 후 발빠르게 이동할 수 있게 합니다</Swift.description>
+
+    <Vengeful.label>복수의</Vengeful.label>
+    <Vengeful.description>살상에 최적화된 복수의 무기입니다</Vengeful.description>
+
+    <Decorated.label>장식된</Decorated.label>
+    <Decorated.description>여러 사교활동에 도움을 주지만 연약합니다</Decorated.description>
+
+    <Automatic.label>자동화</Automatic.label>
+    <Automatic.description>복잡한 자동화 부품으로 이루어졌습니다</Automatic.description>
+
+    <Telescoping.label>늘어나는</Telescoping.label>
+    <Telescoping.description>움직일 땐 접히고 싸울 땐 펴집니다</Telescoping.description>
+
+    <Charged.label>충전된</Charged.label>
+    <Charged.description>에너지로 충전되었습니다</Charged.description>
+
+    <Antiviral.label>소독하는</Antiviral.label>
+    <Antiviral.description>가끔씩 소독약을 주위에 살포합니다</Antiviral.description>
+
+    <Holographic.label>홀로그램</Holographic.label>
+    <Holographic.description>일부가 홀로그램입니다</Holographic.description>
+
+    <Gravitational.label>중력 조절</Gravitational.label>
+    <Gravitational.description>작은 규모에서 중력을 조절할 수 있습니다</Gravitational.description>
+
+    <Blazing.label>불타는</Blazing.label>
+    <Blazing.description>분노와 원한의 기억입니다</Blazing.description>
+
+    <Teleporting.label>순간이동</Teleporting.label>
+    <Teleporting.description>초소형 순간이동기가 장착되었습니다</Teleporting.description>
+
+</LanguageData>

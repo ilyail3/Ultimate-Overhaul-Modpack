@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ResearchProjectDefs>
+
+	<ResearchProjectDef>
+		<defName>NuclearPower</defName>
+		<label>nuclear power</label>
+		<description>Allows you to build nuclear power plant.</description>
+		<totalCost>3500</totalCost>
+		<prerequisites>
+			<li>PowerIV</li>
+		</prerequisites>
+	</ResearchProjectDef>
+
+</ResearchProjectDefs>

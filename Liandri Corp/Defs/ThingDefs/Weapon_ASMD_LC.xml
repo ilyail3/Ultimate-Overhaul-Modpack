@@ -1,0 +1,140 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ThingDefs>
+
+
+<ThingDef Name="BaseGun" Abstract="True">
+    <category>Item</category>
+    <!-- <eType>Equipment</eType> -->
+    <thingClass>ThingWithComps</thingClass>
+    <equipmentType>Primary</equipmentType>
+    <pathCost>10</pathCost>
+    <useHitPoints>True</useHitPoints>
+    <selectable>True</selectable>
+    <graphicData>
+	<onGroundRandomRotateAngle>35</onGroundRandomRotateAngle>
+	</graphicData>
+    <statBases>
+      <MaxHitPoints>100</MaxHitPoints>
+      <Flammability>1.0</Flammability>
+	  <DeteriorationRate>1</DeteriorationRate>
+	  <SellPriceFactor>0.25</SellPriceFactor>
+    </statBases>
+    <altitudeLayer>Item</altitudeLayer>
+    <alwaysHaulable>True</alwaysHaulable>
+    <tickerType>Never</tickerType>
+    <techLevel>Spacer</techLevel>
+    <thingCategories>
+      <li>WeaponsLiandriCorp</li>
+    </thingCategories>
+	<inspectorTabs>
+			<li>ITab_Art</li>
+		</inspectorTabs>
+    <comps>
+      <li>
+        <compClass>CompForbiddable</compClass>
+      </li>
+      <li>
+        <compClass>CompEquippable</compClass>
+      </li>
+      <li>
+        <compClass>CompQuality</compClass>
+      </li>
+      <li>
+        <compClass>CompArt</compClass>
+        <nameMaker>NamerGun</nameMaker>
+        <descriptionMaker>ArtWeaponGun</descriptionMaker>
+        <minQualityForArtistic>Excellent</minQualityForArtistic>
+      </li>
+    </comps>
+    <smeltProducts><SteelBar>10</SteelBar></smeltProducts>
+  </ThingDef>
+  
+    <ThingDef Name="BaseHumanGun" ParentName="BaseGun" Abstract="True">
+    <weaponTags>
+      <li>Gun</li>
+    </weaponTags>
+  </ThingDef>
+
+	<ThingDef Name="BaseBullet" Abstract="True">
+		<category>Projectile</category>
+		<tickerType>Normal</tickerType>
+		<altitudeLayer>Projectile</altitudeLayer>
+		<thingClass>Bullet</thingClass>
+		<label>Bullet</label>
+		<useHitPoints>False</useHitPoints>
+		<neverMultiSelect>True</neverMultiSelect>
+		<graphicData><shaderType>Transparent</shaderType></graphicData>
+	</ThingDef>
+
+	
+
+		<!-- Weapon_ASMD_LC -->
+	
+	<ThingDef ParentName="BaseBullet">
+		<defName>Bullet_ASMD_LC</defName>
+		<label>Energy Bolt</label>
+		<graphicData>
+      <texPath>Things/Projectile/Projectile_ASMD_LC</texPath>
+		<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<projectile>
+			<damageDef>Bullet</damageDef>
+			<DamageAmountBase>25</DamageAmountBase>
+			<Speed>120</Speed>
+		</projectile>
+	</ThingDef>
+
+
+	<ThingDef ParentName="BaseHumanGun">
+		<defName>Gun_ASMD_LC</defName>
+		<label>ASMD Shock Rifle</label>
+		<description>An experimental directed-energy weapon, using Artificial Shocker Magnetic Destroyer cores to power and fire it's deadly blue beam. With superb range, accuracy and projectile velocity, it's an ideal sniping weapon.</description>
+		<graphicData>
+      <texPath>Things/Item/LCEquipment/Gun_ASMD_LC</texPath>
+		<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<soundInteract>InteractRifle</soundInteract>
+		<!-- <tradersCarry>True</tradersCarry> -->
+		<statBases>
+			<MarketValue>700</MarketValue>
+			<WorkToMake>2500</WorkToMake>
+			<AccuracyTouch>0.62</AccuracyTouch>
+			<AccuracyShort>0.82</AccuracyShort>
+			<AccuracyMedium>0.89</AccuracyMedium>
+			<AccuracyLong>0.97</AccuracyLong>
+		</statBases>
+		<costList>
+			<WeaponParts>70</WeaponParts>
+			<Electronics>5</Electronics>
+		</costList>
+		<recipeMaker>
+			<skillRequirements>
+				<li>
+					<skill>Crafting</skill>
+					<minLevel>6</minLevel>
+				</li>
+			</skillRequirements>
+			<workSpeedStat>SmithingSpeed</workSpeedStat>
+			<workSkill>Crafting</workSkill>
+			<effectWorking>Smith</effectWorking>
+			<soundWorking>Recipe_Smith</soundWorking>
+			<recipeUsers>
+				<li>WeaponsCraftingWorkTable</li>
+			</recipeUsers>
+			<unfinishedThingDef>UnfinishedWeapon</unfinishedThingDef>
+		</recipeMaker>
+		<verbs>
+			<li>
+			<verbClass>Verb_Shoot</verbClass>
+			<hasStandardCommand>true</hasStandardCommand>
+			<projectileDef>Bullet_ASMD_LC</projectileDef>
+			<warmupTicks>100</warmupTicks>
+			<range>40</range>
+			<burstShotCount>1</burstShotCount>
+			<ticksBetweenBurstShots>1</ticksBetweenBurstShots>
+			<soundcast>ShotShockRifle</soundcast>
+			</li>
+		</verbs>
+	</ThingDef>
+	
+</ThingDefs>

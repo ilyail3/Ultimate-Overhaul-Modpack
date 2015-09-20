@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ThingDefs>
+
+
+<ThingDef Name="BaseGun" Abstract="True">
+    <category>Item</category>
+    <!-- <eType>Equipment</eType> -->
+    <thingClass>ThingWithComps</thingClass>
+    <equipmentType>Primary</equipmentType>
+    <pathCost>10</pathCost>
+    <useHitPoints>True</useHitPoints>
+    <selectable>True</selectable>
+    <graphicData>
+    <onGroundRandomRotateAngle>35</onGroundRandomRotateAngle>
+	</graphicData>
+    <statBases>
+      <MaxHitPoints>100</MaxHitPoints>
+      <Flammability>1.0</Flammability>
+	  <DeteriorationRate>1</DeteriorationRate>
+	  <SellPriceFactor>0.25</SellPriceFactor>
+    </statBases>
+    <altitudeLayer>Item</altitudeLayer>
+    <alwaysHaulable>True</alwaysHaulable>
+    <tickerType>Never</tickerType>
+    <techLevel>Spacer</techLevel>
+    <thingCategories>
+      <li>WeaponsLiandriCorp</li>
+    </thingCategories>
+	<inspectorTabs>
+			<li>ITab_Art</li>
+		</inspectorTabs>
+    <comps>
+      <li>
+        <compClass>CompForbiddable</compClass>
+      </li>
+      <li>
+        <compClass>CompEquippable</compClass>
+      </li>
+      <li>
+        <compClass>CompQuality</compClass>
+      </li>
+      <li>
+        <compClass>CompArt</compClass>
+        <nameMaker>NamerGun</nameMaker>
+        <descriptionMaker>ArtWeaponGun</descriptionMaker>
+        <minQualityForArtistic>Excellent</minQualityForArtistic>
+      </li>
+    </comps>
+    <smeltProducts>
+      <SteelBar>10</SteelBar>
+    </smeltProducts>
+  </ThingDef>
+  
+    <ThingDef Name="BaseHumanGun" ParentName="BaseGun" Abstract="True">
+    <weaponTags>
+      <li>Gun</li>
+    </weaponTags>
+  </ThingDef>
+
+	<ThingDef Name="BaseBullet" Abstract="True">
+		<category>Projectile</category>
+		<tickerType>Normal</tickerType>
+		<altitudeLayer>Projectile</altitudeLayer>
+		<thingClass>Bullet</thingClass>
+		<label>Bullet</label>
+		<useHitPoints>False</useHitPoints>
+		<neverMultiSelect>True</neverMultiSelect>
+		<graphicData><shaderType>Transparent</shaderType></graphicData>
+	</ThingDef>
+
+		<!-- Weapon_Bort_LC -->
+
+	<ThingDef ParentName="BaseBullet">
+		<defName>Bullet_Bort_LC</defName>
+		<label>Flare</label>
+		<graphicData>
+      <texPath>Things/Projectile/Projectile_Bort_LC</texPath>
+		<graphicClass>Graphic_Single</graphicClass>		
+		</graphicData>
+		<thingClass>Bullet</thingClass>
+		<projectile>
+			<damageDef>Bullet</damageDef>
+			<damageAmountBase>4</damageAmountBase>
+			<speed>40</speed>
+		</projectile>
+	</ThingDef>
+		
+	<ThingDef ParentName="BaseHumanGun">
+		<defName>Gun_Bort_LC</defName>
+		<label>BORT-85 Pistol</label>
+		<description>A simple utility weapon, capable of firing weaponized flares. A product of NDTR Industries.</description>
+		<graphicData>
+      <texPath>Things/Item/LCEquipment/Gun_Bort_LC</texPath>
+		<graphicClass>Graphic_Single</graphicClass>		
+		</graphicData>
+		<soundInteract>InteractPistol</soundInteract>
+		<!-- <tradersCarry>True</tradersCarry> -->
+		<statBases>
+			<MarketValue>320</MarketValue>
+			<WorkToMake>2500</WorkToMake>
+			<AccuracyTouch>0.83</AccuracyTouch>
+			<AccuracyShort>0.61</AccuracyShort>
+			<AccuracyMedium>0.45</AccuracyMedium>
+			<AccuracyLong>0.26</AccuracyLong>
+		</statBases>
+		<costList>
+			<WeaponParts>40</WeaponParts>
+		</costList>
+		<recipeMaker>
+			<skillRequirements>
+				<li>
+					<skill>Crafting</skill>
+					<minLevel>6</minLevel>
+				</li>
+			</skillRequirements>
+			<workSpeedStat>SmithingSpeed</workSpeedStat>
+			<workSkill>Crafting</workSkill>
+			<effectWorking>Smith</effectWorking>
+			<soundWorking>Recipe_Smith</soundWorking>
+			<recipeUsers>
+				<li>WeaponsCraftingWorkTable</li>
+			</recipeUsers>
+			<unfinishedThingDef>UnfinishedWeapon</unfinishedThingDef>
+		</recipeMaker>
+		<verbs>
+		<li>
+			<verbClass>Verb_Shoot</verbClass>
+			<hasStandardCommand>true</hasStandardCommand>
+			<projectileDef>Bullet_Bort_LC</projectileDef>
+			<warmupTicks>95</warmupTicks>
+			<range>20</range>
+			<soundcast>ShotEnforcer</soundcast>
+		</li>
+		</verbs>
+	</ThingDef>
+</ThingDefs>

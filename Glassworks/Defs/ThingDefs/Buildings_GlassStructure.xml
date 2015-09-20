@@ -1,0 +1,255 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Buildings>
+
+  <ThingDef Name="BuildingBase" Abstract="True">
+    <category>Building</category>
+    <soundImpactDefault>BulletImpactMetal</soundImpactDefault>
+    <selectable>true</selectable>
+    <drawerType>MapMeshAndRealTime</drawerType>
+    <terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
+    <repairEffect>Repair</repairEffect>
+    <leaveResourcesWhenKilled>true</leaveResourcesWhenKilled>
+    <filthLeaving>BuildingRubble</filthLeaving>
+  </ThingDef>
+	
+	<!--========================= Doors =============================-->
+
+  <ThingDef ParentName="BuildingBase" Name="DoorGlassBase" Abstract="True">
+    <thingClass>Building_Door</thingClass>
+    <blueprintClass>Blueprint_Door</blueprintClass>
+    <category>Building</category>
+	<blueprintGraphicData>
+	  <texPath>Things/Building/Door/Door_Blueprint</texPath>
+	</blueprintGraphicData>
+    <altitudeLayer>DoorMoveable</altitudeLayer>
+    <fillPercent>1</fillPercent>
+    <useHitPoints>true</useHitPoints>
+    <statBases>
+      <MaxHitPoints>100</MaxHitPoints>
+      <Flammability>1.0</Flammability>
+    </statBases>
+    <leaveResourcesWhenKilled>false</leaveResourcesWhenKilled>
+    <selectable>true</selectable>
+    <tickerType>Normal</tickerType>
+    <size>(1,1)</size>
+    <rotatable>false</rotatable>
+    <soundImpactDefault>BulletImpactMetal</soundImpactDefault>
+    <terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
+    <designationCategory>Structure</designationCategory>
+    <holdsRoof>true</holdsRoof>
+    <staticSunShadowHeight>1.0</staticSunShadowHeight>
+    <blockLight>false</blockLight>
+    <drawerType>RealtimeOnly</drawerType>
+    <building>
+      <soundDoorOpenPowered>DoorOpenPowered</soundDoorOpenPowered>
+      <soundDoorClosePowered>DoorClosePowered</soundDoorClosePowered>
+      <soundDoorOpenManual>DoorOpenManual</soundDoorOpenManual>
+      <soundDoorCloseManual>DoorCloseManual</soundDoorCloseManual>
+      <ignoreNeedsPower>true</ignoreNeedsPower>
+      <canPlaceOverWall>true</canPlaceOverWall>
+    </building>
+	<comps>
+      <li>
+        <compClass>CompForbiddable</compClass>
+      </li>
+    </comps>
+  </ThingDef>
+
+	<ThingDef ParentName="DoorGlassBase">
+		<defName>DoorGlass</defName>
+		<label>glass door</label>
+		<description>Divides rooms. Powered operation allows people to move through the door without slowing down.</description>
+		<blockLight>false</blockLight>
+		<graphicData>
+		<texPath>Things/Building/DoorGlass_Mover</texPath>
+		<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<uiIconPath>Things/Building/DoorGlass_Icon</uiIconPath>
+		<statBases>
+			<WorkToMake>1000</WorkToMake>
+			<Beauty>80</Beauty>
+		</statBases>
+		<costList>
+			<SteelBar>15</SteelBar>
+			<Glass>30</Glass>
+		</costList>
+		<comps>
+			<li>
+				<compClass>CompPowerTrader</compClass>
+				<basePowerConsumption>50</basePowerConsumption>
+			</li>
+		</comps>
+		<filthLeaving>BrokenGlass</filthLeaving>
+		<researchPrerequisite>GlassworksResearch</researchPrerequisite>
+	</ThingDef>
+	
+	<ThingDef ParentName="DoorGlassBase">
+		<defName>DoorSafetyGlass</defName>
+		<label>safety glass door</label>
+		<description>Divides rooms. Powered operation allows people to move through the door without slowing down.</description>
+		<blockLight>false</blockLight>
+		<graphicData>
+		<texPath>Things/Building/DoorGlass_Mover</texPath>
+		<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<uiIconPath>Things/Building/DoorGlass_Icon</uiIconPath>
+		<statBases>
+			<WorkToMake>1500</WorkToMake>
+			<Beauty>80</Beauty>
+		</statBases>
+		<costList>
+			<SteelBar>15</SteelBar>
+			<SafetyGlass>30</SafetyGlass>
+		</costList>
+		<comps>
+			<li>
+				<compClass>CompPowerTrader</compClass>
+				<basePowerConsumption>75</basePowerConsumption>
+			</li>
+		</comps>
+		<filthLeaving>BrokenGlass</filthLeaving>
+		<researchPrerequisite>SafetyGlassResearch</researchPrerequisite>
+	</ThingDef>
+	
+	<!--========================= Walls =============================-->
+	
+	<ThingDef ParentName="BuildingBase" Name="Window" Abstract="True">
+  	<defName>Windows</defName>
+    <label>window</label>
+    <thingClass>Building</thingClass>
+    <category>Building</category>
+  </ThingDef>
+	
+  <ThingDef ParentName="Window">
+  	<defName>GlassWindows</defName>
+    <label>window</label>
+    <thingClass>Building</thingClass>
+    <category>Building</category>
+	<description>It's like a wall but it lets light through.</description>
+	<graphicData>
+	<texPath>Things/Building/WallGlass_Atlas</texPath>
+	<graphicClass>Graphic_Single</graphicClass>
+	<linkType>CornerFiller</linkType>
+	<linkFlags>
+      <li>Wall</li>
+      <li>Rock</li>
+    </linkFlags>
+	</graphicData>
+	<uiIconPath>Things/Building/Window</uiIconPath>
+    <blueprintGraphicData>
+	<texPath>Things/Building/Linked/Wall_Blueprint_Atlas</texPath>
+	</blueprintGraphicData>
+	<statBases>
+		<MaxHitPoints>100</MaxHitPoints>
+		<WorkToMake>850</WorkToMake>
+		<Flammability>0.25</Flammability>
+		<Beauty>80</Beauty>
+	</statBases>
+	<costList>
+		<SteelBar>15</SteelBar>
+		<Glass>20</Glass>
+	</costList>
+	<comps>
+		<li>
+			<compClass>CompPowerTransmitter</compClass>
+			<transmitsPower>true</transmitsPower>
+		</li>
+	</comps>
+	<leaveResourcesWhenKilled>false</leaveResourcesWhenKilled>
+    <altitudeLayer>BuildingTall</altitudeLayer>
+    <passability>Impassable</passability>
+    <castEdgeShadows>true</castEdgeShadows>
+    <fillPercent>1</fillPercent>
+    <coversFloor>true</coversFloor>
+    <placingDraggableDimensions>1</placingDraggableDimensions>
+    <tickerType>Never</tickerType>
+    <rotatable>false</rotatable>
+    <selectable>true</selectable>
+    <neverMultiSelect>true</neverMultiSelect>
+    <terrainAffordanceNeeded>Heavy</terrainAffordanceNeeded>
+    <holdsRoof>true</holdsRoof>
+    <designationCategory>Structure</designationCategory>
+    <staticSunShadowHeight>1.0</staticSunShadowHeight>
+    <blockLight>false</blockLight>
+    <building>
+	  <isInert>true</isInert>
+      <ignoreNeedsPower>true</ignoreNeedsPower>
+	  <canPlaceOverWall>true</canPlaceOverWall>
+    </building>
+    <damageMultipliers>
+      <li>
+        <damageDef>Bomb</damageDef>
+        <multiplier>3</multiplier>
+      </li>
+    </damageMultipliers>
+	<filthLeaving>BrokenGlass</filthLeaving>
+	<researchPrerequisite>DecorativeGlassResearch</researchPrerequisite>
+  </ThingDef>
+  
+  <ThingDef ParentName="Window">
+  	<defName>SafetyWindows</defName>
+    <label>safety window</label>
+    <thingClass>Building</thingClass>
+    <category>Building</category>
+	<description>It's like a wall but it lets light through.</description>
+	<graphicData>
+	<texPath>Things/Building/WallGlass_Atlas</texPath>
+	<graphicClass>Graphic_Single</graphicClass>
+	<linkType>CornerFiller</linkType>
+	<linkFlags>
+      <li>Wall</li>
+      <li>Rock</li>
+    </linkFlags>
+	</graphicData>
+	<uiIconPath>Things/Building/Window</uiIconPath>
+    <blueprintGraphicData>
+	<texPath>Things/Building/Linked/Wall_Blueprint_Atlas</texPath>
+	</blueprintGraphicData>
+	<statBases>
+		<MaxHitPoints>300</MaxHitPoints>
+		<WorkToMake>1000</WorkToMake>
+		<Flammability>0.15</Flammability>
+		<Beauty>80</Beauty>
+	</statBases>
+	<costList>
+		<SteelBar>15</SteelBar>
+		<SafetyGlass>20</SafetyGlass>
+	</costList>
+	<comps>
+		<li>
+			<compClass>CompPowerTransmitter</compClass>
+			<transmitsPower>true</transmitsPower>
+		</li>
+	</comps>
+	<leaveResourcesWhenKilled>false</leaveResourcesWhenKilled>
+    <altitudeLayer>BuildingTall</altitudeLayer>
+    <passability>Impassable</passability>
+    <castEdgeShadows>true</castEdgeShadows>
+    <fillPercent>1</fillPercent>
+    <coversFloor>true</coversFloor>
+    <placingDraggableDimensions>1</placingDraggableDimensions>
+    <tickerType>Never</tickerType>
+    <rotatable>false</rotatable>
+    <selectable>true</selectable>
+    <neverMultiSelect>true</neverMultiSelect>
+    <terrainAffordanceNeeded>Heavy</terrainAffordanceNeeded>
+    <holdsRoof>true</holdsRoof>
+    <designationCategory>Structure</designationCategory>
+    <staticSunShadowHeight>1.0</staticSunShadowHeight>
+    <blockLight>false</blockLight>
+    <building>
+	  <isInert>true</isInert>
+      <ignoreNeedsPower>true</ignoreNeedsPower>
+	  <canPlaceOverWall>true</canPlaceOverWall>
+    </building>
+    <damageMultipliers>
+      <li>
+        <damageDef>Bomb</damageDef>
+        <multiplier>1.5</multiplier>
+      </li>
+    </damageMultipliers>
+	<filthLeaving>BrokenGlass</filthLeaving>
+	<researchPrerequisite>SafetyGlassResearch</researchPrerequisite>
+  </ThingDef>
+
+</Buildings>

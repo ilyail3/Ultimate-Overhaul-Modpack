@@ -1,0 +1,46 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<RecipeDefs>
+
+
+  <RecipeDef>
+    <defName>MixConcrete</defName>
+    <label>mix concrete</label>
+    <description>turn stone chunks into concrete.</description>
+    <jobString>Mix concrete.</jobString>
+    <workAmount>1600</workAmount>
+    <efficiencyStat>ButcheryMechanoidEfficiency</efficiencyStat>
+    <effectWorking>CutStone</effectWorking>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+	<li>Sand</li>
+          </thingDefs>
+        </filter>
+        <count>80</count>
+      </li>
+     <li>
+        <filter>
+          <thingDefs>
+	<li>SteelBar</li>
+          </thingDefs>
+        </filter>
+        <count>8</count>
+      </li>
+    </ingredients>
+    <products>
+      <Concrete>40</Concrete>
+    </products>
+    <fixedIngredientFilter>
+          <thingDefs>
+	<li>SteelBar</li>
+	<li>Sand</li>
+          </thingDefs>
+    </fixedIngredientFilter>
+	<workSkill>Crafting</workSkill>
+  </RecipeDef>
+
+
+
+
+</RecipeDefs>

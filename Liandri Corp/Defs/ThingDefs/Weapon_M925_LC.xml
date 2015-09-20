@@ -1,0 +1,139 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ThingDefs>
+
+
+<ThingDef Name="BaseGun" Abstract="True">
+    <category>Item</category>
+    <!-- <eType>Equipment</eType> -->
+    <thingClass>ThingWithComps</thingClass>
+    <equipmentType>Primary</equipmentType>
+    <pathCost>10</pathCost>
+    <useHitPoints>True</useHitPoints>
+    <selectable>True</selectable>
+    <graphicData>
+    <onGroundRandomRotateAngle>35</onGroundRandomRotateAngle>
+	</graphicData>
+    <statBases>
+      <MaxHitPoints>100</MaxHitPoints>
+      <Flammability>1.0</Flammability>
+	  <DeteriorationRate>1</DeteriorationRate>
+	  <SellPriceFactor>0.25</SellPriceFactor>
+    </statBases>
+    <altitudeLayer>Item</altitudeLayer>
+    <alwaysHaulable>True</alwaysHaulable>
+    <tickerType>Never</tickerType>
+    <techLevel>Spacer</techLevel>
+    <thingCategories>
+      <li>WeaponsLiandriCorp</li>
+    </thingCategories>
+	<inspectorTabs>
+			<li>ITab_Art</li>
+		</inspectorTabs>
+    <comps>
+      <li>
+        <compClass>CompForbiddable</compClass>
+      </li>
+      <li>
+        <compClass>CompEquippable</compClass>
+      </li>
+      <li>
+        <compClass>CompQuality</compClass>
+      </li>
+      <li>
+        <compClass>CompArt</compClass>
+        <nameMaker>NamerGun</nameMaker>
+        <descriptionMaker>ArtWeaponGun</descriptionMaker>
+        <minQualityForArtistic>Excellent</minQualityForArtistic>
+      </li>
+    </comps>
+    <smeltProducts><SteelBar>10</SteelBar></smeltProducts>
+  </ThingDef>
+  
+    <ThingDef Name="BaseHumanGun" ParentName="BaseGun" Abstract="True">
+    <weaponTags>
+      <li>Gun</li>
+    </weaponTags>
+  </ThingDef>
+
+	<ThingDef Name="BaseBullet" Abstract="True">
+		<category>Projectile</category>
+		<tickerType>Normal</tickerType>
+		<altitudeLayer>Projectile</altitudeLayer>
+		<thingClass>Bullet</thingClass>
+		<label>Bullet</label>
+		<useHitPoints>False</useHitPoints>
+		<neverMultiSelect>True</neverMultiSelect>
+		<graphicData><shaderType>Transparent</shaderType></graphicData>
+	</ThingDef>
+
+	
+
+		<!-- Weapon_M925_LC -->
+	
+	<ThingDef ParentName="BaseBullet">
+		<defName>Bullet_M925_LC</defName>
+		<label>M925 Round</label>
+		<graphicData>
+      <texPath>Things/Projectile/Bullet_Big</texPath>
+		<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<projectile>
+			<damageDef>Bullet</damageDef>
+			<DamageAmountBase>22</DamageAmountBase>
+			<Speed>85</Speed>
+		</projectile>
+	</ThingDef>
+
+
+	<ThingDef ParentName="BaseHumanGun">
+		<defName>Gun_M925_LC</defName>
+		<label>M925 GPMG</label>
+		<description>Not exactly light, this general purpose machine gun weapon puts high power cartridges down range quickly and even somewhat accurately, although it has a low rate of fire for a machine gun. Manufactured by Black and Wood.</description>
+		<graphicData>
+      <texPath>Things/Item/LCEquipment/Gun_M925_LC</texPath>
+		<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<soundInteract>InteractBoltActionRifle</soundInteract>
+		<!-- <tradersCarry>True</tradersCarry> -->
+		<statBases>
+			<MarketValue>950</MarketValue>
+			<WorkToMake>2500</WorkToMake>
+			<AccuracyTouch>0.92</AccuracyTouch>
+			<AccuracyShort>0.67</AccuracyShort>
+			<AccuracyMedium>0.46</AccuracyMedium>
+			<AccuracyLong>0.28</AccuracyLong>
+		</statBases>
+		<costList>
+			<WeaponParts>80</WeaponParts>
+		</costList>
+		<recipeMaker>
+			<skillRequirements>
+				<li>
+					<skill>Crafting</skill>
+					<minLevel>6</minLevel>
+				</li>
+			</skillRequirements>
+			<workSpeedStat>SmithingSpeed</workSpeedStat>
+			<workSkill>Crafting</workSkill>
+			<effectWorking>Smith</effectWorking>
+			<soundWorking>Recipe_Smith</soundWorking>
+			<recipeUsers>
+				<li>WeaponsCraftingWorkTable</li>
+			</recipeUsers>
+			<unfinishedThingDef>UnfinishedWeapon</unfinishedThingDef>
+		</recipeMaker>
+		<verbs>
+		<li>
+			<verbClass>Verb_Shoot</verbClass>
+			<projectileDef>Bullet_M925_LC</projectileDef>
+			<hasStandardCommand>true</hasStandardCommand>
+			<warmupTicks>155</warmupTicks>
+			<range>35</range>
+			<burstShotCount>8</burstShotCount>
+			<ticksBetweenBurstShots>11</ticksBetweenBurstShots>
+			<soundcast>ShotM925</soundcast>
+		</li>
+		</verbs>
+	</ThingDef>
+	
+</ThingDefs>

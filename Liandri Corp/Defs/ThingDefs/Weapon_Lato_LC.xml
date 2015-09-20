@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ThingDefs>
+
+
+<ThingDef Name="BaseGun" Abstract="True">
+    <category>Item</category>
+    <!-- <eType>Equipment</eType> -->
+    <thingClass>ThingWithComps</thingClass>
+    <equipmentType>Primary</equipmentType>
+    <pathCost>10</pathCost>
+    <useHitPoints>True</useHitPoints>
+    <selectable>True</selectable>
+    <graphicData>
+    <onGroundRandomRotateAngle>35</onGroundRandomRotateAngle>
+	</graphicData>
+    <statBases>
+      <MaxHitPoints>100</MaxHitPoints>
+      <Flammability>1.0</Flammability>
+	  <DeteriorationRate>1</DeteriorationRate>
+	  <SellPriceFactor>0.25</SellPriceFactor>
+    </statBases>
+    <altitudeLayer>Item</altitudeLayer>
+    <alwaysHaulable>True</alwaysHaulable>
+    <tickerType>Never</tickerType>
+    <techLevel>Spacer</techLevel>
+    <thingCategories>
+      <li>WeaponsLiandriCorp</li>
+    </thingCategories>
+	<inspectorTabs>
+			<li>ITab_Art</li>
+		</inspectorTabs>
+    <comps>
+      <li>
+        <compClass>CompForbiddable</compClass>
+      </li>
+      <li>
+        <compClass>CompEquippable</compClass>
+      </li>
+      <li>
+        <compClass>CompQuality</compClass>
+      </li>
+      <li>
+        <compClass>CompArt</compClass>
+        <nameMaker>NamerGun</nameMaker>
+        <descriptionMaker>ArtWeaponGun</descriptionMaker>
+        <minQualityForArtistic>Excellent</minQualityForArtistic>
+      </li>
+    </comps>
+    <smeltProducts>
+      <SteelBar>10</SteelBar>
+    </smeltProducts>
+  </ThingDef>
+  
+    <ThingDef Name="BaseHumanGun" ParentName="BaseGun" Abstract="True">
+    <weaponTags>
+      <li>Gun</li>
+    </weaponTags>
+  </ThingDef>
+  
+	<ThingDef Name="BaseBullet" Abstract="True">
+		<category>Projectile</category>
+		<tickerType>Normal</tickerType>
+		<altitudeLayer>Projectile</altitudeLayer>
+		<thingClass>Bullet</thingClass>
+		<label>Bullet</label>
+		<useHitPoints>False</useHitPoints>
+		<neverMultiSelect>True</neverMultiSelect>
+		<graphicData><shaderType>Transparent</shaderType></graphicData>
+	</ThingDef>
+
+		<!-- Weapon_Lato_LC -->
+		
+		<ThingDef ParentName="BaseBullet">
+		<defName>Bullet_Enforcer_LC</defName>
+		<label>Enforcer Round</label>
+		<graphicData>
+      <texPath>Things/Projectile/Bullet_Small</texPath>
+		<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<projectile>
+			<damageDef>Bullet</damageDef>
+			<DamageAmountBase>14</DamageAmountBase>
+			<Speed>60</Speed>
+		</projectile>
+		</ThingDef>
+		
+	<ThingDef ParentName="BaseHumanGun">
+		<defName>Gun_Lato_LC</defName>
+		<label>Lato Pistol</label>
+		<description>A foreign weapon from unknown parts, despite it's alien curves and features, it proves to be a fairly standard pistol with fine accuracy.</description>
+		<graphicData>
+      <texPath>Things/Item/LCEquipment/Gun_Lato_LC</texPath>
+		<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<soundInteract>InteractPistol</soundInteract>
+		<!-- <tradersCarry>True</tradersCarry> -->
+		<statBases>
+			<MarketValue>750</MarketValue>
+			<WorkToMake>2500</WorkToMake>
+        <AccuracyTouch>0.93</AccuracyTouch>
+			<AccuracyShort>0.82</AccuracyShort>
+			<AccuracyMedium>0.74</AccuracyMedium>
+			<AccuracyLong>0.57</AccuracyLong>
+		</statBases>
+		<costList>
+			<WeaponParts>40</WeaponParts>
+		</costList>
+		<recipeMaker>
+			<skillRequirements>
+				<li>
+					<skill>Crafting</skill>
+					<minLevel>6</minLevel>
+				</li>
+			</skillRequirements>
+			<workSpeedStat>SmithingSpeed</workSpeedStat>
+			<workSkill>Crafting</workSkill>
+			<effectWorking>Smith</effectWorking>
+			<soundWorking>Recipe_Smith</soundWorking>
+			<recipeUsers>
+				<li>WeaponsCraftingWorkTable</li>
+			</recipeUsers>
+			<unfinishedThingDef>UnfinishedWeapon</unfinishedThingDef>
+		</recipeMaker>
+		<verbs>
+		<li>
+			<verbClass>Verb_Shoot</verbClass>
+			<hasStandardCommand>true</hasStandardCommand>
+			<projectileDef>Bullet_Enforcer_LC</projectileDef>
+			<warmupTicks>50</warmupTicks>
+			<range>30</range>
+			<soundcast>ShotMD24</soundcast>
+			</li>
+		</verbs>
+	</ThingDef>
+</ThingDefs>

@@ -1,0 +1,137 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ThingDefs>
+
+
+<ThingDef Name="BaseGun" Abstract="True">
+    <category>Item</category>
+    <thingClass>ThingWithComps</thingClass>
+    <equipmentType>Primary</equipmentType>
+    <pathCost>10</pathCost>
+    <useHitPoints>True</useHitPoints>
+    <selectable>True</selectable>
+	<graphicData>
+    <onGroundRandomRotateAngle>35</onGroundRandomRotateAngle>
+	</graphicData>
+    <statBases>
+      <MaxHitPoints>100</MaxHitPoints>
+      <Flammability>1.0</Flammability>
+	  <DeteriorationRate>1</DeteriorationRate>
+	  <SellPriceFactor>0.25</SellPriceFactor>
+    </statBases>
+    <altitudeLayer>Item</altitudeLayer>
+    <alwaysHaulable>True</alwaysHaulable>
+    <tickerType>Never</tickerType>
+    <techLevel>Spacer</techLevel>
+    <thingCategories>
+      <li>WeaponsLiandriCorp</li>
+    </thingCategories>
+	<inspectorTabs>
+			<li>ITab_Art</li>
+		</inspectorTabs>
+    <comps>
+      <li>
+        <compClass>CompForbiddable</compClass>
+      </li>
+      <li>
+        <compClass>CompEquippable</compClass>
+      </li>
+      <li>
+        <compClass>CompQuality</compClass>
+      </li>
+      <li>
+        <compClass>CompArt</compClass>
+        <nameMaker>NamerGun</nameMaker>
+        <descriptionMaker>ArtWeaponGun</descriptionMaker>
+        <minQualityForArtistic>Excellent</minQualityForArtistic>
+      </li>
+    </comps>
+    <smeltProducts><SteelBar>10</SteelBar></smeltProducts>
+  </ThingDef>
+  
+    <ThingDef Name="BaseHumanGun" ParentName="BaseGun" Abstract="True">
+    <weaponTags>
+      <li>Gun</li>
+    </weaponTags>
+  </ThingDef>
+
+	<ThingDef Name="BaseBullet" Abstract="True">
+		<category>Projectile</category>
+		<tickerType>Normal</tickerType>
+		<altitudeLayer>Projectile</altitudeLayer>
+		<thingClass>Bullet</thingClass>
+		<label>Bullet</label>
+		<useHitPoints>False</useHitPoints>
+		<neverMultiSelect>True</neverMultiSelect>
+		<graphicData><shaderType>Transparent</shaderType></graphicData>
+	</ThingDef>
+
+		<!-- Gun_AR770_LC -->
+	
+	<ThingDef ParentName="BaseBullet">
+		<defName>Bullet_AR770_LC</defName>
+		<label>AR770 Round</label>
+		<graphicData>
+			<texPath>Things/Projectile/Bullet_Small</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<projectile>
+			<damageDef>Bullet</damageDef>
+			<DamageAmountBase>6</DamageAmountBase>
+			<Speed>70</Speed>
+		</projectile>
+	</ThingDef>
+
+
+	<ThingDef ParentName="BaseHumanGun">
+		<defName>Gun_AR770_LC</defName>
+		<label>AR770</label>
+		<description>A light assault rifle, issued with the Enforcer. What it lacks in power, it makes up for with a reliably high rate of fire and a grenade launcher. Unfortunately, there's a grenade jammed in it.</description>
+		<graphicData>
+			<texPath>Things/Item/LCEquipment/Gun_AR770_LC</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<soundInteract>InteractRifle</soundInteract>
+		<!-- <tradersCarry>True</tradersCarry> -->
+		<statBases>
+			<MarketValue>300</MarketValue>
+			<WorkToMake>2500</WorkToMake>
+			<RangedWeapon_Cooldown>0.40</RangedWeapon_Cooldown>
+			<AccuracyTouch>0.93</AccuracyTouch>
+			<AccuracyShort>0.82</AccuracyShort>
+			<AccuracyMedium>0.74</AccuracyMedium>
+			<AccuracyLong>0.60</AccuracyLong>
+		</statBases>
+		<costList>
+			<WeaponParts>80</WeaponParts>
+		</costList>
+		<recipeMaker>
+			<skillRequirements>
+				<li>
+					<skill>Crafting</skill>
+					<minLevel>6</minLevel>
+				</li>
+			</skillRequirements>
+			<workSpeedStat>SmithingSpeed</workSpeedStat>
+			<workSkill>Crafting</workSkill>
+			<effectWorking>Smith</effectWorking>
+			<soundWorking>Recipe_Smith</soundWorking>
+			<recipeUsers>
+				<li>WeaponsCraftingWorkTable</li>
+			</recipeUsers>
+			<unfinishedThingDef>UnfinishedWeapon</unfinishedThingDef>
+		</recipeMaker>
+		<verbs>
+		<li>
+			<verbClass>Verb_Shoot</verbClass>
+			<projectileDef>Bullet_AR770_LC</projectileDef>
+			<hasStandardCommand>true</hasStandardCommand>
+			<warmupTicks>70</warmupTicks>
+			<range>28</range>
+			<burstShotCount>5</burstShotCount>
+			<ticksBetweenBurstShots>7</ticksBetweenBurstShots>
+			<soundcast>ShotXK2</soundcast>
+		</li>
+		</verbs>
+	</ThingDef>
+	
+</ThingDefs>

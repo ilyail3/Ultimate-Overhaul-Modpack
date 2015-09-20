@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+	<rep>
+		<path>BR_EnvironmentBrightNow.stages[0].label</path>
+		<trans>밝은 환경</trans>
+	</rep>
+	<rep>
+		<path>BR_EnvironmentBrightNow.stages[0].description</path>
+		<trans>모든걸 선명하게 볼 수 있어.</trans>
+	</rep>
+
+	<rep>
+		<path>BR_EnvironmentDarkNow.stages[0].label</path>
+		<trans>어두운 환경</trans>
+	</rep>
+	<rep>
+		<path>BR_EnvironmentDarkNow.stages[0].description</path>
+		<trans>잘 볼 수가 없어. 실수를 할 것만 같아.</trans>
+	</rep>
+
+</LanguageData>

@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ThingDefs>
+
+  <ThingDef Name="BuildingBase" Abstract="True">
+    <category>Building</category>
+    <soundImpactDefault>BulletImpactMetal</soundImpactDefault>
+    <selectable>true</selectable>
+    <drawerType>MapMeshAndRealTime</drawerType>
+    <terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
+    <repairEffect>Repair</repairEffect>
+    <leaveResourcesWhenKilled>true</leaveResourcesWhenKilled>
+    <filthLeaving>BuildingRubble</filthLeaving>
+  </ThingDef>
+
+  <ThingDef ParentName="BuildingBase">
+    <defName>Ish_MedievalDefenses_Ballista</defName>
+    <label>ballista</label>
+    <thingClass>Building_TurretGun</thingClass>
+    <graphicData>
+      <texPath>Things/Building/Security/Ish_MedievalDefenses_Ballista</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>(3,3)</drawSize>
+    </graphicData>
+    <altitudeLayer>Waist</altitudeLayer>
+    <hasInteractionCell>True</hasInteractionCell>
+    <interactionCellOffset>0,0,-1)</interactionCellOffset>
+    <statBases>
+      <MaxHitPoints>100</MaxHitPoints>
+      <Flammability>1.0</Flammability>
+      <WorkToMake>1500</WorkToMake>
+      <Beauty>-60</Beauty>
+    </statBases>
+    <tickerType>Normal</tickerType>
+    <comps>
+      <li>
+        <compClass>CompForbiddable</compClass>
+      </li>
+      <li>
+        <compClass>CompMannable</compClass>
+        <manWorkType>Violent</manWorkType>
+      </li>
+    </comps>
+    <description>A large crossbow-like siege weapon</description>
+    <passability>PassThroughOnly</passability>
+    <pathCost>50</pathCost>
+    <fillPercent>0.4</fillPercent>
+    <castEdgeShadows>true</castEdgeShadows>
+    <hasTooltip>true</hasTooltip>
+    <costList>
+      <WoodPlank>200</WoodPlank>
+      <SteelBar>85</SteelBar>
+      <Cloth>50</Cloth>
+    </costList>
+    <combatTargetBuilding>true</combatTargetBuilding>
+    <terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
+    <designationCategory>Security</designationCategory>
+    <specialDisplayRadius>32</specialDisplayRadius>
+    <building>
+      <turretGunDef>Ish_MedievalDefenses_BallistaWeapon</turretGunDef>
+      <turretBurstCooldownTicks>400</turretBurstCooldownTicks>
+      <turretTopgraphicPath>Things/Building/Security/Ish_MedievalDefenses_Ballista_Top</turretTopgraphicPath>
+    </building>
+	<researchPrerequisite>SecurityI</researchPrerequisite>
+  </ThingDef>
+  
+</ThingDefs>

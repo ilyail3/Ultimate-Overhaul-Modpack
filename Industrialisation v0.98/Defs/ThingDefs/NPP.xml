@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Buildings>
+
+  
+<ThingDef Class="Industrialisation.ThingDef_NPP">
+		<category>Building</category>
+		<soundImpactDefault>BulletImpactMetal</soundImpactDefault>
+		<selectable>true</selectable>
+		<drawerType>MapMeshAndRealTime</drawerType>
+		<terrainAffordanceNeeded>Heavy</terrainAffordanceNeeded>
+		<constructEffect>ConstructMetal</constructEffect>
+		<repairEffect>Repair</repairEffect>
+                               <filthLeaving>BuildingRubble</filthLeaving>
+    <defName>NPP</defName>
+    <label>nuclear power plant</label>
+    <thingClass>Industrialisation.Building_NPP</thingClass>
+<graphicData>
+    <texPath>NPP</texPath>
+    <graphicClass>Graphic_Single</graphicClass>
+<drawSize>(7,7)</drawSize>
+      <shadowData>
+        <volume>(3.5, 2.0, 3.5)</volume>
+		<offset>(0,0,-0.1)</offset>
+      </shadowData>
+</graphicData>
+    <altitudeLayer>BuildingTall</altitudeLayer>
+    <passability>Impassable</passability>
+    <fillPercent>0.8</fillPercent>
+    <rotatable>false</rotatable>
+    <statBases>
+      <MaxHitPoints>2400</MaxHitPoints>
+      <WorkToMake>30000</WorkToMake>
+      <Flammability>0</Flammability>
+      <Beauty>-180</Beauty>
+    </statBases>
+    <tickerType>Normal</tickerType>
+    <description>A small nuclear power plant. WARNING: In case of a nuclear meltdown, build walls around the debris to contain the radiation.
+Energy output: 18000W</description>
+    <size>(7,7)</size>
+    <building>
+      <soundAmbient>GeothermalPlant_Ambience</soundAmbient>
+      <ignoreNeedsPower>true</ignoreNeedsPower>
+    </building>
+    <costList>
+      <SteelBar>1200</SteelBar>
+	  <CopperBar>200</CopperBar>
+	  <PlasteelBar>500</PlasteelBar>
+	  <Electronics>200</Electronics>
+      <Concrete>1200</Concrete>
+      <Uranium>650</Uranium>
+    </costList>
+    <comps>
+      <li><compClass>CompForbiddable</compClass></li>
+      <li>
+        <compClass>CompPowerTrader</compClass>
+        <basePowerConsumption>-18000</basePowerConsumption>
+        <powerToggleable>false</powerToggleable>
+        <transmitsPower>true</transmitsPower>
+      </li>
+			<li>
+				<compClass>CompExplosiveNPP</compClass>
+				<explosiveRadius>1</explosiveRadius>
+				<explosiveDamageType>Bomb</explosiveDamageType>
+			</li>
+    </comps>
+    <placeWorkers>
+      <li>PlaceWorker_NotUnderRoof</li>
+    </placeWorkers>
+    <leaveResourcesWhenKilled>false</leaveResourcesWhenKilled>
+    <designationCategory>Power</designationCategory>
+    <constructEffect>ConstructMetal</constructEffect>
+    <researchPrerequisite>NuclearPower</researchPrerequisite>
+    <combatTargetBuilding>true</combatTargetBuilding>
+
+		<!-- Damage to self -->
+                                <OverheatThreshold>1600</OverheatThreshold>
+		<DamageAppliedSelfMin>40</DamageAppliedSelfMin>
+		<DamageAppliedSelfMax>80</DamageAppliedSelfMax>
+		<DamageApplySelfCounter>300</DamageApplySelfCounter>
+
+  </ThingDef>
+
+<ThingDef Class="Industrialisation.ThingDef_NPPD">
+		<category>Building</category>
+		<soundImpactDefault>BulletImpactMetal</soundImpactDefault>
+		<selectable>true</selectable>
+		<drawerType>MapMeshAndRealTime</drawerType>
+		<terrainAffordanceNeeded>Heavy</terrainAffordanceNeeded>
+		<constructEffect>ConstructMetal</constructEffect>
+		<repairEffect>Repair</repairEffect>
+                               <filthLeaving>BuildingRubble</filthLeaving>
+    <defName>NPPD</defName>
+    <label>nuclear power plant debris</label>
+    <thingClass>Industrialisation.Building_NPPD</thingClass>
+<graphicData>
+    <texPath>NPPD</texPath>
+    <graphicClass>Graphic_Single</graphicClass>
+<drawSize>(7,7)</drawSize>
+      <shadowData>
+        <volume>(3.5, 2.0, 3.5)</volume>
+		<offset>(0,0,-0.1)</offset>
+      </shadowData>
+</graphicData>
+    <altitudeLayer>BuildingTall</altitudeLayer>
+    <passability>Impassable</passability>
+    <fillPercent>0.8</fillPercent>
+    <useHitPoints>false</useHitPoints>
+
+    <destroyable>false</destroyable>
+    <statBases>
+      <Flammability>0</Flammability>
+      <Beauty>-720</Beauty>
+    </statBases>	
+    <tickerType>Normal</tickerType>
+    <description>Radioactive debris of nuclear power plant. build walls around to contain the radiation.</description>
+    <size>(7,7)</size>
+    <specialDisplayRadius>40</specialDisplayRadius>
+    <comps>
+      <li>
+<compClass>CompGlowerNPPD</compClass>		
+<glowRadius>40</glowRadius>			
+<glowColor>(0,0,0,0)</glowColor>
+		
+      </li>
+    </comps>
+
+		<!-- Damage to living things (Note: 60ticks = 1s) -->
+		<DamageAppliedMin>1</DamageAppliedMin>
+		<DamageAppliedMax>3</DamageAppliedMax>
+		<DamageApplyCounter>150</DamageApplyCounter>
+		
+		<!-- Damage to self -->
+		<DamageAppliedSelfMin>0</DamageAppliedSelfMin>
+		<DamageAppliedSelfMax>0</DamageAppliedSelfMax>
+		<DamageApplySelfCounter>300</DamageApplySelfCounter>
+		
+		<DamageDefName>Radiation</DamageDefName>
+
+  </ThingDef>
+
+</Buildings>

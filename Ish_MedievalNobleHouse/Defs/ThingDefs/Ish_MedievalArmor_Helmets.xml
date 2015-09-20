@@ -1,0 +1,282 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ThingDefs>
+
+  <ThingDef Name="HatBase" Abstract="True">
+    <thingClass>Apparel</thingClass>
+    <category>Item</category>
+    <selectable>True</selectable>
+    <pathCost>10</pathCost>
+    <useHitPoints>True</useHitPoints>
+    <graphicData>
+      <onGroundRandomRotateAngle>35</onGroundRandomRotateAngle>
+    </graphicData>
+    <drawGUIOverlay>true</drawGUIOverlay>
+    <statBases>
+      <MaxHitPoints>100</MaxHitPoints>
+      <Flammability>1.0</Flammability>
+      <DeteriorationRate>1</DeteriorationRate>
+      <SellPriceFactor>0.25</SellPriceFactor>
+    </statBases>
+    <altitudeLayer>Item</altitudeLayer>
+    <alwaysHaulable>True</alwaysHaulable>
+    <tickerType>Never</tickerType>
+    <thingCategories>
+      <li>ArmorHeadgear</li>
+    </thingCategories>
+    <comps>
+      <li>
+        <compClass>CompForbiddable</compClass>
+      </li>
+      <li>
+        <compClass>CompColorable</compClass>
+      </li>
+      <li>
+        <compClass>CompQuality</compClass>
+      </li>
+    </comps>
+  </ThingDef>
+
+  <ThingDef Name="ApparelMakeableBase" ParentName="HatBase" Abstract="True">
+    <recipeMaker>
+      <workSpeedStat>TailoringSpeed</workSpeedStat>
+      <workSkill>Crafting</workSkill>
+      <effectWorking>Tailor</effectWorking>
+      <soundWorking>Recipe_Tailor</soundWorking>
+      <recipeUsers>
+        <li>TableSmithing</li>
+      </recipeUsers>
+      <unfinishedThingDef>UnfinishedApparel</unfinishedThingDef>
+    </recipeMaker>
+  </ThingDef>
+
+  <ThingDef Name="ApparelSmithableBase" ParentName="HatBase" Abstract="True">
+    <recipeMaker>
+      <workSpeedStat>SmithingSpeed</workSpeedStat>
+      <workSkill>Crafting</workSkill>
+      <effectWorking>Smith</effectWorking>
+      <soundWorking>Recipe_Smith</soundWorking>
+      <recipeUsers>
+	<li>TableSmithing</li>
+      </recipeUsers>
+      <unfinishedThingDef>UnfinishedWeapon</unfinishedThingDef>
+      <defaultIngredientFilter>
+	<categories>
+	  <li>Root</li>
+	</categories>
+	<exceptedThingDefs>
+	  <li>Silver</li>
+	  <li>Gold</li>
+	</exceptedThingDefs>
+      </defaultIngredientFilter>
+    </recipeMaker>
+  </ThingDef>  
+  
+
+  <ThingDef ParentName="ApparelSmithableBase">
+    <defName>Ish_MedievalArmor_Skullcap</defName>
+    <label>skullcap</label>
+    <description>This semispherical helmet is about as simple as it gets.</description>
+    <graphicData>
+      <texPath>Things/Pawn/Humanlike/Apparel/Ish_MedievalArmor_Skullcap/Ish_MedievalArmor_Skullcap</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <costStuffCount>80</costStuffCount>
+    <stuffCategories>
+      <li>Metallic</li>
+    </stuffCategories>
+    <statBases>
+      <WorkToMake>1000</WorkToMake>
+      <MaxHitPoints>120</MaxHitPoints>
+      <ArmorRating_Blunt>0.1</ArmorRating_Blunt>
+      <ArmorRating_Sharp>0.2</ArmorRating_Sharp>
+    </statBases>
+    <equippedStatOffsets>
+      <MoveSpeed>-0.04</MoveSpeed>
+    </equippedStatOffsets>
+    <apparel>
+      <bodyPartGroups>
+        <li>UpperHead</li>
+      </bodyPartGroups>
+      <worngraphicPath>Things/Pawn/Humanlike/Apparel/Ish_MedievalArmor_Skullcap/Ish_MedievalArmor_Skullcap</worngraphicPath>
+      <layers>
+        <li>Overhead</li>
+      </layers>
+      <commonality>1</commonality>
+      <tags>
+        <li>Medieval</li>
+      </tags>
+      <defaultOutfitTags>
+      </defaultOutfitTags>
+    </apparel>
+    <colorGenerator Class="ColorGenerator_StandardApparel" />
+  </ThingDef>
+
+  <ThingDef ParentName="ApparelSmithableBase">
+    <defName>Ish_MedievalArmor_NasalHelmet</defName>
+    <label>nasal helmet</label>
+    <description>A simple helmet with a slight innovation: a bar that extended down over the nose, provding better protection to the face but somewhat obscuring vision.</description>
+    <graphicData>
+      <texPath>Things/Pawn/Humanlike/Apparel/Ish_MedievalArmor_NasalHelmet/Ish_MedievalArmor_NasalHelmet</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <costStuffCount>100</costStuffCount>
+    <stuffCategories>
+      <li>Metallic</li>
+    </stuffCategories>
+    <statBases>
+      <WorkToMake>3000</WorkToMake>
+      <MaxHitPoints>120</MaxHitPoints>
+      <ArmorRating_Blunt>0.1</ArmorRating_Blunt>
+      <ArmorRating_Sharp>0.25</ArmorRating_Sharp>
+    </statBases>
+    <equippedStatOffsets>
+      <MoveSpeed>-0.04</MoveSpeed>
+      <ShootingAccuracy>-0.05</ShootingAccuracy>
+    </equippedStatOffsets>
+    <apparel>
+      <bodyPartGroups>
+        <li>UpperHead</li>
+      </bodyPartGroups>
+      <worngraphicPath>Things/Pawn/Humanlike/Apparel/Ish_MedievalArmor_NasalHelmet/Ish_MedievalArmor_NasalHelmet</worngraphicPath>
+      <layers>
+        <li>Overhead</li>
+      </layers>
+      <commonality>1</commonality>
+      <tags>
+        <li>Medieval</li>
+        <li>MedievalKnightly</li>
+      </tags>
+      <defaultOutfitTags>
+      </defaultOutfitTags>
+    </apparel>
+    <colorGenerator Class="ColorGenerator_StandardApparel" />
+  </ThingDef>
+
+  <ThingDef ParentName="ApparelSmithableBase">
+    <defName>Ish_MedievalArmor_Kettlehat</defName>
+    <label>kettlehat</label>
+    <description>A helmet with a large metal brim for extra protection; favored by peasant but seen as unfit for nobility.</description>
+    <graphicData>
+      <texPath>Things/Pawn/Humanlike/Apparel/Ish_MedievalArmor_Kettlehat/Ish_MedievalArmor_Kettlehat</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <costStuffCount>130</costStuffCount>
+    <stuffCategories>
+      <li>Metallic</li>
+    </stuffCategories>
+    <statBases>
+      <WorkToMake>5000</WorkToMake>
+      <MaxHitPoints>120</MaxHitPoints>
+      <ArmorRating_Blunt>0.1</ArmorRating_Blunt>
+      <ArmorRating_Sharp>0.3</ArmorRating_Sharp>
+    </statBases>
+    <equippedStatOffsets>
+      <MoveSpeed>-0.04</MoveSpeed>
+      <SocialImpact>-0.15</SocialImpact>
+    </equippedStatOffsets>
+    <apparel>
+      <bodyPartGroups>
+        <li>UpperHead</li>
+      </bodyPartGroups>
+      <worngraphicPath>Things/Pawn/Humanlike/Apparel/Ish_MedievalArmor_Kettlehat/Ish_MedievalArmor_Kettlehat</worngraphicPath>
+      <layers>
+        <li>Overhead</li>
+      </layers>
+      <commonality>1</commonality>
+      <tags>
+        <li>Medieval</li>
+      </tags>
+      <defaultOutfitTags>
+      </defaultOutfitTags>
+    </apparel>
+    <colorGenerator Class="ColorGenerator_StandardApparel" />
+  </ThingDef>
+
+  <ThingDef ParentName="ApparelSmithableBase">
+    <defName>Ish_MedievalArmor_GreatHelm</defName>
+    <label>great helm</label>
+    <description>A helmet that covers the full head and provides good protection, but it hinders sight and is uncomfortable to wear.</description>
+    <graphicData>
+      <texPath>Things/Pawn/Humanlike/Apparel/Ish_MedievalArmor_GreatHelm/Ish_MedievalArmor_GreatHelm</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <costStuffCount>150</costStuffCount>
+    <stuffCategories>
+      <li>Metallic</li>
+    </stuffCategories>
+    <statBases>
+      <WorkToMake>10000</WorkToMake>
+      <MaxHitPoints>180</MaxHitPoints>
+      <ArmorRating_Blunt>0.25</ArmorRating_Blunt>
+      <ArmorRating_Sharp>0.4</ArmorRating_Sharp>
+      <Insulation_Cold>-10</Insulation_Cold>
+      <Insulation_Heat>-3</Insulation_Heat>
+    </statBases>
+    <equippedStatOffsets>
+      <MoveSpeed>-0.1</MoveSpeed>
+      <WorkSpeedGlobal>-0.05</WorkSpeedGlobal>
+      <MeleeHitChance>-0.1</MeleeHitChance>
+      <ShootingAccuracy>-0.25</ShootingAccuracy>
+    </equippedStatOffsets>
+    <apparel>
+      <bodyPartGroups>
+        <li>FullHead</li>
+      </bodyPartGroups>
+      <worngraphicPath>Things/Pawn/Humanlike/Apparel/Ish_MedievalArmor_GreatHelm/Ish_MedievalArmor_GreatHelm</worngraphicPath>
+      <layers>
+        <li>Overhead</li>
+      </layers>
+      <commonality>1</commonality>
+      <tags>
+        <li>Medieval</li>
+        <li>MedievalKnightly</li>
+      </tags>
+      <defaultOutfitTags>
+      </defaultOutfitTags>
+    </apparel>
+    <colorGenerator Class="ColorGenerator_StandardApparel" />
+  </ThingDef>
+
+  <ThingDef ParentName="ApparelSmithableBase">
+    <defName>Ish_MedievalArmor_Bascinet</defName>
+    <label>bascinet</label>
+    <description>This medieval full-head helmet improves upon the great helm by including a visor which can be lifted when outside of combat.</description>
+    <graphicData>
+      <texPath>Things/Pawn/Humanlike/Apparel/Ish_MedievalArmor_Bascinet/Ish_MedievalArmor_Bascinet</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <costStuffCount>150</costStuffCount>
+    <stuffCategories>
+      <li>Metallic</li>
+    </stuffCategories>
+    <statBases>
+      <WorkToMake>15000</WorkToMake>
+      <MaxHitPoints>150</MaxHitPoints>
+      <ArmorRating_Blunt>0.2</ArmorRating_Blunt>
+      <ArmorRating_Sharp>0.4</ArmorRating_Sharp>
+    </statBases>
+    <equippedStatOffsets>
+      <MoveSpeed>-0.1</MoveSpeed>
+      <MeleeHitChance>-0.1</MeleeHitChance>
+      <WorkSpeedGlobal>-0.05</WorkSpeedGlobal>
+    </equippedStatOffsets>
+    <apparel>
+      <bodyPartGroups>
+        <li>FullHead</li>
+      </bodyPartGroups>
+      <worngraphicPath>Things/Pawn/Humanlike/Apparel/Ish_MedievalArmor_Bascinet/Ish_MedievalArmor_Bascinet</worngraphicPath>
+      <layers>
+        <li>Overhead</li>
+      </layers>
+      <commonality>1</commonality>
+      <tags>
+        <li>Medieval</li>
+        <li>MedievalKnightly</li>
+      </tags>
+      <defaultOutfitTags>
+      </defaultOutfitTags>
+    </apparel>
+    <colorGenerator Class="ColorGenerator_StandardApparel" />
+  </ThingDef>
+
+</ThingDefs>

@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Buildings>
+
+    <ThingDef Abstract="True" Name="BuildingBase">
+        <category>Building</category>
+        <soundImpactDefault>BulletImpactMetal</soundImpactDefault>
+        <selectable>true</selectable>
+        <drawerType>MapMeshAndRealTime</drawerType>
+        <terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
+        <repairEffect>Repair</repairEffect>
+        <leaveResourcesWhenKilled>true</leaveResourcesWhenKilled>
+        <filthLeaving>BuildingRubble</filthLeaving>
+    </ThingDef>
+
+    <ThingDef ParentName="BuildingBase">
+        <defName>RedistHeat_IndustrialHeater</defName>
+        <thingClass>RedistHeat.Building_IndustrialHeater</thingClass>
+        <label>industrial heater</label>
+        <description>A massive industrial heater, can efficiently heat large rooms and bases. It can automatically turn itself on or off to reach a specific target temperature.</description>
+        <graphicData>
+            <texPath>Things/Building/SuperHeater</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+            <shadowData>
+                <volume>
+                    <x>1.8</x>
+                    <y>0.9</y>
+                    <z>1.8</z>
+                </volume>
+            </shadowData>
+            <drawSize>(2,2)</drawSize>
+        </graphicData>
+        <altitudeLayer>BuildingTall</altitudeLayer>
+        <passability>PassThroughOnly</passability>
+        <pathCost>40</pathCost>
+        <castEdgeShadows>false</castEdgeShadows>
+        <rotatable>false</rotatable>
+        <fillPercent>0.5</fillPercent>
+        <statBases>
+            <WorkToMake>5000</WorkToMake>
+            <MaxHitPoints>250</MaxHitPoints>
+            <Flammability>1.0</Flammability>
+            <Beauty>-20</Beauty>
+        </statBases>
+        <tickerType>Rare</tickerType>
+        <size>(2,2)</size>
+        <costList>
+            <SteelBar>220</SteelBar>
+			<CopperWire>50</CopperWire>
+        </costList>
+        <terrainAffordanceNeeded>Heavy</terrainAffordanceNeeded>
+        <placeWorkers>
+            <li>PlaceWorker_Heater</li>
+        </placeWorkers>
+        <drawPlaceWorkersWhileSelected>true</drawPlaceWorkersWhileSelected>
+        <comps>
+            <li>
+                <compClass>CompPowerTrader</compClass>
+                <soundPowerOn>PowerOnSmall</soundPowerOn>
+                <soundPowerOff>PowerOffSmall</soundPowerOff>
+                <basePowerConsumption>360</basePowerConsumption>
+            </li>
+            <li>
+                <compClass>CompTempControl</compClass>
+                <energyPerSecond>88</energyPerSecond>
+            </li>
+            <li>
+                <compClass>CompGlower</compClass>
+                <glowColor>(255,150,100,0)</glowColor>
+                <glowRadius>6</glowRadius>
+            </li>
+        </comps>
+        <designationCategory>Temperature</designationCategory>
+        <ResearchPrerequisite>RedistHeat_TemperatureControl</ResearchPrerequisite>
+    </ThingDef>
+
+    <ThingDef ParentName="BuildingBase">
+        <defName>RedistHeat_IndustrialCooler</defName>
+        <thingClass>RedistHeat.Building_IndustrialCooler</thingClass>
+        <label>industrial cooler</label>
+        <description>A massive electrical device that pushes cold air into a room. It needs at least one extenal exhaust port.</description>
+        <graphicData>
+            <texPath>Things/Building/Cooler/IndustrialCooler</texPath>
+            <graphicClass>Graphic_Multi</graphicClass>
+            <drawSize>(2,2)</drawSize>
+        </graphicData>
+        <altitudeLayer>BuildingTall</altitudeLayer>
+        <passability>Impassable</passability>
+        <castEdgeShadows>true</castEdgeShadows>
+        <staticSunShadowHeight>1.0</staticSunShadowHeight>
+        <fillPercent>1</fillPercent>
+        <statBases>
+            <WorkToMake>7000</WorkToMake>
+            <MaxHitPoints>250</MaxHitPoints>
+            <Flammability>1.0</Flammability>
+            <Beauty>-30</Beauty>
+        </statBases>
+        <tickerType>Rare</tickerType>
+        <size>(2,2)</size>
+        <costList>
+            <SteelBar>150</SteelBar>
+			<CopperWire>50</CopperWire>
+        </costList>
+        <terrainAffordanceNeeded>Heavy</terrainAffordanceNeeded>
+        <drawPlaceWorkersWhileSelected>true</drawPlaceWorkersWhileSelected>
+        <building>
+            <canPlaceOverWall>true</canPlaceOverWall>
+        </building>
+        <holdsRoof>true</holdsRoof>
+        <blockLight>true</blockLight>
+        <comps>
+            <li>
+                <compClass>CompPowerTrader</compClass>
+                <soundPowerOn>PowerOnSmall</soundPowerOn>
+                <soundAmbientPowered>GeothermalPlant_Ambience</soundAmbientPowered>
+                <soundPowerOff>PowerOffSmall</soundPowerOff>
+                <basePowerConsumption>400</basePowerConsumption>
+                <transmitsPower>true</transmitsPower>
+            </li>
+            <li>
+                <compClass>CompTempControl</compClass>
+                <energyPerSecond>-35</energyPerSecond>
+            </li>
+        </comps>
+        <designationCategory>Temperature</designationCategory>
+        <ResearchPrerequisite>RedistHeat_TemperatureControl</ResearchPrerequisite>
+        <placeWorkers>
+            <li>RedistHeat.PlaceWorker_IndustrialCooler</li>
+        </placeWorkers>
+    </ThingDef>
+
+    <ThingDef ParentName="BuildingBase">
+        <defName>RedistHeat_ExhaustPort</defName>
+        <thingClass>RedistHeat.Building_ExhaustPort</thingClass>
+        <label>exhaust port</label>
+        <description>An electrical device that works as a exhaust port for a industrial cooler. Generates a lot of heat.</description>
+        <graphicData>
+            <texPath>Things/Building/Cooler/ExhaustPort</texPath>
+            <graphicClass>Graphic_Multi</graphicClass>
+        </graphicData>
+        <altitudeLayer>BuildingTall</altitudeLayer>
+        <passability>Impassable</passability>
+        <castEdgeShadows>true</castEdgeShadows>
+        <staticSunShadowHeight>1.0</staticSunShadowHeight>
+        <fillPercent>1</fillPercent>
+        <statBases>
+            <WorkToMake>1000</WorkToMake>
+            <MaxHitPoints>100</MaxHitPoints>
+            <Flammability>1.0</Flammability>
+            <Beauty>-10</Beauty>
+        </statBases>
+        <tickerType>Rare</tickerType>
+        <size>(1,1)</size>
+        <costList>
+            <SteelBar>60</SteelBar>
+			<CopperWire>20</CopperWire>
+        </costList>
+        <terrainAffordanceNeeded>Heavy</terrainAffordanceNeeded>
+        <drawPlaceWorkersWhileSelected>true</drawPlaceWorkersWhileSelected>
+        <building>
+            <canPlaceOverWall>true</canPlaceOverWall>
+        </building>
+        <holdsRoof>true</holdsRoof>
+        <blockLight>true</blockLight>
+        <comps>
+            <li>
+                <compClass>CompPowerTrader</compClass>
+                <soundPowerOn>PowerOnSmall</soundPowerOn>
+                <soundPowerOff>PowerOffSmall</soundPowerOff>
+                <basePowerConsumption>100</basePowerConsumption>
+                <transmitsPower>true</transmitsPower>
+            </li>
+        </comps>
+        <designationCategory>Temperature</designationCategory>
+        <ResearchPrerequisite>RedistHeat_TemperatureControl</ResearchPrerequisite>
+        <placeWorkers>
+            <li>RedistHeat.PlaceWorker_ExhaustPort</li>
+        </placeWorkers>
+    </ThingDef>
+
+</Buildings>

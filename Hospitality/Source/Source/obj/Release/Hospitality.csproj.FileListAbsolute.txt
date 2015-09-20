@@ -1,0 +1,6 @@
+C:\Users\Christian\Desktop\Hospitality\Assemblies\Hospitality.dll
+C:\Users\Christian\Desktop\Hospitality\Source\Source\obj\Release\Hospitality.csprojResolveAssemblyReference.cache
+C:\Users\Christian\Desktop\Hospitality\Source\Source\obj\Release\Hospitality.dll
+E:\Users\MikeHawk\Downloads\Rimworld\RimWorld911Win\Mods\Hospitality\Assemblies\Hospitality.dll
+E:\Users\MikeHawk\Downloads\Rimworld\RimWorld911Win\Mods\Hospitality\Source\Source\obj\Release\Hospitality.csprojResolveAssemblyReference.cache
+E:\Users\MikeHawk\Downloads\Rimworld\RimWorld911Win\Mods\Hospitality\Source\Source\obj\Release\Hospitality.dll

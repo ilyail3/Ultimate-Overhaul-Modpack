@@ -1,0 +1,118 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ThingDefs>
+
+  <ThingDef Name="ApparelBase" Abstract="True">
+    <thingClass>Apparel</thingClass>
+    <category>Item</category>
+    <selectable>True</selectable>
+    <pathCost>10</pathCost>
+    <useHitPoints>True</useHitPoints>
+    <graphicData>
+      <onGroundRandomRotateAngle>35</onGroundRandomRotateAngle>
+    </graphicData>
+    <drawGUIOverlay>true</drawGUIOverlay>
+    <statBases>
+      <MaxHitPoints>100</MaxHitPoints>
+      <Flammability>1.0</Flammability>
+      <DeteriorationRate>1</DeteriorationRate>
+      <SellPriceFactor>0.5</SellPriceFactor>
+    </statBases>
+    <altitudeLayer>Item</altitudeLayer>
+    <alwaysHaulable>True</alwaysHaulable>
+    <tickerType>Never</tickerType>
+    <thingCategories>
+      <li>Apparel</li>
+    </thingCategories>
+    <comps>
+      <li>
+        <compClass>CompForbiddable</compClass>
+      </li>
+    </comps>
+  </ThingDef>
+  
+  
+  
+  
+  
+
+  <!-- ============= Stuff-less apparel =================-->
+ 
+
+  <ThingDef ParentName="ApparelBase">
+    <defName>Apparel_HS</defName>
+    <label>hazmat suit</label>
+    <description>A hazmat suit can protect people from hazardous materials or substances, including chemicals, biological agents, or radioactive materials.</description>
+    <graphicData>
+	<texPath>HS/HS</texPath>
+    <graphicClass>Graphic_Single</graphicClass>
+	</graphicData>
+    <statBases>
+      <MaxHitPoints>200</MaxHitPoints>
+      <MarketValue>600</MarketValue>
+      <ArmorRating_Blunt>0.12</ArmorRating_Blunt>
+      <ArmorRating_Sharp>0.06</ArmorRating_Sharp>
+      <ArmorRating_Heat>1.00</ArmorRating_Heat>
+      <ArmorRating_Electric>3.50</ArmorRating_Electric>
+      <Insulation_Cold>-25</Insulation_Cold>
+    </statBases>
+    <equippedStatOffsets>
+      <MoveSpeed>-0.12</MoveSpeed>
+      <WorkSpeedGlobal>-0.25</WorkSpeedGlobal>
+    </equippedStatOffsets>
+    <apparel>
+      <bodyPartGroups>
+        <li>Torso</li>
+        <li>Arms</li>
+        <li>Legs</li>
+      </bodyPartGroups>
+      <worngraphicPath>HS/HS</worngraphicPath>
+      <layers>
+        <li>Middle</li>
+        <li>Shell</li>
+      </layers>
+      <commonality>2</commonality>
+    </apparel>
+  </ThingDef>
+
+  <ThingDef ParentName="ApparelBase">
+    <defName>Apparel_HSH</defName>
+    <label>hazmat suit helmet</label>
+    <description>A part of hazmat suit, protect people from hazardous materials or substances, including chemicals, biological agents, or radioactive materials.</description>
+    <graphicData>
+	<texPath>HSH/HSH</texPath>
+    <graphicClass>Graphic_Single</graphicClass>
+	</graphicData>
+    <statBases>
+      <MaxHitPoints>100</MaxHitPoints>
+      <MarketValue>400</MarketValue>
+      <ArmorRating_Blunt>0.18</ArmorRating_Blunt>
+      <ArmorRating_Sharp>0.06</ArmorRating_Sharp>
+      <ArmorRating_Heat>1.00</ArmorRating_Heat>
+      <ArmorRating_Electric>3.50</ArmorRating_Electric>
+      <Insulation_Cold>-10</Insulation_Cold>
+      <Insulation_Heat>10</Insulation_Heat>
+    </statBases>
+    <comps>
+      <li>
+        <compClass>CompForbiddable</compClass>
+      </li>
+    </comps>
+    <equippedStatOffsets>
+      <MoveSpeed>-0.02</MoveSpeed>
+    </equippedStatOffsets>
+    <apparel>
+      <bodyPartGroups>
+        <li>FullHead</li>
+      </bodyPartGroups>
+      <worngraphicPath>HSH/HSH</worngraphicPath>
+      <layers>
+        <li>Overhead</li>
+      </layers>
+      <commonality>2</commonality>
+    </apparel>
+  </ThingDef>
+
+
+
+
+</ThingDefs>

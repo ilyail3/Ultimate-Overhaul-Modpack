@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+
+    <HeatResistance.label>열 저항</HeatResistance.label>
+    <HeatResistance.description>기본적인 열 피해 저항을 제공합니다</HeatResistance.description>
+
+    <Axe.label>도끼</Axe.label>
+    <Axe.description>도끼처럼 강력한 무기입니다</Axe.description>
+
+    <Hammer.label>망치</Hammer.label>
+    <Hammer.description>망치처럼 느리지만 강력한 무기입니다</Hammer.description>
+
+    <Spear.label>창</Spear.label>
+    <Spear.description>창처럼 정확합니다</Spear.description>
+
+    <Animals.label>동물</Animals.label>
+    <Animals.description>동물들이 좋아합니다</Animals.description>
+
+    <DamageResistance.label>물리 저항</DamageResistance.label>
+    <DamageResistance.description>기본적인 물리 피해 저항을 제공합니다</DamageResistance.description>
+
+    <Forest.label>숲</Forest.label>
+    <Forest.description>자연의 친구입니다</Forest.description>
+
+    <Rock.label>바위</Rock.label>
+    <Rock.description>단단하고 빠른 무기입니다</Rock.description>
+
+    <River.label>강</River.label>
+    <River.description>약하지만 꾸준한 무기입니다.</River.description>
+
+    <HeatReduction.label>열 감소</HeatReduction.label>
+    <HeatReduction.description>향상된 열 피해 보호를 제공합니다</HeatReduction.description>
+
+    <Nature.label>자연</Nature.label>
+    <Nature.description>자연 자체를 느낄 수 있습니다</Nature.description>
+
+    <Craftsman.label>장인</Craftsman.label>
+    <Craftsman.description>모든 장인에게 영감을 불어넣는 물건입니다</Craftsman.description>
+
+    <Merchant.label>상인</Merchant.label>
+    <Merchant.description>모든 상인 최고의 경호원입니다</Merchant.description>
+
+    <Priest.label>사제</Priest.label>
+    <Priest.description>믿음과 속죄의 무기입니다</Priest.description>
+
+    <Farmer.label>농부</Farmer.label>
+    <Farmer.description>야생의 땅을 길들일 때 사용하는 도구입니다</Farmer.description>
+
+    <Horde.label>군단</Horde.label>
+    <Horde.description>동물왕들을 위한 옷입니다</Horde.description>
+
+    <Protection.label>보호</Protection.label>
+    <Protection.description>향상된 물리 피해 보호를 제공합니다</Protection.description>
+
+    <Sunlight.label>햇빛</Sunlight.label>
+    <Sunlight.description>빛의 따듯함을 느낄 수 있습니다</Sunlight.description>
+
+    <Starlight.label>별빛</Starlight.label>
+    <Starlight.description>가볍게 반짝입니다</Starlight.description>
+
+    <Moonlight.label>달빛</Moonlight.label>
+    <Moonlight.description>마치 밤의 사냥꾼이 된 기분을 느낄 수 있습니다</Moonlight.description>
+
+    <Invulnerability.label>무적의</Invulnerability.label>
+    <Invulnerability.description>모든 종류의 피해에 보호를 제공합니다</Invulnerability.description>
+
+    <GlitterDrift.label>번화</GlitterDrift.label>
+    <GlitterDrift.description>한 때 번영했지만 지금은 한줌 재로 변화한 세계의 일부를 지녔습니다</GlitterDrift.description>
+
+</LanguageData>

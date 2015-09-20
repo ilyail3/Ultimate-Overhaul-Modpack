@@ -1,0 +1,93 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ThingDefs>
+
+
+
+  <ThingDef Name="BuildingBase" Abstract="True">
+    <category>Building</category>
+    <soundImpactDefault>BulletImpactMetal</soundImpactDefault>
+    <selectable>true</selectable>
+    <drawerType>MapMeshAndRealTime</drawerType>
+    <terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
+    <repairEffect>Repair</repairEffect>
+    <leaveResourcesWhenKilled>true</leaveResourcesWhenKilled>
+    <filthLeaving>BuildingRubble</filthLeaving>
+  </ThingDef>
+
+
+  <!-- ========================= Work tables ==========================-->
+
+
+  <ThingDef ParentName="BuildingBase">
+    <DefName>ConcreteMixer</DefName>
+    <label>concrete mixer</label>
+    <ThingClass>Building_WorkTable</ThingClass>
+    <Description>A concrete mixer.</Description>
+	<graphicData>
+    <texPath>ConcreteMixer</texPath>
+    <graphicClass>Graphic_Single</graphicClass>
+	<drawSize>(2,2)</drawSize>
+	<shadowData>
+        <volume>(1.5, 0.4, 1.5)</volume>
+		<offset>(0,0,-0.1)</offset>
+      </shadowData>
+	</graphicData>
+	<minifiedDef>MinifiedFurniture</minifiedDef>
+    <constructEffect>ConstructMetal</constructEffect>
+		<fillPercent>0.4</fillPercent>
+        <leaveResourcesWhenKilled>false</leaveResourcesWhenKilled>
+    <CostList>
+      <SteelBar>120</SteelBar>
+	  <CopperBar>20</CopperBar>
+    </CostList>
+    <AltitudeLayer>Waist</AltitudeLayer>
+    <UseHitPoints>True</UseHitPoints>
+    <rotatable>True</rotatable>
+    <statBases>
+      <WorkToMake>2000</WorkToMake>
+      <MaxHitPoints>180</MaxHitPoints>
+      <Flammability>0.5</Flammability>
+      <Beauty>-60</Beauty>
+    </statBases>
+    <Size>(2,2)</Size>
+    <DesignationCategory>ProductionResources</DesignationCategory>
+    <Passability>PassThroughOnly</Passability>
+	<pathCost>40</pathCost>
+    <hasInteractionCell>True</hasInteractionCell>
+    <interactionCellOffset>(0,0,-1)</interactionCellOffset>
+    <surfaceType>Item</surfaceType>
+    <recipes>
+      <li>MixConcrete</li>
+    </recipes>
+    <inspectorTabs>
+      <li>ITab_Bills</li>
+    </inspectorTabs>
+	<tickerType>Normal</tickerType>
+    <comps>
+      <li>
+        <compClass>CompPowerTrader</compClass>
+        <startElectricalFires>false</startElectricalFires>
+        <basePowerConsumption>350</basePowerConsumption>
+        <soundPowerOn>PowerOnSmall</soundPowerOn>
+        <soundPowerOff>PowerOffSmall</soundPowerOff>
+      </li>
+	  <li Class="CommunityCoreLibrary.CompProperties_LowIdleDraw">
+                <compClass>CommunityCoreLibrary.CompPowerLowIdleDraw</compClass>
+                <idlePowerFactor>0.14</idlePowerFactor>
+				<operationalMode>InUse</operationalMode>
+            </li>
+    </comps>
+    <building>
+      <spawnedConceptLearnOpportunity>BillsTab</spawnedConceptLearnOpportunity>
+    </building>
+    <researchPrerequisite>Stonecutting</researchPrerequisite>
+  </ThingDef>
+
+
+  
+  
+  
+  
+
+
+</ThingDefs>

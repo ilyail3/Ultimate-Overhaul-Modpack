@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ThingCategoryDefs>
+
+	<ThingCategoryDef>
+		<defName>WeaponsLiandriCorp</defName>
+		<label>Liandri Weapons</label>
+		<parent>WeaponsRanged</parent>
+	</ThingCategoryDef>
+
+</ThingCategoryDefs>

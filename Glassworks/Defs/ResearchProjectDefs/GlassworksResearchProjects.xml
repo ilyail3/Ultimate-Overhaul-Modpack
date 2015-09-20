@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ResearchProjectDefs>
+	
+	<ResearchProjectDef>
+		<defName>SafetyGlassResearch</defName>
+		<label>safety glass research</label>
+		<description>Unlocks structures to be built from safety glass.</description>
+		<totalCost>600</totalCost>
+		<prerequisites>
+			<li>DecorativeGlassResearch</li>
+		</prerequisites>
+	</ResearchProjectDef>
+	
+	<ResearchProjectDef>
+		<defName>DecorativeGlassResearch</defName>
+		<label>decorative glass research</label>
+		<description>Glass can be used for more than just windows.</description>
+		<totalCost>300</totalCost>
+		<prerequisites>
+			<li>GlassworksResearch</li>
+		</prerequisites>
+	</ResearchProjectDef>
+
+</ResearchProjectDefs>

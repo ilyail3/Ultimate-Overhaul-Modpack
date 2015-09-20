@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<FactionDefs>
+  <FactionDef>
+    <defName>Ish_MedievalNobleHouse_NobleHouse</defName>
+    <label>noble house</label>
+    <description>A medieval noble family and their retainers. Their technology is pre-industrial.</description>
+    <pawnsPlural>medieval retainers</pawnsPlural>
+    <requiredCountAtGameStart>1</requiredCountAtGameStart>
+    <canMakeRandomly>true</canMakeRandomly>
+    <raidCommonality>100</raidCommonality>
+    <canSiege>false</canSiege>
+    <canStageAttacks>true</canStageAttacks>
+    <startingGoodwill>
+      <min>-100</min>
+      <max>-20</max>
+    </startingGoodwill>
+    <factionNameMaker>Ish_MedievalNobleHouse_NamerFactionNobleHouse</factionNameMaker>
+    <techLevel>Midworld</techLevel>
+    <backstoryCategory>Civil</backstoryCategory>
+    <hairTags>
+      <li>Rural</li>
+    </hairTags>
+    <naturalColonyGoodwill>
+      <min>-60</min>
+      <max>10</max>
+    </naturalColonyGoodwill>
+    <pawnGroupMakers>
+      <li>
+	<options>
+	  <li>
+	    <selectionWeight>250</selectionWeight>
+	    <kind>Ish_MedievalNobleHouse_Guard</kind>
+	  </li>
+	  <li>
+	    <selectionWeight>150</selectionWeight>
+	    <kind>Ish_MedievalNobleHouse_ManAtArms</kind>
+	  </li>
+	  <li>
+	    <selectionWeight>150</selectionWeight>
+	    <kind>Ish_MedievalNobleHouse_Squire</kind>
+	  </li>
+	  <li>
+	    <selectionWeight>100</selectionWeight>
+	    <kind>Ish_MedievalNobleHouse_Knight</kind>
+	  </li>
+	</options>
+      </li>
+    </pawnGroupMakers>
+    <homeIconPath>World/FactionHomes/DefaultHome</homeIconPath>
+    <homeIconColor>(150,150,255)</homeIconColor>
+  </FactionDef>
+</FactionDefs>

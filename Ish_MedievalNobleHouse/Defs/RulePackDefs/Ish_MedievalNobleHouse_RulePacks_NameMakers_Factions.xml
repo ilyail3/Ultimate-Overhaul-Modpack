@@ -1,0 +1,30 @@
+<NameMakerDefs>
+  <RulePackDef>
+    <defName>Ish_MedievalNobleHouse_NamerFactionNobleHouse</defName>
+    <rulePack>
+      <rulesStrings>
+	<li>name->House [familyname]</li>
+	<li>name->Clan [familyname]</li>
+	<li>name->[familyname] Castle</li>
+	<li>name->[familyname] Tower</li>
+	<li>name->[familyname] Manor</li>
+	<li>name->[familyname] Keep</li>
+	<li>name->Chateaux de [familyname]</li>
+	<li>name->Castle [familyname]</li>
+	<li>name->Lord [familyname]'s [terrainfeature]</li>
+	<li>name->[familyname] Hall</li>
+	<li>name->[familyname] Court</li>
+      </rulesStrings>
+      <rulesRaw>
+	<li Class="Rule_File">
+	  <keyword>familyname</keyword>
+	  <path>NameBanks/Ish_MedievalNobleHouse_Nouns_FamilyNames</path>
+	</li>
+	<li Class="Rule_File">
+	  <keyword>terrainfeature</keyword>
+	  <path>NameBanks/Nouns_TerrainFeatures</path>
+	</li>
+      </rulesRaw>
+    </rulePack>
+  </RulePackDef>
+</NameMakerDefs>
