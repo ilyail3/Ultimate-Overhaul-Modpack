@@ -1,17 +1,20 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 
 <ModMetaData>
-  <name>Ultimate Overhaul Modpack V1.0193</name>
+  <name>Ultimate Overhaul Modpack V1.0194</name>
   <author>Ninefinger</author>
   <url>https://ludeon.com/forums/index.php?topic=11934.0</url>
   <targetVersion>Alpha 12d</targetVersion>
   <description>Collaboration of multiple mods created by some of the most amazing modders on the planet.</description>
   <!--
 Update (20/09/15)
-V1.0193
+V1.0194
 A12d Modpack
-+Norblas
-   -Updated textures with some minor tweaks (thanks to [url=https://ludeon.com/forums/index.php?action=profile;u=47425]FMJ Penguin[/url] for improving the textures!)
++Auto Equip
+   -Temporarily removed from modpack
+   
++Auto Equip Infusion
+   -Temporarily removed from modpack
    
    
 
