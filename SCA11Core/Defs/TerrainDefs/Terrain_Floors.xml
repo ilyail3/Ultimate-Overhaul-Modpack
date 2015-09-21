@@ -109,7 +109,7 @@ Beauty:  3</Description>
 			<Beauty>3</Beauty>
 		</statBases>
 		<CostList>
-			<Concrete>5</Concrete>
+			<Concrete>3</Concrete>
 		</CostList>
 		<designationCategory>StoneFloors</designationCategory>
 	</TerrainDef>
@@ -128,7 +128,7 @@ Beauty:  3</Description>
 			<Beauty>3</Beauty>
 		</statBases>
 		<CostList>
-			<Concrete>5</Concrete>
+			<Concrete>3</Concrete>
 		</CostList>
 		<designationCategory>StoneFloors</designationCategory>
 	</TerrainDef>
