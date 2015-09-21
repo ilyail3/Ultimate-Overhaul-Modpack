@@ -7,7 +7,7 @@
     <label>mix concrete</label>
     <description>turn stone chunks into concrete.</description>
     <jobString>Mix concrete.</jobString>
-    <workAmount>1600</workAmount>
+    <workAmount>900</workAmount>
     <efficiencyStat>ButcheryMechanoidEfficiency</efficiencyStat>
     <effectWorking>CutStone</effectWorking>
     <ingredients>
