@@ -40,10 +40,10 @@
       </li>
     </comps>
     <costList>
-      <SteelBar>800</SteelBar>
-	  <CopperWire>250</CopperWire>
+      <SteelBar>400</SteelBar>
+	  <CopperWire>150</CopperWire>
       <IntegratedCircuitsBoard>10</IntegratedCircuitsBoard>
-      <Uranium>250</Uranium>
+      <Uranium>100</Uranium>
     </costList>
     <tickerType>Normal</tickerType>
     <rotatable>true</rotatable>
