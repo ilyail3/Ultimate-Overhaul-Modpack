@@ -291,7 +291,7 @@
 	
 	<ResearchProjectDef>
 		<defName>Chemlab</defName>
-		<label>chemlab</label>
+		<label>chem lab</label>
 		<description>Minor Discovery:  This allows your colonists to build the Chemlab, which can be used to create medkits, and advanced prosthetic body parts.  This also allows colonists to construct hospital beds which increase the chance of successful medical work.</description>
 		<totalCost>1500</totalCost>
 		<prerequisites>
@@ -420,7 +420,7 @@
 		<description>Minor Discovery:  This unlocks the organ vat which can be used to turn human corpses into biomatter, and grow replacement organs.</description>
 		<totalCost>600</totalCost>
 		<prerequisites>
-			<li>CraftingI</li>
+			<li>HospitalBed</li>
 		</prerequisites>
 	</ResearchProjectDef>
 	

@@ -1,23 +1,23 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 
 <ModMetaData>
-  <name>Ultimate Overhaul Modpack V1.0200</name>
+  <name>Ultimate Overhaul Modpack V1.0201</name>
   <author>Ninefinger</author>
   <url>https://ludeon.com/forums/index.php?topic=11934.0</url>
   <targetVersion>Alpha 12d</targetVersion>
   <description>Collaboration of multiple mods created by some of the most amazing modders on the planet.</description>
   <!--
 Update (22/09/15)
-V1.0200
+V1.0201
 A12d Modpack
-+Roof Support
-   -Fixed Roof Support will now create roofs when placed
-   -Changed Roof Support is now impassable
-   -Removed Roof Support special display radius
-   -Changed Roof Support fill percent to 1 can no longer be used as an embrasure wall
++SC11Core
+   -Changed Organ Vat research is now unlocked with medicine research instead of crafting I
+   -Fixed Chem Lab research label
    
-+Zen Garden
-   -Changed border path pillar fill percent to 1 can no longer be used as an embrasure wall
++EPOE
+   -Changed Simple prosthetics research is now unlocked after completing Chem Lab and Crafting I research
+   -Changed Bionics research is now unlocked after completing Chem Lab and Crafting III research
+   -Changed Surrogate Organs research is now unlocked after completing Organ Vat research
    
    
    

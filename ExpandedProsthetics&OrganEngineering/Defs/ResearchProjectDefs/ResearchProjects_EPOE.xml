@@ -9,8 +9,8 @@
 		<description>Advanced anatomy studies and metal testing will allow you to build simple prostheses.</description>
 		<totalCost>1500</totalCost>
 		<prerequisites>
-                <li>CraftingIV</li>
-				<li>HospitalBed</li>
+                <li>Chemlab</li>
+				<li>CraftingI</li>
               </prerequisites>
 	</ResearchProjectDef>
 	
@@ -20,7 +20,8 @@
 		<description>Advanced anatomy studies and metal testing will allow you to build bionic prostheses.</description>
 		<totalCost>2000</totalCost>
 		<prerequisites>
-                <li>SimpleProsthetics</li>
+                <li>Chemlab</li>
+				<li>Machining</li>
               </prerequisites>
 	</ResearchProjectDef>
 
@@ -53,7 +54,7 @@
 		<description>Gaining higher medical knowledge, crafting simple surrogate organs to replace missing ones becomes possible.</description>
 		<totalCost>1000</totalCost>
 		<prerequisites>
-                <li>HospitalBed</li>
+                <li>Cryptosleep</li>
               </prerequisites>
 	</ResearchProjectDef>
 	
