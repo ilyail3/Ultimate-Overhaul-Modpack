@@ -21,7 +21,7 @@
         -Holds 1000 of an item.</description>
     <totalCost>800</totalCost>
     <prerequisites>
-      <li>ResearchNanoStorage</li>
+      <li>ConstructionII</li>
     </prerequisites>
   </ResearchProjectDef>
   

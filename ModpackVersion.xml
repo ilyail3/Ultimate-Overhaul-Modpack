@@ -1,54 +1,23 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 
 <ModMetaData>
-  <name>Ultimate Overhaul Modpack V1.0196</name>
+  <name>Ultimate Overhaul Modpack V1.0197</name>
   <author>Ninefinger</author>
   <url>https://ludeon.com/forums/index.php?topic=11934.0</url>
   <targetVersion>Alpha 12d</targetVersion>
   <description>Collaboration of multiple mods created by some of the most amazing modders on the planet.</description>
   <!--
 Update (22/09/15)
-V1.0196
+V1.0197
 A12d Modpack
-+SCA11Core
-   -Re-prioritized workgivers
-   -Removed unnecessary workgiver
-   -Changed Organ Vat is now a Doctor job (lower priority than major Doctor jobs like treating and operating.)
-   -Changed Herbalist Table is now a Doctor job (lower priority than major Doctor jobs like treating and operating.)
-   -Changed Chem Lab is now a Doctor job (lower priority than major Doctor jobs like treating and operating.)
++MD2 Storage
+   -Changed MD2 Storage research is now unlocked with Construction II research
+
++Miscellaneous
+   -Changed Nano Storage research isnow unlocked with Construction III research
    
-+Industrialization
-   -Re-prioritized workgiver
-   
-+EPOE
-   -Re-prioritized workgivers
-   
-+Finer Things
-   -Re-prioritized workgiver
-   
-+Medical Drinks
-   -Removed unnecessary workgiver
-   
-+Stroyent
-   -Re-prioritized workgiver
-   
-+Weed
-   -Re-prioritized workgiver
-   
-+Project Armory
-   -Fixed wrong work amounts for all weapons
-   
-+Weapon Crafting
-   -Slight adjustments to weapon work amounts
-   
-+Weapon Crafting + Rimfire Patch
-   -Slight adjustments to weapon work amounts
-   
-+Liandri Corp
-   -Slight adjustments to weapon work amounts
-   
-+Marines
-   -Slight adjustments to weapon work amounts
++RT Storage
+   -Changed Quantum storage is now unlocked with Construction IV research
    
 
   -->

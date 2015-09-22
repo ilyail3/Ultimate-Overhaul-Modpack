@@ -7,7 +7,7 @@
     <description>Build quantum stockpiles which, at a small power cost, will make your storage space four times as efficient.</description>
     <totalCost>1000</totalCost>
 	<prerequisites>
-      <li>ResearchNanoStorage</li>
+      <li>ConstructionIV</li>
     </prerequisites>
   </ResearchProjectDef>
 

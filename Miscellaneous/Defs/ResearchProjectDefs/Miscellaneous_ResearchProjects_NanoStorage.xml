@@ -8,7 +8,7 @@
 		<descriptionDiscovered>Now you can build a specialized storage. Each nano storage can hold up to ten items.</descriptionDiscovered>
 		<totalCost>600</totalCost>
 		<prerequisites>
-			<li>ConstructionIV</li>
+			<li>ConstructionIII</li>
 		</prerequisites>
 	</ResearchProjectDef>
 	
