@@ -1,20 +1,26 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 
 <ModMetaData>
-  <name>Ultimate Overhaul Modpack V1.0194</name>
+  <name>Ultimate Overhaul Modpack V1.0195</name>
   <author>Ninefinger</author>
   <url>https://ludeon.com/forums/index.php?topic=11934.0</url>
   <targetVersion>Alpha 12d</targetVersion>
   <description>Collaboration of multiple mods created by some of the most amazing modders on the planet.</description>
   <!--
-Update (20/09/15)
-V1.0194
+Update (22/09/15)
+V1.0195
 A12d Modpack
-+Auto Equip
-   -Temporarily removed from modpack
++SCA11Core
+   -Fixed removed Gravel from steam gen hopper
    
-+Auto Equip Infusion
-   -Temporarily removed from modpack
++Biomatter Power
+   -Fixed removed gravel from biomatter hopper
+   
++MD2 Manufacturing
+   -Significantly reduced material costs for building manufacturing plant
+   
++Industrialization
+   -Reduced work amount for making concrete
    
    
 
