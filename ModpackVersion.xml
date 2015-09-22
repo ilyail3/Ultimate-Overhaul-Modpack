@@ -1,22 +1,17 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 
 <ModMetaData>
-  <name>Ultimate Overhaul Modpack V1.0202</name>
+  <name>Ultimate Overhaul Modpack V1.0203</name>
   <author>Ninefinger</author>
   <url>https://ludeon.com/forums/index.php?topic=11934.0</url>
   <targetVersion>Alpha 12d</targetVersion>
   <description>Collaboration of multiple mods created by some of the most amazing modders on the planet.</description>
   <!--
 Update (22/09/15)
-V1.0202
+V1.0203
 A12d Modpack
-+Miscellaneous
-   -Changed Map Generator to now be able to drop the Seeds Please drop pod
-   
-+ModConfig
-   -Changed moved seeds please to now load before Miscellaneous
-   -Updated all ModConfig files
-   
++Medical info
+   -Updated to newest release
    
    
 
