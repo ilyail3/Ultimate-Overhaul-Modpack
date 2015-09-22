@@ -121,8 +121,8 @@
 	<WorkGiverDef>
 		<defName>DoBillsTableChemlab</defName>
 		<giverClass>WorkGiver_DoBill</giverClass>
-		<workType>Crafting</workType>
-		<priorityInType>94</priorityInType>
+		<workType>Doctor</workType>
+		<priorityInType>4</priorityInType>
 		<singleBillGiverDef>TableChemlab</singleBillGiverDef>
 		<verb>craft</verb>
 		<gerund>crafting</gerund>
@@ -135,7 +135,7 @@
 		<defName>DoBillsOmniGelMK1</defName>
 		<giverClass>WorkGiver_DoBill</giverClass>
 		<workType>Crafting</workType>
-		<priorityInType>93</priorityInType>
+		<priorityInType>92</priorityInType>
 		<singleBillGiverDef>Table_MK1_Replicator</singleBillGiverDef>
 		<verb>replicate</verb>
 		<gerund>replicating</gerund>
@@ -143,7 +143,7 @@
 			<li>Manipulation</li>
 		</requiredCapacities>
     </WorkGiverDef>
-	
+	<!--
 	<WorkGiverDef>
 		<defName>DoBillsTableBionics</defName>
 		<giverClass>WorkGiver_DoBill</giverClass>
@@ -156,7 +156,7 @@
 			<li>Manipulation</li>
 		</requiredCapacities>
 	</WorkGiverDef>
-
+-->
 	<WorkGiverDef>
 		<defName>DoBillsTableOrganvat</defName>
 		<giverClass>WorkGiver_DoBill</giverClass>

@@ -9,6 +9,7 @@
     <defName>DoBillsMixconcrete</defName>
     <giverClass>WorkGiver_DoBill</giverClass>
     <workType>Crafting</workType>
+	<priorityInType>93</priorityInType>
     <singleBillGiverDef>ConcreteMixer</singleBillGiverDef>
     <verb>mix</verb>
     <gerund>mixing</gerund>
