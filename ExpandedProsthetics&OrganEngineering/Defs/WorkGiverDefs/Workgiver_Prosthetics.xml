@@ -6,7 +6,7 @@
     <defName>DoBillsTableSurrogates</defName>
     <giverClass>WorkGiver_DoBill</giverClass>
     <workType>Crafting</workType>
-    <priorityInType>110</priorityInType>
+    <priorityInType>111</priorityInType>
     <singleBillGiverDef>TableSurrogates</singleBillGiverDef>
     <verb>create</verb>
     <gerund>creating</gerund>
@@ -19,7 +19,7 @@
     <defName>DoBillsTableSynthetics</defName>
     <giverClass>WorkGiver_DoBill</giverClass>
     <workType>Crafting</workType>
-    <priorityInType>111</priorityInType>
+    <priorityInType>112</priorityInType>
     <singleBillGiverDef>TableSynthetics</singleBillGiverDef>
     <verb>create</verb>
     <gerund>creating</gerund>
@@ -32,7 +32,7 @@
     <defName>DoBillsUpgradingStation</defName>
     <giverClass>WorkGiver_DoBill</giverClass>
     <workType>Crafting</workType>
-    <priorityInType>112</priorityInType>
+    <priorityInType>113</priorityInType>
     <singleBillGiverDef>UpgradingStation</singleBillGiverDef>
     <verb>upgrade</verb>
     <gerund>upgrading</gerund>
@@ -46,7 +46,7 @@
     <defName>DoBillsSimpleProstheticWorkbench</defName>
     <giverClass>WorkGiver_DoBill</giverClass>
     <workType>Crafting</workType>
-    <priorityInType>113</priorityInType>
+    <priorityInType>114</priorityInType>
     <singleBillGiverDef>TableSimpleProsthetic</singleBillGiverDef>
     <verb>assemble</verb>
     <gerund>assembling</gerund>
@@ -59,7 +59,7 @@
     <defName>DoBillsBasicProstheticWorkbench</defName>
     <giverClass>WorkGiver_DoBill</giverClass>
     <workType>Crafting</workType>
-    <priorityInType>114</priorityInType>
+    <priorityInType>115</priorityInType>
     <singleBillGiverDef>TableBasicProsthetic</singleBillGiverDef>
     <verb>assemble</verb>
     <gerund>assembling</gerund>
@@ -72,7 +72,7 @@
     <defName>DoBillsBionicWorkbench</defName>
     <giverClass>WorkGiver_DoBill</giverClass>
     <workType>Crafting</workType>
-    <priorityInType>115</priorityInType>
+    <priorityInType>116</priorityInType>
     <singleBillGiverDef>TableBionics</singleBillGiverDef>
     <verb>assemble</verb>
     <gerund>assembling</gerund>
