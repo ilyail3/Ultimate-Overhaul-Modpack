@@ -19,7 +19,7 @@
   <defName>DoBillsTobacco</defName>
   <giverClass>WorkGiver_DoBill</giverClass>
   <workType>Crafting</workType>
-  <priorityInType>100</priorityInType>
+  <priorityInType>64</priorityInType>
   <singleBillGiverDef>TableTobacco</singleBillGiverDef>
   <verb>prepare</verb>
   <gerund>preparing</gerund>
@@ -32,7 +32,7 @@
   <defName>DoBillsCoffee</defName>
   <giverClass>WorkGiver_DoBill</giverClass>
   <workType>Cooking</workType>
-  <priorityInType>100</priorityInType>
+  <priorityInType>63</priorityInType>
   <singleBillGiverDef>TableCoffee</singleBillGiverDef>
   <verb>prepare</verb>
   <gerund>preparing</gerund>
