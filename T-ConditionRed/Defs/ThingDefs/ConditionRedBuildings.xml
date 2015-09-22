@@ -55,7 +55,7 @@
       <li>PlaceWorker_NotUnderRoof</li>
     </placeWorkers>
     <tickerType>Normal</tickerType>
-	<researchPrerequisite>ColoredLights</researchPrerequisite>
+	<researchPrerequisite>AlarmLight</researchPrerequisite>
   </ThingDef>
 	
 	
@@ -107,7 +107,7 @@
     </comps>
     <designationCategory>Lighting</designationCategory>
     <rotatable>false</rotatable>
-    <researchPrerequisite>ColoredLights</researchPrerequisite>
+    <researchPrerequisite>AlarmLight</researchPrerequisite>
     <tickerType>Normal</tickerType>
   </ThingDef>
   

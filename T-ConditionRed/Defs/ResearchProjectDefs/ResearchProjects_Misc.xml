@@ -9,6 +9,7 @@
 		<totalCost>600</totalCost>
 		<prerequisites>
 			<li>Outdoor_Lighting</li>
+			<li>ColoredLights</li>
 		</prerequisites>
 	</ResearchProjectDef>
 	

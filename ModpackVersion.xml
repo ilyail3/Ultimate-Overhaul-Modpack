@@ -1,18 +1,22 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 
 <ModMetaData>
-  <name>Ultimate Overhaul Modpack V1.0203</name>
+  <name>Ultimate Overhaul Modpack V1.0204</name>
   <author>Ninefinger</author>
   <url>https://ludeon.com/forums/index.php?topic=11934.0</url>
   <targetVersion>Alpha 12d</targetVersion>
   <description>Collaboration of multiple mods created by some of the most amazing modders on the planet.</description>
   <!--
 Update (22/09/15)
-V1.0203
+V1.0204
 A12d Modpack
-+Medical info
-   -Updated to newest release
-   
++Bunker Tech
+  -Removed emergency lighting research
+  
++T Condition Red
+   -Added emergency lighting research
+   -Changed alert lamp is now unlocked with emergency lighting research
+   -Changed threat sensor is now unlocked with emergency lighting research
    
 
   -->
