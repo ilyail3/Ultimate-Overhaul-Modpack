@@ -63,7 +63,7 @@
 		<selectable>true</selectable>
 		<neverMultiSelect>true</neverMultiSelect>
 		<terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
-		<designationCategory>Floors</designationCategory>
+		<designationCategory>StoneFloors</designationCategory>
 		<blockLight>false</blockLight>
 	</ThingDef>
 	
@@ -114,7 +114,7 @@
 		<selectable>true</selectable>
 		<neverMultiSelect>true</neverMultiSelect>
 		<terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
-		<designationCategory>Floors</designationCategory>
+		<designationCategory>StoneFloors</designationCategory>
 		<blockLight>false</blockLight>
 	</ThingDef>
 	
@@ -156,7 +156,7 @@
 		<rotatable>false</rotatable>
 		<selectable>true</selectable>
 		<terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
-		<designationCategory>Floors</designationCategory>
+		<designationCategory>StoneFloors</designationCategory>
 		<blockLight>false</blockLight>
 	</ThingDef>
 		
@@ -197,26 +197,12 @@
 		<selectable>true</selectable>
 		<terrainAffordanceNeeded>Heavy</terrainAffordanceNeeded>
 		<holdsRoof>true</holdsRoof>
-		<designationCategory>Floors</designationCategory>
+		<designationCategory>Structure</designationCategory>
 		<blockLight>true</blockLight>
 	</ThingDef>
 		
 		
 		
-		
-	
-	
-	
-	
-
-	
-	
-	
-
-	
-	
-	
-	
 	
 	
 </ThingDefs>
