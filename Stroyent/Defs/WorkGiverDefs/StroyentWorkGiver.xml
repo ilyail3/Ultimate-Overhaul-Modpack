@@ -5,7 +5,7 @@
 		<defName>DoBillsStroyent</defName>
 		<giverClass>WorkGiver_DoBill</giverClass>
 		<workType>Cooking</workType>
-		<priorityInType>100</priorityInType>
+		<priorityInType>112</priorityInType>
 		<singleBillGiverDef>stroyenttable</singleBillGiverDef>
 		<verb>cook</verb>
 		<gerund>cooking</gerund>
