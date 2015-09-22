@@ -85,7 +85,7 @@ the weapons can download more of them.
 		<soundInteract>InteractSMG</soundInteract>
 		<statBases>
 			<MarketValue>499</MarketValue>
-			<WorkToMake>900</WorkToMake>
+			<WorkToMake>2700</WorkToMake>
 			<AccuracyTouch>0.98</AccuracyTouch>
 			<AccuracyShort>0.99</AccuracyShort>
 			<AccuracyMedium>0.79</AccuracyMedium>

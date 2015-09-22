@@ -85,7 +85,7 @@ the weapons can download more of them.
 		<soundInteract>InteractRifle</soundInteract>
 		<statBases>
 			<MarketValue>600</MarketValue>
-			<WorkToMake>1000</WorkToMake>
+			<WorkToMake>2600</WorkToMake>
 			<AccuracyTouch>0.62</AccuracyTouch>
 			<AccuracyShort>0.42</AccuracyShort>
 			<AccuracyMedium>0.25</AccuracyMedium>

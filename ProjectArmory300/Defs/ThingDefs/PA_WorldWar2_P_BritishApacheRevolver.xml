@@ -91,7 +91,7 @@ the weapons can download more of them.
 			<BluntDamageMultiplier>50</BluntDamageMultiplier>
 			<!-- ////////////-->
 			<MarketValue>99</MarketValue>
-			<WorkToMake>1000</WorkToMake>
+			<WorkToMake>2500</WorkToMake>
 			<AccuracyTouch>0.98</AccuracyTouch>
 			<AccuracyShort>0.36</AccuracyShort>
 			<AccuracyMedium>0.15</AccuracyMedium>

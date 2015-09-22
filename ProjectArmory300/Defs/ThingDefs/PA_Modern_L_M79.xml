@@ -83,7 +83,7 @@ the weapons can download more of them.
 		</graphicData>
 		<statBases>
 			<MarketValue>750</MarketValue>
-			<WorkToMake>2000</WorkToMake>
+			<WorkToMake>3000</WorkToMake>
 			<AccuracyTouch>0.60</AccuracyTouch>
 			<AccuracyShort>0.65</AccuracyShort>
 			<AccuracyMedium>0.43</AccuracyMedium>

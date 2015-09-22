@@ -85,7 +85,7 @@ the weapons can download more of them.
 		<soundInteract>InteractPistol</soundInteract>
 		<statBases>
 			<MarketValue>107</MarketValue>
-			<WorkToMake>1000</WorkToMake>
+			<WorkToMake>2500</WorkToMake>
 			<AccuracyTouch>0.92</AccuracyTouch>
 			<AccuracyShort>0.75</AccuracyShort>
 			<AccuracyMedium>0.48</AccuracyMedium>

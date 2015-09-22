@@ -189,7 +189,7 @@
 		<label>Build Tec-9 Machine Pistol</label>
 		<description>Build a lightweight semi-automatic pistol with a quick draw, low damage and very high firerate. Operates at a short range.</description>
 		<jobString>Building Tec-9 Machine Pistol.</jobString>
-		<workAmount>2500</workAmount>
+		<workAmount>2700</workAmount>
 		<workSpeedStat>SmeltingSpeed</workSpeedStat>
 		<effectWorking>Smelt</effectWorking>
 		<soundWorking>Recipe_Smelt</soundWorking>
@@ -225,7 +225,7 @@
 		<label>Build TMP Machine Pistol</label>
 		<description>Build a Silenced PDW.</description>
 		<jobString>Building TMP Machine Pistol.</jobString>
-		<workAmount>2500</workAmount>
+		<workAmount>2700</workAmount>
 		<workSpeedStat>SmeltingSpeed</workSpeedStat>
 		<effectWorking>Smelt</effectWorking>
 		<soundWorking>Recipe_Smelt</soundWorking>
@@ -261,7 +261,7 @@
 		<label>Build 93-R Machine Pistol</label>
 		<description>Build a nice-looking machinepistol with a very fast burstfire mode, low stopping power and hits up to pistol range.</description>
 		<jobString>Building 93-R Machine Pistol.</jobString>
-		<workAmount>2500</workAmount>
+		<workAmount>2700</workAmount>
 		<workSpeedStat>SmeltingSpeed</workSpeedStat>
 		<effectWorking>Smelt</effectWorking>
 		<soundWorking>Recipe_Smelt</soundWorking>
@@ -297,7 +297,7 @@
 		<label>Build Scout Hunting Rifle</label>
 		<description>Build a relatively lightweight, nylon hunting rifle with a great long-range scope. Low firerate, high damage, high accuracy, high range.</description>
 		<jobString>Building Scout Hunting Rifle.</jobString>
-		<workAmount>2500</workAmount>
+		<workAmount>2900</workAmount>
 		<workSpeedStat>SmeltingSpeed</workSpeedStat>
 		<effectWorking>Smelt</effectWorking>
 		<soundWorking>Recipe_Smelt</soundWorking>
@@ -342,7 +342,7 @@
 		<label>Build Deadeye Rifle</label>
 		<description>Build a heavy and accurate, military-grade bolt-action rifle chambered for .50 calibre bullets. Its weight and muzzle brake significantly lower recoil. Average firerate, very high damage, accuracy and range.</description>
 		<jobString>Building Deadeye Rifle.</jobString>
-		<workAmount>2500</workAmount>
+		<workAmount>2900</workAmount>
 		<workSpeedStat>SmeltingSpeed</workSpeedStat>
 		<effectWorking>Smelt</effectWorking>
 		<soundWorking>Recipe_Smelt</soundWorking>
@@ -390,7 +390,7 @@
 		<label>Build Mosin Bolt Rifle</label>
 		<description>Build an ancient bolt-action rifle. Probably pulled from a basement somewhere. Good range, Good power, low rate of fire.</description>
 		<jobString>Building Mosin Bolt Rifle.</jobString>
-		<workAmount>2500</workAmount>
+		<workAmount>2900</workAmount>
 		<workSpeedStat>SmeltingSpeed</workSpeedStat>
 		<effectWorking>Smelt</effectWorking>
 		<soundWorking>Recipe_Smelt</soundWorking>
@@ -435,7 +435,7 @@
 		<label>Build Skorpion SMG</label>
 		<description>Build a machinepistol or light SMG with a notorious folding stock design. Fires weak ammunition in quick five shot-bursts at pistol range.</description>
 		<jobString>Building Skorpion SMG.</jobString>
-		<workAmount>2500</workAmount>
+		<workAmount>2700</workAmount>
 		<workSpeedStat>SmeltingSpeed</workSpeedStat>
 		<effectWorking>Smelt</effectWorking>
 		<soundWorking>Recipe_Smelt</soundWorking>
@@ -471,7 +471,7 @@
 		<label>Build Vector SMG</label>
 		<description>Build a submachinegun that fires in medium length bursts. Its substantially reduced knockback causes it to be accurate up to medium range, but its bullet drop limits maximal range by a lot.</description>
 		<jobString>Building Vector SMG.</jobString>
-		<workAmount>2500</workAmount>
+		<workAmount>2700</workAmount>
 		<workSpeedStat>SmeltingSpeed</workSpeedStat>
 		<effectWorking>Smelt</effectWorking>
 		<soundWorking>Recipe_Smelt</soundWorking>
@@ -507,7 +507,7 @@
 		<label>Build M-3 SMG</label>
 		<description>Build a very simplistic submachinegun design for todays standards. Low damage, high firerate, short range.</description>
 		<jobString>Building M-3 SMG.</jobString>
-		<workAmount>2500</workAmount>
+		<workAmount>2700</workAmount>
 		<workSpeedStat>SmeltingSpeed</workSpeedStat>
 		<effectWorking>Smelt</effectWorking>
 		<soundWorking>Recipe_Smelt</soundWorking>
@@ -543,7 +543,7 @@
 		<label>Build Striker Shotgun</label>
 		<description>Build a cheap-looking semi-automatic shotgun. Has a higher fire rate and high damage output, but low range.</description>
 		<jobString>Building Striker Shotgun.</jobString>
-		<workAmount>2500</workAmount>
+		<workAmount>2600</workAmount>
 		<workSpeedStat>SmeltingSpeed</workSpeedStat>
 		<effectWorking>Smelt</effectWorking>
 		<soundWorking>Recipe_Smelt</soundWorking>
@@ -588,7 +588,7 @@
 		<label>Build AA-12 AutoShotgun</label>
 		<description>Build an automatic shotgun with almost no recoil. Burstfires, moderately accurate just under rifle range, and has high damage output.</description>
 		<jobString>Building AA-12 AutoShotgun.</jobString>
-		<workAmount>2500</workAmount>
+		<workAmount>2600</workAmount>
 		<workSpeedStat>SmeltingSpeed</workSpeedStat>
 		<effectWorking>Smelt</effectWorking>
 		<soundWorking>Recipe_Smelt</soundWorking>
@@ -633,7 +633,7 @@
 		<label>Build WA-2000 Specialist Rifle</label>
 		<description>Build a limited edition olden days sniper rifle. Great range, exceptional accuracy, very high damage and very low fire rate.</description>
 		<jobString>Building WA-2000 Specialist Rifle.</jobString>
-		<workAmount>2500</workAmount>
+		<workAmount>3000</workAmount>
 		<workSpeedStat>SmeltingSpeed</workSpeedStat>
 		<effectWorking>Smelt</effectWorking>
 		<soundWorking>Recipe_Smelt</soundWorking>
@@ -678,7 +678,7 @@
 		<label>Build M-134 Machine Gun</label>
 		<description>Build a multi-barrel machine gun with an extremely high rate of fire. Slightly superior accuracy.</description>
 		<jobString>Building M-134 Machine Gun.</jobString>
-		<workAmount>2500</workAmount>
+		<workAmount>2900</workAmount>
 		<workSpeedStat>SmeltingSpeed</workSpeedStat>
 		<effectWorking>Smelt</effectWorking>
 		<soundWorking>Recipe_Smelt</soundWorking>
@@ -715,7 +715,7 @@
 		<label>Build XM-8 Military Rifle</label>
 		<description>Build an ancient pattern military weapon. Three-round burst. Good range, low power, high rate of fire.</description>
 		<jobString>Building XM-8 Military Rifle.</jobString>
-		<workAmount>2500</workAmount>
+		<workAmount>2800</workAmount>
 		<workSpeedStat>SmeltingSpeed</workSpeedStat>
 		<effectWorking>Smelt</effectWorking>
 		<soundWorking>Recipe_Smelt</soundWorking>
@@ -751,7 +751,7 @@
 		<label>Build Storm Carbine</label>
 		<description>Build A highly reliable, compact pistol calibre carbine designed to fire pistol rounds up to rifle range. Below average damage, average fire rate, above average range and fires in two round burst.</description>
 		<jobString>Building Storm Carbine.</jobString>
-		<workAmount>2500</workAmount>
+		<workAmount>2800</workAmount>
 		<workSpeedStat>SmeltingSpeed</workSpeedStat>
 		<effectWorking>Smelt</effectWorking>
 		<soundWorking>Recipe_Smelt</soundWorking>
@@ -790,7 +790,7 @@
 		<label>Build Police Carbine</label>
 		<description>Build A pistol calibre carbine sidearm carried on the back. Its long barrel allows it to fire pistol bullets at rifle range. Average damage, above average fire rate and range.</description>
 		<jobString>Building Police Carbine.</jobString>
-		<workAmount>2500</workAmount>
+		<workAmount>2800</workAmount>
 		<workSpeedStat>SmeltingSpeed</workSpeedStat>
 		<effectWorking>Smelt</effectWorking>
 		<soundWorking>Recipe_Smelt</soundWorking>
@@ -868,7 +868,7 @@
 		<label>Build Galil Burst Rifle</label>
 		<description>Build an Ancient pattern military weapon. Three-round burst. Good range, low power, high rate of fire.</description>
 		<jobString>Building Galil Burst Rifle.</jobString>
-		<workAmount>2500</workAmount>
+		<workAmount>2800</workAmount>
 		<workSpeedStat>SmeltingSpeed</workSpeedStat>
 		<effectWorking>Smelt</effectWorking>
 		<soundWorking>Recipe_Smelt</soundWorking>
@@ -904,7 +904,7 @@
 		<label>Build Milkor Grenade Launcher</label>
 		<description>Build a launcher type weapon that fires 40mm concussive grenades at a higher rate than a human could.</description>
 		<jobString>Building Milkor Grenade Launcher.</jobString>
-		<workAmount>2500</workAmount>
+		<workAmount>3000</workAmount>
 		<workSpeedStat>SmeltingSpeed</workSpeedStat>
 		<effectWorking>Smelt</effectWorking>
 		<soundWorking>Recipe_Smelt</soundWorking>
@@ -940,7 +940,7 @@
 		<label>Build Heavy AMR</label>
 		<description>Build an autoloading anti-materiel rifle with a compact bullpup design allowing it to be operated and carried by a single person. Used to destroy walls. Low fire rate, high range, extremely high damage and accuracy.</description>
 		<jobString>Building Heavy AMR.</jobString>
-		<workAmount>2500</workAmount>
+		<workAmount>3000</workAmount>
 		<workSpeedStat>SmeltingSpeed</workSpeedStat>
 		<effectWorking>Smelt</effectWorking>
 		<soundWorking>Recipe_Smelt</soundWorking>
@@ -979,7 +979,7 @@
 		<label>Build SASR</label>
 		<description>Build a special application scoped rifle with a long muzzle break and wooden stock. Packs and ton both in battle and when carried, greatly slowing any wielders pace. Used to destroy walls. Low fire rate, high range, very high damage and accuracy.</description>
 		<jobString>Building SASR.</jobString>
-		<workAmount>2500</workAmount>
+		<workAmount>3000</workAmount>
 		<workSpeedStat>SmeltingSpeed</workSpeedStat>
 		<effectWorking>Smelt</effectWorking>
 		<soundWorking>Recipe_Smelt</soundWorking>

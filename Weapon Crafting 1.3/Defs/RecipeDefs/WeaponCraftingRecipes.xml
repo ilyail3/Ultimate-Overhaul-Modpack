@@ -90,7 +90,7 @@
 		<label>Build Survival Rifle</label>
 		<description>Build Survival Rifle for personal defence.</description>
 		<jobString>Building Survival Rifle.</jobString>
-		<workAmount>2500</workAmount>
+		<workAmount>2900</workAmount>
 		<workSpeedStat>SmeltingSpeed</workSpeedStat>
 		<effectWorking>Smelt</effectWorking>
 		<soundWorking>Recipe_Smelt</soundWorking>
@@ -135,7 +135,7 @@
 		<label>Build PDW</label>
 		<description>Build PDW for personal defence.</description>
 		<jobString>Building PDW.</jobString>
-		<workAmount>2500</workAmount>
+		<workAmount>2700</workAmount>
 		<workSpeedStat>SmeltingSpeed</workSpeedStat>
 		<effectWorking>Smelt</effectWorking>
 		<soundWorking>Recipe_Smelt</soundWorking>
@@ -171,7 +171,7 @@
 		<label>Build Heavy SMG</label>
 		<description>Build Heavy SMG for personal defence.</description>
 		<jobString>Building Heavy SMG.</jobString>
-		<workAmount>2500</workAmount>
+		<workAmount>2800</workAmount>
 		<workSpeedStat>SmeltingSpeed</workSpeedStat>
 		<effectWorking>Smelt</effectWorking>
 		<soundWorking>Recipe_Smelt</soundWorking>
@@ -207,7 +207,7 @@
 		<label>Build Pump Shotgun</label>
 		<description>Build Pump Shotgun for personal defence.</description>
 		<jobString>Building Pump Shotgun.</jobString>
-		<workAmount>2500</workAmount>
+		<workAmount>2600</workAmount>
 		<workSpeedStat>SmeltingSpeed</workSpeedStat>
 		<effectWorking>Smelt</effectWorking>
 		<soundWorking>Recipe_Smelt</soundWorking>
@@ -252,7 +252,7 @@
 		<label>Build Sniper Rifle</label>
 		<description>Build Sniper Rifle for personal defence.</description>
 		<jobString>Building Sniper Rifle.</jobString>
-		<workAmount>2500</workAmount>
+		<workAmount>3000</workAmount>
 		<workSpeedStat>SmeltingSpeed</workSpeedStat>
 		<effectWorking>Smelt</effectWorking>
 		<soundWorking>Recipe_Smelt</soundWorking>
@@ -297,7 +297,7 @@
 		<label>Build Light Machine Gun</label>
 		<description>Build LMG for personal defence.</description>
 		<jobString>Building LMG.</jobString>
-		<workAmount>2500</workAmount>
+		<workAmount>2900</workAmount>
 		<workSpeedStat>SmeltingSpeed</workSpeedStat>
 		<effectWorking>Smelt</effectWorking>
 		<soundWorking>Recipe_Smelt</soundWorking>
@@ -333,7 +333,7 @@
 		<label>Build Minigun</label>
 		<description>Build Minigun for personal defence.</description>
 		<jobString>Building Minigun Rifle.</jobString>
-		<workAmount>2500</workAmount>
+		<workAmount>3000</workAmount>
 		<workSpeedStat>SmeltingSpeed</workSpeedStat>
 		<effectWorking>Smelt</effectWorking>
 		<soundWorking>Recipe_Smelt</soundWorking>
@@ -378,7 +378,7 @@
 		<label>Build Charge Rifle</label>
 		<description>Build Charge Rifle for personal defence.</description>
 		<jobString>Building Charge Rifle.</jobString>
-		<workAmount>2500</workAmount>
+		<workAmount>2900</workAmount>
 		<workSpeedStat>SmeltingSpeed</workSpeedStat>
 		<effectWorking>Smelt</effectWorking>
 		<soundWorking>Recipe_Smelt</soundWorking>
@@ -432,7 +432,7 @@
 		<label>Build Assault Rifle</label>
 		<description>Build Assault Rifle for personal defence.</description>
 		<jobString>Building Assault Rifle.</jobString>
-		<workAmount>2500</workAmount>
+		<workAmount>2800</workAmount>
 		<workSpeedStat>SmeltingSpeed</workSpeedStat>
 		<effectWorking>Smelt</effectWorking>
 		<soundWorking>Recipe_Smelt</soundWorking>
@@ -468,7 +468,7 @@
 		<label>Build Incendiary Launcher</label>
 		<description>Build Incendiary Launcher for personal defence.</description>
 		<jobString>Building Incendiary Launcher.</jobString>
-		<workAmount>2500</workAmount>
+		<workAmount>3000</workAmount>
 		<workSpeedStat>SmeltingSpeed</workSpeedStat>
 		<effectWorking>Smelt</effectWorking>
 		<soundWorking>Recipe_Smelt</soundWorking>
