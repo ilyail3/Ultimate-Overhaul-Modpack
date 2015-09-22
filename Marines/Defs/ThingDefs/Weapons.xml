@@ -123,7 +123,7 @@
 		</weaponTags>
 		<statBases>
 		  <MarketValue>900</MarketValue>
-		  <WorkToMake>2500</WorkToMake>
+		  <WorkToMake>2800</WorkToMake>
 		  <AccuracyTouch>0.85</AccuracyTouch>
 		  <AccuracyShort>0.85</AccuracyShort>
 		  <AccuracyMedium>0.75</AccuracyMedium>
@@ -182,7 +182,7 @@
 		</weaponTags>
 		<statBases>
 		  <MarketValue>900</MarketValue>
-		  <WorkToMake>2500</WorkToMake>
+		  <WorkToMake>2900</WorkToMake>
 		  <AccuracyTouch>0.50</AccuracyTouch>
 		  <AccuracyShort>0.40</AccuracyShort>
 		  <AccuracyMedium>0.35</AccuracyMedium>
@@ -298,7 +298,7 @@
     </weaponTags>
     <statBases>
       <MarketValue>800</MarketValue>
-	  <WorkToMake>2500</WorkToMake>
+	  <WorkToMake>3000</WorkToMake>
       <AccuracyTouch>0.88</AccuracyTouch>
       <AccuracyShort>0.96</AccuracyShort>
       <AccuracyMedium>0.88</AccuracyMedium>

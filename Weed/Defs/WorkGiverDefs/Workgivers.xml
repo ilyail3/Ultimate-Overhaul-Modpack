@@ -7,7 +7,7 @@
     <defName>DoBillsSell</defName>
     <giverClass>WorkGiver_DoBill</giverClass>
     <workType>Cooking</workType>
-    <priorityInType>100</priorityInType>
+    <priorityInType>120</priorityInType>
     <singleBillGiverDef>DeepWeb</singleBillGiverDef>
     <verb>Use</verb>
     <gerund>Use</gerund>

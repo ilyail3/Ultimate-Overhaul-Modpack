@@ -94,7 +94,7 @@
 		<!-- <tradersCarry>True</tradersCarry> -->
 		<statBases>
 			<MarketValue>300</MarketValue>
-			<WorkToMake>2500</WorkToMake>
+			<WorkToMake>2800</WorkToMake>
 			<RangedWeapon_Cooldown>0.40</RangedWeapon_Cooldown>
 			<AccuracyTouch>0.93</AccuracyTouch>
 			<AccuracyShort>0.82</AccuracyShort>

@@ -97,7 +97,7 @@
 		<!-- <tradersCarry>True</tradersCarry> -->
 		<statBases>
 			<MarketValue>700</MarketValue>
-			<WorkToMake>2500</WorkToMake>
+			<WorkToMake>3000</WorkToMake>
 			<AccuracyTouch>0.86</AccuracyTouch>
 			<AccuracyShort>0.74</AccuracyShort>
 			<AccuracyMedium>0.59</AccuracyMedium>
