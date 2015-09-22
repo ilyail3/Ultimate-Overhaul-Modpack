@@ -1,19 +1,39 @@
  _____________________________________________________________________________
  
-   Version 3.0.2 Pre-Release (2015-08-29) 
+   Version 3.1.1 (2015-09-20) 
  _____________________________________________________________________________
 
-  - Added partial support for Alpha 12.  Includes:
-    - Colonist Bar
-    - Miscellaneous Options: Empty Stockpiles, Right-Click Material Selection
-      and New/Load Game Auto-Pause.
-  - Colonist Bar tracks colonists in cryptosleep.
-  - First-pass rewrite of much of the framework code:
-    - Better organization
-    - Separation of colonist tracking functionality from the colonist bar UI.
-    - More modular way of handling preferences.
-    - Attempt at a modular UI component system--still a little shaky, but
-      better than before.
+  - Added support for Alpha 12.
+  - Added the Squads main menu tab.  Use it to organize your colonists into
+    squads.  Squads are displayed in the colonist bar.
+     - Assign keyboard shortcuts to each squad in the Keyboard Configuration.
+       Single-press to display the squad in the colonist bar.  Double-press
+       to select all of the colonists in the squad.
+     - Select a squad in the Work, Outfits and Restrictions windows to filter
+       the list to only include those colonists in the squad.
+  - Added an extra row to the top of the Work, Outfits and Restrictions
+    windows that allows you make an assignment to all of the colonists in the
+    list.
+  - Added an alternate time display so that the current game time is
+    displayed with hours and minutes instead of the vanilla "8h" display.
+    Optionally display the time with AM/PM.
+  - Rewrote much of the colonist tracking system that notifies the colonist
+    bar when a colonist's status changes.
+     - The colonist bar now shows when colonists are in cryptosleep.
+  - Added the ability to hide the main tab buttons along the bottom of the
+    screen.
+  - Added finer grain control over which alternate tabs you want to use.
+  - Reworked all of the alternate tabs.  Added an alternate for the Training
+    tab.
+  - Added an option to display a close button as an "X" in the upper-right
+    corner of all of the main tab windows.
+  - Removed the "Colonist" button that was in the lower-left corner of the
+    interface in previous versions.
+  - Removed the preference to auto-enable/disable alternate tabs based on
+    your screen size.  The default setting is selected based on your screen
+    size, but you need to manually enable/disable the various tabs.
+  - BUGFIX: Doing a better job of cropping long pawn names in the colonist
+    bar.
 
  _____________________________________________________________________________
  
