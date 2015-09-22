@@ -122,7 +122,7 @@
 		<defName>DoBillsTableChemlab</defName>
 		<giverClass>WorkGiver_DoBill</giverClass>
 		<workType>Doctor</workType>
-		<priorityInType>4</priorityInType>
+		<priorityInType>3</priorityInType>
 		<singleBillGiverDef>TableChemlab</singleBillGiverDef>
 		<verb>craft</verb>
 		<gerund>crafting</gerund>
@@ -161,7 +161,7 @@
 		<defName>DoBillsTableOrganvat</defName>
 		<giverClass>WorkGiver_DoBill</giverClass>
 		<workType>Doctor</workType>
-		<priorityInType>1</priorityInType>
+		<priorityInType>4</priorityInType>
 		<singleBillGiverDef>TableOrganvat</singleBillGiverDef>
 		<verb>extract</verb>
 		<gerund>extracting</gerund>
@@ -200,7 +200,7 @@
 		<defName>DoBillsTableHerbalist</defName>
 		<giverClass>WorkGiver_DoBill</giverClass>
 		<workType>Doctor</workType>
-		<priorityInType>3</priorityInType>
+		<priorityInType>2</priorityInType>
 		<singleBillGiverDef>TableHerbalMed</singleBillGiverDef>
 		<verb>craft</verb>
 		<gerund>crafting</gerund>
