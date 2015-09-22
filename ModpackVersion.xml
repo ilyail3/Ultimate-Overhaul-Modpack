@@ -1,20 +1,17 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 
 <ModMetaData>
-  <name>Ultimate Overhaul Modpack V1.0198</name>
+  <name>Ultimate Overhaul Modpack V1.0199</name>
   <author>Ninefinger</author>
   <url>https://ludeon.com/forums/index.php?topic=11934.0</url>
   <targetVersion>Alpha 12d</targetVersion>
   <description>Collaboration of multiple mods created by some of the most amazing modders on the planet.</description>
   <!--
 Update (22/09/15)
-V1.0198
+V1.0199
 A12d Modpack
-+Zen Garden
-   -Moved border path to stone floors tab in architect menu
-   -Moved border pond to stone floors tab in architect menu
-   -moved stacked rocks to stone floors tab in architect menu
-   -Moved border path pillar to structure tab in architect menu
++EdBInterface
+   -Updated to newest release
    
    
 
