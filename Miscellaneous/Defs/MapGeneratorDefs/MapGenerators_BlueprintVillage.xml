@@ -2,7 +2,7 @@
 <Defs>
 
   <MapGeneratorDef>
-    <defName>Miscellaneous_MapGenerator_BlueprintVillage</defName>
+    <defName>MainMapGenerator</defName>
     <genSteps>
 
       <!-- Generate abstract grids-->
@@ -110,16 +110,16 @@
         <groupSizeRange><min>4</min><max>4</max></groupSizeRange>
         <stackCountRange><min>75</min><max>75</max></stackCountRange>
         <countAtPlayerStart>1</countAtPlayerStart>
-      </li>
+      </li><!--
 	  <li Class="Genstep_ScatterThingGroups">
         <thingDefs>
           <li>PotatoSeeds</li>
         </thingDefs>
-        <spotMustBeStandable>true</spotMustBeStandable>
+        <spotMustBeStandable>false</spotMustBeStandable>
         <groupSizeRange><min>1</min><max>1</max></groupSizeRange>
         <stackCountRange><min>20</min><max>20</max></stackCountRange>
         <countAtPlayerStart>1</countAtPlayerStart>
-      </li>
+      </li>-->
       <li Class="Genstep_ScatterThingGroups">
         <thingDefs>
           <li>WoodLog</li>
@@ -151,7 +151,7 @@
         <thingDefs>
           <li>MiningHelmet</li>
         </thingDefs>
-        <spotMustBeStandable>true</spotMustBeStandable>
+        <spotMustBeStandable>false</spotMustBeStandable>
         <groupSizeRange><min>1</min><max>1</max></groupSizeRange>
         <stackCountRange><min>1</min><max>1</max></stackCountRange>
         <countAtPlayerStart>1</countAtPlayerStart>
@@ -159,6 +159,7 @@
 
       <!-- Some final essentials -->
       <li Class="Genstep_Colonists" />
+	  <li Class="SeedsPlease.Genstep_SeedDropPod" />
       <li Class="Genstep_Animals" />
       
     </genSteps>

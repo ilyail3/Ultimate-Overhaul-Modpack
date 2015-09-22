@@ -1,23 +1,21 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 
 <ModMetaData>
-  <name>Ultimate Overhaul Modpack V1.0201</name>
+  <name>Ultimate Overhaul Modpack V1.0202</name>
   <author>Ninefinger</author>
   <url>https://ludeon.com/forums/index.php?topic=11934.0</url>
   <targetVersion>Alpha 12d</targetVersion>
   <description>Collaboration of multiple mods created by some of the most amazing modders on the planet.</description>
   <!--
 Update (22/09/15)
-V1.0201
+V1.0202
 A12d Modpack
-+SC11Core
-   -Changed Organ Vat research is now unlocked with medicine research instead of crafting I
-   -Fixed Chem Lab research label
++Miscellaneous
+   -Changed Map Generator to now be able to drop the Seeds Please drop pod
    
-+EPOE
-   -Changed Simple prosthetics research is now unlocked after completing Chem Lab and Crafting I research
-   -Changed Bionics research is now unlocked after completing Chem Lab and Crafting III research
-   -Changed Surrogate Organs research is now unlocked after completing Organ Vat research
++ModConfig
+   -Changed moved seeds please to now load before Miscellaneous
+   -Updated all ModConfig files
    
    
    
