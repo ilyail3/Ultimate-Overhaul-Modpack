@@ -176,10 +176,10 @@
 		</graphicData>
 		<altitudeLayer>BuildingTall</altitudeLayer>
 		<passability>Impassable</passability>
-		<fillPercent>0.75</fillPercent>
+		<fillPercent>1</fillPercent>
 		<useHitPoints>true</useHitPoints>
 		<statBases>
-			<MaxHitPoints>500</MaxHitPoints>
+			<MaxHitPoints>200</MaxHitPoints>
 			<Beauty>10</Beauty>
 			<WorkToMake>1000</WorkToMake>
 			<Flammability>0</Flammability>

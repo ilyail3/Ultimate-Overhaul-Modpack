@@ -1,17 +1,24 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 
 <ModMetaData>
-  <name>Ultimate Overhaul Modpack V1.0199</name>
+  <name>Ultimate Overhaul Modpack V1.0200</name>
   <author>Ninefinger</author>
   <url>https://ludeon.com/forums/index.php?topic=11934.0</url>
   <targetVersion>Alpha 12d</targetVersion>
   <description>Collaboration of multiple mods created by some of the most amazing modders on the planet.</description>
   <!--
 Update (22/09/15)
-V1.0199
+V1.0200
 A12d Modpack
-+EdBInterface
-   -Updated to newest release
++Roof Support
+   -Fixed Roof Support will now create roofs when placed
+   -Changed Roof Support is now impassable
+   -Removed Roof Support special display radius
+   -Changed Roof Support fill percent to 1 can no longer be used as an embrasure wall
+   
++Zen Garden
+   -Changed border path pillar fill percent to 1 can no longer be used as an embrasure wall
+   
    
    
 

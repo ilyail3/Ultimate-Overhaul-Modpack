@@ -13,7 +13,7 @@
 	</ThingDef>
 
 	<!--========================= Roof Support ============================= -->
-	<ThingDef ParentName="BuildingBase" Name="RoofSupport">
+	<ThingDef ParentName="BuildingBase">
 		<defName>RoofSupport</defName>
 		<label>roof support</label>
 		<thingClass>Building</thingClass>
@@ -22,12 +22,20 @@
 		<graphicData>
 		<texPath>Things/Building/RoofSupport</texPath>
 		<graphicClass>Graphic_Single</graphicClass>
+		<shadowData>
+			<volume>(0.2, 1, 0.2)</volume>
+			</shadowData>
 		</graphicData>
+		<useHitPoints>true</useHitPoints>
 		<statBases>
 			<MaxHitPoints>225</MaxHitPoints>
 			<WorkToMake>150</WorkToMake>
 			<Flammability>1.0</Flammability>
 		</statBases>
+		<building>
+			<isInert>true</isInert>
+			<ignoreNeedsPower>true</ignoreNeedsPower>
+		</building>
 		<stuffCategories>
 			<li>Metallic</li>
 			<li>Woody</li>
@@ -35,8 +43,9 @@
 		</stuffCategories>
 		<costStuffCount>6</costStuffCount>
 		<altitudeLayer>BuildingTall</altitudeLayer>
-		<passability>Standable</passability>
-		<fillPercent>0</fillPercent>
+		<passability>Impassable</passability>
+		<fillPercent>1</fillPercent>
+		<coversFloor>true</coversFloor>
 		<tickerType>Never</tickerType>
 		<rotatable>false</rotatable>
 		<selectable>true</selectable>
@@ -44,7 +53,6 @@
 		<holdsRoof>true</holdsRoof>
 		<designationCategory>Structure</designationCategory>
 		<blockLight>false</blockLight>
-		<specialDisplayRadius>5.9</specialDisplayRadius>
 		<damageMultipliers>
 			<li>
 				<damageDef>Bomb</damageDef>
