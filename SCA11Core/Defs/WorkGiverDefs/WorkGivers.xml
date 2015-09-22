@@ -27,18 +27,6 @@
 		</requiredCapacities>
 	</WorkGiverDef>
 	
-	<WorkGiverDef>
-    <defName>DoBillsBrewing</defName>
-    <giverClass>WorkGiver_DoBill</giverClass>
-    <workType>Cooking</workType>
-    <priorityInType>95</priorityInType>
-    <singleBillGiverDef>Brewery</singleBillGiverDef>
-    <verb>brew</verb>
-    <gerund>brewing</gerund>
-    <requiredCapacities>
-      <li>Manipulation</li>
-    </requiredCapacities>
-  </WorkGiverDef>
 	
 	<WorkGiverDef>
 		<defName>DoBillsMakeWoodPlanks_Hand</defName>
