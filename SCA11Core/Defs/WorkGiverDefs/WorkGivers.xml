@@ -5,7 +5,7 @@
 		<defName>DoBillsOven</defName>
 		<giverClass>WorkGiver_DoBill</giverClass>
 		<workType>Cooking</workType>
-		<priorityInType>100</priorityInType>
+		<priorityInType>110</priorityInType>
 		<singleBillGiverDef>ElectricOven</singleBillGiverDef>
 		<verb>bake</verb>
 		<gerund>baking</gerund>
@@ -44,7 +44,7 @@
 		<defName>DoBillsMakeWoodPlanks_Hand</defName>
 		<giverClass>WorkGiver_DoBill</giverClass>
 		<workType>Crafting</workType>
-		<priorityInType>90</priorityInType>
+		<priorityInType>75</priorityInType>
 		<singleBillGiverDef>TableSawmillHand</singleBillGiverDef>
 		<verb>saw logs</verb>
 		<gerund>sawing logs</gerund>
@@ -57,7 +57,7 @@
 		<defName>DoBillsSmeltMetal_Hand</defName>
 		<giverClass>WorkGiver_DoBill</giverClass>
 		<workType>Crafting</workType>
-		<priorityInType>80</priorityInType>
+		<priorityInType>70</priorityInType>
 		<singleBillGiverDef>TableFurnace</singleBillGiverDef>
 		<verb>smelt metal</verb>
 		<gerund>smelting metal</gerund>
@@ -70,7 +70,7 @@
 		<defName>DoBillsTableGlassworks</defName>
 		<giverClass>WorkGiver_DoBill</giverClass>
 		<workType>Crafting</workType>
-		<priorityInType>75</priorityInType>
+		<priorityInType>110</priorityInType>
 		<singleBillGiverDef>TableGlassworks</singleBillGiverDef>
 		<verb>make glass</verb>
 		<gerund>making glass</gerund>
@@ -109,7 +109,7 @@
 		<defName>DoBillsTableElectrolyzer</defName>
 		<giverClass>WorkGiver_DoBill</giverClass>
 		<workType>Crafting</workType>
-		<priorityInType>55</priorityInType>
+		<priorityInType>95</priorityInType>
 		<singleBillGiverDef>TableElectrolyzer</singleBillGiverDef>
 		<verb>craft</verb>
 		<gerund>crafting</gerund>
@@ -122,7 +122,7 @@
 		<defName>DoBillsTableChemlab</defName>
 		<giverClass>WorkGiver_DoBill</giverClass>
 		<workType>Crafting</workType>
-		<priorityInType>56</priorityInType>
+		<priorityInType>94</priorityInType>
 		<singleBillGiverDef>TableChemlab</singleBillGiverDef>
 		<verb>craft</verb>
 		<gerund>crafting</gerund>
@@ -135,7 +135,7 @@
 		<defName>DoBillsOmniGelMK1</defName>
 		<giverClass>WorkGiver_DoBill</giverClass>
 		<workType>Crafting</workType>
-		<priorityInType>91</priorityInType>
+		<priorityInType>93</priorityInType>
 		<singleBillGiverDef>Table_MK1_Replicator</singleBillGiverDef>
 		<verb>replicate</verb>
 		<gerund>replicating</gerund>
@@ -160,8 +160,8 @@
 	<WorkGiverDef>
 		<defName>DoBillsTableOrganvat</defName>
 		<giverClass>WorkGiver_DoBill</giverClass>
-		<workType>Crafting</workType>
-		<priorityInType>45</priorityInType>
+		<workType>Doctor</workType>
+		<priorityInType>1</priorityInType>
 		<singleBillGiverDef>TableOrganvat</singleBillGiverDef>
 		<verb>extract</verb>
 		<gerund>extracting</gerund>
@@ -174,7 +174,7 @@
 		<defName>DoBillsMill</defName>
 		<giverClass>WorkGiver_DoBill</giverClass>
 		<workType>Cooking</workType>
-		<priorityInType>100</priorityInType>
+		<priorityInType>80</priorityInType>
 		<singleBillGiverDef>StoneMill</singleBillGiverDef>
 		<verb>grind</verb>
 		<gerund>grinding</gerund>
@@ -187,7 +187,7 @@
   <defName>DoBillsCanningstove</defName>
   <giverClass>WorkGiver_DoBill</giverClass>
   <workType>Cooking</workType>
-  <priorityInType>100</priorityInType>
+  <priorityInType>85</priorityInType>
   <singleBillGiverDef>Canningstove</singleBillGiverDef>
   <verb>canning</verb>
   <gerund>canning</gerund>
@@ -199,8 +199,8 @@
   <WorkGiverDef>
 		<defName>DoBillsTableHerbalist</defName>
 		<giverClass>WorkGiver_DoBill</giverClass>
-		<workType>Crafting</workType>
-		<priorityInType>54</priorityInType>
+		<workType>Doctor</workType>
+		<priorityInType>3</priorityInType>
 		<singleBillGiverDef>TableHerbalMed</singleBillGiverDef>
 		<verb>craft</verb>
 		<gerund>crafting</gerund>
