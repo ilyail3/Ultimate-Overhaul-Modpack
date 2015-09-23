@@ -26,7 +26,6 @@
         <texPath>Things/Building/MobileMineralSonar</texPath>
         <drawSize>(1,1)</drawSize>
     </graphicData>
-	<minifiedDef>MinifiedFurniture</minifiedDef>
     <uiIconPath>Things/Building/MenuIcon_MobileMineralSonar</uiIconPath>
     <ThingClass>MobileMineralSonar.Building_MobileMineralSonar</ThingClass>
     <tickerType>Normal</tickerType>
@@ -37,7 +36,8 @@
       <EnergyPack>5</EnergyPack>
       <MineralSonarModule>1</MineralSonarModule>
     </CostList>
-    <AltitudeLayer>BuildingTall</AltitudeLayer>
+    <AltitudeLayer>Waist</AltitudeLayer>
+	<pathCost>30</pathCost>
     <statBases>
       <WorkToMake>200</WorkToMake>
       <MaxHitPoints>200</MaxHitPoints>
@@ -46,7 +46,7 @@
     <useHitPoints>True</useHitPoints>
     <Size>(1,1)</Size>
     <DesignationCategory>Misc</DesignationCategory>
-    <Passability>Impassable</Passability>
+    <Passability>Standable</Passability>
     <hasInteractionCell>False</hasInteractionCell>
     <comps>
       <li>
@@ -55,9 +55,6 @@
         <basePowerConsumption>1000</basePowerConsumption>
         <soundPowerOn>PowerOnSmall</soundPowerOn>
         <soundPowerOff>PowerOffSmall</soundPowerOff>
-      </li>
-	  <li>
-        <compClass>CompQuality</compClass>
       </li>
     </comps>
     <researchPrerequisite>ResearchMobileMineralSonar</researchPrerequisite>
