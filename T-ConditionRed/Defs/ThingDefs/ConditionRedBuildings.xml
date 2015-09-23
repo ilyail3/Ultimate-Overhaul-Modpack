@@ -76,10 +76,14 @@
     <minifiedDef>MinifiedFurniture</minifiedDef>
     <altitudeLayer>Waist</altitudeLayer>
     <passability>PassThroughOnly</passability>
+	<tradeTags>
+		<li>Furniture</li>
+	</tradeTags>
     <statBases>
       <MaxHitPoints>50</MaxHitPoints>
       <WorkToMake>170</WorkToMake>
       <Flammability>1.0</Flammability>
+	  <SellPriceFactor>0.25</SellPriceFactor>
     </statBases>
     <selectable>true</selectable>
     <description>A smart lamp whose color will change to indicate the colony's current threat level. Requires a powered threat sensor in order to function correctly.</description>
@@ -100,9 +104,6 @@
         <compClass>CompGlower</compClass>
         <glowRadius>8</glowRadius>
         <glowColor>(0,32,64,0)</glowColor>
-      </li>
-      <li>
-        <compClass>CompQuality</compClass>
       </li>
     </comps>
     <designationCategory>Lighting</designationCategory>
