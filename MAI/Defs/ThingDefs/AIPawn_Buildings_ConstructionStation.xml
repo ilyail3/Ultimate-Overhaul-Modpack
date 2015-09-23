@@ -23,7 +23,8 @@
 			<WorkToMake>2500</WorkToMake>
 			<MaxHitPoints>300</MaxHitPoints>
 			<Flammability>1.0</Flammability>
-			<MarketValue>2000</MarketValue>
+			<MarketValue>3000</MarketValue>
+			<SellPriceFactor>0.05</SellPriceFactor>
 		</statBases>
 		<CostList>
 			<Vancidium>100</Vancidium>
