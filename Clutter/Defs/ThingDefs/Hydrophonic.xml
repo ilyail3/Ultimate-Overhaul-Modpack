@@ -29,11 +29,15 @@
 		<pathCost>60</pathCost>
 		<description>Advanced hydroponic pot</description>
 		<size>(1,1)</size>
+		<tradeTags>
+			<li>Furniture</li>
+		</tradeTags>
 		<statBases>
 			<WorkToMake>3000</WorkToMake>
 			<MaxHitPoints>50</MaxHitPoints>
 			<Flammability>1.0</Flammability>
 			<Beauty>5</Beauty>
+			<SellPriceFactor>0.25</SellPriceFactor>
 		</statBases>
 	 		<costList>
 			<SteelBar>15</SteelBar>

@@ -81,6 +81,9 @@
 	</graphicData>
 	<minifiedDef>MinifiedFurniture</minifiedDef>
 	<constructEffect>ConstructMetal</constructEffect>
+	<tradeTags>
+			<li>Furniture</li>
+		</tradeTags>
 	  <CostList>
             <SteelBar>150</SteelBar>
           </CostList>
@@ -91,6 +94,7 @@
 	  <WorkToMake>2000</WorkToMake>
 	  <MaxHitPoints>140</MaxHitPoints>
 	  <Flammability>1.0</Flammability>
+	  <SellPriceFactor>0.25</SellPriceFactor>
 	</statBases>
 	<Size>(1,1)</Size>
 	<DesignationCategory>ProductionFood</DesignationCategory>

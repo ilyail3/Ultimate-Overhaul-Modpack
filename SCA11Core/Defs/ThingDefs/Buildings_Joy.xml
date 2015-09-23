@@ -55,6 +55,9 @@
         <volume>(0.3, 0.6, 0.3)</volume>
       </shadowData>
     </graphicData>
+	<tradeTags>
+        <li>Joy</li>
+    </tradeTags>
 	<minifiedDef>MinifiedFurniture</minifiedDef>
     <altitudeLayer>Waist</altitudeLayer>
     <rotatable>false</rotatable>
@@ -64,6 +67,7 @@
       <MaxHitPoints>100</MaxHitPoints>
       <WorkToMake>10000</WorkToMake>
       <Flammability>1.0</Flammability>
+	  <SellPriceFactor>0.25</SellPriceFactor>
       <Beauty>10</Beauty>
     </statBases>
     <stuffCategories>

@@ -384,6 +384,9 @@
     <designationCategory>Misc</designationCategory>
 	<staticSunShadowHeight>0.20</staticSunShadowHeight>
     <minifiedDef>MinifiedFurniture</minifiedDef>
+	<tradeTags>
+			<li>Exotic</li>
+	</tradeTags>
     <statBases>
       <MaxHitPoints>200</MaxHitPoints>
       <WorkToMake>5000</WorkToMake>
@@ -444,6 +447,9 @@
     </costList>
     <designationCategory>Production</designationCategory>
     <minifiedDef>MinifiedFurniture</minifiedDef>
+	<tradeTags>
+			<li>Exotic</li>
+	</tradeTags>
     <comps>
       <li>
         <compClass>CompPowerTrader</compClass>
@@ -495,6 +501,9 @@
     <designationCategory>Storage</designationCategory>
 	<staticSunShadowHeight>0.20</staticSunShadowHeight>
     <minifiedDef>MinifiedFurniture</minifiedDef>
+	<tradeTags>
+			<li>Furniture</li>
+	</tradeTags>
     <comps>
       <li>
         <compClass>CompFacility</compClass>
@@ -581,10 +590,14 @@
 		<altitudeLayer>Waist</altitudeLayer>
 		<interactionCellOffset>(0,0,-1)</interactionCellOffset>
 		<hasInteractionCell>true</hasInteractionCell>
+		<tradeTags>
+			<li>Furniture</li>
+		</tradeTags>
 		<statBases>
 			<MaxHitPoints>180</MaxHitPoints>
 			<WorkToMake>2250</WorkToMake>
 			<Flammability>1.0</Flammability>
+			<SellPriceFactor>0.25</SellPriceFactor>
 		</statBases>
 		<passability>Standable</passability>
 		<fillPercent>0.2</fillPercent>
@@ -629,10 +642,14 @@
 		<altitudeLayer>Waist</altitudeLayer>
 		<interactionCellOffset>(0,0,-1)</interactionCellOffset>
 		<hasInteractionCell>true</hasInteractionCell>
+		<tradeTags>
+			<li>Furniture</li>
+		</tradeTags>
 		<statBases>
 			<MaxHitPoints>180</MaxHitPoints>
 			<WorkToMake>2250</WorkToMake>
 			<Flammability>1.0</Flammability>
+			<SellPriceFactor>0.25</SellPriceFactor>
 		</statBases>
 		<passability>Standable</passability>
 		<fillPercent>0.5</fillPercent>

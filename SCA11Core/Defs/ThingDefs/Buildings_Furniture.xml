@@ -22,6 +22,12 @@
     </comps>
     <DesignationCategory>Furniture</DesignationCategory>
     <minifiedDef>MinifiedFurniture</minifiedDef>
+	<statBases>
+	<SellPriceFactor>0.25</SellPriceFactor>
+	</statBases>
+	<tradeTags>
+        <li>Furniture</li>
+    </tradeTags>
   </ThingDef>
   
   <ThingDef Name="HighQualityFurnitureBase" ParentName="BuildingBase" Abstract="True">
@@ -41,6 +47,12 @@
     </inspectorTabs>
     <DesignationCategory>Furniture</DesignationCategory>
     <minifiedDef>MinifiedFurniture</minifiedDef>
+	<statBases>
+	<SellPriceFactor>0.25</SellPriceFactor>
+	</statBases>
+	<tradeTags>
+        <li>Furniture</li>
+    </tradeTags>
   </ThingDef>
 
 
@@ -636,11 +648,15 @@ Rest effectiveness: 85%</Description>
 		<minifiedDef>MinifiedFurniture</minifiedDef>
 		<altitudeLayer>MoteOverhead</altitudeLayer>
 		<passability>Standable</passability>
+		<tradeTags>
+        <li>Furniture</li>
+		</tradeTags>
 		<statBases>
 			<MaxHitPoints>75</MaxHitPoints>
 			<WorkToMake>150</WorkToMake>
 			<Flammability>1.0</Flammability>
 			<Beauty>5</Beauty>
+			<SellPriceFactor>0.25</SellPriceFactor>
 		</statBases>
 		<building>
 			<isInert>false</isInert>
@@ -695,11 +711,15 @@ Rest effectiveness: 85%</Description>
 		<minifiedDef>MinifiedFurniture</minifiedDef>
 		<altitudeLayer>MoteOverhead</altitudeLayer>
 		<passability>Standable</passability>
+		<tradeTags>
+        <li>Furniture</li>
+		</tradeTags>
 		<statBases>
 			<MaxHitPoints>75</MaxHitPoints>
 			<WorkToMake>150</WorkToMake>
 			<Flammability>1.0</Flammability>
 			<Beauty>5</Beauty>
+			<SellPriceFactor>0.25</SellPriceFactor>
 		</statBases>
 		<building>
 			<isInert>false</isInert>
@@ -752,11 +772,15 @@ Rest effectiveness: 85%</Description>
 		<minifiedDef>MinifiedFurniture</minifiedDef>
 		<altitudeLayer>MoteOverhead</altitudeLayer>
 		<passability>Standable</passability>
+		<tradeTags>
+        <li>Furniture</li>
+		</tradeTags>
 		<statBases>
 			<MaxHitPoints>75</MaxHitPoints>
 			<WorkToMake>150</WorkToMake>
 			<Flammability>1.0</Flammability>
 			<Beauty>5</Beauty>
+			<SellPriceFactor>0.25</SellPriceFactor>
 		</statBases>
 		<building>
 			<isInert>false</isInert>
@@ -809,11 +833,15 @@ Rest effectiveness: 85%</Description>
 		<minifiedDef>MinifiedFurniture</minifiedDef>
 		<altitudeLayer>MoteOverhead</altitudeLayer>
 		<passability>Standable</passability>
+		<tradeTags>
+        <li>Furniture</li>
+		</tradeTags>
 		<statBases>
 			<MaxHitPoints>75</MaxHitPoints>
 			<WorkToMake>150</WorkToMake>
 			<Flammability>1.0</Flammability>
 			<Beauty>5</Beauty>
+			<SellPriceFactor>0.25</SellPriceFactor>
 		</statBases>
 		<building>
 			<isInert>false</isInert>
@@ -866,11 +894,15 @@ Rest effectiveness: 85%</Description>
 	<minifiedDef>MinifiedFurniture</minifiedDef>
     <altitudeLayer>BuildingTall</altitudeLayer>
     <passability>PassThroughOnly</passability>
+	<tradeTags>
+        <li>Furniture</li>
+	</tradeTags>
     <statBases>
       <MaxHitPoints>75</MaxHitPoints>
       <WorkToMake>150</WorkToMake>
       <Flammability>0.0</Flammability>
 	  <Beauty>5</Beauty>
+	  <SellPriceFactor>0.25</SellPriceFactor>
     </statBases>
     <selectable>true</selectable>
     <description>An outdoor lamp designed to light a small area.</description>
@@ -919,11 +951,15 @@ Rest effectiveness: 85%</Description>
 	<minifiedDef>MinifiedFurniture</minifiedDef>
     <altitudeLayer>BuildingTall</altitudeLayer>
     <passability>PassThroughOnly</passability>
+	<tradeTags>
+        <li>Furniture</li>
+	</tradeTags>
     <statBases>
       <MaxHitPoints>150</MaxHitPoints>
       <WorkToMake>250</WorkToMake>
       <Flammability>0.0</Flammability>
 	  <Beauty>10</Beauty>
+	  <SellPriceFactor>0.25</SellPriceFactor>
     </statBases>
     <selectable>true</selectable>
     <description>An outdoor lamp designed to light a large area. It's pretty to look at too.</description>
@@ -976,11 +1012,15 @@ Rest effectiveness: 85%</Description>
 		<altitudeLayer>Waist</altitudeLayer>
 		<passability>PassThroughOnly</passability>
 		<fillPercent>0.20</fillPercent>
+		<tradeTags>
+        <li>Furniture</li>
+		</tradeTags>
 		<statBases>
 			<MaxHitPoints>100</MaxHitPoints>
 			<WorkToMake>330</WorkToMake>
 			<Beauty>6</Beauty>
 			<Flammability>1.0</Flammability>
+			<SellPriceFactor>0.25</SellPriceFactor>
 		</statBases>
 		<stuffCategories>
 			<li>Metallic</li>

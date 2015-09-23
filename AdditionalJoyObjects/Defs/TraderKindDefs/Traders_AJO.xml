@@ -148,6 +148,18 @@
 				</countRange>
 			</li>
 			<li Class="StockGenerator_Tag">
+				<tradeTag>Furniture</tradeTag>
+				<thingDefCountRange>
+				  <min>3</min>
+				  <max>8</max>
+				</thingDefCountRange>
+				<price>Expensive</price>
+				<countRange>
+				<min>1</min>
+				<max>1</max>
+			</countRange>
+			</li>
+			<li Class="StockGenerator_Tag">
 				<tradeTag>Joy</tradeTag>
 				<thingDefCountRange>
 				<min>4</min>

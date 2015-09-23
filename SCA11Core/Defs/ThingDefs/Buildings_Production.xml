@@ -136,6 +136,9 @@
 			<CopperBar>25</CopperBar>
           </CostList>
 	<minifiedDef>MinifiedFurniture</minifiedDef>
+	<tradeTags>
+			<li>Furniture</li>
+	</tradeTags>
 	<AltitudeLayer>Waist</AltitudeLayer>
 	<fillPercent>0.5</fillPercent>
 	<useHitPoints>True</useHitPoints>
@@ -143,6 +146,7 @@
 	  <WorkToMake>2000</WorkToMake>
 	  <MaxHitPoints>180</MaxHitPoints>
 	  <Flammability>1.0</Flammability>
+	  <SellPriceFactor>0.25</SellPriceFactor>
 	</statBases>
 	<Size>(2,1)</Size>
 	<DesignationCategory>ProductionFood</DesignationCategory>
@@ -944,6 +948,9 @@
 			<Copper>10</Copper>
 		</CostList>
 		<minifiedDef>MinifiedFurniture</minifiedDef>
+		<tradeTags>
+			<li>Furniture</li>
+		</tradeTags>
 		<constructEffect>ConstructWood</constructEffect>
 		<AltitudeLayer>Waist</AltitudeLayer>
 		<fillPercent>0.5</fillPercent>
@@ -952,6 +959,7 @@
 			<WorkToMake>1500</WorkToMake>
 			<MaxHitPoints>120</MaxHitPoints>
 			<Flammability>1.0</Flammability>
+			<SellPriceFactor>0.25</SellPriceFactor>
 		</statBases>
 		<Size>(1,1)</Size>
 		<DesignationCategory>ProductionFood</DesignationCategory>
@@ -1234,6 +1242,9 @@
 		</graphicData>
 		<minifiedDef>MinifiedFurniture</minifiedDef>
 		<constructEffect>ConstructMetal</constructEffect>
+		<tradeTags>
+			<li>Furniture</li>
+		</tradeTags>
 		<CostList>
 			<SteelBar>90</SteelBar>
 			<CopperBar>25</CopperBar>
@@ -1246,6 +1257,7 @@
 			<WorkToMake>3000</WorkToMake>
 			<MaxHitPoints>240</MaxHitPoints>
 			<Flammability>1.0</Flammability>
+			<SellPriceFactor>0.25</SellPriceFactor>
 		</statBases>
 		<Size>(2,2)</Size>
 		<DesignationCategory>Production</DesignationCategory>
@@ -1416,10 +1428,14 @@
 		<minifiedDef>MinifiedFurniture</minifiedDef>
 		<altitudeLayer>BuildingTall</altitudeLayer>
 		<passability>PassThroughOnly</passability>
+		<tradeTags>
+			<li>Furniture</li>
+		</tradeTags>
 		<statBases>
 			<MaxHitPoints>50</MaxHitPoints>
 			<WorkToMake>330</WorkToMake>
 			<Flammability>1.0</Flammability>
+			<SellPriceFactor>0.25</SellPriceFactor>
 		</statBases>
 		<selectable>true</selectable>
 		<description>Lights an area brightly enough to grow crops.</description>
@@ -1538,10 +1554,14 @@
     <pathCost>60</pathCost>
     <castEdgeShadows>true</castEdgeShadows>
     <constructEffect>ConstructMetal</constructEffect>
+	<tradeTags>
+			<li>Furniture</li>
+		</tradeTags>
     <statBases>
       <WorkToMake>2800</WorkToMake>
       <MaxHitPoints>180</MaxHitPoints>
       <Flammability>1.0</Flammability>
+	  <SellPriceFactor>0.25</SellPriceFactor>
     </statBases>
     <description>For growing food. Hydroponics basins grow a few plants quickly. The basin requires power to work, and plants will die if power is cut.</description>
     <size>(1,4)</size>

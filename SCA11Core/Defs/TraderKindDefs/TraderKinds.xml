@@ -114,19 +114,7 @@
           <min>2200</min>
           <max>4000</max>
         </totalPriceRange>
-      </li>
-	  <li Class="StockGenerator_Category">
-        <categoryDef>Leathers</categoryDef>
-        <thingDefCountRange>
-          <min>50</min>
-          <max>300</max>
-        </thingDefCountRange>
-        <price>Cheap</price>
-        <totalPriceRange>
-          <min>2200</min>
-          <max>4000</max>
-        </totalPriceRange>
-      </li>
+      </li>	  
     </stockGenerators>	  
   </TraderKindDef>
 	
@@ -416,6 +404,18 @@
 					<max>30</max>
 				</countRange>
 			</li>
+			<li Class="StockGenerator_Tag">
+				<tradeTag>Furniture</tradeTag>
+				<thingDefCountRange>
+				  <min>3</min>
+				  <max>5</max>
+				</thingDefCountRange>
+				<price>Expensive</price>
+				<countRange>
+				<min>1</min>
+				<max>1</max>
+			</countRange>
+			</li>
 		</stockGenerators>
 	</TraderKindDef>
 	
@@ -585,6 +585,18 @@
 					<max>30</max>
 				</countRange>
 			</li>
+			<li Class="StockGenerator_Tag">
+				<tradeTag>Furniture</tradeTag>
+				<thingDefCountRange>
+				  <min>3</min>
+				  <max>5</max>
+				</thingDefCountRange>
+				<price>Expensive</price>
+				<countRange>
+				<min>1</min>
+				<max>1</max>
+			</countRange>
+			</li>
 		</stockGenerators>
 	</TraderKindDef>
 	
@@ -729,6 +741,18 @@
 					<min>10</min>
 					<max>30</max>
 				</countRange>
+			</li>
+			<li Class="StockGenerator_Tag">
+				<tradeTag>Furniture</tradeTag>
+				<thingDefCountRange>
+				  <min>3</min>
+				  <max>5</max>
+				</thingDefCountRange>
+				<price>Expensive</price>
+				<countRange>
+				<min>1</min>
+				<max>1</max>
+			</countRange>
 			</li>
 		</stockGenerators>
 	</TraderKindDef>
@@ -1093,6 +1117,18 @@
 					<min>500</min>
 					<max>1500</max>
 				</totalPriceRange>
+			</li>
+			<li Class="StockGenerator_Tag">
+				<tradeTag>Furniture</tradeTag>
+				<thingDefCountRange>
+				  <min>3</min>
+				  <max>5</max>
+				</thingDefCountRange>
+				<price>Expensive</price>
+				<countRange>
+				<min>1</min>
+				<max>1</max>
+			</countRange>
 			</li>
 		</stockGenerators>
 	</TraderKindDef>

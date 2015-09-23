@@ -28,11 +28,15 @@
 		<minifiedDef>MinifiedFurniture</minifiedDef>
 		<altitudeLayer>BuildingTall</altitudeLayer>
 		<passability>PassThroughOnly</passability>
+		<tradeTags>
+			<li>Furniture</li>
+		</tradeTags>
 		<statBases>
 			<MaxHitPoints>75</MaxHitPoints>
 			<WorkToMake>150</WorkToMake>
 			<Flammability>1.0</Flammability>
 			<Beauty>5</Beauty>
+			<SellPriceFactor>0.25</SellPriceFactor>
 		</statBases>
 		<selectable>true</selectable>
 		<description>
@@ -83,11 +87,15 @@ Simple floor lamp</description>
 		<minifiedDef>MinifiedFurniture</minifiedDef>
 		<altitudeLayer>BuildingTall</altitudeLayer>
 		<passability>PassThroughOnly</passability>
+		<tradeTags>
+			<li>Furniture</li>
+		</tradeTags>
 		<statBases>
 			<MaxHitPoints>75</MaxHitPoints>
 			<WorkToMake>150</WorkToMake>
 			<Flammability>1.0</Flammability>
 			<Beauty>5</Beauty>
+			<SellPriceFactor>0.25</SellPriceFactor>
 		</statBases>
 		<selectable>true</selectable>
 		<tickerType>Normal</tickerType>
@@ -140,11 +148,15 @@ A more advanced lamp aesthetically, you can change light colour with appropriate
 		<minifiedDef>MinifiedFurniture</minifiedDef>
 		<altitudeLayer>BuildingTall</altitudeLayer>
 		<passability>PassThroughOnly</passability>
+		<tradeTags>
+			<li>Furniture</li>
+		</tradeTags>
 		<statBases>
 			<MaxHitPoints>75</MaxHitPoints>
 			<WorkToMake>150</WorkToMake>
 			<Flammability>1.0</Flammability>
 			<Beauty>5</Beauty>
+			<SellPriceFactor>0.25</SellPriceFactor>
 		</statBases>
 		<selectable>true</selectable>
 		<tickerType>Normal</tickerType>
@@ -195,11 +207,15 @@ A more advanced lamp aesthetically, you can change light colour with appropriate
 		<minifiedDef>MinifiedFurniture</minifiedDef>
 		<altitudeLayer>BuildingTall</altitudeLayer>
 		<passability>PassThroughOnly</passability>
+		<tradeTags>
+			<li>Furniture</li>
+		</tradeTags>
 		<statBases>
 			<MaxHitPoints>75</MaxHitPoints>
 			<WorkToMake>150</WorkToMake>
 			<Flammability>1.0</Flammability>
 			<Beauty>5</Beauty>
+			<SellPriceFactor>0.25</SellPriceFactor>
 		</statBases>
 		<selectable>true</selectable>
 		<tickerType>Normal</tickerType>
@@ -251,11 +267,15 @@ A more advanced lamp aesthetically, you can change light colour with appropriate
 		<altitudeLayer>BuildingTall</altitudeLayer>
 		<passability>PassThroughOnly</passability>
 		<tickerType>Normal</tickerType>
+		<tradeTags>
+			<li>Furniture</li>
+		</tradeTags>
 		<statBases>
 			<MaxHitPoints>75</MaxHitPoints>
 			<WorkToMake>150</WorkToMake>
 			<Flammability>1.0</Flammability>
 			<Beauty>5</Beauty>
+			<SellPriceFactor>0.25</SellPriceFactor>
 		</statBases>
 		<selectable>true</selectable>
 		<description>Green glowing lamp.</description>
@@ -306,11 +326,15 @@ A more advanced lamp aesthetically, you can change light colour with appropriate
 		<altitudeLayer>BuildingTall</altitudeLayer>
 		<passability>PassThroughOnly</passability>
 		<tickerType>Normal</tickerType>
+		<tradeTags>
+			<li>Furniture</li>
+		</tradeTags>
 		<statBases>
 			<MaxHitPoints>75</MaxHitPoints>
 			<WorkToMake>150</WorkToMake>
 			<Flammability>1.0</Flammability>
 			<Beauty>5</Beauty>
+			<SellPriceFactor>0.25</SellPriceFactor>
 		</statBases>
 		<selectable>true</selectable>
 		<description>Orange glowing lamp.</description>
@@ -361,11 +385,15 @@ A more advanced lamp aesthetically, you can change light colour with appropriate
 		<altitudeLayer>BuildingTall</altitudeLayer>
 		<passability>PassThroughOnly</passability>
 		<tickerType>Normal</tickerType>
+		<tradeTags>
+			<li>Furniture</li>
+		</tradeTags>
 		<statBases>
 			<MaxHitPoints>75</MaxHitPoints>
 			<WorkToMake>150</WorkToMake>
 			<Flammability>1.0</Flammability>
 			<Beauty>5</Beauty>
+			<SellPriceFactor>0.25</SellPriceFactor>
 		</statBases>
 		<selectable>true</selectable>
 		<description>Violet glowing lamp.</description>

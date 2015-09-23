@@ -21,6 +21,12 @@
     </comps>
     <DesignationCategory>Furniture</DesignationCategory>
     <minifiedDef>MinifiedFurniture</minifiedDef>
+	<tradeTags>
+			<li>Furniture</li>
+		</tradeTags>
+		<statBases>
+      <SellPriceFactor>0.25</SellPriceFactor>
+    </statBases>
   </ThingDef>
   
   <ThingDef Name="HighQualityFurnitureBase" ParentName="BuildingBase" Abstract="True">
@@ -40,6 +46,12 @@
     </inspectorTabs>
     <DesignationCategory>Furniture</DesignationCategory>
     <minifiedDef>MinifiedFurniture</minifiedDef>
+	<tradeTags>
+			<li>Furniture</li>
+		</tradeTags>
+		<statBases>
+      <SellPriceFactor>0.25</SellPriceFactor>
+    </statBases>
   </ThingDef>
 
 
