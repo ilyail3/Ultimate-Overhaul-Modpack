@@ -1,17 +1,20 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 
 <ModMetaData>
-  <name>Ultimate Overhaul Modpack V1.0207</name>
+  <name>Ultimate Overhaul Modpack V1.0208</name>
   <author>Ninefinger</author>
   <url>https://ludeon.com/forums/index.php?topic=11934.0</url>
   <targetVersion>Alpha 12d</targetVersion>
   <description>Collaboration of multiple mods created by some of the most amazing modders on the planet.</description>
   <!--
 Update (22/09/15)
-V1.0207
+V1.0208
 A12d Modpack
-+RT Storage
-   -Updated assembly dll to newest release
++SCA11Core
+   -Fixed various recipe descriptions
+   -Added recipe to craft sand from gravel
+   -Changed Multi Analyser will now be unlocked with Crafting III
+   -Changed Tool Cabinet will now be unlocked with Construction I
    
 
   -->
