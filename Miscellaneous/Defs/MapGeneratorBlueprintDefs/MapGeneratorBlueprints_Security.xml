@@ -3,7 +3,7 @@
 
 	<MapGeneratorBlueprintDef Name="SecurityBase">
 		<defName>SecurityEmptyA</defName>
-		<chance>10</chance>
+		<chance>5</chance>
 		<size>9,7</size>
 		<canHaveHoles>true</canHaveHoles>
 		<buildingData>

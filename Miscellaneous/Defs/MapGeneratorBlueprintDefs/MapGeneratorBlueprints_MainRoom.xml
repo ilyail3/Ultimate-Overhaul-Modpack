@@ -5,7 +5,7 @@
 		<defName>MainRoomA_w_holes</defName>
 		<chance>10</chance>
 		<size>25,22</size>
-		<canHaveHoles>true</canHaveHoles>
+		<canHaveHoles>false</canHaveHoles>
 		<buildingData>
 			wwwwwwwwwwwwwwwwwwwwwwwww
 			w.......w.......w.......w
@@ -78,30 +78,16 @@
 				<value>WoodPlankFloor</value>
 			</li>
 		</floorLegend>
-	</MapGeneratorBlueprintDef>
-		
-		
-	<MapGeneratorBlueprintDef ParentName="MainRoom1Base">
-		<defName>MainRoomA_wo_holes</defName>
-		<chance>10</chance>
-		<canHaveHoles>false</canHaveHoles>
-	</MapGeneratorBlueprintDef>
-
-		
-	<MapGeneratorBlueprintDef ParentName="MainRoom1Base">
-		<defName>MainRoomB_wo_holes</defName>
-		<chance>5</chance>
-		<canHaveHoles>false</canHaveHoles>
 		<pawnData>
 			wwwwwwwwwwwwwwwwwwwwwwwww
 			w.......w.......w.......w
-			w.......................w
-			w.......w.......w.......w
+			w...................c...w
+			w...6...w.......w..5....w
 			w.......w.......w.......w
 			w.......w.......w.......w
 			wwwwwwwww.......wwwwwwwww
 			w.......................w
-			w.......................w
+			w.s...................s.w
 			w.......................w
 			w......ww.......ww......w
 			w......ww.......ww......w
@@ -110,46 +96,46 @@
 			w.......................w
 			wwwwwwwwwww..wwwwwwwwwwww
 			w.......w...............w
-			w...s...w...............w
 			w.......w...............w
-			w..s....w..........s....w
+			w.......w...............w
+			w.......w......5........w
 			w.......w...............w
 			wwwwwwwwwwwwwwwwwwwwwwwww
 		</pawnData>
 		<pawnLegend>
 			<li>
-				<key>s</key>
+				<key>5</key>
 				<value>Scyther</value>
 			</li>
 			<li>
-				<key>c</key>
+				<key>6</key>
 				<value>Centipede</value>
 			</li>
 		</pawnLegend>
-		<pawnSpawnChance>20</pawnSpawnChance>
+		<pawnSpawnChance>80</pawnSpawnChance>
 		<factionDef>Mechanoid</factionDef>
 		<itemData>
 			wwwwwwwwwwwwwwwwwwwwwwwww
-			w.......w.......w.......w
-			w.......................w
-			w.......w.......w.......w
+			w..2....w.......w....2..w
+			w...................c...w
+			w...6...w.......w..5....w
 			w.......w.......w.......w
 			w.......w.......w.......w
 			wwwwwwwww.......wwwwwwwww
 			w.......................w
+			w.s...................s.w
 			w.......................w
-			w.......................w
-			w......ww.......ww......w
-			w......ww.......ww......w
+			w......ww...2...ww......w
+			w..5...ww.......ww......w
 			w.......................w
 			w.......................w
 			w.......................w
 			wwwwwwwwwww..wwwwwwwwwwww
-			w111....w...............w
-			w111....w...............w
 			w.......w...............w
+			w...11..w...............w
+			w...11..w...............w
+			w.......w......5......2.w
 			w.......w...............w
-			w.....22w...............w
 			wwwwwwwwwwwwwwwwwwwwwwwww
 		</itemData>
 		<itemLegend>

@@ -3,7 +3,7 @@
 
 	<MapGeneratorBlueprintDef Name="Labyrinth1Base">
 		<defName>LabyrinthA</defName>
-		<chance>3</chance>
+		<chance>10</chance>
 		<size>30,20</size>
 		<canHaveHoles>false</canHaveHoles>
 		<buildingData>
@@ -102,7 +102,7 @@
 				<value>Centipede</value>
 			</li>
 		</pawnLegend>
-		<pawnSpawnChance>25</pawnSpawnChance>
+		<pawnSpawnChance>80</pawnSpawnChance>
 		<factionDef>Mechanoid</factionDef>
 		<itemData>
 			wwwwwwwwwwwwwwwwwwwwwwwwwwwwww
@@ -175,7 +175,7 @@
 
 	<MapGeneratorBlueprintDef Name="Labyrinth2Base">
 		<defName>LabyrinthB</defName>
-		<chance>3</chance>
+		<chance>10</chance>
 		<size>25,23</size>
 		<canHaveHoles>false</canHaveHoles>
 		<buildingData>
@@ -291,7 +291,7 @@
 				<value>Centipede</value>
 			</li>
 		</pawnLegend>
-		<pawnSpawnChance>25</pawnSpawnChance>
+		<pawnSpawnChance>80</pawnSpawnChance>
 		<factionDef>Mechanoid</factionDef>
 		<itemData>
 			wwwwwwwwwwwwwwwwwwwwwwwww
