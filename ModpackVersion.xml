@@ -18,6 +18,9 @@ A12d Modpack
    
 +SCA11Core
    -Added sell price factors to the Multi Analyzer and Vitals Monitor
+   
++Mobile Mineral Sonar
+   -Removed minified furniture from mobile mineral sonar device due to a bug of it disappearing upon uninstalling
   -->
   </ModMetaData>
 
