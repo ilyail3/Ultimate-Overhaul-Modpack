@@ -35,9 +35,14 @@
 		<AltitudeLayer>Waist</AltitudeLayer>
 		<fillPercent>0.5</fillPercent>
 		<useHitPoints>True</useHitPoints>
+		<tradeTags>
+			<li>Furniture</li>
+		</tradeTags>
 		<statBases>
 			<WorkToMake>1200</WorkToMake>
 			<MaxHitPoints>180</MaxHitPoints>
+			<Flammability>1.0</Flammability>
+			<SellPriceFactor>0.25</SellPriceFactor>
 		</statBases>
 		<Size>(1,1)</Size>
 		<pathCost>30</pathCost>

@@ -437,6 +437,7 @@
       <MaxHitPoints>100</MaxHitPoints>
       <WorkToMake>4000</WorkToMake>
       <Flammability>1.0</Flammability>
+	  <SellPriceFactor>0.25</SellPriceFactor>
     </statBases>
     <description>Increases patients treatment quality. Needs to be placed adjacent to a medical bed. One medical bed can be linked to only one vitals monitor.</description>
     <size>(1,1)</size>
@@ -491,6 +492,7 @@
       <MaxHitPoints>100</MaxHitPoints>
       <WorkToMake>1800</WorkToMake>
       <Flammability>1.0</Flammability>
+	  <SellPriceFactor>0.25</SellPriceFactor>
     </statBases>
     <description>Increases work speed. Needs to be placed near workbench. One workbench can be simultaneously linked to only two tools cabinets.</description>
     <size>(2,1)</size>
