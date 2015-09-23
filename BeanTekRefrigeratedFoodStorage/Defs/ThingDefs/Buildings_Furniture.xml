@@ -1,21 +1,23 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <Buildings>
+
+
   <ThingDef Name="BuildingBase" Abstract="True">
-    <category>Building</category>
-    <thingClass>Building</thingClass>
-    <soundImpactDefault>BulletImpactMetal</soundImpactDefault>
-    <selectable>true</selectable>
-    <drawerType>MapMeshAndRealTime</drawerType>
-    <terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
-    <repairEffect>Repair</repairEffect>
-    <leaveResourcesWhenKilled>true</leaveResourcesWhenKilled>
-    <filthLeaving>BuildingRubble</filthLeaving>
-  </ThingDef>
+        <category>Building</category>
+        <soundImpactDefault>BulletImpactMetal</soundImpactDefault>
+        <selectable>true</selectable>
+        <drawerType>MapMeshAndRealTime</drawerType>
+        <altitudeLayer>Waist</altitudeLayer>
+        <terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
+        <repairEffect>Repair</repairEffect>
+        <leaveResourcesWhenKilled>true</leaveResourcesWhenKilled>
+        <filthLeaving>BuildingRubble</filthLeaving>
+    </ThingDef>
   
   <ThingDef ParentName="BuildingBase">
     <defName>RefrigeratedTrayRack</defName>
     <label>Refrigerated Tray rack</label>
-    <thingClass>BeanTek.Building_RefrigeratedStorage</thingClass>
+    <thingClass>Building_Storage</thingClass>
     <graphicData>
       <texPath>Things/Building/Furniture/TrayRack</texPath>
       <graphicClass>Graphic_Single</graphicClass>
@@ -32,12 +34,12 @@
     </stuffCategories>
     <costStuffCount>30</costStuffCount>
     <statBases>
-      <MaxHitPoints>150</MaxHitPoints>
+      <MaxHitPoints>100</MaxHitPoints>
       <WorkToMake>850</WorkToMake>
       <Flammability>1.0</Flammability>
       <Beauty>7</Beauty>
     </statBases>
-    <description>Haulers carry trays here for storage.</description>
+    <description>Haulers carry meals here for storage without rotting.</description>
     <size>(2,1)</size>
     <building>
       <preventDeterioration>true</preventDeterioration>
@@ -54,6 +56,9 @@
           <categories>
             <li>FoodMeals</li>
           </categories>
+		  <exceptedThingDefs>
+            <li>MealSurvivalPack</li>
+          </exceptedThingDefs>
         </filter>
       </defaultStorageSettings>
     </building>
@@ -63,16 +68,26 @@
     <designationCategory>Storage</designationCategory>
     <staticSunShadowHeight>0.5</staticSunShadowHeight>
     <surfaceType>Item</surfaceType>
-    <tickerType>Rare</tickerType>
+    <tickerType>Normal</tickerType>
     <comps>
-      <li>
-        <compClass>CompPowerTrader</compClass>
-        <startElectricalFires>true</startElectricalFires>
-        <basePowerConsumption>50</basePowerConsumption>
-        <soundPowerOn>PowerOnSmall</soundPowerOn>
-        <soundPowerOff>PowerOffSmall</soundPowerOff>
-      </li>
-    </comps>
+            <li>
+                <compClass>CommunityCoreLibrary.CompRefrigerated</compClass>
+            </li>
+            <li>
+                <compClass>CompForbiddable</compClass>
+            </li>
+            <li>
+                <compClass>CompPowerTrader</compClass>
+                <basePowerConsumption>100</basePowerConsumption>
+            </li>
+            <li Class="CommunityCoreLibrary.CompProperties_LowIdleDraw">
+                <compClass>CommunityCoreLibrary.CompPowerLowIdleDraw</compClass>
+                <idlePowerFactor>0.5</idlePowerFactor>
+                <operationalMode>Cycle</operationalMode>
+                <cycleLowTicks>2500</cycleLowTicks>
+                <cycleHighTicks>1500</cycleHighTicks>
+            </li>
+        </comps>
 	<researchPrerequisite>PowerI</researchPrerequisite>
   </ThingDef>
 </Buildings>
