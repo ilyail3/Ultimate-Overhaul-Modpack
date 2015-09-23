@@ -17,7 +17,7 @@
       <li>
         <filter>
           <thingDefs>
-            <li>Weed</li>
+            <li>WeedCig</li>
           </thingDefs>
         </filter>
         <count>1</count>
@@ -25,11 +25,11 @@
     </ingredients>
     <fixedIngredientFilter>
       <thingDefs>
-        <li>Weed</li>
+        <li>WeedCig</li>
       </thingDefs>
     </fixedIngredientFilter>
     <products>
-      <Silver>40</Silver>
+      <Silver>5</Silver>
     </products>
   </RecipeDef>
 
