@@ -1,28 +1,23 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 
 <ModMetaData>
-  <name>Ultimate Overhaul Modpack V1.0210</name>
+  <name>Ultimate Overhaul Modpack V1.0211</name>
   <author>Ninefinger</author>
   <url>https://ludeon.com/forums/index.php?topic=11934.0</url>
   <targetVersion>Alpha 12d</targetVersion>
   <description>Collaboration of multiple mods created by some of the most amazing modders on the planet.</description>
   <!--
 Update (23/09/15)
-V1.0210
+V1.0211
 A12d Modpack
-+Aditional joy Objects
-   -Added furniture items are now available at the pleasure cruiser trader
++T Condition Red
+   -Added Furniture trade tags to the Alarm Lamp
    
-+Clutter
-   -Added furniture trade tags to the Couch, Comfy Seat, Redesigned Stool, Coloured Floor Lamps, and Hydroponic Pod
-   
-+Finer Things
-   -Added furniture trade tags to the Coffee Machine
++Stroyent
+   -Added Furniture trade tags to the Stroyent Processor
    
 +SCA11Core
-   -Added furniture items are now available at exotic goods trader, crafted goods trader, and manufactured resources trader 
-   -Added furniture trade tags to the Beds, Canning Stove, Grill, Organ Vat, Sun Lamp, Outdoor Lamps, Plant Pot, Hydroponics Basin, Punching Bag, CPR Dummy, Tool Cabinet, Ceiling Lights, aesthetic desk, and aesthetic shelf
-   -Added exotic trade tags to the Vitals Monitor and Multi Analyzer
+   -Added sell price factors to the Multi Analyzer and Vitals Monitor
   -->
   </ModMetaData>
 
