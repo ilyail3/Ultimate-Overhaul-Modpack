@@ -412,6 +412,7 @@
 		<placeWorkers>
 			<li>PlaceWorker_ShowFacilitiesConnections</li>
 		</placeWorkers>
+		<researchPrerequisite>Machining</researchPrerequisite>
   </ThingDef>
 
 
@@ -506,6 +507,7 @@
 		<placeWorkers>
 			<li>PlaceWorker_ShowFacilitiesConnections</li>
 		</placeWorkers>
+		<researchPrerequisite>Stonecutting</researchPrerequisite>
   </ThingDef>
   
   
