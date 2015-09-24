@@ -1,26 +1,21 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 
 <ModMetaData>
-  <name>Ultimate Overhaul Modpack V1.0211</name>
+  <name>Ultimate Overhaul Modpack V1.0212</name>
   <author>Ninefinger</author>
   <url>https://ludeon.com/forums/index.php?topic=11934.0</url>
   <targetVersion>Alpha 12d</targetVersion>
   <description>Collaboration of multiple mods created by some of the most amazing modders on the planet.</description>
   <!--
 Update (23/09/15)
-V1.0211
+V1.0212
 A12d Modpack
-+T Condition Red
-   -Added Furniture trade tags to the Alarm Lamp
-   
-+Stroyent
-   -Added Furniture trade tags to the Stroyent Processor
++Ability Pack
+   -Slight adjustment to think tree
    
 +SCA11Core
-   -Added sell price factors to the Multi Analyzer and Vitals Monitor
+   -Ethanol fuel can now be made from corn, wheat and rice.
    
-+Mobile Mineral Sonar
-   -Removed minified furniture from mobile mineral sonar device due to a bug of it disappearing upon uninstalling
   -->
   </ModMetaData>
 
