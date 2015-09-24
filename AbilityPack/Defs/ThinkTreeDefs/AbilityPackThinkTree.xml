@@ -8,10 +8,10 @@
 			<subNodes>
 				<li Class="AbilityPack.ThinkNode_StartAbility" />
 				<li Class="ThinkNode_Subtree">
-					<treeDef>SquadBrainDuty</treeDef>
+					<treeDef>Downed</treeDef>
 				</li>
-				<li Class="JobGiver_WanderCurrentRoom">
-					<maxDanger>Some</maxDanger>
+				<li Class="ThinkNode_Subtree">
+					<treeDef>SquadBrainDuty</treeDef>
 				</li>
 				<li Class="JobGiver_WanderAnywhere">
 					<maxDanger>Deadly</maxDanger>
