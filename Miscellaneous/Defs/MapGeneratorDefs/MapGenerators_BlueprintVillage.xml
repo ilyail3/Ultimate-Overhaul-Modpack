@@ -151,7 +151,7 @@
         <thingDefs>
           <li>MiningHelmet</li>
         </thingDefs>
-        <spotMustBeStandable>false</spotMustBeStandable>
+        <spotMustBeStandable>true</spotMustBeStandable>
         <groupSizeRange><min>1</min><max>1</max></groupSizeRange>
         <stackCountRange><min>1</min><max>1</max></stackCountRange>
         <countAtPlayerStart>1</countAtPlayerStart>
