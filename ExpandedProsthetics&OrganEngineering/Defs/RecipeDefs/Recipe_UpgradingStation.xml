@@ -405,7 +405,7 @@
 
    <RecipeDef ParentName="RecipeAdvancedProsthesis">
       <defName>CreatePowerClaw</defName>
-      <label>Upgrade scyther blade</label>
+      <label>Upgrade scyther blade to power claw</label>
       <description>Upgrades a scyther blade to a power claw using steel and vancidium.</description>
       <jobString>Upgrading bionic.</jobString>
       <ingredients>
