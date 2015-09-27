@@ -1213,8 +1213,8 @@
 		<label>extract biomatter from corpse</label>
 		<description>Extracts biomatter from a corpse.</description>
 		<jobString>Extracting.</jobString>
-		<workSpeedStat>BrewingSpeed</workSpeedStat>
-		<effectWorking>Cook</effectWorking>
+		<workSpeedStat>MedicalOperationSpeed</workSpeedStat>
+		<effectWorking>Surgery</effectWorking>
 		<soundWorking>Recipe_CookMeal</soundWorking>
 		<allowMixingIngredients>true</allowMixingIngredients>
 		<workAmount>5000</workAmount>
@@ -1304,8 +1304,8 @@
 		<label>make artificial bone</label>
 		<description>Make an artificial bone from plasteel bars and biomatter</description>
 		<jobString>Making an artificial bone.</jobString>
-		<workSpeedStat>SmithingSpeed</workSpeedStat>
-		<effectWorking>Smith</effectWorking>
+		<workSpeedStat>MedicalOperationSpeed</workSpeedStat>
+		<effectWorking>Surgery</effectWorking>
 		<soundWorking>Recipe_Smith</soundWorking>
 		<unfinishedThingDef>UnfinishedProsthesis</unfinishedThingDef>
 		<workAmount>2400</workAmount>
@@ -1487,8 +1487,8 @@
 		<label>grow natural eye</label>
 		<description>Grow a natural eye from biomatter</description>
 		<jobString>Growing a natural eye.</jobString>
-		<workSpeedStat>SmithingSpeed</workSpeedStat>
-		<effectWorking>Cook</effectWorking>
+		<workSpeedStat>MedicalOperationSpeed</workSpeedStat>
+		<effectWorking>Surgery</effectWorking>
 		<soundWorking>Recipe_CookMeal</soundWorking>
 		<unfinishedThingDef>UnfinishedProsthesis</unfinishedThingDef>
 		<workAmount>5000</workAmount>
@@ -1533,8 +1533,8 @@
 		<label>grow natural ear</label>
 		<description>Grow a natural ear from biomatter</description>
 		<jobString>Growing a natural ear.</jobString>
-		<workSpeedStat>SmithingSpeed</workSpeedStat>
-		<effectWorking>Cook</effectWorking>
+		<workSpeedStat>MedicalOperationSpeed</workSpeedStat>
+		<effectWorking>Surgery</effectWorking>
 		<soundWorking>Recipe_CookMeal</soundWorking>
 		<unfinishedThingDef>UnfinishedProsthesis</unfinishedThingDef>
 		<workAmount>5000</workAmount>
@@ -1570,8 +1570,8 @@
 		<label>grow natural nose</label>
 		<description>Grow a natural nose from biomatter</description>
 		<jobString>Growing a natural nose.</jobString>
-		<workSpeedStat>SmithingSpeed</workSpeedStat>
-		<effectWorking>Cook</effectWorking>
+		<workSpeedStat>MedicalOperationSpeed</workSpeedStat>
+		<effectWorking>Surgery</effectWorking>
 		<soundWorking>Recipe_CookMeal</soundWorking>
 		<unfinishedThingDef>UnfinishedProsthesis</unfinishedThingDef>
 		<workAmount>5000</workAmount>
@@ -1616,8 +1616,8 @@
 		<label>grow natural heart</label>
 		<description>Grow a natural heart from biomatter</description>
 		<jobString>Growing a natural heart.</jobString>
-		<workSpeedStat>SmithingSpeed</workSpeedStat>
-		<effectWorking>Cook</effectWorking>
+		<workSpeedStat>MedicalOperationSpeed</workSpeedStat>
+		<effectWorking>Surgery</effectWorking>
 		<soundWorking>Recipe_CookMeal</soundWorking>
 		<unfinishedThingDef>UnfinishedProsthesis</unfinishedThingDef>
 		<workAmount>5000</workAmount>
@@ -1662,8 +1662,8 @@
 		<label>grow natural lung</label>
 		<description>Grow a natural lung from biomatter</description>
 		<jobString>Growing a natural lung.</jobString>
-		<workSpeedStat>SmithingSpeed</workSpeedStat>
-		<effectWorking>Cook</effectWorking>
+		<workSpeedStat>MedicalOperationSpeed</workSpeedStat>
+		<effectWorking>Surgery</effectWorking>
 		<soundWorking>Recipe_CookMeal</soundWorking>
 		<unfinishedThingDef>UnfinishedProsthesis</unfinishedThingDef>
 		<workAmount>5000</workAmount>
@@ -1708,8 +1708,8 @@
 		<label>grow natural liver</label>
 		<description>Grow a natural liver from biomatter</description>
 		<jobString>Growing a natural liver.</jobString>
-		<workSpeedStat>SmithingSpeed</workSpeedStat>
-		<effectWorking>Cook</effectWorking>
+		<workSpeedStat>MedicalOperationSpeed</workSpeedStat>
+		<effectWorking>Surgery</effectWorking>
 		<soundWorking>Recipe_CookMeal</soundWorking>
 		<unfinishedThingDef>UnfinishedProsthesis</unfinishedThingDef>
 		<workAmount>5000</workAmount>
@@ -1754,8 +1754,8 @@
 		<label>grow natural kidney</label>
 		<description>Grow a natural kidney from biomatter</description>
 		<jobString>Growing a natural kidney.</jobString>
-		<workSpeedStat>SmithingSpeed</workSpeedStat>
-		<effectWorking>Cook</effectWorking>
+		<workSpeedStat>MedicalOperationSpeed</workSpeedStat>
+		<effectWorking>Surgery</effectWorking>
 		<soundWorking>Recipe_CookMeal</soundWorking>
 		<unfinishedThingDef>UnfinishedProsthesis</unfinishedThingDef>
 		<workAmount>5000</workAmount>
@@ -1800,8 +1800,8 @@
 		<label>grow natural stomach</label>
 		<description>Grow a natural stomach from biomatter</description>
 		<jobString>Growing a natural stomach.</jobString>
-		<workSpeedStat>SmithingSpeed</workSpeedStat>
-		<effectWorking>Cook</effectWorking>
+		<workSpeedStat>MedicalOperationSpeed</workSpeedStat>
+		<effectWorking>Surgery</effectWorking>
 		<soundWorking>Recipe_CookMeal</soundWorking>
 		<unfinishedThingDef>UnfinishedProsthesis</unfinishedThingDef>
 		<workAmount>5000</workAmount>
