@@ -1158,6 +1158,14 @@
 			<li>
 				<filter>
 					<thingDefs>
+						<li>aloe</li>
+					</thingDefs>
+				</filter>
+				<count>5</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
 						<li>Cloth</li>
 					</thingDefs>
 				</filter>
@@ -1167,6 +1175,7 @@
 		<fixedIngredientFilter>
 			<thingDefs>
 				<li>HerbalMedicine</li>
+				<li>aloe</li>
 				<li>Cloth</li>
 			</thingDefs>
 		</fixedIngredientFilter>
