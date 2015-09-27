@@ -1,25 +1,17 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 
 <ModMetaData>
-  <name>Ultimate Overhaul Modpack V1.0213</name>
+  <name>Ultimate Overhaul Modpack V1.0214</name>
   <author>Ninefinger</author>
   <url>https://ludeon.com/forums/index.php?topic=11934.0</url>
   <targetVersion>Alpha 12d</targetVersion>
   <description>Collaboration of multiple mods created by some of the most amazing modders on the planet.</description>
   <!--
 Update (27/09/15)
-V1.0213
+V1.0214
 A12d Modpack
-+Auto Equip
++Community Core Library
    -Updated to latest release
-   -Added to modpack
-   
-+Auto Equip Infusion
-   -Updated to latest release
-   -Added to modpack
-   
-+ModConfig
-   -Updated all ModConfig files
    
   -->
   </ModMetaData>
