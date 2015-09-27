@@ -1142,9 +1142,9 @@
 		<label>make medicine</label>
 		<description>Make medicine from herbs and cloth.</description>
 		<jobString>Making medicine.</jobString>
-		<workSpeedStat>SmithingSpeed</workSpeedStat>
+		<workSpeedStat>MedicalOperationSpeed</workSpeedStat>
 		<workAmount>1600</workAmount>
-		<effectWorking>Cook</effectWorking>
+		<effectWorking>Surgery</effectWorking>
 		<soundWorking>Recipe_CookMeal</soundWorking>
 		<ingredients>
 			<li>
