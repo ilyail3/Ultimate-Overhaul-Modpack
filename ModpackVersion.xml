@@ -41,6 +41,10 @@ A12d Modpack
    -Changed effect working stat for recipe make medicine to Surgery
    -Changed recipe make medicine to now require 5 aloe
    
++Weed
+   -Changed work speed stat for Recipe Make Medical Marijuana to Medical Operation Speed
+   -Changed effect working stat for recipe Make Medical Marijuana to Surgery 
+   
   -->
   </ModMetaData>
 
