@@ -7,8 +7,8 @@
     <label>Make antibiotics</label>
     <description>Brew a bottle of medical drink from xerigium and hops.</description>
     <jobString>Brewing medical drink.</jobString>
-    <workSpeedStat>BrewingSpeed</workSpeedStat>
-    <effectWorking>Cook</effectWorking>
+    <workSpeedStat>MedicalOperationSpeed</workSpeedStat>
+    <effectWorking>Surgery</effectWorking>
     <soundWorking>Recipe_Brewing</soundWorking>
     <allowMixingIngredients>true</allowMixingIngredients>
     <workAmount>1000</workAmount>
