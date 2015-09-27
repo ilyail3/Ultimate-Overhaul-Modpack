@@ -1146,6 +1146,9 @@
 		<workAmount>1600</workAmount>
 		<effectWorking>Surgery</effectWorking>
 		<soundWorking>Recipe_CookMeal</soundWorking>
+		<recipeUsers>
+         <li>TableHerbalMed</li>
+      </recipeUsers>
 		<ingredients>
 			<li>
 				<filter>
