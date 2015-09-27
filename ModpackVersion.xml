@@ -35,9 +35,11 @@ A12d Modpack
    -Changed effect working stat for recipe make aloe to Surgery
    -Changed work speed stat for Recipe make herbal medicine to Medical Operation Speed
    -Changed effect working stat for recipe make herbal medicine to Surgery
-   -Changed work speed stat for Recipe Make antibiotics to Medical Operation Speed
-   -Changed effect working stat for recipe Make antibiotics to Surgery
-   
+   -Changed work speed stat for Recipe make antibiotics to Medical Operation Speed
+   -Changed effect working stat for recipe make antibiotics to Surgery
+   -Changed work speed stat for Recipe make medicine to Medical Operation Speed
+   -Changed effect working stat for recipe make medicine to Surgery
+   -Changed recipe make medicine to now require 5 aloe
    
   -->
   </ModMetaData>
