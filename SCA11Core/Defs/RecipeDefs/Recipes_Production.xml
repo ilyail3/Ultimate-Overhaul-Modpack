@@ -1138,12 +1138,60 @@
 	</RecipeDef>
 	
 	<RecipeDef>
-		<defName>MakeMedicine</defName>
+		<defName>MakeMedicineHerb</defName>
 		<label>make medicine</label>
 		<description>Make medicine from herbs and cloth.</description>
 		<jobString>Making medicine.</jobString>
 		<workSpeedStat>MedicalOperationSpeed</workSpeedStat>
 		<workAmount>1600</workAmount>
+		<effectWorking>Surgery</effectWorking>
+		<soundWorking>Recipe_CookMeal</soundWorking>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>HerbalMedicine</li>
+					</thingDefs>
+				</filter>
+				<count>2</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>aloe</li>
+					</thingDefs>
+				</filter>
+				<count>5</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Cloth</li>
+					</thingDefs>
+				</filter>
+				<count>5</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>HerbalMedicine</li>
+				<li>aloe</li>
+				<li>Cloth</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<products>
+			<Medicine>1</Medicine>
+		</products>
+		<workSkill>Medicine</workSkill>
+	</RecipeDef>
+	
+	<RecipeDef>
+		<defName>MakeMedicine</defName>
+		<label>make medicine</label>
+		<description>Make medicine from herbs and cloth.</description>
+		<jobString>Making medicine.</jobString>
+		<workSpeedStat>MedicalOperationSpeed</workSpeedStat>
+		<workAmount>800</workAmount>
 		<effectWorking>Surgery</effectWorking>
 		<soundWorking>Recipe_CookMeal</soundWorking>
 		<ingredients>
