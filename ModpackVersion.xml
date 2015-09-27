@@ -31,6 +31,11 @@ A12d Modpack
    -Changed effect working stat for recipe grow natural kidney to Surgery
    -Changed work speed stat for Recipe grow natural stomach to Medical Operation Speed
    -Changed effect working stat for recipe grow natural stomach to Surgery
+   -Changed work speed stat for Recipe make aloe to Medical Operation Speed
+   -Changed effect working stat for recipe make aloe to Surgery
+   -Changed work speed stat for Recipe make herbal medicine to Medical Operation Speed
+   -Changed effect working stat for recipe make herbal medicine to Surgery
+   
    
   -->
   </ModMetaData>
