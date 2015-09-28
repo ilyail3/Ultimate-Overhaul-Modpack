@@ -1,52 +1,17 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 
 <ModMetaData>
-  <name>Ultimate Overhaul Modpack V1.0215</name>
+  <name>Ultimate Overhaul Modpack V1.0216</name>
   <author>Ninefinger</author>
   <url>https://ludeon.com/forums/index.php?topic=11934.0</url>
   <targetVersion>Alpha 12d</targetVersion>
   <description>Collaboration of multiple mods created by some of the most amazing modders on the planet.</description>
   <!--
 Update (27/09/15)
-V1.0215
+V1.0216
 A12d Modpack
-+SCA11Core
-   -Changed work speed stat for Recipe extracting Biomatter from corpse to Medical Operation Speed
-   -Changed effect working stat for recipe extract Biomatter from corpse to Surgery
-   -Changed work speed stat for Recipe make artificial bone to Medical Operation Speed
-   -Changed effect working stat for recipe make artificial bone to Surgery
-   -Changed work speed stat for Recipe grow natural eye to Medical Operation Speed
-   -Changed effect working stat for recipe grow natural eye to Surgery
-   -Changed work speed stat for Recipe grow natural ear to Medical Operation Speed
-   -Changed effect working stat for recipe grow natural ear to Surgery
-   -Changed work speed stat for Recipe grow natural nose to Medical Operation Speed
-   -Changed effect working stat for recipe grow natural nose to Surgery
-   -Changed work speed stat for Recipe grow natural heart to Medical Operation Speed
-   -Changed effect working stat for recipe grow natural heart to Surgery
-   -Changed work speed stat for Recipe grow natural lung to Medical Operation Speed
-   -Changed effect working stat for recipe grow natural lung to Surgery
-   -Changed work speed stat for Recipe grow natural liver to Medical Operation Speed
-   -Changed effect working stat for recipe grow natural liver to Surgery
-   -Changed work speed stat for Recipe grow natural kidney to Medical Operation Speed
-   -Changed effect working stat for recipe grow natural kidney to Surgery
-   -Changed work speed stat for Recipe grow natural stomach to Medical Operation Speed
-   -Changed effect working stat for recipe grow natural stomach to Surgery
-   -Changed work speed stat for Recipe make aloe to Medical Operation Speed
-   -Changed effect working stat for recipe make aloe to Surgery
-   -Changed work speed stat for Recipe make herbal medicine to Medical Operation Speed
-   -Changed effect working stat for recipe make herbal medicine to Surgery
-   -Changed work speed stat for Recipe make medicine to Medical Operation Speed
-   -Changed effect working stat for recipe make medicine to Surgery
-   -Changed recipe make medicine to now require 5 aloe
-   -Added recipe make medicine at herbalist table
-   
-+Medical Drinks
-   -Changed work speed stat for Recipe make antibiotics to Medical Operation Speed
-   -Changed effect working stat for recipe make antibiotics to Surgery
-   
-+Weed
-   -Changed work speed stat for Recipe Make Medical Marijuana to Medical Operation Speed
-   -Changed effect working stat for recipe Make Medical Marijuana to Surgery 
++Hospitality
+   -Updated to latest release
    
   -->
   </ModMetaData>
