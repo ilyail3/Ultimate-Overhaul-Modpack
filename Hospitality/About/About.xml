@@ -1,10 +1,10 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <ModMetaData>
-  <name>Hospitality 1.06b</name>
+  <name>Hospitality 1.08</name>
   <author>Orion</author>
   <url>https://ludeon.com/forums/index.php?action=profile;u=33462</url>
-  <targetVersion>Alpha 11</targetVersion>
-  <description>Allows you to recruit visitors and passing friendlies, at a price, of course. 
+  <targetVersion>Alpha 12</targetVersion>
+  <description>Allows you to recruit visitors. At a price, of course. 
   
   You can also improve your relationship with visiting factions.
   
@@ -12,5 +12,7 @@
   - no more error when recruiting someone with a leaderless faction.
   - guests may become tired of talking with you ;)
   - changed relationship impacts
+  
+  Updated to A12 by Cebullus!
   </description>
 </ModMetaData>
