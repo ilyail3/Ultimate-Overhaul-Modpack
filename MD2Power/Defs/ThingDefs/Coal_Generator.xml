@@ -55,7 +55,7 @@
     </statBases>
     <description>Feeds coal into a coal burner.</description>
     <costList>
-      <SteelBar>40</SteelBar>
+      <SteelBar>15</SteelBar>
     </costList>
     <tickerType>Never</tickerType>
     <rotatable>true</rotatable>
@@ -96,18 +96,21 @@
     <description>Produces electricity from burning coal. Coal is fed into it via a coal feeder placed on the side.</description>
     <size>(2,3)</size>
     <costList>
-      <SteelBar>900</SteelBar>
-	  <PlasteelBar>200</PlasteelBar>
-	  <Uranium>500</Uranium>
-	  <IntegratedCircuitsBoard>50</IntegratedCircuitsBoard>
-    </costList>
+		<SteelBar>150</SteelBar>
+		<CopperBar>75</CopperBar>
+	</costList>
     <comps>
       <li>
         <compClass>CompPowerTrader</compClass>
-        <basePowerConsumption>-9600</basePowerConsumption>
+        <basePowerConsumption>-1500</basePowerConsumption>
         <transmitsPower>true</transmitsPower>
         <powerToggleable>false</powerToggleable>
       </li>
+	  <li>
+		<compClass>CompHeatPusher</compClass>
+		<heatPerSecond>3</heatPerSecond>
+		<heatPushMaxTemperature>25000</heatPushMaxTemperature>
+	  </li>
       <li>
         <compClass>CompGlower</compClass>
         <glowRadius>6</glowRadius>

@@ -257,6 +257,14 @@
 				</countRange>
 			</li>
 			<li Class="StockGenerator_SingleDef">
+				<thingDef>MD2Coal</thingDef>
+				<price>Cheap</price>
+				<countRange>
+					<min>800</min>
+					<max>1500</max>
+				</countRange>
+			</li>
+			<li Class="StockGenerator_SingleDef">
 				<thingDef>Plasteel</thingDef>
 				<price>Cheap</price>
 				<countRange>

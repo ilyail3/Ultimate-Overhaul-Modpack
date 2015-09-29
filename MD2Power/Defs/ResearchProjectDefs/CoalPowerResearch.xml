@@ -10,7 +10,7 @@
     </description>
     <totalCost>650</totalCost>
     <prerequisites>
-      <li>PowerIV</li>
+      <li>PowerI</li>
     </prerequisites>
   </ResearchProjectDef>
 

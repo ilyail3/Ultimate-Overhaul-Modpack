@@ -1,17 +1,28 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 
 <ModMetaData>
-  <name>Ultimate Overhaul Modpack V1.0216</name>
+  <name>Ultimate Overhaul Modpack V1.0217</name>
   <author>Ninefinger</author>
   <url>https://ludeon.com/forums/index.php?topic=11934.0</url>
   <targetVersion>Alpha 12d</targetVersion>
   <description>Collaboration of multiple mods created by some of the most amazing modders on the planet.</description>
   <!--
 Update (27/09/15)
-V1.0216
+V1.0217
 A12d Modpack
-+Hospitality
-   -Updated to latest release
++MD2 Base
+   -Increased spawn chance of mineable coal
+   -Changed Coal Burner (MD2) research is now unlocked with power I research
+   -Changed Coal Burner will now produce 1500W instead of 9600W
+   -Changed Coal Burner material costs to 150 Steel Bars and 75 Copper Bars
+   -Changed coal feeder Material costs to 15 steel bars
+   -Reduced market value of coal and charcoal
+   -Added Heat Push to coal generator
+   
++SCA11Core
+   -Changed Steam Generator material cost to 150 Steel Bars 50 Copper Bars
+   -Added Coal to the bulk goods trader
+  
    
   -->
   </ModMetaData>

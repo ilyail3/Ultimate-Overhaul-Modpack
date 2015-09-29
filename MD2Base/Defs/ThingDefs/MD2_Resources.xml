@@ -38,7 +38,7 @@
     <useHitPoints>false</useHitPoints>
     <resourceReadoutAlwaysShow>false</resourceReadoutAlwaysShow>
     <statBases>
-      <MarketValue>4</MarketValue>
+      <MarketValue>2</MarketValue>
     </statBases>
     <thingCategories>
       <li>ResourcesRaw</li>
@@ -63,7 +63,7 @@
     <useHitPoints>false</useHitPoints>
     <resourceReadoutAlwaysShow>false</resourceReadoutAlwaysShow>
     <statBases>
-      <MarketValue>20</MarketValue>
+      <MarketValue>1</MarketValue>
     </statBases>
     <thingCategories>
       <li>ResourcesRaw</li>
@@ -86,13 +86,12 @@
     <useHitPoints>false</useHitPoints>
     <resourceReadoutAlwaysShow>false</resourceReadoutAlwaysShow>
     <statBases>
-      <MarketValue>20</MarketValue>
+      <MarketValue>0.5</MarketValue>
     </statBases>
     <thingCategories>
       <li>ResourcesRaw</li>
     </thingCategories>
     <stackLimit>75</stackLimit>
-
   </ThingDef>
 
   <!--Soft clay-->
