@@ -1,29 +1,21 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 
 <ModMetaData>
-  <name>Ultimate Overhaul Modpack V1.0220</name>
+  <name>Ultimate Overhaul Modpack V1.0221</name>
   <author>Ninefinger</author>
   <url>https://ludeon.com/forums/index.php?topic=11934.0</url>
   <targetVersion>Alpha 12d</targetVersion>
   <description>Collaboration of multiple mods created by some of the most amazing modders on the planet.</description>
   <!--
 Update (29/09/15)
-V1.0220
+V1.0221
 A12d Modpack
 +SCA11Core
-   -Added specific weapon categories
+   -Removed Liandri corp Weapons weapons from combat supplier
    
-+Project Armory
++Liandri Corp
    -Changed is no longer a mandatory mod
-   -Removed specific weapon categories
-   -Added weapon crafting tables for PA weapons
-   -Added work givers for PA weapon crafting tables
-   -Added PA weapon crafting table textures
-   
-+Weapon Crafting
-   -Removed PA weapon crafting tables
-   -Removed work givers for PA weapon crafting tables
-   -Removed PA weapon crafting table textures
+   -Added Liandri corp Weapons weapons from combat supplier
 
   
    

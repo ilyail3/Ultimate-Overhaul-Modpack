@@ -865,17 +865,6 @@
 				</totalPriceRange>
 			</li>
 			<li Class="StockGenerator_Category">
-			<categoryDef>WeaponsLiandriCorp</categoryDef>
-			<thingDefCountRange>
-			<min>5</min>
-			<max>25</max>
-			</thingDefCountRange>
-			<totalPriceRange>
-			<min>400</min>
-			<max>10000</max>
-			</totalPriceRange>
-			</li>
-			<li Class="StockGenerator_Category">
 				<categoryDef>WeaponsMelee</categoryDef>
 				<thingDefCountRange>
 					<min>3</min>
