@@ -3,7 +3,7 @@
 
 	<!--========================= Recipes (Handcrafted) =============================-->
 	<RecipeDef>
-		<defName>Itchy_MakeStoneBlocksSandstone</defName>
+		<defName>RecipeWorkerCounter_MakeStoneBlocksSandstone</defName>
 		<label>make sandstone blocks</label>
 		<description>Cuts sandstone chunks into usable stone blocks.</description>
 		<jobString>Stonecutting.</jobString>
@@ -12,7 +12,6 @@
 		<effectWorking>CutStone</effectWorking>
 		<workSkillLearnFactor>0.25</workSkillLearnFactor>
 		<soundWorking>Recipe_MakeStoneBlocks</soundWorking>
-		<targetCountAdjustment>50</targetCountAdjustment>
 		<ingredients>
 			<li>
 				<filter>
@@ -38,7 +37,7 @@
 	</RecipeDef>
 	
 	<RecipeDef>
-		<defName>Itchy_MakeStoneBlocksGranite</defName>
+		<defName>RecipeWorkerCounter_MakeStoneBlocksGranite</defName>
 		<label>make granite blocks</label>
 		<description>Cuts granite chunks into usable stone blocks.</description>
 		<jobString>Stonecutting.</jobString>
@@ -73,7 +72,7 @@
 	</RecipeDef>
 	
 	<RecipeDef>
-		<defName>Itchy_MakeStoneBlocksLimestone</defName>
+		<defName>RecipeWorkerCounter_MakeStoneBlocksLimestone</defName>
 		<label>make limestone blocks</label>
 		<description>Cuts limestone chunks into usable stone blocks.</description>
 		<jobString>Stonecutting.</jobString>
@@ -108,7 +107,7 @@
 	</RecipeDef>
 	
 	<RecipeDef>
-		<defName>Itchy_MakeStoneBlocksSlate</defName>
+		<defName>RecipeWorkerCounter_MakeStoneBlocksSlate</defName>
 		<label>make slate blocks</label>
 		<description>Cuts slate chunks into usable stone blocks.</description>
 		<jobString>Stonecutting.</jobString>
@@ -143,7 +142,7 @@
 	</RecipeDef>
 	
 	<RecipeDef>
-		<defName>Itchy_MakeStoneBlocksMarble</defName>
+		<defName>RecipeWorkerCounter_MakeStoneBlocksMarble</defName>
 		<label>make marble blocks</label>
 		<description>Cuts marble chunks into usable stone blocks.</description>
 		<jobString>Stonecutting.</jobString>
@@ -436,7 +435,7 @@
 	<!--========================= Recipes (Powered) =============================-->
 	
 	<RecipeDef>
-		<defName>Itchy_MakeStoneBlocksSandstones</defName>
+		<defName>RecipeWorkerCounter_MakeStoneBlocksSandstones</defName>
 		<label>make sandstone blocks</label>
 		<description>Cuts sandstone chunks into usable stone blocks.</description>
 		<jobString>Stonecutting.</jobString>
@@ -471,7 +470,7 @@
 	</RecipeDef>
 	
 	<RecipeDef>
-		<defName>Itchy_MakeStoneBlocksGranites</defName>
+		<defName>RecipeWorkerCounter_MakeStoneBlocksGranites</defName>
 		<label>make granite blocks</label>
 		<description>Cuts granite chunks into usable stone blocks.</description>
 		<jobString>Stonecutting.</jobString>
@@ -506,7 +505,7 @@
 	</RecipeDef>
 	
 	<RecipeDef>
-		<defName>Itchy_MakeStoneBlocksLimestones</defName>
+		<defName>RecipeWorkerCounter_MakeStoneBlocksLimestones</defName>
 		<label>make limestone blocks</label>
 		<description>Cuts limestone chunks into usable stone blocks.</description>
 		<jobString>Stonecutting.</jobString>
@@ -541,7 +540,7 @@
 	</RecipeDef>
 	
 	<RecipeDef>
-		<defName>Itchy_MakeStoneBlocksSlates</defName>
+		<defName>RecipeWorkerCounter_MakeStoneBlocksSlates</defName>
 		<label>make slate blocks</label>
 		<description>Cuts slate chunks into usable stone blocks.</description>
 		<jobString>Stonecutting.</jobString>
@@ -576,7 +575,7 @@
 	</RecipeDef>
 	
 	<RecipeDef>
-		<defName>Itchy_MakeStoneBlocksMarbles</defName>
+		<defName>RecipeWorkerCounter_MakeStoneBlocksMarbles</defName>
 		<label>make marble blocks</label>
 		<description>Cuts marble chunks into usable stone blocks.</description>
 		<jobString>Stonecutting.</jobString>
