@@ -2,6 +2,26 @@
 
 <Defs>
 
+   <ThingDef Name="ResourceBase" Abstract="True">
+    <thingClass>ThingWithComps</thingClass>
+    <label>unspecified resource</label>
+    <category>Item</category>
+    <resourceReadoutPriority>Last</resourceReadoutPriority>
+    <useHitPoints>true</useHitPoints>
+    <selectable>true</selectable>
+    <altitudeLayer>Item</altitudeLayer>
+    <stackLimit>25</stackLimit>
+    <comps>
+      <li>
+        <compClass>CompForbiddable</compClass>
+      </li>
+    </comps>
+    <alwaysHaulable>true</alwaysHaulable>
+    <drawGUIOverlay>true</drawGUIOverlay>
+    <rotatable>false</rotatable>
+    <pathCost>15</pathCost>
+  </ThingDef>
+<!--
   <ThingDef Name="MealBase" Abstract="True">
     <label>meal</label>
     <thingClass>Medicine</thingClass>
@@ -29,12 +49,42 @@
     <pathCost>15</pathCost>
     <resourceReadoutPriority>Last</resourceReadoutPriority>
     <drawGUIOverlay>true</drawGUIOverlay>
+  </ThingDef>
+  -->
+  <ThingDef ParentName="ResourceBase">
+    <defName>MedicalDrink</defName>
+    <label>antibiotics</label>
+    <description>A concentrated extract out of xerigium and some hops. Tastes awful but boosts the immune system.</description>
+    <thingClass>Medicine</thingClass>
+    <graphicData>
+      <texPath>Things/Item/Drug/MedicalDrink</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <soundInteract>Standard_Drop</soundInteract>
+    <soundDrop>Standard_Drop</soundDrop>
+    <statBases>
+      <MaxHitPoints>50</MaxHitPoints>
+      <MarketValue>25</MarketValue>
+      <Flammability>1.0</Flammability>
+      <DeteriorationRate>0.25</DeteriorationRate>
+    </statBases>
 	<ingestible>
       <maxNumToIngestAtOnce>1</maxNumToIngestAtOnce>
+      <soundEat>Ingest_Beer</soundEat>
+      <isPleasureDrug>false</isPleasureDrug>
+      <hediffGivers>
+        <li>
+          <chance>1</chance>
+          <hediffDef>MedicalDrink</hediffDef>
+        </li>
+      </hediffGivers>
     </ingestible>
+    <thingCategories>
+      <li>Medicine</li>
+    </thingCategories>
   </ThingDef>
-
-  <ThingDef ParentName="MealBase">
+<!--
+  <ThingDef ParentName="ResourceBase">
     <defName>MedicalDrink</defName>
     <label>antibiotics</label>
     <description>A concentrated extract out of xerigium and some hops. Tastes awful but boosts the immune system.</description>
@@ -45,14 +95,12 @@
     <rotatable>false</rotatable>
     <stackLimit>25</stackLimit>
     <statBases>
-      <DeteriorationRate>0</DeteriorationRate>
+      <DeteriorationRate>0.25</DeteriorationRate>
       <MarketValue>25</MarketValue>
 	  <SellPriceFactor>0.2</SellPriceFactor>
     </statBases>
     <ingestible>
-      <nutrition>0.08</nutrition>
       <maxNumToIngestAtOnce>1</maxNumToIngestAtOnce>
-      <preferability>NeverForNutrition</preferability>
       <soundEat>Ingest_Beer</soundEat>
       <isPleasureDrug>false</isPleasureDrug>
       <hediffGivers>
@@ -63,5 +111,5 @@
       </hediffGivers>
     </ingestible>
   </ThingDef>
-  
+  -->
 </Defs>
