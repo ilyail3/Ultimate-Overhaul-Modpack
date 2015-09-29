@@ -195,52 +195,8 @@
 						<li>RawCotton</li>
 					</thingDefs>
 				</filter>
-				<count>5</count>
+				<count>10</count>
 			</li>
-			<li>
-				<filter>
-					<thingDefs>
-						<li>TextileStrips</li>
-					</thingDefs>
-				</filter>
-				<count>5</count>
-			</li>
-			<li>
-				<filter>
-					<thingDefs>
-						<li>PlasteelBar</li>
-					</thingDefs>
-				</filter>
-				<count>5</count>
-			</li>
-		</ingredients>
-		<fixedIngredientFilter>
-			<thingDefs>
-				<li>RawCotton</li>
-				<li>PlasteelBar</li>
-				<li>TextileStrips</li>
-			</thingDefs>
-		</fixedIngredientFilter>
-		<products>
-			<Synthread>5</Synthread>
-		</products>
-		<workSkill>Crafting</workSkill>
-	</RecipeDef>
-	
-	<RecipeDef>
-		<defName>MakeScrapSynthreadCloth</defName>
-		<label>make recycled synthread cloth (Strips Only)</label>
-		<description>Make synthread cloth from raw cotton and plasteel.</description>
-		<jobString>Making synthread cloth.</jobString>
-		<workAmount>2000</workAmount>
-		<workSpeedStat>TailoringSpeed</workSpeedStat>
-		<effectWorking>Tailor</effectWorking>
-		<soundWorking>Recipe_Tailor</soundWorking>
-		<allowMixingIngredients>true</allowMixingIngredients>
-		<recipeUsers>
-			<li>TableLoom</li>
-		</recipeUsers>
-		<ingredients>
 			<li>
 				<filter>
 					<thingDefs>
@@ -266,7 +222,51 @@
 			</thingDefs>
 		</fixedIngredientFilter>
 		<products>
-			<Synthread>5</Synthread>
+			<Synthread>10</Synthread>
+		</products>
+		<workSkill>Crafting</workSkill>
+	</RecipeDef>
+	
+	<RecipeDef>
+		<defName>MakeScrapSynthreadCloth</defName>
+		<label>make recycled synthread cloth (Strips Only)</label>
+		<description>Make synthread cloth from raw cotton and plasteel.</description>
+		<jobString>Making synthread cloth.</jobString>
+		<workAmount>2000</workAmount>
+		<workSpeedStat>TailoringSpeed</workSpeedStat>
+		<effectWorking>Tailor</effectWorking>
+		<soundWorking>Recipe_Tailor</soundWorking>
+		<allowMixingIngredients>true</allowMixingIngredients>
+		<recipeUsers>
+			<li>TableLoom</li>
+		</recipeUsers>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>TextileStrips</li>
+					</thingDefs>
+				</filter>
+				<count>20</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>PlasteelBar</li>
+					</thingDefs>
+				</filter>
+				<count>5</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>RawCotton</li>
+				<li>PlasteelBar</li>
+				<li>TextileStrips</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<products>
+			<Synthread>10</Synthread>
 		</products>
 		<workSkill>Crafting</workSkill>
 	</RecipeDef>

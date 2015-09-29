@@ -1,23 +1,17 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 
 <ModMetaData>
-  <name>Ultimate Overhaul Modpack V1.0218</name>
+  <name>Ultimate Overhaul Modpack V1.0219</name>
   <author>Ninefinger</author>
   <url>https://ludeon.com/forums/index.php?topic=11934.0</url>
   <targetVersion>Alpha 12d</targetVersion>
   <description>Collaboration of multiple mods created by some of the most amazing modders on the planet.</description>
   <!--
-Update (27/09/15)
-V1.0218
+Update (29/09/15)
+V1.0219
 A12d Modpack
-+Recycling
-   -Removed Plateel Textile strips
-   -Changed recipe make recycled synthread cloth to now require Raw Cotton, Textile Strips, and Plasteel Bars
-   -Added recipe make recycled synthread cloth (Strips Only) requires textile strips and Plasteel Bars
-
 +SCA11Core
-   -Changed recipe make synthread cloth to now require Raw Cotton and Plasteel Bars
-   -Reduced recipe make synthread cloth output to 5 synthread cloth from 10   
+   -Increased heat output of heated floors 
   
    
   -->

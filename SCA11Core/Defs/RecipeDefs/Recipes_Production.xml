@@ -1003,7 +1003,7 @@
 						<li>RawCotton</li>
 					</thingDefs>
 				</filter>
-				<count>10</count>
+				<count>20</count>
 			</li>
 			<li>
 				<filter>
@@ -1021,7 +1021,7 @@
 			</thingDefs>
 		</fixedIngredientFilter>
 		<products>
-			<Synthread>5</Synthread>
+			<Synthread>10</Synthread>
 		</products>
 		<workSkill>Crafting</workSkill>
 	</RecipeDef>
