@@ -1,13 +1,12 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <WorkGivers>
 
-	
 	<WorkGiverDef>
-		<defName>DoBillsCraftWeapon</defName>
+		<defName>DoBillsCraftWeapons</defName>
 		<giverClass>WorkGiver_DoBill</giverClass>
 		<workType>Smithing</workType>
-		<priorityInType>9</priorityInType>
-		<singleBillGiverDef>WeaponCraftingTable</singleBillGiverDef>
+		<priorityInType>8</priorityInType>
+		<singleBillGiverDef>WeaponCraftingWorkTable</singleBillGiverDef>
 		<verb>smith</verb>
 		<gerund>smithing at</gerund>
 		<requiredCapacities>
@@ -15,18 +14,18 @@
 		</requiredCapacities>
 	</WorkGiverDef>
 	
-	
 	<WorkGiverDef>
-		<defName>DoBillsCraftingWeapons</defName>
+		<defName>DoBillsCraftingWeapon</defName>
 		<giverClass>WorkGiver_DoBill</giverClass>
 		<workType>Smithing</workType>
-		<priorityInType>11</priorityInType>
-		<singleBillGiverDef>WeaponsCraftingWorkTable</singleBillGiverDef>
+		<priorityInType>10</priorityInType>
+		<singleBillGiverDef>WeaponsCraftingTable</singleBillGiverDef>
 		<verb>smith</verb>
 		<gerund>smithing at</gerund>
 		<requiredCapacities>
 			<li>Manipulation</li>
 		</requiredCapacities>
 	</WorkGiverDef>
+	
 	
 </WorkGivers>

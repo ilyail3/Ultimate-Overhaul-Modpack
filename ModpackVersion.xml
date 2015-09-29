@@ -1,24 +1,29 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 
 <ModMetaData>
-  <name>Ultimate Overhaul Modpack V1.0219</name>
+  <name>Ultimate Overhaul Modpack V1.0220</name>
   <author>Ninefinger</author>
   <url>https://ludeon.com/forums/index.php?topic=11934.0</url>
   <targetVersion>Alpha 12d</targetVersion>
   <description>Collaboration of multiple mods created by some of the most amazing modders on the planet.</description>
   <!--
 Update (29/09/15)
-V1.0219
+V1.0220
 A12d Modpack
 +SCA11Core
-   -Increased heat output of heated floors
-   -Increased output of making synthread cloth to 10 from 5
-   -Increased material costs for make synthread cloth to 20 raw cotton from 10 Raw cotton
+   -Added specific weapon categories
    
-+Recycling
-   -Increased output of make recycled synthread cloth to 10 from 5
-   -Increased material cost of make recycled synthread cloth to 10 Raw cotton 10 textile strips 
-   -Increased material cost of make recycled synthread cloth (Strips Only) to 20 textile strips
++Project Armory
+   -Changed is no longer a mandatory mod
+   -Removed specific weapon categories
+   -Added weapon crafting tables for PA weapons
+   -Added work givers for PA weapon crafting tables
+   
++Weapon Crafting
+   -Removed PA weapon crafting tables
+   -Removed work givers for PA weapon crafting tables
+   
+
   
    
   -->
