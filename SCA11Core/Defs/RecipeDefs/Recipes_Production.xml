@@ -1008,20 +1008,20 @@
 			<li>
 				<filter>
 					<thingDefs>
-						<li>PlasteelTextileStrips</li>
+						<li>PlasteelBar</li>
 					</thingDefs>
 				</filter>
-				<count>3</count>
+				<count>5</count>
 			</li>
 		</ingredients>
 		<fixedIngredientFilter>
 			<thingDefs>
 				<li>RawCotton</li>
-				<li>PlasteelTextileStrips</li>
+				<li>PlasteelBar</li>
 			</thingDefs>
 		</fixedIngredientFilter>
 		<products>
-			<Synthread>10</Synthread>
+			<Synthread>5</Synthread>
 		</products>
 		<workSkill>Crafting</workSkill>
 	</RecipeDef>

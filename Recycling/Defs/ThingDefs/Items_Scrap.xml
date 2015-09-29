@@ -65,7 +65,7 @@
 			<li>Textiles</li>
 		</thingCategories>
 	</ThingDef>
-	
+	<!--
 	<ThingDef ParentName="ResourceBase">
 		<defName>PlasteelTextileStrips</defName>
 		<label>plasteel textile strips</label>
@@ -94,7 +94,7 @@
 			<li>Textiles</li>
 		</thingCategories>
 	</ThingDef>
-	
+	-->
 	<ThingDef ParentName="ResourceBase">
 		<defName>ScrapMetal</defName>
 		<label>scrap metal</label>
