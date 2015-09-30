@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Buildings>
+
+
+	<ThingDef Name="BuildingBase" Abstract="True">
+    <category>Building</category>
+	<thingClass>Building</thingClass>
+    <soundImpactDefault>BulletImpactMetal</soundImpactDefault>
+    <selectable>true</selectable>
+    <drawerType>MapMeshAndRealTime</drawerType>
+    <terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
+    <repairEffect>Repair</repairEffect>
+    <leaveResourcesWhenKilled>true</leaveResourcesWhenKilled>
+    <filthLeaving>BuildingRubble</filthLeaving>
+	</ThingDef>
+
+  
+	<ThingDef ParentName="BuildingBase">
+		<defName>SnowMachine</defName>
+		<label>snow machine</label>
+	<comps>
+		<li Class="SnowMachine.CompPropertiesSnow">
+        <compClass>SnowMachine.CompSnow</compClass>
+			<heatSuckMinTemperature>-10</heatSuckMinTemperature>
+			<coldPerSecond>3</coldPerSecond>
+			<snowRadius>5</snowRadius>
+			<snowDepth>0.02</snowDepth>
+		</li>     
+		<li>
+			<compClass>CompGlower</compClass>
+			<glowRadius>4</glowRadius>
+			<glowColor>(22,133,218,0)</glowColor>
+		</li>
+		<li>
+        <compClass>CompPowerTrader</compClass>
+        <basePowerConsumption>250</basePowerConsumption>
+      </li>	
+    </comps>
+		<graphicData>
+		<texPath>Things/Building/SnowMachine</texPath>
+		<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<minifiedDef>MinifiedFurniture</minifiedDef>
+		<altitudeLayer>Waist</altitudeLayer>
+		<passability>Standable</passability>
+		<fillPercent>0.2</fillPercent>
+		<tickerType>Normal</tickerType>
+		<statBases>
+			<MarketValue>800</MarketValue>
+			<MaxHitPoints>100</MaxHitPoints>
+			<WorkToMake>1000</WorkToMake>
+			<Flammability>1.0</Flammability>
+		</statBases>
+		<description>SNOW!!!!!  The prototype of this advanced machine was created long ago from the remains of many a crashed ship part... Enjoy your winter any-time!</description>
+		<size>(1,1)</size>
+		<costList>
+			<SteelBar>150</SteelBar>
+		</costList>
+		<designationCategory>Misc</designationCategory>
+		<rotatable>false</rotatable>
+	</ThingDef>
+</Buildings>
