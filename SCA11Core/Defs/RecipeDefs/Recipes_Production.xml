@@ -3,7 +3,7 @@
 
 	<!--========================= Recipes (Handcrafted) =============================-->
 	<RecipeDef>
-		<defName>Itchy_MakeStoneBlocksSandstone</defName>
+		<defName>RecipeWorkerCounter_MakeStoneBlocksSandstone</defName>
 		<label>make sandstone blocks</label>
 		<description>Cuts sandstone chunks into usable stone blocks.</description>
 		<jobString>Stonecutting.</jobString>
@@ -12,7 +12,6 @@
 		<effectWorking>CutStone</effectWorking>
 		<workSkillLearnFactor>0.25</workSkillLearnFactor>
 		<soundWorking>Recipe_MakeStoneBlocks</soundWorking>
-		<targetCountAdjustment>50</targetCountAdjustment>
 		<ingredients>
 			<li>
 				<filter>
@@ -38,7 +37,7 @@
 	</RecipeDef>
 	
 	<RecipeDef>
-		<defName>Itchy_MakeStoneBlocksGranite</defName>
+		<defName>RecipeWorkerCounter_MakeStoneBlocksGranite</defName>
 		<label>make granite blocks</label>
 		<description>Cuts granite chunks into usable stone blocks.</description>
 		<jobString>Stonecutting.</jobString>
@@ -73,7 +72,7 @@
 	</RecipeDef>
 	
 	<RecipeDef>
-		<defName>Itchy_MakeStoneBlocksLimestone</defName>
+		<defName>RecipeWorkerCounter_MakeStoneBlocksLimestone</defName>
 		<label>make limestone blocks</label>
 		<description>Cuts limestone chunks into usable stone blocks.</description>
 		<jobString>Stonecutting.</jobString>
@@ -108,7 +107,7 @@
 	</RecipeDef>
 	
 	<RecipeDef>
-		<defName>Itchy_MakeStoneBlocksSlate</defName>
+		<defName>RecipeWorkerCounter_MakeStoneBlocksSlate</defName>
 		<label>make slate blocks</label>
 		<description>Cuts slate chunks into usable stone blocks.</description>
 		<jobString>Stonecutting.</jobString>
@@ -143,7 +142,7 @@
 	</RecipeDef>
 	
 	<RecipeDef>
-		<defName>Itchy_MakeStoneBlocksMarble</defName>
+		<defName>RecipeWorkerCounter_MakeStoneBlocksMarble</defName>
 		<label>make marble blocks</label>
 		<description>Cuts marble chunks into usable stone blocks.</description>
 		<jobString>Stonecutting.</jobString>
@@ -436,7 +435,7 @@
 	<!--========================= Recipes (Powered) =============================-->
 	
 	<RecipeDef>
-		<defName>Itchy_MakeStoneBlocksSandstones</defName>
+		<defName>RecipeWorkerCounter_MakeStoneBlocksSandstones</defName>
 		<label>make sandstone blocks</label>
 		<description>Cuts sandstone chunks into usable stone blocks.</description>
 		<jobString>Stonecutting.</jobString>
@@ -471,7 +470,7 @@
 	</RecipeDef>
 	
 	<RecipeDef>
-		<defName>Itchy_MakeStoneBlocksGranites</defName>
+		<defName>RecipeWorkerCounter_MakeStoneBlocksGranites</defName>
 		<label>make granite blocks</label>
 		<description>Cuts granite chunks into usable stone blocks.</description>
 		<jobString>Stonecutting.</jobString>
@@ -506,7 +505,7 @@
 	</RecipeDef>
 	
 	<RecipeDef>
-		<defName>Itchy_MakeStoneBlocksLimestones</defName>
+		<defName>RecipeWorkerCounter_MakeStoneBlocksLimestones</defName>
 		<label>make limestone blocks</label>
 		<description>Cuts limestone chunks into usable stone blocks.</description>
 		<jobString>Stonecutting.</jobString>
@@ -541,7 +540,7 @@
 	</RecipeDef>
 	
 	<RecipeDef>
-		<defName>Itchy_MakeStoneBlocksSlates</defName>
+		<defName>RecipeWorkerCounter_MakeStoneBlocksSlates</defName>
 		<label>make slate blocks</label>
 		<description>Cuts slate chunks into usable stone blocks.</description>
 		<jobString>Stonecutting.</jobString>
@@ -576,7 +575,7 @@
 	</RecipeDef>
 	
 	<RecipeDef>
-		<defName>Itchy_MakeStoneBlocksMarbles</defName>
+		<defName>RecipeWorkerCounter_MakeStoneBlocksMarbles</defName>
 		<label>make marble blocks</label>
 		<description>Cuts marble chunks into usable stone blocks.</description>
 		<jobString>Stonecutting.</jobString>
@@ -1003,21 +1002,21 @@
 						<li>RawCotton</li>
 					</thingDefs>
 				</filter>
-				<count>10</count>
+				<count>20</count>
 			</li>
 			<li>
 				<filter>
 					<thingDefs>
-						<li>PlasteelTextileStrips</li>
+						<li>PlasteelBar</li>
 					</thingDefs>
 				</filter>
-				<count>3</count>
+				<count>5</count>
 			</li>
 		</ingredients>
 		<fixedIngredientFilter>
 			<thingDefs>
 				<li>RawCotton</li>
-				<li>PlasteelTextileStrips</li>
+				<li>PlasteelBar</li>
 			</thingDefs>
 		</fixedIngredientFilter>
 		<products>
@@ -1138,14 +1137,17 @@
 	</RecipeDef>
 	
 	<RecipeDef>
-		<defName>MakeMedicine</defName>
+		<defName>MakeMedicineHerb</defName>
 		<label>make medicine</label>
 		<description>Make medicine from herbs and cloth.</description>
 		<jobString>Making medicine.</jobString>
-		<workSpeedStat>SmithingSpeed</workSpeedStat>
+		<workSpeedStat>MedicalOperationSpeed</workSpeedStat>
 		<workAmount>1600</workAmount>
-		<effectWorking>Cook</effectWorking>
+		<effectWorking>Surgery</effectWorking>
 		<soundWorking>Recipe_CookMeal</soundWorking>
+		<recipeUsers>
+         <li>TableHerbalMed</li>
+      </recipeUsers>
 		<ingredients>
 			<li>
 				<filter>
@@ -1154,6 +1156,14 @@
 					</thingDefs>
 				</filter>
 				<count>2</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>aloe</li>
+					</thingDefs>
+				</filter>
+				<count>5</count>
 			</li>
 			<li>
 				<filter>
@@ -1167,6 +1177,55 @@
 		<fixedIngredientFilter>
 			<thingDefs>
 				<li>HerbalMedicine</li>
+				<li>aloe</li>
+				<li>Cloth</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<products>
+			<Medicine>1</Medicine>
+		</products>
+		<workSkill>Medicine</workSkill>
+	</RecipeDef>
+	
+	<RecipeDef>
+		<defName>MakeMedicine</defName>
+		<label>make medicine</label>
+		<description>Make medicine from herbs and cloth.</description>
+		<jobString>Making medicine.</jobString>
+		<workSpeedStat>MedicalOperationSpeed</workSpeedStat>
+		<workAmount>800</workAmount>
+		<effectWorking>Surgery</effectWorking>
+		<soundWorking>Recipe_CookMeal</soundWorking>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>HerbalMedicine</li>
+					</thingDefs>
+				</filter>
+				<count>2</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>aloe</li>
+					</thingDefs>
+				</filter>
+				<count>5</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Cloth</li>
+					</thingDefs>
+				</filter>
+				<count>5</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>HerbalMedicine</li>
+				<li>aloe</li>
 				<li>Cloth</li>
 			</thingDefs>
 		</fixedIngredientFilter>
@@ -1213,8 +1272,8 @@
 		<label>extract biomatter from corpse</label>
 		<description>Extracts biomatter from a corpse.</description>
 		<jobString>Extracting.</jobString>
-		<workSpeedStat>BrewingSpeed</workSpeedStat>
-		<effectWorking>Cook</effectWorking>
+		<workSpeedStat>MedicalOperationSpeed</workSpeedStat>
+		<effectWorking>Surgery</effectWorking>
 		<soundWorking>Recipe_CookMeal</soundWorking>
 		<allowMixingIngredients>true</allowMixingIngredients>
 		<workAmount>5000</workAmount>
@@ -1304,8 +1363,8 @@
 		<label>make artificial bone</label>
 		<description>Make an artificial bone from plasteel bars and biomatter</description>
 		<jobString>Making an artificial bone.</jobString>
-		<workSpeedStat>SmithingSpeed</workSpeedStat>
-		<effectWorking>Smith</effectWorking>
+		<workSpeedStat>MedicalOperationSpeed</workSpeedStat>
+		<effectWorking>Surgery</effectWorking>
 		<soundWorking>Recipe_Smith</soundWorking>
 		<unfinishedThingDef>UnfinishedProsthesis</unfinishedThingDef>
 		<workAmount>2400</workAmount>
@@ -1487,8 +1546,8 @@
 		<label>grow natural eye</label>
 		<description>Grow a natural eye from biomatter</description>
 		<jobString>Growing a natural eye.</jobString>
-		<workSpeedStat>SmithingSpeed</workSpeedStat>
-		<effectWorking>Cook</effectWorking>
+		<workSpeedStat>MedicalOperationSpeed</workSpeedStat>
+		<effectWorking>Surgery</effectWorking>
 		<soundWorking>Recipe_CookMeal</soundWorking>
 		<unfinishedThingDef>UnfinishedProsthesis</unfinishedThingDef>
 		<workAmount>5000</workAmount>
@@ -1533,8 +1592,8 @@
 		<label>grow natural ear</label>
 		<description>Grow a natural ear from biomatter</description>
 		<jobString>Growing a natural ear.</jobString>
-		<workSpeedStat>SmithingSpeed</workSpeedStat>
-		<effectWorking>Cook</effectWorking>
+		<workSpeedStat>MedicalOperationSpeed</workSpeedStat>
+		<effectWorking>Surgery</effectWorking>
 		<soundWorking>Recipe_CookMeal</soundWorking>
 		<unfinishedThingDef>UnfinishedProsthesis</unfinishedThingDef>
 		<workAmount>5000</workAmount>
@@ -1570,8 +1629,8 @@
 		<label>grow natural nose</label>
 		<description>Grow a natural nose from biomatter</description>
 		<jobString>Growing a natural nose.</jobString>
-		<workSpeedStat>SmithingSpeed</workSpeedStat>
-		<effectWorking>Cook</effectWorking>
+		<workSpeedStat>MedicalOperationSpeed</workSpeedStat>
+		<effectWorking>Surgery</effectWorking>
 		<soundWorking>Recipe_CookMeal</soundWorking>
 		<unfinishedThingDef>UnfinishedProsthesis</unfinishedThingDef>
 		<workAmount>5000</workAmount>
@@ -1616,8 +1675,8 @@
 		<label>grow natural heart</label>
 		<description>Grow a natural heart from biomatter</description>
 		<jobString>Growing a natural heart.</jobString>
-		<workSpeedStat>SmithingSpeed</workSpeedStat>
-		<effectWorking>Cook</effectWorking>
+		<workSpeedStat>MedicalOperationSpeed</workSpeedStat>
+		<effectWorking>Surgery</effectWorking>
 		<soundWorking>Recipe_CookMeal</soundWorking>
 		<unfinishedThingDef>UnfinishedProsthesis</unfinishedThingDef>
 		<workAmount>5000</workAmount>
@@ -1662,8 +1721,8 @@
 		<label>grow natural lung</label>
 		<description>Grow a natural lung from biomatter</description>
 		<jobString>Growing a natural lung.</jobString>
-		<workSpeedStat>SmithingSpeed</workSpeedStat>
-		<effectWorking>Cook</effectWorking>
+		<workSpeedStat>MedicalOperationSpeed</workSpeedStat>
+		<effectWorking>Surgery</effectWorking>
 		<soundWorking>Recipe_CookMeal</soundWorking>
 		<unfinishedThingDef>UnfinishedProsthesis</unfinishedThingDef>
 		<workAmount>5000</workAmount>
@@ -1708,8 +1767,8 @@
 		<label>grow natural liver</label>
 		<description>Grow a natural liver from biomatter</description>
 		<jobString>Growing a natural liver.</jobString>
-		<workSpeedStat>SmithingSpeed</workSpeedStat>
-		<effectWorking>Cook</effectWorking>
+		<workSpeedStat>MedicalOperationSpeed</workSpeedStat>
+		<effectWorking>Surgery</effectWorking>
 		<soundWorking>Recipe_CookMeal</soundWorking>
 		<unfinishedThingDef>UnfinishedProsthesis</unfinishedThingDef>
 		<workAmount>5000</workAmount>
@@ -1754,8 +1813,8 @@
 		<label>grow natural kidney</label>
 		<description>Grow a natural kidney from biomatter</description>
 		<jobString>Growing a natural kidney.</jobString>
-		<workSpeedStat>SmithingSpeed</workSpeedStat>
-		<effectWorking>Cook</effectWorking>
+		<workSpeedStat>MedicalOperationSpeed</workSpeedStat>
+		<effectWorking>Surgery</effectWorking>
 		<soundWorking>Recipe_CookMeal</soundWorking>
 		<unfinishedThingDef>UnfinishedProsthesis</unfinishedThingDef>
 		<workAmount>5000</workAmount>
@@ -1800,8 +1859,8 @@
 		<label>grow natural stomach</label>
 		<description>Grow a natural stomach from biomatter</description>
 		<jobString>Growing a natural stomach.</jobString>
-		<workSpeedStat>SmithingSpeed</workSpeedStat>
-		<effectWorking>Cook</effectWorking>
+		<workSpeedStat>MedicalOperationSpeed</workSpeedStat>
+		<effectWorking>Surgery</effectWorking>
 		<soundWorking>Recipe_CookMeal</soundWorking>
 		<unfinishedThingDef>UnfinishedProsthesis</unfinishedThingDef>
 		<workAmount>5000</workAmount>

@@ -191,8 +191,8 @@ Energy Output:  750W</description>
 			<wantsHopperAdjacent>true</wantsHopperAdjacent>
 		</building>
 		<costList>
-			<SteelBar>75</SteelBar>
-			<CopperBar>25</CopperBar>
+			<SteelBar>100</SteelBar>
+			<CopperBar>50</CopperBar>
 		</costList>
 		<comps>
 			<li>

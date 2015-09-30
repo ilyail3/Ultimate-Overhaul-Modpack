@@ -3,9 +3,10 @@
 <RecipeDefs>
 
    <RecipeDef Abstract="True" Name="RecipeBasicProsthesis">
-      <workSpeedStat>TailoringSpeed</workSpeedStat>
+      <workSpeedStat>SmithingSpeed</workSpeedStat>
 	  <unfinishedThingDef>UnfinishedProsthesis</unfinishedThingDef>
       <workSkill>Crafting</workSkill>
+	  <effectWorking>Smith</effectWorking>
       <workAmount>2500</workAmount>
    </RecipeDef>
 

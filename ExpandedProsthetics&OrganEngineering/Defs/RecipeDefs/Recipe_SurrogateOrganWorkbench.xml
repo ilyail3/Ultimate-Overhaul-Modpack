@@ -3,9 +3,10 @@
 <RecipeDefs>
 
    <RecipeDef Abstract="True" Name="RecipeSurrogateOrgan">
-      <workSpeedStat>TailoringSpeed</workSpeedStat>
+      <workSpeedStat>SmithingSpeed</workSpeedStat>
       <soundWorking>Recipe_MakeClothes</soundWorking>
       <workSkill>Crafting</workSkill>
+	  <effectWorking>Smith</effectWorking>
       <workAmount>1500</workAmount>
       <skillRequirements>
          <li>

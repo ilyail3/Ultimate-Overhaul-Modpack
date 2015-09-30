@@ -64,10 +64,10 @@
       <isResourceRock>true</isResourceRock>
       <mineableThing>MD2Coal</mineableThing>
       <mineableYield>10</mineableYield>
-      <mineableScatterCommonality>0.12</mineableScatterCommonality>
+      <mineableScatterCommonality>0.3</mineableScatterCommonality>
       <mineableScatterBlotchSizeRange>
-        <min>4</min>
-        <max>8</max>
+        <min>15</min>
+        <max>30</max>
       </mineableScatterBlotchSizeRange>
     </building>
   </ThingDef>

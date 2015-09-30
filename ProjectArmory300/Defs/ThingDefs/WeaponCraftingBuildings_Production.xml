@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ThingDefs>
+
+	<ThingDef Name="BuildingBase" Abstract="True">
+		<category>Building</category>
+		<soundImpactDefault>BulletImpactMetal</soundImpactDefault>
+		<selectable>true</selectable>
+		<drawerType>MapMeshAndRealTime</drawerType>
+		<terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
+		<repairEffect>Repair</repairEffect>
+		<leaveResourcesWhenKilled>true</leaveResourcesWhenKilled>
+		<filthLeaving>BuildingRubble</filthLeaving>
+	</ThingDef>
+
+	<ThingDef ParentName="BuildingBase">
+		<DefName>WeaponCraftingWorkTable</DefName>
+		<label>Weapon Crafting Workbench</label>
+		<ThingClass>Building_WorkTable</ThingClass>
+		<Description>A workbench to produce weapons.</Description>
+		<graphicData>
+		<texPath>Things/Building/WeaponCraftingTable2</texPath>
+		<graphicClass>Graphic_Single</graphicClass>
+		<drawSize>(3,1)</drawSize>
+		</graphicData>
+		<constructEffect>ConstructWood</constructEffect>
+		<CostList>
+			<WoodPlank>50</WoodPlank>
+			<SteelBar>40</SteelBar>
+		</CostList>
+		<AltitudeLayer>Waist</AltitudeLayer>
+		<fillPercent>0.5</fillPercent>
+		<useHitPoints>True</useHitPoints>
+		<statBases>
+			<WorkToMake>1000</WorkToMake>
+			<MaxHitPoints>180</MaxHitPoints>
+			<Flammability>1.0</Flammability>
+		</statBases>
+		<Size>(3,1)</Size>
+		<DesignationCategory>ProductionWeaponsArmor</DesignationCategory>
+		<staticSunShadowHeight>0.20</staticSunShadowHeight>
+		<Passability>PassThroughOnly</Passability>
+		<pathCost>70</pathCost>
+		<hasInteractionCell>True</hasInteractionCell>
+		<interactionCellOffset>(0,0,-1)</interactionCellOffset>
+		<surfaceType>Item</surfaceType>
+		<inspectorTabs>
+			<li>ITab_Bills</li>
+		</inspectorTabs>
+		<building>
+			<spawnedConceptLearnOpportunity>BillsTab</spawnedConceptLearnOpportunity>
+		</building>
+		<researchPrerequisite>ModernWeaponCrafting</researchPrerequisite>
+	</ThingDef>
+	
+	
+	<ThingDef ParentName="BuildingBase">
+		<DefName>WeaponsCraftingTable</DefName>
+		<label>Weapon Crafting Workbench 3</label>
+		<ThingClass>Building_WorkTable</ThingClass>
+		<Description>A workbench to produce weapons.</Description>
+		<graphicData>
+		<texPath>Things/Building/WeaponCraftingTable3</texPath>
+		<graphicClass>Graphic_Single</graphicClass>
+		<drawSize>(3,1)</drawSize>
+		</graphicData>
+		<constructEffect>ConstructWood</constructEffect>
+		<CostList>
+			<WoodPlank>50</WoodPlank>
+			<SteelBar>40</SteelBar>
+		</CostList>
+		<AltitudeLayer>Waist</AltitudeLayer>
+		<fillPercent>0.5</fillPercent>
+		<useHitPoints>True</useHitPoints>
+		<statBases>
+			<WorkToMake>1000</WorkToMake>
+			<MaxHitPoints>180</MaxHitPoints>
+			<Flammability>1.0</Flammability>
+		</statBases>
+		<Size>(3,1)</Size>
+		<DesignationCategory>ProductionWeaponsArmor</DesignationCategory>
+		<staticSunShadowHeight>0.20</staticSunShadowHeight>
+		<Passability>PassThroughOnly</Passability>
+		<pathCost>70</pathCost>
+		<hasInteractionCell>True</hasInteractionCell>
+		<interactionCellOffset>(0,0,-1)</interactionCellOffset>
+		<surfaceType>Item</surfaceType>
+		<inspectorTabs>
+			<li>ITab_Bills</li>
+		</inspectorTabs>
+		<building>
+			<spawnedConceptLearnOpportunity>BillsTab</spawnedConceptLearnOpportunity>
+		</building>
+		<researchPrerequisite>ModernWeaponCrafting</researchPrerequisite>
+	</ThingDef>
+	
+	
+</ThingDefs>

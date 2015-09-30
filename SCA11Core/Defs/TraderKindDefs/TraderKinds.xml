@@ -257,6 +257,14 @@
 				</countRange>
 			</li>
 			<li Class="StockGenerator_SingleDef">
+				<thingDef>MD2Coal</thingDef>
+				<price>Cheap</price>
+				<countRange>
+					<min>800</min>
+					<max>1500</max>
+				</countRange>
+			</li>
+			<li Class="StockGenerator_SingleDef">
 				<thingDef>Plasteel</thingDef>
 				<price>Cheap</price>
 				<countRange>
@@ -855,17 +863,6 @@
 					<min>200</min>
 					<max>5000</max>
 				</totalPriceRange>
-			</li>
-			<li Class="StockGenerator_Category">
-			<categoryDef>WeaponsLiandriCorp</categoryDef>
-			<thingDefCountRange>
-			<min>5</min>
-			<max>25</max>
-			</thingDefCountRange>
-			<totalPriceRange>
-			<min>400</min>
-			<max>10000</max>
-			</totalPriceRange>
 			</li>
 			<li Class="StockGenerator_Category">
 				<categoryDef>WeaponsMelee</categoryDef>

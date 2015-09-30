@@ -6,9 +6,9 @@
 	<label>make aloe</label>
 	<description>Turns raw Xerigium into Aloe.</description>
 	<jobString>Mixing Herbs.</jobString>
-	<workSpeedStat>SmithingSpeed</workSpeedStat>
+	<workSpeedStat>MedicalOperationSpeed</workSpeedStat>
 	<workAmount>800</workAmount>
-		<effectWorking>Cook</effectWorking>
+		<effectWorking>Surgery</effectWorking>
     <soundWorking>Recipe_CookMeal</soundWorking>          
 	<allowMixingIngredients>true</allowMixingIngredients>
 	<recipeUsers>
@@ -40,9 +40,9 @@
 	<label>make herbal medicine</label>
 	<description>Combines Aloe and Cloth into a herbal medical kit.</description>
 	<jobString>Mixing Herbs.</jobString>
-	<workSpeedStat>SmithingSpeed</workSpeedStat>
+	<workSpeedStat>MedicalOperationSpeed</workSpeedStat>
 	<workAmount>1200</workAmount>
-		<effectWorking>Cook</effectWorking>
+		<effectWorking>Surgery</effectWorking>
     <soundWorking>Recipe_CookMeal</soundWorking>          
 	<allowMixingIngredients>true</allowMixingIngredients>
 	<recipeUsers>
@@ -84,9 +84,9 @@
 	<label>make aloe</label>
 	<description>Turns raw Xerigium into Aloe.</description>
 	<jobString>Mixing Herbs.</jobString>
-	<workSpeedStat>SmithingSpeed</workSpeedStat>
+	<workSpeedStat>MedicalOperationSpeed</workSpeedStat>
 	<workAmount>800</workAmount>
-		<effectWorking>Cook</effectWorking>
+		<effectWorking>Surgery</effectWorking>
     <soundWorking>Recipe_CookMeal</soundWorking>          
 	<allowMixingIngredients>true</allowMixingIngredients>
 	<recipeUsers>
@@ -118,9 +118,9 @@
 	<label>make herbal medicine</label>
 	<description>Combines Aloe and Cloth into a herbal medical kit.</description>
 	<jobString>Mixing Herbs.</jobString>
-	<workSpeedStat>SmithingSpeed</workSpeedStat>
+	<workSpeedStat>MedicalOperationSpeed</workSpeedStat>
 	<workAmount>1200</workAmount>
-		<effectWorking>Cook</effectWorking>
+		<effectWorking>Surgery</effectWorking>
     <soundWorking>Recipe_CookMeal</soundWorking>          
 	<allowMixingIngredients>true</allowMixingIngredients>
 	<recipeUsers>

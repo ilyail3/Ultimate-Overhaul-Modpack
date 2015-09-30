@@ -29,10 +29,8 @@
     <pathCost>15</pathCost>
     <resourceReadoutPriority>Last</resourceReadoutPriority>
     <drawGUIOverlay>true</drawGUIOverlay>
-	<ingestible>
-      <maxNumToIngestAtOnce>1</maxNumToIngestAtOnce>
-    </ingestible>
   </ThingDef>
+ 
 
   <ThingDef ParentName="MealBase">
     <defName>MedicalDrink</defName>
@@ -45,14 +43,13 @@
     <rotatable>false</rotatable>
     <stackLimit>25</stackLimit>
     <statBases>
-      <DeteriorationRate>0</DeteriorationRate>
+      <DeteriorationRate>0.25</DeteriorationRate>
       <MarketValue>25</MarketValue>
 	  <SellPriceFactor>0.2</SellPriceFactor>
     </statBases>
     <ingestible>
-      <nutrition>0.08</nutrition>
       <maxNumToIngestAtOnce>1</maxNumToIngestAtOnce>
-      <preferability>NeverForNutrition</preferability>
+	  <preferability>NeverForNutrition</preferability>
       <soundEat>Ingest_Beer</soundEat>
       <isPleasureDrug>false</isPleasureDrug>
       <hediffGivers>

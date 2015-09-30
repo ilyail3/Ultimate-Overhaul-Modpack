@@ -113,8 +113,8 @@
     <label>Make Medical Marijuana</label>
     <description>Make Medical Marijuana from your weed Oil.</description>
     <jobString>Making Medical Marijuana.</jobString>
-    <workSpeedStat>BrewingSpeed</workSpeedStat>
-    <effectWorking>Cook</effectWorking>
+    <workSpeedStat>MedicalOperationSpeed</workSpeedStat>
+    <effectWorking>Surgery</effectWorking>
     <soundWorking>Recipe_Brewing</soundWorking>
     <allowMixingIngredients>true</allowMixingIngredients>
     <workAmount>1800</workAmount>
@@ -157,8 +157,8 @@
     <label>Make Medical Marijuana</label>
     <description>Make Medical Marijuana from your weed Oil.</description>
     <jobString>Making Medical Marijuana.</jobString>
-    <workSpeedStat>BrewingSpeed</workSpeedStat>
-    <effectWorking>Cook</effectWorking>
+    <workSpeedStat>MedicalOperationSpeed</workSpeedStat>
+    <effectWorking>Surgery</effectWorking>
     <soundWorking>Recipe_Brewing</soundWorking>
     <allowMixingIngredients>true</allowMixingIngredients>
     <workAmount>1800</workAmount>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<WorkGivers>
+
+	<WorkGiverDef>
+		<defName>DoBillsCraftWeapons</defName>
+		<giverClass>WorkGiver_DoBill</giverClass>
+		<workType>Smithing</workType>
+		<priorityInType>8</priorityInType>
+		<singleBillGiverDef>WeaponCraftingWorkTable</singleBillGiverDef>
+		<verb>smith</verb>
+		<gerund>smithing at</gerund>
+		<requiredCapacities>
+			<li>Manipulation</li>
+		</requiredCapacities>
+	</WorkGiverDef>
+	
+	<WorkGiverDef>
+		<defName>DoBillsCraftingWeapon</defName>
+		<giverClass>WorkGiver_DoBill</giverClass>
+		<workType>Smithing</workType>
+		<priorityInType>10</priorityInType>
+		<singleBillGiverDef>WeaponsCraftingTable</singleBillGiverDef>
+		<verb>smith</verb>
+		<gerund>smithing at</gerund>
+		<requiredCapacities>
+			<li>Manipulation</li>
+		</requiredCapacities>
+	</WorkGiverDef>
+	
+	
+</WorkGivers>
